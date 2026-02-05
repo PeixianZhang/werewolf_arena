@@ -18,7 +18,11 @@ import random
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 from werewolf.lm import LmLog, generate
-from werewolf.prompts import ACTION_PROMPTS_AND_SCHEMAS
+from werewolf.prompts import (
+    ACTION_PROMPTS_AND_SCHEMAS,
+    DEDUCTION_REFLECTION,
+    DEDUCTION_REFLECTION_SCHEMA,
+)
 from werewolf.utils import Deserializable
 from werewolf.config import  MAX_DEBATE_TURNS, NUM_PLAYERS
 
@@ -76,11 +80,13 @@ class GameView:
       round_number: int,
       current_players: List[str],
       other_wolf: Optional[str] = None,
+      player_introductions: Optional[List[str]] = None,
   ):
     self.round_number: int = round_number
     self.current_players: List[str] = current_players
     self.debate: List[tuple[str, str]] = []
     self.other_wolf: Optional[str] = other_wolf
+    self.player_introductions: List[str] = player_introductions or []
 
   def update_debate(self, author: str, dialogue: str):
     """Adds a new dialogue entry to the debate."""
@@ -92,12 +98,15 @@ class GameView:
 
   def remove_player(self, player_to_remove: str):
     """Removes a player from the list of current players."""
-    if player_to_remove not in self.current_players:
+    if player_to_remove is None:
+      return
+    if player_to_remove in self.current_players:
+      self.current_players.remove(player_to_remove)
+    else:
       print(
           f"Player {player_to_remove} not in current players:"
           f" {self.current_players}"
       )
-    self.current_players.remove(player_to_remove)
 
   def to_dict(self) -> Any:
     return to_dict(self)
@@ -116,19 +125,23 @@ class Player(Deserializable):
       role: str,
       model: Optional[str] = None,
       personality: Optional[str] = "",
+      demographic: Optional[str] = "",
   ):
     self.name = name
     self.role = role
     self.personality = personality
+    self.demographic = demographic or ""
     self.model = model
     self.observations: List[str] = []
     self.bidding_rationale = ""
     self.gamestate: Optional[GameView] = None
 
   def initialize_game_view(
-      self, round_number, current_players, other_wolf=None
+      self, round_number, current_players, other_wolf=None, player_introductions=None
   ) -> None:
-    self.gamestate = GameView(round_number, current_players, other_wolf)
+    self.gamestate = GameView(
+        round_number, current_players, other_wolf, player_introductions
+    )
 
   def _add_observation(self, observation: str):
     """Adds an observation for the given round."""
@@ -166,6 +179,10 @@ class Player(Deserializable):
 
     formatted_observations = group_and_format_observations(self.observations)
 
+    character_introductions = ""
+    if self.gamestate.player_introductions:
+      character_introductions = "\n".join(self.gamestate.player_introductions)
+
     return {
         "name": self.name,
         "role": self.role,
@@ -176,8 +193,10 @@ class Player(Deserializable):
         "bidding_rationale": self.bidding_rationale,
         "debate_turns_left": MAX_DEBATE_TURNS - len(formatted_debate),
         "personality": self.personality,
+        "demographic": self.demographic,
+        "character_introductions": character_introductions,
         "num_players": NUM_PLAYERS,
-        "num_villagers": NUM_PLAYERS - 4, 
+        "num_villagers": NUM_PLAYERS - 4,
     }
 
   def _generate_action(
@@ -209,6 +228,38 @@ class Player(Deserializable):
         allowed_values=allowed_values,
         result_key=result_key,
     )
+
+  def reflect_on_roles(self) -> tuple[Dict[str, Any], LmLog]:
+    """Reflect on hidden roles of remaining players; return (full result with 'deductions', LmLog)."""
+    if not self.gamestate:
+      raise ValueError(
+          "GameView not initialized. Call initialize_game_view() first."
+      )
+    game_state = self._get_game_state()
+    remaining_players = [p for p in self.gamestate.current_players if p != self.name]
+    if not remaining_players:
+      return ({"deductions": []}, LmLog(prompt="", raw_resp="", result={"deductions": []}))
+
+    observations = game_state.get("observations", [])
+    debate = game_state.get("debate", [])
+    key_items = list(observations) + list(debate)
+    key_information = [f"{i + 1}. {item}" for i, item in enumerate(key_items)]
+
+    worldstate = {
+        **game_state,
+        "remaining_players": ", ".join(remaining_players),
+        "key_information": key_information,
+    }
+    result, log = generate(
+        DEDUCTION_REFLECTION,
+        DEDUCTION_REFLECTION_SCHEMA,
+        worldstate,
+        model=self.model,
+        temperature=0.5,
+    )
+    if result is None:
+      result = {"deductions": []}
+    return (result, log)
 
   def vote(self) -> tuple[str | None, LmLog]:
     """Vote for a player."""
@@ -264,7 +315,9 @@ class Player(Deserializable):
     name = data["name"]
     role = data["role"]
     model = data.get("model", None)
-    o = cls(name=name, role=role, model=model)
+    personality = data.get("personality", "")
+    demographic = data.get("demographic", "")
+    o = cls(name=name, role=role, model=model, personality=personality, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
     o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
@@ -279,16 +332,18 @@ class Villager(Player):
       name: str,
       model: Optional[str] = None,
       personality: Optional[str] = None,
+      demographic: Optional[str] = None,
   ):
     super().__init__(
-        name=name, role=VILLAGER, model=model, personality=personality
+        name=name, role=VILLAGER, model=model, personality=personality, demographic=demographic
     )
 
   @classmethod
   def from_json(cls, data: dict[Any, Any]):
     name = data["name"]
     model = data.get("model", None)
-    o = cls(name=name, model=model)
+    demographic = data.get("demographic", "")
+    o = cls(name=name, model=model, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
     o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
@@ -303,9 +358,10 @@ class Werewolf(Player):
       name: str,
       model: Optional[str] = None,
       personality: Optional[str] = None,
+      demographic: Optional[str] = None,
   ):
     super().__init__(
-        name=name, role=WEREWOLF, model=model, personality=personality
+        name=name, role=WEREWOLF, model=model, personality=personality, demographic=demographic
     )
 
   def _get_game_state(self, **kwargs) -> Dict[str, Any]:
@@ -315,7 +371,7 @@ class Werewolf(Player):
     return state
 
   def eliminate(self) -> tuple[str | None, "LmLog"]:
-    """Choose a player to eliminate."""
+    """Choose a player to eliminate. Always returns a valid player from options (or None only if no options)."""
     if not self.gamestate:
       raise ValueError(
           "GameView not initialized. Call initialize_game_view() first."
@@ -327,7 +383,12 @@ class Werewolf(Player):
         if player != self.name and player != self.gamestate.other_wolf
     ]
     random.shuffle(options)
+    if not options:
+      return None, LmLog(prompt="", raw_resp="", result=None)
+
     eliminate, log = self._generate_action("remove", options)
+    if eliminate is None or eliminate not in options:
+      eliminate = random.choice(options)
     return eliminate, log
 
   def _get_werewolf_context(self):
@@ -350,7 +411,8 @@ class Werewolf(Player):
   def from_json(cls, data: dict[Any, Any]):
     name = data["name"]
     model = data.get("model", None)
-    o = cls(name=name, model=model)
+    demographic = data.get("demographic", "")
+    o = cls(name=name, model=model, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
     o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
@@ -365,8 +427,9 @@ class Seer(Player):
       name: str,
       model: Optional[str] = None,
       personality: Optional[str] = None,
+      demographic: Optional[str] = None,
   ):
-    super().__init__(name=name, role=SEER, model=model, personality=personality)
+    super().__init__(name=name, role=SEER, model=model, personality=personality, demographic=demographic)
     self.previously_unmasked: Dict[str, str] = {}
 
   def unmask(self) -> tuple[str | None, LmLog]:
@@ -394,7 +457,8 @@ class Seer(Player):
   def from_json(cls, data: dict[Any, Any]):
     name = data["name"]
     model = data.get("model", None)
-    o = cls(name=name, model=model)
+    demographic = data.get("demographic", "")
+    o = cls(name=name, model=model, demographic=demographic)
     o.previously_unmasked = data.get("previously_unmasked", {})
     o.gamestate = data.get("gamestate", None)
     o.bidding_rationale = data.get("bidding_rationale", "")
@@ -410,9 +474,10 @@ class Doctor(Player):
       name: str,
       model: Optional[str] = None,
       personality: Optional[str] = None,
+      demographic: Optional[str] = None,
   ):
     super().__init__(
-        name=name, role=DOCTOR, model=model, personality=personality
+        name=name, role=DOCTOR, model=model, personality=personality, demographic=demographic
     )
 
   def save(self) -> tuple[str | None, LmLog]:
@@ -433,7 +498,8 @@ class Doctor(Player):
   def from_json(cls, data: dict[Any, Any]):
     name = data["name"]
     model = data.get("model", None)
-    o = cls(name=name, model=model)
+    demographic = data.get("demographic", "")
+    o = cls(name=name, model=model, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
     o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
@@ -607,7 +673,10 @@ class RoundLog(Deserializable):
     summaries: Logs from the summarize step. Every player summarizes their
       observations at the end of a round before they vote. Each element is a
       tuple where the 1st element is the name of the player, and the 2nd element
-      is the log
+      is the log.
+    deductions: Logs from the reflection step before voting. Each player outputs
+      role/reasoning/confidence/evidence for each remaining player. Each element
+      is (player_name, LmLog) where LmLog.result has "deductions" list.
   """
 
   def __init__(self):
@@ -618,6 +687,7 @@ class RoundLog(Deserializable):
     self.debate: List[Tuple[str, LmLog]] = []
     self.votes: List[List[VoteLog]] = []
     self.summaries: List[Tuple[str, LmLog]] = []
+    self.deductions: List[Tuple[str, LmLog]] = []
 
   def to_dict(self):
     return to_dict(self)
@@ -654,5 +724,8 @@ class RoundLog(Deserializable):
 
     for player in data.get("summaries", []):
       o.summaries.append((player[0], LmLog.from_json(player[1])))
+
+    for item in data.get("deductions", []):
+      o.deductions.append((item[0], LmLog.from_json(item[1])))
 
     return o

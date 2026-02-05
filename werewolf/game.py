@@ -21,6 +21,7 @@ from typing import List
 
 import tqdm
 
+from werewolf.lm import LmLog
 from werewolf.model import Round, RoundLog, State, VoteLog
 from werewolf.config import  MAX_DEBATE_TURNS, RUN_SYNTHETIC_VOTES
 
@@ -56,24 +57,33 @@ class GameMaster:
     return self.logs[self.current_round_num]
 
   def eliminate(self):
-    """Werewolves choose a player to eliminate."""
+    """Werewolves choose a player to eliminate. Ensures eliminated is always a valid player in this_round.players."""
     werewolves_alive = [
         w for w in self.state.werewolves if w.name in self.this_round.players
     ]
+    valid_targets = [
+        p for p in self.this_round.players
+        if p not in {w.name for w in werewolves_alive}
+    ]
+    if not valid_targets:
+      self.this_round.eliminated = None
+      tqdm.tqdm.write("No valid target to eliminate (only werewolves left).")
+      return
+
     wolf = random.choice(werewolves_alive)
     eliminated, log = wolf.eliminate()
     self.this_round_log.eliminate = log
-    if eliminated is not None:
-      self.this_round.eliminated = eliminated
-      tqdm.tqdm.write(f"{wolf.name} eliminated {eliminated}")
-      for wolf in werewolves_alive:
-        wolf._add_observation(
-            "During the"
-            f" night, {'we' if len(werewolves_alive) > 1 else 'I'} decided to"
-            f" eliminate {eliminated}."
-        )
-    else:
-      raise ValueError("Eliminate did not return a valid player.")
+
+    if eliminated is None or eliminated not in valid_targets:
+      eliminated = random.choice(valid_targets)
+    self.this_round.eliminated = eliminated
+    tqdm.tqdm.write(f"{wolf.name} eliminated {eliminated}")
+    for w in werewolves_alive:
+      w._add_observation(
+          "During the"
+          f" night, {'we' if len(werewolves_alive) > 1 else 'I'} decided to"
+          f" eliminate {eliminated}."
+      )
 
   def protect(self):
     """Doctor chooses a player to protect."""
@@ -194,12 +204,35 @@ class GameMaster:
           raise ValueError(f"{name}.gamestate needs to be initialized.")
 
       if idx == MAX_DEBATE_TURNS - 1 or RUN_SYNTHETIC_VOTES:
+        # 投票前：每个 agent 做角色反思（role/reasoning/confidence/evidence），写入 log
+        self.run_deductions()
         votes, vote_logs = self.run_voting()
         self.this_round.votes.append(votes)
         self.this_round_log.votes.append(vote_logs)
 
     for player, vote in self.this_round.votes[-1].items():
       tqdm.tqdm.write(f"{player} voted to remove {vote}")
+
+  def run_deductions(self):
+    """Before voting: each player reflects on hidden roles of others; log role/reasoning/confidence/evidence."""
+    with ThreadPoolExecutor(max_workers=self.num_threads) as executor:
+      deduction_tasks = {
+          name: executor.submit(self.state.players[name].reflect_on_roles)
+          for name in self.this_round.players
+      }
+      for player_name, task in deduction_tasks.items():
+        try:
+          _result, log = task.result()
+          self.this_round_log.deductions.append((player_name, log))
+          tqdm.tqdm.write(f"{player_name} deduction logged.")
+        except Exception as e:
+          tqdm.tqdm.write(f"{player_name} deduction failed: {e}")
+          self.this_round_log.deductions.append(
+              (player_name, self._empty_deduction_log(player_name))
+          )
+
+  def _empty_deduction_log(self, player_name: str) -> LmLog:
+    return LmLog(prompt="", raw_resp="", result={"deductions": []})
 
   def run_voting(self):
     """Conduct a vote among players to exile someone."""
@@ -237,7 +270,8 @@ class GameMaster:
 
     if self.this_round.exiled is not None:
       exiled_player = self.this_round.exiled
-      self.this_round.players.remove(exiled_player)
+      if exiled_player in self.this_round.players:
+        self.this_round.players.remove(exiled_player)
       announcement = (
           f"The majority voted to remove {exiled_player} from the game."
       )
@@ -259,7 +293,8 @@ class GameMaster:
     """Resolve elimination and protection during the night phase."""
     if self.this_round.eliminated != self.this_round.protected:
       eliminated_player = self.this_round.eliminated
-      self.this_round.players.remove(eliminated_player)
+      if eliminated_player and eliminated_player in self.this_round.players:
+        self.this_round.players.remove(eliminated_player)
       announcement = (
           f"The Werewolves removed {eliminated_player} from the game during the"
           " night."
@@ -270,20 +305,21 @@ class GameMaster:
 
     for name in self.this_round.players:
       player = self.state.players[name]
-      if player.gamestate:
+      if player.gamestate and self.this_round.eliminated != self.this_round.protected and self.this_round.eliminated is not None:
         player.gamestate.remove_player(self.this_round.eliminated)
       player.add_announcement(announcement)
 
   def run_round(self):
-    """Run a single round of the game."""
+    """Run a single round of the game. this_round.players is the single source of truth; only exile() and resolve_night_phase() remove from it."""
     self.state.rounds.append(Round())
     self.logs.append(RoundLog())
 
-    self.this_round.players = (
-        list(self.state.players.keys())
-        if self.current_round_num == 0
-        else self.state.rounds[self.current_round_num - 1].players.copy()
-    )
+    if self.current_round_num == 0:
+      self.this_round.players = list(self.state.players.keys())
+    else:
+      self.this_round.players = list(
+          self.state.rounds[self.current_round_num - 1].players
+      )
 
     for action, message in [
         (
