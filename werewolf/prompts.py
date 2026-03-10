@@ -21,11 +21,21 @@ GAME RULES:
     - Day Phase: Players debate and vote to remove one player.
 - Winning Conditions: Villagers win by voting out both Werewolves. Werewolves win when they outnumber the Villagers."""
 
+CHARACTER_INTRODUCTIONS = """CHARACTER INTRODUCTIONS (each player's demographic):
+{% if character_introductions -%}
+{{ character_introductions }}
+{% else -%}
+(No demographic info configured.)
+{% endif -%}"""
+
 STATE = """GAME STATE:
 - It is currently Round {{round}}. {% if round == 0 %}The game has just begun.{% endif %}
 - You are {{name}} the {{role}}. {{werewolf_context}}
 {% if personality -%}
 - Personality: {{ personality }}
+{% endif -%}
+{% if demographic -%}
+- Demographic: {{ demographic }}
 {% endif -%}
 - Remaining players: {{remaining_players}}"""
 
@@ -44,6 +54,8 @@ DEBATE_SO_FAR_THIS_ROUND = """\nROUND {{round}} DEBATE:
 The debate has not begun.{% endif %}\n\n"""
 
 PREFIX = f"""{GAME}
+
+{CHARACTER_INTRODUCTIONS}
 
 {STATE}
 
@@ -259,6 +271,49 @@ SUMMARIZE_SCHEMA = {
         "summary": {"type": "string"},
     },
     "required": ["reasoning", "summary"],
+}
+
+# 投票前反思：对每个其余玩家推断 hidden role，并给出 reasoning / confidence / evidence
+DEDUCTION_REFLECTION = PREFIX + """
+KEY INFORMATION (numbered; cite these indices in "evidence"):
+{% for item in key_information -%}
+{{ item }}
+{% endfor %}
+
+As {{name}} and a {{role}}, you should reflect on your previous deduction and reconsider the hidden roles of {{remaining_players}}. You should provide your reasoning, rate your confidence, and cite all key information as evidence to support your deduction. You should only respond in JSON format as described below.
+
+Response Format: For each player in {{remaining_players}}, include one object in the "deductions" array with keys: "player" (exact name), "role" (most likely hidden role from ["Werewolf", "Seer", "Doctor", "Villager", "Uncertain"]), "reasoning", "confidence" (integer from 5 = pure guess to 10 = absolutely sure), "evidence" (list of integers citing key information indices above).
+
+Example: { "deductions": [ { "player": "Derek", "role": "Villager", "reasoning": "...", "confidence": 8, "evidence": [1, 3] }, ... ] }
+
+Ensure the response can be parsed by Python json.loads.
+"""
+
+DEDUCTION_REFLECTION_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "deductions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "player": {"type": "string"},
+                    "role": {
+                        "type": "string",
+                        "enum": ["Werewolf", "Seer", "Doctor", "Villager", "Uncertain"],
+                    },
+                    "reasoning": {"type": "string"},
+                    "confidence": {"type": "number"},
+                    "evidence": {
+                        "type": "array",
+                        "items": {"type": "integer"},
+                    },
+                },
+                "required": ["player", "role", "reasoning", "confidence", "evidence"],
+            },
+        },
+    },
+    "required": ["deductions"],
 }
 
 ACTION_PROMPTS_AND_SCHEMAS = {

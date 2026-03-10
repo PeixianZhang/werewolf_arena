@@ -32,7 +32,7 @@ from werewolf.model import State
 from werewolf.model import Villager
 from werewolf.model import WEREWOLF
 from werewolf.model import Werewolf
-from werewolf.config import get_player_names
+from werewolf.config import get_player_names, get_demographic
 
 _RUN_GAME = flags.DEFINE_boolean("run", False, "Runs a single game.")
 _RESUME = flags.DEFINE_boolean("resume", False, "Resumes games.")
@@ -41,27 +41,26 @@ _NUM_GAMES = flags.DEFINE_integer(
     "num_games", 2, "Number of games to run used with eval."
 )
 _VILLAGER_MODELS = flags.DEFINE_list(
-    "v_models", "", "The model used for villagers values are: flash, pro, gpt4"
+    "v_models", "", "The model used for villagers values are: gpt4o, gpt4o, gpt4o"
 )
 _WEREWOLF_MODELS = flags.DEFINE_list(
-    "w_models", "", "The model used for werewolves values are: flash, pro, gpt4"
+    "w_models", "", "The model used for werewolves values are: gpt4o, gpt4o, gpt4o"
 )
 _ARENA = flags.DEFINE_boolean(
     "arena", False, "Only run games using different models for villagers and werewolves"
 )
 _THREADS = flags.DEFINE_integer("threads", 2, "Number of threads to run.")
 
-DEFAULT_WEREWOLF_MODELS = ["flash", "pro1.5"]
-DEFAULT_VILLAGER_MODELS = ["flash", "pro1.5"]
+DEFAULT_WEREWOLF_MODELS = ["gpt4o", "gpt5"]
+DEFAULT_VILLAGER_MODELS = ["gpt4o", "gpt5"]
 RESUME_DIRECTORIES = []
 
 model_to_id = {
     "pro1.5": "gemini-1.5-pro-preview-0514",
     "flash": "gemini-1.5-flash-001",
     "pro1": "gemini-pro",
-    "gpt4": "gpt-4-turbo-2024-04-09",
-    "gpt4o": "gpt-4o-2024-05-13",
-    "gpt3.5": "gpt-3.5-turbo-0125",
+    "gpt5":"gpt-5",
+    "gpt4o": "o4-mini",
 }
 
 
@@ -73,19 +72,20 @@ def initialize_players(
     player_names = get_player_names()
     random.shuffle(player_names)
 
-    seer = Seer(
-        name=player_names.pop(),
-        model=villager_model,
-        # personality="You are cunning.",
-    )
-    doctor = Doctor(name=player_names.pop(), model=villager_model)
-    werewolves = [
-        Werewolf(name=player_names.pop(), model=werewolf_model) for _ in range(2)
-    ]
-    villagers = [Villager(name=name, model=villager_model) for name in player_names]
+    _sn = player_names.pop()
+    seer = Seer(name=_sn, model=villager_model, demographic=get_demographic(_sn))
+    _dn = player_names.pop()
+    doctor = Doctor(name=_dn, model=villager_model, demographic=get_demographic(_dn))
+    _w_names = [player_names.pop() for _ in range(2)]
+    werewolves = [Werewolf(name=nm, model=werewolf_model, demographic=get_demographic(nm)) for nm in _w_names]
+    villagers = [Villager(name=name, model=villager_model, demographic=get_demographic(name)) for name in player_names]
+
+    all_players = [seer, doctor] + werewolves + villagers
+    player_introductions = [f"- {p.name}: {p.demographic}" for p in all_players]
 
     # Initialize game view for all players
-    for player in [seer, doctor] + werewolves + villagers:
+    current_players_list = [seer.name, doctor.name] + [w.name for w in werewolves] + [v.name for v in villagers]
+    for player in all_players:
         other_wolf = (
             next((w.name for w in werewolves if w != player), None)
             if isinstance(player, Werewolf)
@@ -93,11 +93,10 @@ def initialize_players(
         )
         tqdm.tqdm.write(f"{player.name} has role {player.role}")
         player.initialize_game_view(
-            current_players=player_names
-            + [seer.name, doctor.name]
-            + [w.name for w in werewolves],
+            current_players=current_players_list,
             round_number=0,
             other_wolf=other_wolf,
+            player_introductions=player_introductions,
         )
 
     return seer, doctor, villagers, werewolves
@@ -114,12 +113,17 @@ def resume_game(directory: str) -> bool:
     # Reset the error state
     state.error_message = ""
 
+    player_introductions = [
+        f"- {name}: {state.players[name].demographic}"
+        for name in state.players
+    ]
     if not state.rounds:
         werewolves = []
         for p in state.players.values():
             p.initialize_game_view(
                 round_number=0,
                 current_players=list(state.players.keys()),
+                player_introductions=player_introductions,
             )
             p.observations = []
 
@@ -141,6 +145,7 @@ def resume_game(directory: str) -> bool:
                 player.initialize_game_view(
                     round_number=len(state.rounds),
                     current_players=state.rounds[-1].players[:],
+                    player_introductions=player_introductions,
                 )
 
                 # Remove the observation from the failed round for all active players
