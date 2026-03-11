@@ -18,18 +18,15 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 import random
 from typing import List
+import json
+import os
+from datetime import datetime
 
 import tqdm
 
-from werewolf.lm import LmLog
+from werewolf.lm import LmLog, generate
 from werewolf.model import Round, RoundLog, State, VoteLog
 from werewolf.config import  MAX_DEBATE_TURNS, RUN_SYNTHETIC_VOTES
-
-def get_max_bids(d):
-  """Gets all the keys with the highest value in the dictionary."""
-  max_value = max(d.values())
-  max_keys = [key for key, value in d.items() if value == max_value]
-  return max_keys
 
 
 class GameMaster:
@@ -47,6 +44,8 @@ class GameMaster:
     self.current_round_num = len(self.state.rounds) if self.state.rounds else 0
     self.num_threads = num_threads
     self.logs: List[RoundLog] = []
+    # Store initial player order for determining speaking order
+    self.initial_player_order: List[str] = list(state.players.keys())
 
   @property
   def this_round(self) -> Round:
@@ -78,12 +77,10 @@ class GameMaster:
       eliminated = random.choice(valid_targets)
     self.this_round.eliminated = eliminated
     tqdm.tqdm.write(f"{wolf.name} eliminated {eliminated}")
+    
+    # Record werewolf target decision in private memory
     for w in werewolves_alive:
-      w._add_observation(
-          "During the"
-          f" night, {'we' if len(werewolves_alive) > 1 else 'I'} decided to"
-          f" eliminate {eliminated}."
-      )
+      w.memory_manager.add_werewolf_target(eliminated)
 
   def protect(self):
     """Doctor chooses a player to protect."""
@@ -96,6 +93,8 @@ class GameMaster:
     if protect is not None:
       self.this_round.protected = protect
       tqdm.tqdm.write(f"{self.state.doctor.name} protected {protect}")
+      # Record doctor protection in private memory
+      self.state.doctor.memory_manager.add_doctor_protection(protect)
     else:
       raise ValueError("Protect did not return a valid player.")
 
@@ -109,59 +108,14 @@ class GameMaster:
 
     if unmask is not None:
       self.this_round.unmasked = unmask
-      self.state.seer.reveal_and_update(unmask, self.state.players[unmask].role)
+      unmasked_player = self.state.players[unmask]
+      self.state.seer.reveal_and_update(unmask, unmasked_player.role)
+      # Record seer verification in private memory
+      # Seer sees "Werewolf" or "Villager" side, not exact role
+      side = "Werewolf" if unmasked_player.role == "Werewolf" else "Villager"
+      self.state.seer.memory_manager.add_seer_verification(unmask, side)
     else:
       raise ValueError("Unmask function did not return a valid player.")
-
-  def _get_bid(self, player_name):
-    """Gets the bid for a specific player."""
-    player = self.state.players[player_name]
-    bid, log = player.bid()
-    if bid is None:
-      raise ValueError(
-          f"{player_name} did not return a valid bid. Find the raw response"
-          " in the `bid` field in the log"
-      )
-    if bid > 1:
-      tqdm.tqdm.write(f"{player_name} bid: {bid}")
-    return bid, log
-
-  def get_next_speaker(self):
-    """Determine the next speaker based on bids."""
-    previous_speaker, previous_dialogue = (
-        self.this_round.debate[-1] if self.this_round.debate else (None, None)
-    )
-
-    with ThreadPoolExecutor(max_workers=self.num_threads) as executor:
-      player_bids = {
-          player_name: executor.submit(self._get_bid, player_name)
-          for player_name in self.this_round.players
-          if player_name != previous_speaker
-      }
-
-      bid_log = []
-      bids = {}
-      try:
-        for player_name, bid_task in player_bids.items():
-          bid, log = bid_task.result()
-          bids[player_name] = bid
-          bid_log.append((player_name, log))
-      except TypeError as e:
-        print(e)
-        raise e
-
-    self.this_round.bids.append(bids)
-    self.this_round_log.bid.append(bid_log)
-
-    potential_speakers = get_max_bids(bids)
-    # Prioritize mentioned speakers if there's previous dialogue
-    if previous_dialogue:
-      potential_speakers.extend(
-          [name for name in potential_speakers if name in previous_dialogue]
-      )
-
-    random.shuffle(potential_speakers)
-    return random.choice(potential_speakers)
 
   def run_summaries(self):
     """Collect summaries from players after the debate."""
@@ -177,15 +131,126 @@ class GameMaster:
         tqdm.tqdm.write(f"{player_name} summary: {summary}")
         self.this_round_log.summaries.append((player_name, log))
 
+  def _log_bias_reflection(self, player_name: str, role: str, round_num: int, 
+                          turn_idx: int, bias_self_report: dict, reflection_summary: str):
+    """Log bias self-report from reflection to game_analysis_log.jsonl file."""
+    log_entry = {
+        "timestamp": datetime.now().isoformat(),
+        "game_session": self.state.session_id,
+        "round": round_num,
+        "turn": turn_idx,
+        "player": player_name,
+        "role": role,
+        "type": "bias_reflection",
+        "reflection_summary": reflection_summary,
+        "bias_self_report": bias_self_report
+    }
+    
+    log_file = "game_analysis_log.jsonl"
+    try:
+      with open(log_file, "a", encoding="utf-8") as f:
+        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+    except Exception as e:
+      tqdm.tqdm.write(f"Warning: Failed to write bias reflection log: {e}")
+
+  def _get_starting_speaker(self) -> str:
+    """Determine the starting speaker for the day phase.
+    
+    Returns the player after the eliminated player, or the first player
+    if no one was eliminated during the night.
+    """
+    eliminated_player = self.this_round.eliminated
+    
+    # If no one was eliminated, start from the first player
+    if not eliminated_player or eliminated_player not in self.initial_player_order:
+      # Find the first player in initial order who is still alive
+      for player_name in self.initial_player_order:
+        if player_name in self.this_round.players:
+          return player_name
+      # Fallback: return first player in current players list
+      return self.this_round.players[0] if self.this_round.players else None
+    
+    # Find the eliminated player's position in initial order
+    try:
+      eliminated_idx = self.initial_player_order.index(eliminated_player)
+    except ValueError:
+      # Eliminated player not in initial order (shouldn't happen), fallback to first
+      return self.this_round.players[0] if self.this_round.players else None
+    
+    # Find the next player after eliminated player who is still alive
+    for i in range(eliminated_idx + 1, len(self.initial_player_order)):
+      next_player = self.initial_player_order[i]
+      if next_player in self.this_round.players:
+        return next_player
+    
+    # Wrap around: start from beginning if eliminated was last
+    for i in range(eliminated_idx):
+      next_player = self.initial_player_order[i]
+      if next_player in self.this_round.players:
+        return next_player
+    
+    # Fallback: return first player in current players list
+    return self.this_round.players[0] if self.this_round.players else None
+
   def run_day_phase(self):
-    """Run the day phase which consists of the debate and voting."""
-
-    for idx in range(MAX_DEBATE_TURNS):
-      next_speaker = self.get_next_speaker()
-      if not next_speaker:
-        raise ValueError("get_next_speaker did not return a valid player.")
-
+    """Run the day phase which consists of the debate and voting.
+    
+    Each player speaks once in order, starting from the player after
+    the eliminated player (or first player if no one was eliminated).
+    """
+    # Add day timestamp to all players' memory
+    for name in self.this_round.players:
+      player = self.state.players[name]
+      if player.memory_manager:
+        player.memory_manager.add_day_timestamp(self.current_round_num)
+    
+    # Determine starting speaker
+    starting_speaker = self._get_starting_speaker()
+    if not starting_speaker:
+      raise ValueError("No valid starting speaker found.")
+    
+    # Get the order of players starting from starting_speaker
+    starting_idx = self.initial_player_order.index(starting_speaker)
+    speaking_order = []
+    
+    # Add players from starting position to end
+    for i in range(starting_idx, len(self.initial_player_order)):
+      player_name = self.initial_player_order[i]
+      if player_name in self.this_round.players:
+        speaking_order.append(player_name)
+    
+    # Wrap around: add players from beginning to starting position
+    for i in range(starting_idx):
+      player_name = self.initial_player_order[i]
+      if player_name in self.this_round.players:
+        speaking_order.append(player_name)
+    
+    # Each player speaks once
+    for idx, next_speaker in enumerate(speaking_order):
       player = self.state.players[next_speaker]
+      
+      # Trigger reflection before speaking
+      if player.memory_manager and player.gamestate:
+        reflection_result = player.memory_manager.reflect(
+            player_role=player.role,
+            current_round=self.current_round_num,
+            remaining_players=self.this_round.players,
+            model=player.model,
+            generate_func=generate
+        )
+        
+        # Log bias self-report to game_analysis_log.jsonl
+        if reflection_result and reflection_result.get("bias_self_report"):
+          bias_report = reflection_result["bias_self_report"]
+          self._log_bias_reflection(
+              player_name=next_speaker,
+              role=player.role,
+              round_num=self.current_round_num,
+              turn_idx=idx,
+              bias_self_report=bias_report,
+              reflection_summary=reflection_result.get("reflection_summary", "")
+          )
+      
       dialogue, log = player.debate()
       if dialogue is None:
         raise ValueError(
@@ -196,19 +261,21 @@ class GameMaster:
       self.this_round.debate.append([next_speaker, dialogue])
       tqdm.tqdm.write(f"{next_speaker} ({player.role}): {dialogue}")
 
+      # Update game state and memory for all players
       for name in self.this_round.players:
-        player = self.state.players[name]
-        if player.gamestate:
-          player.gamestate.update_debate(next_speaker, dialogue)
+        p = self.state.players[name]
+        if p.gamestate:
+          p.gamestate.update_debate(next_speaker, dialogue)
+          # Update memory manager for all players (they all hear the dialogue)
+          p.memory_manager.add_dialogue(next_speaker, dialogue)
         else:
           raise ValueError(f"{name}.gamestate needs to be initialized.")
 
-      if idx == MAX_DEBATE_TURNS - 1 or RUN_SYNTHETIC_VOTES:
-        # 投票前：每个 agent 做角色反思（role/reasoning/confidence/evidence），写入 log
-        self.run_deductions()
-        votes, vote_logs = self.run_voting()
-        self.this_round.votes.append(votes)
-        self.this_round_log.votes.append(vote_logs)
+    # After all players have spoken, run deductions and voting
+    self.run_deductions()
+    votes, vote_logs = self.run_voting()
+    self.this_round.votes.append(votes)
+    self.this_round_log.votes.append(vote_logs)
 
     for player, vote in self.this_round.votes[-1].items():
       tqdm.tqdm.write(f"{player} voted to remove {vote}")
@@ -268,6 +335,13 @@ class GameMaster:
     if vote_count > len(self.this_round.players) / 2:
       self.this_round.exiled = most_voted
 
+    # Record vote records in all players' memory (before exile)
+    votes_dict = self.this_round.votes[-1]
+    for name in self.this_round.players:
+      player = self.state.players[name]
+      if player.memory_manager:
+        player.memory_manager.add_vote_records(votes_dict)
+
     if self.this_round.exiled is not None:
       exiled_player = self.this_round.exiled
       if exiled_player in self.this_round.players:
@@ -275,6 +349,12 @@ class GameMaster:
       announcement = (
           f"The majority voted to remove {exiled_player} from the game."
       )
+      # Record death report for exiled player
+      for name in self.this_round.players:
+        player = self.state.players[name]
+        if player.memory_manager:
+          player.memory_manager.add_death_report(exiled_player, cause="vote")
+          player.memory_manager.update_player_status(exiled_player, False)
     else:
       announcement = (
           "A majority vote was not reached, so no one was removed from the"
@@ -299,6 +379,12 @@ class GameMaster:
           f"The Werewolves removed {eliminated_player} from the game during the"
           " night."
       )
+      # Record death report in all players' memory
+      for name in self.this_round.players:
+        player = self.state.players[name]
+        if player.memory_manager:
+          player.memory_manager.add_death_report(eliminated_player, cause="night")
+          player.memory_manager.update_player_status(eliminated_player, False)
     else:
       announcement = "No one was removed from the game during the night."
     tqdm.tqdm.write(announcement)
@@ -316,10 +402,25 @@ class GameMaster:
 
     if self.current_round_num == 0:
       self.this_round.players = list(self.state.players.keys())
+      # Store initial player order on first round
+      self.initial_player_order = list(self.state.players.keys())
+      # Initialize all players as alive in belief_matrix
+      for player_name in self.this_round.players:
+        for player in self.state.players.values():
+          if player.memory_manager:
+            player.memory_manager.update_player_status(player_name, True)
     else:
       self.this_round.players = list(
           self.state.rounds[self.current_round_num - 1].players
       )
+      # Ensure initial_player_order is set (for resume games)
+      if not hasattr(self, 'initial_player_order') or not self.initial_player_order:
+        # Try to reconstruct from first round if available
+        if self.state.rounds and len(self.state.rounds) > 0:
+          # Use all players from state (including eliminated ones)
+          self.initial_player_order = list(self.state.players.keys())
+        else:
+          self.initial_player_order = list(self.state.players.keys())
 
     for action, message in [
         (
@@ -373,6 +474,8 @@ class GameMaster:
               self.current_round_num + 1
           )
           self.state.players[name].gamestate.clear_debate()
+          # Clear short-term memory at end of round
+          self.state.players[name].memory_manager.clear_short_term()
       self.current_round_num += 1
 
     tqdm.tqdm.write("Game is complete!")

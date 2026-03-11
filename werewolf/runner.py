@@ -32,13 +32,14 @@ from werewolf.model import State
 from werewolf.model import Villager
 from werewolf.model import WEREWOLF
 from werewolf.model import Werewolf
-from werewolf.config import get_player_names, get_demographic
+from werewolf.config import get_player_names, get_demographic, ANONYMOUS_MODE, ANONYMOUS_MODE
 
 _RUN_GAME = flags.DEFINE_boolean("run", False, "Runs a single game.")
 _RESUME = flags.DEFINE_boolean("resume", False, "Resumes games.")
 _EVAL = flags.DEFINE_boolean("eval", False, "Collect eval data by running many games.")
+_BATCH = flags.DEFINE_boolean("batch", False, "Run multiple games in batch mode.")
 _NUM_GAMES = flags.DEFINE_integer(
-    "num_games", 2, "Number of games to run used with eval."
+    "num_games", 2, "Number of games to run used with eval or batch mode."
 )
 _VILLAGER_MODELS = flags.DEFINE_list(
     "v_models", "", "The model used for villagers values are: gpt4o, gpt4o, gpt4o"
@@ -76,28 +77,35 @@ def initialize_players(
     seer = Seer(name=_sn, model=villager_model, demographic=get_demographic(_sn))
     _dn = player_names.pop()
     doctor = Doctor(name=_dn, model=villager_model, demographic=get_demographic(_dn))
-    _w_names = [player_names.pop() for _ in range(2)]
+    _w_names = [player_names.pop() for _ in range(3)]
     werewolves = [Werewolf(name=nm, model=werewolf_model, demographic=get_demographic(nm)) for nm in _w_names]
     villagers = [Villager(name=name, model=villager_model, demographic=get_demographic(name)) for name in player_names]
 
     all_players = [seer, doctor] + werewolves + villagers
-    player_introductions = [f"- {p.name}: {p.demographic}" for p in all_players]
+    # 匿名模式下不显示 demographic 信息
+    if ANONYMOUS_MODE:
+        player_introductions = [f"- {p.name}" for p in all_players]
+    else:
+        player_introductions = [f"- {p.name}: {p.demographic}" for p in all_players]
 
     # Initialize game view for all players
     current_players_list = [seer.name, doctor.name] + [w.name for w in werewolves] + [v.name for v in villagers]
     for player in all_players:
-        other_wolf = (
-            next((w.name for w in werewolves if w != player), None)
-            if isinstance(player, Werewolf)
-            else None
-        )
+        if isinstance(player, Werewolf):
+            # Get all other werewolves as companions
+            other_wolves = [w.name for w in werewolves if w != player]
+        else:
+            other_wolves = None
         tqdm.tqdm.write(f"{player.name} has role {player.role}")
         player.initialize_game_view(
             current_players=current_players_list,
             round_number=0,
-            other_wolf=other_wolf,
+            other_wolf=other_wolves[0] if other_wolves else None,  # Keep for backward compatibility
             player_introductions=player_introductions,
         )
+        # Store all werewolf companions if player is a werewolf
+        if isinstance(player, Werewolf) and hasattr(player.gamestate, 'other_wolves'):
+            player.gamestate.other_wolves = other_wolves
 
     return seer, doctor, villagers, werewolves
 
@@ -113,10 +121,17 @@ def resume_game(directory: str) -> bool:
     # Reset the error state
     state.error_message = ""
 
-    player_introductions = [
-        f"- {name}: {state.players[name].demographic}"
-        for name in state.players
-    ]
+    # 匿名模式下不显示 demographic 信息
+    if ANONYMOUS_MODE:
+        player_introductions = [
+            f"- {name}"
+            for name in state.players
+        ]
+    else:
+        player_introductions = [
+            f"- {name}: {state.players[name].demographic}"
+            for name in state.players
+        ]
     if not state.rounds:
         werewolves = []
         for p in state.players.values():
@@ -133,9 +148,12 @@ def resume_game(directory: str) -> bool:
             if p.role == SEER:
                 p.previously_unmasked = {}
 
-        if len(werewolves) == 2:
-            werewolves[0].gamestate.other_wolf = werewolves[1].name
-            werewolves[1].gamestate.other_wolf = werewolves[0].name
+        # Set up werewolf companions
+        for i, wolf in enumerate(werewolves):
+            other_wolves = [w.name for w in werewolves if w != wolf]
+            if wolf.gamestate:
+                wolf.gamestate.other_wolf = other_wolves[0] if other_wolves else None
+                wolf.gamestate.other_wolves = other_wolves
     else:
         # Update the GameView for every active player
         werewolves = []
@@ -169,9 +187,12 @@ def resume_game(directory: str) -> bool:
                                 unmasking_history[r.unmasked] = unmasked_player.role
                     player.previously_unmasked = unmasking_history
 
-        if len(werewolves) == 2:
-            werewolves[0].gamestate.other_wolf = werewolves[1].name
-            werewolves[1].gamestate.other_wolf = werewolves[0].name
+        # Set up werewolf companions
+        for i, wolf in enumerate(werewolves):
+            other_wolves = [w.name for w in werewolves if w != wolf]
+            if wolf.gamestate:
+                wolf.gamestate.other_wolf = other_wolves[0] if other_wolves else None
+                wolf.gamestate.other_wolves = other_wolves
 
     gm = game.GameMaster(state, num_threads=_THREADS.value)
     gm.logs = logs
@@ -284,5 +305,50 @@ def run() -> None:
         df.to_csv(csv_file)
         print(f"Wrote eval results to {csv_file}")
 
+    elif _BATCH.value:
+        # Batch mode: run multiple games with the same model combination
+        villager_model, werewolf_model = model_combinations[0]
+        num_games = _NUM_GAMES.value
+        print(f"Batch mode: Running {num_games} games")
+        print(f"Villagers: {villager_model} versus Werewolves: {werewolf_model}")
+        
+        results = []
+        for i in tqdm.tqdm(range(num_games), desc="Batch Games"):
+            winner, log_dir = run_game(
+                werewolf_model=werewolf_model,
+                villager_model=villager_model,
+            )
+            results.append({
+                "game_number": i + 1,
+                "villager_model": villager_model,
+                "werewolf_model": werewolf_model,
+                "winner": winner,
+                "log_directory": log_dir
+            })
+        
+        # Print summary
+        print("\n" + "=" * 60)
+        print("Batch Run Summary:")
+        print("=" * 60)
+        winner_counts = {}
+        for result in results:
+            winner = result["winner"] or "Unknown"
+            winner_counts[winner] = winner_counts.get(winner, 0) + 1
+        
+        for winner, count in sorted(winner_counts.items(), key=lambda x: x[1], reverse=True):
+            percentage = (count / num_games) * 100
+            print(f"{winner}: {count} games ({percentage:.1f}%)")
+        
+        print(f"\nTotal games: {num_games}")
+        print("=" * 60)
+        
     elif _RESUME.value:
         resume_games(RESUME_DIRECTORIES)
+    else:
+        # Default behavior: run a single game if no flag is set
+        villager_model, werewolf_model = model_combinations[0]
+        print(f"Villagers: {villager_model} versus Werewolves: {werewolf_model}")
+        run_game(
+            werewolf_model=werewolf_model,
+            villager_model=villager_model,
+        )

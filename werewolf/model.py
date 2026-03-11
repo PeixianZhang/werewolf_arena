@@ -24,6 +24,7 @@ from werewolf.prompts import (
     DEDUCTION_REFLECTION_SCHEMA,
 )
 from werewolf.utils import Deserializable
+from werewolf.memory import MemoryManager
 from werewolf.config import  MAX_DEBATE_TURNS, NUM_PLAYERS
 
 # Role names
@@ -85,7 +86,8 @@ class GameView:
     self.round_number: int = round_number
     self.current_players: List[str] = current_players
     self.debate: List[tuple[str, str]] = []
-    self.other_wolf: Optional[str] = other_wolf
+    self.other_wolf: Optional[str] = other_wolf  # Kept for backward compatibility
+    self.other_wolves: List[str] = []  # List of all other werewolf companions
     self.player_introductions: List[str] = player_introductions or []
 
   def update_debate(self, author: str, dialogue: str):
@@ -133,8 +135,8 @@ class Player(Deserializable):
     self.demographic = demographic or ""
     self.model = model
     self.observations: List[str] = []
-    self.bidding_rationale = ""
     self.gamestate: Optional[GameView] = None
+    self.memory_manager: MemoryManager = MemoryManager(name)
 
   def initialize_game_view(
       self, round_number, current_players, other_wolf=None, player_introductions=None
@@ -190,13 +192,12 @@ class Player(Deserializable):
         "observations": formatted_observations,
         "remaining_players": ", ".join(remaining_players),
         "debate": formatted_debate,
-        "bidding_rationale": self.bidding_rationale,
         "debate_turns_left": MAX_DEBATE_TURNS - len(formatted_debate),
         "personality": self.personality,
         "demographic": self.demographic,
         "character_introductions": character_introductions,
         "num_players": NUM_PLAYERS,
-        "num_villagers": NUM_PLAYERS - 4,
+        "num_villagers": NUM_PLAYERS - 5,  # 3 Werewolves + 1 Seer + 1 Doctor
     }
 
   def _generate_action(
@@ -210,9 +211,18 @@ class Player(Deserializable):
       game_state["options"] = (", ").join(options)
     prompt_template, response_schema = ACTION_PROMPTS_AND_SCHEMAS[action]
 
+    # Add memory context for debate action
+    if action == "debate" and self.gamestate:
+      remaining_players = self.gamestate.current_players
+      memory_context = self.memory_manager.get_context(
+          current_round=self.gamestate.round_number,
+          remaining_players=remaining_players
+      )
+      game_state["memory_context"] = memory_context
+
     result_key, allowed_values = (
         (action, options)
-        if action in ["vote", "remove", "investigate", "protect", "bid"]
+        if action in ["vote", "remove", "investigate", "protect"]
         else (None, None)
     )
 
@@ -280,14 +290,6 @@ class Player(Deserializable):
       )
     return vote, log
 
-  def bid(self) -> tuple[int | None, LmLog]:
-    """Place a bid."""
-    bid, log = self._generate_action("bid", options=["0", "1", "2", "3", "4"])
-    if bid is not None:
-      bid = int(bid)
-      self.bidding_rationale = log.result.get("reasoning", "")
-    return bid, log
-
   def debate(self) -> tuple[str | None, LmLog]:
     """Engage in the debate."""
     result, log = self._generate_action("debate", [])
@@ -319,8 +321,9 @@ class Player(Deserializable):
     demographic = data.get("demographic", "")
     o = cls(name=name, role=role, model=model, personality=personality, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
-    o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
+    if "memory_manager" in data:
+      o.memory_manager = MemoryManager.from_dict(data["memory_manager"])
     return o
 
 
@@ -345,8 +348,9 @@ class Villager(Player):
     demographic = data.get("demographic", "")
     o = cls(name=name, model=model, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
-    o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
+    if "memory_manager" in data:
+      o.memory_manager = MemoryManager.from_dict(data["memory_manager"])
     return o
 
 
@@ -377,10 +381,15 @@ class Werewolf(Player):
           "GameView not initialized. Call initialize_game_view() first."
       )
 
+    # Get all other werewolves to exclude from elimination targets
+    other_wolves = getattr(self.gamestate, 'other_wolves', [])
+    if not other_wolves and self.gamestate.other_wolf:
+      other_wolves = [self.gamestate.other_wolf]
+    
     options = [
         player
         for player in self.gamestate.current_players
-        if player != self.name and player != self.gamestate.other_wolf
+        if player != self.name and player not in other_wolves
     ]
     random.shuffle(options)
     if not options:
@@ -397,14 +406,21 @@ class Werewolf(Player):
           "GameView not initialized. Call initialize_game_view() first."
       )
 
-    if self.gamestate.other_wolf in self.gamestate.current_players:
-      context = f"\n- The other Werewolf is {self.gamestate.other_wolf}."
+    # Get all other werewolves (use other_wolves if available, otherwise fallback to other_wolf)
+    other_wolves = getattr(self.gamestate, 'other_wolves', [])
+    if not other_wolves and self.gamestate.other_wolf:
+      other_wolves = [self.gamestate.other_wolf]
+    
+    alive_wolves = [w for w in other_wolves if w in self.gamestate.current_players]
+    
+    if len(alive_wolves) == 0:
+      context = "\n- All your fellow Werewolves have been exiled. Only you remain."
+    elif len(alive_wolves) == 1:
+      context = f"\n- Your fellow Werewolf is {alive_wolves[0]}."
     else:
-      context = (
-          f"\n- The other Werewolf, {self.gamestate.other_wolf}, was exiled by"
-          " the Villagers. Only you remain."
-      )
-
+      wolves_list = ", ".join(alive_wolves[:-1]) + f", and {alive_wolves[-1]}"
+      context = f"\n- Your fellow Werewolves are {wolves_list}."
+    
     return context
 
   @classmethod
@@ -414,8 +430,9 @@ class Werewolf(Player):
     demographic = data.get("demographic", "")
     o = cls(name=name, model=model, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
-    o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
+    if "memory_manager" in data:
+      o.memory_manager = MemoryManager.from_dict(data["memory_manager"])
     return o
 
 
@@ -461,8 +478,9 @@ class Seer(Player):
     o = cls(name=name, model=model, demographic=demographic)
     o.previously_unmasked = data.get("previously_unmasked", {})
     o.gamestate = data.get("gamestate", None)
-    o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
+    if "memory_manager" in data:
+      o.memory_manager = MemoryManager.from_dict(data["memory_manager"])
     return o
 
 
@@ -501,8 +519,9 @@ class Doctor(Player):
     demographic = data.get("demographic", "")
     o = cls(name=name, model=model, demographic=demographic)
     o.gamestate = data.get("gamestate", None)
-    o.bidding_rationale = data.get("bidding_rationale", "")
     o.observations = data.get("observations", [])
+    if "memory_manager" in data:
+      o.memory_manager = MemoryManager.from_dict(data["memory_manager"])
     return o
 
 
@@ -519,7 +538,6 @@ class Round(Deserializable):
       debate.
     votes:  Who each player voted to exile after each line of dialogue in the
       debate.
-    bids: What each player bid to speak next during each turn in the debate.
     success (bool): Indicates whether the round was completed successfully.
 
   Methods:
@@ -534,7 +552,6 @@ class Round(Deserializable):
     self.exiled: str | None = None
     self.debate: List[Tuple[str, str]] = []
     self.votes: List[Dict[str, str]] = []
-    self.bids: List[Dict[str, int]] = []
     self.success: bool = False
 
   def to_dict(self):
@@ -550,7 +567,6 @@ class Round(Deserializable):
     o.exiled = data.get("exiled", None)
     o.debate = data.get("debate", [])
     o.votes = data.get("votes", [])
-    o.bids = data.get("bids", [])
     o.success = data.get("success", False)
     return o
 
@@ -659,11 +675,6 @@ class RoundLog(Deserializable):
     eliminate: Logs from the eliminate action taken by werewolves.
     investigate: Log from the invesetigate action taken by the seer.
     protect: Log from the protect action taken by the doctor.
-    bid: Logs from the bidding actions. The 1st element in the list is the bidding logs
-      for the 1st debate turn, the 2nd element is the logs for the 2nd debate
-      turn, and so on. Every player bids to speak on every turn, so the element
-      is a list too. The tuple contains the name of the player and the log of
-      their bidding.
     debate: Logs of the debates. Each round has multiple debate turbns, so it's a
       list. Each element is a tuple - the 1st element is the name of the player
       who spoke at this turn, and the 2nd element is the log.
@@ -683,7 +694,6 @@ class RoundLog(Deserializable):
     self.eliminate: LmLog | None = None
     self.investigate: LmLog | None = None
     self.protect: LmLog | None = None
-    self.bid: List[List[Tuple[str, LmLog]]] = []
     self.debate: List[Tuple[str, LmLog]] = []
     self.votes: List[List[VoteLog]] = []
     self.summaries: List[Tuple[str, LmLog]] = []
@@ -712,12 +722,6 @@ class RoundLog(Deserializable):
       o.votes.append(v_logs)
       for v in votes:
         v_logs.append(VoteLog.from_json(v))
-
-    for r in data.get("bid", []):
-      r_logs = []
-      o.bid.append(r_logs)
-      for player in r:
-        r_logs.append((player[0], LmLog.from_json(player[1])))
 
     for player in data.get("debate", []):
       o.debate.append((player[0], LmLog.from_json(player[1])))
