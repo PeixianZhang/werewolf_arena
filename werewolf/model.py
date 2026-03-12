@@ -17,7 +17,7 @@ import json
 import random
 from typing import Any, Dict, List, Optional, Tuple, Union
 
-from werewolf.lm import LmLog, generate
+from werewolf.lm import LmLog, generate, format_prompt
 from werewolf.prompts import (
     ACTION_PROMPTS_AND_SCHEMAS,
     DEDUCTION_REFLECTION,
@@ -197,7 +197,7 @@ class Player(Deserializable):
         "demographic": self.demographic,
         "character_introductions": character_introductions,
         "num_players": NUM_PLAYERS,
-        "num_villagers": NUM_PLAYERS - 5,  # 3 Werewolves + 1 Seer + 1 Doctor
+        "num_villagers": NUM_PLAYERS - 4,  # 2 Werewolves + 1 Seer + 1 Doctor
     }
 
   def _generate_action(
@@ -211,8 +211,8 @@ class Player(Deserializable):
       game_state["options"] = (", ").join(options)
     prompt_template, response_schema = ACTION_PROMPTS_AND_SCHEMAS[action]
 
-    # Add memory context for debate action
-    if action == "debate" and self.gamestate:
+    # Add memory context for debate and vote actions
+    if action in ["debate", "vote"] and self.gamestate:
       remaining_players = self.gamestate.current_players
       memory_context = self.memory_manager.get_context(
           current_round=self.gamestate.round_number,
@@ -241,6 +241,14 @@ class Player(Deserializable):
 
   def reflect_on_roles(self) -> tuple[Dict[str, Any], LmLog]:
     """Reflect on hidden roles of remaining players; return (full result with 'deductions', LmLog)."""
+    # #region agent log
+    import json
+    try:
+      with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+        f.write(json.dumps({"location":"model.py:242","message":"reflect_on_roles() entry","data":{"player":self.name,"has_gamestate":self.gamestate is not None}})+'\n')
+    except:
+      pass
+    # #endregion
     if not self.gamestate:
       raise ValueError(
           "GameView not initialized. Call initialize_game_view() first."
@@ -250,9 +258,45 @@ class Player(Deserializable):
     if not remaining_players:
       return ({"deductions": []}, LmLog(prompt="", raw_resp="", result={"deductions": []}))
 
-    observations = game_state.get("observations", [])
-    debate = game_state.get("debate", [])
-    key_items = list(observations) + list(debate)
+    # Simplified approach: Use MemoryManager to generate key_information directly from short_term
+    if self.memory_manager:
+      current_debate = game_state.get("debate", [])
+      # Generate key_information directly from short_term (includes private memory)
+      key_items = self.memory_manager.generate_key_information(
+          current_round=self.gamestate.round_number,
+          current_debate=current_debate
+      )
+    else:
+      # Fallback to legacy system if memory_manager not available
+      observations = game_state.get("observations", [])
+      debate = game_state.get("debate", [])
+      # Fix: Handle both formatted strings and tuples
+      debate_items = []
+      if debate:
+        if isinstance(debate[0], str):
+          # debate is already formatted strings
+          debate_items = debate
+        elif isinstance(debate[0], (list, tuple)) and len(debate[0]) >= 2:
+          # debate is tuples/lists, need to format
+          debate_items = [f"{item[0]}: {item[1]}" for item in debate]
+        else:
+          # Unknown format, try to handle gracefully
+          debate_items = [str(item) for item in debate]
+      # Flatten formatted observations
+      flattened_obs = []
+      for obs in observations:
+        if isinstance(obs, str):
+          lines = obs.split('\n')
+          flattened_obs.extend([line.strip() for line in lines if line.strip()])
+        else:
+          flattened_obs.append(str(obs))
+      key_items = flattened_obs + debate_items
+    
+    # Ensure we have at least some information
+    if not key_items:
+      # Add a default message if no information available
+      key_items = [f"Round {self.gamestate.round_number}: No previous observations available."]
+    
     key_information = [f"{i + 1}. {item}" for i, item in enumerate(key_items)]
 
     worldstate = {
@@ -260,16 +304,112 @@ class Player(Deserializable):
         "remaining_players": ", ".join(remaining_players),
         "key_information": key_information,
     }
-    result, log = generate(
-        DEDUCTION_REFLECTION,
-        DEDUCTION_REFLECTION_SCHEMA,
-        worldstate,
-        model=self.model,
-        temperature=0.5,
-    )
-    if result is None:
-      result = {"deductions": []}
-    return (result, log)
+    
+    try:
+      # #region agent log
+      import json
+      with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+        f.write(json.dumps({"location":"model.py:317","message":"Before generate() call","data":{"player":self.name,"round":self.gamestate.round_number}})+'\n')
+      # #endregion
+      generate_result = generate(
+          DEDUCTION_REFLECTION,
+          DEDUCTION_REFLECTION_SCHEMA,
+          worldstate,
+          model=self.model,
+          temperature=0.5,
+      )
+      # #region agent log
+      with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+        tuple_len = len(generate_result) if isinstance(generate_result, tuple) else None
+        f.write(json.dumps({"location":"model.py:325","message":"After generate() call","data":{"player":self.name,"generate_result_type":type(generate_result).__name__,"is_tuple":isinstance(generate_result, tuple),"tuple_len":tuple_len}})+'\n')
+      # #endregion
+      # Use index access instead of unpacking to avoid "too many values to unpack" errors
+      if isinstance(generate_result, tuple):
+        if len(generate_result) >= 2:
+          # Use index access, avoid unpacking errors
+          result = generate_result[0]
+          log = generate_result[1]
+          
+          # Ensure result is a dict with deductions key
+          if result is None:
+            result = {"deductions": []}
+          elif isinstance(result, str):
+            # If result is a string, try to parse it as JSON
+            try:
+              import json
+              parsed = json.loads(result)
+              if isinstance(parsed, dict):
+                result = parsed
+              else:
+                result = {"deductions": []}
+            except:
+              result = {"deductions": []}
+          elif not isinstance(result, dict):
+            # If result is not a dict, create empty deductions
+            result = {"deductions": []}
+          
+          # Ensure result has deductions key
+          if "deductions" not in result:
+            result = {"deductions": []}
+          
+          # Update belief_matrix from deduction result (simplified approach)
+          if self.memory_manager and result and "deductions" in result:
+            self.memory_manager.update_belief_from_deduction(result, remaining_players)
+          
+          # If there are extra elements, log a warning
+          if len(generate_result) > 2:
+            import json
+            try:
+              with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+                f.write(json.dumps({"location":"model.py:343","message":"generate() returned more than 2 elements","data":{"player":self.name,"length":len(generate_result)}})+'\n')
+            except:
+              pass
+        else:
+          # If length is less than 2, log error
+          import json
+          try:
+            with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+              f.write(json.dumps({"location":"model.py:343","message":"generate() returned tuple with less than 2 elements","data":{"player":self.name,"length":len(generate_result)}})+'\n')
+          except:
+            pass
+          result = {"deductions": []}
+          log = LmLog(prompt="", raw_resp=f"Error: generate() returned tuple of length {len(generate_result)}", result={"deductions": []})
+      else:
+        # #region agent log
+        with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+          f.write(json.dumps({"location":"model.py:338","message":"generate() returned non-tuple","data":{"player":self.name,"type":type(generate_result).__name__}})+'\n')
+        # #endregion
+        result = {"deductions": []}
+        log = LmLog(prompt="", raw_resp=f"Error: generate() returned {type(generate_result)}", result={"deductions": []})
+      
+      # Update belief_matrix from deduction result (simplified approach)
+      # Only update if we have a valid result with deductions
+      if self.memory_manager and result and isinstance(result, dict) and "deductions" in result:
+        self.memory_manager.update_belief_from_deduction(result, remaining_players)
+      
+      # #region agent log
+      with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+        f.write(json.dumps({"location":"model.py:345","message":"reflect_on_roles returning","data":{"player":self.name,"result_type":type(result).__name__,"log_type":type(log).__name__}})+'\n')
+      # #endregion
+      return (result, log)
+    except Exception as e:
+      # If generation fails, return empty deductions with error info
+      try:
+        prompt_text = format_prompt(DEDUCTION_REFLECTION, worldstate)
+        # Ensure prompt_text is a string, not a tuple
+        if isinstance(prompt_text, tuple):
+          prompt_text = str(prompt_text[0]) if prompt_text else ""
+        else:
+          prompt_text = str(prompt_text) if prompt_text else ""
+      except Exception as format_error:
+        prompt_text = f"Error formatting prompt: {str(format_error)}"
+      error_log = LmLog(
+          prompt=prompt_text,
+          raw_resp=f"Error: {str(e)}",
+          result={"deductions": []}
+      )
+      # Ensure we always return exactly 2 values: (result_dict, LmLog)
+      return ({"deductions": []}, error_log)
 
   def vote(self) -> tuple[str | None, LmLog]:
     """Vote for a player."""
@@ -305,7 +445,11 @@ class Player(Deserializable):
       summary = result.get("summary", None)
       if summary is not None:
         summary = summary.strip('"')
+        # Store in both legacy observations and MemoryManager
         self._add_observation(f"Summary: {summary}")
+        # Also store in MemoryManager as a system message for future reference
+        if self.memory_manager:
+          self.memory_manager.add_system_message(f"Summary: {summary}")
       return summary, log
     return result, log
 

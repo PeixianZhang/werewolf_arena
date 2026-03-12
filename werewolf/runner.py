@@ -52,13 +52,13 @@ _ARENA = flags.DEFINE_boolean(
 )
 _THREADS = flags.DEFINE_integer("threads", 2, "Number of threads to run.")
 
-DEFAULT_WEREWOLF_MODELS = ["gpt4o", "gpt5"]
-DEFAULT_VILLAGER_MODELS = ["gpt4o", "gpt5"]
+DEFAULT_WEREWOLF_MODELS = ["flash", "flash"]
+DEFAULT_VILLAGER_MODELS = ["flash", "flash"]
 RESUME_DIRECTORIES = []
 
 model_to_id = {
     "pro1.5": "gemini-1.5-pro-preview-0514",
-    "flash": "gemini-1.5-flash-001",
+    "flash": "gemini-2.5-flash",
     "pro1": "gemini-pro",
     "gpt5":"gpt-5",
     "gpt4o": "o4-mini",
@@ -77,7 +77,7 @@ def initialize_players(
     seer = Seer(name=_sn, model=villager_model, demographic=get_demographic(_sn))
     _dn = player_names.pop()
     doctor = Doctor(name=_dn, model=villager_model, demographic=get_demographic(_dn))
-    _w_names = [player_names.pop() for _ in range(3)]
+    _w_names = [player_names.pop() for _ in range(2)]
     werewolves = [Werewolf(name=nm, model=werewolf_model, demographic=get_demographic(nm)) for nm in _w_names]
     villagers = [Villager(name=name, model=villager_model, demographic=get_demographic(name)) for name in player_names]
 
@@ -264,8 +264,23 @@ def run_game(
 
 
 def run() -> None:
+    # #region agent log
+    import json
+    try:
+        with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+            f.write(json.dumps({"location":"runner.py:267","message":"run() entry","data":{"model_to_id_keys":list(model_to_id.keys()),"model_to_id":model_to_id},"runId":"initial","hypothesisId":"A,B,C,D"})+'\n')
+    except:
+        pass
+    # #endregion
     villager_models = _VILLAGER_MODELS.value or DEFAULT_VILLAGER_MODELS
     werewolf_models = _WEREWOLF_MODELS.value or DEFAULT_WEREWOLF_MODELS
+    # #region agent log
+    try:
+        with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+            f.write(json.dumps({"location":"runner.py:270","message":"Before model_to_id lookup","data":{"villager_models":villager_models,"werewolf_models":werewolf_models,"available_keys":list(model_to_id.keys())},"runId":"initial","hypothesisId":"A,B,C,D"})+'\n')
+    except:
+        pass
+    # #endregion
     v_ids = [model_to_id[m] for m in villager_models]
     w_ids = [model_to_id[m] for m in werewolf_models]
     model_combinations = list(itertools.product(v_ids, w_ids))

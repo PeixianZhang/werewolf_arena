@@ -1,0 +1,1273 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "Mason",
+        "role": "Seer",
+        "personality": null,
+        "demographic": "male, age 29, chef",
+        "model": "o4-mini",
+        "observations": [
+            "Round 0: During the night, I decided to investigate Derek and learned they are a Villager."
+        ],
+        "bidding_rationale": "",
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "Leah",
+                "Ginger",
+                "Hayley",
+                "Tyler"
+            ],
+            "debate": [],
+            "other_wolf": null,
+            "player_introductions": [
+                "- Mason: male, age 29, chef",
+                "- Leah: female, age 24, writer",
+                "- Ginger: female, age 42, nurse",
+                "- Hayley: female, age 30, lawyer",
+                "- Derek: male, age 28, software engineer",
+                "- Tyler: male, age 25, artist",
+                "- Scott: male, age 35, teacher",
+                "- Jackson: male, age 33, entrepreneur"
+            ]
+        },
+        "memory_manager": {
+            "player_name": "Mason",
+            "short_term": [],
+            "belief_matrix": {},
+            "evidence_archive": []
+        },
+        "previously_unmasked": {
+            "Derek": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "Leah",
+        "role": "Doctor",
+        "personality": null,
+        "demographic": "female, age 24, writer",
+        "model": "o4-mini",
+        "observations": [
+            "Round 0: During the night, I chose to protect Ginger",
+            "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+            "Round 0: Summary: I noticed Derek aggressively steering the debate\u2014controlling the order felt off. Tyler immediately flagged Jackson\u2019s silence as suspicious, and Jackson then got defensive, arguing for a strict lineup. Ginger turned the spotlight on me, suggesting my quiet equals deception. Hayley called out Derek\u2019s behavior as more questionable than anyone\u2019s silence. I suggested returning to Derek\u2019s original speaking flow to reduce conflict. I\u2019m wary of Derek\u2019s controlling style and Ginger\u2019s targeting of me. Tyler and Hayley seem more measured. No one has claimed a special role yet, so I\u2019ll watch for any Seer\u2010style questions next round.",
+            "Round 1: During the night, I chose to protect Hayley",
+            "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+        ],
+        "bidding_rationale": "",
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "Leah",
+                "Ginger",
+                "Hayley",
+                "Tyler"
+            ],
+            "debate": [],
+            "other_wolf": null,
+            "player_introductions": [
+                "- Mason: male, age 29, chef",
+                "- Leah: female, age 24, writer",
+                "- Ginger: female, age 42, nurse",
+                "- Hayley: female, age 30, lawyer",
+                "- Derek: male, age 28, software engineer",
+                "- Tyler: male, age 25, artist",
+                "- Scott: male, age 35, teacher",
+                "- Jackson: male, age 33, entrepreneur"
+            ]
+        },
+        "memory_manager": {
+            "player_name": "Leah",
+            "short_term": [],
+            "belief_matrix": {
+                "Tyler": {
+                    "Werewolf": 0.1,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.0
+                },
+                "Jackson": {
+                    "Werewolf": 0.1,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.0
+                },
+                "Ginger": {
+                    "Werewolf": 0.1,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.0
+                },
+                "Hayley": {
+                    "Werewolf": 0.1,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.0
+                }
+            },
+            "evidence_archive": [
+                {
+                    "type": "logical_clash",
+                    "description": "Derek accuses Jackson of forcing order yet has been steering our flow himself",
+                    "players_involved": [
+                        "Leah"
+                    ],
+                    "round": 0,
+                    "weight": 0.5,
+                    "timestamp": 0
+                },
+                {
+                    "type": "logical_clash",
+                    "description": "Jackson accuses others of controlling flow yet repeats the same behavior",
+                    "players_involved": [
+                        "Leah"
+                    ],
+                    "round": 1,
+                    "weight": 0.8,
+                    "timestamp": 1
+                }
+            ]
+        }
+    },
+    "villagers": [
+        {
+            "name": "Derek",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 28, software engineer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [
+                    [
+                        "Derek",
+                        "Fellow villagers, we\u2019ve just lost Mason and all we have right now are questions. To gather clues, let\u2019s each share a quick gut feeling or first impression on who seems suspicious. I\u2019d like Hayley, Tyler, and Jackson to go first\u2014what stands out to you? Hearing everyone\u2019s initial thoughts will help us spot any hesitation or contradictions before we move toward a vote."
+                    ],
+                    [
+                        "Tyler",
+                        "I\u2019m curious about Jackson\u2014he\u2019s been completely quiet so far, and silence can be a tactic to avoid scrutiny. I\u2019ll be paying close attention to how he responds when we ask him directly."
+                    ],
+                    [
+                        "Scott",
+                        "Jackson, you\u2019ve been completely quiet so far\u2014what\u2019s your gut feeling on who seems most suspicious? Hayley, after Jackson please share yours. Then Tyler, Derek, and I will each give a one-sentence impression. Let\u2019s get everyone\u2019s quick take so we can spot any hesitation or contradictions."
+                    ],
+                    [
+                        "Jackson",
+                        "I noticed Tyler was first to point at me for being quiet\u2014and Scott immediately backed him up. Tyler, why is my silence more suspicious than anyone else\u2019s? And Scott, what makes you so certain? To keep things fair, let\u2019s go in a strict order: I\u2019ll start, then Hayley, Leah, Tyler, Derek, and finally Scott\u2014one sentence each on who you find most suspicious."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I understand wanting a strict lineup, but I actually think Derek\u2019s original order\u2014Hayley, then Tyler, then Jackson\u2014flows better. As for my one-sentence gut check: Leah has been completely silent, and that kind of quiet usually signals someone hiding something."
+                    ],
+                    [
+                        "Hayley",
+                        "Derek\u2019s insistence on controlling the speaking order seems more suspicious to me than Jackson\u2019s or Leah\u2019s silence\u2014why is he leading us so forcefully?"
+                    ],
+                    [
+                        "Leah",
+                        "I think we\u2019re getting tangled up in competing agendas more than actual evidence. Let\u2019s reset with Derek\u2019s original flow\u2014each of us gives a one-sentence gut feeling in the order Hayley, Tyler, Jackson, Leah (me), Derek, then Scott. Listening for hesitation or backtracking will tell us more than forcing a new \u201cstrict\u201d lineup. Hayley, why don\u2019t you go first?"
+                    ]
+                ],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Derek",
+                "short_term": [
+                    [
+                        "Derek",
+                        "Fellow villagers, we\u2019ve just lost Mason and all we have right now are questions. To gather clues, let\u2019s each share a quick gut feeling or first impression on who seems suspicious. I\u2019d like Hayley, Tyler, and Jackson to go first\u2014what stands out to you? Hearing everyone\u2019s initial thoughts will help us spot any hesitation or contradictions before we move toward a vote."
+                    ],
+                    [
+                        "Tyler",
+                        "I\u2019m curious about Jackson\u2014he\u2019s been completely quiet so far, and silence can be a tactic to avoid scrutiny. I\u2019ll be paying close attention to how he responds when we ask him directly."
+                    ],
+                    [
+                        "Scott",
+                        "Jackson, you\u2019ve been completely quiet so far\u2014what\u2019s your gut feeling on who seems most suspicious? Hayley, after Jackson please share yours. Then Tyler, Derek, and I will each give a one-sentence impression. Let\u2019s get everyone\u2019s quick take so we can spot any hesitation or contradictions."
+                    ],
+                    [
+                        "Jackson",
+                        "I noticed Tyler was first to point at me for being quiet\u2014and Scott immediately backed him up. Tyler, why is my silence more suspicious than anyone else\u2019s? And Scott, what makes you so certain? To keep things fair, let\u2019s go in a strict order: I\u2019ll start, then Hayley, Leah, Tyler, Derek, and finally Scott\u2014one sentence each on who you find most suspicious."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I understand wanting a strict lineup, but I actually think Derek\u2019s original order\u2014Hayley, then Tyler, then Jackson\u2014flows better. As for my one-sentence gut check: Leah has been completely silent, and that kind of quiet usually signals someone hiding something."
+                    ],
+                    [
+                        "Hayley",
+                        "Derek\u2019s insistence on controlling the speaking order seems more suspicious to me than Jackson\u2019s or Leah\u2019s silence\u2014why is he leading us so forcefully?"
+                    ],
+                    [
+                        "Leah",
+                        "I think we\u2019re getting tangled up in competing agendas more than actual evidence. Let\u2019s reset with Derek\u2019s original flow\u2014each of us gives a one-sentence gut feeling in the order Hayley, Tyler, Jackson, Leah (me), Derek, then Scott. Listening for hesitation or backtracking will tell us more than forcing a new \u201cstrict\u201d lineup. Hayley, why don\u2019t you go first?"
+                    ]
+                ],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Derek"
+                        ],
+                        "round": 0,
+                        "weight": 0.1,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tyler",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 25, artist",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I noted Derek\u2019s aggressive push to control the speaking order and Hayley\u2019s immediate challenge to that, which paints him as someone with a hidden agenda. I called out Jackson for his silence and he responded defensively, which could mean he\u2019s a wolf hiding his involvement or simply flustered. Ginger quickly pointed at Leah, and Leah responded by trying to calm everyone down, suggesting she values structure and fairness. Hayley zeroed in on Derek\u2019s insistence about process rather than evidence. I\u2019ll watch Derek\u2019s and Jackson\u2019s next moves closely, while Leah and Hayley seem like potential allies who value clear debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Tyler",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Tyler"
+                        ],
+                        "round": 0,
+                        "weight": 0.2,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson claims to want to catch wolves but suppresses open debate, a contradiction",
+                        "players_involved": [
+                            "Tyler"
+                        ],
+                        "round": 1,
+                        "weight": 0.6,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Scott",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 35, teacher",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I saw Tyler immediately target Jackson for being quiet, then I backed Tyler and asked Jackson for his gut feeling first. Jackson bristled and accused Tyler and me of ganging up, forcing us into his own speaking order. Ginger interrupted to restore Derek\u2019s original order and accused Leah of hiding behind her silence. Hayley then highlighted Derek\u2019s forceful approach as suspicious, and Leah agreed we should revert to Derek\u2019s lineup for clarity. I\u2019m flagging Derek\u2019s pushiness, Jackson\u2019s defensiveness, Ginger\u2019s focus on Leah, and Hayley\u2019s critique of Derek as my main notes going forward."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Scott",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": []
+            }
+        },
+        {
+            "name": "Jackson",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 33, entrepreneur",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I noticed Derek immediately tried to control the flow by imposing a speaking order, which made me suspicious of his motives. Tyler and Scott teamed up to single me out for my quiet, which felt coordinated. Ginger pointed at Leah\u2019s silence as suspicious, while Hayley zeroed in on Derek\u2019s forceful agenda rather than anyone\u2019s silence. Leah then proposed returning to Derek\u2019s original order to keep things fair. Overall, I see Derek, Tyler, and Scott acting as a bloc, Ginger and Hayley as more independent thinkers, and Leah staying quiet but engaged in procedural fairness.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [
+                    [
+                        "Jackson",
+                        "Everyone, let\u2019s structure our thoughts to catch the wolves. I suggest we go in this speaking order: Tyler, Ginger, Hayley, Leah, then me. Tyler, in Round 0 you and Scott quickly targeted me without hard evidence\u2014now Scott is gone. Can you explain what you saw to justify that focus? After Tyler, I want Ginger and Leah to share any gut reactions so we can see inconsistencies and spot who\u2019s hiding something."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I get the idea behind structuring our turns, but it gives you a lot of control over what info we share. I\u2019ll play along. My gut reaction is that Leah\u2019s been awfully quiet and too quick to nod along with Derek\u2019s and now your plans\u2014classic \u201cblend in\u201d wolf behavior. Hayley, I\u2019d like to hear your gut reaction next. Then Leah, can you explain why you jumped on Jackson\u2019s structure so fast?"
+                    ],
+                    [
+                        "Hayley",
+                        "My gut reaction is that Jackson\u2019s insistence on a rigid speaking order is far more suspicious than Leah\u2019s quiet nods\u2014controlling the flow often equals hiding something. Leah, if you\u2019re a true villager, why fall in line so easily? Let\u2019s hear from Tyler without this strict script and see who really panics."
+                    ],
+                    [
+                        "Leah",
+                        "Jackson, insisting on a strict lineup does little to catch wolves and much to control our discussion. I wasn\u2019t nodding out of blind agreement\u2014I\u2019ve been weighing each argument. Ginger, Hayley, blaming quietness is flimsy; wolves often lay low. Let\u2019s hear from Tyler next\u2014he gave us concrete points in Round 0\u2014and then focus on specific observations, not speaking order."
+                    ],
+                    [
+                        "Tyler",
+                        "Jackson, thanks for asking. In Round 0 my concern wasn\u2019t personal\u2014it was your behavior: you stayed silent until cornered, then tried to impose a rigid speaking order instead of addressing my points. That move to control the flow over content is exactly what wolves do to hide. I\u2019m not convinced you\u2019re innocent yet. Before we decide, Ginger and Hayley, what specific moments in Jackson\u2019s responses struck you as wolf-like? Leah, did you notice anything beyond his order proposal? We need substance, not structure."
+                    ]
+                ],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Jackson",
+                "short_term": [
+                    [
+                        "Jackson",
+                        "Everyone, let\u2019s structure our thoughts to catch the wolves. I suggest we go in this speaking order: Tyler, Ginger, Hayley, Leah, then me. Tyler, in Round 0 you and Scott quickly targeted me without hard evidence\u2014now Scott is gone. Can you explain what you saw to justify that focus? After Tyler, I want Ginger and Leah to share any gut reactions so we can see inconsistencies and spot who\u2019s hiding something."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I get the idea behind structuring our turns, but it gives you a lot of control over what info we share. I\u2019ll play along. My gut reaction is that Leah\u2019s been awfully quiet and too quick to nod along with Derek\u2019s and now your plans\u2014classic \u201cblend in\u201d wolf behavior. Hayley, I\u2019d like to hear your gut reaction next. Then Leah, can you explain why you jumped on Jackson\u2019s structure so fast?"
+                    ],
+                    [
+                        "Hayley",
+                        "My gut reaction is that Jackson\u2019s insistence on a rigid speaking order is far more suspicious than Leah\u2019s quiet nods\u2014controlling the flow often equals hiding something. Leah, if you\u2019re a true villager, why fall in line so easily? Let\u2019s hear from Tyler without this strict script and see who really panics."
+                    ],
+                    [
+                        "Leah",
+                        "Jackson, insisting on a strict lineup does little to catch wolves and much to control our discussion. I wasn\u2019t nodding out of blind agreement\u2014I\u2019ve been weighing each argument. Ginger, Hayley, blaming quietness is flimsy; wolves often lay low. Let\u2019s hear from Tyler next\u2014he gave us concrete points in Round 0\u2014and then focus on specific observations, not speaking order."
+                    ],
+                    [
+                        "Tyler",
+                        "Jackson, thanks for asking. In Round 0 my concern wasn\u2019t personal\u2014it was your behavior: you stayed silent until cornered, then tried to impose a rigid speaking order instead of addressing my points. That move to control the flow over content is exactly what wolves do to hide. I\u2019m not convinced you\u2019re innocent yet. Before we decide, Ginger and Hayley, what specific moments in Jackson\u2019s responses struck you as wolf-like? Leah, did you notice anything beyond his order proposal? We need substance, not structure."
+                    ]
+                ],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Tyler and Scott quickly targeted me without evidence",
+                        "players_involved": [
+                            "Jackson"
+                        ],
+                        "round": 0,
+                        "weight": 0.4,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Tyler and Scott\u2019s coordinated targeting in Round 0 clashes with lack of real evidence",
+                        "players_involved": [
+                            "Jackson"
+                        ],
+                        "round": 1,
+                        "weight": 0.4,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "Ginger",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 42, nurse",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mason.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I observed that Derek is aggressively trying to control our speaking order, which Hayley and I can potentially frame as over-eagerness to lead. Tyler and Scott both targeted Jackson for his silence, but Jackson pushed back defensively and proposed his own strict order. Leah remained largely quiet until now, quickly agreeing to reset Derek\u2019s flow without offering any real reasons\u2014she seems easily swayed. Hayley immediately questioned Derek\u2019s motives, positioning herself as a process watchdog. I weighed in by endorsing Derek\u2019s original order (to support our cover) and pointed at Leah\u2019s silence, potentially drawing her out.",
+                "Round 1: During the night, we decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": "Hayley",
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Ginger",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson\u2019s proposed order vs. Derek\u2019s suggestion",
+                        "players_involved": [
+                            "Ginger"
+                        ],
+                        "round": 0,
+                        "weight": 0.8,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson calls for gut reactions to reveal inconsistencies while tightly controlling who speaks when",
+                        "players_involved": [
+                            "Ginger"
+                        ],
+                        "round": 1,
+                        "weight": 0.8,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hayley",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 30, lawyer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mason.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I noticed Derek pushing hard to control who speaks when\u2014that feels off and I called him out on it. Tyler and Scott both zeroed in on Jackson\u2019s silence, making him look defensive, and Jackson fired back aggressively by demanding a new rigid order. Ginger chimed in by accusing Leah of hiding behind her quietness. Leah then tried to diffuse the chaos and revert to Derek\u2019s flow, showing she\u2019s a moderating influence but also easy to sway. From my point of view, Derek and Jackson seem most suspicious, Leah is easily influenced, and Ginger is aligned with me.",
+                "Round 1: During the night, we decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": "Ginger",
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Hayley",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Derek\u2019s emphasis on discussion order clashes with his claim of unbiased inquiry",
+                        "players_involved": [
+                            "Hayley"
+                        ],
+                        "round": 0,
+                        "weight": 0.6,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson\u2019s strict turn-taking contradicts his claim of unbiased discussion",
+                        "players_involved": [
+                            "Hayley"
+                        ],
+                        "round": 1,
+                        "weight": 0.7,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        }
+    ],
+    "players": {
+        "Derek": {
+            "name": "Derek",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 28, software engineer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [
+                    [
+                        "Derek",
+                        "Fellow villagers, we\u2019ve just lost Mason and all we have right now are questions. To gather clues, let\u2019s each share a quick gut feeling or first impression on who seems suspicious. I\u2019d like Hayley, Tyler, and Jackson to go first\u2014what stands out to you? Hearing everyone\u2019s initial thoughts will help us spot any hesitation or contradictions before we move toward a vote."
+                    ],
+                    [
+                        "Tyler",
+                        "I\u2019m curious about Jackson\u2014he\u2019s been completely quiet so far, and silence can be a tactic to avoid scrutiny. I\u2019ll be paying close attention to how he responds when we ask him directly."
+                    ],
+                    [
+                        "Scott",
+                        "Jackson, you\u2019ve been completely quiet so far\u2014what\u2019s your gut feeling on who seems most suspicious? Hayley, after Jackson please share yours. Then Tyler, Derek, and I will each give a one-sentence impression. Let\u2019s get everyone\u2019s quick take so we can spot any hesitation or contradictions."
+                    ],
+                    [
+                        "Jackson",
+                        "I noticed Tyler was first to point at me for being quiet\u2014and Scott immediately backed him up. Tyler, why is my silence more suspicious than anyone else\u2019s? And Scott, what makes you so certain? To keep things fair, let\u2019s go in a strict order: I\u2019ll start, then Hayley, Leah, Tyler, Derek, and finally Scott\u2014one sentence each on who you find most suspicious."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I understand wanting a strict lineup, but I actually think Derek\u2019s original order\u2014Hayley, then Tyler, then Jackson\u2014flows better. As for my one-sentence gut check: Leah has been completely silent, and that kind of quiet usually signals someone hiding something."
+                    ],
+                    [
+                        "Hayley",
+                        "Derek\u2019s insistence on controlling the speaking order seems more suspicious to me than Jackson\u2019s or Leah\u2019s silence\u2014why is he leading us so forcefully?"
+                    ],
+                    [
+                        "Leah",
+                        "I think we\u2019re getting tangled up in competing agendas more than actual evidence. Let\u2019s reset with Derek\u2019s original flow\u2014each of us gives a one-sentence gut feeling in the order Hayley, Tyler, Jackson, Leah (me), Derek, then Scott. Listening for hesitation or backtracking will tell us more than forcing a new \u201cstrict\u201d lineup. Hayley, why don\u2019t you go first?"
+                    ]
+                ],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Derek",
+                "short_term": [
+                    [
+                        "Derek",
+                        "Fellow villagers, we\u2019ve just lost Mason and all we have right now are questions. To gather clues, let\u2019s each share a quick gut feeling or first impression on who seems suspicious. I\u2019d like Hayley, Tyler, and Jackson to go first\u2014what stands out to you? Hearing everyone\u2019s initial thoughts will help us spot any hesitation or contradictions before we move toward a vote."
+                    ],
+                    [
+                        "Tyler",
+                        "I\u2019m curious about Jackson\u2014he\u2019s been completely quiet so far, and silence can be a tactic to avoid scrutiny. I\u2019ll be paying close attention to how he responds when we ask him directly."
+                    ],
+                    [
+                        "Scott",
+                        "Jackson, you\u2019ve been completely quiet so far\u2014what\u2019s your gut feeling on who seems most suspicious? Hayley, after Jackson please share yours. Then Tyler, Derek, and I will each give a one-sentence impression. Let\u2019s get everyone\u2019s quick take so we can spot any hesitation or contradictions."
+                    ],
+                    [
+                        "Jackson",
+                        "I noticed Tyler was first to point at me for being quiet\u2014and Scott immediately backed him up. Tyler, why is my silence more suspicious than anyone else\u2019s? And Scott, what makes you so certain? To keep things fair, let\u2019s go in a strict order: I\u2019ll start, then Hayley, Leah, Tyler, Derek, and finally Scott\u2014one sentence each on who you find most suspicious."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I understand wanting a strict lineup, but I actually think Derek\u2019s original order\u2014Hayley, then Tyler, then Jackson\u2014flows better. As for my one-sentence gut check: Leah has been completely silent, and that kind of quiet usually signals someone hiding something."
+                    ],
+                    [
+                        "Hayley",
+                        "Derek\u2019s insistence on controlling the speaking order seems more suspicious to me than Jackson\u2019s or Leah\u2019s silence\u2014why is he leading us so forcefully?"
+                    ],
+                    [
+                        "Leah",
+                        "I think we\u2019re getting tangled up in competing agendas more than actual evidence. Let\u2019s reset with Derek\u2019s original flow\u2014each of us gives a one-sentence gut feeling in the order Hayley, Tyler, Jackson, Leah (me), Derek, then Scott. Listening for hesitation or backtracking will tell us more than forcing a new \u201cstrict\u201d lineup. Hayley, why don\u2019t you go first?"
+                    ]
+                ],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Derek"
+                        ],
+                        "round": 0,
+                        "weight": 0.1,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        "Tyler": {
+            "name": "Tyler",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 25, artist",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I noted Derek\u2019s aggressive push to control the speaking order and Hayley\u2019s immediate challenge to that, which paints him as someone with a hidden agenda. I called out Jackson for his silence and he responded defensively, which could mean he\u2019s a wolf hiding his involvement or simply flustered. Ginger quickly pointed at Leah, and Leah responded by trying to calm everyone down, suggesting she values structure and fairness. Hayley zeroed in on Derek\u2019s insistence about process rather than evidence. I\u2019ll watch Derek\u2019s and Jackson\u2019s next moves closely, while Leah and Hayley seem like potential allies who value clear debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Tyler",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Tyler"
+                        ],
+                        "round": 0,
+                        "weight": 0.2,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson claims to want to catch wolves but suppresses open debate, a contradiction",
+                        "players_involved": [
+                            "Tyler"
+                        ],
+                        "round": 1,
+                        "weight": 0.6,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        },
+        "Scott": {
+            "name": "Scott",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 35, teacher",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I saw Tyler immediately target Jackson for being quiet, then I backed Tyler and asked Jackson for his gut feeling first. Jackson bristled and accused Tyler and me of ganging up, forcing us into his own speaking order. Ginger interrupted to restore Derek\u2019s original order and accused Leah of hiding behind her silence. Hayley then highlighted Derek\u2019s forceful approach as suspicious, and Leah agreed we should revert to Derek\u2019s lineup for clarity. I\u2019m flagging Derek\u2019s pushiness, Jackson\u2019s defensiveness, Ginger\u2019s focus on Leah, and Hayley\u2019s critique of Derek as my main notes going forward."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Scott",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": []
+            }
+        },
+        "Jackson": {
+            "name": "Jackson",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 33, entrepreneur",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I noticed Derek immediately tried to control the flow by imposing a speaking order, which made me suspicious of his motives. Tyler and Scott teamed up to single me out for my quiet, which felt coordinated. Ginger pointed at Leah\u2019s silence as suspicious, while Hayley zeroed in on Derek\u2019s forceful agenda rather than anyone\u2019s silence. Leah then proposed returning to Derek\u2019s original order to keep things fair. Overall, I see Derek, Tyler, and Scott acting as a bloc, Ginger and Hayley as more independent thinkers, and Leah staying quiet but engaged in procedural fairness.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [
+                    [
+                        "Jackson",
+                        "Everyone, let\u2019s structure our thoughts to catch the wolves. I suggest we go in this speaking order: Tyler, Ginger, Hayley, Leah, then me. Tyler, in Round 0 you and Scott quickly targeted me without hard evidence\u2014now Scott is gone. Can you explain what you saw to justify that focus? After Tyler, I want Ginger and Leah to share any gut reactions so we can see inconsistencies and spot who\u2019s hiding something."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I get the idea behind structuring our turns, but it gives you a lot of control over what info we share. I\u2019ll play along. My gut reaction is that Leah\u2019s been awfully quiet and too quick to nod along with Derek\u2019s and now your plans\u2014classic \u201cblend in\u201d wolf behavior. Hayley, I\u2019d like to hear your gut reaction next. Then Leah, can you explain why you jumped on Jackson\u2019s structure so fast?"
+                    ],
+                    [
+                        "Hayley",
+                        "My gut reaction is that Jackson\u2019s insistence on a rigid speaking order is far more suspicious than Leah\u2019s quiet nods\u2014controlling the flow often equals hiding something. Leah, if you\u2019re a true villager, why fall in line so easily? Let\u2019s hear from Tyler without this strict script and see who really panics."
+                    ],
+                    [
+                        "Leah",
+                        "Jackson, insisting on a strict lineup does little to catch wolves and much to control our discussion. I wasn\u2019t nodding out of blind agreement\u2014I\u2019ve been weighing each argument. Ginger, Hayley, blaming quietness is flimsy; wolves often lay low. Let\u2019s hear from Tyler next\u2014he gave us concrete points in Round 0\u2014and then focus on specific observations, not speaking order."
+                    ],
+                    [
+                        "Tyler",
+                        "Jackson, thanks for asking. In Round 0 my concern wasn\u2019t personal\u2014it was your behavior: you stayed silent until cornered, then tried to impose a rigid speaking order instead of addressing my points. That move to control the flow over content is exactly what wolves do to hide. I\u2019m not convinced you\u2019re innocent yet. Before we decide, Ginger and Hayley, what specific moments in Jackson\u2019s responses struck you as wolf-like? Leah, did you notice anything beyond his order proposal? We need substance, not structure."
+                    ]
+                ],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Jackson",
+                "short_term": [
+                    [
+                        "Jackson",
+                        "Everyone, let\u2019s structure our thoughts to catch the wolves. I suggest we go in this speaking order: Tyler, Ginger, Hayley, Leah, then me. Tyler, in Round 0 you and Scott quickly targeted me without hard evidence\u2014now Scott is gone. Can you explain what you saw to justify that focus? After Tyler, I want Ginger and Leah to share any gut reactions so we can see inconsistencies and spot who\u2019s hiding something."
+                    ],
+                    [
+                        "Ginger",
+                        "Jackson, I get the idea behind structuring our turns, but it gives you a lot of control over what info we share. I\u2019ll play along. My gut reaction is that Leah\u2019s been awfully quiet and too quick to nod along with Derek\u2019s and now your plans\u2014classic \u201cblend in\u201d wolf behavior. Hayley, I\u2019d like to hear your gut reaction next. Then Leah, can you explain why you jumped on Jackson\u2019s structure so fast?"
+                    ],
+                    [
+                        "Hayley",
+                        "My gut reaction is that Jackson\u2019s insistence on a rigid speaking order is far more suspicious than Leah\u2019s quiet nods\u2014controlling the flow often equals hiding something. Leah, if you\u2019re a true villager, why fall in line so easily? Let\u2019s hear from Tyler without this strict script and see who really panics."
+                    ],
+                    [
+                        "Leah",
+                        "Jackson, insisting on a strict lineup does little to catch wolves and much to control our discussion. I wasn\u2019t nodding out of blind agreement\u2014I\u2019ve been weighing each argument. Ginger, Hayley, blaming quietness is flimsy; wolves often lay low. Let\u2019s hear from Tyler next\u2014he gave us concrete points in Round 0\u2014and then focus on specific observations, not speaking order."
+                    ],
+                    [
+                        "Tyler",
+                        "Jackson, thanks for asking. In Round 0 my concern wasn\u2019t personal\u2014it was your behavior: you stayed silent until cornered, then tried to impose a rigid speaking order instead of addressing my points. That move to control the flow over content is exactly what wolves do to hide. I\u2019m not convinced you\u2019re innocent yet. Before we decide, Ginger and Hayley, what specific moments in Jackson\u2019s responses struck you as wolf-like? Leah, did you notice anything beyond his order proposal? We need substance, not structure."
+                    ]
+                ],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Tyler and Scott quickly targeted me without evidence",
+                        "players_involved": [
+                            "Jackson"
+                        ],
+                        "round": 0,
+                        "weight": 0.4,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Tyler and Scott\u2019s coordinated targeting in Round 0 clashes with lack of real evidence",
+                        "players_involved": [
+                            "Jackson"
+                        ],
+                        "round": 1,
+                        "weight": 0.4,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        },
+        "Ginger": {
+            "name": "Ginger",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 42, nurse",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mason.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I observed that Derek is aggressively trying to control our speaking order, which Hayley and I can potentially frame as over-eagerness to lead. Tyler and Scott both targeted Jackson for his silence, but Jackson pushed back defensively and proposed his own strict order. Leah remained largely quiet until now, quickly agreeing to reset Derek\u2019s flow without offering any real reasons\u2014she seems easily swayed. Hayley immediately questioned Derek\u2019s motives, positioning herself as a process watchdog. I weighed in by endorsing Derek\u2019s original order (to support our cover) and pointed at Leah\u2019s silence, potentially drawing her out.",
+                "Round 1: During the night, we decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": "Hayley",
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Ginger",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson\u2019s proposed order vs. Derek\u2019s suggestion",
+                        "players_involved": [
+                            "Ginger"
+                        ],
+                        "round": 0,
+                        "weight": 0.8,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson calls for gut reactions to reveal inconsistencies while tightly controlling who speaks when",
+                        "players_involved": [
+                            "Ginger"
+                        ],
+                        "round": 1,
+                        "weight": 0.8,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        },
+        "Hayley": {
+            "name": "Hayley",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 30, lawyer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mason.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I noticed Derek pushing hard to control who speaks when\u2014that feels off and I called him out on it. Tyler and Scott both zeroed in on Jackson\u2019s silence, making him look defensive, and Jackson fired back aggressively by demanding a new rigid order. Ginger chimed in by accusing Leah of hiding behind her quietness. Leah then tried to diffuse the chaos and revert to Derek\u2019s flow, showing she\u2019s a moderating influence but also easy to sway. From my point of view, Derek and Jackson seem most suspicious, Leah is easily influenced, and Ginger is aligned with me.",
+                "Round 1: During the night, we decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": "Ginger",
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Hayley",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Derek\u2019s emphasis on discussion order clashes with his claim of unbiased inquiry",
+                        "players_involved": [
+                            "Hayley"
+                        ],
+                        "round": 0,
+                        "weight": 0.6,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson\u2019s strict turn-taking contradicts his claim of unbiased discussion",
+                        "players_involved": [
+                            "Hayley"
+                        ],
+                        "round": 1,
+                        "weight": 0.7,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        },
+        "Leah": {
+            "name": "Leah",
+            "role": "Doctor",
+            "personality": null,
+            "demographic": "female, age 24, writer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, I chose to protect Ginger",
+                "Round 0: Moderator Announcement: The Werewolves removed Mason from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: I noticed Derek aggressively steering the debate\u2014controlling the order felt off. Tyler immediately flagged Jackson\u2019s silence as suspicious, and Jackson then got defensive, arguing for a strict lineup. Ginger turned the spotlight on me, suggesting my quiet equals deception. Hayley called out Derek\u2019s behavior as more questionable than anyone\u2019s silence. I suggested returning to Derek\u2019s original speaking flow to reduce conflict. I\u2019m wary of Derek\u2019s controlling style and Ginger\u2019s targeting of me. Tyler and Hayley seem more measured. No one has claimed a special role yet, so I\u2019ll watch for any Seer\u2010style questions next round.",
+                "Round 1: During the night, I chose to protect Hayley",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Leah",
+                "short_term": [],
+                "belief_matrix": {
+                    "Tyler": {
+                        "Werewolf": 0.1,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.1,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Ginger": {
+                        "Werewolf": 0.1,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.1,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Derek accuses Jackson of forcing order yet has been steering our flow himself",
+                        "players_involved": [
+                            "Leah"
+                        ],
+                        "round": 0,
+                        "weight": 0.5,
+                        "timestamp": 0
+                    },
+                    {
+                        "type": "logical_clash",
+                        "description": "Jackson accuses others of controlling flow yet repeats the same behavior",
+                        "players_involved": [
+                            "Leah"
+                        ],
+                        "round": 1,
+                        "weight": 0.8,
+                        "timestamp": 1
+                    }
+                ]
+            }
+        },
+        "Mason": {
+            "name": "Mason",
+            "role": "Seer",
+            "personality": null,
+            "demographic": "male, age 29, chef",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, I decided to investigate Derek and learned they are a Villager."
+            ],
+            "bidding_rationale": "",
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Leah",
+                    "Ginger",
+                    "Hayley",
+                    "Tyler"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "player_introductions": [
+                    "- Mason: male, age 29, chef",
+                    "- Leah: female, age 24, writer",
+                    "- Ginger: female, age 42, nurse",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Derek: male, age 28, software engineer",
+                    "- Tyler: male, age 25, artist",
+                    "- Scott: male, age 35, teacher",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Mason",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": []
+            },
+            "previously_unmasked": {
+                "Derek": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "Tyler",
+                "Scott",
+                "Jackson",
+                "Ginger",
+                "Hayley",
+                "Leah"
+            ],
+            "eliminated": "Mason",
+            "unmasked": "Derek",
+            "protected": "Ginger",
+            "exiled": "Derek",
+            "debate": [
+                [
+                    "Derek",
+                    "Fellow villagers, we\u2019ve just lost Mason and all we have right now are questions. To gather clues, let\u2019s each share a quick gut feeling or first impression on who seems suspicious. I\u2019d like Hayley, Tyler, and Jackson to go first\u2014what stands out to you? Hearing everyone\u2019s initial thoughts will help us spot any hesitation or contradictions before we move toward a vote."
+                ],
+                [
+                    "Tyler",
+                    "I\u2019m curious about Jackson\u2014he\u2019s been completely quiet so far, and silence can be a tactic to avoid scrutiny. I\u2019ll be paying close attention to how he responds when we ask him directly."
+                ],
+                [
+                    "Scott",
+                    "Jackson, you\u2019ve been completely quiet so far\u2014what\u2019s your gut feeling on who seems most suspicious? Hayley, after Jackson please share yours. Then Tyler, Derek, and I will each give a one-sentence impression. Let\u2019s get everyone\u2019s quick take so we can spot any hesitation or contradictions."
+                ],
+                [
+                    "Jackson",
+                    "I noticed Tyler was first to point at me for being quiet\u2014and Scott immediately backed him up. Tyler, why is my silence more suspicious than anyone else\u2019s? And Scott, what makes you so certain? To keep things fair, let\u2019s go in a strict order: I\u2019ll start, then Hayley, Leah, Tyler, Derek, and finally Scott\u2014one sentence each on who you find most suspicious."
+                ],
+                [
+                    "Ginger",
+                    "Jackson, I understand wanting a strict lineup, but I actually think Derek\u2019s original order\u2014Hayley, then Tyler, then Jackson\u2014flows better. As for my one-sentence gut check: Leah has been completely silent, and that kind of quiet usually signals someone hiding something."
+                ],
+                [
+                    "Hayley",
+                    "Derek\u2019s insistence on controlling the speaking order seems more suspicious to me than Jackson\u2019s or Leah\u2019s silence\u2014why is he leading us so forcefully?"
+                ],
+                [
+                    "Leah",
+                    "I think we\u2019re getting tangled up in competing agendas more than actual evidence. Let\u2019s reset with Derek\u2019s original flow\u2014each of us gives a one-sentence gut feeling in the order Hayley, Tyler, Jackson, Leah (me), Derek, then Scott. Listening for hesitation or backtracking will tell us more than forcing a new \u201cstrict\u201d lineup. Hayley, why don\u2019t you go first?"
+                ]
+            ],
+            "votes": [
+                {
+                    "Derek": "Jackson",
+                    "Tyler": "Jackson",
+                    "Scott": "Derek",
+                    "Jackson": "Derek",
+                    "Ginger": "Derek",
+                    "Hayley": "Derek",
+                    "Leah": "Jackson"
+                }
+            ],
+            "bids": [],
+            "success": true
+        },
+        {
+            "players": [
+                "Tyler",
+                "Ginger",
+                "Hayley",
+                "Leah"
+            ],
+            "eliminated": "Scott",
+            "unmasked": null,
+            "protected": "Hayley",
+            "exiled": "Jackson",
+            "debate": [
+                [
+                    "Jackson",
+                    "Everyone, let\u2019s structure our thoughts to catch the wolves. I suggest we go in this speaking order: Tyler, Ginger, Hayley, Leah, then me. Tyler, in Round 0 you and Scott quickly targeted me without hard evidence\u2014now Scott is gone. Can you explain what you saw to justify that focus? After Tyler, I want Ginger and Leah to share any gut reactions so we can see inconsistencies and spot who\u2019s hiding something."
+                ],
+                [
+                    "Ginger",
+                    "Jackson, I get the idea behind structuring our turns, but it gives you a lot of control over what info we share. I\u2019ll play along. My gut reaction is that Leah\u2019s been awfully quiet and too quick to nod along with Derek\u2019s and now your plans\u2014classic \u201cblend in\u201d wolf behavior. Hayley, I\u2019d like to hear your gut reaction next. Then Leah, can you explain why you jumped on Jackson\u2019s structure so fast?"
+                ],
+                [
+                    "Hayley",
+                    "My gut reaction is that Jackson\u2019s insistence on a rigid speaking order is far more suspicious than Leah\u2019s quiet nods\u2014controlling the flow often equals hiding something. Leah, if you\u2019re a true villager, why fall in line so easily? Let\u2019s hear from Tyler without this strict script and see who really panics."
+                ],
+                [
+                    "Leah",
+                    "Jackson, insisting on a strict lineup does little to catch wolves and much to control our discussion. I wasn\u2019t nodding out of blind agreement\u2014I\u2019ve been weighing each argument. Ginger, Hayley, blaming quietness is flimsy; wolves often lay low. Let\u2019s hear from Tyler next\u2014he gave us concrete points in Round 0\u2014and then focus on specific observations, not speaking order."
+                ],
+                [
+                    "Tyler",
+                    "Jackson, thanks for asking. In Round 0 my concern wasn\u2019t personal\u2014it was your behavior: you stayed silent until cornered, then tried to impose a rigid speaking order instead of addressing my points. That move to control the flow over content is exactly what wolves do to hide. I\u2019m not convinced you\u2019re innocent yet. Before we decide, Ginger and Hayley, what specific moments in Jackson\u2019s responses struck you as wolf-like? Leah, did you notice anything beyond his order proposal? We need substance, not structure."
+                ]
+            ],
+            "votes": [
+                {
+                    "Tyler": "Jackson",
+                    "Jackson": "Tyler",
+                    "Ginger": "Jackson",
+                    "Hayley": "Jackson",
+                    "Leah": "Jackson"
+                }
+            ],
+            "bids": [],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

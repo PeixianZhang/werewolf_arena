@@ -1,0 +1,1447 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "Dan",
+        "role": "Seer",
+        "personality": null,
+        "demographic": "male, age 50, retired",
+        "model": "o4-mini",
+        "observations": [
+            "Round 0: During the night, I decided to investigate Mason and learned they are a Villager."
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "Scott",
+                "Bert",
+                "Sam",
+                "Hayley",
+                "Will",
+                "Mason"
+            ],
+            "debate": [],
+            "other_wolf": null,
+            "other_wolves": [],
+            "player_introductions": [
+                "- Dan: male, age 50, retired",
+                "- Scott: male, age 35, teacher",
+                "- Bert: male, age 27, journalist",
+                "- Sam: female, age 26, designer",
+                "- Hayley: female, age 30, lawyer",
+                "- Will: male, age 31, scientist",
+                "- Mason: male, age 29, chef",
+                "- Jackson: male, age 33, entrepreneur"
+            ]
+        },
+        "memory_manager": {
+            "player_name": "Dan",
+            "short_term": [],
+            "belief_matrix": {},
+            "evidence_archive": []
+        },
+        "previously_unmasked": {
+            "Mason": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "Scott",
+        "role": "Doctor",
+        "personality": null,
+        "demographic": "male, age 35, teacher",
+        "model": "o4-mini",
+        "observations": [
+            "Round 0: During the night, I chose to protect Mason",
+            "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "Scott",
+                "Bert",
+                "Sam",
+                "Hayley",
+                "Will",
+                "Mason"
+            ],
+            "debate": [],
+            "other_wolf": null,
+            "other_wolves": [],
+            "player_introductions": [
+                "- Dan: male, age 50, retired",
+                "- Scott: male, age 35, teacher",
+                "- Bert: male, age 27, journalist",
+                "- Sam: female, age 26, designer",
+                "- Hayley: female, age 30, lawyer",
+                "- Will: male, age 31, scientist",
+                "- Mason: male, age 29, chef",
+                "- Jackson: male, age 33, entrepreneur"
+            ]
+        },
+        "memory_manager": {
+            "player_name": "Scott",
+            "short_term": [],
+            "belief_matrix": {
+                "Will": {
+                    "Werewolf": 0.4,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.0
+                },
+                "Jackson": {
+                    "Werewolf": 0.4,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.0
+                },
+                "Mason": {
+                    "Werewolf": 0.0,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.2
+                },
+                "Bert": {
+                    "Werewolf": 0.0,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.3,
+                    "Uncertain": 0.0
+                },
+                "Sam": {
+                    "Werewolf": 0.0,
+                    "Seer": 0.2,
+                    "Doctor": 0.0,
+                    "Villager": 0.0,
+                    "Uncertain": 0.0
+                },
+                "Hayley": {
+                    "Werewolf": 0.0,
+                    "Seer": 0.0,
+                    "Doctor": 0.0,
+                    "Villager": 0.3,
+                    "Uncertain": 0.0
+                }
+            },
+            "evidence_archive": [
+                {
+                    "type": "logical_clash",
+                    "description": "Will claims no suspicion but leads the plan",
+                    "players_involved": [
+                        "Scott"
+                    ],
+                    "round": 0,
+                    "weight": 0.7,
+                    "timestamp": 0
+                }
+            ]
+        }
+    },
+    "villagers": [
+        {
+            "name": "Will",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 31, scientist",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Will",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": []
+            }
+        },
+        {
+            "name": "Mason",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 29, chef",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Mason",
+                "short_term": [],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Bert": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Mason"
+                        ],
+                        "round": 0,
+                        "weight": 0.3,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Jackson",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 33, entrepreneur",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night."
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [
+                    [
+                        "Will",
+                        "I suggest we go around in order and each share any gut instinct or ask one quick question\u2014no hard evidence needed, just initial impressions. I\u2019ll start: right now I don\u2019t have a strong suspicion but I\u2019m watching how everyone handles this first spotlight. Next up is Sam\u2014what\u2019s your instinct or question?"
+                    ],
+                    [
+                        "Mason",
+                        "Thanks, Will. I don\u2019t have any strong suspicions yet\u2014I\u2019m paying attention to how much detail and hesitation everyone shows. One quick question for you: when you say you\u2019re watching how people handle this first spotlight, what specific behaviors or cues are you looking for?"
+                    ],
+                    [
+                        "Jackson",
+                        "I like Will\u2019s idea of sharing gut instincts and Mason\u2019s focus on detail. Let\u2019s build on that: we each ask one quick question to the next player to see how they handle the spotlight. Sam, what\u2019s one specific behavior you\u2019d look for to spot a Werewolf? After Sam answers, I\u2019ll turn to Hayley. Sound good?"
+                    ],
+                    [
+                        "Bert",
+                        "Jackson, I see the logic in your chain, but sometimes the smoothest strategies come from the Wolves. Will\u2019s opening was almost too polished, and Mason\u2019s focus on hesitation feels pretty textbook. Let\u2019s shake things up\u2014Scott, what\u2019s your gut instinct so far, and has anyone\u2019s early play struck you as a bit too rehearsed?"
+                    ],
+                    [
+                        "Sam",
+                        "I\u2019d watch for someone who abruptly changes their story or overcorrects when probed\u2014like someone saying \u201cI have no suspicions\u201d and then laying out an elaborate theory moments later. Mason, you\u2019ve been zeroing in on hesitation, but aren\u2019t you just swapping one gut feeling for another by second-guessing Will\u2019s polished opening? Scott, before we dive deeper, whose shifting narratives strike you as most convenient\u2014and who really gains by throwing around labels like \u201ctextbook\u201d so early?"
+                    ],
+                    [
+                        "Hayley",
+                        "Sam makes a solid point about shifting narratives\u2014but I can\u2019t shake how polished Will\u2019s opening was, or how Jackson\u2019s chain-of-questions feels too orchestrated. Feels like they\u2019re running the show together. Scott, do you see any signs that Will and Jackson might be coordinating to steer the debate?"
+                    ],
+                    [
+                        "Scott",
+                        "I\u2019m concerned by how smoothly Will and Jackson are running this \u201cchain\u201d of questions\u2014smooth coordination can be a Werewolf tactic. Let\u2019s switch it up. Will, you go first: without a formula, name one specific cue you\u2019d actually act on if you saw it tonight. Then Jackson, do the same. After that, I want Hayley and Sam to each ask one off-the-cuff question to Will. Let\u2019s see who really improvises and who sticks to a script."
+                    ]
+                ],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Jackson",
+                "short_term": [
+                    [
+                        "Will",
+                        "I suggest we go around in order and each share any gut instinct or ask one quick question\u2014no hard evidence needed, just initial impressions. I\u2019ll start: right now I don\u2019t have a strong suspicion but I\u2019m watching how everyone handles this first spotlight. Next up is Sam\u2014what\u2019s your instinct or question?"
+                    ],
+                    [
+                        "Mason",
+                        "Thanks, Will. I don\u2019t have any strong suspicions yet\u2014I\u2019m paying attention to how much detail and hesitation everyone shows. One quick question for you: when you say you\u2019re watching how people handle this first spotlight, what specific behaviors or cues are you looking for?"
+                    ],
+                    [
+                        "Jackson",
+                        "I like Will\u2019s idea of sharing gut instincts and Mason\u2019s focus on detail. Let\u2019s build on that: we each ask one quick question to the next player to see how they handle the spotlight. Sam, what\u2019s one specific behavior you\u2019d look for to spot a Werewolf? After Sam answers, I\u2019ll turn to Hayley. Sound good?"
+                    ],
+                    [
+                        "Bert",
+                        "Jackson, I see the logic in your chain, but sometimes the smoothest strategies come from the Wolves. Will\u2019s opening was almost too polished, and Mason\u2019s focus on hesitation feels pretty textbook. Let\u2019s shake things up\u2014Scott, what\u2019s your gut instinct so far, and has anyone\u2019s early play struck you as a bit too rehearsed?"
+                    ],
+                    [
+                        "Sam",
+                        "I\u2019d watch for someone who abruptly changes their story or overcorrects when probed\u2014like someone saying \u201cI have no suspicions\u201d and then laying out an elaborate theory moments later. Mason, you\u2019ve been zeroing in on hesitation, but aren\u2019t you just swapping one gut feeling for another by second-guessing Will\u2019s polished opening? Scott, before we dive deeper, whose shifting narratives strike you as most convenient\u2014and who really gains by throwing around labels like \u201ctextbook\u201d so early?"
+                    ],
+                    [
+                        "Hayley",
+                        "Sam makes a solid point about shifting narratives\u2014but I can\u2019t shake how polished Will\u2019s opening was, or how Jackson\u2019s chain-of-questions feels too orchestrated. Feels like they\u2019re running the show together. Scott, do you see any signs that Will and Jackson might be coordinating to steer the debate?"
+                    ],
+                    [
+                        "Scott",
+                        "I\u2019m concerned by how smoothly Will and Jackson are running this \u201cchain\u201d of questions\u2014smooth coordination can be a Werewolf tactic. Let\u2019s switch it up. Will, you go first: without a formula, name one specific cue you\u2019d actually act on if you saw it tonight. Then Jackson, do the same. After that, I want Hayley and Sam to each ask one off-the-cuff question to Will. Let\u2019s see who really improvises and who sticks to a script."
+                    ]
+                ],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    },
+                    "Mason": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    },
+                    "Bert": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Jackson"
+                        ],
+                        "round": 0,
+                        "weight": 0.2,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "Bert",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "male, age 27, journalist",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Dan.",
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": "Sam",
+                "other_wolves": [
+                    "Sam",
+                    "Hayley"
+                ],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Bert",
+                "short_term": [],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Mason": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none yet",
+                        "players_involved": [
+                            "Bert"
+                        ],
+                        "round": 0,
+                        "weight": 0.6,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Sam",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 26, designer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Dan.",
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": "Bert",
+                "other_wolves": [
+                    "Bert",
+                    "Hayley"
+                ],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Sam",
+                "short_term": [],
+                "belief_matrix": {
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Mason\u2019s focus on hesitation ignores that hesitation can be feigned",
+                        "players_involved": [
+                            "Sam"
+                        ],
+                        "round": 0,
+                        "weight": 0.3,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Hayley",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 30, lawyer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Dan.",
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": "Bert",
+                "other_wolves": [
+                    "Bert",
+                    "Sam"
+                ],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Hayley",
+                "short_term": [],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.35,
+                        "Uncertain": 0.0
+                    },
+                    "Mason": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.4
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.3
+                    },
+                    "Bert": {
+                        "Werewolf": 0.5,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.3
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "no direct contradiction noted",
+                        "players_involved": [
+                            "Hayley"
+                        ],
+                        "round": 0,
+                        "weight": 0.7,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        }
+    ],
+    "players": {
+        "Will": {
+            "name": "Will",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 31, scientist",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Will",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": []
+            }
+        },
+        "Mason": {
+            "name": "Mason",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 29, chef",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Mason",
+                "short_term": [],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Bert": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Mason"
+                        ],
+                        "round": 0,
+                        "weight": 0.3,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        "Jackson": {
+            "name": "Jackson",
+            "role": "Villager",
+            "personality": null,
+            "demographic": "male, age 33, entrepreneur",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night."
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [
+                    [
+                        "Will",
+                        "I suggest we go around in order and each share any gut instinct or ask one quick question\u2014no hard evidence needed, just initial impressions. I\u2019ll start: right now I don\u2019t have a strong suspicion but I\u2019m watching how everyone handles this first spotlight. Next up is Sam\u2014what\u2019s your instinct or question?"
+                    ],
+                    [
+                        "Mason",
+                        "Thanks, Will. I don\u2019t have any strong suspicions yet\u2014I\u2019m paying attention to how much detail and hesitation everyone shows. One quick question for you: when you say you\u2019re watching how people handle this first spotlight, what specific behaviors or cues are you looking for?"
+                    ],
+                    [
+                        "Jackson",
+                        "I like Will\u2019s idea of sharing gut instincts and Mason\u2019s focus on detail. Let\u2019s build on that: we each ask one quick question to the next player to see how they handle the spotlight. Sam, what\u2019s one specific behavior you\u2019d look for to spot a Werewolf? After Sam answers, I\u2019ll turn to Hayley. Sound good?"
+                    ],
+                    [
+                        "Bert",
+                        "Jackson, I see the logic in your chain, but sometimes the smoothest strategies come from the Wolves. Will\u2019s opening was almost too polished, and Mason\u2019s focus on hesitation feels pretty textbook. Let\u2019s shake things up\u2014Scott, what\u2019s your gut instinct so far, and has anyone\u2019s early play struck you as a bit too rehearsed?"
+                    ],
+                    [
+                        "Sam",
+                        "I\u2019d watch for someone who abruptly changes their story or overcorrects when probed\u2014like someone saying \u201cI have no suspicions\u201d and then laying out an elaborate theory moments later. Mason, you\u2019ve been zeroing in on hesitation, but aren\u2019t you just swapping one gut feeling for another by second-guessing Will\u2019s polished opening? Scott, before we dive deeper, whose shifting narratives strike you as most convenient\u2014and who really gains by throwing around labels like \u201ctextbook\u201d so early?"
+                    ],
+                    [
+                        "Hayley",
+                        "Sam makes a solid point about shifting narratives\u2014but I can\u2019t shake how polished Will\u2019s opening was, or how Jackson\u2019s chain-of-questions feels too orchestrated. Feels like they\u2019re running the show together. Scott, do you see any signs that Will and Jackson might be coordinating to steer the debate?"
+                    ],
+                    [
+                        "Scott",
+                        "I\u2019m concerned by how smoothly Will and Jackson are running this \u201cchain\u201d of questions\u2014smooth coordination can be a Werewolf tactic. Let\u2019s switch it up. Will, you go first: without a formula, name one specific cue you\u2019d actually act on if you saw it tonight. Then Jackson, do the same. After that, I want Hayley and Sam to each ask one off-the-cuff question to Will. Let\u2019s see who really improvises and who sticks to a script."
+                    ]
+                ],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Jackson",
+                "short_term": [
+                    [
+                        "Will",
+                        "I suggest we go around in order and each share any gut instinct or ask one quick question\u2014no hard evidence needed, just initial impressions. I\u2019ll start: right now I don\u2019t have a strong suspicion but I\u2019m watching how everyone handles this first spotlight. Next up is Sam\u2014what\u2019s your instinct or question?"
+                    ],
+                    [
+                        "Mason",
+                        "Thanks, Will. I don\u2019t have any strong suspicions yet\u2014I\u2019m paying attention to how much detail and hesitation everyone shows. One quick question for you: when you say you\u2019re watching how people handle this first spotlight, what specific behaviors or cues are you looking for?"
+                    ],
+                    [
+                        "Jackson",
+                        "I like Will\u2019s idea of sharing gut instincts and Mason\u2019s focus on detail. Let\u2019s build on that: we each ask one quick question to the next player to see how they handle the spotlight. Sam, what\u2019s one specific behavior you\u2019d look for to spot a Werewolf? After Sam answers, I\u2019ll turn to Hayley. Sound good?"
+                    ],
+                    [
+                        "Bert",
+                        "Jackson, I see the logic in your chain, but sometimes the smoothest strategies come from the Wolves. Will\u2019s opening was almost too polished, and Mason\u2019s focus on hesitation feels pretty textbook. Let\u2019s shake things up\u2014Scott, what\u2019s your gut instinct so far, and has anyone\u2019s early play struck you as a bit too rehearsed?"
+                    ],
+                    [
+                        "Sam",
+                        "I\u2019d watch for someone who abruptly changes their story or overcorrects when probed\u2014like someone saying \u201cI have no suspicions\u201d and then laying out an elaborate theory moments later. Mason, you\u2019ve been zeroing in on hesitation, but aren\u2019t you just swapping one gut feeling for another by second-guessing Will\u2019s polished opening? Scott, before we dive deeper, whose shifting narratives strike you as most convenient\u2014and who really gains by throwing around labels like \u201ctextbook\u201d so early?"
+                    ],
+                    [
+                        "Hayley",
+                        "Sam makes a solid point about shifting narratives\u2014but I can\u2019t shake how polished Will\u2019s opening was, or how Jackson\u2019s chain-of-questions feels too orchestrated. Feels like they\u2019re running the show together. Scott, do you see any signs that Will and Jackson might be coordinating to steer the debate?"
+                    ],
+                    [
+                        "Scott",
+                        "I\u2019m concerned by how smoothly Will and Jackson are running this \u201cchain\u201d of questions\u2014smooth coordination can be a Werewolf tactic. Let\u2019s switch it up. Will, you go first: without a formula, name one specific cue you\u2019d actually act on if you saw it tonight. Then Jackson, do the same. After that, I want Hayley and Sam to each ask one off-the-cuff question to Will. Let\u2019s see who really improvises and who sticks to a script."
+                    ]
+                ],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    },
+                    "Mason": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    },
+                    "Bert": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none",
+                        "players_involved": [
+                            "Jackson"
+                        ],
+                        "round": 0,
+                        "weight": 0.2,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        "Bert": {
+            "name": "Bert",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "male, age 27, journalist",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Dan.",
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": "Sam",
+                "other_wolves": [
+                    "Sam",
+                    "Hayley"
+                ],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Bert",
+                "short_term": [],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Mason": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "none yet",
+                        "players_involved": [
+                            "Bert"
+                        ],
+                        "round": 0,
+                        "weight": 0.6,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        "Sam": {
+            "name": "Sam",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 26, designer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Dan.",
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": "Bert",
+                "other_wolves": [
+                    "Bert",
+                    "Hayley"
+                ],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Sam",
+                "short_term": [],
+                "belief_matrix": {
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.1
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Mason\u2019s focus on hesitation ignores that hesitation can be feigned",
+                        "players_involved": [
+                            "Sam"
+                        ],
+                        "round": 0,
+                        "weight": 0.3,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        "Hayley": {
+            "name": "Hayley",
+            "role": "Werewolf",
+            "personality": null,
+            "demographic": "female, age 30, lawyer",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Dan.",
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": "Bert",
+                "other_wolves": [
+                    "Bert",
+                    "Sam"
+                ],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Hayley",
+                "short_term": [],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.35,
+                        "Uncertain": 0.0
+                    },
+                    "Mason": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.4
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.3
+                    },
+                    "Bert": {
+                        "Werewolf": 0.5,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.3
+                    },
+                    "Scott": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "no direct contradiction noted",
+                        "players_involved": [
+                            "Hayley"
+                        ],
+                        "round": 0,
+                        "weight": 0.7,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        "Scott": {
+            "name": "Scott",
+            "role": "Doctor",
+            "personality": null,
+            "demographic": "male, age 35, teacher",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, I chose to protect Mason",
+                "Round 0: Moderator Announcement: The Werewolves removed Dan from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Scott",
+                "short_term": [],
+                "belief_matrix": {
+                    "Will": {
+                        "Werewolf": 0.4,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Jackson": {
+                        "Werewolf": 0.4,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Mason": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.2
+                    },
+                    "Bert": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.3,
+                        "Uncertain": 0.0
+                    },
+                    "Sam": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.2,
+                        "Doctor": 0.0,
+                        "Villager": 0.0,
+                        "Uncertain": 0.0
+                    },
+                    "Hayley": {
+                        "Werewolf": 0.0,
+                        "Seer": 0.0,
+                        "Doctor": 0.0,
+                        "Villager": 0.3,
+                        "Uncertain": 0.0
+                    }
+                },
+                "evidence_archive": [
+                    {
+                        "type": "logical_clash",
+                        "description": "Will claims no suspicion but leads the plan",
+                        "players_involved": [
+                            "Scott"
+                        ],
+                        "round": 0,
+                        "weight": 0.7,
+                        "timestamp": 0
+                    }
+                ]
+            }
+        },
+        "Dan": {
+            "name": "Dan",
+            "role": "Seer",
+            "personality": null,
+            "demographic": "male, age 50, retired",
+            "model": "o4-mini",
+            "observations": [
+                "Round 0: During the night, I decided to investigate Mason and learned they are a Villager."
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Scott",
+                    "Bert",
+                    "Sam",
+                    "Hayley",
+                    "Will",
+                    "Mason"
+                ],
+                "debate": [],
+                "other_wolf": null,
+                "other_wolves": [],
+                "player_introductions": [
+                    "- Dan: male, age 50, retired",
+                    "- Scott: male, age 35, teacher",
+                    "- Bert: male, age 27, journalist",
+                    "- Sam: female, age 26, designer",
+                    "- Hayley: female, age 30, lawyer",
+                    "- Will: male, age 31, scientist",
+                    "- Mason: male, age 29, chef",
+                    "- Jackson: male, age 33, entrepreneur"
+                ]
+            },
+            "memory_manager": {
+                "player_name": "Dan",
+                "short_term": [],
+                "belief_matrix": {},
+                "evidence_archive": []
+            },
+            "previously_unmasked": {
+                "Mason": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "Will",
+                "Mason",
+                "Bert",
+                "Sam",
+                "Hayley",
+                "Scott"
+            ],
+            "eliminated": "Dan",
+            "unmasked": "Mason",
+            "protected": "Mason",
+            "exiled": "Jackson",
+            "debate": [
+                [
+                    "Will",
+                    "I suggest we go around in order and each share any gut instinct or ask one quick question\u2014no hard evidence needed, just initial impressions. I\u2019ll start: right now I don\u2019t have a strong suspicion but I\u2019m watching how everyone handles this first spotlight. Next up is Sam\u2014what\u2019s your instinct or question?"
+                ],
+                [
+                    "Mason",
+                    "Thanks, Will. I don\u2019t have any strong suspicions yet\u2014I\u2019m paying attention to how much detail and hesitation everyone shows. One quick question for you: when you say you\u2019re watching how people handle this first spotlight, what specific behaviors or cues are you looking for?"
+                ],
+                [
+                    "Jackson",
+                    "I like Will\u2019s idea of sharing gut instincts and Mason\u2019s focus on detail. Let\u2019s build on that: we each ask one quick question to the next player to see how they handle the spotlight. Sam, what\u2019s one specific behavior you\u2019d look for to spot a Werewolf? After Sam answers, I\u2019ll turn to Hayley. Sound good?"
+                ],
+                [
+                    "Bert",
+                    "Jackson, I see the logic in your chain, but sometimes the smoothest strategies come from the Wolves. Will\u2019s opening was almost too polished, and Mason\u2019s focus on hesitation feels pretty textbook. Let\u2019s shake things up\u2014Scott, what\u2019s your gut instinct so far, and has anyone\u2019s early play struck you as a bit too rehearsed?"
+                ],
+                [
+                    "Sam",
+                    "I\u2019d watch for someone who abruptly changes their story or overcorrects when probed\u2014like someone saying \u201cI have no suspicions\u201d and then laying out an elaborate theory moments later. Mason, you\u2019ve been zeroing in on hesitation, but aren\u2019t you just swapping one gut feeling for another by second-guessing Will\u2019s polished opening? Scott, before we dive deeper, whose shifting narratives strike you as most convenient\u2014and who really gains by throwing around labels like \u201ctextbook\u201d so early?"
+                ],
+                [
+                    "Hayley",
+                    "Sam makes a solid point about shifting narratives\u2014but I can\u2019t shake how polished Will\u2019s opening was, or how Jackson\u2019s chain-of-questions feels too orchestrated. Feels like they\u2019re running the show together. Scott, do you see any signs that Will and Jackson might be coordinating to steer the debate?"
+                ],
+                [
+                    "Scott",
+                    "I\u2019m concerned by how smoothly Will and Jackson are running this \u201cchain\u201d of questions\u2014smooth coordination can be a Werewolf tactic. Let\u2019s switch it up. Will, you go first: without a formula, name one specific cue you\u2019d actually act on if you saw it tonight. Then Jackson, do the same. After that, I want Hayley and Sam to each ask one off-the-cuff question to Will. Let\u2019s see who really improvises and who sticks to a script."
+                ]
+            ],
+            "votes": [
+                {
+                    "Will": "Jackson",
+                    "Mason": "Jackson",
+                    "Jackson": "Will",
+                    "Bert": "Jackson",
+                    "Sam": "Will",
+                    "Hayley": "Jackson",
+                    "Scott": "Jackson"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

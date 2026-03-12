@@ -80,7 +80,7 @@ class GameMaster:
     
     # Record werewolf target decision in private memory
     for w in werewolves_alive:
-      w.memory_manager.add_werewolf_target(eliminated)
+      w.memory_manager.add_werewolf_target(eliminated, round_number=self.current_round_num)
 
   def protect(self):
     """Doctor chooses a player to protect."""
@@ -94,7 +94,7 @@ class GameMaster:
       self.this_round.protected = protect
       tqdm.tqdm.write(f"{self.state.doctor.name} protected {protect}")
       # Record doctor protection in private memory
-      self.state.doctor.memory_manager.add_doctor_protection(protect)
+      self.state.doctor.memory_manager.add_doctor_protection(protect, round_number=self.current_round_num)
     else:
       raise ValueError("Protect did not return a valid player.")
 
@@ -113,7 +113,7 @@ class GameMaster:
       # Record seer verification in private memory
       # Seer sees "Werewolf" or "Villager" side, not exact role
       side = "Werewolf" if unmasked_player.role == "Werewolf" else "Villager"
-      self.state.seer.memory_manager.add_seer_verification(unmask, side)
+      self.state.seer.memory_manager.add_seer_verification(unmask, side, round_number=self.current_round_num)
     else:
       raise ValueError("Unmask function did not return a valid player.")
 
@@ -267,7 +267,7 @@ class GameMaster:
         if p.gamestate:
           p.gamestate.update_debate(next_speaker, dialogue)
           # Update memory manager for all players (they all hear the dialogue)
-          p.memory_manager.add_dialogue(next_speaker, dialogue)
+          p.memory_manager.add_dialogue(next_speaker, dialogue, round_number=self.current_round_num)
         else:
           raise ValueError(f"{name}.gamestate needs to be initialized.")
 
@@ -289,10 +289,110 @@ class GameMaster:
       }
       for player_name, task in deduction_tasks.items():
         try:
-          _result, log = task.result()
-          self.this_round_log.deductions.append((player_name, log))
-          tqdm.tqdm.write(f"{player_name} deduction logged.")
+          # #region agent log
+          import json
+          with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+            f.write(json.dumps({"location":"game.py:292","message":"Before task.result()","data":{"player":player_name}})+'\n')
+          # #endregion
+          result = task.result()
+          # #region agent log
+          with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+            tuple_len = len(result) if isinstance(result, tuple) else None
+            result_str = str(result)[:200] if result else "None"
+            f.write(json.dumps({"location":"game.py:295","message":"After task.result()","data":{"player":player_name,"result_type":type(result).__name__,"is_tuple":isinstance(result, tuple),"tuple_len":tuple_len,"result_str":result_str}})+'\n')
+          # #endregion
+          # Ensure result is a tuple with at least 2 elements (use index access to avoid unpacking errors)
+          if isinstance(result, tuple):
+            if len(result) >= 2:
+              # Use index access to avoid unpacking errors
+              _result = result[0]
+              log = result[1]
+              # Ensure log is an LmLog instance
+              if isinstance(log, LmLog):
+                # Print deduction content for debugging
+                # Try both _result and log.result
+                deduction_data = None
+                if _result and isinstance(_result, dict) and "deductions" in _result:
+                  deduction_data = _result
+                  tqdm.tqdm.write(f"  [Using _result for deductions]")
+                elif hasattr(log, 'result') and log.result:
+                  if isinstance(log.result, dict) and "deductions" in log.result:
+                    deduction_data = log.result
+                    tqdm.tqdm.write(f"  [Using log.result for deductions]")
+                  elif isinstance(log.result, dict):
+                    deduction_data = log.result
+                    tqdm.tqdm.write(f"  [Using log.result (no 'deductions' key)]")
+                
+                deductions_list = deduction_data.get("deductions", []) if deduction_data and isinstance(deduction_data, dict) else []
+                
+                tqdm.tqdm.write(f"\n=== {player_name} DEDUCTION ===")
+                tqdm.tqdm.write(f"  _result type: {type(_result).__name__}, _result: {str(_result)[:150] if _result else 'None'}")
+                tqdm.tqdm.write(f"  log.result type: {type(log.result).__name__ if hasattr(log, 'result') else 'N/A'}, log.result: {str(log.result)[:150] if hasattr(log, 'result') and log.result else 'None'}")
+                
+                if deductions_list:
+                  tqdm.tqdm.write(f"  Found {len(deductions_list)} deductions:")
+                  for ded in deductions_list:
+                    if isinstance(ded, dict):
+                      tqdm.tqdm.write(f"    Player: {ded.get('player', 'N/A')}, Role: {ded.get('role', 'N/A')}, Confidence: {ded.get('confidence', 'N/A')}")
+                      reasoning = ded.get('reasoning', 'N/A')
+                      if len(str(reasoning)) > 100:
+                        reasoning = str(reasoning)[:100] + "..."
+                      tqdm.tqdm.write(f"      Reasoning: {reasoning}")
+                      tqdm.tqdm.write(f"      Evidence: {ded.get('evidence', [])}")
+                    else:
+                      tqdm.tqdm.write(f"    {ded}")
+                else:
+                  tqdm.tqdm.write(f"  No deductions found!")
+                  if deduction_data:
+                    tqdm.tqdm.write(f"    deduction_data type: {type(deduction_data)}, keys: {list(deduction_data.keys()) if isinstance(deduction_data, dict) else 'N/A'}")
+                  else:
+                    tqdm.tqdm.write(f"    deduction_data is None or empty")
+                  # Also print raw response if available
+                  if hasattr(log, 'raw_resp') and log.raw_resp:
+                    tqdm.tqdm.write(f"    Raw response: {log.raw_resp[:500]}")
+                tqdm.tqdm.write(f"=== END {player_name} DEDUCTION ===\n")
+                
+                self.this_round_log.deductions.append((player_name, log))
+                tqdm.tqdm.write(f"{player_name} deduction logged.")
+              else:
+                tqdm.tqdm.write(f"{player_name} deduction failed: log is not LmLog instance (got {type(log)})")
+                tqdm.tqdm.write(f"  Result tuple length: {len(result)}, Types: {[type(x).__name__ for x in result]}")
+                self.this_round_log.deductions.append(
+                    (player_name, self._empty_deduction_log(player_name))
+                )
+            else:
+              # If result has wrong length, create empty log
+              tqdm.tqdm.write(f"{player_name} deduction failed: Invalid return format (got tuple of length {len(result)}, expected at least 2)")
+              tqdm.tqdm.write(f"  Result: {result}")
+              self.this_round_log.deductions.append(
+                  (player_name, self._empty_deduction_log(player_name))
+              )
+          else:
+            # If result is not a tuple, create empty log
+            tqdm.tqdm.write(f"{player_name} deduction failed: Invalid return format (got {type(result)}, expected tuple)")
+            tqdm.tqdm.write(f"  Result: {str(result)[:200]}")
+            self.this_round_log.deductions.append(
+                (player_name, self._empty_deduction_log(player_name))
+            )
+        except ValueError as ve:
+          # Specifically catch ValueError which includes "too many values to unpack"
+          import json
+          try:
+            with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+              f.write(json.dumps({"location":"game.py:304","message":"ValueError caught","data":{"player":player_name,"error":str(ve),"error_type":type(ve).__name__}})+'\n')
+          except:
+            pass
+          tqdm.tqdm.write(f"{player_name} deduction failed: {ve}")
+          self.this_round_log.deductions.append(
+              (player_name, self._empty_deduction_log(player_name))
+          )
         except Exception as e:
+          import json
+          try:
+            with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+              f.write(json.dumps({"location":"game.py:312","message":"Exception caught","data":{"player":player_name,"error":str(e),"error_type":type(e).__name__}})+'\n')
+          except:
+            pass
           tqdm.tqdm.write(f"{player_name} deduction failed: {e}")
           self.this_round_log.deductions.append(
               (player_name, self._empty_deduction_log(player_name))
@@ -340,7 +440,7 @@ class GameMaster:
     for name in self.this_round.players:
       player = self.state.players[name]
       if player.memory_manager:
-        player.memory_manager.add_vote_records(votes_dict)
+        player.memory_manager.add_vote_records(votes_dict, round_number=self.current_round_num)
 
     if self.this_round.exiled is not None:
       exiled_player = self.this_round.exiled
@@ -353,7 +453,7 @@ class GameMaster:
       for name in self.this_round.players:
         player = self.state.players[name]
         if player.memory_manager:
-          player.memory_manager.add_death_report(exiled_player, cause="vote")
+          player.memory_manager.add_death_report(exiled_player, cause="vote", round_number=self.current_round_num)
           player.memory_manager.update_player_status(exiled_player, False)
     else:
       announcement = (
@@ -383,7 +483,7 @@ class GameMaster:
       for name in self.this_round.players:
         player = self.state.players[name]
         if player.memory_manager:
-          player.memory_manager.add_death_report(eliminated_player, cause="night")
+          player.memory_manager.add_death_report(eliminated_player, cause="night", round_number=self.current_round_num)
           player.memory_manager.update_player_status(eliminated_player, False)
     else:
       announcement = "No one was removed from the game during the night."
@@ -453,7 +553,8 @@ class GameMaster:
         w.name for w in self.state.werewolves
     )
     active_villagers = set(self.this_round.players) - active_wolves
-    if len(active_wolves) >= len(active_villagers):
+    # Werewolves win only when they strictly outnumber the villagers
+    if len(active_wolves) > len(active_villagers):
       return "Werewolves"
     return "Villagers" if not active_wolves else ""
 
@@ -474,8 +575,8 @@ class GameMaster:
               self.current_round_num + 1
           )
           self.state.players[name].gamestate.clear_debate()
-          # Clear short-term memory at end of round
-          self.state.players[name].memory_manager.clear_short_term()
+          # Clear short-term memory at end of round (extracts important claims before clearing)
+          self.state.players[name].memory_manager.clear_short_term(current_round=self.current_round_num)
       self.current_round_num += 1
 
     tqdm.tqdm.write("Game is complete!")

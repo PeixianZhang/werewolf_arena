@@ -15,14 +15,14 @@
 GAME = """You are playing a digital version of the social deduction game Werewolf (also known as Mafia).
 
 GAME RULES:
-- Player Roles: {{num_players}} players - 3 Werewolves, 1 Seer, 1 Doctor, {{num_villagers}} Villagers.
+- Player Roles: {{num_players}} players - 2 Werewolves, 1 Seer, 1 Doctor, {{num_villagers}} Villagers.
 - Rounds consist of two phases:
     - Night Phase: The alive Werewolves, Seer, and Doctor can use their ability and take secret actions. 
                    Werewolf: choose a player to kill. If there are more than one Werewolves alive, the Werewolf with a smaller ID first proposes a player to kill. Then the proposal is added to the observation of the other Werewolf and this Werewolf decides the final kill target. For example, if player_0 and player_2 are the Werewolves, player_0 first proposes to kill player_i, then player_2 knows this information and decides to kill player_j. The final kill target is player_j. If there is only one Werewolf alive, then this Werewolf’s action is the final kill target. The Werewolf is not allowed to kill a dead player or kill themselves or kill their teammate.
                    Seer: choose a player to investigate. The Seer is not allowed to investigate a dead player or investigate themselves.
                    Doctor: choose a player to protect. The Doctor is not allowed to protect a dead player or protect themselves.
     - Day Phase: An announcement about last night’s result is announced to all remaining players. If a player is killed, they are immediately moved out of the game and cannot reveal their role or communicate with other players.Players debate and vote to remove one player. All remaining players take turns to speak only once in an open discussion. All remaining players simultaneously vote for one player or choose not to vote. Players are not allowed to vote for a dead player or themselves. The player with the most votes will be eliminated without revealing their role. If multiple players have the most votes, one player is randomly chosen and eliminated. The voting result is public and can be observed by all players.
-    - Winning Conditions: Villagers, Seer and Doctor win by voting out all Werewolves. Werewolves win when they outnumber the Villagers."""
+    - Winning Conditions: Villagers, Seer and Doctor win by voting out all Werewolves. Werewolves win when they strictly outnumber the Villagers (more Werewolves than Villagers remaining)."""
 
 CHARACTER_INTRODUCTIONS = """CHARACTER INTRODUCTIONS (each player's demographic):
 {% if character_introductions -%}
@@ -63,6 +63,8 @@ PREFIX = f"""{GAME}
 
 DEBATE = PREFIX + DEBATE_SO_FAR_THIS_ROUND + """INSTRUCTIONS:
 - You are speaking next in the debate as {{name}} the {{role}}.
+- IMPORTANT: Each player speaks only ONCE per round in a fixed order. This is your ONLY opportunity to speak this round. There is no back-and-forth debate or discussion after your turn. Make your statement count!
+- You can see what previous players have said (shown above), but you cannot respond to them directly or ask follow-up questions. You can only make your own statement.
 {% if memory_context -%}
 {{ memory_context }}
 {% endif -%}
@@ -86,7 +88,7 @@ DEBATE = PREFIX + DEBATE_SO_FAR_THIS_ROUND + """INSTRUCTIONS:
 ```json
 {
   "reasoning": "string", // Based on the game's current state and your role's objectives, outline your strategy. What do you want to achieve? What type of message can help you get there? Avoid using violent or harmful language.
-  "say": "string", // Your public statement in the debate. Be concise and persuasive. Respond directly to what the other players have said. Avoid simply repeating what others have said or regurgitating the instructions above.
+  "say": "string", // Your public statement. Be concise and persuasive. Since this is your only chance to speak this round, make it count. You can reference what others have said, but remember you cannot have a back-and-forth discussion - this is a one-time statement.
 }
 """
 
@@ -99,10 +101,15 @@ DEBATE_SCHEMA = {
     "required": ["reasoning", "say"],
 }
 
-VOTE = PREFIX + DEBATE_SO_FAR_THIS_ROUND + """INSTRUCTIONS:
+VOTE = PREFIX + DEBATE_SO_FAR_THIS_ROUND + """
+{% if memory_context -%}
+{{ memory_context }}
+{% endif -%}
+INSTRUCTIONS:
 - Think strategically as {{name}} the {{role}} and decide who to vote out.
 - Your vote will not be revealed to the other players, it will remain private.
 - Scrutinize accusations, analyze behavior, and consider previous patterns.
+- Use your memory and belief matrix to inform your voting decision.
 {% if role == 'Werewolf' -%}
 - Target Villagers who are disrupting your plans, particularly those who seem to hold influence, might be the Doctor or Seer, or pose a threat to you and your fellow Werewolves.
 - If the Villagers begin to suspect one of their own, join the chorus of doubt, and vote out the unlucky Villager already facing suspicion.
@@ -243,7 +250,7 @@ As {{name}} and a {{role}}, you should reflect on your previous deduction and re
 
 Response Format: For each player in {{remaining_players}}, include one object in the "deductions" array with keys: "player" (exact name), "role" (most likely hidden role from ["Werewolf", "Seer", "Doctor", "Villager"]), "reasoning", "confidence" (integer from 5 = pure guess to 10 = absolutely sure), "evidence" (list of integers citing key information indices above).
 
-IMPORTANT: Remember global constraints - there is exactly 1 Seer, 1 Doctor, 3 Werewolves, and the rest are Villagers. When assigning roles, ensure these constraints are satisfied across all players.
+IMPORTANT: Remember global constraints - there is exactly 1 Seer, 1 Doctor, 2 Werewolves, and the rest are Villagers. When assigning roles, ensure these constraints are satisfied across all players.
 
 Example: { "deductions": [ { "player": "Derek", "role": "Villager", "reasoning": "...", "confidence": 8, "evidence": [1, 3] }, ... ] }
 
@@ -282,7 +289,7 @@ MEMORY_REFLECTION = """You are {{player_name}}, a {{role}} in a Werewolf game. B
 GLOBAL ROLE CONSTRAINTS:
 - There is exactly 1 Seer in the game
 - There is exactly 1 Doctor in the game
-- There are exactly 3 Werewolves in the game
+- There are exactly 2 Werewolves in the game
 - The remaining players are Villagers
 - When updating beliefs, consider these constraints globally - if you believe someone is the Seer, others cannot be the Seer.
 
@@ -297,7 +304,7 @@ REMAINING PLAYERS: {{remaining_players}}
 INSTRUCTIONS:
 - Analyze the recent dialogue carefully. What new information or patterns do you notice?
 - Update your beliefs about each remaining player's likely role based on their statements and behavior.
-- Remember the global constraints: only 1 Seer, 1 Doctor, 3 Werewolves exist. If you assign a role to one player, adjust probabilities for others accordingly.
+- Remember the global constraints: only 1 Seer, 1 Doctor, 2 Werewolves exist. If you assign a role to one player, adjust probabilities for others accordingly.
 - Be honest about any biases you might have (positional bias, sentiment bias, logical inconsistencies).
 - Consider: Are you favoring certain players? Are you being influenced by emotional language rather than logic?
 

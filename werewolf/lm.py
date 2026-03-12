@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import dataclasses
+import json
 from typing import Any, Dict, List, Optional
 
 import jinja2
@@ -84,6 +85,11 @@ def generate(
                 result = result.get(result_key)
 
             if allowed_values is None or result in allowed_values:
+                # #region agent log
+                import json
+                with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+                    f.write(json.dumps({"location":"lm.py:87","message":"generate() returning success","data":{"result_type":type(result).__name__,"log_type":type(log).__name__}})+'\n')
+                # #endregion
                 return result, log
 
         except Exception as e:
@@ -91,6 +97,11 @@ def generate(
         temperature = min(1.0, temperature + 0.2)
         raw_responses.append(raw_resp)
 
+    # #region agent log
+    import json
+    with open(r'd:\Github_Clone\werewolf_arena\.cursor\debug.log', 'a') as f:
+        f.write(json.dumps({"location":"lm.py:94","message":"generate() returning failure after retries","data":{"raw_responses_len":len(raw_responses)}})+'\n')
+    # #endregion
     return None, LmLog(
         prompt=prompt, raw_resp="-------".join(raw_responses), result=None
     )
