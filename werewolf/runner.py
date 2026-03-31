@@ -32,7 +32,7 @@ from werewolf.model import State
 from werewolf.model import Villager
 from werewolf.model import WEREWOLF
 from werewolf.model import Werewolf
-from werewolf.config import get_player_names
+from werewolf.config import get_player_names, get_demographics_for_name, ANONYMOUS_MODE, NUM_PLAYERS
 
 _RUN_GAME = flags.DEFINE_boolean("run", False, "Runs a single game.")
 _RESUME = flags.DEFINE_boolean("resume", False, "Resumes games.")
@@ -57,7 +57,7 @@ RESUME_DIRECTORIES = []
 
 model_to_id = {
     "pro1.5": "gemini-1.5-pro-preview-0514",
-    "flash": "gemini-1.5-flash-001",
+    "flash": "gemini-2.5-flash",
     "pro1": "gemini-pro",
     "gpt4": "gpt-4-turbo-2024-04-09",
     "gpt4o": "gpt-4o-2024-05-13",
@@ -73,29 +73,65 @@ def initialize_players(
     player_names = get_player_names()
     random.shuffle(player_names)
 
+    # Get all player names first
+    all_player_names = player_names.copy()
+    seer_name = all_player_names.pop()
+    doctor_name = all_player_names.pop()
+    werewolf_names = [all_player_names.pop() for _ in range(2)]
+    
+    # Create name to display name mapping for anonymous mode
+    # Include all players: seer, doctor, werewolves, and villagers
+    name_to_display = {}
+    if ANONYMOUS_MODE:
+        all_names = [seer_name, doctor_name] + werewolf_names + all_player_names
+        for idx, name in enumerate(all_names):
+            name_to_display[name] = f"player_{idx}"
+    
+    # Create players with demographics and name mapping
     seer = Seer(
-        name=player_names.pop(),
+        name=seer_name,
         model=villager_model,
+        demographics=get_demographics_for_name(seer_name),
+        name_to_display=name_to_display,
         # personality="You are cunning.",
     )
-    doctor = Doctor(name=player_names.pop(), model=villager_model)
+    doctor = Doctor(
+        name=doctor_name,
+        model=villager_model,
+        demographics=get_demographics_for_name(doctor_name),
+        name_to_display=name_to_display,
+    )
     werewolves = [
-        Werewolf(name=player_names.pop(), model=werewolf_model) for _ in range(2)
+        Werewolf(
+            name=name,
+            model=werewolf_model,
+            demographics=get_demographics_for_name(name),
+            name_to_display=name_to_display,
+        )
+        for name in werewolf_names
     ]
-    villagers = [Villager(name=name, model=villager_model) for name in player_names]
+    villagers = [
+        Villager(
+            name=name,
+            model=villager_model,
+            demographics=get_demographics_for_name(name),
+            name_to_display=name_to_display,
+        )
+        for name in all_player_names
+    ]
 
     # Initialize game view for all players
+    all_names = all_player_names + [seer_name, doctor_name] + werewolf_names
     for player in [seer, doctor] + werewolves + villagers:
         other_wolf = (
             next((w.name for w in werewolves if w != player), None)
             if isinstance(player, Werewolf)
             else None
         )
-        tqdm.tqdm.write(f"{player.name} has role {player.role}")
+        display_name = player.get_display_name(player.name)
+        tqdm.tqdm.write(f"{display_name} ({player.name}) has role {player.role}")
         player.initialize_game_view(
-            current_players=player_names
-            + [seer.name, doctor.name]
-            + [w.name for w in werewolves],
+            current_players=all_names,
             round_number=0,
             other_wolf=other_wolf,
         )
@@ -122,6 +158,7 @@ def resume_game(directory: str) -> bool:
                 current_players=list(state.players.keys()),
             )
             p.observations = []
+            p.observation_entries = []
 
             if p.role == WEREWOLF:
                 werewolves.append(p)
@@ -149,6 +186,11 @@ def resume_game(directory: str) -> bool:
                     o
                     for o in player.observations
                     if not o.startswith(f"Round {failed_round}")
+                ]
+                player.observation_entries = [
+                    o
+                    for o in player.observation_entries
+                    if int(o.get("round", -1)) != failed_round
                 ]
 
                 if player.role == WEREWOLF:

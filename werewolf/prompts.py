@@ -27,6 +27,9 @@ STATE = """GAME STATE:
 {% if personality -%}
 - Personality: {{ personality }}
 {% endif -%}
+{% if demographics -%}
+- Demographic information: Gender: {{demographics.gender}}, Ethnicity: {{demographics.ethnicity}}, Religion: {{demographics.religion}}, Political Stance: {{demographics.politicalStance}}
+{% endif -%}
 - Remaining players: {{remaining_players}}"""
 
 OBSERVATIONS = """{% if observations|length -%}YOUR PRIVATE OBSERVATIONS:
@@ -34,6 +37,9 @@ OBSERVATIONS = """{% if observations|length -%}YOUR PRIVATE OBSERVATIONS:
 {{ turn }}
 {% endfor %}
 {% endif %}"""
+
+MEMORY_CONFIDENCE = """MEMORY RELIABILITY:
+{{memory_confidence_guidance}}"""
 
 DEBATE_SO_FAR_THIS_ROUND = """\nROUND {{round}} DEBATE:
 {% if debate|length -%}
@@ -48,53 +54,12 @@ PREFIX = f"""{GAME}
 {STATE}
 
 {OBSERVATIONS}
+
+{MEMORY_CONFIDENCE}
 """.strip()
-
-BIDDING = (
-    PREFIX
-    + DEBATE_SO_FAR_THIS_ROUND
-    + """CONTEXT: For the chance to speak next you will place a bid. Highest bidder speaks first.
-- BID OPTIONS:
-  0: I would like to observe and listen for now.
-  1: I have some general thoughts to share with the group.
-  2: I have something critical and specific to contribute to this discussion.
-  3: It is absolutely urgent for me to speak next.
-  4: Someone has addressed me directly and I must respond.
-- You have {{debate_turns_left}} chance(s) to speak left.
-
-INSTRUCTIONS:
-- Think strategically as {{name}} the {{role}}.
-- Prioritize speaking only when you have something impactful to contribute.
-- Balance your involvement, especially if you've been very vocal or notably silent.
-{% if role == 'Werewolf' -%}
-- Decide if you want to subtly guide the conversation toward chaos and distrust, sow seeds of doubt about the Villagers, or deflect suspicion from yourself and your pack.
-- Silence can be a powerful tactic, but a lack of participation can be suspicious too.
-{% else -%}
-- If the discussion is repetitive or off-track, prepare to steer it towards a more strategic direction.
-- If you are under suspicion or the discussion directly involves your role, you should prioritize speaking
-- Share information and make accusations strategically, but be aware that doing so can make you a target.
-{% endif %}
-
-```json
-{
-"reasoning": "string",  // How crucial is it for you to contribute to the debate right now? Explain your reasoning in one or two sentences. Avoid using violent or harmful language.
-"bid": "string" // Based on your reasoning cast your bid. Response is a single number from:  "0" | "1" | "2" | "3" | "4"
-}"
-"""
-)
-
-BIDDING_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "reasoning": {"type": "string"},
-        "bid": {"type": "string"},
-    },
-    "required": ["reasoning", "bid"],
-}
 
 DEBATE = PREFIX + DEBATE_SO_FAR_THIS_ROUND + """INSTRUCTIONS:
 - You are speaking next in the debate as {{name}} the {{role}}.
-- Your thoughts on speaking next: {{bidding_rationale}}
 {% if role == 'Werewolf' -%}
 - Your goal is to sow chaos and evade detection.
 - Cast suspicion on Villagers. Make them doubt each other.
@@ -262,7 +227,6 @@ SUMMARIZE_SCHEMA = {
 }
 
 ACTION_PROMPTS_AND_SCHEMAS = {
-    "bid": (BIDDING, BIDDING_SCHEMA),
     "debate": (DEBATE, DEBATE_SCHEMA),
     "vote": (VOTE, VOTE_SCHEMA),
     "investigate": (INVESTIGATE, INVESTIGATE_SCHEMA),

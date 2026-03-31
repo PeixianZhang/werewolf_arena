@@ -1,0 +1,736 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "Hayley",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "female",
+            "ethnicity": "white",
+            "religion": "christian",
+            "politicalStance": "liberal"
+        },
+        "name_to_display": {
+            "Hayley": "player_0",
+            "Leah": "player_1",
+            "Dan": "player_2",
+            "Scott": "player_3",
+            "Mason": "player_4",
+            "Jacob": "player_5",
+            "David": "player_6",
+            "Will": "player_7"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate player_1 and learned they are a Doctor."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate player_1 and learned they are a Doctor.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "Mason",
+                "Jacob",
+                "David",
+                "Will",
+                "Leah",
+                "Dan",
+                "Scott"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "Leah": "Doctor"
+        }
+    },
+    "doctor": {
+        "name": "Leah",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "female",
+            "ethnicity": "asian",
+            "religion": "buddhist",
+            "politicalStance": "neutral"
+        },
+        "name_to_display": {
+            "Hayley": "player_0",
+            "Leah": "player_1",
+            "Dan": "player_2",
+            "Scott": "player_3",
+            "Mason": "player_4",
+            "Jacob": "player_5",
+            "David": "player_6",
+            "Will": "player_7"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect player_0"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect player_0",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "Mason",
+                "Jacob",
+                "David",
+                "Will",
+                "Leah",
+                "Dan",
+                "Scott"
+            ],
+            "debate": [],
+            "other_wolf": null
+        }
+    },
+    "villagers": [
+        {
+            "name": "Mason",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "Jacob",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "David",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "Will",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "Dan",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": "Scott"
+            }
+        },
+        {
+            "name": "Scott",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": "Dan"
+            }
+        }
+    ],
+    "players": {
+        "Mason": {
+            "name": "Mason",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "Jacob": {
+            "name": "Jacob",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "David": {
+            "name": "David",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "Will": {
+            "name": "Will",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "Dan": {
+            "name": "Dan",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": "Scott"
+            }
+        },
+        "Scott": {
+            "name": "Scott",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": "Dan"
+            }
+        },
+        "Leah": {
+            "name": "Leah",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "asian",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect player_0"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect player_0",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "Hayley": {
+            "name": "Hayley",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {
+                "Hayley": "player_0",
+                "Leah": "player_1",
+                "Dan": "player_2",
+                "Scott": "player_3",
+                "Mason": "player_4",
+                "Jacob": "player_5",
+                "David": "player_6",
+                "Will": "player_7"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate player_1 and learned they are a Doctor."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate player_1 and learned they are a Doctor.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "Mason",
+                    "Jacob",
+                    "David",
+                    "Will",
+                    "Leah",
+                    "Dan",
+                    "Scott"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "Leah": "Doctor"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "Mason",
+                "Jacob",
+                "David",
+                "Will",
+                "Dan",
+                "Scott",
+                "Leah",
+                "Hayley"
+            ],
+            "eliminated": "Hayley",
+            "unmasked": "Leah",
+            "protected": "Hayley",
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": false
+        }
+    ],
+    "error_message": "Traceback (most recent call last):\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\runner.py\", line 270, in run_game\n    winner = gamemaster.run_game()\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 342, in run_game\n    self.run_round()\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 312, in run_round\n    action()\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 282, in resolve_night_phase\n    player.gamestate.remove_player(self.this_round.eliminated)\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\model.py\", line 120, in remove_player\n    self.current_players.remove(player_to_remove)\nValueError: list.remove(x): x not in list\n",
+    "winner": ""
+}

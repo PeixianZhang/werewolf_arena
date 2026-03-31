@@ -17,18 +17,13 @@
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 import random
+import re
 from typing import List
 
 import tqdm
 
 from werewolf.model import Round, RoundLog, State, VoteLog
 from werewolf.config import  MAX_DEBATE_TURNS, RUN_SYNTHETIC_VOTES
-
-def get_max_bids(d):
-  """Gets all the keys with the highest value in the dictionary."""
-  max_value = max(d.values())
-  max_keys = [key for key, value in d.items() if value == max_value]
-  return max_keys
 
 
 class GameMaster:
@@ -46,6 +41,7 @@ class GameMaster:
     self.current_round_num = len(self.state.rounds) if self.state.rounds else 0
     self.num_threads = num_threads
     self.logs: List[RoundLog] = []
+    self.round_start_players: List[str] = []
 
   @property
   def this_round(self) -> Round:
@@ -65,12 +61,15 @@ class GameMaster:
     self.this_round_log.eliminate = log
     if eliminated is not None:
       self.this_round.eliminated = eliminated
-      tqdm.tqdm.write(f"{wolf.name} eliminated {eliminated}")
+      display_wolf = wolf.get_display_name(wolf.name)
+      display_eliminated = wolf.get_display_name(eliminated)
+      tqdm.tqdm.write(f"{display_wolf} eliminated {display_eliminated}")
       for wolf in werewolves_alive:
+        display_eliminated_obs = wolf.get_display_name(eliminated)
         wolf._add_observation(
             "During the"
             f" night, {'we' if len(werewolves_alive) > 1 else 'I'} decided to"
-            f" eliminate {eliminated}."
+            f" eliminate {display_eliminated_obs}."
         )
     else:
       raise ValueError("Eliminate did not return a valid player.")
@@ -85,7 +84,9 @@ class GameMaster:
 
     if protect is not None:
       self.this_round.protected = protect
-      tqdm.tqdm.write(f"{self.state.doctor.name} protected {protect}")
+      display_doctor = self.state.doctor.get_display_name(self.state.doctor.name)
+      display_protect = self.state.doctor.get_display_name(protect)
+      tqdm.tqdm.write(f"{display_doctor} protected {display_protect}")
     else:
       raise ValueError("Protect did not return a valid player.")
 
@@ -103,56 +104,6 @@ class GameMaster:
     else:
       raise ValueError("Unmask function did not return a valid player.")
 
-  def _get_bid(self, player_name):
-    """Gets the bid for a specific player."""
-    player = self.state.players[player_name]
-    bid, log = player.bid()
-    if bid is None:
-      raise ValueError(
-          f"{player_name} did not return a valid bid. Find the raw response"
-          " in the `bid` field in the log"
-      )
-    if bid > 1:
-      tqdm.tqdm.write(f"{player_name} bid: {bid}")
-    return bid, log
-
-  def get_next_speaker(self):
-    """Determine the next speaker based on bids."""
-    previous_speaker, previous_dialogue = (
-        self.this_round.debate[-1] if self.this_round.debate else (None, None)
-    )
-
-    with ThreadPoolExecutor(max_workers=self.num_threads) as executor:
-      player_bids = {
-          player_name: executor.submit(self._get_bid, player_name)
-          for player_name in self.this_round.players
-          if player_name != previous_speaker
-      }
-
-      bid_log = []
-      bids = {}
-      try:
-        for player_name, bid_task in player_bids.items():
-          bid, log = bid_task.result()
-          bids[player_name] = bid
-          bid_log.append((player_name, log))
-      except TypeError as e:
-        print(e)
-        raise e
-
-    self.this_round.bids.append(bids)
-    self.this_round_log.bid.append(bid_log)
-
-    potential_speakers = get_max_bids(bids)
-    # Prioritize mentioned speakers if there's previous dialogue
-    if previous_dialogue:
-      potential_speakers.extend(
-          [name for name in potential_speakers if name in previous_dialogue]
-      )
-
-    random.shuffle(potential_speakers)
-    return random.choice(potential_speakers)
-
   def run_summaries(self):
     """Collect summaries from players after the debate."""
 
@@ -164,16 +115,57 @@ class GameMaster:
 
       for player_name, summary_task in player_summaries.items():
         summary, log = summary_task.result()
-        tqdm.tqdm.write(f"{player_name} summary: {summary}")
+        player = self.state.players[player_name]
+        display_name = player.get_display_name(player_name)
+        tqdm.tqdm.write(f"{display_name} summary: {summary}")
         self.this_round_log.summaries.append((player_name, log))
+
+  def _speaker_sort_key(self, player_name: str):
+    """Sort players by numeric suffix if available, else lexicographically."""
+    display_name = self.state.players[player_name].get_display_name(player_name)
+    match = re.search(r"(\d+)$", display_name)
+    if match:
+      return (0, int(match.group(1)))
+    return (1, display_name)
+
+  def _get_day_speaking_order(self) -> List[str]:
+    """Get deterministic speaking order for the day phase."""
+    alive_players = self.this_round.players.copy()
+    if not alive_players:
+      return []
+
+    # If someone died last night, start from the next seat after that player.
+    if (
+        self.this_round.eliminated
+        and self.this_round.eliminated != self.this_round.protected
+        and self.this_round.eliminated in self.round_start_players
+    ):
+      start_idx = (
+          self.round_start_players.index(self.this_round.eliminated) + 1
+      ) % len(self.round_start_players)
+      alive_set = set(alive_players)
+      ordered_players = []
+      for i in range(len(self.round_start_players)):
+        player = self.round_start_players[
+            (start_idx + i) % len(self.round_start_players)
+        ]
+        if player in alive_set:
+          ordered_players.append(player)
+      return ordered_players
+
+    # If nobody died, use ascending player index/identifier.
+    return sorted(alive_players, key=self._speaker_sort_key)
 
   def run_day_phase(self):
     """Run the day phase which consists of the debate and voting."""
 
-    for idx in range(MAX_DEBATE_TURNS):
-      next_speaker = self.get_next_speaker()
+    speaking_order = self._get_day_speaking_order()
+    debate_turns = min(len(speaking_order), MAX_DEBATE_TURNS)
+
+    for idx in range(debate_turns):
+      next_speaker = speaking_order[idx]
       if not next_speaker:
-        raise ValueError("get_next_speaker did not return a valid player.")
+        raise ValueError("Day speaking order produced an invalid player.")
 
       player = self.state.players[next_speaker]
       dialogue, log = player.debate()
@@ -184,7 +176,8 @@ class GameMaster:
 
       self.this_round_log.debate.append((next_speaker, log))
       self.this_round.debate.append([next_speaker, dialogue])
-      tqdm.tqdm.write(f"{next_speaker} ({player.role}): {dialogue}")
+      display_speaker = player.get_display_name(next_speaker)
+      tqdm.tqdm.write(f"{display_speaker} ({player.role}): {dialogue}")
 
       for name in self.this_round.players:
         player = self.state.players[name]
@@ -193,13 +186,16 @@ class GameMaster:
         else:
           raise ValueError(f"{name}.gamestate needs to be initialized.")
 
-      if idx == MAX_DEBATE_TURNS - 1 or RUN_SYNTHETIC_VOTES:
+      if idx == debate_turns - 1 or RUN_SYNTHETIC_VOTES:
         votes, vote_logs = self.run_voting()
         self.this_round.votes.append(votes)
         self.this_round_log.votes.append(vote_logs)
 
-    for player, vote in self.this_round.votes[-1].items():
-      tqdm.tqdm.write(f"{player} voted to remove {vote}")
+    for player_name, vote in self.this_round.votes[-1].items():
+      player_obj = self.state.players[player_name]
+      display_player = player_obj.get_display_name(player_name)
+      display_vote = player_obj.get_display_name(vote)
+      tqdm.tqdm.write(f"{display_player} voted to remove {display_vote}")
 
   def run_voting(self):
     """Conduct a vote among players to exile someone."""
@@ -214,14 +210,26 @@ class GameMaster:
 
       for player_name, vote_task in player_votes.items():
         vote, log = vote_task.result()
-        vote_log.append(VoteLog(player_name, vote, log))
+        if vote is None:
+          fallback_options = [
+              name for name in self.this_round.players if name != player_name
+          ]
+          if not fallback_options:
+            raise ValueError(
+                f"{player_name} could not vote and no fallback targets exist."
+            )
+          vote = random.choice(fallback_options)
+          display_player = self.state.players[player_name].get_display_name(
+              player_name
+          )
+          display_vote = self.state.players[player_name].get_display_name(vote)
+          tqdm.tqdm.write(
+              f"{display_player} returned an invalid vote; fallback vote is"
+              f" {display_vote}."
+          )
 
-        if vote is not None:
-          votes[player_name] = vote
-        else:
-          self.this_round.votes.append(votes)
-          self.this_round_log.votes.append(vote_log)
-          raise ValueError(f"{player_name} vote did not return a valid player.")
+        vote_log.append(VoteLog(player_name, vote, log))
+        votes[player_name] = vote
 
     return votes, vote_log
 
@@ -238,8 +246,14 @@ class GameMaster:
     if self.this_round.exiled is not None:
       exiled_player = self.this_round.exiled
       self.this_round.players.remove(exiled_player)
+      # Get display name from any player (they all have the same mapping)
+      if self.this_round.players:
+        sample_player = self.state.players[self.this_round.players[0]]
+        display_exiled = sample_player.get_display_name(exiled_player)
+      else:
+        display_exiled = exiled_player
       announcement = (
-          f"The majority voted to remove {exiled_player} from the game."
+          f"The majority voted to remove {display_exiled} from the game."
       )
     else:
       announcement = (
@@ -257,11 +271,21 @@ class GameMaster:
 
   def resolve_night_phase(self):
     """Resolve elimination and protection during the night phase."""
+    was_night_kill_successful = (
+        self.this_round.eliminated is not None
+        and self.this_round.eliminated != self.this_round.protected
+    )
     if self.this_round.eliminated != self.this_round.protected:
       eliminated_player = self.this_round.eliminated
       self.this_round.players.remove(eliminated_player)
+      # Get display name from any player (they all have the same mapping)
+      if self.this_round.players:
+        sample_player = self.state.players[self.this_round.players[0]]
+        display_eliminated = sample_player.get_display_name(eliminated_player)
+      else:
+        display_eliminated = eliminated_player
       announcement = (
-          f"The Werewolves removed {eliminated_player} from the game during the"
+          f"The Werewolves removed {display_eliminated} from the game during the"
           " night."
       )
     else:
@@ -270,7 +294,7 @@ class GameMaster:
 
     for name in self.this_round.players:
       player = self.state.players[name]
-      if player.gamestate:
+      if player.gamestate and was_night_kill_successful:
         player.gamestate.remove_player(self.this_round.eliminated)
       player.add_announcement(announcement)
 
@@ -284,6 +308,7 @@ class GameMaster:
         if self.current_round_num == 0
         else self.state.rounds[self.current_round_num - 1].players.copy()
     )
+    self.round_start_players = self.this_round.players.copy()
 
     for action, message in [
         (

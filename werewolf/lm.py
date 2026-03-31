@@ -91,6 +91,7 @@ def generate(
         temperature = min(1.0, temperature + 0.2)
         raw_responses.append(raw_resp)
 
+    safe_raw_responses = [r if isinstance(r, str) else "" for r in raw_responses]
     return None, LmLog(
-        prompt=prompt, raw_resp="-------".join(raw_responses), result=None
+        prompt=prompt, raw_resp="-------".join(safe_raw_responses), result=None
     )
