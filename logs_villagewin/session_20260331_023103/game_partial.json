@@ -1,0 +1,910 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_7",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "male",
+            "ethnicity": "asian",
+            "religion": "jewish",
+            "politicalStance": "liberal"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I decided to investigate player_4 and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate player_4 and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_5",
+                "player_1",
+                "player_0",
+                "player_4",
+                "player_7",
+                "player_6",
+                "player_3"
+            ],
+            "debate": [
+                [
+                    "player_7",
+                    "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                ],
+                [
+                    "player_5",
+                    "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                ],
+                [
+                    "player_1",
+                    "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_4": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_2",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "male",
+            "ethnicity": "black",
+            "religion": "muslim",
+            "politicalStance": "conservative"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I chose to protect player_1"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect player_1",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_5",
+                "player_1",
+                "player_0",
+                "player_4",
+                "player_7",
+                "player_6",
+                "player_3"
+            ],
+            "debate": [],
+            "other_wolf": null
+        }
+    },
+    "villagers": [
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "black",
+                "religion": "buddhist",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "other",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "black",
+                "religion": "jewish",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_2.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "asian",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_2.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": "player_6"
+            }
+        }
+    ],
+    "players": {
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "black",
+                "religion": "buddhist",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "other",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "black",
+                "religion": "jewish",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_2.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "asian",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_2.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "black",
+                "religion": "muslim",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I chose to protect player_1"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect player_1",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "asian",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I decided to investigate player_4 and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate player_4 and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_1",
+                    "player_0",
+                    "player_4",
+                    "player_7",
+                    "player_6",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                    ],
+                    [
+                        "player_1",
+                        "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_4": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_5",
+                "player_1",
+                "player_0",
+                "player_4",
+                "player_6",
+                "player_3",
+                "player_7"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_4",
+            "protected": "player_1",
+            "exiled": null,
+            "debate": [
+                [
+                    "player_7",
+                    "Player_2's death is a grim start to the game. We need to be incredibly focused from the very beginning. I have a critical piece of information I want to share right away: I know for a fact that player_4 is a Villager. Let's use this confirmed information to narrow down our suspects and work together to figure out who targeted player_2. What are everyone's initial thoughts?"
+                ],
+                [
+                    "player_5",
+                    "Player_2's death is a harsh reminder of how quickly things can escalate. Player_7, your claim about player_4 being a Villager is quite significant, especially this early. Could you explain how you know this for a fact? If you are a power role revealing information, you're putting yourself in a very vulnerable position. We need to be extremely cautious and hear from everyone about their thoughts on player_2's elimination before we jump to conclusions based on a single, unverified role claim."
+                ],
+                [
+                    "player_1",
+                    "Player_2's death is a very bad start to the game. Player_7, your statement about player_4 being a Villager is incredibly significant, and as player_5 pointed out, it's a huge risk to reveal something like that so early. If you are a power role, we need to understand *why* you've revealed this now and what other information you might have that led you to this conclusion. This claim needs immediate scrutiny for all our sakes. Let's hear from player_0, player_6, and player_3 about their initial thoughts on player_2's death and player_7's very strong claim."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_5": "player_7",
+                    "player_1": "player_7",
+                    "player_0": "player_7",
+                    "player_4": "player_7",
+                    "player_6": "player_7",
+                    "player_3": "player_7",
+                    "player_7": "player_0"
+                },
+                {
+                    "player_5": "player_7",
+                    "player_1": "player_7",
+                    "player_0": "player_7",
+                    "player_4": "player_0",
+                    "player_6": "player_7",
+                    "player_3": "player_7",
+                    "player_7": "player_5"
+                },
+                {
+                    "player_5": "player_7",
+                    "player_1": "player_7",
+                    "player_0": "player_3",
+                    "player_4": "player_3",
+                    "player_6": "player_5",
+                    "player_3": "player_7",
+                    "player_7": "player_3"
+                }
+            ],
+            "success": false
+        }
+    ],
+    "error_message": "Traceback (most recent call last):\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\runner.py\", line 275, in run_game\n    winner = gamemaster.run_game()\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 358, in run_game\n    self.run_round()\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 328, in run_round\n    action()\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 173, in run_day_phase\n    raise ValueError(\nValueError: player_0 did not return a valid dialouge from debate().\n",
+    "winner": ""
+}

@@ -56,23 +56,71 @@ class GameMaster:
     werewolves_alive = [
         w for w in self.state.werewolves if w.name in self.this_round.players
     ]
-    wolf = random.choice(werewolves_alive)
-    eliminated, log = wolf.eliminate()
-    self.this_round_log.eliminate = log
-    if eliminated is not None:
-      self.this_round.eliminated = eliminated
-      display_wolf = wolf.get_display_name(wolf.name)
-      display_eliminated = wolf.get_display_name(eliminated)
-      tqdm.tqdm.write(f"{display_wolf} eliminated {display_eliminated}")
-      for wolf in werewolves_alive:
-        display_eliminated_obs = wolf.get_display_name(eliminated)
-        wolf._add_observation(
-            "During the"
-            f" night, {'we' if len(werewolves_alive) > 1 else 'I'} decided to"
-            f" eliminate {display_eliminated_obs}."
-        )
-    else:
-      raise ValueError("Eliminate did not return a valid player.")
+    if not werewolves_alive:
+      raise ValueError("No alive werewolves available to eliminate.")
+
+    # All alive wolves propose a target; final target is a joint decision.
+    wolf_votes = {}
+    wolf_logs = {}
+    for wolf in werewolves_alive:
+      voted_target, log = wolf.eliminate()
+      wolf_votes[wolf.name] = voted_target
+      wolf_logs[wolf.name] = log
+
+    legal_targets = [
+        name
+        for name in self.this_round.players
+        if name not in [wolf.name for wolf in werewolves_alive]
+    ]
+    valid_votes = {
+        name: target
+        for name, target in wolf_votes.items()
+        if target in legal_targets
+    }
+
+    eliminated = None
+    deciding_wolf_name = None
+
+    if len(valid_votes) == 1:
+      deciding_wolf_name, eliminated = next(iter(valid_votes.items()))
+    elif len(valid_votes) >= 2:
+      voted_targets = list(valid_votes.values())
+      if len(set(voted_targets)) == 1:
+        eliminated = voted_targets[0]
+      else:
+        eliminated = random.choice(voted_targets)
+      # Keep one deciding wolf for logging compatibility.
+      deciding_wolf_name = next(
+          name for name, target in valid_votes.items() if target == eliminated
+      )
+
+    if eliminated is None:
+      if not legal_targets:
+        raise ValueError("Werewolves could not eliminate: no legal targets.")
+      eliminated = random.choice(legal_targets)
+      deciding_wolf_name = werewolves_alive[0].name
+      deciding_display = werewolves_alive[0].get_display_name(deciding_wolf_name)
+      eliminated_display = werewolves_alive[0].get_display_name(eliminated)
+      tqdm.tqdm.write(
+          f"{deciding_display} returned an invalid eliminate target; fallback"
+          f" target is {eliminated_display}."
+      )
+
+    self.this_round_log.eliminate = wolf_logs.get(
+        deciding_wolf_name, next(iter(wolf_logs.values()))
+    )
+    self.this_round.eliminated = eliminated
+    deciding_wolf = self.state.players[deciding_wolf_name]
+    display_wolf = deciding_wolf.get_display_name(deciding_wolf_name)
+    display_eliminated = deciding_wolf.get_display_name(eliminated)
+    tqdm.tqdm.write(f"{display_wolf} eliminated {display_eliminated}")
+    for wolf in werewolves_alive:
+      display_eliminated_obs = wolf.get_display_name(eliminated)
+      wolf._add_observation(
+          "During the"
+          f" night, {'we' if len(werewolves_alive) > 1 else 'I'} decided to"
+          f" eliminate {display_eliminated_obs}."
+      )
 
   def protect(self):
     """Doctor chooses a player to protect."""
@@ -236,11 +284,17 @@ class GameMaster:
   def exile(self):
     """Exile the player who received the most votes."""
 
-    most_voted, vote_count = Counter(
-        self.this_round.votes[-1].values()
-    ).most_common(1)[0]
+    vote_counter = Counter(self.this_round.votes[-1].values())
+    most_voted, vote_count = vote_counter.most_common(1)[0]
+    top_candidates = [
+        player for player, count in vote_counter.items() if count == vote_count
+    ]
 
-    if vote_count > len(self.this_round.players) / 2:
+    # Tie at top votes means no exile this round.
+    if (
+        len(top_candidates) == 1
+        and vote_count >= len(self.this_round.players) / 2
+    ):
       self.this_round.exiled = most_voted
 
     if self.this_round.exiled is not None:

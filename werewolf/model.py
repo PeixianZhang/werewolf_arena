@@ -423,6 +423,11 @@ class Werewolf(Player):
     ]
     random.shuffle(options)
     display_options = [self.get_display_name(player) for player in options]
+    if self.gamestate.round_number == 0:
+      print(
+          f"[Round 0] {self.get_display_name(self.name)} shuffled eliminate"
+          f" options: {display_options}"
+      )
     eliminate, log = self._generate_action("remove", options, display_options)
     return eliminate, log
 
@@ -523,6 +528,7 @@ class Doctor(Player):
         name=name, role=DOCTOR, model=model, personality=personality,
         demographics=demographics, name_to_display=name_to_display
     )
+    self.last_protected: Optional[str] = None
 
   def save(self) -> tuple[str | None, LmLog]:
     """Choose a player to protect."""
@@ -532,10 +538,18 @@ class Doctor(Player):
       )
 
     options = list(self.gamestate.current_players)
+    # Prevent consecutive protection of the same player when alternatives exist.
+    if (
+        self.last_protected is not None
+        and self.last_protected in options
+        and len(options) > 1
+    ):
+      options = [p for p in options if p != self.last_protected]
     random.shuffle(options)
     display_options = [self.get_display_name(player) for player in options]
     protected, log = self._generate_action("protect", options, display_options)
     if protected is not None:
+      self.last_protected = protected
       display_protected = self.get_display_name(protected) if protected in self.name_to_display else protected
       self._add_observation(
           f"During the night, I chose to protect {display_protected}",
@@ -552,6 +566,7 @@ class Doctor(Player):
     o.gamestate = data.get("gamestate", None)
     o.observations = data.get("observations", [])
     o.observation_entries = data.get("observation_entries", [])
+    o.last_protected = data.get("last_protected", None)
     return o
 
 

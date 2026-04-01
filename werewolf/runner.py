@@ -70,7 +70,11 @@ def initialize_players(
 ) -> Tuple[Seer, Doctor, List[Villager], List[Werewolf]]:
     """Assigns roles to players and initializes their game view."""
 
-    player_names = get_player_names()
+    if ANONYMOUS_MODE:
+        # Internal ids remain player_i, but players see alias names.
+        player_names = [f"player_{i}" for i in range(NUM_PLAYERS)]
+    else:
+        player_names = get_player_names()
     random.shuffle(player_names)
 
     # Get all player names first
@@ -79,13 +83,14 @@ def initialize_players(
     doctor_name = all_player_names.pop()
     werewolf_names = [all_player_names.pop() for _ in range(2)]
     
-    # Create name to display name mapping for anonymous mode
-    # Include all players: seer, doctor, werewolves, and villagers
+    # Display-name mapping: in anonymous mode map player_i -> alias name.
     name_to_display = {}
     if ANONYMOUS_MODE:
-        all_names = [seer_name, doctor_name] + werewolf_names + all_player_names
-        for idx, name in enumerate(all_names):
-            name_to_display[name] = f"player_{idx}"
+        alias_names = get_player_names()
+        name_to_display = dict(zip([f"player_{i}" for i in range(NUM_PLAYERS)], alias_names))
+        tqdm.tqdm.write("Anonymous alias mapping:")
+        for internal_name in sorted(name_to_display.keys()):
+            tqdm.tqdm.write(f"  {internal_name} -> {name_to_display[internal_name]}")
     
     # Create players with demographics and name mapping
     seer = Seer(
@@ -129,7 +134,12 @@ def initialize_players(
             else None
         )
         display_name = player.get_display_name(player.name)
-        tqdm.tqdm.write(f"{display_name} ({player.name}) has role {player.role}")
+        if ANONYMOUS_MODE:
+            tqdm.tqdm.write(f"{display_name} has role {player.role}")
+        else:
+            tqdm.tqdm.write(
+                f"{display_name} ({player.name}) has role {player.role}"
+            )
         player.initialize_game_view(
             current_players=all_names,
             round_number=0,
