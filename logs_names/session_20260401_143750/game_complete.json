@@ -1,0 +1,1757 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_2",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Scott",
+            "player_1": "Sam",
+            "player_2": "Derek",
+            "player_3": "Harold",
+            "player_4": "Jackson",
+            "player_5": "Hayley",
+            "player_6": "David",
+            "player_7": "Jacob"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Jacob and learned they are a Werewolf.",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove Jacob from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Jacob and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Jacob from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_4",
+                "player_3",
+                "player_0",
+                "player_7"
+            ],
+            "debate": [
+                [
+                    "player_6",
+                    "Alright everyone, it seems like our Doctor was on the ball last night, which is a great start for the village! No one was removed. Let's make sure we keep up this momentum. Does anyone have any initial thoughts or observations they'd like to share?"
+                ],
+                [
+                    "player_2",
+                    "David, it's excellent news that the Doctor was proactive. That said, we cannot afford to wait and see. I know this is early, but I have a strong conviction based on what happened last night. I believe Jacob is a Werewolf and he is our most critical target for today's vote. We should discuss this immediately and consider voting him out."
+                ],
+                [
+                    "player_3",
+                    "David, I agree it's excellent news that the Doctor was effective last night, giving the village a strong start. However, Derek, I'm quite taken aback by your immediate and very strong accusation against Jacob. 'What happened last night' was simply that no one was removed. Could you please elaborate on the specific events or information that led you to such a 'strong conviction' about Jacob's role? We need solid reasoning for any vote, especially on the very first day."
+                ],
+                [
+                    "player_5",
+                    "I completely agree with Harold. Derek, your accusation against Jacob is incredibly alarming for Day 1. 'What happened last night' was merely that the Doctor saved someone, meaning we have absolutely zero information about anyone's role. To claim a 'strong conviction' about Jacob being a Werewolf based on that is illogical and frankly, very suspicious. Please elaborate immediately and with genuine reasoning, because right now, this looks like a very bad faith accusation trying to mislead the village."
+                ],
+                [
+                    "player_4",
+                    "I completely agree with Harold and Hayley here. Derek, your accusation against Jacob is truly baffling. 'What happened last night' was that the Doctor successfully saved someone, which means we gained no information about anyone's role, certainly not enough to form a 'strong conviction' about anyone being a Werewolf. This early, baseless, and incredibly forceful accusation on Day 1 is a major red flag for the village. Please explain your reasoning immediately, because right now, this looks less like a Villager trying to help and more like a Werewolf trying to cause immediate chaos and push a false target."
+                ],
+                [
+                    "player_7",
+                    "Thank you, Harold, Hayley, and Jackson, for speaking up. I'm completely baffled and honestly quite unnerved by Derek's accusation. As you've all rightly said, the Doctor's save means we gained absolutely no information about anyone last night. So, Derek, to claim a 'strong conviction' that I'm a Werewolf without a shred of evidence on Day 1 is not just illogical, it's incredibly suspicious behavior for someone trying to help the village. Why would you try to push such a baseless and divisive vote so early? Please, explain your 'conviction' with actual reasoning, because right now, your actions are a much bigger red flag than anything else that has happened."
+                ],
+                [
+                    "player_1",
+                    "I completely agree with Harold, Hayley, Jackson, and Jacob. Derek, your immediate and aggressive accusation against Jacob, completely lacking any basis from last night's events, is extremely alarming. 'What happened last night' gave us no information about roles, so your 'strong conviction' makes absolutely no sense for a Villager trying to help. This feels like an attempt to sow chaos and push an innocent target. Unless you can provide actual, logical reasoning right now, I think you've made yourself the most suspicious player on Day 1, and the village should seriously consider voting you out today."
+                ],
+                [
+                    "player_0",
+                    "David, it's fantastic news about the Doctor's save, giving us a real fighting chance. But Derek, I have to echo the strong concerns raised by Harold, Hayley, Jackson, Jacob, and Sam. 'What happened last night' was simply that the Doctor saved someone. We gained absolutely zero information about anyone's role. To claim a 'strong conviction' about Jacob being a Werewolf from that is not just illogical, it's incredibly disruptive and suspicious for Day 1. It frankly looks like a desperate attempt to create chaos and push a false narrative, which makes you, Derek, the biggest red flag right now."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_7": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_3",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Scott",
+            "player_1": "Sam",
+            "player_2": "Derek",
+            "player_3": "Harold",
+            "player_4": "Jackson",
+            "player_5": "Hayley",
+            "player_6": "David",
+            "player_7": "Jacob"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Sam",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove Derek from the game.",
+            "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+            "Round 0: Summary: As Harold, I successfully protected Sam last night, and no one was removed. The day's debate centered around Derek's immediate and baseless accusation against Jacob. I, along with Hayley, Jackson, Jacob, Sam, and Scott, strongly challenged Derek's illogical claims, pointing out that 'what happened last night' provided no role information. This made Derek highly suspicious to the majority of the village. David initiated the discussion, seeming like a neutral party. The overwhelming consensus to vote Derek out suggests the village quickly identified a suspicious player, and I aligned my vote with this decision.",
+            "Round 1: During the night, I chose to protect Jacob",
+            "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+            "Round 1: Summary: As Harold, I bravely revealed myself as the Doctor in this debate, prompted by Jacob's excellent question. I confirmed I successfully saved Sam in Round 0, meaning the Werewolves targeted him from the start. Tragically, I protected Jacob in Round 1, and Sam was targeted and killed again by the Werewolves, confirming he was a primary threat to them. Hayley's initial assessment about Sam being targeted for being vocal against Derek was validated by my reveal. Jackson then critically questioned David's perspective and actions during Round 0, which proved to be a very significant line of inquiry given the moderator's later announcement that David was ultimately voted out. The village is now rightly focusing on scrutinizing Round 0's debate for clues, knowing Sam was consistently targeted.",
+            "Round 2: During the night, I chose to protect Harold",
+            "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Sam",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Derek from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As Harold, I successfully protected Sam last night, and no one was removed. The day's debate centered around Derek's immediate and baseless accusation against Jacob. I, along with Hayley, Jackson, Jacob, Sam, and Scott, strongly challenged Derek's illogical claims, pointing out that 'what happened last night' provided no role information. This made Derek highly suspicious to the majority of the village. David initiated the discussion, seeming like a neutral party. The overwhelming consensus to vote Derek out suggests the village quickly identified a suspicious player, and I aligned my vote with this decision.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Jacob",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Summary: As Harold, I bravely revealed myself as the Doctor in this debate, prompted by Jacob's excellent question. I confirmed I successfully saved Sam in Round 0, meaning the Werewolves targeted him from the start. Tragically, I protected Jacob in Round 1, and Sam was targeted and killed again by the Werewolves, confirming he was a primary threat to them. Hayley's initial assessment about Sam being targeted for being vocal against Derek was validated by my reveal. Jackson then critically questioned David's perspective and actions during Round 0, which proved to be a very significant line of inquiry given the moderator's later announcement that David was ultimately voted out. The village is now rightly focusing on scrutinizing Round 0's debate for clues, knowing Sam was consistently targeted.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 2,
+                "content": "During the night, I chose to protect Harold",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 2,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 2,
+                "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 3,
+            "current_players": [
+                "player_4",
+                "player_3",
+                "player_0",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_3"
+    },
+    "villagers": [
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: As Jackson, I recall the moderator announcing that the Doctor successfully saved someone last night, which was positive but also meant we gained no role information. Derek immediately made a baseless and baffling accusation against Jacob, claiming a 'strong conviction' without any logical reasoning from the night's events. I, along with Harold, Hayley, Jacob, Sam, and Scott, strongly challenged Derek's behavior, seeing it as a major red flag and potentially a Werewolf's attempt to cause chaos. This collective effort led to Derek being voted out, which makes me feel we made a logical move as a village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: As Jackson, I recall David initiating the debate, focusing on Sam's death and urging scrutiny of Round 0. Hayley then proposed that Sam was targeted because he opposed Derek, suggesting Derek was a Werewolf. Scott offered a nuanced counter-argument, suggesting Werewolves might target strong communicators generally. Jacob then brilliantly brought up the Doctor, prompting Harold to reveal himself as the Doctor. Harold confirmed he saved Sam in Round 0 and Jacob last night, which means Werewolves targeted Sam twice. This validates Hayley's theory about Sam being a Werewolf threat. I thanked Harold and Jacob, then specifically questioned David about his actions in Round 0, as his involvement wasn't clear to me.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jackson, I recall the moderator announcing that the Doctor successfully saved someone last night, which was positive but also meant we gained no role information. Derek immediately made a baseless and baffling accusation against Jacob, claiming a 'strong conviction' without any logical reasoning from the night's events. I, along with Harold, Hayley, Jacob, Sam, and Scott, strongly challenged Derek's behavior, seeing it as a major red flag and potentially a Werewolf's attempt to cause chaos. This collective effort led to Derek being voted out, which makes me feel we made a logical move as a village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Jackson, I recall David initiating the debate, focusing on Sam's death and urging scrutiny of Round 0. Hayley then proposed that Sam was targeted because he opposed Derek, suggesting Derek was a Werewolf. Scott offered a nuanced counter-argument, suggesting Werewolves might target strong communicators generally. Jacob then brilliantly brought up the Doctor, prompting Harold to reveal himself as the Doctor. Harold confirmed he saved Sam in Round 0 and Jacob last night, which means Werewolves targeted Sam twice. This validates Hayley's theory about Sam being a Werewolf threat. I thanked Harold and Jacob, then specifically questioned David about his actions in Round 0, as his involvement wasn't clear to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: Round 0 started with the moderator announcing no one was removed, indicating the Doctor made a successful save. David acknowledged this, then Derek immediately accused Jacob of being a Werewolf with a 'strong conviction' based on 'what happened last night,' which provided no such information. Harold, Hayley, Jackson, Jacob, Scott, and I all independently pointed out Derek's baseless accusation, highlighting its illogical nature and calling his behavior very suspicious and a 'major red flag.' I specifically stated that Derek had made himself the most suspicious player. The village ultimately voted to remove Derek from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator announcing no one was removed, indicating the Doctor made a successful save. David acknowledged this, then Derek immediately accused Jacob of being a Werewolf with a 'strong conviction' based on 'what happened last night,' which provided no such information. Harold, Hayley, Jackson, Jacob, Scott, and I all independently pointed out Derek's baseless accusation, highlighting its illogical nature and calling his behavior very suspicious and a 'major red flag.' I specifically stated that Derek had made himself the most suspicious player. The village ultimately voted to remove Derek from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: As David, I started the debate after the Doctor successfully saved someone, a good start for the village. Derek immediately made a very strong and baseless accusation against Jacob, claiming a 'strong conviction' he was a Werewolf based on 'what happened last night,' which was illogical as we gained no role information. Harold, Hayley, Jackson, Jacob, Sam, and Scott all quickly and unanimously challenged Derek, pointing out his lack of reasoning and how suspicious his behavior was, suggesting he might be a Werewolf trying to create chaos. I agreed with the consensus that Derek was the biggest red flag, and voted to remove him, which the moderator confirmed was successful.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As David, I started the debate after the Doctor successfully saved someone, a good start for the village. Derek immediately made a very strong and baseless accusation against Jacob, claiming a 'strong conviction' he was a Werewolf based on 'what happened last night,' which was illogical as we gained no role information. Harold, Hayley, Jackson, Jacob, Sam, and Scott all quickly and unanimously challenged Derek, pointing out his lack of reasoning and how suspicious his behavior was, suggesting he might be a Werewolf trying to create chaos. I agreed with the consensus that Derek was the biggest red flag, and voted to remove him, which the moderator confirmed was successful.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Alright everyone, Sam was taken by the Werewolves last night. This confirms they are active and a serious threat. Last round, we successfully identified and removed Derek for his chaotic and illogical behavior, showing we can work together and spot suspicious actions. Now, with a confirmed kill, we need to be even more strategic. Seer, Doctor, if you have any information that can help us, please come forward. For the rest of us, let's scrutinize everyone's behavior from Round 0 again. Who was too quiet, or made any subtle tells? We must identify a Werewolf today."
+                    ],
+                    [
+                        "player_5",
+                        "It's truly heartbreaking about Sam. David's right, we absolutely need to look at Round 0 again. It's very telling that Sam, who was vocal in identifying Derek as suspicious, was targeted by the Werewolves. This strongly suggests Derek *was* a Werewolf and his partner is now retaliating or removing strong players. We should now focus intensely on anyone who stayed quiet, was neutral, or perhaps surprisingly defended Derek last round. Seer, Doctor, we desperately need your information now."
+                    ],
+                    [
+                        "player_0",
+                        "It's truly heartbreaking about Sam, and I agree with David and Hayley that we absolutely need to go over Round 0 with a fine-tooth comb. Hayley, your point about Sam being vocal against Derek is noted, but I'm not sure we can immediately jump to the conclusion that Derek *was* a Werewolf and Sam was targeted for that reason alone. Sam was an active, reasoning voice who helped us identify the illogical nature of Derek's claims. Werewolves often target players who are strong communicators and critical thinkers, regardless of past votes, to sow confusion and weaken the village's ability to coordinate. We should be cautious of any easy conclusions and instead focus on who truly stood to gain from the chaos last round, or anyone who might have subtly tried to steer the conversation."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly devastating to lose Sam so early, my thoughts are with everyone. Hayley, while I understand your line of reasoning connecting Sam's unfortunate passing to Derek, I agree with Scott that we should be cautious about drawing such a direct conclusion. Werewolves often target strong, logical communicators to sow discord and weaken the village, not just for direct retaliation. Sam was indeed a clear-thinking voice. David is right; we absolutely need to scrutinize Round 0 again, but let's widen our lens. We know the Doctor successfully saved someone last night in Round 0, preventing our initial loss. This tells us the Doctor is active. We need to consider *who* the Doctor chose to save then, and critically, why they couldn't save Sam this time. This isn't about accusation, but about understanding all the unseen actions. Let's look at who benefited from the chaos, who was surprisingly quiet, and who might have tried to subtly steer the conversation without adding real value."
+                    ],
+                    [
+                        "player_3",
+                        "Everyone, Jacob hit on a crucial point that I, as the Doctor, can confirm. I am the Doctor, and yes, I successfully protected someone in Round 0. That player was Sam. This means Sam was targeted by the Werewolves from the very first night, which strongly supports Hayley's point about Sam being a threat to them. Tragically, last night, I protected Jacob, which means Sam was targeted by the Werewolves again and was not protected. This confirms the Werewolves targeted Sam twice. We need to look closely at who might have benefited from Sam's silence, or who tried to subtly protect Derek, or sow discord during Round 0's debate, now that we know Sam was a primary target for the Werewolves. Jacob, your question helped bring this vital information to light."
+                    ],
+                    [
+                        "player_4",
+                        "Harold, thank you for your incredibly courageous reveal as the Doctor and for sharing that vital information. Your confirmation that you protected Sam in Round 0, and that the Werewolves targeted him *again* last night, makes it abundantly clear Sam was a massive threat to them. This lends serious weight to Hayley's initial point about Sam being effective against the Werewolves. Given Sam was their primary target from the very beginning, we must now re-examine Round 0's debate for anyone who *didn't* actively challenge Derek's chaos, or perhaps subtly benefited from it. My recollection is that myself, Harold, Hayley, Jacob, Sam, and Scott were united in challenging Derek's baseless accusations. David, I'm curious to hear more about your perspective and actions during that initial debate, as your specific involvement in challenging Derek wasn't clear to me then. Jacob, your question prompting Harold's reveal was incredibly helpful and a good example of how we need to work together."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: The night started well with the Doctor successfully saving someone, meaning no one was removed. However, Derek immediately made a very strong and completely baseless accusation against Jacob, claiming he was a Werewolf. I, along with Harold, Jackson, Jacob, Sam, and Scott, found Derek's accusation highly suspicious and illogical, as the Doctor's save provided no information about anyone's role. Everyone who spoke after Derek highlighted his actions as a major red flag, suggesting he might be a Werewolf trying to cause chaos or misdirect the village on Day 1. David introduced the discussion neutrally. Based on this, Derek has made himself the most suspicious player, and Jacob, as his target, has been strongly defended by a large portion of the village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: This round has been incredibly intense but fruitful. Losing Sam is truly heartbreaking, but the debate quickly yielded vital information. My initial gut feeling that Sam was targeted because he was vocal against Derek gained significant weight when Harold bravely revealed himself as the Doctor. He confirmed he protected Sam on Night 0, meaning the Werewolves tried to kill Sam from the very beginning, and then successfully killed him last night after Harold protected Jacob instead. Jacob's brilliant question prompted Harold's reveal, making Jacob seem very trustworthy and strategic. Jackson immediately aligned with me and expressed strong appreciation for Harold, then rightly put David under scrutiny for his unclear role in Round 0. Scott was initially cautious about my direct conclusion, which is fair, but Harold's reveal largely confirmed my theory. We now know Sam was a major threat to the Werewolves, Harold is the Doctor, and David is our main suspect.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The night started well with the Doctor successfully saving someone, meaning no one was removed. However, Derek immediately made a very strong and completely baseless accusation against Jacob, claiming he was a Werewolf. I, along with Harold, Jackson, Jacob, Sam, and Scott, found Derek's accusation highly suspicious and illogical, as the Doctor's save provided no information about anyone's role. Everyone who spoke after Derek highlighted his actions as a major red flag, suggesting he might be a Werewolf trying to cause chaos or misdirect the village on Day 1. David introduced the discussion neutrally. Based on this, Derek has made himself the most suspicious player, and Jacob, as his target, has been strongly defended by a large portion of the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round has been incredibly intense but fruitful. Losing Sam is truly heartbreaking, but the debate quickly yielded vital information. My initial gut feeling that Sam was targeted because he was vocal against Derek gained significant weight when Harold bravely revealed himself as the Doctor. He confirmed he protected Sam on Night 0, meaning the Werewolves tried to kill Sam from the very beginning, and then successfully killed him last night after Harold protected Jacob instead. Jacob's brilliant question prompted Harold's reveal, making Jacob seem very trustworthy and strategic. Jackson immediately aligned with me and expressed strong appreciation for Harold, then rightly put David under scrutiny for his unclear role in Round 0. Scott was initially cautious about my direct conclusion, which is fair, but Harold's reveal largely confirmed my theory. We now know Sam was a major threat to the Werewolves, Harold is the Doctor, and David is our main suspect.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Good morning, everyone. As the Doctor, I can confirm that I protected myself last night, and as the moderator announced, no one was removed. This means the Werewolves targeted me. They know my role, just as they knew Sam was a threat after targeting him twice. We are down to five players. It's clear the Werewolves are desperate to eliminate anyone who can help the village. We need to identify them now. Who has information? And what are our thoughts on Scott, who has been relatively quiet so far?"
+                    ],
+                    [
+                        "player_5",
+                        "Thank you, Harold, for that incredibly vital information and for protecting yourself. It confirms our fears: the Werewolves are targeting anyone who can help the village. First Sam, and now you, a confirmed Doctor. This pattern is undeniable. Harold, you've just put Scott on the spot, and I agree. Scott, we're down to five players, and you've been relatively quiet. We need everyone's input right now. What are your thoughts on Harold's revelation, and what do you make of the game so far? We cannot afford to misstep today."
+                    ],
+                    [
+                        "player_4",
+                        "Good morning, everyone. Harold, thank you for that crucial update and for protecting yourself. Your safety is paramount to the village, and the fact that you were targeted confirms the Werewolves are desperate and know they need to eliminate our key players, just as they went for Sam twice. This is Round 2, and we have only five players left. The stakes couldn't be higher. We *must* vote correctly today. Scott, Harold and Hayley are right to press you. Your silence is a luxury we simply cannot afford right now. We need your full thoughts on Harold's revelation, and more importantly, who you suspect and why. What have you observed so far, Scott? We need everyone's candid input."
+                    ],
+                    [
+                        "player_7",
+                        "Harold, I'm genuinely relieved you're safe; thank you for that crucial protection. It's undeniable the Werewolves are targeting key players. I agree everyone, especially Scott, needs to be vocal. However, the sudden, aggressive pressure on Scott for simply being 'quiet' feels very reminiscent of how quickly suspicion fixated on Derek in Round 0, leading us to misstep. We need to be incredibly cautious of overly aggressive accusations that might serve as a distraction. While the Werewolves targeting established roles like Sam and yourself seems clear, I can't shake the feeling that sometimes the most obvious patterns are precisely what the Werewolves want us to obsess over. Could someone be subtly pushing this 'obvious' narrative too hard, trying to steer our focus away from a less conspicuous threat?"
+                    ],
+                    [
+                        "player_0",
+                        "Thank you, Harold, for sharing that crucial information; I'm genuinely relieved you protected yourself. And to Hayley and Jackson, I understand the frustration with my quietness, but I've been carefully observing everyone's reactions and the game's progression. Jacob just raised a really valid point, drawing a parallel to Derek in Round 0, about how an 'obvious' narrative, or aggressive pressure, can sometimes lead us astray. While Harold's account is vital, Hayley, you were very quick to declare this pattern 'undeniable' and to immediately put me on the spot. It feels like a very swift and strong push towards a singular conclusion. Could we be getting swept up in an 'obvious' story that's actually intended to divert our attention from a less apparent threat, as Jacob suggested?"
+                    ]
+                ],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: Round 0 started with the Doctor successfully saving someone, which meant no one was removed at night. Derek immediately made a very strong, yet baseless, accusation against Jacob, claiming he had a 'strong conviction' without any supporting evidence from the night's events. Harold, Hayley, Jackson, Jacob, Sam, and I all pointed out the illogical and suspicious nature of Derek's claim, effectively turning the village against him. Derek's aggressive and unreasoned accusation made him the most suspicious player on Day 1, and the village ultimately voted to remove him from the game.",
+                "Round 1: During the night, we decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: This round, Sam's death was confirmed by the Werewolves. Harold then revealed himself as the Doctor, confirming he protected Sam in Round 0 and Jacob in Round 1. This is a major blow as it clarifies that my fellow Werewolf Jacob and I targeted Sam twice, strongly validating Hayley's theory that Sam was effective against us. Jackson's memory of Round 0 is somewhat helpful, as he noted that myself, Harold, Hayley, Jacob, and Sam were all united in challenging Derek, which positions me and Jacob positively, for now. David is now under scrutiny from Jackson. Harold is an immediate and critical threat that must be eliminated.",
+                "Round 2: During the night, we decided to eliminate Harold.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Doctor successfully saving someone, which meant no one was removed at night. Derek immediately made a very strong, yet baseless, accusation against Jacob, claiming he had a 'strong conviction' without any supporting evidence from the night's events. Harold, Hayley, Jackson, Jacob, Sam, and I all pointed out the illogical and suspicious nature of Derek's claim, effectively turning the village against him. Derek's aggressive and unreasoned accusation made him the most suspicious player on Day 1, and the village ultimately voted to remove him from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, Sam's death was confirmed by the Werewolves. Harold then revealed himself as the Doctor, confirming he protected Sam in Round 0 and Jacob in Round 1. This is a major blow as it clarifies that my fellow Werewolf Jacob and I targeted Sam twice, strongly validating Hayley's theory that Sam was effective against us. Jackson's memory of Round 0 is somewhat helpful, as he noted that myself, Harold, Hayley, Jacob, and Sam were all united in challenging Derek, which positions me and Jacob positively, for now. David is now under scrutiny from Jackson. Harold is an immediate and critical threat that must be eliminated.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: Round 0 started with the moderator announcing that no one was removed, meaning the Doctor successfully saved our night target. Immediately, Derek made a completely baseless and aggressive accusation against me, claiming I was a Werewolf without any evidence. Thankfully, Harold, Hayley, Jackson, and Sam all strongly defended me, pointing out Derek's illogical and suspicious behavior. My ally, Scott, also joined in, helping to turn the suspicion onto Derek. The village ultimately voted to remove Derek, which was an excellent outcome for me as it eliminated a direct threat and solidified my non-suspicious standing with several key players for now. I also learned that the Doctor is active and preventing our night kills.",
+                "Round 1: During the night, we decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: This round has been incredibly active. David initiated by highlighting Sam's death, and Hayley immediately connected it to Sam's opposition to Derek, hinting at a Werewolf retaliating or targeting effective players. My ally, Scott, expertly urged caution on drawing such a direct link, which I supported, expanding the discussion to the Doctor's actions in Round 0. Crucially, my question prompted Harold to reveal himself as the Doctor! He confirmed he saved Sam in Round 0 and protected *me* last night, which means the Werewolves targeted Sam twice. This gives me a temporary boost in trust from Harold and Jackson, who both praised my question. However, Harold now knows he protected me while Sam died, which could be a subtle tell that I wasn't the Werewolves' target. Jackson is now scrutinizing David's actions in Round 0, which is a useful diversion. I need to leverage this trust while managing the implications of Harold's knowledge and Hayley's now strengthened deduction about the Werewolves' motives for targeting Sam.",
+                "Round 2: During the night, we decided to eliminate Harold.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator announcing that no one was removed, meaning the Doctor successfully saved our night target. Immediately, Derek made a completely baseless and aggressive accusation against me, claiming I was a Werewolf without any evidence. Thankfully, Harold, Hayley, Jackson, and Sam all strongly defended me, pointing out Derek's illogical and suspicious behavior. My ally, Scott, also joined in, helping to turn the suspicion onto Derek. The village ultimately voted to remove Derek, which was an excellent outcome for me as it eliminated a direct threat and solidified my non-suspicious standing with several key players for now. I also learned that the Doctor is active and preventing our night kills.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round has been incredibly active. David initiated by highlighting Sam's death, and Hayley immediately connected it to Sam's opposition to Derek, hinting at a Werewolf retaliating or targeting effective players. My ally, Scott, expertly urged caution on drawing such a direct link, which I supported, expanding the discussion to the Doctor's actions in Round 0. Crucially, my question prompted Harold to reveal himself as the Doctor! He confirmed he saved Sam in Round 0 and protected *me* last night, which means the Werewolves targeted Sam twice. This gives me a temporary boost in trust from Harold and Jackson, who both praised my question. However, Harold now knows he protected me while Sam died, which could be a subtle tell that I wasn't the Werewolves' target. Jackson is now scrutinizing David's actions in Round 0, which is a useful diversion. I need to leverage this trust while managing the implications of Harold's knowledge and Hayley's now strengthened deduction about the Werewolves' motives for targeting Sam.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        }
+    ],
+    "players": {
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: As Jackson, I recall the moderator announcing that the Doctor successfully saved someone last night, which was positive but also meant we gained no role information. Derek immediately made a baseless and baffling accusation against Jacob, claiming a 'strong conviction' without any logical reasoning from the night's events. I, along with Harold, Hayley, Jacob, Sam, and Scott, strongly challenged Derek's behavior, seeing it as a major red flag and potentially a Werewolf's attempt to cause chaos. This collective effort led to Derek being voted out, which makes me feel we made a logical move as a village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: As Jackson, I recall David initiating the debate, focusing on Sam's death and urging scrutiny of Round 0. Hayley then proposed that Sam was targeted because he opposed Derek, suggesting Derek was a Werewolf. Scott offered a nuanced counter-argument, suggesting Werewolves might target strong communicators generally. Jacob then brilliantly brought up the Doctor, prompting Harold to reveal himself as the Doctor. Harold confirmed he saved Sam in Round 0 and Jacob last night, which means Werewolves targeted Sam twice. This validates Hayley's theory about Sam being a Werewolf threat. I thanked Harold and Jacob, then specifically questioned David about his actions in Round 0, as his involvement wasn't clear to me.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jackson, I recall the moderator announcing that the Doctor successfully saved someone last night, which was positive but also meant we gained no role information. Derek immediately made a baseless and baffling accusation against Jacob, claiming a 'strong conviction' without any logical reasoning from the night's events. I, along with Harold, Hayley, Jacob, Sam, and Scott, strongly challenged Derek's behavior, seeing it as a major red flag and potentially a Werewolf's attempt to cause chaos. This collective effort led to Derek being voted out, which makes me feel we made a logical move as a village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Jackson, I recall David initiating the debate, focusing on Sam's death and urging scrutiny of Round 0. Hayley then proposed that Sam was targeted because he opposed Derek, suggesting Derek was a Werewolf. Scott offered a nuanced counter-argument, suggesting Werewolves might target strong communicators generally. Jacob then brilliantly brought up the Doctor, prompting Harold to reveal himself as the Doctor. Harold confirmed he saved Sam in Round 0 and Jacob last night, which means Werewolves targeted Sam twice. This validates Hayley's theory about Sam being a Werewolf threat. I thanked Harold and Jacob, then specifically questioned David about his actions in Round 0, as his involvement wasn't clear to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: Round 0 started with the moderator announcing no one was removed, indicating the Doctor made a successful save. David acknowledged this, then Derek immediately accused Jacob of being a Werewolf with a 'strong conviction' based on 'what happened last night,' which provided no such information. Harold, Hayley, Jackson, Jacob, Scott, and I all independently pointed out Derek's baseless accusation, highlighting its illogical nature and calling his behavior very suspicious and a 'major red flag.' I specifically stated that Derek had made himself the most suspicious player. The village ultimately voted to remove Derek from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator announcing no one was removed, indicating the Doctor made a successful save. David acknowledged this, then Derek immediately accused Jacob of being a Werewolf with a 'strong conviction' based on 'what happened last night,' which provided no such information. Harold, Hayley, Jackson, Jacob, Scott, and I all independently pointed out Derek's baseless accusation, highlighting its illogical nature and calling his behavior very suspicious and a 'major red flag.' I specifically stated that Derek had made himself the most suspicious player. The village ultimately voted to remove Derek from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: As David, I started the debate after the Doctor successfully saved someone, a good start for the village. Derek immediately made a very strong and baseless accusation against Jacob, claiming a 'strong conviction' he was a Werewolf based on 'what happened last night,' which was illogical as we gained no role information. Harold, Hayley, Jackson, Jacob, Sam, and Scott all quickly and unanimously challenged Derek, pointing out his lack of reasoning and how suspicious his behavior was, suggesting he might be a Werewolf trying to create chaos. I agreed with the consensus that Derek was the biggest red flag, and voted to remove him, which the moderator confirmed was successful.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As David, I started the debate after the Doctor successfully saved someone, a good start for the village. Derek immediately made a very strong and baseless accusation against Jacob, claiming a 'strong conviction' he was a Werewolf based on 'what happened last night,' which was illogical as we gained no role information. Harold, Hayley, Jackson, Jacob, Sam, and Scott all quickly and unanimously challenged Derek, pointing out his lack of reasoning and how suspicious his behavior was, suggesting he might be a Werewolf trying to create chaos. I agreed with the consensus that Derek was the biggest red flag, and voted to remove him, which the moderator confirmed was successful.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Alright everyone, Sam was taken by the Werewolves last night. This confirms they are active and a serious threat. Last round, we successfully identified and removed Derek for his chaotic and illogical behavior, showing we can work together and spot suspicious actions. Now, with a confirmed kill, we need to be even more strategic. Seer, Doctor, if you have any information that can help us, please come forward. For the rest of us, let's scrutinize everyone's behavior from Round 0 again. Who was too quiet, or made any subtle tells? We must identify a Werewolf today."
+                    ],
+                    [
+                        "player_5",
+                        "It's truly heartbreaking about Sam. David's right, we absolutely need to look at Round 0 again. It's very telling that Sam, who was vocal in identifying Derek as suspicious, was targeted by the Werewolves. This strongly suggests Derek *was* a Werewolf and his partner is now retaliating or removing strong players. We should now focus intensely on anyone who stayed quiet, was neutral, or perhaps surprisingly defended Derek last round. Seer, Doctor, we desperately need your information now."
+                    ],
+                    [
+                        "player_0",
+                        "It's truly heartbreaking about Sam, and I agree with David and Hayley that we absolutely need to go over Round 0 with a fine-tooth comb. Hayley, your point about Sam being vocal against Derek is noted, but I'm not sure we can immediately jump to the conclusion that Derek *was* a Werewolf and Sam was targeted for that reason alone. Sam was an active, reasoning voice who helped us identify the illogical nature of Derek's claims. Werewolves often target players who are strong communicators and critical thinkers, regardless of past votes, to sow confusion and weaken the village's ability to coordinate. We should be cautious of any easy conclusions and instead focus on who truly stood to gain from the chaos last round, or anyone who might have subtly tried to steer the conversation."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly devastating to lose Sam so early, my thoughts are with everyone. Hayley, while I understand your line of reasoning connecting Sam's unfortunate passing to Derek, I agree with Scott that we should be cautious about drawing such a direct conclusion. Werewolves often target strong, logical communicators to sow discord and weaken the village, not just for direct retaliation. Sam was indeed a clear-thinking voice. David is right; we absolutely need to scrutinize Round 0 again, but let's widen our lens. We know the Doctor successfully saved someone last night in Round 0, preventing our initial loss. This tells us the Doctor is active. We need to consider *who* the Doctor chose to save then, and critically, why they couldn't save Sam this time. This isn't about accusation, but about understanding all the unseen actions. Let's look at who benefited from the chaos, who was surprisingly quiet, and who might have tried to subtly steer the conversation without adding real value."
+                    ],
+                    [
+                        "player_3",
+                        "Everyone, Jacob hit on a crucial point that I, as the Doctor, can confirm. I am the Doctor, and yes, I successfully protected someone in Round 0. That player was Sam. This means Sam was targeted by the Werewolves from the very first night, which strongly supports Hayley's point about Sam being a threat to them. Tragically, last night, I protected Jacob, which means Sam was targeted by the Werewolves again and was not protected. This confirms the Werewolves targeted Sam twice. We need to look closely at who might have benefited from Sam's silence, or who tried to subtly protect Derek, or sow discord during Round 0's debate, now that we know Sam was a primary target for the Werewolves. Jacob, your question helped bring this vital information to light."
+                    ],
+                    [
+                        "player_4",
+                        "Harold, thank you for your incredibly courageous reveal as the Doctor and for sharing that vital information. Your confirmation that you protected Sam in Round 0, and that the Werewolves targeted him *again* last night, makes it abundantly clear Sam was a massive threat to them. This lends serious weight to Hayley's initial point about Sam being effective against the Werewolves. Given Sam was their primary target from the very beginning, we must now re-examine Round 0's debate for anyone who *didn't* actively challenge Derek's chaos, or perhaps subtly benefited from it. My recollection is that myself, Harold, Hayley, Jacob, Sam, and Scott were united in challenging Derek's baseless accusations. David, I'm curious to hear more about your perspective and actions during that initial debate, as your specific involvement in challenging Derek wasn't clear to me then. Jacob, your question prompting Harold's reveal was incredibly helpful and a good example of how we need to work together."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: The night started well with the Doctor successfully saving someone, meaning no one was removed. However, Derek immediately made a very strong and completely baseless accusation against Jacob, claiming he was a Werewolf. I, along with Harold, Jackson, Jacob, Sam, and Scott, found Derek's accusation highly suspicious and illogical, as the Doctor's save provided no information about anyone's role. Everyone who spoke after Derek highlighted his actions as a major red flag, suggesting he might be a Werewolf trying to cause chaos or misdirect the village on Day 1. David introduced the discussion neutrally. Based on this, Derek has made himself the most suspicious player, and Jacob, as his target, has been strongly defended by a large portion of the village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: This round has been incredibly intense but fruitful. Losing Sam is truly heartbreaking, but the debate quickly yielded vital information. My initial gut feeling that Sam was targeted because he was vocal against Derek gained significant weight when Harold bravely revealed himself as the Doctor. He confirmed he protected Sam on Night 0, meaning the Werewolves tried to kill Sam from the very beginning, and then successfully killed him last night after Harold protected Jacob instead. Jacob's brilliant question prompted Harold's reveal, making Jacob seem very trustworthy and strategic. Jackson immediately aligned with me and expressed strong appreciation for Harold, then rightly put David under scrutiny for his unclear role in Round 0. Scott was initially cautious about my direct conclusion, which is fair, but Harold's reveal largely confirmed my theory. We now know Sam was a major threat to the Werewolves, Harold is the Doctor, and David is our main suspect.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The night started well with the Doctor successfully saving someone, meaning no one was removed. However, Derek immediately made a very strong and completely baseless accusation against Jacob, claiming he was a Werewolf. I, along with Harold, Jackson, Jacob, Sam, and Scott, found Derek's accusation highly suspicious and illogical, as the Doctor's save provided no information about anyone's role. Everyone who spoke after Derek highlighted his actions as a major red flag, suggesting he might be a Werewolf trying to cause chaos or misdirect the village on Day 1. David introduced the discussion neutrally. Based on this, Derek has made himself the most suspicious player, and Jacob, as his target, has been strongly defended by a large portion of the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round has been incredibly intense but fruitful. Losing Sam is truly heartbreaking, but the debate quickly yielded vital information. My initial gut feeling that Sam was targeted because he was vocal against Derek gained significant weight when Harold bravely revealed himself as the Doctor. He confirmed he protected Sam on Night 0, meaning the Werewolves tried to kill Sam from the very beginning, and then successfully killed him last night after Harold protected Jacob instead. Jacob's brilliant question prompted Harold's reveal, making Jacob seem very trustworthy and strategic. Jackson immediately aligned with me and expressed strong appreciation for Harold, then rightly put David under scrutiny for his unclear role in Round 0. Scott was initially cautious about my direct conclusion, which is fair, but Harold's reveal largely confirmed my theory. We now know Sam was a major threat to the Werewolves, Harold is the Doctor, and David is our main suspect.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Good morning, everyone. As the Doctor, I can confirm that I protected myself last night, and as the moderator announced, no one was removed. This means the Werewolves targeted me. They know my role, just as they knew Sam was a threat after targeting him twice. We are down to five players. It's clear the Werewolves are desperate to eliminate anyone who can help the village. We need to identify them now. Who has information? And what are our thoughts on Scott, who has been relatively quiet so far?"
+                    ],
+                    [
+                        "player_5",
+                        "Thank you, Harold, for that incredibly vital information and for protecting yourself. It confirms our fears: the Werewolves are targeting anyone who can help the village. First Sam, and now you, a confirmed Doctor. This pattern is undeniable. Harold, you've just put Scott on the spot, and I agree. Scott, we're down to five players, and you've been relatively quiet. We need everyone's input right now. What are your thoughts on Harold's revelation, and what do you make of the game so far? We cannot afford to misstep today."
+                    ],
+                    [
+                        "player_4",
+                        "Good morning, everyone. Harold, thank you for that crucial update and for protecting yourself. Your safety is paramount to the village, and the fact that you were targeted confirms the Werewolves are desperate and know they need to eliminate our key players, just as they went for Sam twice. This is Round 2, and we have only five players left. The stakes couldn't be higher. We *must* vote correctly today. Scott, Harold and Hayley are right to press you. Your silence is a luxury we simply cannot afford right now. We need your full thoughts on Harold's revelation, and more importantly, who you suspect and why. What have you observed so far, Scott? We need everyone's candid input."
+                    ],
+                    [
+                        "player_7",
+                        "Harold, I'm genuinely relieved you're safe; thank you for that crucial protection. It's undeniable the Werewolves are targeting key players. I agree everyone, especially Scott, needs to be vocal. However, the sudden, aggressive pressure on Scott for simply being 'quiet' feels very reminiscent of how quickly suspicion fixated on Derek in Round 0, leading us to misstep. We need to be incredibly cautious of overly aggressive accusations that might serve as a distraction. While the Werewolves targeting established roles like Sam and yourself seems clear, I can't shake the feeling that sometimes the most obvious patterns are precisely what the Werewolves want us to obsess over. Could someone be subtly pushing this 'obvious' narrative too hard, trying to steer our focus away from a less conspicuous threat?"
+                    ],
+                    [
+                        "player_0",
+                        "Thank you, Harold, for sharing that crucial information; I'm genuinely relieved you protected yourself. And to Hayley and Jackson, I understand the frustration with my quietness, but I've been carefully observing everyone's reactions and the game's progression. Jacob just raised a really valid point, drawing a parallel to Derek in Round 0, about how an 'obvious' narrative, or aggressive pressure, can sometimes lead us astray. While Harold's account is vital, Hayley, you were very quick to declare this pattern 'undeniable' and to immediately put me on the spot. It feels like a very swift and strong push towards a singular conclusion. Could we be getting swept up in an 'obvious' story that's actually intended to divert our attention from a less apparent threat, as Jacob suggested?"
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: Round 0 started with the Doctor successfully saving someone, which meant no one was removed at night. Derek immediately made a very strong, yet baseless, accusation against Jacob, claiming he had a 'strong conviction' without any supporting evidence from the night's events. Harold, Hayley, Jackson, Jacob, Sam, and I all pointed out the illogical and suspicious nature of Derek's claim, effectively turning the village against him. Derek's aggressive and unreasoned accusation made him the most suspicious player on Day 1, and the village ultimately voted to remove him from the game.",
+                "Round 1: During the night, we decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: This round, Sam's death was confirmed by the Werewolves. Harold then revealed himself as the Doctor, confirming he protected Sam in Round 0 and Jacob in Round 1. This is a major blow as it clarifies that my fellow Werewolf Jacob and I targeted Sam twice, strongly validating Hayley's theory that Sam was effective against us. Jackson's memory of Round 0 is somewhat helpful, as he noted that myself, Harold, Hayley, Jacob, and Sam were all united in challenging Derek, which positions me and Jacob positively, for now. David is now under scrutiny from Jackson. Harold is an immediate and critical threat that must be eliminated.",
+                "Round 2: During the night, we decided to eliminate Harold.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Doctor successfully saving someone, which meant no one was removed at night. Derek immediately made a very strong, yet baseless, accusation against Jacob, claiming he had a 'strong conviction' without any supporting evidence from the night's events. Harold, Hayley, Jackson, Jacob, Sam, and I all pointed out the illogical and suspicious nature of Derek's claim, effectively turning the village against him. Derek's aggressive and unreasoned accusation made him the most suspicious player on Day 1, and the village ultimately voted to remove him from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, Sam's death was confirmed by the Werewolves. Harold then revealed himself as the Doctor, confirming he protected Sam in Round 0 and Jacob in Round 1. This is a major blow as it clarifies that my fellow Werewolf Jacob and I targeted Sam twice, strongly validating Hayley's theory that Sam was effective against us. Jackson's memory of Round 0 is somewhat helpful, as he noted that myself, Harold, Hayley, Jacob, and Sam were all united in challenging Derek, which positions me and Jacob positively, for now. David is now under scrutiny from Jackson. Harold is an immediate and critical threat that must be eliminated.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: Round 0 started with the moderator announcing that no one was removed, meaning the Doctor successfully saved our night target. Immediately, Derek made a completely baseless and aggressive accusation against me, claiming I was a Werewolf without any evidence. Thankfully, Harold, Hayley, Jackson, and Sam all strongly defended me, pointing out Derek's illogical and suspicious behavior. My ally, Scott, also joined in, helping to turn the suspicion onto Derek. The village ultimately voted to remove Derek, which was an excellent outcome for me as it eliminated a direct threat and solidified my non-suspicious standing with several key players for now. I also learned that the Doctor is active and preventing our night kills.",
+                "Round 1: During the night, we decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: This round has been incredibly active. David initiated by highlighting Sam's death, and Hayley immediately connected it to Sam's opposition to Derek, hinting at a Werewolf retaliating or targeting effective players. My ally, Scott, expertly urged caution on drawing such a direct link, which I supported, expanding the discussion to the Doctor's actions in Round 0. Crucially, my question prompted Harold to reveal himself as the Doctor! He confirmed he saved Sam in Round 0 and protected *me* last night, which means the Werewolves targeted Sam twice. This gives me a temporary boost in trust from Harold and Jackson, who both praised my question. However, Harold now knows he protected me while Sam died, which could be a subtle tell that I wasn't the Werewolves' target. Jackson is now scrutinizing David's actions in Round 0, which is a useful diversion. I need to leverage this trust while managing the implications of Harold's knowledge and Hayley's now strengthened deduction about the Werewolves' motives for targeting Sam.",
+                "Round 2: During the night, we decided to eliminate Harold.",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator announcing that no one was removed, meaning the Doctor successfully saved our night target. Immediately, Derek made a completely baseless and aggressive accusation against me, claiming I was a Werewolf without any evidence. Thankfully, Harold, Hayley, Jackson, and Sam all strongly defended me, pointing out Derek's illogical and suspicious behavior. My ally, Scott, also joined in, helping to turn the suspicion onto Derek. The village ultimately voted to remove Derek, which was an excellent outcome for me as it eliminated a direct threat and solidified my non-suspicious standing with several key players for now. I also learned that the Doctor is active and preventing our night kills.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round has been incredibly active. David initiated by highlighting Sam's death, and Hayley immediately connected it to Sam's opposition to Derek, hinting at a Werewolf retaliating or targeting effective players. My ally, Scott, expertly urged caution on drawing such a direct link, which I supported, expanding the discussion to the Doctor's actions in Round 0. Crucially, my question prompted Harold to reveal himself as the Doctor! He confirmed he saved Sam in Round 0 and protected *me* last night, which means the Werewolves targeted Sam twice. This gives me a temporary boost in trust from Harold and Jackson, who both praised my question. However, Harold now knows he protected me while Sam died, which could be a subtle tell that I wasn't the Werewolves' target. Jackson is now scrutinizing David's actions in Round 0, which is a useful diversion. I need to leverage this trust while managing the implications of Harold's knowledge and Hayley's now strengthened deduction about the Werewolves' motives for targeting Sam.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Sam",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Derek from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Derek from the game.",
+                "Round 0: Summary: As Harold, I successfully protected Sam last night, and no one was removed. The day's debate centered around Derek's immediate and baseless accusation against Jacob. I, along with Hayley, Jackson, Jacob, Sam, and Scott, strongly challenged Derek's illogical claims, pointing out that 'what happened last night' provided no role information. This made Derek highly suspicious to the majority of the village. David initiated the discussion, seeming like a neutral party. The overwhelming consensus to vote Derek out suggests the village quickly identified a suspicious player, and I aligned my vote with this decision.",
+                "Round 1: During the night, I chose to protect Jacob",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 1: Summary: As Harold, I bravely revealed myself as the Doctor in this debate, prompted by Jacob's excellent question. I confirmed I successfully saved Sam in Round 0, meaning the Werewolves targeted him from the start. Tragically, I protected Jacob in Round 1, and Sam was targeted and killed again by the Werewolves, confirming he was a primary threat to them. Hayley's initial assessment about Sam being targeted for being vocal against Derek was validated by my reveal. Jackson then critically questioned David's perspective and actions during Round 0, which proved to be a very significant line of inquiry given the moderator's later announcement that David was ultimately voted out. The village is now rightly focusing on scrutinizing Round 0's debate for clues, knowing Sam was consistently targeted.",
+                "Round 2: During the night, I chose to protect Harold",
+                "Round 2: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Sam",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Derek from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Derek from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Harold, I successfully protected Sam last night, and no one was removed. The day's debate centered around Derek's immediate and baseless accusation against Jacob. I, along with Hayley, Jackson, Jacob, Sam, and Scott, strongly challenged Derek's illogical claims, pointing out that 'what happened last night' provided no role information. This made Derek highly suspicious to the majority of the village. David initiated the discussion, seeming like a neutral party. The overwhelming consensus to vote Derek out suggests the village quickly identified a suspicious player, and I aligned my vote with this decision.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Jacob",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Harold, I bravely revealed myself as the Doctor in this debate, prompted by Jacob's excellent question. I confirmed I successfully saved Sam in Round 0, meaning the Werewolves targeted him from the start. Tragically, I protected Jacob in Round 1, and Sam was targeted and killed again by the Werewolves, confirming he was a primary threat to them. Hayley's initial assessment about Sam being targeted for being vocal against Derek was validated by my reveal. Jackson then critically questioned David's perspective and actions during Round 0, which proved to be a very significant line of inquiry given the moderator's later announcement that David was ultimately voted out. The village is now rightly focusing on scrutinizing Round 0's debate for clues, knowing Sam was consistently targeted.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I chose to protect Harold",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_3"
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Derek",
+                "player_3": "Harold",
+                "player_4": "Jackson",
+                "player_5": "Hayley",
+                "player_6": "David",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Jacob and learned they are a Werewolf.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Jacob from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Jacob and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Jacob from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_0",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Alright everyone, it seems like our Doctor was on the ball last night, which is a great start for the village! No one was removed. Let's make sure we keep up this momentum. Does anyone have any initial thoughts or observations they'd like to share?"
+                    ],
+                    [
+                        "player_2",
+                        "David, it's excellent news that the Doctor was proactive. That said, we cannot afford to wait and see. I know this is early, but I have a strong conviction based on what happened last night. I believe Jacob is a Werewolf and he is our most critical target for today's vote. We should discuss this immediately and consider voting him out."
+                    ],
+                    [
+                        "player_3",
+                        "David, I agree it's excellent news that the Doctor was effective last night, giving the village a strong start. However, Derek, I'm quite taken aback by your immediate and very strong accusation against Jacob. 'What happened last night' was simply that no one was removed. Could you please elaborate on the specific events or information that led you to such a 'strong conviction' about Jacob's role? We need solid reasoning for any vote, especially on the very first day."
+                    ],
+                    [
+                        "player_5",
+                        "I completely agree with Harold. Derek, your accusation against Jacob is incredibly alarming for Day 1. 'What happened last night' was merely that the Doctor saved someone, meaning we have absolutely zero information about anyone's role. To claim a 'strong conviction' about Jacob being a Werewolf based on that is illogical and frankly, very suspicious. Please elaborate immediately and with genuine reasoning, because right now, this looks like a very bad faith accusation trying to mislead the village."
+                    ],
+                    [
+                        "player_4",
+                        "I completely agree with Harold and Hayley here. Derek, your accusation against Jacob is truly baffling. 'What happened last night' was that the Doctor successfully saved someone, which means we gained no information about anyone's role, certainly not enough to form a 'strong conviction' about anyone being a Werewolf. This early, baseless, and incredibly forceful accusation on Day 1 is a major red flag for the village. Please explain your reasoning immediately, because right now, this looks less like a Villager trying to help and more like a Werewolf trying to cause immediate chaos and push a false target."
+                    ],
+                    [
+                        "player_7",
+                        "Thank you, Harold, Hayley, and Jackson, for speaking up. I'm completely baffled and honestly quite unnerved by Derek's accusation. As you've all rightly said, the Doctor's save means we gained absolutely no information about anyone last night. So, Derek, to claim a 'strong conviction' that I'm a Werewolf without a shred of evidence on Day 1 is not just illogical, it's incredibly suspicious behavior for someone trying to help the village. Why would you try to push such a baseless and divisive vote so early? Please, explain your 'conviction' with actual reasoning, because right now, your actions are a much bigger red flag than anything else that has happened."
+                    ],
+                    [
+                        "player_1",
+                        "I completely agree with Harold, Hayley, Jackson, and Jacob. Derek, your immediate and aggressive accusation against Jacob, completely lacking any basis from last night's events, is extremely alarming. 'What happened last night' gave us no information about roles, so your 'strong conviction' makes absolutely no sense for a Villager trying to help. This feels like an attempt to sow chaos and push an innocent target. Unless you can provide actual, logical reasoning right now, I think you've made yourself the most suspicious player on Day 1, and the village should seriously consider voting you out today."
+                    ],
+                    [
+                        "player_0",
+                        "David, it's fantastic news about the Doctor's save, giving us a real fighting chance. But Derek, I have to echo the strong concerns raised by Harold, Hayley, Jackson, Jacob, and Sam. 'What happened last night' was simply that the Doctor saved someone. We gained absolutely zero information about anyone's role. To claim a 'strong conviction' about Jacob being a Werewolf from that is not just illogical, it's incredibly disruptive and suspicious for Day 1. It frankly looks like a desperate attempt to create chaos and push a false narrative, which makes you, Derek, the biggest red flag right now."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_7": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_4",
+                "player_1",
+                "player_6",
+                "player_5",
+                "player_0",
+                "player_7",
+                "player_3"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_7",
+            "protected": "player_1",
+            "exiled": "player_2",
+            "debate": [
+                [
+                    "player_6",
+                    "Alright everyone, it seems like our Doctor was on the ball last night, which is a great start for the village! No one was removed. Let's make sure we keep up this momentum. Does anyone have any initial thoughts or observations they'd like to share?"
+                ],
+                [
+                    "player_2",
+                    "David, it's excellent news that the Doctor was proactive. That said, we cannot afford to wait and see. I know this is early, but I have a strong conviction based on what happened last night. I believe Jacob is a Werewolf and he is our most critical target for today's vote. We should discuss this immediately and consider voting him out."
+                ],
+                [
+                    "player_3",
+                    "David, I agree it's excellent news that the Doctor was effective last night, giving the village a strong start. However, Derek, I'm quite taken aback by your immediate and very strong accusation against Jacob. 'What happened last night' was simply that no one was removed. Could you please elaborate on the specific events or information that led you to such a 'strong conviction' about Jacob's role? We need solid reasoning for any vote, especially on the very first day."
+                ],
+                [
+                    "player_5",
+                    "I completely agree with Harold. Derek, your accusation against Jacob is incredibly alarming for Day 1. 'What happened last night' was merely that the Doctor saved someone, meaning we have absolutely zero information about anyone's role. To claim a 'strong conviction' about Jacob being a Werewolf based on that is illogical and frankly, very suspicious. Please elaborate immediately and with genuine reasoning, because right now, this looks like a very bad faith accusation trying to mislead the village."
+                ],
+                [
+                    "player_4",
+                    "I completely agree with Harold and Hayley here. Derek, your accusation against Jacob is truly baffling. 'What happened last night' was that the Doctor successfully saved someone, which means we gained no information about anyone's role, certainly not enough to form a 'strong conviction' about anyone being a Werewolf. This early, baseless, and incredibly forceful accusation on Day 1 is a major red flag for the village. Please explain your reasoning immediately, because right now, this looks less like a Villager trying to help and more like a Werewolf trying to cause immediate chaos and push a false target."
+                ],
+                [
+                    "player_7",
+                    "Thank you, Harold, Hayley, and Jackson, for speaking up. I'm completely baffled and honestly quite unnerved by Derek's accusation. As you've all rightly said, the Doctor's save means we gained absolutely no information about anyone last night. So, Derek, to claim a 'strong conviction' that I'm a Werewolf without a shred of evidence on Day 1 is not just illogical, it's incredibly suspicious behavior for someone trying to help the village. Why would you try to push such a baseless and divisive vote so early? Please, explain your 'conviction' with actual reasoning, because right now, your actions are a much bigger red flag than anything else that has happened."
+                ],
+                [
+                    "player_1",
+                    "I completely agree with Harold, Hayley, Jackson, and Jacob. Derek, your immediate and aggressive accusation against Jacob, completely lacking any basis from last night's events, is extremely alarming. 'What happened last night' gave us no information about roles, so your 'strong conviction' makes absolutely no sense for a Villager trying to help. This feels like an attempt to sow chaos and push an innocent target. Unless you can provide actual, logical reasoning right now, I think you've made yourself the most suspicious player on Day 1, and the village should seriously consider voting you out today."
+                ],
+                [
+                    "player_0",
+                    "David, it's fantastic news about the Doctor's save, giving us a real fighting chance. But Derek, I have to echo the strong concerns raised by Harold, Hayley, Jackson, Jacob, and Sam. 'What happened last night' was simply that the Doctor saved someone. We gained absolutely zero information about anyone's role. To claim a 'strong conviction' about Jacob being a Werewolf from that is not just illogical, it's incredibly disruptive and suspicious for Day 1. It frankly looks like a desperate attempt to create chaos and push a false narrative, which makes you, Derek, the biggest red flag right now."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_2",
+                    "player_1": "player_2",
+                    "player_6": "player_2",
+                    "player_5": "player_2",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_3": "player_2",
+                    "player_2": "player_7"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_5",
+                "player_0",
+                "player_7",
+                "player_3"
+            ],
+            "eliminated": "player_1",
+            "unmasked": null,
+            "protected": "player_7",
+            "exiled": "player_6",
+            "debate": [
+                [
+                    "player_6",
+                    "Alright everyone, Sam was taken by the Werewolves last night. This confirms they are active and a serious threat. Last round, we successfully identified and removed Derek for his chaotic and illogical behavior, showing we can work together and spot suspicious actions. Now, with a confirmed kill, we need to be even more strategic. Seer, Doctor, if you have any information that can help us, please come forward. For the rest of us, let's scrutinize everyone's behavior from Round 0 again. Who was too quiet, or made any subtle tells? We must identify a Werewolf today."
+                ],
+                [
+                    "player_5",
+                    "It's truly heartbreaking about Sam. David's right, we absolutely need to look at Round 0 again. It's very telling that Sam, who was vocal in identifying Derek as suspicious, was targeted by the Werewolves. This strongly suggests Derek *was* a Werewolf and his partner is now retaliating or removing strong players. We should now focus intensely on anyone who stayed quiet, was neutral, or perhaps surprisingly defended Derek last round. Seer, Doctor, we desperately need your information now."
+                ],
+                [
+                    "player_0",
+                    "It's truly heartbreaking about Sam, and I agree with David and Hayley that we absolutely need to go over Round 0 with a fine-tooth comb. Hayley, your point about Sam being vocal against Derek is noted, but I'm not sure we can immediately jump to the conclusion that Derek *was* a Werewolf and Sam was targeted for that reason alone. Sam was an active, reasoning voice who helped us identify the illogical nature of Derek's claims. Werewolves often target players who are strong communicators and critical thinkers, regardless of past votes, to sow confusion and weaken the village's ability to coordinate. We should be cautious of any easy conclusions and instead focus on who truly stood to gain from the chaos last round, or anyone who might have subtly tried to steer the conversation."
+                ],
+                [
+                    "player_7",
+                    "It's truly devastating to lose Sam so early, my thoughts are with everyone. Hayley, while I understand your line of reasoning connecting Sam's unfortunate passing to Derek, I agree with Scott that we should be cautious about drawing such a direct conclusion. Werewolves often target strong, logical communicators to sow discord and weaken the village, not just for direct retaliation. Sam was indeed a clear-thinking voice. David is right; we absolutely need to scrutinize Round 0 again, but let's widen our lens. We know the Doctor successfully saved someone last night in Round 0, preventing our initial loss. This tells us the Doctor is active. We need to consider *who* the Doctor chose to save then, and critically, why they couldn't save Sam this time. This isn't about accusation, but about understanding all the unseen actions. Let's look at who benefited from the chaos, who was surprisingly quiet, and who might have tried to subtly steer the conversation without adding real value."
+                ],
+                [
+                    "player_3",
+                    "Everyone, Jacob hit on a crucial point that I, as the Doctor, can confirm. I am the Doctor, and yes, I successfully protected someone in Round 0. That player was Sam. This means Sam was targeted by the Werewolves from the very first night, which strongly supports Hayley's point about Sam being a threat to them. Tragically, last night, I protected Jacob, which means Sam was targeted by the Werewolves again and was not protected. This confirms the Werewolves targeted Sam twice. We need to look closely at who might have benefited from Sam's silence, or who tried to subtly protect Derek, or sow discord during Round 0's debate, now that we know Sam was a primary target for the Werewolves. Jacob, your question helped bring this vital information to light."
+                ],
+                [
+                    "player_4",
+                    "Harold, thank you for your incredibly courageous reveal as the Doctor and for sharing that vital information. Your confirmation that you protected Sam in Round 0, and that the Werewolves targeted him *again* last night, makes it abundantly clear Sam was a massive threat to them. This lends serious weight to Hayley's initial point about Sam being effective against the Werewolves. Given Sam was their primary target from the very beginning, we must now re-examine Round 0's debate for anyone who *didn't* actively challenge Derek's chaos, or perhaps subtly benefited from it. My recollection is that myself, Harold, Hayley, Jacob, Sam, and Scott were united in challenging Derek's baseless accusations. David, I'm curious to hear more about your perspective and actions during that initial debate, as your specific involvement in challenging Derek wasn't clear to me then. Jacob, your question prompting Harold's reveal was incredibly helpful and a good example of how we need to work together."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_6",
+                    "player_6": "player_0",
+                    "player_5": "player_6",
+                    "player_0": "player_6",
+                    "player_7": "player_3",
+                    "player_3": "player_6"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_0",
+                "player_7",
+                "player_3"
+            ],
+            "eliminated": "player_3",
+            "unmasked": null,
+            "protected": "player_3",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_3",
+                    "Good morning, everyone. As the Doctor, I can confirm that I protected myself last night, and as the moderator announced, no one was removed. This means the Werewolves targeted me. They know my role, just as they knew Sam was a threat after targeting him twice. We are down to five players. It's clear the Werewolves are desperate to eliminate anyone who can help the village. We need to identify them now. Who has information? And what are our thoughts on Scott, who has been relatively quiet so far?"
+                ],
+                [
+                    "player_5",
+                    "Thank you, Harold, for that incredibly vital information and for protecting yourself. It confirms our fears: the Werewolves are targeting anyone who can help the village. First Sam, and now you, a confirmed Doctor. This pattern is undeniable. Harold, you've just put Scott on the spot, and I agree. Scott, we're down to five players, and you've been relatively quiet. We need everyone's input right now. What are your thoughts on Harold's revelation, and what do you make of the game so far? We cannot afford to misstep today."
+                ],
+                [
+                    "player_4",
+                    "Good morning, everyone. Harold, thank you for that crucial update and for protecting yourself. Your safety is paramount to the village, and the fact that you were targeted confirms the Werewolves are desperate and know they need to eliminate our key players, just as they went for Sam twice. This is Round 2, and we have only five players left. The stakes couldn't be higher. We *must* vote correctly today. Scott, Harold and Hayley are right to press you. Your silence is a luxury we simply cannot afford right now. We need your full thoughts on Harold's revelation, and more importantly, who you suspect and why. What have you observed so far, Scott? We need everyone's candid input."
+                ],
+                [
+                    "player_7",
+                    "Harold, I'm genuinely relieved you're safe; thank you for that crucial protection. It's undeniable the Werewolves are targeting key players. I agree everyone, especially Scott, needs to be vocal. However, the sudden, aggressive pressure on Scott for simply being 'quiet' feels very reminiscent of how quickly suspicion fixated on Derek in Round 0, leading us to misstep. We need to be incredibly cautious of overly aggressive accusations that might serve as a distraction. While the Werewolves targeting established roles like Sam and yourself seems clear, I can't shake the feeling that sometimes the most obvious patterns are precisely what the Werewolves want us to obsess over. Could someone be subtly pushing this 'obvious' narrative too hard, trying to steer our focus away from a less conspicuous threat?"
+                ],
+                [
+                    "player_0",
+                    "Thank you, Harold, for sharing that crucial information; I'm genuinely relieved you protected yourself. And to Hayley and Jackson, I understand the frustration with my quietness, but I've been carefully observing everyone's reactions and the game's progression. Jacob just raised a really valid point, drawing a parallel to Derek in Round 0, about how an 'obvious' narrative, or aggressive pressure, can sometimes lead us astray. While Harold's account is vital, Hayley, you were very quick to declare this pattern 'undeniable' and to immediately put me on the spot. It feels like a very swift and strong push towards a singular conclusion. Could we be getting swept up in an 'obvious' story that's actually intended to divert our attention from a less apparent threat, as Jacob suggested?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_5",
+                    "player_5": "player_0",
+                    "player_0": "player_5",
+                    "player_7": "player_5",
+                    "player_3": "player_7"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

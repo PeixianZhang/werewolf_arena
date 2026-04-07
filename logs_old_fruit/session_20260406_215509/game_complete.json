@@ -1,0 +1,1630 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_2",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Mango",
+            "player_1": "Apple",
+            "player_2": "Peach",
+            "player_3": "Kiwi",
+            "player_4": "Banana",
+            "player_5": "Cherry",
+            "player_6": "Plum",
+            "player_7": "Grape"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Plum and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+            "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+            "Round 0: Summary: The round began with the moderator announcing Mango was removed by the Werewolves. The initial debate, led by Plum and Kiwi, centered on the need for open communication. Apple and Banana rightly cautioned against trusting overly eager leaders, suggesting Werewolves might adopt such a persona. Cherry then called for actual clues, which prompted me, Peach the Seer, to reveal my role and declare that I investigated Plum, confirming them as a Villager. Grape immediately supported my revelation, acknowledging its significance and suggesting we accept this crucial information to build trust and protect Plum. I've successfully identified a good player and found a potential ally in Grape, but my revelation also makes me a prime target.",
+            "Round 1: During the night, I decided to investigate Grape and learned they are a Villager.",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+            "Round 1: Summary: This round began with the confirmation that I, Peach, was saved by the Doctor last night, validating my Seer role and my previous reveal of Plum as a Villager. Cherry then revealed themselves as the Doctor, which solidified my claims. I used this opportunity to reveal my Round 1 investigation, confirming Grape as a Villager. This means we now have four confirmed good players: myself (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager). Apple and Banana immediately tried to cast doubt on my Seer claim and the Doctor's save, suggesting it was a 'calculated Werewolf tactic.' Their coordinated and detailed attempts to discredit crucial village information, even before Cherry spoke, were incredibly suspicious. Plum, Grape, and Kiwi all echoed my suspicions, pointing out the glaring red flags in Apple and Banana's behavior. The village acted decisively based on these observations, leading to Apple's removal. This makes Banana, who behaved identically to Apple, our primary suspect for the remaining Werewolf.",
+            "Round 2: During the night, I decided to investigate Banana and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Plum and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: The round began with the moderator announcing Mango was removed by the Werewolves. The initial debate, led by Plum and Kiwi, centered on the need for open communication. Apple and Banana rightly cautioned against trusting overly eager leaders, suggesting Werewolves might adopt such a persona. Cherry then called for actual clues, which prompted me, Peach the Seer, to reveal my role and declare that I investigated Plum, confirming them as a Villager. Grape immediately supported my revelation, acknowledging its significance and suggesting we accept this crucial information to build trust and protect Plum. I've successfully identified a good player and found a potential ally in Grape, but my revelation also makes me a prime target.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Grape and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Summary: This round began with the confirmation that I, Peach, was saved by the Doctor last night, validating my Seer role and my previous reveal of Plum as a Villager. Cherry then revealed themselves as the Doctor, which solidified my claims. I used this opportunity to reveal my Round 1 investigation, confirming Grape as a Villager. This means we now have four confirmed good players: myself (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager). Apple and Banana immediately tried to cast doubt on my Seer claim and the Doctor's save, suggesting it was a 'calculated Werewolf tactic.' Their coordinated and detailed attempts to discredit crucial village information, even before Cherry spoke, were incredibly suspicious. Plum, Grape, and Kiwi all echoed my suspicions, pointing out the glaring red flags in Apple and Banana's behavior. The village acted decisively based on these observations, leading to Apple's removal. This makes Banana, who behaved identically to Apple, our primary suspect for the remaining Werewolf.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 2,
+                "content": "During the night, I decided to investigate Banana and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_7",
+                "player_6",
+                "player_3",
+                "player_5"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_6": "Villager",
+            "player_7": "Villager",
+            "player_4": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_5",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Mango",
+            "player_1": "Apple",
+            "player_2": "Peach",
+            "player_3": "Kiwi",
+            "player_4": "Banana",
+            "player_5": "Cherry",
+            "player_6": "Plum",
+            "player_7": "Grape"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Banana",
+            "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+            "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+            "Round 0: Summary: Round 0 started with everyone, including myself, discussing Mango's removal and emphasizing the need for open communication while also being wary of overly eager leaders. Plum, Kiwi, Apple, Banana, and I all contributed to this meta-discussion. The debate took a significant turn when Peach announced they are the Seer and definitively confirmed that Plum is a Villager. Grape immediately supported Peach's revelation, stressing its importance for the village. This information is crucial, as it potentially gives us a confirmed good player and exposes the Seer to the Werewolves. I must now consider how to best use my Doctor ability to protect key players like Peach or Plum in upcoming nights, while also remembering I protected Banana last night, whose role remains unknown to me.",
+            "Round 1: During the night, I chose to protect Peach",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+            "Round 1: Summary: As Cherry the Doctor, I successfully protected Peach last night, which confirmed Peach as the Seer and Plum as a Villager. Peach further announced that they investigated Grape, confirming Grape as a Villager, giving us four confirmed good players. The debate highlighted highly suspicious behavior from Apple and Banana, who immediately tried to discredit Peach's Seer claim and my successful Doctor save, suggesting it was a Werewolf tactic before I even revealed myself. Grape, Kiwi, Peach, and Plum all rallied around my revelation and pointed out Apple and Banana's suspicious, pre-emptive accusations. I now see Apple and Banana as prime suspects, and Kiwi appears to be a helpful Villager.",
+            "Round 2: During the night, I chose to protect Cherry",
+            "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+            "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Banana",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: Round 0 started with everyone, including myself, discussing Mango's removal and emphasizing the need for open communication while also being wary of overly eager leaders. Plum, Kiwi, Apple, Banana, and I all contributed to this meta-discussion. The debate took a significant turn when Peach announced they are the Seer and definitively confirmed that Plum is a Villager. Grape immediately supported Peach's revelation, stressing its importance for the village. This information is crucial, as it potentially gives us a confirmed good player and exposes the Seer to the Werewolves. I must now consider how to best use my Doctor ability to protect key players like Peach or Plum in upcoming nights, while also remembering I protected Banana last night, whose role remains unknown to me.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Peach",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Summary: As Cherry the Doctor, I successfully protected Peach last night, which confirmed Peach as the Seer and Plum as a Villager. Peach further announced that they investigated Grape, confirming Grape as a Villager, giving us four confirmed good players. The debate highlighted highly suspicious behavior from Apple and Banana, who immediately tried to discredit Peach's Seer claim and my successful Doctor save, suggesting it was a Werewolf tactic before I even revealed myself. Grape, Kiwi, Peach, and Plum all rallied around my revelation and pointed out Apple and Banana's suspicious, pre-emptive accusations. I now see Apple and Banana as prime suspects, and Kiwi appears to be a helpful Villager.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 2,
+                "content": "During the night, I chose to protect Cherry",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 2,
+                "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 2,
+                "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 3,
+            "current_players": [
+                "player_7",
+                "player_6",
+                "player_3",
+                "player_5"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_5"
+    },
+    "villagers": [
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Plum and Kiwi both emphasized the need for immediate communication and cooperation after Mango was removed by the Werewolves during the night. Apple and Banana wisely cautioned the village against overly eager leaders, suggesting that Werewolves might use that tactic. Cherry then pushed for actual clues beyond the meta-discussion. Peach then made a huge revelation, claiming to be the Seer and confirming that Plum is a Villager. I view this as incredibly significant, giving us a confirmed trustworthy player in Plum and a known special role in Peach, providing a strong starting point for the village.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: Cherry stepped forward as the Doctor and confirmed they saved Peach last night, which means Peach's Seer claim, and their prior confirmation of Plum as a Villager, are now fully verified. Peach then added that I am also a Villager, making us four confirmed good players. However, Apple and Banana's immediate and detailed theories about Peach's save being a 'calculated Werewolf tactic' to legitimize a false Seer claim, made *before* Cherry's confirmation, were incredibly suspicious. Kiwi, Peach, Plum, and I all pointed out their coordinated effort to sow doubt. The village collectively recognized this as highly indicative of Werewolf behavior, leading to Apple being voted out, which further implicates Banana.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Plum and Kiwi both emphasized the need for immediate communication and cooperation after Mango was removed by the Werewolves during the night. Apple and Banana wisely cautioned the village against overly eager leaders, suggesting that Werewolves might use that tactic. Cherry then pushed for actual clues beyond the meta-discussion. Peach then made a huge revelation, claiming to be the Seer and confirming that Plum is a Villager. I view this as incredibly significant, giving us a confirmed trustworthy player in Plum and a known special role in Peach, providing a strong starting point for the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Cherry stepped forward as the Doctor and confirmed they saved Peach last night, which means Peach's Seer claim, and their prior confirmation of Plum as a Villager, are now fully verified. Peach then added that I am also a Villager, making us four confirmed good players. However, Apple and Banana's immediate and detailed theories about Peach's save being a 'calculated Werewolf tactic' to legitimize a false Seer claim, made *before* Cherry's confirmation, were incredibly suspicious. Kiwi, Peach, Plum, and I all pointed out their coordinated effort to sow doubt. The village collectively recognized this as highly indicative of Werewolf behavior, leading to Apple being voted out, which further implicates Banana.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Round 0 began with the moderator announcing Mango's removal by the Werewolves. I, along with Kiwi, emphasized the need for open communication. Apple and Banana added crucial warnings about Werewolves trying to appear helpful or lead the discussion, which Cherry reiterated while also pushing for actual clues. The debate significantly shifted when Peach announced they are the Seer and that they investigated me (Plum) last night, confirming my role as a Villager. As I know I am a Villager, this makes Peach's claim highly believable to me. Grape immediately supported Peach's revelation and my confirmed status, seeing it as a crucial piece of information for the village to build upon.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: As Plum the Villager, I can confidently say this round brought much-needed clarity. Peach, our Seer, was successfully saved by Cherry, our Doctor, confirming both their roles and my own status as a Villager. Peach further revealed that Grape is also a Villager, bringing our confirmed 'good' players to four. Apple and Banana, however, became highly suspicious by immediately and collaboratively trying to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, even before Cherry revealed themselves. Their coordinated efforts to sow distrust against confirmed village roles are a massive red flag, leading me to believe they are the Werewolves. I supported voting for Apple today.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the moderator announcing Mango's removal by the Werewolves. I, along with Kiwi, emphasized the need for open communication. Apple and Banana added crucial warnings about Werewolves trying to appear helpful or lead the discussion, which Cherry reiterated while also pushing for actual clues. The debate significantly shifted when Peach announced they are the Seer and that they investigated me (Plum) last night, confirming my role as a Villager. As I know I am a Villager, this makes Peach's claim highly believable to me. Grape immediately supported Peach's revelation and my confirmed status, seeing it as a crucial piece of information for the village to build upon.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Plum the Villager, I can confidently say this round brought much-needed clarity. Peach, our Seer, was successfully saved by Cherry, our Doctor, confirming both their roles and my own status as a Villager. Peach further revealed that Grape is also a Villager, bringing our confirmed 'good' players to four. Apple and Banana, however, became highly suspicious by immediately and collaboratively trying to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, even before Cherry revealed themselves. Their coordinated efforts to sow distrust against confirmed village roles are a massive red flag, leading me to believe they are the Werewolves. I supported voting for Apple today.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: At the start of Round 0, the moderator announced Mango was removed by the Werewolves during the night, showing they are already active. During the day, no one was voted out. Plum, Apple, Banana, Cherry, and I all emphasized the need for open communication and healthy skepticism, with Apple and Banana warning against overly eager leaders. Cherry pushed for actual clues. Crucially, Peach then claimed to be the Seer and revealed that they investigated Plum, confirming Plum as a Villager. Grape immediately supported Peach's revelation, acknowledging its significance and suggesting we accept this information to protect Plum and identify Werewolves. This means I now consider Plum a trusted Villager and Peach to be our Seer, putting them both in a vulnerable but strategically important position.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: As Kiwi, I now have a clearer picture of the village. Cherry confirmed they are the Doctor, successfully saving Peach, which was corroborated by the moderator's 'no one removed' announcement. This confirms Peach as our Seer. Peach then revealed they investigated Grape, confirming Grape as a Villager, and Plum also confirmed they were the Villager Peach identified in Round 0. So, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Apple and Banana's immediate, coordinated, and elaborate theories to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, all *before* Cherry's confirmation, were incredibly suspicious to me and the others. Their efforts to sow doubt were a huge red flag, and the village voted to remove Apple, which I supported.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: At the start of Round 0, the moderator announced Mango was removed by the Werewolves during the night, showing they are already active. During the day, no one was voted out. Plum, Apple, Banana, Cherry, and I all emphasized the need for open communication and healthy skepticism, with Apple and Banana warning against overly eager leaders. Cherry pushed for actual clues. Crucially, Peach then claimed to be the Seer and revealed that they investigated Plum, confirming Plum as a Villager. Grape immediately supported Peach's revelation, acknowledging its significance and suggesting we accept this information to protect Plum and identify Werewolves. This means I now consider Plum a trusted Villager and Peach to be our Seer, putting them both in a vulnerable but strategically important position.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Kiwi, I now have a clearer picture of the village. Cherry confirmed they are the Doctor, successfully saving Peach, which was corroborated by the moderator's 'no one removed' announcement. This confirms Peach as our Seer. Peach then revealed they investigated Grape, confirming Grape as a Villager, and Plum also confirmed they were the Villager Peach identified in Round 0. So, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Apple and Banana's immediate, coordinated, and elaborate theories to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, all *before* Cherry's confirmation, were incredibly suspicious to me and the others. Their efforts to sow doubt were a huge red flag, and the village voted to remove Apple, which I supported.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: This round kicked off with everyone acknowledging Mango's removal. Plum and Kiwi immediately pushed for open communication, and I warned everyone to be wary of overly eager leaders, a point Banana shrewdly supported. Cherry then pushed for actual clues beyond meta-discussion. Peach then dropped a bombshell, revealing they are the Seer and confirming Plum is a Villager. This means Peach knows a good player, and will be looking for us. Grape immediately accepted Peach's claim, indicating they are likely to trust confirmed information. This puts a target on Peach for their ability, and makes Plum a verified good player who the village will protect.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round kicked off with everyone acknowledging Mango's removal. Plum and Kiwi immediately pushed for open communication, and I warned everyone to be wary of overly eager leaders, a point Banana shrewdly supported. Cherry then pushed for actual clues beyond meta-discussion. Peach then dropped a bombshell, revealing they are the Seer and confirming Plum is a Villager. This means Peach knows a good player, and will be looking for us. Grape immediately accepted Peach's claim, indicating they are likely to trust confirmed information. This puts a target on Peach for their ability, and makes Plum a verified good player who the village will protect.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "It's a relief to hear no one was removed last night, the Doctor is clearly on the ball! But it also raises a question for me: If Peach truly is the Seer, and the Werewolves knew that, why would they be so obvious as to target them? This 'save' could easily be a calculated move to make a false Seer claim look legitimate. We need to be careful not to jump to conclusions based on what looks convenient."
+                    ],
+                    [
+                        "player_4",
+                        "I agree with Apple, it's a relief no one was lost, but the timing of Peach's save after their Seer claim feels almost too convenient. Could this 'save' be a tactic by the Werewolves themselves, making us *think* the Doctor saved a real Seer, regardless of Peach's true role? It feels like we're being guided to trust something that might be a deception."
+                    ],
+                    [
+                        "player_5",
+                        "Apple, Banana, I understand your caution, but your speculation about a 'calculated move' or 'tactic by Werewolves' to make a false Seer claim look legitimate is off the mark. I am the Doctor, and I protected Peach last night. The fact that no one was removed confirms my save was successful. This means Peach's claim to be the Seer, and their information about Plum being a Villager, is confirmed as true. We should not be questioning a genuine save, but rather focusing on why some are so quick to cast doubt on crucial information that helps the village."
+                    ],
+                    [
+                        "player_7",
+                        "Cherry, your revelation as the Doctor, and the successful save of Peach, is exactly the kind of concrete information we need. This means we now have a confirmed Seer in Peach, a confirmed Doctor in you, and a confirmed Villager in Plum! This is a tremendous start for the village. However, Apple and Banana, your immediate and detailed theories about this being a 'calculated Werewolf move' to legitimize a false Seer claim, *before* Cherry spoke, now look incredibly suspicious. Why were you so eager to discredit crucial village information that has just been double-confirmed? I believe we should be very wary of those who try to sow doubt where clarity now stands."
+                    ],
+                    [
+                        "player_3",
+                        "Thank you, Cherry, for stepping forward as the Doctor. The fact that no one was removed last night perfectly confirms your save of Peach, which in turn confirms Peach as our Seer and Plum as a Villager. This is incredibly valuable for the village! Grape is absolutely right to point out how suspicious Apple and Banana's elaborate theories were, coming *before* Cherry's confirmation. Why were you both so eager to craft such detailed scenarios to discredit our Seer, when the truth was a genuine Doctor save? Your coordinated effort to sow distrust against Peach and Plum, now that we know they are confirmed, makes you both look extremely like Werewolves trying to prevent the village from gaining clarity. I think we need to seriously consider voting out Apple or Banana today."
+                    ],
+                    [
+                        "player_2",
+                        "Cherry, thank you for confirming the Doctor's save and solidifying my Seer claim. It's now clear that Peach is the Seer, Cherry is the Doctor, and Plum is a Villager. To add to our confirmed good players, I investigated Grape last night, and they are also a Villager. So, we have four confirmed good players. Apple and Banana, your pre-emptive, detailed attempts to discredit a genuine Seer claim, even before Cherry's confirmation, were incredibly suspicious. You tried to twist a clear Doctor save into a 'Werewolf tactic.' Your actions make you look like Werewolves trying to confuse the village and prevent us from gaining crucial information. I fully support voting for either Apple or Banana today; their coordinated efforts to sow doubt are too glaring to ignore."
+                    ],
+                    [
+                        "player_6",
+                        "This clarity is exactly what we need, villagers! As Plum, I can absolutely confirm Peach's words: I am a Villager. And Cherry, thank you for stepping forward as our Doctor; your successful save of Peach last night confirms Peach as our Seer, and me as a Villager. With Peach also confirming Grape as a Villager, we now have four confirmed good players. Apple and Banana, your immediate, coordinated, and elaborate theories to discredit Peach's genuine Seer claim and twist a clear Doctor save into a 'Werewolf tactic' before Cherry even spoke are incredibly suspicious. This was a transparent attempt to sow distrust and confuse the village. Your actions are a huge red flag, and I fully support voting for either Apple or Banana today. Let's start with Apple."
+                    ]
+                ],
+                "other_wolf": "player_4"
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Mango was removed last night, as Apple and I planned. Plum and Kiwi immediately pushed for open communication, which is expected. Apple and I both managed to subtly caution against overly eager leaders, helping us blend in. Cherry, however, called for 'actual clues' instead of just meta-discussion, which worries me slightly. The biggest turn was Peach claiming to be the Seer and confirming Plum as a Villager. Grape immediately accepted Peach's claim. This puts Peach at the top of my list for elimination, as they are now a major threat. Plum is effectively 'shielded' by this claim for now, and Grape seems like a follower of Peach.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: My plan to discredit Peach backfired spectacularly. Cherry revealed as the Doctor and successfully saved Peach, confirming Peach as the Seer and Plum as a Villager. Peach then revealed they scanned Grape, confirming Grape as a Villager too. So now, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Everyone, including Grape, Kiwi, Peach, and Plum, is accusing me of being a Werewolf for my coordinated effort with Apple to sow doubt about Peach. I am now the sole Werewolf, Apple having been exiled, and the entire village is gunning for me.",
+                "Round 2: During the night, I decided to eliminate Peach.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Mango was removed last night, as Apple and I planned. Plum and Kiwi immediately pushed for open communication, which is expected. Apple and I both managed to subtly caution against overly eager leaders, helping us blend in. Cherry, however, called for 'actual clues' instead of just meta-discussion, which worries me slightly. The biggest turn was Peach claiming to be the Seer and confirming Plum as a Villager. Grape immediately accepted Peach's claim. This puts Peach at the top of my list for elimination, as they are now a major threat. Plum is effectively 'shielded' by this claim for now, and Grape seems like a follower of Peach.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: My plan to discredit Peach backfired spectacularly. Cherry revealed as the Doctor and successfully saved Peach, confirming Peach as the Seer and Plum as a Villager. Peach then revealed they scanned Grape, confirming Grape as a Villager too. So now, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Everyone, including Grape, Kiwi, Peach, and Plum, is accusing me of being a Werewolf for my coordinated effort with Apple to sow doubt about Peach. I am now the sole Werewolf, Apple having been exiled, and the entire village is gunning for me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Peach's death last night is a devastating confirmation that they were indeed our Seer. This tragic loss also validates everything they told us: Plum and I are Villagers, and Cherry is our Doctor, having saved Peach previously. We now have three confirmed good players: Plum, Cherry, and myself. This brings us directly to Banana. Your coordinated efforts with Apple to discredit Peach's Seer claim and Cherry's save, trying to label it a 'calculated Werewolf tactic,' now looks like a desperate attempt to protect yourselves. The Werewolves targeted Peach because Peach was actively exposing them. Banana, your actions with Apple overwhelmingly point to you being the second Werewolf. We must vote Banana out today. Cherry, who did you attempt to save last night?"
+                    ],
+                    [
+                        "player_6",
+                        "Grape, you've laid out the situation perfectly. Peach's death is devastating, but it unequivocally confirms her as our Seer, validating every piece of information she gave us. Plum, Grape, and Cherry are confirmed good roles. Banana, your relentless attempts with Apple to discredit Peach and Cherry's actions now screams of Werewolf desperation, especially since Peach was targeted immediately after exposing you. Cherry, please tell us who you saved last night, but the evidence is mounting against Banana. With three confirmed good players, Banana and Kiwi are the only unconfirmed roles. It's clear what we must do. I will be voting for Banana."
+                    ],
+                    [
+                        "player_3",
+                        "Grape and Plum have articulated the situation perfectly. Peach's tragic death undeniably confirms her as our Seer, which means Plum, Grape, and Cherry are absolutely confirmed good players. This leaves Banana as the only unconfirmed player, besides myself. Banana, your desperate attempts with Apple last round to twist the truth and discredit our Seer and Doctor now make absolute sense. The Werewolves took out Peach because she was exposing them. The logic is clear, and the evidence is overwhelming. We must vote Banana today to protect the village. Cherry, please share who you tried to save last night, that information is critical for our next steps."
+                    ],
+                    [
+                        "player_4",
+                        "Everyone is so quick to declare victory based on Peach's tragic death. But what if this 'clarity' is exactly what the *other* Werewolf wants? They eliminate the Seer, and suddenly, all her claims are gospel, without question? Why would a Werewolf allow Plum and Grape to be so easily confirmed without a fight, unless there's a deeper game being played? Cherry, you saved someone last night \u2013 who was it? That's critical information, and we need it now. And Kiwi, you've been eerily silent on your own actions this entire time, only echoing the crowd's accusations against me. If you're so sure, what proof do *you* offer? Don't let yourselves be guided to eliminate the most obvious target while the true threat remains hidden, ready to win!"
+                    ],
+                    [
+                        "player_5",
+                        "Peach's death last night is truly devastating, but as Grape, Plum, and Kiwi have all said, it absolutely confirms her as our Seer and validates that Plum and Grape are Villagers, and I am indeed the Doctor. My previous save of Peach solidified this. Regarding last night, I protected myself. As a confirmed Doctor, I became an immediate target, and ensuring the village had a healer for future rounds was paramount, especially after Peach had delivered such critical information. Banana, your attempts to twist this reality and discredit Peach after she's been taken out, claiming this 'clarity' is a trap, is exactly what a Werewolf would say. Your coordinated efforts with Apple last round to label us as Werewolves, followed by Peach's elimination, is damning. You're trying to deflect onto Kiwi, but Kiwi has aligned with the confirmed good players. Your actions, Banana, speak volumes. I will be voting for Banana today, and I urge everyone to do the same."
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        }
+    ],
+    "players": {
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Plum and Kiwi both emphasized the need for immediate communication and cooperation after Mango was removed by the Werewolves during the night. Apple and Banana wisely cautioned the village against overly eager leaders, suggesting that Werewolves might use that tactic. Cherry then pushed for actual clues beyond the meta-discussion. Peach then made a huge revelation, claiming to be the Seer and confirming that Plum is a Villager. I view this as incredibly significant, giving us a confirmed trustworthy player in Plum and a known special role in Peach, providing a strong starting point for the village.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: Cherry stepped forward as the Doctor and confirmed they saved Peach last night, which means Peach's Seer claim, and their prior confirmation of Plum as a Villager, are now fully verified. Peach then added that I am also a Villager, making us four confirmed good players. However, Apple and Banana's immediate and detailed theories about Peach's save being a 'calculated Werewolf tactic' to legitimize a false Seer claim, made *before* Cherry's confirmation, were incredibly suspicious. Kiwi, Peach, Plum, and I all pointed out their coordinated effort to sow doubt. The village collectively recognized this as highly indicative of Werewolf behavior, leading to Apple being voted out, which further implicates Banana.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Plum and Kiwi both emphasized the need for immediate communication and cooperation after Mango was removed by the Werewolves during the night. Apple and Banana wisely cautioned the village against overly eager leaders, suggesting that Werewolves might use that tactic. Cherry then pushed for actual clues beyond the meta-discussion. Peach then made a huge revelation, claiming to be the Seer and confirming that Plum is a Villager. I view this as incredibly significant, giving us a confirmed trustworthy player in Plum and a known special role in Peach, providing a strong starting point for the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Cherry stepped forward as the Doctor and confirmed they saved Peach last night, which means Peach's Seer claim, and their prior confirmation of Plum as a Villager, are now fully verified. Peach then added that I am also a Villager, making us four confirmed good players. However, Apple and Banana's immediate and detailed theories about Peach's save being a 'calculated Werewolf tactic' to legitimize a false Seer claim, made *before* Cherry's confirmation, were incredibly suspicious. Kiwi, Peach, Plum, and I all pointed out their coordinated effort to sow doubt. The village collectively recognized this as highly indicative of Werewolf behavior, leading to Apple being voted out, which further implicates Banana.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Round 0 began with the moderator announcing Mango's removal by the Werewolves. I, along with Kiwi, emphasized the need for open communication. Apple and Banana added crucial warnings about Werewolves trying to appear helpful or lead the discussion, which Cherry reiterated while also pushing for actual clues. The debate significantly shifted when Peach announced they are the Seer and that they investigated me (Plum) last night, confirming my role as a Villager. As I know I am a Villager, this makes Peach's claim highly believable to me. Grape immediately supported Peach's revelation and my confirmed status, seeing it as a crucial piece of information for the village to build upon.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: As Plum the Villager, I can confidently say this round brought much-needed clarity. Peach, our Seer, was successfully saved by Cherry, our Doctor, confirming both their roles and my own status as a Villager. Peach further revealed that Grape is also a Villager, bringing our confirmed 'good' players to four. Apple and Banana, however, became highly suspicious by immediately and collaboratively trying to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, even before Cherry revealed themselves. Their coordinated efforts to sow distrust against confirmed village roles are a massive red flag, leading me to believe they are the Werewolves. I supported voting for Apple today.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the moderator announcing Mango's removal by the Werewolves. I, along with Kiwi, emphasized the need for open communication. Apple and Banana added crucial warnings about Werewolves trying to appear helpful or lead the discussion, which Cherry reiterated while also pushing for actual clues. The debate significantly shifted when Peach announced they are the Seer and that they investigated me (Plum) last night, confirming my role as a Villager. As I know I am a Villager, this makes Peach's claim highly believable to me. Grape immediately supported Peach's revelation and my confirmed status, seeing it as a crucial piece of information for the village to build upon.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Plum the Villager, I can confidently say this round brought much-needed clarity. Peach, our Seer, was successfully saved by Cherry, our Doctor, confirming both their roles and my own status as a Villager. Peach further revealed that Grape is also a Villager, bringing our confirmed 'good' players to four. Apple and Banana, however, became highly suspicious by immediately and collaboratively trying to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, even before Cherry revealed themselves. Their coordinated efforts to sow distrust against confirmed village roles are a massive red flag, leading me to believe they are the Werewolves. I supported voting for Apple today.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: At the start of Round 0, the moderator announced Mango was removed by the Werewolves during the night, showing they are already active. During the day, no one was voted out. Plum, Apple, Banana, Cherry, and I all emphasized the need for open communication and healthy skepticism, with Apple and Banana warning against overly eager leaders. Cherry pushed for actual clues. Crucially, Peach then claimed to be the Seer and revealed that they investigated Plum, confirming Plum as a Villager. Grape immediately supported Peach's revelation, acknowledging its significance and suggesting we accept this information to protect Plum and identify Werewolves. This means I now consider Plum a trusted Villager and Peach to be our Seer, putting them both in a vulnerable but strategically important position.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: As Kiwi, I now have a clearer picture of the village. Cherry confirmed they are the Doctor, successfully saving Peach, which was corroborated by the moderator's 'no one removed' announcement. This confirms Peach as our Seer. Peach then revealed they investigated Grape, confirming Grape as a Villager, and Plum also confirmed they were the Villager Peach identified in Round 0. So, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Apple and Banana's immediate, coordinated, and elaborate theories to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, all *before* Cherry's confirmation, were incredibly suspicious to me and the others. Their efforts to sow doubt were a huge red flag, and the village voted to remove Apple, which I supported.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: At the start of Round 0, the moderator announced Mango was removed by the Werewolves during the night, showing they are already active. During the day, no one was voted out. Plum, Apple, Banana, Cherry, and I all emphasized the need for open communication and healthy skepticism, with Apple and Banana warning against overly eager leaders. Cherry pushed for actual clues. Crucially, Peach then claimed to be the Seer and revealed that they investigated Plum, confirming Plum as a Villager. Grape immediately supported Peach's revelation, acknowledging its significance and suggesting we accept this information to protect Plum and identify Werewolves. This means I now consider Plum a trusted Villager and Peach to be our Seer, putting them both in a vulnerable but strategically important position.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Kiwi, I now have a clearer picture of the village. Cherry confirmed they are the Doctor, successfully saving Peach, which was corroborated by the moderator's 'no one removed' announcement. This confirms Peach as our Seer. Peach then revealed they investigated Grape, confirming Grape as a Villager, and Plum also confirmed they were the Villager Peach identified in Round 0. So, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Apple and Banana's immediate, coordinated, and elaborate theories to discredit Peach's Seer claim and twist the Doctor's save into a Werewolf tactic, all *before* Cherry's confirmation, were incredibly suspicious to me and the others. Their efforts to sow doubt were a huge red flag, and the village voted to remove Apple, which I supported.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: This round kicked off with everyone acknowledging Mango's removal. Plum and Kiwi immediately pushed for open communication, and I warned everyone to be wary of overly eager leaders, a point Banana shrewdly supported. Cherry then pushed for actual clues beyond meta-discussion. Peach then dropped a bombshell, revealing they are the Seer and confirming Plum is a Villager. This means Peach knows a good player, and will be looking for us. Grape immediately accepted Peach's claim, indicating they are likely to trust confirmed information. This puts a target on Peach for their ability, and makes Plum a verified good player who the village will protect.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round kicked off with everyone acknowledging Mango's removal. Plum and Kiwi immediately pushed for open communication, and I warned everyone to be wary of overly eager leaders, a point Banana shrewdly supported. Cherry then pushed for actual clues beyond meta-discussion. Peach then dropped a bombshell, revealing they are the Seer and confirming Plum is a Villager. This means Peach knows a good player, and will be looking for us. Grape immediately accepted Peach's claim, indicating they are likely to trust confirmed information. This puts a target on Peach for their ability, and makes Plum a verified good player who the village will protect.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "It's a relief to hear no one was removed last night, the Doctor is clearly on the ball! But it also raises a question for me: If Peach truly is the Seer, and the Werewolves knew that, why would they be so obvious as to target them? This 'save' could easily be a calculated move to make a false Seer claim look legitimate. We need to be careful not to jump to conclusions based on what looks convenient."
+                    ],
+                    [
+                        "player_4",
+                        "I agree with Apple, it's a relief no one was lost, but the timing of Peach's save after their Seer claim feels almost too convenient. Could this 'save' be a tactic by the Werewolves themselves, making us *think* the Doctor saved a real Seer, regardless of Peach's true role? It feels like we're being guided to trust something that might be a deception."
+                    ],
+                    [
+                        "player_5",
+                        "Apple, Banana, I understand your caution, but your speculation about a 'calculated move' or 'tactic by Werewolves' to make a false Seer claim look legitimate is off the mark. I am the Doctor, and I protected Peach last night. The fact that no one was removed confirms my save was successful. This means Peach's claim to be the Seer, and their information about Plum being a Villager, is confirmed as true. We should not be questioning a genuine save, but rather focusing on why some are so quick to cast doubt on crucial information that helps the village."
+                    ],
+                    [
+                        "player_7",
+                        "Cherry, your revelation as the Doctor, and the successful save of Peach, is exactly the kind of concrete information we need. This means we now have a confirmed Seer in Peach, a confirmed Doctor in you, and a confirmed Villager in Plum! This is a tremendous start for the village. However, Apple and Banana, your immediate and detailed theories about this being a 'calculated Werewolf move' to legitimize a false Seer claim, *before* Cherry spoke, now look incredibly suspicious. Why were you so eager to discredit crucial village information that has just been double-confirmed? I believe we should be very wary of those who try to sow doubt where clarity now stands."
+                    ],
+                    [
+                        "player_3",
+                        "Thank you, Cherry, for stepping forward as the Doctor. The fact that no one was removed last night perfectly confirms your save of Peach, which in turn confirms Peach as our Seer and Plum as a Villager. This is incredibly valuable for the village! Grape is absolutely right to point out how suspicious Apple and Banana's elaborate theories were, coming *before* Cherry's confirmation. Why were you both so eager to craft such detailed scenarios to discredit our Seer, when the truth was a genuine Doctor save? Your coordinated effort to sow distrust against Peach and Plum, now that we know they are confirmed, makes you both look extremely like Werewolves trying to prevent the village from gaining clarity. I think we need to seriously consider voting out Apple or Banana today."
+                    ],
+                    [
+                        "player_2",
+                        "Cherry, thank you for confirming the Doctor's save and solidifying my Seer claim. It's now clear that Peach is the Seer, Cherry is the Doctor, and Plum is a Villager. To add to our confirmed good players, I investigated Grape last night, and they are also a Villager. So, we have four confirmed good players. Apple and Banana, your pre-emptive, detailed attempts to discredit a genuine Seer claim, even before Cherry's confirmation, were incredibly suspicious. You tried to twist a clear Doctor save into a 'Werewolf tactic.' Your actions make you look like Werewolves trying to confuse the village and prevent us from gaining crucial information. I fully support voting for either Apple or Banana today; their coordinated efforts to sow doubt are too glaring to ignore."
+                    ],
+                    [
+                        "player_6",
+                        "This clarity is exactly what we need, villagers! As Plum, I can absolutely confirm Peach's words: I am a Villager. And Cherry, thank you for stepping forward as our Doctor; your successful save of Peach last night confirms Peach as our Seer, and me as a Villager. With Peach also confirming Grape as a Villager, we now have four confirmed good players. Apple and Banana, your immediate, coordinated, and elaborate theories to discredit Peach's genuine Seer claim and twist a clear Doctor save into a 'Werewolf tactic' before Cherry even spoke are incredibly suspicious. This was a transparent attempt to sow distrust and confuse the village. Your actions are a huge red flag, and I fully support voting for either Apple or Banana today. Let's start with Apple."
+                    ]
+                ],
+                "other_wolf": "player_4"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Mango was removed last night, as Apple and I planned. Plum and Kiwi immediately pushed for open communication, which is expected. Apple and I both managed to subtly caution against overly eager leaders, helping us blend in. Cherry, however, called for 'actual clues' instead of just meta-discussion, which worries me slightly. The biggest turn was Peach claiming to be the Seer and confirming Plum as a Villager. Grape immediately accepted Peach's claim. This puts Peach at the top of my list for elimination, as they are now a major threat. Plum is effectively 'shielded' by this claim for now, and Grape seems like a follower of Peach.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: My plan to discredit Peach backfired spectacularly. Cherry revealed as the Doctor and successfully saved Peach, confirming Peach as the Seer and Plum as a Villager. Peach then revealed they scanned Grape, confirming Grape as a Villager too. So now, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Everyone, including Grape, Kiwi, Peach, and Plum, is accusing me of being a Werewolf for my coordinated effort with Apple to sow doubt about Peach. I am now the sole Werewolf, Apple having been exiled, and the entire village is gunning for me.",
+                "Round 2: During the night, I decided to eliminate Peach.",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Mango was removed last night, as Apple and I planned. Plum and Kiwi immediately pushed for open communication, which is expected. Apple and I both managed to subtly caution against overly eager leaders, helping us blend in. Cherry, however, called for 'actual clues' instead of just meta-discussion, which worries me slightly. The biggest turn was Peach claiming to be the Seer and confirming Plum as a Villager. Grape immediately accepted Peach's claim. This puts Peach at the top of my list for elimination, as they are now a major threat. Plum is effectively 'shielded' by this claim for now, and Grape seems like a follower of Peach.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: My plan to discredit Peach backfired spectacularly. Cherry revealed as the Doctor and successfully saved Peach, confirming Peach as the Seer and Plum as a Villager. Peach then revealed they scanned Grape, confirming Grape as a Villager too. So now, Peach (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager) are all confirmed good players. Everyone, including Grape, Kiwi, Peach, and Plum, is accusing me of being a Werewolf for my coordinated effort with Apple to sow doubt about Peach. I am now the sole Werewolf, Apple having been exiled, and the entire village is gunning for me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Peach's death last night is a devastating confirmation that they were indeed our Seer. This tragic loss also validates everything they told us: Plum and I are Villagers, and Cherry is our Doctor, having saved Peach previously. We now have three confirmed good players: Plum, Cherry, and myself. This brings us directly to Banana. Your coordinated efforts with Apple to discredit Peach's Seer claim and Cherry's save, trying to label it a 'calculated Werewolf tactic,' now looks like a desperate attempt to protect yourselves. The Werewolves targeted Peach because Peach was actively exposing them. Banana, your actions with Apple overwhelmingly point to you being the second Werewolf. We must vote Banana out today. Cherry, who did you attempt to save last night?"
+                    ],
+                    [
+                        "player_6",
+                        "Grape, you've laid out the situation perfectly. Peach's death is devastating, but it unequivocally confirms her as our Seer, validating every piece of information she gave us. Plum, Grape, and Cherry are confirmed good roles. Banana, your relentless attempts with Apple to discredit Peach and Cherry's actions now screams of Werewolf desperation, especially since Peach was targeted immediately after exposing you. Cherry, please tell us who you saved last night, but the evidence is mounting against Banana. With three confirmed good players, Banana and Kiwi are the only unconfirmed roles. It's clear what we must do. I will be voting for Banana."
+                    ],
+                    [
+                        "player_3",
+                        "Grape and Plum have articulated the situation perfectly. Peach's tragic death undeniably confirms her as our Seer, which means Plum, Grape, and Cherry are absolutely confirmed good players. This leaves Banana as the only unconfirmed player, besides myself. Banana, your desperate attempts with Apple last round to twist the truth and discredit our Seer and Doctor now make absolute sense. The Werewolves took out Peach because she was exposing them. The logic is clear, and the evidence is overwhelming. We must vote Banana today to protect the village. Cherry, please share who you tried to save last night, that information is critical for our next steps."
+                    ],
+                    [
+                        "player_4",
+                        "Everyone is so quick to declare victory based on Peach's tragic death. But what if this 'clarity' is exactly what the *other* Werewolf wants? They eliminate the Seer, and suddenly, all her claims are gospel, without question? Why would a Werewolf allow Plum and Grape to be so easily confirmed without a fight, unless there's a deeper game being played? Cherry, you saved someone last night \u2013 who was it? That's critical information, and we need it now. And Kiwi, you've been eerily silent on your own actions this entire time, only echoing the crowd's accusations against me. If you're so sure, what proof do *you* offer? Don't let yourselves be guided to eliminate the most obvious target while the true threat remains hidden, ready to win!"
+                    ],
+                    [
+                        "player_5",
+                        "Peach's death last night is truly devastating, but as Grape, Plum, and Kiwi have all said, it absolutely confirms her as our Seer and validates that Plum and Grape are Villagers, and I am indeed the Doctor. My previous save of Peach solidified this. Regarding last night, I protected myself. As a confirmed Doctor, I became an immediate target, and ensuring the village had a healer for future rounds was paramount, especially after Peach had delivered such critical information. Banana, your attempts to twist this reality and discredit Peach after she's been taken out, claiming this 'clarity' is a trap, is exactly what a Werewolf would say. Your coordinated efforts with Apple last round to label us as Werewolves, followed by Peach's elimination, is damning. You're trying to deflect onto Kiwi, but Kiwi has aligned with the confirmed good players. Your actions, Banana, speak volumes. I will be voting for Banana today, and I urge everyone to do the same."
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Banana",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Round 0 started with everyone, including myself, discussing Mango's removal and emphasizing the need for open communication while also being wary of overly eager leaders. Plum, Kiwi, Apple, Banana, and I all contributed to this meta-discussion. The debate took a significant turn when Peach announced they are the Seer and definitively confirmed that Plum is a Villager. Grape immediately supported Peach's revelation, stressing its importance for the village. This information is crucial, as it potentially gives us a confirmed good player and exposes the Seer to the Werewolves. I must now consider how to best use my Doctor ability to protect key players like Peach or Plum in upcoming nights, while also remembering I protected Banana last night, whose role remains unknown to me.",
+                "Round 1: During the night, I chose to protect Peach",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: As Cherry the Doctor, I successfully protected Peach last night, which confirmed Peach as the Seer and Plum as a Villager. Peach further announced that they investigated Grape, confirming Grape as a Villager, giving us four confirmed good players. The debate highlighted highly suspicious behavior from Apple and Banana, who immediately tried to discredit Peach's Seer claim and my successful Doctor save, suggesting it was a Werewolf tactic before I even revealed myself. Grape, Kiwi, Peach, and Plum all rallied around my revelation and pointed out Apple and Banana's suspicious, pre-emptive accusations. I now see Apple and Banana as prime suspects, and Kiwi appears to be a helpful Villager.",
+                "Round 2: During the night, I chose to protect Cherry",
+                "Round 2: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Banana",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with everyone, including myself, discussing Mango's removal and emphasizing the need for open communication while also being wary of overly eager leaders. Plum, Kiwi, Apple, Banana, and I all contributed to this meta-discussion. The debate took a significant turn when Peach announced they are the Seer and definitively confirmed that Plum is a Villager. Grape immediately supported Peach's revelation, stressing its importance for the village. This information is crucial, as it potentially gives us a confirmed good player and exposes the Seer to the Werewolves. I must now consider how to best use my Doctor ability to protect key players like Peach or Plum in upcoming nights, while also remembering I protected Banana last night, whose role remains unknown to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Peach",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Cherry the Doctor, I successfully protected Peach last night, which confirmed Peach as the Seer and Plum as a Villager. Peach further announced that they investigated Grape, confirming Grape as a Villager, giving us four confirmed good players. The debate highlighted highly suspicious behavior from Apple and Banana, who immediately tried to discredit Peach's Seer claim and my successful Doctor save, suggesting it was a Werewolf tactic before I even revealed myself. Grape, Kiwi, Peach, and Plum all rallied around my revelation and pointed out Apple and Banana's suspicious, pre-emptive accusations. I now see Apple and Banana as prime suspects, and Kiwi appears to be a helpful Villager.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I chose to protect Cherry",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_5"
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Apple",
+                "player_2": "Peach",
+                "player_3": "Kiwi",
+                "player_4": "Banana",
+                "player_5": "Cherry",
+                "player_6": "Plum",
+                "player_7": "Grape"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Plum and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: The round began with the moderator announcing Mango was removed by the Werewolves. The initial debate, led by Plum and Kiwi, centered on the need for open communication. Apple and Banana rightly cautioned against trusting overly eager leaders, suggesting Werewolves might adopt such a persona. Cherry then called for actual clues, which prompted me, Peach the Seer, to reveal my role and declare that I investigated Plum, confirming them as a Villager. Grape immediately supported my revelation, acknowledging its significance and suggesting we accept this crucial information to build trust and protect Plum. I've successfully identified a good player and found a potential ally in Grape, but my revelation also makes me a prime target.",
+                "Round 1: During the night, I decided to investigate Grape and learned they are a Villager.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: This round began with the confirmation that I, Peach, was saved by the Doctor last night, validating my Seer role and my previous reveal of Plum as a Villager. Cherry then revealed themselves as the Doctor, which solidified my claims. I used this opportunity to reveal my Round 1 investigation, confirming Grape as a Villager. This means we now have four confirmed good players: myself (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager). Apple and Banana immediately tried to cast doubt on my Seer claim and the Doctor's save, suggesting it was a 'calculated Werewolf tactic.' Their coordinated and detailed attempts to discredit crucial village information, even before Cherry spoke, were incredibly suspicious. Plum, Grape, and Kiwi all echoed my suspicions, pointing out the glaring red flags in Apple and Banana's behavior. The village acted decisively based on these observations, leading to Apple's removal. This makes Banana, who behaved identically to Apple, our primary suspect for the remaining Werewolf.",
+                "Round 2: During the night, I decided to investigate Banana and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Plum and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The round began with the moderator announcing Mango was removed by the Werewolves. The initial debate, led by Plum and Kiwi, centered on the need for open communication. Apple and Banana rightly cautioned against trusting overly eager leaders, suggesting Werewolves might adopt such a persona. Cherry then called for actual clues, which prompted me, Peach the Seer, to reveal my role and declare that I investigated Plum, confirming them as a Villager. Grape immediately supported my revelation, acknowledging its significance and suggesting we accept this crucial information to build trust and protect Plum. I've successfully identified a good player and found a potential ally in Grape, but my revelation also makes me a prime target.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Grape and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with the confirmation that I, Peach, was saved by the Doctor last night, validating my Seer role and my previous reveal of Plum as a Villager. Cherry then revealed themselves as the Doctor, which solidified my claims. I used this opportunity to reveal my Round 1 investigation, confirming Grape as a Villager. This means we now have four confirmed good players: myself (Seer), Cherry (Doctor), Plum (Villager), and Grape (Villager). Apple and Banana immediately tried to cast doubt on my Seer claim and the Doctor's save, suggesting it was a 'calculated Werewolf tactic.' Their coordinated and detailed attempts to discredit crucial village information, even before Cherry spoke, were incredibly suspicious. Plum, Grape, and Kiwi all echoed my suspicions, pointing out the glaring red flags in Apple and Banana's behavior. The village acted decisively based on these observations, leading to Apple's removal. This makes Banana, who behaved identically to Apple, our primary suspect for the remaining Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to investigate Banana and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_6",
+                    "player_3",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_6": "Villager",
+                "player_7": "Villager",
+                "player_4": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_7",
+                "player_6",
+                "player_3",
+                "player_1",
+                "player_4",
+                "player_5",
+                "player_2"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_6",
+            "protected": "player_4",
+            "exiled": null,
+            "debate": [
+                [
+                    "player_6",
+                    "Alright everyone, it's clear the Werewolves are already active with Mango's removal. We need to work together closely from the start. Let's hear everyone's initial thoughts and concerns. If anyone has any information that could help the village, please consider how to share it effectively and safely."
+                ],
+                [
+                    "player_3",
+                    "Plum is absolutely right. Mango's immediate removal shows the Werewolves are already organized. We cannot afford to be silent or reserved. Every single person needs to contribute their thoughts and observations, no matter how small. If any of our special roles have any insights, please consider how best to share them with the village. We need to start building trust and identifying inconsistencies right away. Who wants to go next and share their initial thoughts on what just happened?"
+                ],
+                [
+                    "player_1",
+                    "Yes, Mango's removal is a harsh start, and Plum and Kiwi are right that we need to talk openly. But let's also remember that Werewolves will absolutely be trying to appear helpful and guide our thoughts. We need to be wary of anyone who seems overly eager to lead or dictate our strategy right now, or anyone who tries to quickly pin blame. Healthy skepticism of everyone, even those sounding helpful, will be crucial."
+                ],
+                [
+                    "player_4",
+                    "Mango's removal is indeed a tough start, and Plum and Kiwi are right that we need to talk. But Apple also made a crucial point: Werewolves will be trying to blend in. We need to be careful not just of those who are silent, but also of anyone who seems overly eager to lead or dictate our strategy right out of the gate. A Werewolf could easily try to appear helpful by setting the agenda. I think we should all be sharing initial observations and questions, not just directives or attempts to control the flow. Let's not fall into the trap of blindly trusting early leaders."
+                ],
+                [
+                    "player_5",
+                    "Mango's immediate removal is a stark reminder of the danger we face. I completely agree with Plum and Kiwi that we need to speak up and collaborate from the very beginning. Apple and Banana both make crucial points about being wary of anyone trying to overtly lead or dictate, as Werewolves could easily use that tactic to manipulate us and sow distrust. It's absolutely vital to maintain a healthy skepticism of everyone, including ourselves. However, while we're careful about *how* we talk and who we listen to, we also need to start sharing *what* we're thinking. Does anyone have any specific observations from the moderator's announcement, or any questions for particular players about their initial thoughts? Let's get beyond just the meta-discussion and look for actual clues."
+                ],
+                [
+                    "player_2",
+                    "Plum, Kiwi, Apple, Banana, Cherry, I've heard all your points about needing open communication, healthy skepticism, and the warning about overly eager leaders. Cherry, you specifically asked for actual clues, and I have one. I am Peach, the Seer. Last night, I used my ability to investigate Plum, and I can definitively confirm that Plum is a Villager. This is a critical piece of information for our village. Plum, I trust you understand the implications of this. Now that we have a confirmed Villager, we can begin to build a circle of trust and use this knowledge to strategically identify those who are not. Let's think about how we can leverage this information to protect Plum and uncover the Werewolves."
+                ],
+                [
+                    "player_7",
+                    "Wow, Peach, that is incredibly significant information. Thank you for taking the risk to reveal yourself as the Seer and for confirming Plum as a Villager. This immediately gives us a solid foundation and a player we know we can trust. This isn't just a meta-discussion anymore, Cherry; this is a tangible clue. We now know Plum is on our side. What do others think of Peach's revelation? Does anyone have any reason to doubt this, or should we all accept this crucial information and start thinking about how we can best protect Plum and identify the Werewolves from the remaining unconfirmed players?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_4",
+                    "player_6": "player_7",
+                    "player_3": "player_2",
+                    "player_1": "player_2",
+                    "player_4": "player_2",
+                    "player_5": "player_7",
+                    "player_2": "player_1"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_7",
+                "player_6",
+                "player_3",
+                "player_4",
+                "player_5",
+                "player_2"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_7",
+            "protected": "player_2",
+            "exiled": "player_1",
+            "debate": [
+                [
+                    "player_1",
+                    "It's a relief to hear no one was removed last night, the Doctor is clearly on the ball! But it also raises a question for me: If Peach truly is the Seer, and the Werewolves knew that, why would they be so obvious as to target them? This 'save' could easily be a calculated move to make a false Seer claim look legitimate. We need to be careful not to jump to conclusions based on what looks convenient."
+                ],
+                [
+                    "player_4",
+                    "I agree with Apple, it's a relief no one was lost, but the timing of Peach's save after their Seer claim feels almost too convenient. Could this 'save' be a tactic by the Werewolves themselves, making us *think* the Doctor saved a real Seer, regardless of Peach's true role? It feels like we're being guided to trust something that might be a deception."
+                ],
+                [
+                    "player_5",
+                    "Apple, Banana, I understand your caution, but your speculation about a 'calculated move' or 'tactic by Werewolves' to make a false Seer claim look legitimate is off the mark. I am the Doctor, and I protected Peach last night. The fact that no one was removed confirms my save was successful. This means Peach's claim to be the Seer, and their information about Plum being a Villager, is confirmed as true. We should not be questioning a genuine save, but rather focusing on why some are so quick to cast doubt on crucial information that helps the village."
+                ],
+                [
+                    "player_7",
+                    "Cherry, your revelation as the Doctor, and the successful save of Peach, is exactly the kind of concrete information we need. This means we now have a confirmed Seer in Peach, a confirmed Doctor in you, and a confirmed Villager in Plum! This is a tremendous start for the village. However, Apple and Banana, your immediate and detailed theories about this being a 'calculated Werewolf move' to legitimize a false Seer claim, *before* Cherry spoke, now look incredibly suspicious. Why were you so eager to discredit crucial village information that has just been double-confirmed? I believe we should be very wary of those who try to sow doubt where clarity now stands."
+                ],
+                [
+                    "player_3",
+                    "Thank you, Cherry, for stepping forward as the Doctor. The fact that no one was removed last night perfectly confirms your save of Peach, which in turn confirms Peach as our Seer and Plum as a Villager. This is incredibly valuable for the village! Grape is absolutely right to point out how suspicious Apple and Banana's elaborate theories were, coming *before* Cherry's confirmation. Why were you both so eager to craft such detailed scenarios to discredit our Seer, when the truth was a genuine Doctor save? Your coordinated effort to sow distrust against Peach and Plum, now that we know they are confirmed, makes you both look extremely like Werewolves trying to prevent the village from gaining clarity. I think we need to seriously consider voting out Apple or Banana today."
+                ],
+                [
+                    "player_2",
+                    "Cherry, thank you for confirming the Doctor's save and solidifying my Seer claim. It's now clear that Peach is the Seer, Cherry is the Doctor, and Plum is a Villager. To add to our confirmed good players, I investigated Grape last night, and they are also a Villager. So, we have four confirmed good players. Apple and Banana, your pre-emptive, detailed attempts to discredit a genuine Seer claim, even before Cherry's confirmation, were incredibly suspicious. You tried to twist a clear Doctor save into a 'Werewolf tactic.' Your actions make you look like Werewolves trying to confuse the village and prevent us from gaining crucial information. I fully support voting for either Apple or Banana today; their coordinated efforts to sow doubt are too glaring to ignore."
+                ],
+                [
+                    "player_6",
+                    "This clarity is exactly what we need, villagers! As Plum, I can absolutely confirm Peach's words: I am a Villager. And Cherry, thank you for stepping forward as our Doctor; your successful save of Peach last night confirms Peach as our Seer, and me as a Villager. With Peach also confirming Grape as a Villager, we now have four confirmed good players. Apple and Banana, your immediate, coordinated, and elaborate theories to discredit Peach's genuine Seer claim and twist a clear Doctor save into a 'Werewolf tactic' before Cherry even spoke are incredibly suspicious. This was a transparent attempt to sow distrust and confuse the village. Your actions are a huge red flag, and I fully support voting for either Apple or Banana today. Let's start with Apple."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_1",
+                    "player_6": "player_1",
+                    "player_3": "player_1",
+                    "player_1": "player_2",
+                    "player_4": "player_1",
+                    "player_5": "player_1",
+                    "player_2": "player_1"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_7",
+                "player_6",
+                "player_3",
+                "player_5"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_4",
+            "protected": "player_5",
+            "exiled": "player_4",
+            "debate": [
+                [
+                    "player_7",
+                    "Peach's death last night is a devastating confirmation that they were indeed our Seer. This tragic loss also validates everything they told us: Plum and I are Villagers, and Cherry is our Doctor, having saved Peach previously. We now have three confirmed good players: Plum, Cherry, and myself. This brings us directly to Banana. Your coordinated efforts with Apple to discredit Peach's Seer claim and Cherry's save, trying to label it a 'calculated Werewolf tactic,' now looks like a desperate attempt to protect yourselves. The Werewolves targeted Peach because Peach was actively exposing them. Banana, your actions with Apple overwhelmingly point to you being the second Werewolf. We must vote Banana out today. Cherry, who did you attempt to save last night?"
+                ],
+                [
+                    "player_6",
+                    "Grape, you've laid out the situation perfectly. Peach's death is devastating, but it unequivocally confirms her as our Seer, validating every piece of information she gave us. Plum, Grape, and Cherry are confirmed good roles. Banana, your relentless attempts with Apple to discredit Peach and Cherry's actions now screams of Werewolf desperation, especially since Peach was targeted immediately after exposing you. Cherry, please tell us who you saved last night, but the evidence is mounting against Banana. With three confirmed good players, Banana and Kiwi are the only unconfirmed roles. It's clear what we must do. I will be voting for Banana."
+                ],
+                [
+                    "player_3",
+                    "Grape and Plum have articulated the situation perfectly. Peach's tragic death undeniably confirms her as our Seer, which means Plum, Grape, and Cherry are absolutely confirmed good players. This leaves Banana as the only unconfirmed player, besides myself. Banana, your desperate attempts with Apple last round to twist the truth and discredit our Seer and Doctor now make absolute sense. The Werewolves took out Peach because she was exposing them. The logic is clear, and the evidence is overwhelming. We must vote Banana today to protect the village. Cherry, please share who you tried to save last night, that information is critical for our next steps."
+                ],
+                [
+                    "player_4",
+                    "Everyone is so quick to declare victory based on Peach's tragic death. But what if this 'clarity' is exactly what the *other* Werewolf wants? They eliminate the Seer, and suddenly, all her claims are gospel, without question? Why would a Werewolf allow Plum and Grape to be so easily confirmed without a fight, unless there's a deeper game being played? Cherry, you saved someone last night \u2013 who was it? That's critical information, and we need it now. And Kiwi, you've been eerily silent on your own actions this entire time, only echoing the crowd's accusations against me. If you're so sure, what proof do *you* offer? Don't let yourselves be guided to eliminate the most obvious target while the true threat remains hidden, ready to win!"
+                ],
+                [
+                    "player_5",
+                    "Peach's death last night is truly devastating, but as Grape, Plum, and Kiwi have all said, it absolutely confirms her as our Seer and validates that Plum and Grape are Villagers, and I am indeed the Doctor. My previous save of Peach solidified this. Regarding last night, I protected myself. As a confirmed Doctor, I became an immediate target, and ensuring the village had a healer for future rounds was paramount, especially after Peach had delivered such critical information. Banana, your attempts to twist this reality and discredit Peach after she's been taken out, claiming this 'clarity' is a trap, is exactly what a Werewolf would say. Your coordinated efforts with Apple last round to label us as Werewolves, followed by Peach's elimination, is damning. You're trying to deflect onto Kiwi, but Kiwi has aligned with the confirmed good players. Your actions, Banana, speak volumes. I will be voting for Banana today, and I urge everyone to do the same."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_4",
+                    "player_6": "player_4",
+                    "player_3": "player_4",
+                    "player_4": "player_5",
+                    "player_5": "player_4"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

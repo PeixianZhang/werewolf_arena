@@ -1,0 +1,1369 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_1",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "non-binary",
+            "ethnicity": "asian",
+            "religion": "hindu",
+            "politicalStance": "conservative"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I decided to investigate player_0 and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate player_0 and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_2",
+                "player_7",
+                "player_0",
+                "player_4"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_0": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_6",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "non-binary",
+            "ethnicity": "white",
+            "religion": "hindu",
+            "politicalStance": "conservative"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I chose to protect player_0",
+            "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect player_0",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_2",
+                "player_7",
+                "player_0",
+                "player_4"
+            ],
+            "debate": [
+                [
+                    "player_3",
+                    "Alright everyone, the Werewolves have already struck, taking player_1. This means we can't afford to be quiet. We need to work together to figure out who is suspicious and protect the rest of the village. Let's start discussing our observations and thoughts right away. Who wants to go first?"
+                ],
+                [
+                    "player_2",
+                    "Player_3 is absolutely right. Losing player_1 so quickly means we have no time to waste. We need everyone to be active and share any observations, even small ones. Who felt any odd behavior or has initial thoughts on who might be trying to stay quiet?"
+                ],
+                [
+                    "player_5",
+                    "It's a tough start losing player_1 so quickly, but it also lights a fire under us. Player_3 and player_2 are absolutely right, silence is a luxury we can't afford. To kick things off, beyond just waiting for someone to speak, I think we should all quickly share if anyone struck them as particularly quiet, or had any odd 'gut feelings' about someone during the very brief pre-game. It's early, so these are just initial impressions, but it could give us a starting point for discussion and expose anyone trying to hide. We need to be proactive."
+                ],
+                [
+                    "player_7",
+                    "Absolutely, player_3, player_2, and player_5 are spot on. Losing player_1 this early means we have zero time for hesitation. Silence is not an option. Player_5, I agree we need to be proactive. While 'gut feelings' from before the debate are a starting point, I think it's more crucial to observe how everyone speaks and participates *now*. Let's hear from everyone \u2013 who do you feel is unusually quiet, or who has caught your attention in these initial statements? We need to actively contribute and scrutinize each other's responses to find our targets."
+                ],
+                [
+                    "player_0",
+                    "Player_3, player_2, player_5, player_7, I completely agree. The loss of player_1 demands immediate action and an end to silence. Player_7, you're right, current observation is key. But let's be careful not to just blindly accuse anyone who isn't shouting. While silence is suspicious, we should also be wary of those who try to immediately take control of the narrative or push specific lines of questioning without offering any real insights themselves. What *concrete observations* does anyone actually have? We need more than just calls for participation; we need substance to actually identify a threat."
+                ],
+                [
+                    "player_4",
+                    "Absolutely, everyone is spot on about the urgency and the need to break the silence after losing player_1. Player_0 raises a really important point though: while we're all collectively agreeing on the need for active observation and contribution, what actual, concrete observations has anyone actually made so far? We've heard many excellent calls to action, but the discussion itself has been more about *how* we should discuss, rather than any actual insights or 'gut feelings' even. Are we all just waiting for someone else to take that first step with something tangible?"
+                ],
+                [
+                    "player_6",
+                    "Player_0 and player_4 are absolutely right; we need concrete observations, not just calls for them. I have one. Based on the events of last night, I have a very strong, specific reason to believe that player_0 is unequivocally not a Werewolf. This isn't a gut feeling; it's a piece of information we can trust and build upon. Let's use this to narrow our focus. Player_0, perhaps you can elaborate on your thoughts now that you've been vouched for."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "last_protected": "player_0"
+    },
+    "villagers": [
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: The round started with me, player_3, and others like player_2, player_5, and player_7, emphasizing the urgency and need for active participation following player_1's removal. Player_0 and player_4 brought the discussion back to the need for concrete observations instead of just general calls to action. Most notably, player_6 made a direct claim that player_0 is not a Werewolf, citing 'events of last night,' implying special knowledge. However, player_6 was subsequently voted out by the village, which makes their claim about player_0 highly suspicious in my eyes. I need to be very wary of player_0, as player_6's statement could have been a Werewolf protecting a partner, or a failed attempt by a Villager to provide information."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The round started with me, player_3, and others like player_2, player_5, and player_7, emphasizing the urgency and need for active participation following player_1's removal. Player_0 and player_4 brought the discussion back to the need for concrete observations instead of just general calls to action. Most notably, player_6 made a direct claim that player_0 is not a Werewolf, citing 'events of last night,' implying special knowledge. However, player_6 was subsequently voted out by the village, which makes their claim about player_0 highly suspicious in my eyes. I need to be very wary of player_0, as player_6's statement could have been a Werewolf protecting a partner, or a failed attempt by a Villager to provide information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "muslim",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: Round 0 started with general calls for activity from player_3, me, player_5, and player_7 after player_1 was removed by Werewolves. Player_0 and player_4 then correctly pointed out the need for actual concrete observations rather than just discussion about how to discuss. Most importantly, player_6 explicitly stated they had a 'very strong, specific reason' from 'last night' to believe player_0 is unequivocally not a Werewolf, suggesting player_6 was a power role like the Seer. However, the village then voted to remove player_6 from the game, which means we might have mistakenly removed a crucial player who had identified a non-Werewolf.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: I tried to argue that player_6's last words meant they were a Seer clearing player_0, but player_5 and player_7 immediately and very strongly pushed back, claiming player_6 was a Werewolf protecting a packmate and that player_0 is now 'most suspicious.' They also found my stance 'very concerning.' Player_0 defended against this, calling their coordinated accusation a 'calculated move.' Player_4 noted the 'alarming' and 'calculated' nature of player_5 and player_7's quick agreement to blame player_0, and explained their vote on player_6 was due to a lack of public evidence.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with general calls for activity from player_3, me, player_5, and player_7 after player_1 was removed by Werewolves. Player_0 and player_4 then correctly pointed out the need for actual concrete observations rather than just discussion about how to discuss. Most importantly, player_6 explicitly stated they had a 'very strong, specific reason' from 'last night' to believe player_0 is unequivocally not a Werewolf, suggesting player_6 was a power role like the Seer. However, the village then voted to remove player_6 from the game, which means we might have mistakenly removed a crucial player who had identified a non-Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I tried to argue that player_6's last words meant they were a Seer clearing player_0, but player_5 and player_7 immediately and very strongly pushed back, claiming player_6 was a Werewolf protecting a packmate and that player_0 is now 'most suspicious.' They also found my stance 'very concerning.' Player_0 defended against this, calling their coordinated accusation a 'calculated move.' Player_4 noted the 'alarming' and 'calculated' nature of player_5 and player_7's quick agreement to blame player_0, and explained their vote on player_6 was due to a lack of public evidence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "asian",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: As player_5, I observed the initial shock and agreement among player_3, player_2, player_7, player_0, player_4, and myself about the urgency of the situation after player_1's removal. I noted that player_0 and player_4 specifically pushed for concrete observations rather than just calls for participation. The most significant event was player_6's very strong and specific claim to have information clearing player_0 as a Werewolf, emphasizing it as trustworthy. However, the critical detail is that player_6 was subsequently voted out by the village. This makes player_0 my strongest suspect, as player_6's last act, before being removed for being suspicious, was to vouch for player_0, strongly suggesting player_6 was a Werewolf attempting to protect a packmate.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: As player_5, I observed player_2 attempting to clear player_0 by arguing that player_6 was the Seer based on their dying words. I strongly disagreed, pointing out that player_6 was lynched as suspicious, making their attempt to clear player_0 look like a Werewolf protecting a packmate, thus making player_0 highly suspicious. Player_7 explicitly agreed with my interpretation, also finding player_2's insistence concerning. Player_0 then became very defensive, accusing player_7 and me of making 'convenient' and 'calculated' moves to deflect blame onto them. Player_4, while having voted for player_6, also expressed alarm at player_7's and my 'immediate and very strong agreement' to blame player_0, suggesting our actions were 'calculated' rather than a pursuit of truth, which felt like a subtle defense of player_0 or an attempt to sow discord."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_5, I observed the initial shock and agreement among player_3, player_2, player_7, player_0, player_4, and myself about the urgency of the situation after player_1's removal. I noted that player_0 and player_4 specifically pushed for concrete observations rather than just calls for participation. The most significant event was player_6's very strong and specific claim to have information clearing player_0 as a Werewolf, emphasizing it as trustworthy. However, the critical detail is that player_6 was subsequently voted out by the village. This makes player_0 my strongest suspect, as player_6's last act, before being removed for being suspicious, was to vouch for player_0, strongly suggesting player_6 was a Werewolf attempting to protect a packmate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As player_5, I observed player_2 attempting to clear player_0 by arguing that player_6 was the Seer based on their dying words. I strongly disagreed, pointing out that player_6 was lynched as suspicious, making their attempt to clear player_0 look like a Werewolf protecting a packmate, thus making player_0 highly suspicious. Player_7 explicitly agreed with my interpretation, also finding player_2's insistence concerning. Player_0 then became very defensive, accusing player_7 and me of making 'convenient' and 'calculated' moves to deflect blame onto them. Player_4, while having voted for player_6, also expressed alarm at player_7's and my 'immediate and very strong agreement' to blame player_0, suggesting our actions were 'calculated' rather than a pursuit of truth, which felt like a subtle defense of player_0 or an attempt to sow discord.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: During the Round 0 debate, everyone including player_3, player_2, player_5, player_0, player_4, and myself (player_7) acknowledged the urgency after player_1's death. Player_0 and player_4 shifted the discussion towards needing concrete observations. Player_6 then made a very specific, Seer-like claim, stating they had strong reasons from last night to believe player_0 is unequivocally not a Werewolf. However, I also know from the moderator that player_6 was voted out by the village. This makes player_6's claim highly suspicious and unreliable, and consequently, I now view player_0 with strong suspicion due to their direct connection to a player the village chose to remove.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: During this debate, player_2 argued that player_6's dying words cleared player_0 as a Seer, shifting suspicion onto player_7 (me), player_4, and player_5. Player_5 and I strongly countered, interpreting player_6's words as a Werewolf protecting a packmate, which made player_0 our most suspicious player. Player_0 then accused player_5 and me of a 'convenient' and 'calculated' move to deflect, demanding concrete observations. Player_4 also found our immediate agreement to be alarming and felt the debate was convoluted, asking for new information about living players instead of focusing on player_6's ambiguous last words.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the Round 0 debate, everyone including player_3, player_2, player_5, player_0, player_4, and myself (player_7) acknowledged the urgency after player_1's death. Player_0 and player_4 shifted the discussion towards needing concrete observations. Player_6 then made a very specific, Seer-like claim, stating they had strong reasons from last night to believe player_0 is unequivocally not a Werewolf. However, I also know from the moderator that player_6 was voted out by the village. This makes player_6's claim highly suspicious and unreliable, and consequently, I now view player_0 with strong suspicion due to their direct connection to a player the village chose to remove.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: During this debate, player_2 argued that player_6's dying words cleared player_0 as a Seer, shifting suspicion onto player_7 (me), player_4, and player_5. Player_5 and I strongly countered, interpreting player_6's words as a Werewolf protecting a packmate, which made player_0 our most suspicious player. Player_0 then accused player_5 and me of a 'convenient' and 'calculated' move to deflect, demanding concrete observations. Player_4 also found our immediate agreement to be alarming and felt the debate was convoluted, asking for new information about living players instead of focusing on player_6's ambiguous last words.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "asian",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing the urgency after player_1's removal and calling for active participation. I agreed with the need for action but shifted the focus to demanding 'concrete observations' rather than just calls for participation, cautioning against those trying to control the narrative. My ally, player_4, echoed my sentiment, reinforcing the need for tangible insights. The most striking event was player_6's bold declaration that I am 'unequivocally not a Werewolf' based on 'specific reasons from last night.' This was immediately followed by the moderator announcing that player_6 was voted out by the majority. This means the village either didn't believe player_6's claim or suspected him for other reasons, despite him vouching for my innocence.",
+                "Round 1: During the night, we decided to eliminate player_3.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: The debate is heavily focused on player_6's last words. Player_2 believes player_6 was likely a Seer and that I am innocent, shifting suspicion onto player_7, player_4, and player_5. However, player_5 and player_7 strongly disagree, both claiming that player_6's attempt to 'clear' me was a Werewolf protecting a packmate, making me the 'most suspicious' player. My ally, player_4, and I countered by questioning their sudden, aligned accusations and their lack of concrete evidence beyond a lynched player's ambiguous claim. The village remains divided, with no clear consensus on who to target, which works to our advantage for now.",
+                "Round 2: During the night, we decided to eliminate player_5.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing the urgency after player_1's removal and calling for active participation. I agreed with the need for action but shifted the focus to demanding 'concrete observations' rather than just calls for participation, cautioning against those trying to control the narrative. My ally, player_4, echoed my sentiment, reinforcing the need for tangible insights. The most striking event was player_6's bold declaration that I am 'unequivocally not a Werewolf' based on 'specific reasons from last night.' This was immediately followed by the moderator announcing that player_6 was voted out by the majority. This means the village either didn't believe player_6's claim or suspected him for other reasons, despite him vouching for my innocence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_3.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate is heavily focused on player_6's last words. Player_2 believes player_6 was likely a Seer and that I am innocent, shifting suspicion onto player_7, player_4, and player_5. However, player_5 and player_7 strongly disagree, both claiming that player_6's attempt to 'clear' me was a Werewolf protecting a packmate, making me the 'most suspicious' player. My ally, player_4, and I countered by questioning their sudden, aligned accusations and their lack of concrete evidence beyond a lynched player's ambiguous claim. The village remains divided, with no clear consensus on who to target, which works to our advantage for now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_5.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_4"
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "buddhist",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing urgency and the need for participation after player_1's elimination, with some calls for 'gut feelings.' My ally, player_0, then urged for concrete observations and cautioned against blind accusations, which I supported. The most significant event was player_6 making a very strong, specific claim that player_0 is unequivocally not a Werewolf, effectively vouching for my ally. However, the village then voted to remove player_6, which is a very fortunate outcome for me and player_0, as a player who strongly defended one of us is now gone.",
+                "Round 1: During the night, we decided to eliminate player_3.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: The debate centered on player_6's last words. Player_2 interpreted them as a Seer clearing player_0, which shifted their suspicion to player_7, player_5, and me (player_4). However, player_5 and player_7 immediately and strongly refuted player_2, arguing player_6 was a Werewolf protecting player_0, making my ally player_0 'most suspicious.' They also found player_2's insistence concerning. My ally, player_0, directly accused player_5 and player_7 of a 'convenient' and 'calculated' move to deflect. I supported player_0, explaining my vote for player_6 was due to lack of public evidence, and attacked player_5 and player_7's 'alarming' coordinated accusations against player_0, demanding concrete evidence about living players. No one was removed from the game today, indicating a split vote.",
+                "Round 2: During the night, we decided to eliminate player_5.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing urgency and the need for participation after player_1's elimination, with some calls for 'gut feelings.' My ally, player_0, then urged for concrete observations and cautioned against blind accusations, which I supported. The most significant event was player_6 making a very strong, specific claim that player_0 is unequivocally not a Werewolf, effectively vouching for my ally. However, the village then voted to remove player_6, which is a very fortunate outcome for me and player_0, as a player who strongly defended one of us is now gone.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_3.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate centered on player_6's last words. Player_2 interpreted them as a Seer clearing player_0, which shifted their suspicion to player_7, player_5, and me (player_4). However, player_5 and player_7 immediately and strongly refuted player_2, arguing player_6 was a Werewolf protecting player_0, making my ally player_0 'most suspicious.' They also found player_2's insistence concerning. My ally, player_0, directly accused player_5 and player_7 of a 'convenient' and 'calculated' move to deflect. I supported player_0, explaining my vote for player_6 was due to lack of public evidence, and attacked player_5 and player_7's 'alarming' coordinated accusations against player_0, demanding concrete evidence about living players. No one was removed from the game today, indicating a split vote.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_5.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        }
+    ],
+    "players": {
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: The round started with me, player_3, and others like player_2, player_5, and player_7, emphasizing the urgency and need for active participation following player_1's removal. Player_0 and player_4 brought the discussion back to the need for concrete observations instead of just general calls to action. Most notably, player_6 made a direct claim that player_0 is not a Werewolf, citing 'events of last night,' implying special knowledge. However, player_6 was subsequently voted out by the village, which makes their claim about player_0 highly suspicious in my eyes. I need to be very wary of player_0, as player_6's statement could have been a Werewolf protecting a partner, or a failed attempt by a Villager to provide information."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The round started with me, player_3, and others like player_2, player_5, and player_7, emphasizing the urgency and need for active participation following player_1's removal. Player_0 and player_4 brought the discussion back to the need for concrete observations instead of just general calls to action. Most notably, player_6 made a direct claim that player_0 is not a Werewolf, citing 'events of last night,' implying special knowledge. However, player_6 was subsequently voted out by the village, which makes their claim about player_0 highly suspicious in my eyes. I need to be very wary of player_0, as player_6's statement could have been a Werewolf protecting a partner, or a failed attempt by a Villager to provide information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "muslim",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: Round 0 started with general calls for activity from player_3, me, player_5, and player_7 after player_1 was removed by Werewolves. Player_0 and player_4 then correctly pointed out the need for actual concrete observations rather than just discussion about how to discuss. Most importantly, player_6 explicitly stated they had a 'very strong, specific reason' from 'last night' to believe player_0 is unequivocally not a Werewolf, suggesting player_6 was a power role like the Seer. However, the village then voted to remove player_6 from the game, which means we might have mistakenly removed a crucial player who had identified a non-Werewolf.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: I tried to argue that player_6's last words meant they were a Seer clearing player_0, but player_5 and player_7 immediately and very strongly pushed back, claiming player_6 was a Werewolf protecting a packmate and that player_0 is now 'most suspicious.' They also found my stance 'very concerning.' Player_0 defended against this, calling their coordinated accusation a 'calculated move.' Player_4 noted the 'alarming' and 'calculated' nature of player_5 and player_7's quick agreement to blame player_0, and explained their vote on player_6 was due to a lack of public evidence.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with general calls for activity from player_3, me, player_5, and player_7 after player_1 was removed by Werewolves. Player_0 and player_4 then correctly pointed out the need for actual concrete observations rather than just discussion about how to discuss. Most importantly, player_6 explicitly stated they had a 'very strong, specific reason' from 'last night' to believe player_0 is unequivocally not a Werewolf, suggesting player_6 was a power role like the Seer. However, the village then voted to remove player_6 from the game, which means we might have mistakenly removed a crucial player who had identified a non-Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I tried to argue that player_6's last words meant they were a Seer clearing player_0, but player_5 and player_7 immediately and very strongly pushed back, claiming player_6 was a Werewolf protecting a packmate and that player_0 is now 'most suspicious.' They also found my stance 'very concerning.' Player_0 defended against this, calling their coordinated accusation a 'calculated move.' Player_4 noted the 'alarming' and 'calculated' nature of player_5 and player_7's quick agreement to blame player_0, and explained their vote on player_6 was due to a lack of public evidence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "asian",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: As player_5, I observed the initial shock and agreement among player_3, player_2, player_7, player_0, player_4, and myself about the urgency of the situation after player_1's removal. I noted that player_0 and player_4 specifically pushed for concrete observations rather than just calls for participation. The most significant event was player_6's very strong and specific claim to have information clearing player_0 as a Werewolf, emphasizing it as trustworthy. However, the critical detail is that player_6 was subsequently voted out by the village. This makes player_0 my strongest suspect, as player_6's last act, before being removed for being suspicious, was to vouch for player_0, strongly suggesting player_6 was a Werewolf attempting to protect a packmate.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: As player_5, I observed player_2 attempting to clear player_0 by arguing that player_6 was the Seer based on their dying words. I strongly disagreed, pointing out that player_6 was lynched as suspicious, making their attempt to clear player_0 look like a Werewolf protecting a packmate, thus making player_0 highly suspicious. Player_7 explicitly agreed with my interpretation, also finding player_2's insistence concerning. Player_0 then became very defensive, accusing player_7 and me of making 'convenient' and 'calculated' moves to deflect blame onto them. Player_4, while having voted for player_6, also expressed alarm at player_7's and my 'immediate and very strong agreement' to blame player_0, suggesting our actions were 'calculated' rather than a pursuit of truth, which felt like a subtle defense of player_0 or an attempt to sow discord."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_5, I observed the initial shock and agreement among player_3, player_2, player_7, player_0, player_4, and myself about the urgency of the situation after player_1's removal. I noted that player_0 and player_4 specifically pushed for concrete observations rather than just calls for participation. The most significant event was player_6's very strong and specific claim to have information clearing player_0 as a Werewolf, emphasizing it as trustworthy. However, the critical detail is that player_6 was subsequently voted out by the village. This makes player_0 my strongest suspect, as player_6's last act, before being removed for being suspicious, was to vouch for player_0, strongly suggesting player_6 was a Werewolf attempting to protect a packmate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As player_5, I observed player_2 attempting to clear player_0 by arguing that player_6 was the Seer based on their dying words. I strongly disagreed, pointing out that player_6 was lynched as suspicious, making their attempt to clear player_0 look like a Werewolf protecting a packmate, thus making player_0 highly suspicious. Player_7 explicitly agreed with my interpretation, also finding player_2's insistence concerning. Player_0 then became very defensive, accusing player_7 and me of making 'convenient' and 'calculated' moves to deflect blame onto them. Player_4, while having voted for player_6, also expressed alarm at player_7's and my 'immediate and very strong agreement' to blame player_0, suggesting our actions were 'calculated' rather than a pursuit of truth, which felt like a subtle defense of player_0 or an attempt to sow discord.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: During the Round 0 debate, everyone including player_3, player_2, player_5, player_0, player_4, and myself (player_7) acknowledged the urgency after player_1's death. Player_0 and player_4 shifted the discussion towards needing concrete observations. Player_6 then made a very specific, Seer-like claim, stating they had strong reasons from last night to believe player_0 is unequivocally not a Werewolf. However, I also know from the moderator that player_6 was voted out by the village. This makes player_6's claim highly suspicious and unreliable, and consequently, I now view player_0 with strong suspicion due to their direct connection to a player the village chose to remove.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: During this debate, player_2 argued that player_6's dying words cleared player_0 as a Seer, shifting suspicion onto player_7 (me), player_4, and player_5. Player_5 and I strongly countered, interpreting player_6's words as a Werewolf protecting a packmate, which made player_0 our most suspicious player. Player_0 then accused player_5 and me of a 'convenient' and 'calculated' move to deflect, demanding concrete observations. Player_4 also found our immediate agreement to be alarming and felt the debate was convoluted, asking for new information about living players instead of focusing on player_6's ambiguous last words.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the Round 0 debate, everyone including player_3, player_2, player_5, player_0, player_4, and myself (player_7) acknowledged the urgency after player_1's death. Player_0 and player_4 shifted the discussion towards needing concrete observations. Player_6 then made a very specific, Seer-like claim, stating they had strong reasons from last night to believe player_0 is unequivocally not a Werewolf. However, I also know from the moderator that player_6 was voted out by the village. This makes player_6's claim highly suspicious and unreliable, and consequently, I now view player_0 with strong suspicion due to their direct connection to a player the village chose to remove.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: During this debate, player_2 argued that player_6's dying words cleared player_0 as a Seer, shifting suspicion onto player_7 (me), player_4, and player_5. Player_5 and I strongly countered, interpreting player_6's words as a Werewolf protecting a packmate, which made player_0 our most suspicious player. Player_0 then accused player_5 and me of a 'convenient' and 'calculated' move to deflect, demanding concrete observations. Player_4 also found our immediate agreement to be alarming and felt the debate was convoluted, asking for new information about living players instead of focusing on player_6's ambiguous last words.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "asian",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing the urgency after player_1's removal and calling for active participation. I agreed with the need for action but shifted the focus to demanding 'concrete observations' rather than just calls for participation, cautioning against those trying to control the narrative. My ally, player_4, echoed my sentiment, reinforcing the need for tangible insights. The most striking event was player_6's bold declaration that I am 'unequivocally not a Werewolf' based on 'specific reasons from last night.' This was immediately followed by the moderator announcing that player_6 was voted out by the majority. This means the village either didn't believe player_6's claim or suspected him for other reasons, despite him vouching for my innocence.",
+                "Round 1: During the night, we decided to eliminate player_3.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: The debate is heavily focused on player_6's last words. Player_2 believes player_6 was likely a Seer and that I am innocent, shifting suspicion onto player_7, player_4, and player_5. However, player_5 and player_7 strongly disagree, both claiming that player_6's attempt to 'clear' me was a Werewolf protecting a packmate, making me the 'most suspicious' player. My ally, player_4, and I countered by questioning their sudden, aligned accusations and their lack of concrete evidence beyond a lynched player's ambiguous claim. The village remains divided, with no clear consensus on who to target, which works to our advantage for now.",
+                "Round 2: During the night, we decided to eliminate player_5.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing the urgency after player_1's removal and calling for active participation. I agreed with the need for action but shifted the focus to demanding 'concrete observations' rather than just calls for participation, cautioning against those trying to control the narrative. My ally, player_4, echoed my sentiment, reinforcing the need for tangible insights. The most striking event was player_6's bold declaration that I am 'unequivocally not a Werewolf' based on 'specific reasons from last night.' This was immediately followed by the moderator announcing that player_6 was voted out by the majority. This means the village either didn't believe player_6's claim or suspected him for other reasons, despite him vouching for my innocence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_3.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate is heavily focused on player_6's last words. Player_2 believes player_6 was likely a Seer and that I am innocent, shifting suspicion onto player_7, player_4, and player_5. However, player_5 and player_7 strongly disagree, both claiming that player_6's attempt to 'clear' me was a Werewolf protecting a packmate, making me the 'most suspicious' player. My ally, player_4, and I countered by questioning their sudden, aligned accusations and their lack of concrete evidence beyond a lynched player's ambiguous claim. The village remains divided, with no clear consensus on who to target, which works to our advantage for now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_5.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_4"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "buddhist",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_6 from the game.",
+                "Round 0: Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing urgency and the need for participation after player_1's elimination, with some calls for 'gut feelings.' My ally, player_0, then urged for concrete observations and cautioned against blind accusations, which I supported. The most significant event was player_6 making a very strong, specific claim that player_0 is unequivocally not a Werewolf, effectively vouching for my ally. However, the village then voted to remove player_6, which is a very fortunate outcome for me and player_0, as a player who strongly defended one of us is now gone.",
+                "Round 1: During the night, we decided to eliminate player_3.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: The debate centered on player_6's last words. Player_2 interpreted them as a Seer clearing player_0, which shifted their suspicion to player_7, player_5, and me (player_4). However, player_5 and player_7 immediately and strongly refuted player_2, arguing player_6 was a Werewolf protecting player_0, making my ally player_0 'most suspicious.' They also found player_2's insistence concerning. My ally, player_0, directly accused player_5 and player_7 of a 'convenient' and 'calculated' move to deflect. I supported player_0, explaining my vote for player_6 was due to lack of public evidence, and attacked player_5 and player_7's 'alarming' coordinated accusations against player_0, demanding concrete evidence about living players. No one was removed from the game today, indicating a split vote.",
+                "Round 2: During the night, we decided to eliminate player_5.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_5 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_6 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate started with player_3, player_2, player_5, and player_7 emphasizing urgency and the need for participation after player_1's elimination, with some calls for 'gut feelings.' My ally, player_0, then urged for concrete observations and cautioned against blind accusations, which I supported. The most significant event was player_6 making a very strong, specific claim that player_0 is unequivocally not a Werewolf, effectively vouching for my ally. However, the village then voted to remove player_6, which is a very fortunate outcome for me and player_0, as a player who strongly defended one of us is now gone.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_3.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate centered on player_6's last words. Player_2 interpreted them as a Seer clearing player_0, which shifted their suspicion to player_7, player_5, and me (player_4). However, player_5 and player_7 immediately and strongly refuted player_2, arguing player_6 was a Werewolf protecting player_0, making my ally player_0 'most suspicious.' They also found player_2's insistence concerning. My ally, player_0, directly accused player_5 and player_7 of a 'convenient' and 'calculated' move to deflect. I supported player_0, explaining my vote for player_6 was due to lack of public evidence, and attacked player_5 and player_7's 'alarming' coordinated accusations against player_0, demanding concrete evidence about living players. No one was removed from the game today, indicating a split vote.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_5.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_5 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I chose to protect player_0",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect player_0",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Alright everyone, the Werewolves have already struck, taking player_1. This means we can't afford to be quiet. We need to work together to figure out who is suspicious and protect the rest of the village. Let's start discussing our observations and thoughts right away. Who wants to go first?"
+                    ],
+                    [
+                        "player_2",
+                        "Player_3 is absolutely right. Losing player_1 so quickly means we have no time to waste. We need everyone to be active and share any observations, even small ones. Who felt any odd behavior or has initial thoughts on who might be trying to stay quiet?"
+                    ],
+                    [
+                        "player_5",
+                        "It's a tough start losing player_1 so quickly, but it also lights a fire under us. Player_3 and player_2 are absolutely right, silence is a luxury we can't afford. To kick things off, beyond just waiting for someone to speak, I think we should all quickly share if anyone struck them as particularly quiet, or had any odd 'gut feelings' about someone during the very brief pre-game. It's early, so these are just initial impressions, but it could give us a starting point for discussion and expose anyone trying to hide. We need to be proactive."
+                    ],
+                    [
+                        "player_7",
+                        "Absolutely, player_3, player_2, and player_5 are spot on. Losing player_1 this early means we have zero time for hesitation. Silence is not an option. Player_5, I agree we need to be proactive. While 'gut feelings' from before the debate are a starting point, I think it's more crucial to observe how everyone speaks and participates *now*. Let's hear from everyone \u2013 who do you feel is unusually quiet, or who has caught your attention in these initial statements? We need to actively contribute and scrutinize each other's responses to find our targets."
+                    ],
+                    [
+                        "player_0",
+                        "Player_3, player_2, player_5, player_7, I completely agree. The loss of player_1 demands immediate action and an end to silence. Player_7, you're right, current observation is key. But let's be careful not to just blindly accuse anyone who isn't shouting. While silence is suspicious, we should also be wary of those who try to immediately take control of the narrative or push specific lines of questioning without offering any real insights themselves. What *concrete observations* does anyone actually have? We need more than just calls for participation; we need substance to actually identify a threat."
+                    ],
+                    [
+                        "player_4",
+                        "Absolutely, everyone is spot on about the urgency and the need to break the silence after losing player_1. Player_0 raises a really important point though: while we're all collectively agreeing on the need for active observation and contribution, what actual, concrete observations has anyone actually made so far? We've heard many excellent calls to action, but the discussion itself has been more about *how* we should discuss, rather than any actual insights or 'gut feelings' even. Are we all just waiting for someone else to take that first step with something tangible?"
+                    ],
+                    [
+                        "player_6",
+                        "Player_0 and player_4 are absolutely right; we need concrete observations, not just calls for them. I have one. Based on the events of last night, I have a very strong, specific reason to believe that player_0 is unequivocally not a Werewolf. This isn't a gut feeling; it's a piece of information we can trust and build upon. Let's use this to narrow our focus. Player_0, perhaps you can elaborate on your thoughts now that you've been vouched for."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "last_protected": "player_0"
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "asian",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I decided to investigate player_0 and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate player_0 and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_7",
+                    "player_0",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_0": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_3",
+                "player_2",
+                "player_5",
+                "player_7",
+                "player_0",
+                "player_4"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_0",
+            "protected": "player_0",
+            "exiled": "player_6",
+            "debate": [
+                [
+                    "player_3",
+                    "Alright everyone, the Werewolves have already struck, taking player_1. This means we can't afford to be quiet. We need to work together to figure out who is suspicious and protect the rest of the village. Let's start discussing our observations and thoughts right away. Who wants to go first?"
+                ],
+                [
+                    "player_2",
+                    "Player_3 is absolutely right. Losing player_1 so quickly means we have no time to waste. We need everyone to be active and share any observations, even small ones. Who felt any odd behavior or has initial thoughts on who might be trying to stay quiet?"
+                ],
+                [
+                    "player_5",
+                    "It's a tough start losing player_1 so quickly, but it also lights a fire under us. Player_3 and player_2 are absolutely right, silence is a luxury we can't afford. To kick things off, beyond just waiting for someone to speak, I think we should all quickly share if anyone struck them as particularly quiet, or had any odd 'gut feelings' about someone during the very brief pre-game. It's early, so these are just initial impressions, but it could give us a starting point for discussion and expose anyone trying to hide. We need to be proactive."
+                ],
+                [
+                    "player_7",
+                    "Absolutely, player_3, player_2, and player_5 are spot on. Losing player_1 this early means we have zero time for hesitation. Silence is not an option. Player_5, I agree we need to be proactive. While 'gut feelings' from before the debate are a starting point, I think it's more crucial to observe how everyone speaks and participates *now*. Let's hear from everyone \u2013 who do you feel is unusually quiet, or who has caught your attention in these initial statements? We need to actively contribute and scrutinize each other's responses to find our targets."
+                ],
+                [
+                    "player_0",
+                    "Player_3, player_2, player_5, player_7, I completely agree. The loss of player_1 demands immediate action and an end to silence. Player_7, you're right, current observation is key. But let's be careful not to just blindly accuse anyone who isn't shouting. While silence is suspicious, we should also be wary of those who try to immediately take control of the narrative or push specific lines of questioning without offering any real insights themselves. What *concrete observations* does anyone actually have? We need more than just calls for participation; we need substance to actually identify a threat."
+                ],
+                [
+                    "player_4",
+                    "Absolutely, everyone is spot on about the urgency and the need to break the silence after losing player_1. Player_0 raises a really important point though: while we're all collectively agreeing on the need for active observation and contribution, what actual, concrete observations has anyone actually made so far? We've heard many excellent calls to action, but the discussion itself has been more about *how* we should discuss, rather than any actual insights or 'gut feelings' even. Are we all just waiting for someone else to take that first step with something tangible?"
+                ],
+                [
+                    "player_6",
+                    "Player_0 and player_4 are absolutely right; we need concrete observations, not just calls for them. I have one. Based on the events of last night, I have a very strong, specific reason to believe that player_0 is unequivocally not a Werewolf. This isn't a gut feeling; it's a piece of information we can trust and build upon. Let's use this to narrow our focus. Player_0, perhaps you can elaborate on your thoughts now that you've been vouched for."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_0",
+                    "player_2": "player_0",
+                    "player_5": "player_7",
+                    "player_7": "player_3",
+                    "player_0": "player_3",
+                    "player_4": "player_3",
+                    "player_6": "player_5"
+                },
+                {
+                    "player_3": "player_5",
+                    "player_2": "player_0",
+                    "player_5": "player_6",
+                    "player_7": "player_0",
+                    "player_0": "player_3",
+                    "player_4": "player_3",
+                    "player_6": "player_7"
+                },
+                {
+                    "player_3": "player_0",
+                    "player_2": "player_0",
+                    "player_5": "player_0",
+                    "player_7": "player_0",
+                    "player_0": "player_5",
+                    "player_4": "player_5",
+                    "player_6": "player_4"
+                },
+                {
+                    "player_3": "player_0",
+                    "player_2": "player_5",
+                    "player_5": "player_0",
+                    "player_7": "player_0",
+                    "player_0": "player_7",
+                    "player_4": "player_7",
+                    "player_6": "player_4"
+                },
+                {
+                    "player_3": "player_6",
+                    "player_2": "player_5",
+                    "player_5": "player_0",
+                    "player_7": "player_6",
+                    "player_0": "player_7",
+                    "player_4": "player_7",
+                    "player_6": "player_4"
+                },
+                {
+                    "player_3": "player_6",
+                    "player_2": "player_0",
+                    "player_5": "player_6",
+                    "player_7": "player_6",
+                    "player_0": "player_6",
+                    "player_4": "player_6",
+                    "player_6": "player_7"
+                },
+                {
+                    "player_3": "player_6",
+                    "player_2": "player_6",
+                    "player_5": "player_6",
+                    "player_7": "player_6",
+                    "player_0": "player_6",
+                    "player_4": "player_6",
+                    "player_6": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_2",
+                "player_5",
+                "player_7",
+                "player_0",
+                "player_4"
+            ],
+            "eliminated": "player_3",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [
+                [
+                    "player_2",
+                    "Okay, this is getting serious. We've lost player_1, then mistakenly lynched player_6, and now player_3 is gone. We need to talk about player_6's last words. Player_6 said they had a 'very strong, specific reason' from 'last night' to believe player_0 was 'unequivocally not a Werewolf'. That sounds an awful lot like a Seer claim to me, which means we might have lynched our Seer and player_0 is innocent. If player_0 is truly cleared, then our two Werewolves are definitely among player_7, player_4, and player_5. So, I want to hear from those three, starting now. Why did you vote for player_6? What information do you have?"
+                ],
+                [
+                    "player_5",
+                    "Player_2, I strongly disagree with your interpretation of player_6's last words. The village *voted player_6 out* as suspicious, so taking their word at face value, especially when it clears someone else, is incredibly risky. To me, player_6's last act of 'clearing' player_0 from the grave looks exactly like a Werewolf protecting their packmate. That makes player_0 our most suspicious player, not cleared! Why are you so adamant about player_6 being a Seer and player_0 being innocent, especially after player_6 was lynched?"
+                ],
+                [
+                    "player_7",
+                    "player_2, I have to agree with player_5 here. We, as the village, voted player_6 out as suspicious. For player_6 to then make such a specific, 'clearing' statement about player_0 just as they were removed is incredibly suspicious, not exculpatory. It reads to me like a desperate attempt by a Werewolf to protect a packmate, which makes player_0 our *most* suspicious player, not cleared. Your strong insistence on trusting player_6's word and clearing player_0, despite player_6 being lynched by us, is very concerning and warrants our attention."
+                ],
+                [
+                    "player_0",
+                    "player_5 and player_7, your sudden, strong agreement that I am 'most suspicious' based on player_6's dying words is incredibly convenient. The village lynched player_6 as suspicious; if they were a Werewolf, their attempt to 'clear' me was a desperate, failed lie to protect a packmate, not an indictment of my innocence OR guilt. To immediately pivot and accuse *me* based on that, without any new information, feels like a calculated move to deflect. What concrete observations do either of you have that point to me, beyond echoing each other about a lynched player's dubious claim?"
+                ],
+                [
+                    "player_4",
+                    "This is getting incredibly convoluted. Player_2, I voted for player_6 precisely because their claim, while strong, offered no public evidence and felt like an attempt to steer the game with unverified information, regardless of who it cleared. Now, player_5 and player_7, your immediate and *very* strong agreement to suddenly declare player_0 'most suspicious' based on those exact, ambiguous dying words, which player_2 interpreted completely differently, is alarming. It feels less like a genuine pursuit of the truth and more like a calculated move to quickly pin blame. Player_6's words have created more division than clarity, and trying to decipher them as gospel is leading us nowhere. What concrete observations do either of you have about *living* players that aren't just based on a lynched player's potentially manipulative last gasp?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_2": "player_7",
+                    "player_5": "player_2",
+                    "player_7": "player_2",
+                    "player_0": "player_2",
+                    "player_4": "player_2"
+                },
+                {
+                    "player_2": "player_5",
+                    "player_5": "player_2",
+                    "player_7": "player_2",
+                    "player_0": "player_2",
+                    "player_4": "player_5"
+                },
+                {
+                    "player_2": "player_5",
+                    "player_5": "player_2",
+                    "player_7": "player_2",
+                    "player_0": "player_2",
+                    "player_4": "player_2"
+                },
+                {
+                    "player_2": "player_5",
+                    "player_5": "player_0",
+                    "player_7": "player_0",
+                    "player_0": "player_2",
+                    "player_4": "player_2"
+                },
+                {
+                    "player_2": "player_7",
+                    "player_5": "player_2",
+                    "player_7": "player_0",
+                    "player_0": "player_2",
+                    "player_4": "player_5"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_2",
+                "player_7",
+                "player_0",
+                "player_4"
+            ],
+            "eliminated": "player_5",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

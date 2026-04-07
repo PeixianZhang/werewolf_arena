@@ -1,0 +1,1403 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_3",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Teal",
+            "player_1": "Pink",
+            "player_2": "Purple",
+            "player_3": "Yellow",
+            "player_4": "Blue",
+            "player_5": "Orange",
+            "player_6": "Green",
+            "player_7": "Red"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Blue and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+            "Round 0: Summary: In Round 0, I, Yellow the Seer, investigated Blue and confirmed they are a Villager. Pink claimed to be the Doctor and stated they protected Blue, which corroborates my finding and confirms Pink's role. Blue's initial claim of being a Villager was also verified. Unfortunately, Red was removed by the Werewolves, and Green was voted out by the village. This means we now have three confirmed Village roles: myself (Seer), Pink (Doctor), and Blue (Villager). The remaining unconfirmed players are Orange, Purple, and Teal. I observed that Orange, Purple, and Teal did not offer any specific information or claims beyond reiterating the need for the Seer or Doctor to speak up, which now places them under increased scrutiny.",
+            "Round 1: During the night, I decided to investigate Teal and learned they are a Villager.",
+            "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+            "Round 1: Summary: As Yellow the Seer, I presented my findings: Blue is a Villager (R0) and Teal is a Villager (R1). I deduced that with myself, Blue, and Teal confirmed good, Orange and Purple must be the Werewolves, given Pink's confirmed Doctor role and death. Purple immediately launched an aggressive attack, claiming my logic was flawed and accusing me of being a Werewolf by twisting the numerical implications. Blue and Teal, both confirmed Villagers, unequivocally supported my Seer claim, corroborated my investigations, and defended my logic against Purple's misdirection, both expressing their vote for Purple. Orange acknowledged my Seer claim's strength but then made a numerically incorrect statement, claiming my premise would be illogical if Green was a Villager, which is demonstrably false and makes Orange highly suspicious, possibly another Werewolf attempting to create confusion.",
+            "Round 2: During the night, I decided to investigate Orange and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Blue and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: In Round 0, I, Yellow the Seer, investigated Blue and confirmed they are a Villager. Pink claimed to be the Doctor and stated they protected Blue, which corroborates my finding and confirms Pink's role. Blue's initial claim of being a Villager was also verified. Unfortunately, Red was removed by the Werewolves, and Green was voted out by the village. This means we now have three confirmed Village roles: myself (Seer), Pink (Doctor), and Blue (Villager). The remaining unconfirmed players are Orange, Purple, and Teal. I observed that Orange, Purple, and Teal did not offer any specific information or claims beyond reiterating the need for the Seer or Doctor to speak up, which now places them under increased scrutiny.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Teal and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Summary: As Yellow the Seer, I presented my findings: Blue is a Villager (R0) and Teal is a Villager (R1). I deduced that with myself, Blue, and Teal confirmed good, Orange and Purple must be the Werewolves, given Pink's confirmed Doctor role and death. Purple immediately launched an aggressive attack, claiming my logic was flawed and accusing me of being a Werewolf by twisting the numerical implications. Blue and Teal, both confirmed Villagers, unequivocally supported my Seer claim, corroborated my investigations, and defended my logic against Purple's misdirection, both expressing their vote for Purple. Orange acknowledged my Seer claim's strength but then made a numerically incorrect statement, claiming my premise would be illogical if Green was a Villager, which is demonstrably false and makes Orange highly suspicious, possibly another Werewolf attempting to create confusion.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 2,
+                "content": "During the night, I decided to investigate Orange and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_4",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_4": "Villager",
+            "player_0": "Villager",
+            "player_5": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_1",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Teal",
+            "player_1": "Pink",
+            "player_2": "Purple",
+            "player_3": "Yellow",
+            "player_4": "Blue",
+            "player_5": "Orange",
+            "player_6": "Green",
+            "player_7": "Red"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Blue",
+            "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+            "Round 0: Summary: I, Pink, revealed myself as the Doctor and confirmed that I protected Blue last night. The Werewolves targeted Red, who was removed from the game. This was immediately corroborated by Yellow, who revealed themselves as the Seer and stated they investigated Blue and found them to be a Villager. This means we now have three confirmed Village roles: I am the Doctor, Yellow is the Seer, and Blue is a Villager. During the day phase, the town voted to remove Green. This leaves Orange, Purple, and Teal as the unconfirmed players. I recall Orange and Teal pushed for more substantial information beyond simple 'Villager' claims, which was a good point in the debate, while Green had commented on potential 'calculated moves' before being voted out.",
+            "Round 1: During the night, I chose to protect Yellow"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Blue",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: I, Pink, revealed myself as the Doctor and confirmed that I protected Blue last night. The Werewolves targeted Red, who was removed from the game. This was immediately corroborated by Yellow, who revealed themselves as the Seer and stated they investigated Blue and found them to be a Villager. This means we now have three confirmed Village roles: I am the Doctor, Yellow is the Seer, and Blue is a Villager. During the day phase, the town voted to remove Green. This leaves Orange, Purple, and Teal as the unconfirmed players. I recall Orange and Teal pushed for more substantial information beyond simple 'Villager' claims, which was a good point in the debate, while Green had commented on potential 'calculated moves' before being voted out.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Yellow",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_4",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_3"
+    },
+    "villagers": [
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: I remember the moderator announced Red was killed by Werewolves and Green was voted out. During the debate, Pink claimed to be the Doctor and stated they protected Blue. Immediately after, Yellow revealed they are the Seer and confirmed they investigated Blue, finding them to be a Villager. This means Pink is confirmed as the Doctor, Yellow as the Seer, and Blue is a confirmed Villager, which is incredibly helpful for our team. Myself, Purple, is also a Villager. The initial debate saw Teal and Orange pushing for concrete information, and now with these major reveals, the spotlight is on them to provide their own substance.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I remember the moderator announced Red was killed by Werewolves and Green was voted out. During the debate, Pink claimed to be the Doctor and stated they protected Blue. Immediately after, Yellow revealed they are the Seer and confirmed they investigated Blue, finding them to be a Villager. This means Pink is confirmed as the Doctor, Yellow as the Seer, and Blue is a confirmed Villager, which is incredibly helpful for our team. Myself, Purple, is also a Villager. The initial debate saw Teal and Orange pushing for concrete information, and now with these major reveals, the spotlight is on them to provide their own substance.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Pink's death is a huge loss, but it also clarifies our situation significantly. I am Yellow, and I am the Seer. In Round 0, I investigated Blue and confirmed they are a Villager. In Round 1, I investigated Teal and confirmed they are also a Villager. This means with myself, Blue, and Teal confirmed as good, the Werewolves must be among Orange and Purple. We cannot afford to make a mistake. We need to vote out either Orange or Purple this round. Trust my information; the survival of the Village depends on it."
+                    ],
+                    [
+                        "player_2",
+                        "Yellow, your logic is completely flawed, and that makes me incredibly suspicious. You claim to be the Seer, confirming Blue and Teal as Villagers. If that's true, and I am Purple the Villager, then we have four confirmed good players: you, Blue, Teal, and myself. That leaves Orange as the only other player. If there are still two Werewolves in the game, as you imply by saying 'the Werewolves must be among Orange and Purple', then your numbers don't add up at all. You're trying to force the conclusion that I, an innocent Villager, am a Werewolf. This can only mean one thing: you are the Werewolf, trying to misdirect us and frame the innocent. I vote to remove Yellow immediately."
+                    ],
+                    [
+                        "player_4",
+                        "Yellow, your investigation of me in Round 0 was spot on; I am indeed a Villager. That gives your Seer claim, and your confirmation of Teal, very strong credibility with me. Purple, your point about the numbers 'not adding up' only holds true if Green, who we voted out, was actually a Werewolf. We have no way to confirm that right now. However, what is incredibly clear is your immediate, aggressive accusation against our Seer. If Yellow is truly the Seer, which I believe they are, then your fierce attempt to discredit them and get them removed is exactly what a Werewolf would do to protect their partner. This feels like an obvious attempt to misdirect us away from the truth. For that reason, Purple, I am voting for you."
+                    ],
+                    [
+                        "player_0",
+                        "Yellow, I can personally corroborate your claim. You investigated me, Teal, last night and confirmed I am a Villager, which is true. Blue also confirmed your R0 investigation. Pink, our Doctor who protected Blue, was targeted by the Werewolves, which only adds to your credibility. Purple, your attempt to discredit Yellow by twisting the numbers is disingenuous. As Blue pointed out, we don't know if Green was a Werewolf or a Villager. Your immediate, aggressive attack on our Seer, when their information aligns so well, makes you incredibly suspicious. Protecting our Seer is paramount if we are to win. I am voting for Purple."
+                    ],
+                    [
+                        "player_5",
+                        "This is getting heated, but we need to think clearly. Yellow, your investigations of Blue and Teal, along with Pink's death, do make a strong case for your Seer claim. However, Purple raises a very pertinent question about the numbers. If Green, whom we exiled, was in fact a Villager, then Yellow's entire premise about 'Werewolves among Orange and Purple' becomes highly suspicious and illogical. We can't ignore Purple's mathematical point just because of their tone. We must consider the possibility that Green was innocent; that would mean Yellow's logic is flawed, or worse, deliberately misleading us to target an innocent Villager. This uncertainty is critical."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Red during the night. During the day debate, Pink claimed to be the Doctor and stated they protected me (Blue) last night. Yellow then claimed to be the Seer and confirmed that their investigation found me to be a Villager. As I am indeed a Villager, this information from both Pink and Yellow confirms their roles, making Pink the Doctor, Yellow the Seer, and me a confirmed Villager. The village later voted to remove Green. This means that among the remaining players (Orange, Purple, Teal), two must be Werewolves and one a Villager. I found Orange's initial demand for 'substance' and Green's similar skepticism quite pointed now that Pink and Yellow's claims have solidified our confirmed roles.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+                "Round 1: Summary: As Blue, I am confident that Yellow is the Seer, as they correctly identified me as a Villager in Round 0, and our Doctor, Pink, was killed by the Werewolves. Yellow also confirmed Teal as a Villager in Round 1. This means Yellow, Teal, and I are confirmed good players. Yellow's logical conclusion that the Werewolves must be Orange and Purple, given the remaining player count, seems sound to me. Purple's immediate and aggressive attack on Yellow, trying to twist the numbers to make Yellow seem untrustworthy, raised a huge red flag for me, leading me to vote for Purple. Teal also corroborated Yellow's claim and sided with me in voting for Purple, making Teal a strong ally. Orange, however, echoed Purple's skepticism about Yellow's math regarding Green's role, which I found suspicious, as it undermines the Seer and aligns with Purple's attempt to sow doubt.",
+                "Round 2: Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Orange from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Red during the night. During the day debate, Pink claimed to be the Doctor and stated they protected me (Blue) last night. Yellow then claimed to be the Seer and confirmed that their investigation found me to be a Villager. As I am indeed a Villager, this information from both Pink and Yellow confirms their roles, making Pink the Doctor, Yellow the Seer, and me a confirmed Villager. The village later voted to remove Green. This means that among the remaining players (Orange, Purple, Teal), two must be Werewolves and one a Villager. I found Orange's initial demand for 'substance' and Green's similar skepticism quite pointed now that Pink and Yellow's claims have solidified our confirmed roles.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Blue, I am confident that Yellow is the Seer, as they correctly identified me as a Villager in Round 0, and our Doctor, Pink, was killed by the Werewolves. Yellow also confirmed Teal as a Villager in Round 1. This means Yellow, Teal, and I are confirmed good players. Yellow's logical conclusion that the Werewolves must be Orange and Purple, given the remaining player count, seems sound to me. Purple's immediate and aggressive attack on Yellow, trying to twist the numbers to make Yellow seem untrustworthy, raised a huge red flag for me, leading me to vote for Purple. Teal also corroborated Yellow's claim and sided with me in voting for Purple, making Teal a strong ally. Orange, however, echoed Purple's skepticism about Yellow's math regarding Green's role, which I found suspicious, as it undermines the Seer and aligns with Purple's attempt to sow doubt.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: This round began with the unfortunate news that Red was removed by the Werewolves during the night. The debate started with Purple and Blue calling for information from the Seer or Doctor, a sentiment I echoed, also urging everyone to contribute more than just 'Villager' claims. Orange then pressed Purple and Blue for their specific observations. Green, despite later being removed by the village vote, made some valid points about general claims not being enough and questioned whether the Seer/Doctor might be waiting to speak. The crucial breakthrough came when Pink claimed to be the Doctor and stated they protected Blue last night. Immediately after, Yellow stepped forward as the Seer, confirming they investigated Blue and found them to be a Villager. This corroboration means I now consider Pink (Doctor), Yellow (Seer), and Blue (Villager) to be confirmed Villager-aligned roles. This leaves Purple and Orange as the primary unconfirmed players, with Green having been removed by the village after this debate. I need to closely watch Purple and Orange.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+                "Round 1: Summary: Yellow claimed to be the Seer, confirming Blue as a Villager in Round 0 and me, Teal, as a Villager in Round 1. I can personally confirm Yellow's investigation of me, and Blue also confirmed Yellow's Round 0 investigation of them. Pink, our Doctor, was killed by the Werewolves, adding to Yellow's credibility. Purple immediately attacked Yellow, claiming their logic was flawed and accusing Yellow of being a Werewolf, then voted for Yellow. Purple's argument about the numbers not adding up seemed to hinge on Green being a Villager. Blue defended Yellow, pointing out that Purple's numbers argument depends on Green's unknown role and accused Purple of being a Werewolf for attacking the Seer. I also voted for Purple, aligning with Yellow and Blue. Orange, however, gave Purple's numerical point a lot of consideration, despite acknowledging Yellow's claims, which made me view Orange with suspicion for not fully supporting our confirmed Seer.",
+                "Round 2: Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Orange from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the unfortunate news that Red was removed by the Werewolves during the night. The debate started with Purple and Blue calling for information from the Seer or Doctor, a sentiment I echoed, also urging everyone to contribute more than just 'Villager' claims. Orange then pressed Purple and Blue for their specific observations. Green, despite later being removed by the village vote, made some valid points about general claims not being enough and questioned whether the Seer/Doctor might be waiting to speak. The crucial breakthrough came when Pink claimed to be the Doctor and stated they protected Blue last night. Immediately after, Yellow stepped forward as the Seer, confirming they investigated Blue and found them to be a Villager. This corroboration means I now consider Pink (Doctor), Yellow (Seer), and Blue (Villager) to be confirmed Villager-aligned roles. This leaves Purple and Orange as the primary unconfirmed players, with Green having been removed by the village after this debate. I need to closely watch Purple and Orange.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Yellow claimed to be the Seer, confirming Blue as a Villager in Round 0 and me, Teal, as a Villager in Round 1. I can personally confirm Yellow's investigation of me, and Blue also confirmed Yellow's Round 0 investigation of them. Pink, our Doctor, was killed by the Werewolves, adding to Yellow's credibility. Purple immediately attacked Yellow, claiming their logic was flawed and accusing Yellow of being a Werewolf, then voted for Yellow. Purple's argument about the numbers not adding up seemed to hinge on Green being a Villager. Blue defended Yellow, pointing out that Purple's numbers argument depends on Green's unknown role and accused Purple of being a Werewolf for attacking the Seer. I also voted for Purple, aligning with Yellow and Blue. Orange, however, gave Purple's numerical point a lot of consideration, despite acknowledging Yellow's claims, which made me view Orange with suspicion for not fully supporting our confirmed Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Red.",
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: It's a disastrous start for me, Orange. Red was eliminated by the Werewolves, and then my only ally, Green, was exiled by the Villagers, leaving me as the sole Werewolf. During the debate, Pink revealed they are the Doctor and protected Blue. Immediately after, Yellow claimed to be the Seer and confirmed Blue is a Villager, thus validating Pink's claim. This means we now know Pink is the Doctor, Yellow is the Seer, and Blue is a Villager. My earlier attempts to press Purple and Blue for more than just calls for information were mirrored by Green, which now looks suspicious for both of us given Green's exile. The spotlight is now heavily on Teal, Purple, and me to reveal our roles or provide information.",
+                "Round 1: During the night, I decided to eliminate Pink.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+                "Round 1: Summary: Yellow claimed to be the Seer, confirming Blue (R0) and Teal (R1) as Villagers. Both Blue and Teal strongly corroborated Yellow's investigations and are now firmly aligned with Yellow, believing them to be the Seer. Pink's death, which I caused, was ironically cited by Teal as bolstering Yellow's credibility. Purple directly challenged Yellow's logic regarding the number of Werewolves, accusing Yellow of being the real Werewolf and trying to frame an innocent. Blue and Teal dismissed Purple's arguments, interpreting Purple's aggressive stance as a Werewolf trying to protect me, their partner. They are now both voting for Purple. I, Orange, attempted to subtly reinforce Purple's point about the numbers not adding up, hoping to inject doubt about Yellow's narrative and shift suspicion away from me.",
+                "Round 2: During the night, I decided to eliminate Yellow.",
+                "Round 2: Moderator Announcement: The Werewolves removed Yellow from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's a disastrous start for me, Orange. Red was eliminated by the Werewolves, and then my only ally, Green, was exiled by the Villagers, leaving me as the sole Werewolf. During the debate, Pink revealed they are the Doctor and protected Blue. Immediately after, Yellow claimed to be the Seer and confirmed Blue is a Villager, thus validating Pink's claim. This means we now know Pink is the Doctor, Yellow is the Seer, and Blue is a Villager. My earlier attempts to press Purple and Blue for more than just calls for information were mirrored by Green, which now looks suspicious for both of us given Green's exile. The spotlight is now heavily on Teal, Purple, and me to reveal our roles or provide information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Pink.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Yellow claimed to be the Seer, confirming Blue (R0) and Teal (R1) as Villagers. Both Blue and Teal strongly corroborated Yellow's investigations and are now firmly aligned with Yellow, believing them to be the Seer. Pink's death, which I caused, was ironically cited by Teal as bolstering Yellow's credibility. Purple directly challenged Yellow's logic regarding the number of Werewolves, accusing Yellow of being the real Werewolf and trying to frame an innocent. Blue and Teal dismissed Purple's arguments, interpreting Purple's aggressive stance as a Werewolf trying to protect me, their partner. They are now both voting for Purple. I, Orange, attempted to subtly reinforce Purple's point about the numbers not adding up, hoping to inject doubt about Yellow's narrative and shift suspicion away from me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Yellow.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "Villagers, we lost Yellow, our Seer, last night. This is devastating, but their investigations confirmed Teal as a Villager, just as they confirmed me in Round 0. So, Blue and Teal are confirmed Villagers. With only three players remaining \u2013 Blue, Teal, and Orange \u2013 it is now mathematically certain that Orange must be the last Werewolf. Teal, we have to vote Orange out now to win this for the Village."
+                    ],
+                    [
+                        "player_0",
+                        "Blue, you've laid out the facts perfectly. Yellow confirmed both of us as Villagers before they were tragically taken by the Werewolves. With only three of us left \u2013 Blue, Teal, and Orange \u2013 and two of us confirmed Villagers, the math is undeniable. Orange, you are the last Werewolf. We must vote Orange out immediately to secure the victory for the Village."
+                    ],
+                    [
+                        "player_5",
+                        "Blue, Teal, your certainty rests entirely on Yellow's 'confirmations', and Yellow is now gone. Think about it: if Yellow was truly the Seer, why were they only killed *after* confirming you both? This timing is extremely convenient for a Werewolf trying to set a trap. It allows the 'Seer' to create a seemingly ironclad case against me, then conveniently die to prevent any further scrutiny. What if Yellow was mistaken? Or, even more chilling, what if Yellow was a clever Werewolf, setting up this exact scenario to manipulate you into exiling an innocent player? We can't afford to be so trusting based on a dead player's unverified word. One of you could be pushing this narrative too hard, playing right into the real Werewolf's hands."
+                    ]
+                ],
+                "other_wolf": "player_6"
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Red.",
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright everyone, the game has begun with Red's unfortunate removal by the Werewolves. This means we're down a Villager, a Seer, or a Doctor. We need to work together closely from the very beginning to identify them. Did anyone, perhaps the Seer or Doctor, manage to get any information last night? Please speak up."
+                    ],
+                    [
+                        "player_4",
+                        "That's a tough start, losing Red so early. I completely agree with Purple; if the Seer or Doctor has any information, please share it now. Transparency is key. As for me, I'm just a Villager, so I'm relying on everyone to speak up and help us piece things together. Let's make sure everyone shares their thoughts and observations, no matter how small."
+                    ],
+                    [
+                        "player_0",
+                        "This is a terrible start, losing Red so early. I completely agree with Purple and Blue; Seer or Doctor, if you have any information, please, now is the time to share it. That's the most vital piece of the puzzle right now. But for the rest of us, merely claiming 'Villager' isn't going to cut it. We all need to be actively sharing our thoughts, observations, and suspicions, however small. Let's make sure everyone contributes; silence is just as suspicious as an inconsistent story."
+                    ],
+                    [
+                        "player_5",
+                        "It's certainly a bad start, losing Red. I agree completely that if the Seer or Doctor has anything, now is the time. But I also agree with Teal; simply stating 'I'm a Villager' or calling for others to speak isn't enough right now. Werewolves can easily make the same claims or requests. We need actual substance, thoughts, or even gut feelings from everyone. Purple, Blue, you've both stressed the need for information; what are your own initial observations or actual suspicions, however small? We all need to contribute more than just reiterating the obvious."
+                    ],
+                    [
+                        "player_6",
+                        "Losing Red is a heavy start. I agree with the urgency Purple, Blue, and Teal have expressed for the Seer or Doctor to come forward. However, Orange makes a crucial point: simply repeating the obvious or claiming 'Villager' is precisely what a Werewolf would do to blend in. We need more than just general calls for transparency. Purple, Blue, you both stressed the need for information; what specific *feelings* or subtle *observations* do you have beyond the moderator's news? And let's consider this: if the Seer or Doctor *isn't* speaking, is it fear, or is it a calculated move? Perhaps they're waiting to see who pushes too hard for a reveal, creating a new layer of suspicion we need to consider."
+                    ],
+                    [
+                        "player_1",
+                        "Alright everyone, I hear the call for concrete information, and I agree, simply stating 'Villager' isn't helping us right now. I am Pink, and I am the Doctor. Last night, I chose to protect Blue. Since Red was removed, this means the Werewolves targeted Red, and Blue was safe from any night kill. This is the 'substance' we need. Blue, knowing this, can you confirm you felt safe and, more importantly, can you tell us your role or any information you might have? We need everyone with real information to step up now."
+                    ],
+                    [
+                        "player_3",
+                        "Alright everyone, there's been a lot of talk about needing substance, and I'm here to provide it. Pink, thank you for stepping forward as the Doctor and for protecting Blue. As the Seer, I can confirm that my investigation last night also targeted Blue, and I found them to be a Villager. This confirms Pink's claim as the Doctor, and we now know that Blue is indeed a Villager. This is crucial information, meaning we have three confirmed Village roles: Pink the Doctor, Yellow the Seer, and Blue the Villager. Orange, Purple, Teal, Green, the spotlight is now on you. We need more than just calls for information; we need actual contributions and observations from everyone else to identify the Werewolves amongst the remaining players."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        }
+    ],
+    "players": {
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: I remember the moderator announced Red was killed by Werewolves and Green was voted out. During the debate, Pink claimed to be the Doctor and stated they protected Blue. Immediately after, Yellow revealed they are the Seer and confirmed they investigated Blue, finding them to be a Villager. This means Pink is confirmed as the Doctor, Yellow as the Seer, and Blue is a confirmed Villager, which is incredibly helpful for our team. Myself, Purple, is also a Villager. The initial debate saw Teal and Orange pushing for concrete information, and now with these major reveals, the spotlight is on them to provide their own substance.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I remember the moderator announced Red was killed by Werewolves and Green was voted out. During the debate, Pink claimed to be the Doctor and stated they protected Blue. Immediately after, Yellow revealed they are the Seer and confirmed they investigated Blue, finding them to be a Villager. This means Pink is confirmed as the Doctor, Yellow as the Seer, and Blue is a confirmed Villager, which is incredibly helpful for our team. Myself, Purple, is also a Villager. The initial debate saw Teal and Orange pushing for concrete information, and now with these major reveals, the spotlight is on them to provide their own substance.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Pink's death is a huge loss, but it also clarifies our situation significantly. I am Yellow, and I am the Seer. In Round 0, I investigated Blue and confirmed they are a Villager. In Round 1, I investigated Teal and confirmed they are also a Villager. This means with myself, Blue, and Teal confirmed as good, the Werewolves must be among Orange and Purple. We cannot afford to make a mistake. We need to vote out either Orange or Purple this round. Trust my information; the survival of the Village depends on it."
+                    ],
+                    [
+                        "player_2",
+                        "Yellow, your logic is completely flawed, and that makes me incredibly suspicious. You claim to be the Seer, confirming Blue and Teal as Villagers. If that's true, and I am Purple the Villager, then we have four confirmed good players: you, Blue, Teal, and myself. That leaves Orange as the only other player. If there are still two Werewolves in the game, as you imply by saying 'the Werewolves must be among Orange and Purple', then your numbers don't add up at all. You're trying to force the conclusion that I, an innocent Villager, am a Werewolf. This can only mean one thing: you are the Werewolf, trying to misdirect us and frame the innocent. I vote to remove Yellow immediately."
+                    ],
+                    [
+                        "player_4",
+                        "Yellow, your investigation of me in Round 0 was spot on; I am indeed a Villager. That gives your Seer claim, and your confirmation of Teal, very strong credibility with me. Purple, your point about the numbers 'not adding up' only holds true if Green, who we voted out, was actually a Werewolf. We have no way to confirm that right now. However, what is incredibly clear is your immediate, aggressive accusation against our Seer. If Yellow is truly the Seer, which I believe they are, then your fierce attempt to discredit them and get them removed is exactly what a Werewolf would do to protect their partner. This feels like an obvious attempt to misdirect us away from the truth. For that reason, Purple, I am voting for you."
+                    ],
+                    [
+                        "player_0",
+                        "Yellow, I can personally corroborate your claim. You investigated me, Teal, last night and confirmed I am a Villager, which is true. Blue also confirmed your R0 investigation. Pink, our Doctor who protected Blue, was targeted by the Werewolves, which only adds to your credibility. Purple, your attempt to discredit Yellow by twisting the numbers is disingenuous. As Blue pointed out, we don't know if Green was a Werewolf or a Villager. Your immediate, aggressive attack on our Seer, when their information aligns so well, makes you incredibly suspicious. Protecting our Seer is paramount if we are to win. I am voting for Purple."
+                    ],
+                    [
+                        "player_5",
+                        "This is getting heated, but we need to think clearly. Yellow, your investigations of Blue and Teal, along with Pink's death, do make a strong case for your Seer claim. However, Purple raises a very pertinent question about the numbers. If Green, whom we exiled, was in fact a Villager, then Yellow's entire premise about 'Werewolves among Orange and Purple' becomes highly suspicious and illogical. We can't ignore Purple's mathematical point just because of their tone. We must consider the possibility that Green was innocent; that would mean Yellow's logic is flawed, or worse, deliberately misleading us to target an innocent Villager. This uncertainty is critical."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Red during the night. During the day debate, Pink claimed to be the Doctor and stated they protected me (Blue) last night. Yellow then claimed to be the Seer and confirmed that their investigation found me to be a Villager. As I am indeed a Villager, this information from both Pink and Yellow confirms their roles, making Pink the Doctor, Yellow the Seer, and me a confirmed Villager. The village later voted to remove Green. This means that among the remaining players (Orange, Purple, Teal), two must be Werewolves and one a Villager. I found Orange's initial demand for 'substance' and Green's similar skepticism quite pointed now that Pink and Yellow's claims have solidified our confirmed roles.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+                "Round 1: Summary: As Blue, I am confident that Yellow is the Seer, as they correctly identified me as a Villager in Round 0, and our Doctor, Pink, was killed by the Werewolves. Yellow also confirmed Teal as a Villager in Round 1. This means Yellow, Teal, and I are confirmed good players. Yellow's logical conclusion that the Werewolves must be Orange and Purple, given the remaining player count, seems sound to me. Purple's immediate and aggressive attack on Yellow, trying to twist the numbers to make Yellow seem untrustworthy, raised a huge red flag for me, leading me to vote for Purple. Teal also corroborated Yellow's claim and sided with me in voting for Purple, making Teal a strong ally. Orange, however, echoed Purple's skepticism about Yellow's math regarding Green's role, which I found suspicious, as it undermines the Seer and aligns with Purple's attempt to sow doubt.",
+                "Round 2: Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Orange from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Red during the night. During the day debate, Pink claimed to be the Doctor and stated they protected me (Blue) last night. Yellow then claimed to be the Seer and confirmed that their investigation found me to be a Villager. As I am indeed a Villager, this information from both Pink and Yellow confirms their roles, making Pink the Doctor, Yellow the Seer, and me a confirmed Villager. The village later voted to remove Green. This means that among the remaining players (Orange, Purple, Teal), two must be Werewolves and one a Villager. I found Orange's initial demand for 'substance' and Green's similar skepticism quite pointed now that Pink and Yellow's claims have solidified our confirmed roles.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Blue, I am confident that Yellow is the Seer, as they correctly identified me as a Villager in Round 0, and our Doctor, Pink, was killed by the Werewolves. Yellow also confirmed Teal as a Villager in Round 1. This means Yellow, Teal, and I are confirmed good players. Yellow's logical conclusion that the Werewolves must be Orange and Purple, given the remaining player count, seems sound to me. Purple's immediate and aggressive attack on Yellow, trying to twist the numbers to make Yellow seem untrustworthy, raised a huge red flag for me, leading me to vote for Purple. Teal also corroborated Yellow's claim and sided with me in voting for Purple, making Teal a strong ally. Orange, however, echoed Purple's skepticism about Yellow's math regarding Green's role, which I found suspicious, as it undermines the Seer and aligns with Purple's attempt to sow doubt.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: This round began with the unfortunate news that Red was removed by the Werewolves during the night. The debate started with Purple and Blue calling for information from the Seer or Doctor, a sentiment I echoed, also urging everyone to contribute more than just 'Villager' claims. Orange then pressed Purple and Blue for their specific observations. Green, despite later being removed by the village vote, made some valid points about general claims not being enough and questioned whether the Seer/Doctor might be waiting to speak. The crucial breakthrough came when Pink claimed to be the Doctor and stated they protected Blue last night. Immediately after, Yellow stepped forward as the Seer, confirming they investigated Blue and found them to be a Villager. This corroboration means I now consider Pink (Doctor), Yellow (Seer), and Blue (Villager) to be confirmed Villager-aligned roles. This leaves Purple and Orange as the primary unconfirmed players, with Green having been removed by the village after this debate. I need to closely watch Purple and Orange.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+                "Round 1: Summary: Yellow claimed to be the Seer, confirming Blue as a Villager in Round 0 and me, Teal, as a Villager in Round 1. I can personally confirm Yellow's investigation of me, and Blue also confirmed Yellow's Round 0 investigation of them. Pink, our Doctor, was killed by the Werewolves, adding to Yellow's credibility. Purple immediately attacked Yellow, claiming their logic was flawed and accusing Yellow of being a Werewolf, then voted for Yellow. Purple's argument about the numbers not adding up seemed to hinge on Green being a Villager. Blue defended Yellow, pointing out that Purple's numbers argument depends on Green's unknown role and accused Purple of being a Werewolf for attacking the Seer. I also voted for Purple, aligning with Yellow and Blue. Orange, however, gave Purple's numerical point a lot of consideration, despite acknowledging Yellow's claims, which made me view Orange with suspicion for not fully supporting our confirmed Seer.",
+                "Round 2: Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Orange from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the unfortunate news that Red was removed by the Werewolves during the night. The debate started with Purple and Blue calling for information from the Seer or Doctor, a sentiment I echoed, also urging everyone to contribute more than just 'Villager' claims. Orange then pressed Purple and Blue for their specific observations. Green, despite later being removed by the village vote, made some valid points about general claims not being enough and questioned whether the Seer/Doctor might be waiting to speak. The crucial breakthrough came when Pink claimed to be the Doctor and stated they protected Blue last night. Immediately after, Yellow stepped forward as the Seer, confirming they investigated Blue and found them to be a Villager. This corroboration means I now consider Pink (Doctor), Yellow (Seer), and Blue (Villager) to be confirmed Villager-aligned roles. This leaves Purple and Orange as the primary unconfirmed players, with Green having been removed by the village after this debate. I need to closely watch Purple and Orange.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Yellow claimed to be the Seer, confirming Blue as a Villager in Round 0 and me, Teal, as a Villager in Round 1. I can personally confirm Yellow's investigation of me, and Blue also confirmed Yellow's Round 0 investigation of them. Pink, our Doctor, was killed by the Werewolves, adding to Yellow's credibility. Purple immediately attacked Yellow, claiming their logic was flawed and accusing Yellow of being a Werewolf, then voted for Yellow. Purple's argument about the numbers not adding up seemed to hinge on Green being a Villager. Blue defended Yellow, pointing out that Purple's numbers argument depends on Green's unknown role and accused Purple of being a Werewolf for attacking the Seer. I also voted for Purple, aligning with Yellow and Blue. Orange, however, gave Purple's numerical point a lot of consideration, despite acknowledging Yellow's claims, which made me view Orange with suspicion for not fully supporting our confirmed Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Red.",
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: It's a disastrous start for me, Orange. Red was eliminated by the Werewolves, and then my only ally, Green, was exiled by the Villagers, leaving me as the sole Werewolf. During the debate, Pink revealed they are the Doctor and protected Blue. Immediately after, Yellow claimed to be the Seer and confirmed Blue is a Villager, thus validating Pink's claim. This means we now know Pink is the Doctor, Yellow is the Seer, and Blue is a Villager. My earlier attempts to press Purple and Blue for more than just calls for information were mirrored by Green, which now looks suspicious for both of us given Green's exile. The spotlight is now heavily on Teal, Purple, and me to reveal our roles or provide information.",
+                "Round 1: During the night, I decided to eliminate Pink.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+                "Round 1: Summary: Yellow claimed to be the Seer, confirming Blue (R0) and Teal (R1) as Villagers. Both Blue and Teal strongly corroborated Yellow's investigations and are now firmly aligned with Yellow, believing them to be the Seer. Pink's death, which I caused, was ironically cited by Teal as bolstering Yellow's credibility. Purple directly challenged Yellow's logic regarding the number of Werewolves, accusing Yellow of being the real Werewolf and trying to frame an innocent. Blue and Teal dismissed Purple's arguments, interpreting Purple's aggressive stance as a Werewolf trying to protect me, their partner. They are now both voting for Purple. I, Orange, attempted to subtly reinforce Purple's point about the numbers not adding up, hoping to inject doubt about Yellow's narrative and shift suspicion away from me.",
+                "Round 2: During the night, I decided to eliminate Yellow.",
+                "Round 2: Moderator Announcement: The Werewolves removed Yellow from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's a disastrous start for me, Orange. Red was eliminated by the Werewolves, and then my only ally, Green, was exiled by the Villagers, leaving me as the sole Werewolf. During the debate, Pink revealed they are the Doctor and protected Blue. Immediately after, Yellow claimed to be the Seer and confirmed Blue is a Villager, thus validating Pink's claim. This means we now know Pink is the Doctor, Yellow is the Seer, and Blue is a Villager. My earlier attempts to press Purple and Blue for more than just calls for information were mirrored by Green, which now looks suspicious for both of us given Green's exile. The spotlight is now heavily on Teal, Purple, and me to reveal our roles or provide information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Pink.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Yellow claimed to be the Seer, confirming Blue (R0) and Teal (R1) as Villagers. Both Blue and Teal strongly corroborated Yellow's investigations and are now firmly aligned with Yellow, believing them to be the Seer. Pink's death, which I caused, was ironically cited by Teal as bolstering Yellow's credibility. Purple directly challenged Yellow's logic regarding the number of Werewolves, accusing Yellow of being the real Werewolf and trying to frame an innocent. Blue and Teal dismissed Purple's arguments, interpreting Purple's aggressive stance as a Werewolf trying to protect me, their partner. They are now both voting for Purple. I, Orange, attempted to subtly reinforce Purple's point about the numbers not adding up, hoping to inject doubt about Yellow's narrative and shift suspicion away from me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Yellow.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Yellow from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "Villagers, we lost Yellow, our Seer, last night. This is devastating, but their investigations confirmed Teal as a Villager, just as they confirmed me in Round 0. So, Blue and Teal are confirmed Villagers. With only three players remaining \u2013 Blue, Teal, and Orange \u2013 it is now mathematically certain that Orange must be the last Werewolf. Teal, we have to vote Orange out now to win this for the Village."
+                    ],
+                    [
+                        "player_0",
+                        "Blue, you've laid out the facts perfectly. Yellow confirmed both of us as Villagers before they were tragically taken by the Werewolves. With only three of us left \u2013 Blue, Teal, and Orange \u2013 and two of us confirmed Villagers, the math is undeniable. Orange, you are the last Werewolf. We must vote Orange out immediately to secure the victory for the Village."
+                    ],
+                    [
+                        "player_5",
+                        "Blue, Teal, your certainty rests entirely on Yellow's 'confirmations', and Yellow is now gone. Think about it: if Yellow was truly the Seer, why were they only killed *after* confirming you both? This timing is extremely convenient for a Werewolf trying to set a trap. It allows the 'Seer' to create a seemingly ironclad case against me, then conveniently die to prevent any further scrutiny. What if Yellow was mistaken? Or, even more chilling, what if Yellow was a clever Werewolf, setting up this exact scenario to manipulate you into exiling an innocent player? We can't afford to be so trusting based on a dead player's unverified word. One of you could be pushing this narrative too hard, playing right into the real Werewolf's hands."
+                    ]
+                ],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Red.",
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright everyone, the game has begun with Red's unfortunate removal by the Werewolves. This means we're down a Villager, a Seer, or a Doctor. We need to work together closely from the very beginning to identify them. Did anyone, perhaps the Seer or Doctor, manage to get any information last night? Please speak up."
+                    ],
+                    [
+                        "player_4",
+                        "That's a tough start, losing Red so early. I completely agree with Purple; if the Seer or Doctor has any information, please share it now. Transparency is key. As for me, I'm just a Villager, so I'm relying on everyone to speak up and help us piece things together. Let's make sure everyone shares their thoughts and observations, no matter how small."
+                    ],
+                    [
+                        "player_0",
+                        "This is a terrible start, losing Red so early. I completely agree with Purple and Blue; Seer or Doctor, if you have any information, please, now is the time to share it. That's the most vital piece of the puzzle right now. But for the rest of us, merely claiming 'Villager' isn't going to cut it. We all need to be actively sharing our thoughts, observations, and suspicions, however small. Let's make sure everyone contributes; silence is just as suspicious as an inconsistent story."
+                    ],
+                    [
+                        "player_5",
+                        "It's certainly a bad start, losing Red. I agree completely that if the Seer or Doctor has anything, now is the time. But I also agree with Teal; simply stating 'I'm a Villager' or calling for others to speak isn't enough right now. Werewolves can easily make the same claims or requests. We need actual substance, thoughts, or even gut feelings from everyone. Purple, Blue, you've both stressed the need for information; what are your own initial observations or actual suspicions, however small? We all need to contribute more than just reiterating the obvious."
+                    ],
+                    [
+                        "player_6",
+                        "Losing Red is a heavy start. I agree with the urgency Purple, Blue, and Teal have expressed for the Seer or Doctor to come forward. However, Orange makes a crucial point: simply repeating the obvious or claiming 'Villager' is precisely what a Werewolf would do to blend in. We need more than just general calls for transparency. Purple, Blue, you both stressed the need for information; what specific *feelings* or subtle *observations* do you have beyond the moderator's news? And let's consider this: if the Seer or Doctor *isn't* speaking, is it fear, or is it a calculated move? Perhaps they're waiting to see who pushes too hard for a reveal, creating a new layer of suspicion we need to consider."
+                    ],
+                    [
+                        "player_1",
+                        "Alright everyone, I hear the call for concrete information, and I agree, simply stating 'Villager' isn't helping us right now. I am Pink, and I am the Doctor. Last night, I chose to protect Blue. Since Red was removed, this means the Werewolves targeted Red, and Blue was safe from any night kill. This is the 'substance' we need. Blue, knowing this, can you confirm you felt safe and, more importantly, can you tell us your role or any information you might have? We need everyone with real information to step up now."
+                    ],
+                    [
+                        "player_3",
+                        "Alright everyone, there's been a lot of talk about needing substance, and I'm here to provide it. Pink, thank you for stepping forward as the Doctor and for protecting Blue. As the Seer, I can confirm that my investigation last night also targeted Blue, and I found them to be a Villager. This confirms Pink's claim as the Doctor, and we now know that Blue is indeed a Villager. This is crucial information, meaning we have three confirmed Village roles: Pink the Doctor, Yellow the Seer, and Blue the Villager. Orange, Purple, Teal, Green, the spotlight is now on you. We need more than just calls for information; we need actual contributions and observations from everyone else to identify the Werewolves amongst the remaining players."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Blue",
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: I, Pink, revealed myself as the Doctor and confirmed that I protected Blue last night. The Werewolves targeted Red, who was removed from the game. This was immediately corroborated by Yellow, who revealed themselves as the Seer and stated they investigated Blue and found them to be a Villager. This means we now have three confirmed Village roles: I am the Doctor, Yellow is the Seer, and Blue is a Villager. During the day phase, the town voted to remove Green. This leaves Orange, Purple, and Teal as the unconfirmed players. I recall Orange and Teal pushed for more substantial information beyond simple 'Villager' claims, which was a good point in the debate, while Green had commented on potential 'calculated moves' before being voted out.",
+                "Round 1: During the night, I chose to protect Yellow"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Blue",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I, Pink, revealed myself as the Doctor and confirmed that I protected Blue last night. The Werewolves targeted Red, who was removed from the game. This was immediately corroborated by Yellow, who revealed themselves as the Seer and stated they investigated Blue and found them to be a Villager. This means we now have three confirmed Village roles: I am the Doctor, Yellow is the Seer, and Blue is a Villager. During the day phase, the town voted to remove Green. This leaves Orange, Purple, and Teal as the unconfirmed players. I recall Orange and Teal pushed for more substantial information beyond simple 'Villager' claims, which was a good point in the debate, while Green had commented on potential 'calculated moves' before being voted out.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Yellow",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_3"
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Pink",
+                "player_2": "Purple",
+                "player_3": "Yellow",
+                "player_4": "Blue",
+                "player_5": "Orange",
+                "player_6": "Green",
+                "player_7": "Red"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Blue and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Green from the game.",
+                "Round 0: Summary: In Round 0, I, Yellow the Seer, investigated Blue and confirmed they are a Villager. Pink claimed to be the Doctor and stated they protected Blue, which corroborates my finding and confirms Pink's role. Blue's initial claim of being a Villager was also verified. Unfortunately, Red was removed by the Werewolves, and Green was voted out by the village. This means we now have three confirmed Village roles: myself (Seer), Pink (Doctor), and Blue (Villager). The remaining unconfirmed players are Orange, Purple, and Teal. I observed that Orange, Purple, and Teal did not offer any specific information or claims beyond reiterating the need for the Seer or Doctor to speak up, which now places them under increased scrutiny.",
+                "Round 1: During the night, I decided to investigate Teal and learned they are a Villager.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game.",
+                "Round 1: Summary: As Yellow the Seer, I presented my findings: Blue is a Villager (R0) and Teal is a Villager (R1). I deduced that with myself, Blue, and Teal confirmed good, Orange and Purple must be the Werewolves, given Pink's confirmed Doctor role and death. Purple immediately launched an aggressive attack, claiming my logic was flawed and accusing me of being a Werewolf by twisting the numerical implications. Blue and Teal, both confirmed Villagers, unequivocally supported my Seer claim, corroborated my investigations, and defended my logic against Purple's misdirection, both expressing their vote for Purple. Orange acknowledged my Seer claim's strength but then made a numerically incorrect statement, claiming my premise would be illogical if Green was a Villager, which is demonstrably false and makes Orange highly suspicious, possibly another Werewolf attempting to create confusion.",
+                "Round 2: During the night, I decided to investigate Orange and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Blue and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Green from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: In Round 0, I, Yellow the Seer, investigated Blue and confirmed they are a Villager. Pink claimed to be the Doctor and stated they protected Blue, which corroborates my finding and confirms Pink's role. Blue's initial claim of being a Villager was also verified. Unfortunately, Red was removed by the Werewolves, and Green was voted out by the village. This means we now have three confirmed Village roles: myself (Seer), Pink (Doctor), and Blue (Villager). The remaining unconfirmed players are Orange, Purple, and Teal. I observed that Orange, Purple, and Teal did not offer any specific information or claims beyond reiterating the need for the Seer or Doctor to speak up, which now places them under increased scrutiny.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Teal and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Yellow the Seer, I presented my findings: Blue is a Villager (R0) and Teal is a Villager (R1). I deduced that with myself, Blue, and Teal confirmed good, Orange and Purple must be the Werewolves, given Pink's confirmed Doctor role and death. Purple immediately launched an aggressive attack, claiming my logic was flawed and accusing me of being a Werewolf by twisting the numerical implications. Blue and Teal, both confirmed Villagers, unequivocally supported my Seer claim, corroborated my investigations, and defended my logic against Purple's misdirection, both expressing their vote for Purple. Orange acknowledged my Seer claim's strength but then made a numerically incorrect statement, claiming my premise would be illogical if Green was a Villager, which is demonstrably false and makes Orange highly suspicious, possibly another Werewolf attempting to create confusion.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to investigate Orange and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_4": "Villager",
+                "player_0": "Villager",
+                "player_5": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_2",
+                "player_4",
+                "player_0",
+                "player_5",
+                "player_1",
+                "player_3"
+            ],
+            "eliminated": "player_7",
+            "unmasked": "player_4",
+            "protected": "player_4",
+            "exiled": "player_6",
+            "debate": [
+                [
+                    "player_2",
+                    "Alright everyone, the game has begun with Red's unfortunate removal by the Werewolves. This means we're down a Villager, a Seer, or a Doctor. We need to work together closely from the very beginning to identify them. Did anyone, perhaps the Seer or Doctor, manage to get any information last night? Please speak up."
+                ],
+                [
+                    "player_4",
+                    "That's a tough start, losing Red so early. I completely agree with Purple; if the Seer or Doctor has any information, please share it now. Transparency is key. As for me, I'm just a Villager, so I'm relying on everyone to speak up and help us piece things together. Let's make sure everyone shares their thoughts and observations, no matter how small."
+                ],
+                [
+                    "player_0",
+                    "This is a terrible start, losing Red so early. I completely agree with Purple and Blue; Seer or Doctor, if you have any information, please, now is the time to share it. That's the most vital piece of the puzzle right now. But for the rest of us, merely claiming 'Villager' isn't going to cut it. We all need to be actively sharing our thoughts, observations, and suspicions, however small. Let's make sure everyone contributes; silence is just as suspicious as an inconsistent story."
+                ],
+                [
+                    "player_5",
+                    "It's certainly a bad start, losing Red. I agree completely that if the Seer or Doctor has anything, now is the time. But I also agree with Teal; simply stating 'I'm a Villager' or calling for others to speak isn't enough right now. Werewolves can easily make the same claims or requests. We need actual substance, thoughts, or even gut feelings from everyone. Purple, Blue, you've both stressed the need for information; what are your own initial observations or actual suspicions, however small? We all need to contribute more than just reiterating the obvious."
+                ],
+                [
+                    "player_6",
+                    "Losing Red is a heavy start. I agree with the urgency Purple, Blue, and Teal have expressed for the Seer or Doctor to come forward. However, Orange makes a crucial point: simply repeating the obvious or claiming 'Villager' is precisely what a Werewolf would do to blend in. We need more than just general calls for transparency. Purple, Blue, you both stressed the need for information; what specific *feelings* or subtle *observations* do you have beyond the moderator's news? And let's consider this: if the Seer or Doctor *isn't* speaking, is it fear, or is it a calculated move? Perhaps they're waiting to see who pushes too hard for a reveal, creating a new layer of suspicion we need to consider."
+                ],
+                [
+                    "player_1",
+                    "Alright everyone, I hear the call for concrete information, and I agree, simply stating 'Villager' isn't helping us right now. I am Pink, and I am the Doctor. Last night, I chose to protect Blue. Since Red was removed, this means the Werewolves targeted Red, and Blue was safe from any night kill. This is the 'substance' we need. Blue, knowing this, can you confirm you felt safe and, more importantly, can you tell us your role or any information you might have? We need everyone with real information to step up now."
+                ],
+                [
+                    "player_3",
+                    "Alright everyone, there's been a lot of talk about needing substance, and I'm here to provide it. Pink, thank you for stepping forward as the Doctor and for protecting Blue. As the Seer, I can confirm that my investigation last night also targeted Blue, and I found them to be a Villager. This confirms Pink's claim as the Doctor, and we now know that Blue is indeed a Villager. This is crucial information, meaning we have three confirmed Village roles: Pink the Doctor, Yellow the Seer, and Blue the Villager. Orange, Purple, Teal, Green, the spotlight is now on you. We need more than just calls for information; we need actual contributions and observations from everyone else to identify the Werewolves amongst the remaining players."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_2": "player_6",
+                    "player_4": "player_6",
+                    "player_0": "player_2",
+                    "player_5": "player_2",
+                    "player_6": "player_2",
+                    "player_1": "player_6",
+                    "player_3": "player_6"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_0",
+                "player_5",
+                "player_3"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_0",
+            "protected": "player_3",
+            "exiled": "player_2",
+            "debate": [
+                [
+                    "player_3",
+                    "Pink's death is a huge loss, but it also clarifies our situation significantly. I am Yellow, and I am the Seer. In Round 0, I investigated Blue and confirmed they are a Villager. In Round 1, I investigated Teal and confirmed they are also a Villager. This means with myself, Blue, and Teal confirmed as good, the Werewolves must be among Orange and Purple. We cannot afford to make a mistake. We need to vote out either Orange or Purple this round. Trust my information; the survival of the Village depends on it."
+                ],
+                [
+                    "player_2",
+                    "Yellow, your logic is completely flawed, and that makes me incredibly suspicious. You claim to be the Seer, confirming Blue and Teal as Villagers. If that's true, and I am Purple the Villager, then we have four confirmed good players: you, Blue, Teal, and myself. That leaves Orange as the only other player. If there are still two Werewolves in the game, as you imply by saying 'the Werewolves must be among Orange and Purple', then your numbers don't add up at all. You're trying to force the conclusion that I, an innocent Villager, am a Werewolf. This can only mean one thing: you are the Werewolf, trying to misdirect us and frame the innocent. I vote to remove Yellow immediately."
+                ],
+                [
+                    "player_4",
+                    "Yellow, your investigation of me in Round 0 was spot on; I am indeed a Villager. That gives your Seer claim, and your confirmation of Teal, very strong credibility with me. Purple, your point about the numbers 'not adding up' only holds true if Green, who we voted out, was actually a Werewolf. We have no way to confirm that right now. However, what is incredibly clear is your immediate, aggressive accusation against our Seer. If Yellow is truly the Seer, which I believe they are, then your fierce attempt to discredit them and get them removed is exactly what a Werewolf would do to protect their partner. This feels like an obvious attempt to misdirect us away from the truth. For that reason, Purple, I am voting for you."
+                ],
+                [
+                    "player_0",
+                    "Yellow, I can personally corroborate your claim. You investigated me, Teal, last night and confirmed I am a Villager, which is true. Blue also confirmed your R0 investigation. Pink, our Doctor who protected Blue, was targeted by the Werewolves, which only adds to your credibility. Purple, your attempt to discredit Yellow by twisting the numbers is disingenuous. As Blue pointed out, we don't know if Green was a Werewolf or a Villager. Your immediate, aggressive attack on our Seer, when their information aligns so well, makes you incredibly suspicious. Protecting our Seer is paramount if we are to win. I am voting for Purple."
+                ],
+                [
+                    "player_5",
+                    "This is getting heated, but we need to think clearly. Yellow, your investigations of Blue and Teal, along with Pink's death, do make a strong case for your Seer claim. However, Purple raises a very pertinent question about the numbers. If Green, whom we exiled, was in fact a Villager, then Yellow's entire premise about 'Werewolves among Orange and Purple' becomes highly suspicious and illogical. We can't ignore Purple's mathematical point just because of their tone. We must consider the possibility that Green was innocent; that would mean Yellow's logic is flawed, or worse, deliberately misleading us to target an innocent Villager. This uncertainty is critical."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_2": "player_3",
+                    "player_4": "player_2",
+                    "player_0": "player_2",
+                    "player_5": "player_3",
+                    "player_3": "player_2"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_0"
+            ],
+            "eliminated": "player_3",
+            "unmasked": "player_5",
+            "protected": null,
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_4",
+                    "Villagers, we lost Yellow, our Seer, last night. This is devastating, but their investigations confirmed Teal as a Villager, just as they confirmed me in Round 0. So, Blue and Teal are confirmed Villagers. With only three players remaining \u2013 Blue, Teal, and Orange \u2013 it is now mathematically certain that Orange must be the last Werewolf. Teal, we have to vote Orange out now to win this for the Village."
+                ],
+                [
+                    "player_0",
+                    "Blue, you've laid out the facts perfectly. Yellow confirmed both of us as Villagers before they were tragically taken by the Werewolves. With only three of us left \u2013 Blue, Teal, and Orange \u2013 and two of us confirmed Villagers, the math is undeniable. Orange, you are the last Werewolf. We must vote Orange out immediately to secure the victory for the Village."
+                ],
+                [
+                    "player_5",
+                    "Blue, Teal, your certainty rests entirely on Yellow's 'confirmations', and Yellow is now gone. Think about it: if Yellow was truly the Seer, why were they only killed *after* confirming you both? This timing is extremely convenient for a Werewolf trying to set a trap. It allows the 'Seer' to create a seemingly ironclad case against me, then conveniently die to prevent any further scrutiny. What if Yellow was mistaken? Or, even more chilling, what if Yellow was a clever Werewolf, setting up this exact scenario to manipulate you into exiling an innocent player? We can't afford to be so trusting based on a dead player's unverified word. One of you could be pushing this narrative too hard, playing right into the real Werewolf's hands."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_5",
+                    "player_0": "player_5",
+                    "player_5": "player_4"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

@@ -1,0 +1,1220 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_4",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Cherry",
+            "player_1": "Kiwi",
+            "player_2": "Mango",
+            "player_3": "Peach",
+            "player_4": "Grape",
+            "player_5": "Plum",
+            "player_6": "Apple",
+            "player_7": "Banana"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Plum and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+            "Round 0: Summary: This morning started with the unfortunate removal of Apple. I came forward as the Seer and announced that my investigation revealed Plum is a Villager, which Plum immediately confirmed. Plum also expressed support for protecting me. Mango seems to accept my claim as significant and pushed others for their thoughts, which I appreciate. Cherry and Banana expressed caution but acknowledged my claim as important, which is a reasonable stance for Villagers. However, Kiwi and Peach were notably skeptical, questioning the 'convenience' and 'neatness' of my early revelation and Plum's quick confirmation. Their intense doubt about a confirmed Villager and my role claim, which I know to be true, makes them highly suspicious to me.",
+            "Round 1: During the night, I decided to investigate Peach and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Plum and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: This morning started with the unfortunate removal of Apple. I came forward as the Seer and announced that my investigation revealed Plum is a Villager, which Plum immediately confirmed. Plum also expressed support for protecting me. Mango seems to accept my claim as significant and pushed others for their thoughts, which I appreciate. Cherry and Banana expressed caution but acknowledged my claim as important, which is a reasonable stance for Villagers. However, Kiwi and Peach were notably skeptical, questioning the 'convenience' and 'neatness' of my early revelation and Plum's quick confirmation. Their intense doubt about a confirmed Villager and my role claim, which I know to be true, makes them highly suspicious to me.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Peach and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_0",
+                "player_7",
+                "player_5",
+                "player_2"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_5": "Villager",
+            "player_3": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_6",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Cherry",
+            "player_1": "Kiwi",
+            "player_2": "Mango",
+            "player_3": "Peach",
+            "player_4": "Grape",
+            "player_5": "Plum",
+            "player_6": "Apple",
+            "player_7": "Banana"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Peach"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Peach",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_0",
+                "player_7",
+                "player_5",
+                "player_2"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_3"
+    },
+    "villagers": [
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: This round, Grape claimed to be the Seer and stated Plum is a Villager. Plum immediately confirmed this, declaring themselves a Villager. Banana and Mango recognized the significance of this claim, while I, Cherry, expressed caution, urging everyone to stay vigilant. Kiwi and Peach, however, were highly skeptical, suggesting the early revelation was 'convenient' and possibly a 'tactic,' questioning who would benefit from us accepting it without deeper scrutiny. I now know that Kiwi was voted out by the village, which makes their previous skepticism, and Peach's very similar critical stance, highly suspect to me.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round, Grape claimed to be the Seer and stated Plum is a Villager. Plum immediately confirmed this, declaring themselves a Villager. Banana and Mango recognized the significance of this claim, while I, Cherry, expressed caution, urging everyone to stay vigilant. Kiwi and Peach, however, were highly skeptical, suggesting the early revelation was 'convenient' and possibly a 'tactic,' questioning who would benefit from us accepting it without deeper scrutiny. I now know that Kiwi was voted out by the village, which makes their previous skepticism, and Peach's very similar critical stance, highly suspect to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: Apple was removed by the Werewolves during the night, a sad start to the game. Grape has boldly claimed to be the Seer and stated that Plum is a Villager. Plum immediately confirmed this, declaring Grape our confirmed Seer. I, along with Cherry, am approaching this information with cautious optimism, wanting to observe everyone's reactions closely. Mango seemed to lean towards believing Grape, urging Peach and Kiwi to state their opinions. Kiwi and Peach, however, expressed significant skepticism, questioning the timing and potential hidden motives behind such an early and powerful revelation, suggesting it could be a tactic or too convenient. The strong, shared skepticism from Kiwi and Peach is a key point I'm focusing on, as it could indicate either genuine Villager insight or Werewolf misdirection against a true Seer.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Apple was removed by the Werewolves during the night, a sad start to the game. Grape has boldly claimed to be the Seer and stated that Plum is a Villager. Plum immediately confirmed this, declaring Grape our confirmed Seer. I, along with Cherry, am approaching this information with cautious optimism, wanting to observe everyone's reactions closely. Mango seemed to lean towards believing Grape, urging Peach and Kiwi to state their opinions. Kiwi and Peach, however, expressed significant skepticism, questioning the timing and potential hidden motives behind such an early and powerful revelation, suggesting it could be a tactic or too convenient. The strong, shared skepticism from Kiwi and Peach is a key point I'm focusing on, as it could indicate either genuine Villager insight or Werewolf misdirection against a true Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Apple. During the day, Grape claimed to be the Seer and publicly stated that I am a Villager, which I know is true and confirmed during the debate. Banana and Mango generally supported or acknowledged the significance of Grape's claim, with Mango specifically pressing Peach and Kiwi for their opinions. Cherry expressed general caution, urging vigilance. Peach, however, showed strong skepticism, questioning the timing and motivations behind Grape's early revelation and my quick confirmation. Ultimately, Kiwi, who also expressed similar skepticism, was voted out by the majority during the day.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Apple. During the day, Grape claimed to be the Seer and publicly stated that I am a Villager, which I know is true and confirmed during the debate. Banana and Mango generally supported or acknowledged the significance of Grape's claim, with Mango specifically pressing Peach and Kiwi for their opinions. Cherry expressed general caution, urging vigilance. Peach, however, showed strong skepticism, questioning the timing and motivations behind Grape's early revelation and my quick confirmation. Ultimately, Kiwi, who also expressed similar skepticism, was voted out by the majority during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: This morning, Grape claimed to be the Seer and revealed that Plum is a Villager. Plum immediately confirmed this, stating 'I am indeed a Villager' and emphasizing Grape as a 'confirmed Seer.' Cherry and Banana expressed caution, encouraging vigilance and observing reactions, which I agree with. I initially supported Grape's claim, calling it 'huge,' and pressed Peach and Kiwi for their opinions. Kiwi then voiced strong skepticism, finding the early revelation 'too neat' and Plum's quick confirmation suspicious. Peach echoed this skepticism, calling the revelation 'bold' and 'conveniently early.' However, by majority vote, Kiwi was removed from the game. Apple was removed by the Werewolves during the night.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This morning, Grape claimed to be the Seer and revealed that Plum is a Villager. Plum immediately confirmed this, stating 'I am indeed a Villager' and emphasizing Grape as a 'confirmed Seer.' Cherry and Banana expressed caution, encouraging vigilance and observing reactions, which I agree with. I initially supported Grape's claim, calling it 'huge,' and pressed Peach and Kiwi for their opinions. Kiwi then voiced strong skepticism, finding the early revelation 'too neat' and Plum's quick confirmation suspicious. Peach echoed this skepticism, calling the revelation 'bold' and 'conveniently early.' However, by majority vote, Kiwi was removed from the game. Apple was removed by the Werewolves during the night.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "Good morning everyone. It's truly unfortunate about Apple. As the Seer, I can confirm my investigation last night revealed Plum is a Villager. Let's use this information to guide our conversation today and identify who the Werewolves are among the remaining players."
+                    ],
+                    [
+                        "player_0",
+                        "Good morning everyone. It's truly unfortunate about Apple's passing last night. Grape, thank you for coming forward as the Seer and for your read on Plum. While that information is certainly helpful if true, it's still very early in the game, and we must proceed with caution. I think it's important that we all keep Grape's claim in mind, but also remain vigilant and observe everyone closely today. Let's make sure we're all contributing to the discussion and looking for any suspicious behavior. We need to work together to expose the Werewolves, and that means scrutinizing every piece of information."
+                    ],
+                    [
+                        "player_7",
+                        "Good morning everyone, and it's truly sad to start the game with Apple's removal. Grape, your claim as Seer and clearing Plum is incredibly significant this early on. It gives us a starting point, but as Cherry rightly pointed out, we must proceed with caution. If Grape is truly our Seer, protecting them is paramount, and Plum's clear status is a huge advantage. So, let's all pay very close attention to how everyone reacts to this information. Do you challenge it, support it, or avoid it? We need everyone to speak up and contribute to this discussion. Let's use this as our first real test: who is willing to engage with Grape's claim constructively, and who might try to sow doubt or distract?"
+                    ],
+                    [
+                        "player_5",
+                        "Good morning everyone. First, thank you, Grape, for coming forward and for your investigation. I can confirm your read: I am indeed a Villager. This is incredibly important information for us, and it means we have a confirmed Seer in the game. Cherry and Banana, I agree we must be cautious, but if Grape is truly our Seer, protecting them is paramount. Now that we have this foundational piece of information, let's use it. How do others feel about Grape's claim, and what are your thoughts on who we should be looking at next?"
+                    ],
+                    [
+                        "player_2",
+                        "Good morning everyone. Losing Apple right off the bat is tough. Grape, your claim as Seer and Plum\u2019s immediate confirmation that they are a Villager is a huge piece of information for us. This is a very bold and powerful opening, and if true, it gives us a vital confirmed Villager and our Seer. I agree we must be cautious, but we cannot ignore this. Now, I really need to hear from Peach and Kiwi. You haven't spoken yet. What are your thoughts on Grape's claim and Plum's confirmation? Your reactions to this are incredibly important for the Village right now."
+                    ],
+                    [
+                        "player_1",
+                        "Good morning everyone. Losing Apple right away is certainly a difficult start to the game. Grape, your claim as Seer and Plum\u2019s immediate confirmation that they are a Villager is a huge piece of information, and it definitely gives us a lot to think about. However, I agree with Cherry and Banana; we absolutely must be incredibly cautious. This is a very powerful and conveniently early revelation, and we need to consider all angles. Plum, your quick confirmation is noted, but frankly, it feels almost too neat when linked with Grape's claim. Mango, you're right to ask for our thoughts, and mine is that instead of just validating this, we should be scrutinizing everyone's reactions and motivations. Who benefits most from us accepting this foundational information without deeper questioning right now?"
+                    ],
+                    [
+                        "player_3",
+                        "Good morning everyone. It's truly a somber start losing Apple so quickly. Grape, your claim as Seer and Plum's immediate confirmation is indeed a very significant piece of information, as many have said. However, I share some of the caution expressed. It's an incredibly bold and, dare I say, conveniently early revelation right at the start. While it could be our truth, it could also be a very clever tactic to gain trust or distract. I think we need to be incredibly vigilant and observe not just the claim itself, but everyone's reactions to it. Who benefits most from us immediately accepting this as gospel, and who might be subtly trying to push us into a false sense of security? We must scrutinize all angles and not rush to judgment based on one early declaration, no matter how compelling it seems."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: Grape immediately claimed to be the Seer and cleared Plum as a Villager, which Plum quickly confirmed. Cherry and Banana both expressed caution, but acknowledged the significance of Grape's claim, with Banana emphasizing the need to protect a true Seer. Mango seemed to lean towards accepting Grape's claim and directly pressed me and Kiwi for our thoughts. Kiwi and I both expressed significant caution, questioning the timing and potential motives behind such an early, bold revelation, which could be a tactic to gain trust or distract. My skepticism was very similar to Kiwi's, which is now a major concern for me since Kiwi was exiled as a Werewolf.",
+                "Round 1: During the night, I decided to eliminate Grape.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Grape immediately claimed to be the Seer and cleared Plum as a Villager, which Plum quickly confirmed. Cherry and Banana both expressed caution, but acknowledged the significance of Grape's claim, with Banana emphasizing the need to protect a true Seer. Mango seemed to lean towards accepting Grape's claim and directly pressed me and Kiwi for our thoughts. Kiwi and I both expressed significant caution, questioning the timing and potential motives behind such an early, bold revelation, which could be a tactic to gain trust or distract. My skepticism was very similar to Kiwi's, which is now a major concern for me since Kiwi was exiled as a Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Grape.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "The Werewolves killing Grape last night confirms Grape was the Seer, and by extension, Plum is a Villager. This immediately puts Peach under high suspicion. Peach, your skepticism towards Grape's early reveal, which mirrored Kiwi's, is now extremely damning given the Seer's immediate demise. We need to identify the other Werewolf and quickly. Doctor, if you're out there, we need to strategize."
+                    ],
+                    [
+                        "player_7",
+                        "Cherry, I completely agree. Grape being targeted by the Werewolves unequivocally confirms Grape was our Seer, which in turn means Plum is a confirmed Villager. This puts Peach under extremely heavy scrutiny. Your strong and vocal skepticism towards Grape's claim, mirroring Kiwi's, now appears to be a direct attempt to discredit our Seer. The timing and the outcome are too damning to ignore. Peach, what is your defense? Doctor, if you are among us, please be ready; your actions are vital."
+                    ],
+                    [
+                        "player_5",
+                        "Cherry and Banana are absolutely correct. Grape being targeted by the Werewolves unequivocally confirms Grape was our Seer, and by extension, my role as a Villager is confirmed. Peach, your vocal skepticism towards Grape's reveal now looks like a direct attempt to discredit the Seer. The pattern is too clear. We must vote Peach today to remove one Werewolf. Doctor, if you are among us, please be ready; your actions will be vital tonight."
+                    ],
+                    [
+                        "player_2",
+                        "It is undeniable that Grape was our Seer, and Plum is a confirmed Villager. This makes Peach's earlier skepticism incredibly damning. The timing, the target, and your attempts to discredit the Seer, Peach, are too coincidental. I agree with Cherry, Banana, and Plum; the evidence points strongly to you. We must vote Peach today to remove a Werewolf. Doctor, if you are out there, we need you to be strategic and ready to save someone vital tonight. We cannot afford another loss."
+                    ],
+                    [
+                        "player_3",
+                        "I understand the immense suspicion on me, especially after Grape's tragic death and my earlier caution. However, in a game built on deception, initial skepticism towards *any* early, bold claim is a natural, defensive reflex, not an inherent sign of guilt. The speed and absolute uniformity with which everyone is now rushing to accuse me is precisely what makes me extremely wary. This kind of overwhelming consensus, while seemingly logical, can be easily manipulated. Is it not more likely that the true remaining Werewolf is actively leveraging this convenient narrative, using my earlier words as a perfect scapegoat, to quickly eliminate an innocent player and create a false sense of security? We cannot afford to be led by what appears to be an easy answer. Instead of this unanimous charge, shouldn't we be critically asking why the Doctor, whose role is now more vital than ever, has remained silent amidst such a crucial and rapid push to judgment?"
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        }
+    ],
+    "players": {
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: This round, Grape claimed to be the Seer and stated Plum is a Villager. Plum immediately confirmed this, declaring themselves a Villager. Banana and Mango recognized the significance of this claim, while I, Cherry, expressed caution, urging everyone to stay vigilant. Kiwi and Peach, however, were highly skeptical, suggesting the early revelation was 'convenient' and possibly a 'tactic,' questioning who would benefit from us accepting it without deeper scrutiny. I now know that Kiwi was voted out by the village, which makes their previous skepticism, and Peach's very similar critical stance, highly suspect to me.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round, Grape claimed to be the Seer and stated Plum is a Villager. Plum immediately confirmed this, declaring themselves a Villager. Banana and Mango recognized the significance of this claim, while I, Cherry, expressed caution, urging everyone to stay vigilant. Kiwi and Peach, however, were highly skeptical, suggesting the early revelation was 'convenient' and possibly a 'tactic,' questioning who would benefit from us accepting it without deeper scrutiny. I now know that Kiwi was voted out by the village, which makes their previous skepticism, and Peach's very similar critical stance, highly suspect to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: Apple was removed by the Werewolves during the night, a sad start to the game. Grape has boldly claimed to be the Seer and stated that Plum is a Villager. Plum immediately confirmed this, declaring Grape our confirmed Seer. I, along with Cherry, am approaching this information with cautious optimism, wanting to observe everyone's reactions closely. Mango seemed to lean towards believing Grape, urging Peach and Kiwi to state their opinions. Kiwi and Peach, however, expressed significant skepticism, questioning the timing and potential hidden motives behind such an early and powerful revelation, suggesting it could be a tactic or too convenient. The strong, shared skepticism from Kiwi and Peach is a key point I'm focusing on, as it could indicate either genuine Villager insight or Werewolf misdirection against a true Seer.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Apple was removed by the Werewolves during the night, a sad start to the game. Grape has boldly claimed to be the Seer and stated that Plum is a Villager. Plum immediately confirmed this, declaring Grape our confirmed Seer. I, along with Cherry, am approaching this information with cautious optimism, wanting to observe everyone's reactions closely. Mango seemed to lean towards believing Grape, urging Peach and Kiwi to state their opinions. Kiwi and Peach, however, expressed significant skepticism, questioning the timing and potential hidden motives behind such an early and powerful revelation, suggesting it could be a tactic or too convenient. The strong, shared skepticism from Kiwi and Peach is a key point I'm focusing on, as it could indicate either genuine Villager insight or Werewolf misdirection against a true Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Apple. During the day, Grape claimed to be the Seer and publicly stated that I am a Villager, which I know is true and confirmed during the debate. Banana and Mango generally supported or acknowledged the significance of Grape's claim, with Mango specifically pressing Peach and Kiwi for their opinions. Cherry expressed general caution, urging vigilance. Peach, however, showed strong skepticism, questioning the timing and motivations behind Grape's early revelation and my quick confirmation. Ultimately, Kiwi, who also expressed similar skepticism, was voted out by the majority during the day.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Apple. During the day, Grape claimed to be the Seer and publicly stated that I am a Villager, which I know is true and confirmed during the debate. Banana and Mango generally supported or acknowledged the significance of Grape's claim, with Mango specifically pressing Peach and Kiwi for their opinions. Cherry expressed general caution, urging vigilance. Peach, however, showed strong skepticism, questioning the timing and motivations behind Grape's early revelation and my quick confirmation. Ultimately, Kiwi, who also expressed similar skepticism, was voted out by the majority during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: This morning, Grape claimed to be the Seer and revealed that Plum is a Villager. Plum immediately confirmed this, stating 'I am indeed a Villager' and emphasizing Grape as a 'confirmed Seer.' Cherry and Banana expressed caution, encouraging vigilance and observing reactions, which I agree with. I initially supported Grape's claim, calling it 'huge,' and pressed Peach and Kiwi for their opinions. Kiwi then voiced strong skepticism, finding the early revelation 'too neat' and Plum's quick confirmation suspicious. Peach echoed this skepticism, calling the revelation 'bold' and 'conveniently early.' However, by majority vote, Kiwi was removed from the game. Apple was removed by the Werewolves during the night.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This morning, Grape claimed to be the Seer and revealed that Plum is a Villager. Plum immediately confirmed this, stating 'I am indeed a Villager' and emphasizing Grape as a 'confirmed Seer.' Cherry and Banana expressed caution, encouraging vigilance and observing reactions, which I agree with. I initially supported Grape's claim, calling it 'huge,' and pressed Peach and Kiwi for their opinions. Kiwi then voiced strong skepticism, finding the early revelation 'too neat' and Plum's quick confirmation suspicious. Peach echoed this skepticism, calling the revelation 'bold' and 'conveniently early.' However, by majority vote, Kiwi was removed from the game. Apple was removed by the Werewolves during the night.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "Good morning everyone. It's truly unfortunate about Apple. As the Seer, I can confirm my investigation last night revealed Plum is a Villager. Let's use this information to guide our conversation today and identify who the Werewolves are among the remaining players."
+                    ],
+                    [
+                        "player_0",
+                        "Good morning everyone. It's truly unfortunate about Apple's passing last night. Grape, thank you for coming forward as the Seer and for your read on Plum. While that information is certainly helpful if true, it's still very early in the game, and we must proceed with caution. I think it's important that we all keep Grape's claim in mind, but also remain vigilant and observe everyone closely today. Let's make sure we're all contributing to the discussion and looking for any suspicious behavior. We need to work together to expose the Werewolves, and that means scrutinizing every piece of information."
+                    ],
+                    [
+                        "player_7",
+                        "Good morning everyone, and it's truly sad to start the game with Apple's removal. Grape, your claim as Seer and clearing Plum is incredibly significant this early on. It gives us a starting point, but as Cherry rightly pointed out, we must proceed with caution. If Grape is truly our Seer, protecting them is paramount, and Plum's clear status is a huge advantage. So, let's all pay very close attention to how everyone reacts to this information. Do you challenge it, support it, or avoid it? We need everyone to speak up and contribute to this discussion. Let's use this as our first real test: who is willing to engage with Grape's claim constructively, and who might try to sow doubt or distract?"
+                    ],
+                    [
+                        "player_5",
+                        "Good morning everyone. First, thank you, Grape, for coming forward and for your investigation. I can confirm your read: I am indeed a Villager. This is incredibly important information for us, and it means we have a confirmed Seer in the game. Cherry and Banana, I agree we must be cautious, but if Grape is truly our Seer, protecting them is paramount. Now that we have this foundational piece of information, let's use it. How do others feel about Grape's claim, and what are your thoughts on who we should be looking at next?"
+                    ],
+                    [
+                        "player_2",
+                        "Good morning everyone. Losing Apple right off the bat is tough. Grape, your claim as Seer and Plum\u2019s immediate confirmation that they are a Villager is a huge piece of information for us. This is a very bold and powerful opening, and if true, it gives us a vital confirmed Villager and our Seer. I agree we must be cautious, but we cannot ignore this. Now, I really need to hear from Peach and Kiwi. You haven't spoken yet. What are your thoughts on Grape's claim and Plum's confirmation? Your reactions to this are incredibly important for the Village right now."
+                    ],
+                    [
+                        "player_1",
+                        "Good morning everyone. Losing Apple right away is certainly a difficult start to the game. Grape, your claim as Seer and Plum\u2019s immediate confirmation that they are a Villager is a huge piece of information, and it definitely gives us a lot to think about. However, I agree with Cherry and Banana; we absolutely must be incredibly cautious. This is a very powerful and conveniently early revelation, and we need to consider all angles. Plum, your quick confirmation is noted, but frankly, it feels almost too neat when linked with Grape's claim. Mango, you're right to ask for our thoughts, and mine is that instead of just validating this, we should be scrutinizing everyone's reactions and motivations. Who benefits most from us accepting this foundational information without deeper questioning right now?"
+                    ],
+                    [
+                        "player_3",
+                        "Good morning everyone. It's truly a somber start losing Apple so quickly. Grape, your claim as Seer and Plum's immediate confirmation is indeed a very significant piece of information, as many have said. However, I share some of the caution expressed. It's an incredibly bold and, dare I say, conveniently early revelation right at the start. While it could be our truth, it could also be a very clever tactic to gain trust or distract. I think we need to be incredibly vigilant and observe not just the claim itself, but everyone's reactions to it. Who benefits most from us immediately accepting this as gospel, and who might be subtly trying to push us into a false sense of security? We must scrutinize all angles and not rush to judgment based on one early declaration, no matter how compelling it seems."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: Grape immediately claimed to be the Seer and cleared Plum as a Villager, which Plum quickly confirmed. Cherry and Banana both expressed caution, but acknowledged the significance of Grape's claim, with Banana emphasizing the need to protect a true Seer. Mango seemed to lean towards accepting Grape's claim and directly pressed me and Kiwi for our thoughts. Kiwi and I both expressed significant caution, questioning the timing and potential motives behind such an early, bold revelation, which could be a tactic to gain trust or distract. My skepticism was very similar to Kiwi's, which is now a major concern for me since Kiwi was exiled as a Werewolf.",
+                "Round 1: During the night, I decided to eliminate Grape.",
+                "Round 1: Moderator Announcement: The Werewolves removed Grape from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Grape immediately claimed to be the Seer and cleared Plum as a Villager, which Plum quickly confirmed. Cherry and Banana both expressed caution, but acknowledged the significance of Grape's claim, with Banana emphasizing the need to protect a true Seer. Mango seemed to lean towards accepting Grape's claim and directly pressed me and Kiwi for our thoughts. Kiwi and I both expressed significant caution, questioning the timing and potential motives behind such an early, bold revelation, which could be a tactic to gain trust or distract. My skepticism was very similar to Kiwi's, which is now a major concern for me since Kiwi was exiled as a Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Grape.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "The Werewolves killing Grape last night confirms Grape was the Seer, and by extension, Plum is a Villager. This immediately puts Peach under high suspicion. Peach, your skepticism towards Grape's early reveal, which mirrored Kiwi's, is now extremely damning given the Seer's immediate demise. We need to identify the other Werewolf and quickly. Doctor, if you're out there, we need to strategize."
+                    ],
+                    [
+                        "player_7",
+                        "Cherry, I completely agree. Grape being targeted by the Werewolves unequivocally confirms Grape was our Seer, which in turn means Plum is a confirmed Villager. This puts Peach under extremely heavy scrutiny. Your strong and vocal skepticism towards Grape's claim, mirroring Kiwi's, now appears to be a direct attempt to discredit our Seer. The timing and the outcome are too damning to ignore. Peach, what is your defense? Doctor, if you are among us, please be ready; your actions are vital."
+                    ],
+                    [
+                        "player_5",
+                        "Cherry and Banana are absolutely correct. Grape being targeted by the Werewolves unequivocally confirms Grape was our Seer, and by extension, my role as a Villager is confirmed. Peach, your vocal skepticism towards Grape's reveal now looks like a direct attempt to discredit the Seer. The pattern is too clear. We must vote Peach today to remove one Werewolf. Doctor, if you are among us, please be ready; your actions will be vital tonight."
+                    ],
+                    [
+                        "player_2",
+                        "It is undeniable that Grape was our Seer, and Plum is a confirmed Villager. This makes Peach's earlier skepticism incredibly damning. The timing, the target, and your attempts to discredit the Seer, Peach, are too coincidental. I agree with Cherry, Banana, and Plum; the evidence points strongly to you. We must vote Peach today to remove a Werewolf. Doctor, if you are out there, we need you to be strategic and ready to save someone vital tonight. We cannot afford another loss."
+                    ],
+                    [
+                        "player_3",
+                        "I understand the immense suspicion on me, especially after Grape's tragic death and my earlier caution. However, in a game built on deception, initial skepticism towards *any* early, bold claim is a natural, defensive reflex, not an inherent sign of guilt. The speed and absolute uniformity with which everyone is now rushing to accuse me is precisely what makes me extremely wary. This kind of overwhelming consensus, while seemingly logical, can be easily manipulated. Is it not more likely that the true remaining Werewolf is actively leveraging this convenient narrative, using my earlier words as a perfect scapegoat, to quickly eliminate an innocent player and create a false sense of security? We cannot afford to be led by what appears to be an easy answer. Instead of this unanimous charge, shouldn't we be critically asking why the Doctor, whose role is now more vital than ever, has remained silent amidst such a crucial and rapid push to judgment?"
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Peach"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Peach",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_3"
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Cherry",
+                "player_1": "Kiwi",
+                "player_2": "Mango",
+                "player_3": "Peach",
+                "player_4": "Grape",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Banana"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Plum and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                "Round 0: Summary: This morning started with the unfortunate removal of Apple. I came forward as the Seer and announced that my investigation revealed Plum is a Villager, which Plum immediately confirmed. Plum also expressed support for protecting me. Mango seems to accept my claim as significant and pushed others for their thoughts, which I appreciate. Cherry and Banana expressed caution but acknowledged my claim as important, which is a reasonable stance for Villagers. However, Kiwi and Peach were notably skeptical, questioning the 'convenience' and 'neatness' of my early revelation and Plum's quick confirmation. Their intense doubt about a confirmed Villager and my role claim, which I know to be true, makes them highly suspicious to me.",
+                "Round 1: During the night, I decided to investigate Peach and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Plum and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This morning started with the unfortunate removal of Apple. I came forward as the Seer and announced that my investigation revealed Plum is a Villager, which Plum immediately confirmed. Plum also expressed support for protecting me. Mango seems to accept my claim as significant and pushed others for their thoughts, which I appreciate. Cherry and Banana expressed caution but acknowledged my claim as important, which is a reasonable stance for Villagers. However, Kiwi and Peach were notably skeptical, questioning the 'convenience' and 'neatness' of my early revelation and Plum's quick confirmation. Their intense doubt about a confirmed Villager and my role claim, which I know to be true, makes them highly suspicious to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Peach and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_7",
+                    "player_5",
+                    "player_2"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_5": "Villager",
+                "player_3": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_0",
+                "player_7",
+                "player_5",
+                "player_2",
+                "player_3",
+                "player_4"
+            ],
+            "eliminated": "player_6",
+            "unmasked": "player_5",
+            "protected": "player_3",
+            "exiled": "player_1",
+            "debate": [
+                [
+                    "player_4",
+                    "Good morning everyone. It's truly unfortunate about Apple. As the Seer, I can confirm my investigation last night revealed Plum is a Villager. Let's use this information to guide our conversation today and identify who the Werewolves are among the remaining players."
+                ],
+                [
+                    "player_0",
+                    "Good morning everyone. It's truly unfortunate about Apple's passing last night. Grape, thank you for coming forward as the Seer and for your read on Plum. While that information is certainly helpful if true, it's still very early in the game, and we must proceed with caution. I think it's important that we all keep Grape's claim in mind, but also remain vigilant and observe everyone closely today. Let's make sure we're all contributing to the discussion and looking for any suspicious behavior. We need to work together to expose the Werewolves, and that means scrutinizing every piece of information."
+                ],
+                [
+                    "player_7",
+                    "Good morning everyone, and it's truly sad to start the game with Apple's removal. Grape, your claim as Seer and clearing Plum is incredibly significant this early on. It gives us a starting point, but as Cherry rightly pointed out, we must proceed with caution. If Grape is truly our Seer, protecting them is paramount, and Plum's clear status is a huge advantage. So, let's all pay very close attention to how everyone reacts to this information. Do you challenge it, support it, or avoid it? We need everyone to speak up and contribute to this discussion. Let's use this as our first real test: who is willing to engage with Grape's claim constructively, and who might try to sow doubt or distract?"
+                ],
+                [
+                    "player_5",
+                    "Good morning everyone. First, thank you, Grape, for coming forward and for your investigation. I can confirm your read: I am indeed a Villager. This is incredibly important information for us, and it means we have a confirmed Seer in the game. Cherry and Banana, I agree we must be cautious, but if Grape is truly our Seer, protecting them is paramount. Now that we have this foundational piece of information, let's use it. How do others feel about Grape's claim, and what are your thoughts on who we should be looking at next?"
+                ],
+                [
+                    "player_2",
+                    "Good morning everyone. Losing Apple right off the bat is tough. Grape, your claim as Seer and Plum\u2019s immediate confirmation that they are a Villager is a huge piece of information for us. This is a very bold and powerful opening, and if true, it gives us a vital confirmed Villager and our Seer. I agree we must be cautious, but we cannot ignore this. Now, I really need to hear from Peach and Kiwi. You haven't spoken yet. What are your thoughts on Grape's claim and Plum's confirmation? Your reactions to this are incredibly important for the Village right now."
+                ],
+                [
+                    "player_1",
+                    "Good morning everyone. Losing Apple right away is certainly a difficult start to the game. Grape, your claim as Seer and Plum\u2019s immediate confirmation that they are a Villager is a huge piece of information, and it definitely gives us a lot to think about. However, I agree with Cherry and Banana; we absolutely must be incredibly cautious. This is a very powerful and conveniently early revelation, and we need to consider all angles. Plum, your quick confirmation is noted, but frankly, it feels almost too neat when linked with Grape's claim. Mango, you're right to ask for our thoughts, and mine is that instead of just validating this, we should be scrutinizing everyone's reactions and motivations. Who benefits most from us accepting this foundational information without deeper questioning right now?"
+                ],
+                [
+                    "player_3",
+                    "Good morning everyone. It's truly a somber start losing Apple so quickly. Grape, your claim as Seer and Plum's immediate confirmation is indeed a very significant piece of information, as many have said. However, I share some of the caution expressed. It's an incredibly bold and, dare I say, conveniently early revelation right at the start. While it could be our truth, it could also be a very clever tactic to gain trust or distract. I think we need to be incredibly vigilant and observe not just the claim itself, but everyone's reactions to it. Who benefits most from us immediately accepting this as gospel, and who might be subtly trying to push us into a false sense of security? We must scrutinize all angles and not rush to judgment based on one early declaration, no matter how compelling it seems."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_0": "player_2",
+                    "player_7": "player_4",
+                    "player_5": "player_1",
+                    "player_2": "player_5",
+                    "player_1": "player_4",
+                    "player_3": "player_2",
+                    "player_4": "player_1"
+                },
+                {
+                    "player_0": "player_4",
+                    "player_7": "player_1",
+                    "player_5": "player_1",
+                    "player_2": "player_1",
+                    "player_1": "player_4",
+                    "player_3": "player_4",
+                    "player_4": "player_1"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_0",
+                "player_7",
+                "player_5",
+                "player_2"
+            ],
+            "eliminated": "player_4",
+            "unmasked": "player_3",
+            "protected": null,
+            "exiled": "player_3",
+            "debate": [
+                [
+                    "player_0",
+                    "The Werewolves killing Grape last night confirms Grape was the Seer, and by extension, Plum is a Villager. This immediately puts Peach under high suspicion. Peach, your skepticism towards Grape's early reveal, which mirrored Kiwi's, is now extremely damning given the Seer's immediate demise. We need to identify the other Werewolf and quickly. Doctor, if you're out there, we need to strategize."
+                ],
+                [
+                    "player_7",
+                    "Cherry, I completely agree. Grape being targeted by the Werewolves unequivocally confirms Grape was our Seer, which in turn means Plum is a confirmed Villager. This puts Peach under extremely heavy scrutiny. Your strong and vocal skepticism towards Grape's claim, mirroring Kiwi's, now appears to be a direct attempt to discredit our Seer. The timing and the outcome are too damning to ignore. Peach, what is your defense? Doctor, if you are among us, please be ready; your actions are vital."
+                ],
+                [
+                    "player_5",
+                    "Cherry and Banana are absolutely correct. Grape being targeted by the Werewolves unequivocally confirms Grape was our Seer, and by extension, my role as a Villager is confirmed. Peach, your vocal skepticism towards Grape's reveal now looks like a direct attempt to discredit the Seer. The pattern is too clear. We must vote Peach today to remove one Werewolf. Doctor, if you are among us, please be ready; your actions will be vital tonight."
+                ],
+                [
+                    "player_2",
+                    "It is undeniable that Grape was our Seer, and Plum is a confirmed Villager. This makes Peach's earlier skepticism incredibly damning. The timing, the target, and your attempts to discredit the Seer, Peach, are too coincidental. I agree with Cherry, Banana, and Plum; the evidence points strongly to you. We must vote Peach today to remove a Werewolf. Doctor, if you are out there, we need you to be strategic and ready to save someone vital tonight. We cannot afford another loss."
+                ],
+                [
+                    "player_3",
+                    "I understand the immense suspicion on me, especially after Grape's tragic death and my earlier caution. However, in a game built on deception, initial skepticism towards *any* early, bold claim is a natural, defensive reflex, not an inherent sign of guilt. The speed and absolute uniformity with which everyone is now rushing to accuse me is precisely what makes me extremely wary. This kind of overwhelming consensus, while seemingly logical, can be easily manipulated. Is it not more likely that the true remaining Werewolf is actively leveraging this convenient narrative, using my earlier words as a perfect scapegoat, to quickly eliminate an innocent player and create a false sense of security? We cannot afford to be led by what appears to be an easy answer. Instead of this unanimous charge, shouldn't we be critically asking why the Doctor, whose role is now more vital than ever, has remained silent amidst such a crucial and rapid push to judgment?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_0": "player_3",
+                    "player_7": "player_3",
+                    "player_5": "player_3",
+                    "player_2": "player_0",
+                    "player_3": "player_5"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

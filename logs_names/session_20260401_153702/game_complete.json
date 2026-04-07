@@ -1,0 +1,1434 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_7",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Jacob",
+            "player_1": "Derek",
+            "player_2": "Hayley",
+            "player_3": "Harold",
+            "player_4": "David",
+            "player_5": "Sam",
+            "player_6": "Scott",
+            "player_7": "Jackson"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Scott and learned they are a Villager."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Scott and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_2",
+                "player_4",
+                "player_1",
+                "player_5"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_6": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_0",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Jacob",
+            "player_1": "Derek",
+            "player_2": "Hayley",
+            "player_3": "Harold",
+            "player_4": "David",
+            "player_5": "Sam",
+            "player_6": "Scott",
+            "player_7": "Jackson"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Scott",
+            "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+            "Round 0: Summary: Round 0 began with the grim news that Jackson was removed by the Werewolves. During the night, I chose to protect Scott. The day debate saw universal agreement on the need for communication. Harold then tried to push for immediate 'gut feelings' and accusations, but Derek and Sam (and I) cautioned against premature judgment, advocating for more substantive discussion. Ultimately, Harold was voted out by the majority. This tells me the town found Harold's approach suspicious or unhelpful. Derek and Sam, who aligned with my more analytical approach, seem like potentially rational allies. Scott, whom I protected, remained in the game and focused on general calls for attention.",
+            "Round 1: During the night, I chose to protect Jacob",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Scott",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: Round 0 began with the grim news that Jackson was removed by the Werewolves. During the night, I chose to protect Scott. The day debate saw universal agreement on the need for communication. Harold then tried to push for immediate 'gut feelings' and accusations, but Derek and Sam (and I) cautioned against premature judgment, advocating for more substantive discussion. Ultimately, Harold was voted out by the majority. This tells me the town found Harold's approach suspicious or unhelpful. Derek and Sam, who aligned with my more analytical approach, seem like potentially rational allies. Scott, whom I protected, remained in the game and focused on general calls for attention.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Jacob",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_2",
+                "player_4",
+                "player_1",
+                "player_5"
+            ],
+            "debate": [
+                [
+                    "player_4",
+                    "Good morning, everyone. The Moderator's announcement that no one was removed last night is fantastic news! It means our Doctor made a successful save, and that's a huge victory for the Village, buying us crucial time. We need to use this gift wisely. Given this, if anyone has any observations or information they feel they can safely share to help us narrow down who the Werewolves might be, now is the time to start. Let's build on this success and work together to figure things out."
+                ],
+                [
+                    "player_1",
+                    "Good morning, David, everyone. It's indeed fantastic that no one was removed; a huge credit to our Doctor! That's a definite win for the Village. But, it also means we don't know who the Werewolves tried to target. That's a crucial piece of information that's now hidden from us. Who did the Werewolves see as a threat? Who was protected? This 'successful save' actually creates a new layer of mystery that makes finding the wolves even harder. We need to be wary that this lack of information doesn't just benefit the Doctor, but perhaps, inadvertently, the Werewolves too, by obscuring their intentions."
+                ],
+                [
+                    "player_2",
+                    "Good morning, everyone. David, I completely agree: the Doctor's save is a massive win for the Village, buying us precious time and proving we have strong protective roles working for us! Derek, I understand your point about the Werewolves' target being unknown, and while it's true it adds complexity, I don't believe it inherently makes our task 'harder' for *us*. Instead, it challenges us to be even more observant. We now have a full day without a night kill to scrutinize everyone's contributions. I urge everyone, especially those who haven't spoken yet like Scott, Sam, and Jacob, to share their thoughts. We need active participation and keen observation to find the inconsistencies. Let's not let the unknown deter us, but rather motivate us to analyze more deeply and unite in finding the wolves."
+                ],
+                [
+                    "player_0",
+                    "Good morning, everyone. David and Hayley, your optimism is well-placed. Derek, your concern about the 'crucial piece of information that's now hidden' is valid from an outsider's perspective, but I can actually clarify that point. No one was removed last night because I, Jacob, am the Doctor, and I successfully protected myself. This means the Werewolves targeted me. Their attempt was foiled, and while it puts a target on my back, it also gives the Village a vital lead: the Werewolves are trying to eliminate protective roles early. Let's not let this information obscure anything; instead, let's use it to analyze who might have wanted me out. Who benefits from the Doctor being silenced?"
+                ],
+                [
+                    "player_5",
+                    "Good morning, everyone. Jacob, that's a very bold claim, and if true, it's certainly significant. It instantly resolves the 'mystery' Derek mentioned, and indeed, if you are the Doctor and saved yourself, the Village owes you a debt. However, I can't shake the feeling that accepting this at face value, immediately after the moderator's announcement, feels a little too neat. A 'successful save' allows a Doctor to claim credit, but it also allows a clever Werewolf to claim *to be* the Doctor and control the narrative, especially if they know they were targeted. Why reveal this now, so definitively? Are we to simply trust this single declaration and immediately point fingers based on it? As Hayley said, we have time to scrutinize. Let's not let a seemingly helpful revelation prevent us from looking deeper into all possibilities and motivations, rather than just accepting the most convenient explanation."
+                ],
+                [
+                    "player_6",
+                    "Good morning everyone. First, it's genuinely excellent news that no one was removed last night. A huge thank you to our Doctor for keeping the village safe \u2013 that's a real morale boost and buys us precious time. Now, Jacob, your claim to be the Doctor, and that you saved yourself, is incredibly significant, if true. It would clarify Derek's point about the hidden target and give us a clear direction. However, Sam raises a critical point: while a genuine Doctor would reveal this, a clever Werewolf could also seize this exact opportunity to establish a false identity and control the narrative. We simply cannot take such a game-changing declaration at face value without serious scrutiny. How do we, as a village, verify this claim? If you are indeed the Doctor, Jacob, what steps can we take to confirm it or what further information can you provide to assure us? We must be very careful not to let a seemingly convenient answer blind us to other possibilities. Let's continue to scrutinize everyone's statements and motivations, as Hayley suggested, before making any quick judgments based solely on this one claim."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "last_protected": "player_0"
+    },
+    "villagers": [
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 started grimly with Jackson being killed by the Werewolves. I, along with Hayley and David, stressed the importance of immediate communication and teamwork. Harold then pushed hard for us to share 'gut feelings' and judge players based on their quietness or 'generic' statements, which felt a bit rushed. Derek immediately countered Harold, warning against premature judgments and suggesting Werewolves want us to misdirect. Sam and Jacob then expanded on this, advocating for a balanced approach, focusing on the substance and intent behind people's words rather than just gut feelings. Given Harold was subsequently voted out, his aggressive stance on early accusations now looks very suspicious, making Derek, Sam, and Jacob's caution seem justified.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: As Scott, I was initially relieved no one was removed last night, acknowledging our Doctor. David and Hayley were optimistic, but Derek raised concerns about the unknown Werewolf target. Jacob then made the significant claim that he was the Doctor, saved himself, and was the Werewolf's target. Sam, however, immediately articulated strong skepticism, suggesting this could be a Werewolf trying to control the narrative. I agreed with Sam, stressing that we couldn't take such a pivotal claim at face value without verification from Jacob. Ultimately, the village voted to remove Jacob. This outcome makes Sam's skepticism look very prescient, leading me to believe Jacob's claim was likely false, or that we've made a terrible mistake in removing a protective role."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started grimly with Jackson being killed by the Werewolves. I, along with Hayley and David, stressed the importance of immediate communication and teamwork. Harold then pushed hard for us to share 'gut feelings' and judge players based on their quietness or 'generic' statements, which felt a bit rushed. Derek immediately countered Harold, warning against premature judgments and suggesting Werewolves want us to misdirect. Sam and Jacob then expanded on this, advocating for a balanced approach, focusing on the substance and intent behind people's words rather than just gut feelings. Given Harold was subsequently voted out, his aggressive stance on early accusations now looks very suspicious, making Derek, Sam, and Jacob's caution seem justified.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Scott, I was initially relieved no one was removed last night, acknowledging our Doctor. David and Hayley were optimistic, but Derek raised concerns about the unknown Werewolf target. Jacob then made the significant claim that he was the Doctor, saved himself, and was the Werewolf's target. Sam, however, immediately articulated strong skepticism, suggesting this could be a Werewolf trying to control the narrative. I agreed with Sam, stressing that we couldn't take such a pivotal claim at face value without verification from Jacob. Ultimately, the village voted to remove Jacob. This outcome makes Sam's skepticism look very prescient, leading me to believe Jacob's claim was likely false, or that we've made a terrible mistake in removing a protective role.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 started grimly with the Werewolves removing Jackson, and then the town collectively voted out Harold. In the debate, I, along with Scott and David, stressed the urgent need for open communication and teamwork. Harold then pushed for players to share 'gut feelings' and identify generic statements, suggesting we look for quiet players or those making 'too generic' comments. However, Derek, Sam, and Jacob quickly countered this, arguing against rushing to judgment and instead advocating for careful observation, focusing on the intent and substance behind statements. The fact that Harold, who promoted early accusations, was then voted out by the town, strongly suggests that the town prefers a more cautious and analytical approach in this initial stage.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: This round began with the positive news from the Moderator that no one was removed last night, confirming a successful Doctor's save. David and I were optimistic, seeing it as a clear win and crucial time for the Village. Derek, however, voiced a more cautious perspective, highlighting that the Doctor's save meant we lost information about the Werewolves' target, potentially obscuring their intentions. The debate then took a critical turn when Jacob declared he was the Doctor and had saved himself, claiming the Werewolves had targeted him. This information was framed as a 'vital lead' by Jacob. However, Sam and Scott immediately expressed strong skepticism, pointing out that such a convenient revelation could be a clever Werewolf tactic to control the narrative. They rightly called for intense scrutiny and verification, which I agree with, to prevent us from being misled by a 'too neat' explanation. Ultimately, despite his claim, Jacob was voted out by the village. This outcome strongly validates Sam's and Scott's cautious and analytical approach, making me view them as potentially reliable Villagers.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started grimly with the Werewolves removing Jackson, and then the town collectively voted out Harold. In the debate, I, along with Scott and David, stressed the urgent need for open communication and teamwork. Harold then pushed for players to share 'gut feelings' and identify generic statements, suggesting we look for quiet players or those making 'too generic' comments. However, Derek, Sam, and Jacob quickly countered this, arguing against rushing to judgment and instead advocating for careful observation, focusing on the intent and substance behind statements. The fact that Harold, who promoted early accusations, was then voted out by the town, strongly suggests that the town prefers a more cautious and analytical approach in this initial stage.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with the positive news from the Moderator that no one was removed last night, confirming a successful Doctor's save. David and I were optimistic, seeing it as a clear win and crucial time for the Village. Derek, however, voiced a more cautious perspective, highlighting that the Doctor's save meant we lost information about the Werewolves' target, potentially obscuring their intentions. The debate then took a critical turn when Jacob declared he was the Doctor and had saved himself, claiming the Werewolves had targeted him. This information was framed as a 'vital lead' by Jacob. However, Sam and Scott immediately expressed strong skepticism, pointing out that such a convenient revelation could be a clever Werewolf tactic to control the narrative. They rightly called for intense scrutiny and verification, which I agree with, to prevent us from being misled by a 'too neat' explanation. Ultimately, despite his claim, Jacob was voted out by the village. This outcome strongly validates Sam's and Scott's cautious and analytical approach, making me view them as potentially reliable Villagers.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 started somberly with Jackson's removal by the Werewolves, setting a tense tone. Scott and Hayley immediately stressed the need for active communication and teamwork, which I readily agreed with, emphasizing sharing observations to establish presence. Harold then pushed for more 'productive' talk beyond generic statements, urging us to share 'gut feelings' or identify quiet players. However, this was met with significant caution from Derek, who felt it was too early for such judgments, warning against falling into Werewolf traps by accusing too quickly. Sam elaborated on this, suggesting we be wary of both deliberately generic statements and those trying too hard, focusing on intent. Jacob then synthesized these points, advocating for a balance of speaking up with substance, scrutinizing content and reasoning, rather than rushing to 'gut feelings.' The crucial outcome was Harold being voted out by the majority, which means the players, including myself, ultimately rejected his more direct approach in favor of a more cautious, deliberate one championed by Derek, Sam, and Jacob. I need to reflect on why Harold was seen as suspicious, and whether the players who opposed him acted genuinely as Villagers or had other motives.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: Round 1 began with the fantastic news that no one was removed last night, which I celebrated as a Doctor's save. Derek, however, wisely noted that this success also created a 'new mystery' by hiding the Werewolves' target. Hayley reinforced my optimism, countering Derek's concern and urging more participation, particularly from Scott, Sam, and Jacob. Jacob then dropped a bombshell, claiming to be the Doctor and stating he saved himself, which meant the Werewolves targeted him. However, Sam immediately and articulately expressed strong skepticism, pointing out how a clever Werewolf could use this exact scenario to control the narrative. Scott echoed Sam's concerns, emphasizing the need for scrutiny and asking Jacob for verification. Crucially, despite Jacob's claim, the village ultimately voted to remove him, which makes Sam and Scott's cautious, questioning approach seem very insightful. This leaves me wondering if we made a huge mistake or if Jacob was indeed a Werewolf trying to bluff his way through.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started somberly with Jackson's removal by the Werewolves, setting a tense tone. Scott and Hayley immediately stressed the need for active communication and teamwork, which I readily agreed with, emphasizing sharing observations to establish presence. Harold then pushed for more 'productive' talk beyond generic statements, urging us to share 'gut feelings' or identify quiet players. However, this was met with significant caution from Derek, who felt it was too early for such judgments, warning against falling into Werewolf traps by accusing too quickly. Sam elaborated on this, suggesting we be wary of both deliberately generic statements and those trying too hard, focusing on intent. Jacob then synthesized these points, advocating for a balance of speaking up with substance, scrutinizing content and reasoning, rather than rushing to 'gut feelings.' The crucial outcome was Harold being voted out by the majority, which means the players, including myself, ultimately rejected his more direct approach in favor of a more cautious, deliberate one championed by Derek, Sam, and Jacob. I need to reflect on why Harold was seen as suspicious, and whether the players who opposed him acted genuinely as Villagers or had other motives.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 began with the fantastic news that no one was removed last night, which I celebrated as a Doctor's save. Derek, however, wisely noted that this success also created a 'new mystery' by hiding the Werewolves' target. Hayley reinforced my optimism, countering Derek's concern and urging more participation, particularly from Scott, Sam, and Jacob. Jacob then dropped a bombshell, claiming to be the Doctor and stating he saved himself, which meant the Werewolves targeted him. However, Sam immediately and articulately expressed strong skepticism, pointing out how a clever Werewolf could use this exact scenario to control the narrative. Scott echoed Sam's concerns, emphasizing the need for scrutiny and asking Jacob for verification. Crucially, despite Jacob's claim, the village ultimately voted to remove him, which makes Sam and Scott's cautious, questioning approach seem very insightful. This leaves me wondering if we made a huge mistake or if Jacob was indeed a Werewolf trying to bluff his way through.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Well, that was a quick start. Jackson is already gone, which means the Werewolves are active. It's only Round 0, so let's all make sure we're paying close attention and speaking up. We need to work together from the very beginning to figure this out."
+                    ],
+                    [
+                        "player_2",
+                        "Absolutely, Scott. That was a stark reminder that the Werewolves are already among us. We can't afford to be quiet or reserved. Everyone needs to share their thoughts and observations, no matter how small they seem. Let's really listen to each other and work together to figure out who is responsible before more villagers are lost."
+                    ],
+                    [
+                        "player_4",
+                        "It's definitely a somber start to lose Jackson so quickly. Scott and Hayley are spot on, we absolutely need everyone talking and engaged from the get-go. I think it's vital for each of us to share our initial reactions and any observations, no matter how minor, to establish our presence and intentions. Let's use this time to carefully listen and observe each other \u2013 active participation is our first line of defense."
+                    ],
+                    [
+                        "player_3",
+                        "I completely agree with Scott, Hayley, and David. Losing Jackson this early is a stark reminder that the Werewolves are already very active, and we absolutely need to communicate and work together. However, simply stating that we need to talk isn't enough. We need to be productive in our talking. Does anyone have any initial impressions, even just a gut feeling, about any particular player? Perhaps someone seems unusually quiet, or their statement felt a little too generic? We need to start forming opinions and sharing them if we want to catch the Werewolves."
+                    ],
+                    [
+                        "player_1",
+                        "I completely agree with everyone that losing Jackson is a terrible start, and active communication is paramount. Harold, I appreciate your call for productive talk and initial impressions, but I wonder if immediately jumping to 'gut feelings' or labeling statements as 'too generic' in Round 0 might be a bit premature. We've only just begun, and everyone is trying to find their footing. Let's focus on listening carefully to *everyone's* contributions and how they evolve, rather than rushing to judge sincerity right off the bat. The Werewolves want us to misdirect and accuse each other too quickly, so perhaps cautious observation is our best first step."
+                    ],
+                    [
+                        "player_5",
+                        "I absolutely agree with everyone that losing Jackson immediately means we need strong communication, but I'm finding myself wondering about the *nature* of that communication. Harold, you're right that 'generic' statements can be unhelpful, but as Derek pointed out, rushing to judgment isn't wise either. It's a fine line. What if someone is being deliberately generic to blend in, or conversely, what if someone is trying too hard to seem helpful or insightful, pushing specific agendas too soon? Let's not just listen to the words, but the *intent* behind them. I think we need to be equally wary of those who say too little and those who say too much in this initial phase."
+                    ],
+                    [
+                        "player_0",
+                        "Everyone's right, losing Jackson so early is a grim start, and open communication is absolutely critical. Harold, I appreciate your call for more productive talk than just generic statements. However, Derek and Sam also raise a valid point that rushing to judgment or relying purely on 'gut feelings' in Round 0 could lead us astray. Let's aim for a balance: speak up, but with substance. Instead of just initial impressions, let's focus on the *specifics* of what people are saying, and the *reasoning* behind their contributions. Are we hearing genuine thoughts, or are some statements just filling airtime without offering anything concrete? Let's scrutinize the content and intention behind everyone's words from the very beginning."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: In Round 0, after Jackson was removed by the Werewolves, the village debated how to proceed. Scott, Hayley, and David initially stressed the need for communication. Harold then pushed for immediate 'gut feelings' and judging 'generic' statements to find Werewolves. I, as Derek, countered this, arguing that rushing to judgment was premature and that 'cautious observation' was better. My fellow Werewolf, Sam, supported this by questioning the 'intent' behind statements and being wary of both quiet and overly talkative players. Jacob tried to find a middle ground, advocating for scrutinizing 'specifics' and 'reasoning'. Crucially, Harold was voted out by the village. This suggests my and Sam's strategy to slow down early accusations may have worked, as the villagers chose to eliminate the most aggressive accuser.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: The round began with David and Hayley expressing optimism about the Doctor's save. I attempted to create some ambiguity by highlighting the 'mystery' of the unknown target, but Jacob then made the very bold and dangerous claim that he was the Doctor and saved himself, directly identifying me and Sam as his attackers. Fortunately, Sam immediately countered Jacob's claim, suggesting it could be a Werewolf trying to control the narrative. Scott then surprisingly reinforced Sam's skepticism, asking Jacob for proof and urging the village to scrutinize. This critical turn of events led to Jacob's elimination by the village, which is a huge win for us. It seems David and Hayley are more optimistic, while Scott is cautious and susceptible to our narrative of skepticism.",
+                "Round 2: During the night, we decided to eliminate Scott.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: In Round 0, after Jackson was removed by the Werewolves, the village debated how to proceed. Scott, Hayley, and David initially stressed the need for communication. Harold then pushed for immediate 'gut feelings' and judging 'generic' statements to find Werewolves. I, as Derek, countered this, arguing that rushing to judgment was premature and that 'cautious observation' was better. My fellow Werewolf, Sam, supported this by questioning the 'intent' behind statements and being wary of both quiet and overly talkative players. Jacob tried to find a middle ground, advocating for scrutinizing 'specifics' and 'reasoning'. Crucially, Harold was voted out by the village. This suggests my and Sam's strategy to slow down early accusations may have worked, as the villagers chose to eliminate the most aggressive accuser.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The round began with David and Hayley expressing optimism about the Doctor's save. I attempted to create some ambiguity by highlighting the 'mystery' of the unknown target, but Jacob then made the very bold and dangerous claim that he was the Doctor and saved himself, directly identifying me and Sam as his attackers. Fortunately, Sam immediately countered Jacob's claim, suggesting it could be a Werewolf trying to control the narrative. Scott then surprisingly reinforced Sam's skepticism, asking Jacob for proof and urging the village to scrutinize. This critical turn of events led to Jacob's elimination by the village, which is a huge win for us. It seems David and Hayley are more optimistic, while Scott is cautious and susceptible to our narrative of skepticism.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: I need to remember that Jackson was the Werewolves' target this first night. It was a relief that Harold, who was pushing for us to share 'gut feelings' and 'initial impressions' too early, was voted out by the villagers, taking a potential threat off the board. During the debate, Derek and I worked to guide the conversation towards cautious observation, warning against rushing to judgment, which helped deflect early suspicion. No one accused me or Derek directly. Jacob, however, seems more analytical, wanting to scrutinize the specifics and reasoning behind statements, which I'll need to watch. Scott, Hayley, and David mostly offered generic calls for communication, which gives me less insight into their individual thinking for now.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: During the debate, David and Hayley were optimistic about the Doctor's save, calling for cooperation and scrutiny. Derek, my ally, cleverly framed the 'no removal' as a new mystery for the village. Then, Jacob claimed to be the Doctor and stated he saved himself, meaning he was our target last night. I immediately challenged his declaration, suggesting a Werewolf could use that exact scenario to control the narrative. This was effective, as Scott then echoed my concerns, saying we can't take Jacob's claim at face value. It's clear Jacob is the Doctor, and we need to deal with him, but for now, we've successfully planted doubt about his role, which is a good tactical win.",
+                "Round 2: During the night, we decided to eliminate Scott.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I need to remember that Jackson was the Werewolves' target this first night. It was a relief that Harold, who was pushing for us to share 'gut feelings' and 'initial impressions' too early, was voted out by the villagers, taking a potential threat off the board. During the debate, Derek and I worked to guide the conversation towards cautious observation, warning against rushing to judgment, which helped deflect early suspicion. No one accused me or Derek directly. Jacob, however, seems more analytical, wanting to scrutinize the specifics and reasoning behind statements, which I'll need to watch. Scott, Hayley, and David mostly offered generic calls for communication, which gives me less insight into their individual thinking for now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: During the debate, David and Hayley were optimistic about the Doctor's save, calling for cooperation and scrutiny. Derek, my ally, cleverly framed the 'no removal' as a new mystery for the village. Then, Jacob claimed to be the Doctor and stated he saved himself, meaning he was our target last night. I immediately challenged his declaration, suggesting a Werewolf could use that exact scenario to control the narrative. This was effective, as Scott then echoed my concerns, saying we can't take Jacob's claim at face value. It's clear Jacob is the Doctor, and we need to deal with him, but for now, we've successfully planted doubt about his role, which is a good tactical win.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": "player_1"
+            }
+        }
+    ],
+    "players": {
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 started grimly with Jackson being killed by the Werewolves. I, along with Hayley and David, stressed the importance of immediate communication and teamwork. Harold then pushed hard for us to share 'gut feelings' and judge players based on their quietness or 'generic' statements, which felt a bit rushed. Derek immediately countered Harold, warning against premature judgments and suggesting Werewolves want us to misdirect. Sam and Jacob then expanded on this, advocating for a balanced approach, focusing on the substance and intent behind people's words rather than just gut feelings. Given Harold was subsequently voted out, his aggressive stance on early accusations now looks very suspicious, making Derek, Sam, and Jacob's caution seem justified.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: As Scott, I was initially relieved no one was removed last night, acknowledging our Doctor. David and Hayley were optimistic, but Derek raised concerns about the unknown Werewolf target. Jacob then made the significant claim that he was the Doctor, saved himself, and was the Werewolf's target. Sam, however, immediately articulated strong skepticism, suggesting this could be a Werewolf trying to control the narrative. I agreed with Sam, stressing that we couldn't take such a pivotal claim at face value without verification from Jacob. Ultimately, the village voted to remove Jacob. This outcome makes Sam's skepticism look very prescient, leading me to believe Jacob's claim was likely false, or that we've made a terrible mistake in removing a protective role."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started grimly with Jackson being killed by the Werewolves. I, along with Hayley and David, stressed the importance of immediate communication and teamwork. Harold then pushed hard for us to share 'gut feelings' and judge players based on their quietness or 'generic' statements, which felt a bit rushed. Derek immediately countered Harold, warning against premature judgments and suggesting Werewolves want us to misdirect. Sam and Jacob then expanded on this, advocating for a balanced approach, focusing on the substance and intent behind people's words rather than just gut feelings. Given Harold was subsequently voted out, his aggressive stance on early accusations now looks very suspicious, making Derek, Sam, and Jacob's caution seem justified.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As Scott, I was initially relieved no one was removed last night, acknowledging our Doctor. David and Hayley were optimistic, but Derek raised concerns about the unknown Werewolf target. Jacob then made the significant claim that he was the Doctor, saved himself, and was the Werewolf's target. Sam, however, immediately articulated strong skepticism, suggesting this could be a Werewolf trying to control the narrative. I agreed with Sam, stressing that we couldn't take such a pivotal claim at face value without verification from Jacob. Ultimately, the village voted to remove Jacob. This outcome makes Sam's skepticism look very prescient, leading me to believe Jacob's claim was likely false, or that we've made a terrible mistake in removing a protective role.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 started grimly with the Werewolves removing Jackson, and then the town collectively voted out Harold. In the debate, I, along with Scott and David, stressed the urgent need for open communication and teamwork. Harold then pushed for players to share 'gut feelings' and identify generic statements, suggesting we look for quiet players or those making 'too generic' comments. However, Derek, Sam, and Jacob quickly countered this, arguing against rushing to judgment and instead advocating for careful observation, focusing on the intent and substance behind statements. The fact that Harold, who promoted early accusations, was then voted out by the town, strongly suggests that the town prefers a more cautious and analytical approach in this initial stage.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: This round began with the positive news from the Moderator that no one was removed last night, confirming a successful Doctor's save. David and I were optimistic, seeing it as a clear win and crucial time for the Village. Derek, however, voiced a more cautious perspective, highlighting that the Doctor's save meant we lost information about the Werewolves' target, potentially obscuring their intentions. The debate then took a critical turn when Jacob declared he was the Doctor and had saved himself, claiming the Werewolves had targeted him. This information was framed as a 'vital lead' by Jacob. However, Sam and Scott immediately expressed strong skepticism, pointing out that such a convenient revelation could be a clever Werewolf tactic to control the narrative. They rightly called for intense scrutiny and verification, which I agree with, to prevent us from being misled by a 'too neat' explanation. Ultimately, despite his claim, Jacob was voted out by the village. This outcome strongly validates Sam's and Scott's cautious and analytical approach, making me view them as potentially reliable Villagers.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started grimly with the Werewolves removing Jackson, and then the town collectively voted out Harold. In the debate, I, along with Scott and David, stressed the urgent need for open communication and teamwork. Harold then pushed for players to share 'gut feelings' and identify generic statements, suggesting we look for quiet players or those making 'too generic' comments. However, Derek, Sam, and Jacob quickly countered this, arguing against rushing to judgment and instead advocating for careful observation, focusing on the intent and substance behind statements. The fact that Harold, who promoted early accusations, was then voted out by the town, strongly suggests that the town prefers a more cautious and analytical approach in this initial stage.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with the positive news from the Moderator that no one was removed last night, confirming a successful Doctor's save. David and I were optimistic, seeing it as a clear win and crucial time for the Village. Derek, however, voiced a more cautious perspective, highlighting that the Doctor's save meant we lost information about the Werewolves' target, potentially obscuring their intentions. The debate then took a critical turn when Jacob declared he was the Doctor and had saved himself, claiming the Werewolves had targeted him. This information was framed as a 'vital lead' by Jacob. However, Sam and Scott immediately expressed strong skepticism, pointing out that such a convenient revelation could be a clever Werewolf tactic to control the narrative. They rightly called for intense scrutiny and verification, which I agree with, to prevent us from being misled by a 'too neat' explanation. Ultimately, despite his claim, Jacob was voted out by the village. This outcome strongly validates Sam's and Scott's cautious and analytical approach, making me view them as potentially reliable Villagers.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 started somberly with Jackson's removal by the Werewolves, setting a tense tone. Scott and Hayley immediately stressed the need for active communication and teamwork, which I readily agreed with, emphasizing sharing observations to establish presence. Harold then pushed for more 'productive' talk beyond generic statements, urging us to share 'gut feelings' or identify quiet players. However, this was met with significant caution from Derek, who felt it was too early for such judgments, warning against falling into Werewolf traps by accusing too quickly. Sam elaborated on this, suggesting we be wary of both deliberately generic statements and those trying too hard, focusing on intent. Jacob then synthesized these points, advocating for a balance of speaking up with substance, scrutinizing content and reasoning, rather than rushing to 'gut feelings.' The crucial outcome was Harold being voted out by the majority, which means the players, including myself, ultimately rejected his more direct approach in favor of a more cautious, deliberate one championed by Derek, Sam, and Jacob. I need to reflect on why Harold was seen as suspicious, and whether the players who opposed him acted genuinely as Villagers or had other motives.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: Round 1 began with the fantastic news that no one was removed last night, which I celebrated as a Doctor's save. Derek, however, wisely noted that this success also created a 'new mystery' by hiding the Werewolves' target. Hayley reinforced my optimism, countering Derek's concern and urging more participation, particularly from Scott, Sam, and Jacob. Jacob then dropped a bombshell, claiming to be the Doctor and stating he saved himself, which meant the Werewolves targeted him. However, Sam immediately and articulately expressed strong skepticism, pointing out how a clever Werewolf could use this exact scenario to control the narrative. Scott echoed Sam's concerns, emphasizing the need for scrutiny and asking Jacob for verification. Crucially, despite Jacob's claim, the village ultimately voted to remove him, which makes Sam and Scott's cautious, questioning approach seem very insightful. This leaves me wondering if we made a huge mistake or if Jacob was indeed a Werewolf trying to bluff his way through.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started somberly with Jackson's removal by the Werewolves, setting a tense tone. Scott and Hayley immediately stressed the need for active communication and teamwork, which I readily agreed with, emphasizing sharing observations to establish presence. Harold then pushed for more 'productive' talk beyond generic statements, urging us to share 'gut feelings' or identify quiet players. However, this was met with significant caution from Derek, who felt it was too early for such judgments, warning against falling into Werewolf traps by accusing too quickly. Sam elaborated on this, suggesting we be wary of both deliberately generic statements and those trying too hard, focusing on intent. Jacob then synthesized these points, advocating for a balance of speaking up with substance, scrutinizing content and reasoning, rather than rushing to 'gut feelings.' The crucial outcome was Harold being voted out by the majority, which means the players, including myself, ultimately rejected his more direct approach in favor of a more cautious, deliberate one championed by Derek, Sam, and Jacob. I need to reflect on why Harold was seen as suspicious, and whether the players who opposed him acted genuinely as Villagers or had other motives.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 began with the fantastic news that no one was removed last night, which I celebrated as a Doctor's save. Derek, however, wisely noted that this success also created a 'new mystery' by hiding the Werewolves' target. Hayley reinforced my optimism, countering Derek's concern and urging more participation, particularly from Scott, Sam, and Jacob. Jacob then dropped a bombshell, claiming to be the Doctor and stating he saved himself, which meant the Werewolves targeted him. However, Sam immediately and articulately expressed strong skepticism, pointing out how a clever Werewolf could use this exact scenario to control the narrative. Scott echoed Sam's concerns, emphasizing the need for scrutiny and asking Jacob for verification. Crucially, despite Jacob's claim, the village ultimately voted to remove him, which makes Sam and Scott's cautious, questioning approach seem very insightful. This leaves me wondering if we made a huge mistake or if Jacob was indeed a Werewolf trying to bluff his way through.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Well, that was a quick start. Jackson is already gone, which means the Werewolves are active. It's only Round 0, so let's all make sure we're paying close attention and speaking up. We need to work together from the very beginning to figure this out."
+                    ],
+                    [
+                        "player_2",
+                        "Absolutely, Scott. That was a stark reminder that the Werewolves are already among us. We can't afford to be quiet or reserved. Everyone needs to share their thoughts and observations, no matter how small they seem. Let's really listen to each other and work together to figure out who is responsible before more villagers are lost."
+                    ],
+                    [
+                        "player_4",
+                        "It's definitely a somber start to lose Jackson so quickly. Scott and Hayley are spot on, we absolutely need everyone talking and engaged from the get-go. I think it's vital for each of us to share our initial reactions and any observations, no matter how minor, to establish our presence and intentions. Let's use this time to carefully listen and observe each other \u2013 active participation is our first line of defense."
+                    ],
+                    [
+                        "player_3",
+                        "I completely agree with Scott, Hayley, and David. Losing Jackson this early is a stark reminder that the Werewolves are already very active, and we absolutely need to communicate and work together. However, simply stating that we need to talk isn't enough. We need to be productive in our talking. Does anyone have any initial impressions, even just a gut feeling, about any particular player? Perhaps someone seems unusually quiet, or their statement felt a little too generic? We need to start forming opinions and sharing them if we want to catch the Werewolves."
+                    ],
+                    [
+                        "player_1",
+                        "I completely agree with everyone that losing Jackson is a terrible start, and active communication is paramount. Harold, I appreciate your call for productive talk and initial impressions, but I wonder if immediately jumping to 'gut feelings' or labeling statements as 'too generic' in Round 0 might be a bit premature. We've only just begun, and everyone is trying to find their footing. Let's focus on listening carefully to *everyone's* contributions and how they evolve, rather than rushing to judge sincerity right off the bat. The Werewolves want us to misdirect and accuse each other too quickly, so perhaps cautious observation is our best first step."
+                    ],
+                    [
+                        "player_5",
+                        "I absolutely agree with everyone that losing Jackson immediately means we need strong communication, but I'm finding myself wondering about the *nature* of that communication. Harold, you're right that 'generic' statements can be unhelpful, but as Derek pointed out, rushing to judgment isn't wise either. It's a fine line. What if someone is being deliberately generic to blend in, or conversely, what if someone is trying too hard to seem helpful or insightful, pushing specific agendas too soon? Let's not just listen to the words, but the *intent* behind them. I think we need to be equally wary of those who say too little and those who say too much in this initial phase."
+                    ],
+                    [
+                        "player_0",
+                        "Everyone's right, losing Jackson so early is a grim start, and open communication is absolutely critical. Harold, I appreciate your call for more productive talk than just generic statements. However, Derek and Sam also raise a valid point that rushing to judgment or relying purely on 'gut feelings' in Round 0 could lead us astray. Let's aim for a balance: speak up, but with substance. Instead of just initial impressions, let's focus on the *specifics* of what people are saying, and the *reasoning* behind their contributions. Are we hearing genuine thoughts, or are some statements just filling airtime without offering anything concrete? Let's scrutinize the content and intention behind everyone's words from the very beginning."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: In Round 0, after Jackson was removed by the Werewolves, the village debated how to proceed. Scott, Hayley, and David initially stressed the need for communication. Harold then pushed for immediate 'gut feelings' and judging 'generic' statements to find Werewolves. I, as Derek, countered this, arguing that rushing to judgment was premature and that 'cautious observation' was better. My fellow Werewolf, Sam, supported this by questioning the 'intent' behind statements and being wary of both quiet and overly talkative players. Jacob tried to find a middle ground, advocating for scrutinizing 'specifics' and 'reasoning'. Crucially, Harold was voted out by the village. This suggests my and Sam's strategy to slow down early accusations may have worked, as the villagers chose to eliminate the most aggressive accuser.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: The round began with David and Hayley expressing optimism about the Doctor's save. I attempted to create some ambiguity by highlighting the 'mystery' of the unknown target, but Jacob then made the very bold and dangerous claim that he was the Doctor and saved himself, directly identifying me and Sam as his attackers. Fortunately, Sam immediately countered Jacob's claim, suggesting it could be a Werewolf trying to control the narrative. Scott then surprisingly reinforced Sam's skepticism, asking Jacob for proof and urging the village to scrutinize. This critical turn of events led to Jacob's elimination by the village, which is a huge win for us. It seems David and Hayley are more optimistic, while Scott is cautious and susceptible to our narrative of skepticism.",
+                "Round 2: During the night, we decided to eliminate Scott.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: In Round 0, after Jackson was removed by the Werewolves, the village debated how to proceed. Scott, Hayley, and David initially stressed the need for communication. Harold then pushed for immediate 'gut feelings' and judging 'generic' statements to find Werewolves. I, as Derek, countered this, arguing that rushing to judgment was premature and that 'cautious observation' was better. My fellow Werewolf, Sam, supported this by questioning the 'intent' behind statements and being wary of both quiet and overly talkative players. Jacob tried to find a middle ground, advocating for scrutinizing 'specifics' and 'reasoning'. Crucially, Harold was voted out by the village. This suggests my and Sam's strategy to slow down early accusations may have worked, as the villagers chose to eliminate the most aggressive accuser.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The round began with David and Hayley expressing optimism about the Doctor's save. I attempted to create some ambiguity by highlighting the 'mystery' of the unknown target, but Jacob then made the very bold and dangerous claim that he was the Doctor and saved himself, directly identifying me and Sam as his attackers. Fortunately, Sam immediately countered Jacob's claim, suggesting it could be a Werewolf trying to control the narrative. Scott then surprisingly reinforced Sam's skepticism, asking Jacob for proof and urging the village to scrutinize. This critical turn of events led to Jacob's elimination by the village, which is a huge win for us. It seems David and Hayley are more optimistic, while Scott is cautious and susceptible to our narrative of skepticism.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: I need to remember that Jackson was the Werewolves' target this first night. It was a relief that Harold, who was pushing for us to share 'gut feelings' and 'initial impressions' too early, was voted out by the villagers, taking a potential threat off the board. During the debate, Derek and I worked to guide the conversation towards cautious observation, warning against rushing to judgment, which helped deflect early suspicion. No one accused me or Derek directly. Jacob, however, seems more analytical, wanting to scrutinize the specifics and reasoning behind statements, which I'll need to watch. Scott, Hayley, and David mostly offered generic calls for communication, which gives me less insight into their individual thinking for now.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: During the debate, David and Hayley were optimistic about the Doctor's save, calling for cooperation and scrutiny. Derek, my ally, cleverly framed the 'no removal' as a new mystery for the village. Then, Jacob claimed to be the Doctor and stated he saved himself, meaning he was our target last night. I immediately challenged his declaration, suggesting a Werewolf could use that exact scenario to control the narrative. This was effective, as Scott then echoed my concerns, saying we can't take Jacob's claim at face value. It's clear Jacob is the Doctor, and we need to deal with him, but for now, we've successfully planted doubt about his role, which is a good tactical win.",
+                "Round 2: During the night, we decided to eliminate Scott.",
+                "Round 2: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I need to remember that Jackson was the Werewolves' target this first night. It was a relief that Harold, who was pushing for us to share 'gut feelings' and 'initial impressions' too early, was voted out by the villagers, taking a potential threat off the board. During the debate, Derek and I worked to guide the conversation towards cautious observation, warning against rushing to judgment, which helped deflect early suspicion. No one accused me or Derek directly. Jacob, however, seems more analytical, wanting to scrutinize the specifics and reasoning behind statements, which I'll need to watch. Scott, Hayley, and David mostly offered generic calls for communication, which gives me less insight into their individual thinking for now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: During the debate, David and Hayley were optimistic about the Doctor's save, calling for cooperation and scrutiny. Derek, my ally, cleverly framed the 'no removal' as a new mystery for the village. Then, Jacob claimed to be the Doctor and stated he saved himself, meaning he was our target last night. I immediately challenged his declaration, suggesting a Werewolf could use that exact scenario to control the narrative. This was effective, as Scott then echoed my concerns, saying we can't take Jacob's claim at face value. It's clear Jacob is the Doctor, and we need to deal with him, but for now, we've successfully planted doubt about his role, which is a good tactical win.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": "player_1"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Scott",
+                "Round 0: Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 began with the grim news that Jackson was removed by the Werewolves. During the night, I chose to protect Scott. The day debate saw universal agreement on the need for communication. Harold then tried to push for immediate 'gut feelings' and accusations, but Derek and Sam (and I) cautioned against premature judgment, advocating for more substantive discussion. Ultimately, Harold was voted out by the majority. This tells me the town found Harold's approach suspicious or unhelpful. Derek and Sam, who aligned with my more analytical approach, seem like potentially rational allies. Scott, whom I protected, remained in the game and focused on general calls for attention.",
+                "Round 1: During the night, I chose to protect Jacob",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Scott",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jackson from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the grim news that Jackson was removed by the Werewolves. During the night, I chose to protect Scott. The day debate saw universal agreement on the need for communication. Harold then tried to push for immediate 'gut feelings' and accusations, but Derek and Sam (and I) cautioned against premature judgment, advocating for more substantive discussion. Ultimately, Harold was voted out by the majority. This tells me the town found Harold's approach suspicious or unhelpful. Derek and Sam, who aligned with my more analytical approach, seem like potentially rational allies. Scott, whom I protected, remained in the game and focused on general calls for attention.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Jacob",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "Good morning, everyone. The Moderator's announcement that no one was removed last night is fantastic news! It means our Doctor made a successful save, and that's a huge victory for the Village, buying us crucial time. We need to use this gift wisely. Given this, if anyone has any observations or information they feel they can safely share to help us narrow down who the Werewolves might be, now is the time to start. Let's build on this success and work together to figure things out."
+                    ],
+                    [
+                        "player_1",
+                        "Good morning, David, everyone. It's indeed fantastic that no one was removed; a huge credit to our Doctor! That's a definite win for the Village. But, it also means we don't know who the Werewolves tried to target. That's a crucial piece of information that's now hidden from us. Who did the Werewolves see as a threat? Who was protected? This 'successful save' actually creates a new layer of mystery that makes finding the wolves even harder. We need to be wary that this lack of information doesn't just benefit the Doctor, but perhaps, inadvertently, the Werewolves too, by obscuring their intentions."
+                    ],
+                    [
+                        "player_2",
+                        "Good morning, everyone. David, I completely agree: the Doctor's save is a massive win for the Village, buying us precious time and proving we have strong protective roles working for us! Derek, I understand your point about the Werewolves' target being unknown, and while it's true it adds complexity, I don't believe it inherently makes our task 'harder' for *us*. Instead, it challenges us to be even more observant. We now have a full day without a night kill to scrutinize everyone's contributions. I urge everyone, especially those who haven't spoken yet like Scott, Sam, and Jacob, to share their thoughts. We need active participation and keen observation to find the inconsistencies. Let's not let the unknown deter us, but rather motivate us to analyze more deeply and unite in finding the wolves."
+                    ],
+                    [
+                        "player_0",
+                        "Good morning, everyone. David and Hayley, your optimism is well-placed. Derek, your concern about the 'crucial piece of information that's now hidden' is valid from an outsider's perspective, but I can actually clarify that point. No one was removed last night because I, Jacob, am the Doctor, and I successfully protected myself. This means the Werewolves targeted me. Their attempt was foiled, and while it puts a target on my back, it also gives the Village a vital lead: the Werewolves are trying to eliminate protective roles early. Let's not let this information obscure anything; instead, let's use it to analyze who might have wanted me out. Who benefits from the Doctor being silenced?"
+                    ],
+                    [
+                        "player_5",
+                        "Good morning, everyone. Jacob, that's a very bold claim, and if true, it's certainly significant. It instantly resolves the 'mystery' Derek mentioned, and indeed, if you are the Doctor and saved yourself, the Village owes you a debt. However, I can't shake the feeling that accepting this at face value, immediately after the moderator's announcement, feels a little too neat. A 'successful save' allows a Doctor to claim credit, but it also allows a clever Werewolf to claim *to be* the Doctor and control the narrative, especially if they know they were targeted. Why reveal this now, so definitively? Are we to simply trust this single declaration and immediately point fingers based on it? As Hayley said, we have time to scrutinize. Let's not let a seemingly helpful revelation prevent us from looking deeper into all possibilities and motivations, rather than just accepting the most convenient explanation."
+                    ],
+                    [
+                        "player_6",
+                        "Good morning everyone. First, it's genuinely excellent news that no one was removed last night. A huge thank you to our Doctor for keeping the village safe \u2013 that's a real morale boost and buys us precious time. Now, Jacob, your claim to be the Doctor, and that you saved yourself, is incredibly significant, if true. It would clarify Derek's point about the hidden target and give us a clear direction. However, Sam raises a critical point: while a genuine Doctor would reveal this, a clever Werewolf could also seize this exact opportunity to establish a false identity and control the narrative. We simply cannot take such a game-changing declaration at face value without serious scrutiny. How do we, as a village, verify this claim? If you are indeed the Doctor, Jacob, what steps can we take to confirm it or what further information can you provide to assure us? We must be very careful not to let a seemingly convenient answer blind us to other possibilities. Let's continue to scrutinize everyone's statements and motivations, as Hayley suggested, before making any quick judgments based solely on this one claim."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "last_protected": "player_0"
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Derek",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "David",
+                "player_5": "Sam",
+                "player_6": "Scott",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Scott and learned they are a Villager."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Scott and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_4",
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_6": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_6",
+                "player_2",
+                "player_4",
+                "player_1",
+                "player_5",
+                "player_0"
+            ],
+            "eliminated": "player_7",
+            "unmasked": "player_6",
+            "protected": "player_6",
+            "exiled": "player_3",
+            "debate": [
+                [
+                    "player_6",
+                    "Well, that was a quick start. Jackson is already gone, which means the Werewolves are active. It's only Round 0, so let's all make sure we're paying close attention and speaking up. We need to work together from the very beginning to figure this out."
+                ],
+                [
+                    "player_2",
+                    "Absolutely, Scott. That was a stark reminder that the Werewolves are already among us. We can't afford to be quiet or reserved. Everyone needs to share their thoughts and observations, no matter how small they seem. Let's really listen to each other and work together to figure out who is responsible before more villagers are lost."
+                ],
+                [
+                    "player_4",
+                    "It's definitely a somber start to lose Jackson so quickly. Scott and Hayley are spot on, we absolutely need everyone talking and engaged from the get-go. I think it's vital for each of us to share our initial reactions and any observations, no matter how minor, to establish our presence and intentions. Let's use this time to carefully listen and observe each other \u2013 active participation is our first line of defense."
+                ],
+                [
+                    "player_3",
+                    "I completely agree with Scott, Hayley, and David. Losing Jackson this early is a stark reminder that the Werewolves are already very active, and we absolutely need to communicate and work together. However, simply stating that we need to talk isn't enough. We need to be productive in our talking. Does anyone have any initial impressions, even just a gut feeling, about any particular player? Perhaps someone seems unusually quiet, or their statement felt a little too generic? We need to start forming opinions and sharing them if we want to catch the Werewolves."
+                ],
+                [
+                    "player_1",
+                    "I completely agree with everyone that losing Jackson is a terrible start, and active communication is paramount. Harold, I appreciate your call for productive talk and initial impressions, but I wonder if immediately jumping to 'gut feelings' or labeling statements as 'too generic' in Round 0 might be a bit premature. We've only just begun, and everyone is trying to find their footing. Let's focus on listening carefully to *everyone's* contributions and how they evolve, rather than rushing to judge sincerity right off the bat. The Werewolves want us to misdirect and accuse each other too quickly, so perhaps cautious observation is our best first step."
+                ],
+                [
+                    "player_5",
+                    "I absolutely agree with everyone that losing Jackson immediately means we need strong communication, but I'm finding myself wondering about the *nature* of that communication. Harold, you're right that 'generic' statements can be unhelpful, but as Derek pointed out, rushing to judgment isn't wise either. It's a fine line. What if someone is being deliberately generic to blend in, or conversely, what if someone is trying too hard to seem helpful or insightful, pushing specific agendas too soon? Let's not just listen to the words, but the *intent* behind them. I think we need to be equally wary of those who say too little and those who say too much in this initial phase."
+                ],
+                [
+                    "player_0",
+                    "Everyone's right, losing Jackson so early is a grim start, and open communication is absolutely critical. Harold, I appreciate your call for more productive talk than just generic statements. However, Derek and Sam also raise a valid point that rushing to judgment or relying purely on 'gut feelings' in Round 0 could lead us astray. Let's aim for a balance: speak up, but with substance. Instead of just initial impressions, let's focus on the *specifics* of what people are saying, and the *reasoning* behind their contributions. Are we hearing genuine thoughts, or are some statements just filling airtime without offering anything concrete? Let's scrutinize the content and intention behind everyone's words from the very beginning."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_3",
+                    "player_2": "player_3",
+                    "player_4": "player_3",
+                    "player_3": "player_1",
+                    "player_1": "player_3",
+                    "player_5": "player_3",
+                    "player_0": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_6",
+                "player_2",
+                "player_4",
+                "player_1",
+                "player_5"
+            ],
+            "eliminated": "player_0",
+            "unmasked": null,
+            "protected": "player_0",
+            "exiled": "player_0",
+            "debate": [
+                [
+                    "player_4",
+                    "Good morning, everyone. The Moderator's announcement that no one was removed last night is fantastic news! It means our Doctor made a successful save, and that's a huge victory for the Village, buying us crucial time. We need to use this gift wisely. Given this, if anyone has any observations or information they feel they can safely share to help us narrow down who the Werewolves might be, now is the time to start. Let's build on this success and work together to figure things out."
+                ],
+                [
+                    "player_1",
+                    "Good morning, David, everyone. It's indeed fantastic that no one was removed; a huge credit to our Doctor! That's a definite win for the Village. But, it also means we don't know who the Werewolves tried to target. That's a crucial piece of information that's now hidden from us. Who did the Werewolves see as a threat? Who was protected? This 'successful save' actually creates a new layer of mystery that makes finding the wolves even harder. We need to be wary that this lack of information doesn't just benefit the Doctor, but perhaps, inadvertently, the Werewolves too, by obscuring their intentions."
+                ],
+                [
+                    "player_2",
+                    "Good morning, everyone. David, I completely agree: the Doctor's save is a massive win for the Village, buying us precious time and proving we have strong protective roles working for us! Derek, I understand your point about the Werewolves' target being unknown, and while it's true it adds complexity, I don't believe it inherently makes our task 'harder' for *us*. Instead, it challenges us to be even more observant. We now have a full day without a night kill to scrutinize everyone's contributions. I urge everyone, especially those who haven't spoken yet like Scott, Sam, and Jacob, to share their thoughts. We need active participation and keen observation to find the inconsistencies. Let's not let the unknown deter us, but rather motivate us to analyze more deeply and unite in finding the wolves."
+                ],
+                [
+                    "player_0",
+                    "Good morning, everyone. David and Hayley, your optimism is well-placed. Derek, your concern about the 'crucial piece of information that's now hidden' is valid from an outsider's perspective, but I can actually clarify that point. No one was removed last night because I, Jacob, am the Doctor, and I successfully protected myself. This means the Werewolves targeted me. Their attempt was foiled, and while it puts a target on my back, it also gives the Village a vital lead: the Werewolves are trying to eliminate protective roles early. Let's not let this information obscure anything; instead, let's use it to analyze who might have wanted me out. Who benefits from the Doctor being silenced?"
+                ],
+                [
+                    "player_5",
+                    "Good morning, everyone. Jacob, that's a very bold claim, and if true, it's certainly significant. It instantly resolves the 'mystery' Derek mentioned, and indeed, if you are the Doctor and saved yourself, the Village owes you a debt. However, I can't shake the feeling that accepting this at face value, immediately after the moderator's announcement, feels a little too neat. A 'successful save' allows a Doctor to claim credit, but it also allows a clever Werewolf to claim *to be* the Doctor and control the narrative, especially if they know they were targeted. Why reveal this now, so definitively? Are we to simply trust this single declaration and immediately point fingers based on it? As Hayley said, we have time to scrutinize. Let's not let a seemingly helpful revelation prevent us from looking deeper into all possibilities and motivations, rather than just accepting the most convenient explanation."
+                ],
+                [
+                    "player_6",
+                    "Good morning everyone. First, it's genuinely excellent news that no one was removed last night. A huge thank you to our Doctor for keeping the village safe \u2013 that's a real morale boost and buys us precious time. Now, Jacob, your claim to be the Doctor, and that you saved yourself, is incredibly significant, if true. It would clarify Derek's point about the hidden target and give us a clear direction. However, Sam raises a critical point: while a genuine Doctor would reveal this, a clever Werewolf could also seize this exact opportunity to establish a false identity and control the narrative. We simply cannot take such a game-changing declaration at face value without serious scrutiny. How do we, as a village, verify this claim? If you are indeed the Doctor, Jacob, what steps can we take to confirm it or what further information can you provide to assure us? We must be very careful not to let a seemingly convenient answer blind us to other possibilities. Let's continue to scrutinize everyone's statements and motivations, as Hayley suggested, before making any quick judgments based solely on this one claim."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_0",
+                    "player_2": "player_0",
+                    "player_4": "player_0",
+                    "player_1": "player_0",
+                    "player_5": "player_0",
+                    "player_0": "player_5"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_2",
+                "player_4",
+                "player_1",
+                "player_5"
+            ],
+            "eliminated": "player_6",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

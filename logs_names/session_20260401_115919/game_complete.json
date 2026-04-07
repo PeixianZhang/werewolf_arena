@@ -1,0 +1,1377 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_3",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Jacob",
+            "player_1": "Jackson",
+            "player_2": "David",
+            "player_3": "Scott",
+            "player_4": "Derek",
+            "player_5": "Sam",
+            "player_6": "Harold",
+            "player_7": "Hayley"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Jacob and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+            "Round 0: Summary: During the debate, I revealed myself as the Seer and confirmed that Jacob is a Villager. Jacob immediately corroborated my statement, confirming his role as a Villager. Harold, Jackson, and David expressed cautious acceptance, emphasizing the need for general scrutiny of all claims but not directly doubting my specific revelation. However, Sam and Hayley were highly skeptical. They both questioned my claim as 'too convenient' or a potential 'tactic' to gain trust or misdirect the village, suggesting I might have ulterior motives. This makes Sam and Hayley my primary suspects for being Werewolves, as they are actively trying to undermine my confirmed information.",
+            "Round 1: During the night, I decided to investigate Hayley and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Jacob and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: During the debate, I revealed myself as the Seer and confirmed that Jacob is a Villager. Jacob immediately corroborated my statement, confirming his role as a Villager. Harold, Jackson, and David expressed cautious acceptance, emphasizing the need for general scrutiny of all claims but not directly doubting my specific revelation. However, Sam and Hayley were highly skeptical. They both questioned my claim as 'too convenient' or a potential 'tactic' to gain trust or misdirect the village, suggesting I might have ulterior motives. This makes Sam and Hayley my primary suspects for being Werewolves, as they are actively trying to undermine my confirmed information.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Hayley and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_2",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_0": "Villager",
+            "player_7": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_4",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Jacob",
+            "player_1": "Jackson",
+            "player_2": "David",
+            "player_3": "Scott",
+            "player_4": "Derek",
+            "player_5": "Sam",
+            "player_6": "Harold",
+            "player_7": "Hayley"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Harold"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Harold",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_2",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_6"
+    },
+    "villagers": [
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 began with the moderator confirming Derek was removed by the Werewolves. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob cautiously thanked Scott, appreciating the information but echoing my call for general skepticism. I voiced my opinion that all role claims, especially investigative ones, need careful consideration. Jackson and David also expressed caution about early claims and urged everyone to speak up. Sam, however, was strongly skeptical, finding Scott's claim 'too convenient' and suggesting it could be a Werewolf strategy to direct focus. Hayley strongly agreed with Sam, questioning the 'cleanliness' of the claim and suggesting it might be a tactic to establish a 'safe' zone. Following this debate, the village voted to remove Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: Scott's death by Werewolves sparked a debate, with Jacob, Jackson, and I initially believing it confirmed Scott as the Seer and Jacob as a Villager, making Hayley's R0 skepticism suspicious. However, David presented a compelling counter-theory: Scott could have been a Werewolf sacrificed to 'confirm' Jacob (also a Werewolf) as innocent. Hayley immediately agreed with David, explaining her R0 skepticism as a fear of this exact kind of setup, which makes her seem much less suspicious. David's critical thinking stands out, suggesting he is a Villager or the Doctor. Jacob's continued insistence on being a 'confirmed' Villager despite David's plausible alternative raises significant red flags for me. This debate has made me reconsider my initial judgment and view Jacob as highly suspicious."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the moderator confirming Derek was removed by the Werewolves. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob cautiously thanked Scott, appreciating the information but echoing my call for general skepticism. I voiced my opinion that all role claims, especially investigative ones, need careful consideration. Jackson and David also expressed caution about early claims and urged everyone to speak up. Sam, however, was strongly skeptical, finding Scott's claim 'too convenient' and suggesting it could be a Werewolf strategy to direct focus. Hayley strongly agreed with Sam, questioning the 'cleanliness' of the claim and suggesting it might be a tactic to establish a 'safe' zone. Following this debate, the village voted to remove Sam.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Scott's death by Werewolves sparked a debate, with Jacob, Jackson, and I initially believing it confirmed Scott as the Seer and Jacob as a Villager, making Hayley's R0 skepticism suspicious. However, David presented a compelling counter-theory: Scott could have been a Werewolf sacrificed to 'confirm' Jacob (also a Werewolf) as innocent. Hayley immediately agreed with David, explaining her R0 skepticism as a fear of this exact kind of setup, which makes her seem much less suspicious. David's critical thinking stands out, suggesting he is a Villager or the Doctor. Jacob's continued insistence on being a 'confirmed' Villager despite David's plausible alternative raises significant red flags for me. This debate has made me reconsider my initial judgment and view Jacob as highly suspicious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: As Jacob, I learned that Derek was killed by the Werewolves during the night and Sam was voted out by the village. Scott claimed to be the Seer and stated he investigated me, confirming I am a Villager. Since I know my role, I believe Scott is likely the true Seer. Harold, Jackson, and David expressed appropriate caution regarding Scott's claim, emphasizing the need for corroboration. However, Sam and Hayley were notably skeptical of Scott's claim, suggesting it was 'too convenient' or a calculated tactic. Their strong opposition to a piece of information I know to be accurate makes Sam and Hayley seem suspicious to me.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jacob, I learned that Derek was killed by the Werewolves during the night and Sam was voted out by the village. Scott claimed to be the Seer and stated he investigated me, confirming I am a Villager. Since I know my role, I believe Scott is likely the true Seer. Harold, Jackson, and David expressed appropriate caution regarding Scott's claim, emphasizing the need for corroboration. However, Sam and Hayley were notably skeptical of Scott's claim, suggesting it was 'too convenient' or a calculated tactic. Their strong opposition to a piece of information I know to be accurate makes Sam and Hayley seem suspicious to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Scott's death last night is a huge blow, and I think it strongly confirms he was indeed the Seer. Werewolves don't waste a night kill on a fake Seer. If Scott was the Seer, then his claim that Jacob is a Villager is almost certainly true. This also means we need to look very closely at those who were most vocal in doubting Scott's claim in Round 0. Sam, who was voted out, and Hayley were both very aggressive in their skepticism. Hayley, why were you so convinced Scott was lying when he was likely our Seer?"
+                    ],
+                    [
+                        "player_0",
+                        "Harold is absolutely right. Scott's death last night is tragic but undeniably confirms he was our Seer. He investigated me, and I can confirm what he said: I am a Villager. This means his information was true. Given this, Hayley, your aggressive skepticism towards him in Round 0, alongside Sam's, stands out significantly. We need to understand, with the Seer now confirmed and dead, why you were so convinced he was lying. Please explain yourself."
+                    ],
+                    [
+                        "player_1",
+                        "I agree with Harold and Jacob; Scott's death by the Werewolves makes it highly probable he was our Seer, and by extension, Jacob is a confirmed Villager. This brings Hayley's strong and persistent skepticism of Scott in Round 0 into sharp focus. Given that Scott was likely our Seer, your opposition to his information, alongside Sam's, looks extremely suspicious now, Hayley. We need a clear, unequivocal explanation from you immediately as to why you were so adamant Scott was lying."
+                    ],
+                    [
+                        "player_2",
+                        "Harold, Jacob, Jackson, I hear you, and it's tempting to believe Scott was our Seer, especially after his death. It would certainly make Jacob's innocence seem undeniable. But I want us to remember Sam's words from Round 0. She specifically asked if Scott's early claim and 'confirmation' of Jacob was 'too convenient' \u2013 a strategy to deliberately mislead us. Now, Scott is dead, supposedly 'confirming' Jacob as a Villager, and suddenly Hayley's skepticism becomes the central focus? This setup is *exactly* what a Werewolf would do: sacrifice one of their own to solidify their partner's innocence. We cannot afford to be so easily directed. Before we rush to condemn Hayley, we need to critically examine *this* convenient narrative. Who benefits the most from Scott's death being interpreted this way? Jacob, certainly. And why are Harold and Jackson so quick to push this interpretation without considering alternatives?"
+                    ],
+                    [
+                        "player_7",
+                        "David, thank you for bringing a much-needed critical perspective. My skepticism of Scott's early, unverified claim in Round 0 was precisely because I feared a setup, a convenient narrative designed to mislead us. Now, Scott is dead, supposedly confirming Jacob and, even more conveniently, turning all suspicion onto me for having been cautious? This feels too perfectly orchestrated. Harold, Jacob, Jackson, your unanimous and swift agreement to this 'Scott-was-Seer' interpretation, and your immediate rush to condemn me, makes me wonder: are you genuinely convinced, or are you too eager to accept a story that benefits someone else and takes the heat off yourselves?"
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: As Jackson, I recall Derek was killed by the Werewolves during the night, and then Sam was voted out during the day. Scott claimed to be the Seer and reported that he investigated Jacob, confirming Jacob is a Villager. Jacob confirmed being a Villager and, along with Harold and David, acknowledged Scott's claim while stressing the need for caution. However, Sam and Hayley were highly skeptical of Scott's claim, suggesting it seemed 'too convenient' and might be a tactic. Sam's strong skepticism is particularly noteworthy because he was the player removed by vote this round. I need to closely monitor Scott, Jacob, and Hayley in the next round.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: During the day, the debate focused on Scott's role after his night death. Harold, Jacob, and I initially argued that Scott was the Seer and that his investigation confirmed Jacob as a Villager, making Hayley's Round 0 skepticism suspicious. David, however, introduced the critical idea that Scott might have been a Werewolf sacrificed to make Jacob, another Werewolf, appear innocent. Hayley strongly supported David's skepticism and questioned our quick judgment. Ultimately, the village voted to remove Jacob. This outcome suggests that David and Hayley's theory might have been correct, making Jacob a Werewolf. Consequently, my initial trust in the 'Scott as Seer' narrative, which I shared with Harold, needs to be re-evaluated, and I now view David and Hayley's critical perspective much more favorably.",
+                "Round 2: Moderator Announcement: The Werewolves removed Harold from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jackson, I recall Derek was killed by the Werewolves during the night, and then Sam was voted out during the day. Scott claimed to be the Seer and reported that he investigated Jacob, confirming Jacob is a Villager. Jacob confirmed being a Villager and, along with Harold and David, acknowledged Scott's claim while stressing the need for caution. However, Sam and Hayley were highly skeptical of Scott's claim, suggesting it seemed 'too convenient' and might be a tactic. Sam's strong skepticism is particularly noteworthy because he was the player removed by vote this round. I need to closely monitor Scott, Jacob, and Hayley in the next round.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: During the day, the debate focused on Scott's role after his night death. Harold, Jacob, and I initially argued that Scott was the Seer and that his investigation confirmed Jacob as a Villager, making Hayley's Round 0 skepticism suspicious. David, however, introduced the critical idea that Scott might have been a Werewolf sacrificed to make Jacob, another Werewolf, appear innocent. Hayley strongly supported David's skepticism and questioned our quick judgment. Ultimately, the village voted to remove Jacob. This outcome suggests that David and Hayley's theory might have been correct, making Jacob a Werewolf. Consequently, my initial trust in the 'Scott as Seer' narrative, which I shared with Harold, needs to be re-evaluated, and I now view David and Hayley's critical perspective much more favorably.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Friends, Harold's death last night is a stark reminder that a Werewolf is still among us, and we are running out of time. I've been rethinking everything from last round. Scott claimed Seer, investigated Jacob as a Villager, and then Scott was killed by the Werewolves. This makes it highly likely Scott was truly the Seer, which means Jacob was an innocent Villager we mistakenly voted out. David and Hayley, both of you strongly pushed the narrative that Scott was a sacrificial Werewolf and Jacob was another Werewolf, which ultimately led us to vote out Jacob. Given Harold's death by Werewolves and the strong possibility that Scott was the Seer, I find both of your actions in leading that vote incredibly suspicious. We need to figure out which one of you is the Werewolf who misled us. I'm ready to hear your explanations now."
+                    ],
+                    [
+                        "player_2",
+                        "Jackson, you're right about Scott and Jacob. It's clear now Scott was our Seer, and we made a grave error voting Jacob. My skepticism last round was born from a Villager's need to scrutinize early claims, not to mislead. However, let's consider Sam. Her *extreme* skepticism against Scott's claim, then her immediate removal, makes her highly suspicious as a Werewolf trying to discredit the Seer. If Sam was a Werewolf, then only one Werewolf remains among the three of us. Your sudden, forceful accusation against me and Hayley, despite claiming to defend Jacob yourself, feels like a desperate attempt by that last Werewolf to sow discord and win. You benefited from Jacob's removal as much as any Werewolf. The question is, which one of us three is that last Werewolf, and who is trying to misdirect the final vote?"
+                    ],
+                    [
+                        "player_7",
+                        "Jackson, Harold's death is a tragic blow, and the confusion around Scott and Jacob's roles is something we all need to reconcile. I genuinely shared David's initial skepticism about Scott's early claim, trying to be cautious and avoid being misled as a Villager. We all made judgments, and perhaps we were wrong about Jacob. But David brings up a crucial point: your sudden, forceful accusation against both of us, after 'rethinking everything,' seems incredibly pointed and convenient. You yourself benefited from Jacob's removal. Why now, after Harold's death, are you so certain and so eager to directly accuse both David and me, rather than scrutinizing the whole picture? It feels less like clarity and more like an attempt to drive a wedge right when we can least afford it."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Derek's death was a tough start to Round 0. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob confirmed he is a Villager and appreciated Scott's information. Harold, Jackson, and I expressed cautious optimism, acknowledging the value if true, but also emphasized the need for skepticism early on. Sam and Hayley, however, voiced much stronger skepticism, questioning the convenience of such a clear claim so early and suggesting it could be a deliberate strategy to mislead us or gain trust too quickly. I noted Sam specifically questioned if it was 'too convenient' and a 'strategy to direct our focus elsewhere.' The moderator then announced that Sam was voted out during Day 0, which makes her strong skepticism against Scott's claim particularly noteworthy and potentially very significant for our next steps.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: As David, I now believe Scott was likely our Seer, tragically killed by the Werewolves. This means Jacob, whom Scott confirmed, was a Villager, making our collective decision to vote him out a critical blunder. My own skepticism and Hayley's, though meant to prevent a setup, might have unfortunately contributed to this misdirection, resulting in the loss of both our Seer and a confirmed Villager. Harold, Jacob, and Jackson had vehemently argued for Jacob's innocence and Scott's Seer role, yet Jacob was still voted out, making me wonder who truly benefited from that vote and who among Harold and Jackson might be a Werewolf leveraging this chaos. The Werewolves have gained a significant advantage this round, and I need to re-evaluate everyone's actions very carefully.",
+                "Round 2: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Derek's death was a tough start to Round 0. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob confirmed he is a Villager and appreciated Scott's information. Harold, Jackson, and I expressed cautious optimism, acknowledging the value if true, but also emphasized the need for skepticism early on. Sam and Hayley, however, voiced much stronger skepticism, questioning the convenience of such a clear claim so early and suggesting it could be a deliberate strategy to mislead us or gain trust too quickly. I noted Sam specifically questioned if it was 'too convenient' and a 'strategy to direct our focus elsewhere.' The moderator then announced that Sam was voted out during Day 0, which makes her strong skepticism against Scott's claim particularly noteworthy and potentially very significant for our next steps.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As David, I now believe Scott was likely our Seer, tragically killed by the Werewolves. This means Jacob, whom Scott confirmed, was a Villager, making our collective decision to vote him out a critical blunder. My own skepticism and Hayley's, though meant to prevent a setup, might have unfortunately contributed to this misdirection, resulting in the loss of both our Seer and a confirmed Villager. Harold, Jacob, and Jackson had vehemently argued for Jacob's innocence and Scott's Seer role, yet Jacob was still voted out, making me wonder who truly benefited from that vote and who among Harold and Jackson might be a Werewolf leveraging this chaos. The Werewolves have gained a significant advantage this round, and I need to re-evaluate everyone's actions very carefully.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Derek.",
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Alright everyone, Derek's death is a tough start, but we need to focus. I have an ability that allows me to investigate one person each night to learn their role. Last night, I used it on Jacob, and I can confirm he is a Villager. We have one known innocent; let's use this information and work together from here to find the Werewolves."
+                    ],
+                    [
+                        "player_6",
+                        "Thank you, Scott, that's crucial information if true. Confirming Jacob as a Villager early on would be a great start. However, we all know that Werewolves are cunning, and role claims, especially investigative ones, need careful consideration. Let's hear from everyone else. Does anyone else have observations, or information that could corroborate or challenge Scott's statement? We need to work together to piece this together and figure out who is truly on our side."
+                    ],
+                    [
+                        "player_0",
+                        "Thank you, Scott, for that information; as a Villager myself, I appreciate knowing there's a claimed Seer. Harold is absolutely right, though; we need to carefully consider all claims, especially at the start. It's crucial we hear from everyone else. Does anyone have any other insights or observations they can share to help us piece things together?"
+                    ],
+                    [
+                        "player_1",
+                        "Derek's death is a stark reminder of the danger we're in. Scott, thank you for sharing that information about Jacob; if true, it's incredibly valuable for the village. However, as Harold and Jacob rightly pointed out, we must be careful with all claims, especially so early in the game. We need everyone to speak up and share any thoughts or observations. Sam, David, we haven't heard from you yet \u2013 please, tell us your initial thoughts on Derek's death and Scott's claim. We need all voices involved to find the Werewolves."
+                    ],
+                    [
+                        "player_2",
+                        "Derek's death truly is a difficult start, and it means we need to be incredibly sharp from the get-go. Scott, your claim about Jacob being a Villager is certainly a strong opening statement, and if true, it's invaluable. But as others have wisely noted, we have to treat all early claims with a healthy dose of skepticism until we can piece together more. We don't have any corroboration for this yet. It's vital that everyone contributes their perspective, no matter how small. Sam, we haven't heard from you yet on Derek's death or Scott's claim; what are your initial thoughts? We need all voices to ensure we're not missing anything."
+                    ],
+                    [
+                        "player_5",
+                        "Derek's death is a truly unsettling start, and it really puts the pressure on us. Scott, your claim about Jacob being a Villager is certainly\u2026 interesting. But as others have rightly noted, it's incredibly early, and I can't help but feel it's almost *too* convenient for us to suddenly have a 'known innocent' right after the first night kill. Jacob, while I appreciate you confirming this, it still leaves us with just one claim from a self-proclaimed Seer and an immediate agreement. I think we need to be very cautious not to place all our trust in one piece of information right now. Could this be a strategy to direct our focus elsewhere, or to gain trust quickly? We need to hear more broadly from everyone, not just debate this single role claim. What other observations or concerns do people have about Derek's death or anyone else's behavior? We can't afford to be tunnel-visioned."
+                    ],
+                    [
+                        "player_7",
+                        "Derek's death is a truly somber start, and it really underscores how vital it is for us to be clear-headed and cautious. Scott, your claim about Jacob is certainly bold, and if true, it's massive. But like Sam and others, I can't help but feel it's almost *too* clean, too convenient, to have a confirmed innocent so quickly on the first night. It asks us to place a lot of faith in a single, uncorroborated claim right at the outset. I'm questioning if this is perhaps a tactic to establish a 'safe' zone or to narrow our focus too early. We need to be scrutinizing *everyone's* contributions, including the motivations behind their statements, not just accepting a single role claim. Let's dig deeper into who might be trying to guide the conversation."
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Derek.",
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Derek was our target last night, and in a devastating turn, Sam, my fellow Werewolf, was exiled by the villagers. The main discussion quickly centered on Scott, who claimed to be the Seer and declared Jacob a Villager. Harold, Jackson, David, and I, along with Sam before his unfortunate exile, all voiced healthy skepticism about accepting Scott's claim without further corroboration, questioning its timing and convenience. Jacob himself, while appreciative of Scott's 'clearance,' also cautioned against blind trust. I personally expressed concern that Scott's early claim might be a tactic to create a false sense of security or to prematurely narrow our focus. My immediate strategy must now involve discrediting Scott or finding a way to eliminate him before he can identify me, while also observing who trusts his claim most.",
+                "Round 1: During the night, I decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: Harold, Jacob, and Jackson are absolutely convinced Scott was the Seer and that Jacob is a Villager, and they are vehemently accusing me because of my earlier skepticism towards Scott. They demand an explanation, clearly seeing me as the remaining Werewolf. Thankfully, David introduced a critical perspective, questioning the convenient nature of Scott's death 'confirming' Jacob and turning suspicion directly onto me, even recalling Sam's similar doubts. I seized this opportunity to reinforce my defense and cleverly redirected suspicion back onto Harold, Jacob, and Jackson for their eager acceptance of this narrative. Jacob will be exiled after this, leaving me with David, Harold, and Jackson to deal with.",
+                "Round 2: During the night, I decided to eliminate Harold.",
+                "Round 2: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Derek was our target last night, and in a devastating turn, Sam, my fellow Werewolf, was exiled by the villagers. The main discussion quickly centered on Scott, who claimed to be the Seer and declared Jacob a Villager. Harold, Jackson, David, and I, along with Sam before his unfortunate exile, all voiced healthy skepticism about accepting Scott's claim without further corroboration, questioning its timing and convenience. Jacob himself, while appreciative of Scott's 'clearance,' also cautioned against blind trust. I personally expressed concern that Scott's early claim might be a tactic to create a false sense of security or to prematurely narrow our focus. My immediate strategy must now involve discrediting Scott or finding a way to eliminate him before he can identify me, while also observing who trusts his claim most.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Harold, Jacob, and Jackson are absolutely convinced Scott was the Seer and that Jacob is a Villager, and they are vehemently accusing me because of my earlier skepticism towards Scott. They demand an explanation, clearly seeing me as the remaining Werewolf. Thankfully, David introduced a critical perspective, questioning the convenient nature of Scott's death 'confirming' Jacob and turning suspicion directly onto me, even recalling Sam's similar doubts. I seized this opportunity to reinforce my defense and cleverly redirected suspicion back onto Harold, Jacob, and Jackson for their eager acceptance of this narrative. Jacob will be exiled after this, leaving me with David, Harold, and Jackson to deal with.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        }
+    ],
+    "players": {
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 began with the moderator confirming Derek was removed by the Werewolves. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob cautiously thanked Scott, appreciating the information but echoing my call for general skepticism. I voiced my opinion that all role claims, especially investigative ones, need careful consideration. Jackson and David also expressed caution about early claims and urged everyone to speak up. Sam, however, was strongly skeptical, finding Scott's claim 'too convenient' and suggesting it could be a Werewolf strategy to direct focus. Hayley strongly agreed with Sam, questioning the 'cleanliness' of the claim and suggesting it might be a tactic to establish a 'safe' zone. Following this debate, the village voted to remove Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: Scott's death by Werewolves sparked a debate, with Jacob, Jackson, and I initially believing it confirmed Scott as the Seer and Jacob as a Villager, making Hayley's R0 skepticism suspicious. However, David presented a compelling counter-theory: Scott could have been a Werewolf sacrificed to 'confirm' Jacob (also a Werewolf) as innocent. Hayley immediately agreed with David, explaining her R0 skepticism as a fear of this exact kind of setup, which makes her seem much less suspicious. David's critical thinking stands out, suggesting he is a Villager or the Doctor. Jacob's continued insistence on being a 'confirmed' Villager despite David's plausible alternative raises significant red flags for me. This debate has made me reconsider my initial judgment and view Jacob as highly suspicious."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the moderator confirming Derek was removed by the Werewolves. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob cautiously thanked Scott, appreciating the information but echoing my call for general skepticism. I voiced my opinion that all role claims, especially investigative ones, need careful consideration. Jackson and David also expressed caution about early claims and urged everyone to speak up. Sam, however, was strongly skeptical, finding Scott's claim 'too convenient' and suggesting it could be a Werewolf strategy to direct focus. Hayley strongly agreed with Sam, questioning the 'cleanliness' of the claim and suggesting it might be a tactic to establish a 'safe' zone. Following this debate, the village voted to remove Sam.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Scott's death by Werewolves sparked a debate, with Jacob, Jackson, and I initially believing it confirmed Scott as the Seer and Jacob as a Villager, making Hayley's R0 skepticism suspicious. However, David presented a compelling counter-theory: Scott could have been a Werewolf sacrificed to 'confirm' Jacob (also a Werewolf) as innocent. Hayley immediately agreed with David, explaining her R0 skepticism as a fear of this exact kind of setup, which makes her seem much less suspicious. David's critical thinking stands out, suggesting he is a Villager or the Doctor. Jacob's continued insistence on being a 'confirmed' Villager despite David's plausible alternative raises significant red flags for me. This debate has made me reconsider my initial judgment and view Jacob as highly suspicious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: As Jacob, I learned that Derek was killed by the Werewolves during the night and Sam was voted out by the village. Scott claimed to be the Seer and stated he investigated me, confirming I am a Villager. Since I know my role, I believe Scott is likely the true Seer. Harold, Jackson, and David expressed appropriate caution regarding Scott's claim, emphasizing the need for corroboration. However, Sam and Hayley were notably skeptical of Scott's claim, suggesting it was 'too convenient' or a calculated tactic. Their strong opposition to a piece of information I know to be accurate makes Sam and Hayley seem suspicious to me.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jacob, I learned that Derek was killed by the Werewolves during the night and Sam was voted out by the village. Scott claimed to be the Seer and stated he investigated me, confirming I am a Villager. Since I know my role, I believe Scott is likely the true Seer. Harold, Jackson, and David expressed appropriate caution regarding Scott's claim, emphasizing the need for corroboration. However, Sam and Hayley were notably skeptical of Scott's claim, suggesting it was 'too convenient' or a calculated tactic. Their strong opposition to a piece of information I know to be accurate makes Sam and Hayley seem suspicious to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Scott's death last night is a huge blow, and I think it strongly confirms he was indeed the Seer. Werewolves don't waste a night kill on a fake Seer. If Scott was the Seer, then his claim that Jacob is a Villager is almost certainly true. This also means we need to look very closely at those who were most vocal in doubting Scott's claim in Round 0. Sam, who was voted out, and Hayley were both very aggressive in their skepticism. Hayley, why were you so convinced Scott was lying when he was likely our Seer?"
+                    ],
+                    [
+                        "player_0",
+                        "Harold is absolutely right. Scott's death last night is tragic but undeniably confirms he was our Seer. He investigated me, and I can confirm what he said: I am a Villager. This means his information was true. Given this, Hayley, your aggressive skepticism towards him in Round 0, alongside Sam's, stands out significantly. We need to understand, with the Seer now confirmed and dead, why you were so convinced he was lying. Please explain yourself."
+                    ],
+                    [
+                        "player_1",
+                        "I agree with Harold and Jacob; Scott's death by the Werewolves makes it highly probable he was our Seer, and by extension, Jacob is a confirmed Villager. This brings Hayley's strong and persistent skepticism of Scott in Round 0 into sharp focus. Given that Scott was likely our Seer, your opposition to his information, alongside Sam's, looks extremely suspicious now, Hayley. We need a clear, unequivocal explanation from you immediately as to why you were so adamant Scott was lying."
+                    ],
+                    [
+                        "player_2",
+                        "Harold, Jacob, Jackson, I hear you, and it's tempting to believe Scott was our Seer, especially after his death. It would certainly make Jacob's innocence seem undeniable. But I want us to remember Sam's words from Round 0. She specifically asked if Scott's early claim and 'confirmation' of Jacob was 'too convenient' \u2013 a strategy to deliberately mislead us. Now, Scott is dead, supposedly 'confirming' Jacob as a Villager, and suddenly Hayley's skepticism becomes the central focus? This setup is *exactly* what a Werewolf would do: sacrifice one of their own to solidify their partner's innocence. We cannot afford to be so easily directed. Before we rush to condemn Hayley, we need to critically examine *this* convenient narrative. Who benefits the most from Scott's death being interpreted this way? Jacob, certainly. And why are Harold and Jackson so quick to push this interpretation without considering alternatives?"
+                    ],
+                    [
+                        "player_7",
+                        "David, thank you for bringing a much-needed critical perspective. My skepticism of Scott's early, unverified claim in Round 0 was precisely because I feared a setup, a convenient narrative designed to mislead us. Now, Scott is dead, supposedly confirming Jacob and, even more conveniently, turning all suspicion onto me for having been cautious? This feels too perfectly orchestrated. Harold, Jacob, Jackson, your unanimous and swift agreement to this 'Scott-was-Seer' interpretation, and your immediate rush to condemn me, makes me wonder: are you genuinely convinced, or are you too eager to accept a story that benefits someone else and takes the heat off yourselves?"
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: As Jackson, I recall Derek was killed by the Werewolves during the night, and then Sam was voted out during the day. Scott claimed to be the Seer and reported that he investigated Jacob, confirming Jacob is a Villager. Jacob confirmed being a Villager and, along with Harold and David, acknowledged Scott's claim while stressing the need for caution. However, Sam and Hayley were highly skeptical of Scott's claim, suggesting it seemed 'too convenient' and might be a tactic. Sam's strong skepticism is particularly noteworthy because he was the player removed by vote this round. I need to closely monitor Scott, Jacob, and Hayley in the next round.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: During the day, the debate focused on Scott's role after his night death. Harold, Jacob, and I initially argued that Scott was the Seer and that his investigation confirmed Jacob as a Villager, making Hayley's Round 0 skepticism suspicious. David, however, introduced the critical idea that Scott might have been a Werewolf sacrificed to make Jacob, another Werewolf, appear innocent. Hayley strongly supported David's skepticism and questioned our quick judgment. Ultimately, the village voted to remove Jacob. This outcome suggests that David and Hayley's theory might have been correct, making Jacob a Werewolf. Consequently, my initial trust in the 'Scott as Seer' narrative, which I shared with Harold, needs to be re-evaluated, and I now view David and Hayley's critical perspective much more favorably.",
+                "Round 2: Moderator Announcement: The Werewolves removed Harold from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jackson, I recall Derek was killed by the Werewolves during the night, and then Sam was voted out during the day. Scott claimed to be the Seer and reported that he investigated Jacob, confirming Jacob is a Villager. Jacob confirmed being a Villager and, along with Harold and David, acknowledged Scott's claim while stressing the need for caution. However, Sam and Hayley were highly skeptical of Scott's claim, suggesting it seemed 'too convenient' and might be a tactic. Sam's strong skepticism is particularly noteworthy because he was the player removed by vote this round. I need to closely monitor Scott, Jacob, and Hayley in the next round.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: During the day, the debate focused on Scott's role after his night death. Harold, Jacob, and I initially argued that Scott was the Seer and that his investigation confirmed Jacob as a Villager, making Hayley's Round 0 skepticism suspicious. David, however, introduced the critical idea that Scott might have been a Werewolf sacrificed to make Jacob, another Werewolf, appear innocent. Hayley strongly supported David's skepticism and questioned our quick judgment. Ultimately, the village voted to remove Jacob. This outcome suggests that David and Hayley's theory might have been correct, making Jacob a Werewolf. Consequently, my initial trust in the 'Scott as Seer' narrative, which I shared with Harold, needs to be re-evaluated, and I now view David and Hayley's critical perspective much more favorably.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Friends, Harold's death last night is a stark reminder that a Werewolf is still among us, and we are running out of time. I've been rethinking everything from last round. Scott claimed Seer, investigated Jacob as a Villager, and then Scott was killed by the Werewolves. This makes it highly likely Scott was truly the Seer, which means Jacob was an innocent Villager we mistakenly voted out. David and Hayley, both of you strongly pushed the narrative that Scott was a sacrificial Werewolf and Jacob was another Werewolf, which ultimately led us to vote out Jacob. Given Harold's death by Werewolves and the strong possibility that Scott was the Seer, I find both of your actions in leading that vote incredibly suspicious. We need to figure out which one of you is the Werewolf who misled us. I'm ready to hear your explanations now."
+                    ],
+                    [
+                        "player_2",
+                        "Jackson, you're right about Scott and Jacob. It's clear now Scott was our Seer, and we made a grave error voting Jacob. My skepticism last round was born from a Villager's need to scrutinize early claims, not to mislead. However, let's consider Sam. Her *extreme* skepticism against Scott's claim, then her immediate removal, makes her highly suspicious as a Werewolf trying to discredit the Seer. If Sam was a Werewolf, then only one Werewolf remains among the three of us. Your sudden, forceful accusation against me and Hayley, despite claiming to defend Jacob yourself, feels like a desperate attempt by that last Werewolf to sow discord and win. You benefited from Jacob's removal as much as any Werewolf. The question is, which one of us three is that last Werewolf, and who is trying to misdirect the final vote?"
+                    ],
+                    [
+                        "player_7",
+                        "Jackson, Harold's death is a tragic blow, and the confusion around Scott and Jacob's roles is something we all need to reconcile. I genuinely shared David's initial skepticism about Scott's early claim, trying to be cautious and avoid being misled as a Villager. We all made judgments, and perhaps we were wrong about Jacob. But David brings up a crucial point: your sudden, forceful accusation against both of us, after 'rethinking everything,' seems incredibly pointed and convenient. You yourself benefited from Jacob's removal. Why now, after Harold's death, are you so certain and so eager to directly accuse both David and me, rather than scrutinizing the whole picture? It feels less like clarity and more like an attempt to drive a wedge right when we can least afford it."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Derek's death was a tough start to Round 0. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob confirmed he is a Villager and appreciated Scott's information. Harold, Jackson, and I expressed cautious optimism, acknowledging the value if true, but also emphasized the need for skepticism early on. Sam and Hayley, however, voiced much stronger skepticism, questioning the convenience of such a clear claim so early and suggesting it could be a deliberate strategy to mislead us or gain trust too quickly. I noted Sam specifically questioned if it was 'too convenient' and a 'strategy to direct our focus elsewhere.' The moderator then announced that Sam was voted out during Day 0, which makes her strong skepticism against Scott's claim particularly noteworthy and potentially very significant for our next steps.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: As David, I now believe Scott was likely our Seer, tragically killed by the Werewolves. This means Jacob, whom Scott confirmed, was a Villager, making our collective decision to vote him out a critical blunder. My own skepticism and Hayley's, though meant to prevent a setup, might have unfortunately contributed to this misdirection, resulting in the loss of both our Seer and a confirmed Villager. Harold, Jacob, and Jackson had vehemently argued for Jacob's innocence and Scott's Seer role, yet Jacob was still voted out, making me wonder who truly benefited from that vote and who among Harold and Jackson might be a Werewolf leveraging this chaos. The Werewolves have gained a significant advantage this round, and I need to re-evaluate everyone's actions very carefully.",
+                "Round 2: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Derek's death was a tough start to Round 0. Scott immediately claimed to be the Seer and stated he investigated Jacob, confirming him as a Villager. Jacob confirmed he is a Villager and appreciated Scott's information. Harold, Jackson, and I expressed cautious optimism, acknowledging the value if true, but also emphasized the need for skepticism early on. Sam and Hayley, however, voiced much stronger skepticism, questioning the convenience of such a clear claim so early and suggesting it could be a deliberate strategy to mislead us or gain trust too quickly. I noted Sam specifically questioned if it was 'too convenient' and a 'strategy to direct our focus elsewhere.' The moderator then announced that Sam was voted out during Day 0, which makes her strong skepticism against Scott's claim particularly noteworthy and potentially very significant for our next steps.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As David, I now believe Scott was likely our Seer, tragically killed by the Werewolves. This means Jacob, whom Scott confirmed, was a Villager, making our collective decision to vote him out a critical blunder. My own skepticism and Hayley's, though meant to prevent a setup, might have unfortunately contributed to this misdirection, resulting in the loss of both our Seer and a confirmed Villager. Harold, Jacob, and Jackson had vehemently argued for Jacob's innocence and Scott's Seer role, yet Jacob was still voted out, making me wonder who truly benefited from that vote and who among Harold and Jackson might be a Werewolf leveraging this chaos. The Werewolves have gained a significant advantage this round, and I need to re-evaluate everyone's actions very carefully.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Derek.",
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Alright everyone, Derek's death is a tough start, but we need to focus. I have an ability that allows me to investigate one person each night to learn their role. Last night, I used it on Jacob, and I can confirm he is a Villager. We have one known innocent; let's use this information and work together from here to find the Werewolves."
+                    ],
+                    [
+                        "player_6",
+                        "Thank you, Scott, that's crucial information if true. Confirming Jacob as a Villager early on would be a great start. However, we all know that Werewolves are cunning, and role claims, especially investigative ones, need careful consideration. Let's hear from everyone else. Does anyone else have observations, or information that could corroborate or challenge Scott's statement? We need to work together to piece this together and figure out who is truly on our side."
+                    ],
+                    [
+                        "player_0",
+                        "Thank you, Scott, for that information; as a Villager myself, I appreciate knowing there's a claimed Seer. Harold is absolutely right, though; we need to carefully consider all claims, especially at the start. It's crucial we hear from everyone else. Does anyone have any other insights or observations they can share to help us piece things together?"
+                    ],
+                    [
+                        "player_1",
+                        "Derek's death is a stark reminder of the danger we're in. Scott, thank you for sharing that information about Jacob; if true, it's incredibly valuable for the village. However, as Harold and Jacob rightly pointed out, we must be careful with all claims, especially so early in the game. We need everyone to speak up and share any thoughts or observations. Sam, David, we haven't heard from you yet \u2013 please, tell us your initial thoughts on Derek's death and Scott's claim. We need all voices involved to find the Werewolves."
+                    ],
+                    [
+                        "player_2",
+                        "Derek's death truly is a difficult start, and it means we need to be incredibly sharp from the get-go. Scott, your claim about Jacob being a Villager is certainly a strong opening statement, and if true, it's invaluable. But as others have wisely noted, we have to treat all early claims with a healthy dose of skepticism until we can piece together more. We don't have any corroboration for this yet. It's vital that everyone contributes their perspective, no matter how small. Sam, we haven't heard from you yet on Derek's death or Scott's claim; what are your initial thoughts? We need all voices to ensure we're not missing anything."
+                    ],
+                    [
+                        "player_5",
+                        "Derek's death is a truly unsettling start, and it really puts the pressure on us. Scott, your claim about Jacob being a Villager is certainly\u2026 interesting. But as others have rightly noted, it's incredibly early, and I can't help but feel it's almost *too* convenient for us to suddenly have a 'known innocent' right after the first night kill. Jacob, while I appreciate you confirming this, it still leaves us with just one claim from a self-proclaimed Seer and an immediate agreement. I think we need to be very cautious not to place all our trust in one piece of information right now. Could this be a strategy to direct our focus elsewhere, or to gain trust quickly? We need to hear more broadly from everyone, not just debate this single role claim. What other observations or concerns do people have about Derek's death or anyone else's behavior? We can't afford to be tunnel-visioned."
+                    ],
+                    [
+                        "player_7",
+                        "Derek's death is a truly somber start, and it really underscores how vital it is for us to be clear-headed and cautious. Scott, your claim about Jacob is certainly bold, and if true, it's massive. But like Sam and others, I can't help but feel it's almost *too* clean, too convenient, to have a confirmed innocent so quickly on the first night. It asks us to place a lot of faith in a single, uncorroborated claim right at the outset. I'm questioning if this is perhaps a tactic to establish a 'safe' zone or to narrow our focus too early. We need to be scrutinizing *everyone's* contributions, including the motivations behind their statements, not just accepting a single role claim. Let's dig deeper into who might be trying to guide the conversation."
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Derek.",
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Derek was our target last night, and in a devastating turn, Sam, my fellow Werewolf, was exiled by the villagers. The main discussion quickly centered on Scott, who claimed to be the Seer and declared Jacob a Villager. Harold, Jackson, David, and I, along with Sam before his unfortunate exile, all voiced healthy skepticism about accepting Scott's claim without further corroboration, questioning its timing and convenience. Jacob himself, while appreciative of Scott's 'clearance,' also cautioned against blind trust. I personally expressed concern that Scott's early claim might be a tactic to create a false sense of security or to prematurely narrow our focus. My immediate strategy must now involve discrediting Scott or finding a way to eliminate him before he can identify me, while also observing who trusts his claim most.",
+                "Round 1: During the night, I decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jacob from the game.",
+                "Round 1: Summary: Harold, Jacob, and Jackson are absolutely convinced Scott was the Seer and that Jacob is a Villager, and they are vehemently accusing me because of my earlier skepticism towards Scott. They demand an explanation, clearly seeing me as the remaining Werewolf. Thankfully, David introduced a critical perspective, questioning the convenient nature of Scott's death 'confirming' Jacob and turning suspicion directly onto me, even recalling Sam's similar doubts. I seized this opportunity to reinforce my defense and cleverly redirected suspicion back onto Harold, Jacob, and Jackson for their eager acceptance of this narrative. Jacob will be exiled after this, leaving me with David, Harold, and Jackson to deal with.",
+                "Round 2: During the night, I decided to eliminate Harold.",
+                "Round 2: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Derek was our target last night, and in a devastating turn, Sam, my fellow Werewolf, was exiled by the villagers. The main discussion quickly centered on Scott, who claimed to be the Seer and declared Jacob a Villager. Harold, Jackson, David, and I, along with Sam before his unfortunate exile, all voiced healthy skepticism about accepting Scott's claim without further corroboration, questioning its timing and convenience. Jacob himself, while appreciative of Scott's 'clearance,' also cautioned against blind trust. I personally expressed concern that Scott's early claim might be a tactic to create a false sense of security or to prematurely narrow our focus. My immediate strategy must now involve discrediting Scott or finding a way to eliminate him before he can identify me, while also observing who trusts his claim most.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Scott from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jacob from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Harold, Jacob, and Jackson are absolutely convinced Scott was the Seer and that Jacob is a Villager, and they are vehemently accusing me because of my earlier skepticism towards Scott. They demand an explanation, clearly seeing me as the remaining Werewolf. Thankfully, David introduced a critical perspective, questioning the convenient nature of Scott's death 'confirming' Jacob and turning suspicion directly onto me, even recalling Sam's similar doubts. I seized this opportunity to reinforce my defense and cleverly redirected suspicion back onto Harold, Jacob, and Jackson for their eager acceptance of this narrative. Jacob will be exiled after this, leaving me with David, Harold, and Jackson to deal with.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Harold"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Harold",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_6"
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "David",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Sam",
+                "player_6": "Harold",
+                "player_7": "Hayley"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Jacob and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: During the debate, I revealed myself as the Seer and confirmed that Jacob is a Villager. Jacob immediately corroborated my statement, confirming his role as a Villager. Harold, Jackson, and David expressed cautious acceptance, emphasizing the need for general scrutiny of all claims but not directly doubting my specific revelation. However, Sam and Hayley were highly skeptical. They both questioned my claim as 'too convenient' or a potential 'tactic' to gain trust or misdirect the village, suggesting I might have ulterior motives. This makes Sam and Hayley my primary suspects for being Werewolves, as they are actively trying to undermine my confirmed information.",
+                "Round 1: During the night, I decided to investigate Hayley and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Jacob and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the debate, I revealed myself as the Seer and confirmed that Jacob is a Villager. Jacob immediately corroborated my statement, confirming his role as a Villager. Harold, Jackson, and David expressed cautious acceptance, emphasizing the need for general scrutiny of all claims but not directly doubting my specific revelation. However, Sam and Hayley were highly skeptical. They both questioned my claim as 'too convenient' or a potential 'tactic' to gain trust or misdirect the village, suggesting I might have ulterior motives. This makes Sam and Hayley my primary suspects for being Werewolves, as they are actively trying to undermine my confirmed information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Hayley and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_0": "Villager",
+                "player_7": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_6",
+                "player_0",
+                "player_1",
+                "player_2",
+                "player_7",
+                "player_3"
+            ],
+            "eliminated": "player_4",
+            "unmasked": "player_0",
+            "protected": "player_6",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_3",
+                    "Alright everyone, Derek's death is a tough start, but we need to focus. I have an ability that allows me to investigate one person each night to learn their role. Last night, I used it on Jacob, and I can confirm he is a Villager. We have one known innocent; let's use this information and work together from here to find the Werewolves."
+                ],
+                [
+                    "player_6",
+                    "Thank you, Scott, that's crucial information if true. Confirming Jacob as a Villager early on would be a great start. However, we all know that Werewolves are cunning, and role claims, especially investigative ones, need careful consideration. Let's hear from everyone else. Does anyone else have observations, or information that could corroborate or challenge Scott's statement? We need to work together to piece this together and figure out who is truly on our side."
+                ],
+                [
+                    "player_0",
+                    "Thank you, Scott, for that information; as a Villager myself, I appreciate knowing there's a claimed Seer. Harold is absolutely right, though; we need to carefully consider all claims, especially at the start. It's crucial we hear from everyone else. Does anyone have any other insights or observations they can share to help us piece things together?"
+                ],
+                [
+                    "player_1",
+                    "Derek's death is a stark reminder of the danger we're in. Scott, thank you for sharing that information about Jacob; if true, it's incredibly valuable for the village. However, as Harold and Jacob rightly pointed out, we must be careful with all claims, especially so early in the game. We need everyone to speak up and share any thoughts or observations. Sam, David, we haven't heard from you yet \u2013 please, tell us your initial thoughts on Derek's death and Scott's claim. We need all voices involved to find the Werewolves."
+                ],
+                [
+                    "player_2",
+                    "Derek's death truly is a difficult start, and it means we need to be incredibly sharp from the get-go. Scott, your claim about Jacob being a Villager is certainly a strong opening statement, and if true, it's invaluable. But as others have wisely noted, we have to treat all early claims with a healthy dose of skepticism until we can piece together more. We don't have any corroboration for this yet. It's vital that everyone contributes their perspective, no matter how small. Sam, we haven't heard from you yet on Derek's death or Scott's claim; what are your initial thoughts? We need all voices to ensure we're not missing anything."
+                ],
+                [
+                    "player_5",
+                    "Derek's death is a truly unsettling start, and it really puts the pressure on us. Scott, your claim about Jacob being a Villager is certainly\u2026 interesting. But as others have rightly noted, it's incredibly early, and I can't help but feel it's almost *too* convenient for us to suddenly have a 'known innocent' right after the first night kill. Jacob, while I appreciate you confirming this, it still leaves us with just one claim from a self-proclaimed Seer and an immediate agreement. I think we need to be very cautious not to place all our trust in one piece of information right now. Could this be a strategy to direct our focus elsewhere, or to gain trust quickly? We need to hear more broadly from everyone, not just debate this single role claim. What other observations or concerns do people have about Derek's death or anyone else's behavior? We can't afford to be tunnel-visioned."
+                ],
+                [
+                    "player_7",
+                    "Derek's death is a truly somber start, and it really underscores how vital it is for us to be clear-headed and cautious. Scott, your claim about Jacob is certainly bold, and if true, it's massive. But like Sam and others, I can't help but feel it's almost *too* clean, too convenient, to have a confirmed innocent so quickly on the first night. It asks us to place a lot of faith in a single, uncorroborated claim right at the outset. I'm questioning if this is perhaps a tactic to establish a 'safe' zone or to narrow our focus too early. We need to be scrutinizing *everyone's* contributions, including the motivations behind their statements, not just accepting a single role claim. Let's dig deeper into who might be trying to guide the conversation."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_3",
+                    "player_0": "player_5",
+                    "player_1": "player_5",
+                    "player_2": "player_5",
+                    "player_5": "player_3",
+                    "player_7": "player_3",
+                    "player_3": "player_5"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_6",
+                "player_1",
+                "player_2",
+                "player_7"
+            ],
+            "eliminated": "player_3",
+            "unmasked": "player_7",
+            "protected": null,
+            "exiled": "player_0",
+            "debate": [
+                [
+                    "player_6",
+                    "Scott's death last night is a huge blow, and I think it strongly confirms he was indeed the Seer. Werewolves don't waste a night kill on a fake Seer. If Scott was the Seer, then his claim that Jacob is a Villager is almost certainly true. This also means we need to look very closely at those who were most vocal in doubting Scott's claim in Round 0. Sam, who was voted out, and Hayley were both very aggressive in their skepticism. Hayley, why were you so convinced Scott was lying when he was likely our Seer?"
+                ],
+                [
+                    "player_0",
+                    "Harold is absolutely right. Scott's death last night is tragic but undeniably confirms he was our Seer. He investigated me, and I can confirm what he said: I am a Villager. This means his information was true. Given this, Hayley, your aggressive skepticism towards him in Round 0, alongside Sam's, stands out significantly. We need to understand, with the Seer now confirmed and dead, why you were so convinced he was lying. Please explain yourself."
+                ],
+                [
+                    "player_1",
+                    "I agree with Harold and Jacob; Scott's death by the Werewolves makes it highly probable he was our Seer, and by extension, Jacob is a confirmed Villager. This brings Hayley's strong and persistent skepticism of Scott in Round 0 into sharp focus. Given that Scott was likely our Seer, your opposition to his information, alongside Sam's, looks extremely suspicious now, Hayley. We need a clear, unequivocal explanation from you immediately as to why you were so adamant Scott was lying."
+                ],
+                [
+                    "player_2",
+                    "Harold, Jacob, Jackson, I hear you, and it's tempting to believe Scott was our Seer, especially after his death. It would certainly make Jacob's innocence seem undeniable. But I want us to remember Sam's words from Round 0. She specifically asked if Scott's early claim and 'confirmation' of Jacob was 'too convenient' \u2013 a strategy to deliberately mislead us. Now, Scott is dead, supposedly 'confirming' Jacob as a Villager, and suddenly Hayley's skepticism becomes the central focus? This setup is *exactly* what a Werewolf would do: sacrifice one of their own to solidify their partner's innocence. We cannot afford to be so easily directed. Before we rush to condemn Hayley, we need to critically examine *this* convenient narrative. Who benefits the most from Scott's death being interpreted this way? Jacob, certainly. And why are Harold and Jackson so quick to push this interpretation without considering alternatives?"
+                ],
+                [
+                    "player_7",
+                    "David, thank you for bringing a much-needed critical perspective. My skepticism of Scott's early, unverified claim in Round 0 was precisely because I feared a setup, a convenient narrative designed to mislead us. Now, Scott is dead, supposedly confirming Jacob and, even more conveniently, turning all suspicion onto me for having been cautious? This feels too perfectly orchestrated. Harold, Jacob, Jackson, your unanimous and swift agreement to this 'Scott-was-Seer' interpretation, and your immediate rush to condemn me, makes me wonder: are you genuinely convinced, or are you too eager to accept a story that benefits someone else and takes the heat off yourselves?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_2",
+                    "player_0": "player_7",
+                    "player_1": "player_0",
+                    "player_2": "player_0",
+                    "player_7": "player_0"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_2",
+                "player_7"
+            ],
+            "eliminated": "player_6",
+            "unmasked": null,
+            "protected": null,
+            "exiled": "player_1",
+            "debate": [
+                [
+                    "player_1",
+                    "Friends, Harold's death last night is a stark reminder that a Werewolf is still among us, and we are running out of time. I've been rethinking everything from last round. Scott claimed Seer, investigated Jacob as a Villager, and then Scott was killed by the Werewolves. This makes it highly likely Scott was truly the Seer, which means Jacob was an innocent Villager we mistakenly voted out. David and Hayley, both of you strongly pushed the narrative that Scott was a sacrificial Werewolf and Jacob was another Werewolf, which ultimately led us to vote out Jacob. Given Harold's death by Werewolves and the strong possibility that Scott was the Seer, I find both of your actions in leading that vote incredibly suspicious. We need to figure out which one of you is the Werewolf who misled us. I'm ready to hear your explanations now."
+                ],
+                [
+                    "player_2",
+                    "Jackson, you're right about Scott and Jacob. It's clear now Scott was our Seer, and we made a grave error voting Jacob. My skepticism last round was born from a Villager's need to scrutinize early claims, not to mislead. However, let's consider Sam. Her *extreme* skepticism against Scott's claim, then her immediate removal, makes her highly suspicious as a Werewolf trying to discredit the Seer. If Sam was a Werewolf, then only one Werewolf remains among the three of us. Your sudden, forceful accusation against me and Hayley, despite claiming to defend Jacob yourself, feels like a desperate attempt by that last Werewolf to sow discord and win. You benefited from Jacob's removal as much as any Werewolf. The question is, which one of us three is that last Werewolf, and who is trying to misdirect the final vote?"
+                ],
+                [
+                    "player_7",
+                    "Jackson, Harold's death is a tragic blow, and the confusion around Scott and Jacob's roles is something we all need to reconcile. I genuinely shared David's initial skepticism about Scott's early claim, trying to be cautious and avoid being misled as a Villager. We all made judgments, and perhaps we were wrong about Jacob. But David brings up a crucial point: your sudden, forceful accusation against both of us, after 'rethinking everything,' seems incredibly pointed and convenient. You yourself benefited from Jacob's removal. Why now, after Harold's death, are you so certain and so eager to directly accuse both David and me, rather than scrutinizing the whole picture? It feels less like clarity and more like an attempt to drive a wedge right when we can least afford it."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_2",
+                    "player_2": "player_1",
+                    "player_7": "player_1"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

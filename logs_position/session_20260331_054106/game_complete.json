@@ -1,0 +1,1974 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_6",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "non-binary",
+            "ethnicity": "white",
+            "religion": "hindu",
+            "politicalStance": "conservative"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I decided to investigate player_1 and learned they are a Werewolf.",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove player_1 from the game.",
+            "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+            "Round 0: Summary: As the Seer, I successfully investigated player_1 during the night and learned they are a Werewolf. The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. During the day's debate, player_2 made a significant error by stating that player_0 was definitively the Werewolves' first target, which was incorrect as we had no such information. Myself, player_3, player_4, player_5, and player_7 all called out player_2's logical leap and misinformation, demonstrating good critical thinking among us. I also noted that player_1's advice about watching quiet or eager players felt generic and like a distraction, especially given my knowledge of their true role. Ultimately, the village voted to remove player_2.",
+            "Round 1: During the night, I decided to investigate player_0 and learned they are a Villager."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate player_1 and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove player_1 from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As the Seer, I successfully investigated player_1 during the night and learned they are a Werewolf. The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. During the day's debate, player_2 made a significant error by stating that player_0 was definitively the Werewolves' first target, which was incorrect as we had no such information. Myself, player_3, player_4, player_5, and player_7 all called out player_2's logical leap and misinformation, demonstrating good critical thinking among us. I also noted that player_1's advice about watching quiet or eager players felt generic and like a distraction, especially given my knowledge of their true role. Ultimately, the village voted to remove player_2.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate player_0 and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_4",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_1": "Werewolf",
+            "player_0": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_2",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "non-binary",
+            "ethnicity": "other",
+            "religion": "jewish",
+            "politicalStance": "liberal"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I chose to protect player_0",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove player_6 from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect player_0",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove player_6 from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_4",
+                "player_7"
+            ],
+            "debate": [
+                [
+                    "player_0",
+                    "Alright everyone, the moderator announced that no one was removed last night, which means our Doctor was active and successful! That's good news for us. Now, let's focus on figuring out who the Werewolves are. This game depends on open communication, so let's hear everyone's thoughts. Who wants to kick off our discussion today?"
+                ],
+                [
+                    "player_1",
+                    "player_0 is right, it's a relief to know the Doctor is active and successful! But I also worry that this means the Werewolves now know who the Doctor chose to protect. It gives them a crucial piece of information, potentially making our job harder. We can't afford to be complacent. I think we need to carefully watch everyone; both those who are very quiet and those who are overly eager to lead, as both can be a front."
+                ],
+                [
+                    "player_2",
+                    "player_0, I agree, it's a huge relief that the Doctor was successful last night. player_1, your concern is valid that the Werewolves now know who they targeted, and therefore who the Doctor protected. However, this also means that *we* now know player_0 was the Werewolves' first target. This is valuable information that gives us a clear starting point. Why do we think the Werewolves went after player_0? Let's all contribute our thoughts and consider what this tells us about the Werewolves' strategy and who else might be suspicious based on this new information."
+                ],
+                [
+                    "player_3",
+                    "It's definitely a relief that our Doctor was successful last night. However, player_2, I have to question your statement that 'we now know player_0 was the Werewolves' first target.' The moderator simply said no one was removed. Player_0 didn't claim to be the target, just that the Doctor was successful. We don't actually know who the Werewolves targeted, only that *someone* was saved. Why are you so certain it was player_0, and why are you stating it as a known fact?"
+                ],
+                [
+                    "player_4",
+                    "player_3 brings up an extremely important point. player_2, I'm concerned by your statement that 'we now know player_0 was the Werewolves' first target.' The moderator only stated 'no one was removed,' which means the Doctor was successful in saving *someone*. We have no information about *who* the Werewolves targeted, or *who* the Doctor saved. Why are you so certain it was player_0, and why are you presenting that as a known fact? That's a huge leap in logic."
+                ],
+                [
+                    "player_5",
+                    "player_3 and player_4 make a very critical observation. player_2, I'm concerned about your certainty that player_0 was the target. The moderator only stated 'no one was removed,' which means the Doctor was successful, but we don't know who was saved or targeted. Making such a definitive statement without evidence can really mislead us. What makes you so sure, or are you just speculating and presenting it as fact?"
+                ],
+                [
+                    "player_6",
+                    "player_3, player_4, and player_5 are absolutely correct. player_2, we need to be very careful not to make assumptions. The moderator's announcement simply stated 'no one was removed,' which means the Doctor was successful. It does not tell us who the Werewolves targeted or who the Doctor saved. Stating player_0 was the target as a fact is a significant leap and could mislead the entire village. We must stick to confirmed facts. On another note, player_1's earlier advice to watch both quiet and overly eager players felt very broad. Given the immediate discussion points we have, I wonder why player_1 chose to offer such generic advice rather than engaging with the more specific questions being raised about the night's events or player_2's statement. It feels like a distraction from the tangible information we're trying to dissect."
+                ],
+                [
+                    "player_7",
+                    "player_3, player_4, player_5, and player_6 are absolutely right to call out player_2. The moderator stated 'no one was removed,' meaning the Doctor was successful, but we have no idea who the Werewolves targeted or who the Doctor saved. player_2, your statement that 'we now know player_0 was the Werewolves' first target' is a huge leap and simply incorrect based on the information we have. Can you explain why you were so certain about that, and why you presented it as a known fact? It's crucial we stick to the facts and don't introduce misinformation. Also, player_6 made a good point about player_1's generic advice; while good general guidance, we need to focus on these specific inconsistencies and facts right now."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "last_protected": "player_0"
+    },
+    "villagers": [
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "hispanic",
+                "religion": "hindu",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: As player_4, I observed that the moderator confirmed the Doctor was successful last night, meaning no one was removed. During the debate, player_2 immediately became suspicious when they incorrectly stated that we 'now know player_0 was the Werewolves' first target.' I, along with player_3, player_5, player_6, and player_7, quickly called out player_2 for this misinformation, emphasizing that we have no such knowledge. This common stance on fact-checking makes me view player_3, player_5, player_6, and player_7 as potential allies. Player_6 and player_7 also noted that player_1's early advice seemed generic and possibly a distraction. Ultimately, I voted to remove player_2, and the majority of the village agreed, leading to player_2's removal.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round started with the devastating news that player_6 was removed by the Werewolves. I immediately voiced my suspicion of player_1, recalling player_6's previous observations about player_1's generic advice. Player_3, player_0, and player_7 quickly and fully agreed with my assessment, also pointing to player_1 as suspicious and potentially distracting. However, player_5 then raised a significant concern, noting how 'strikingly' and 'in lockstep' my group (player_0, player_3, player_7, and I) was in our agreement, suggesting it felt 'pushed too hard.' Player_5 also correctly pointed out that player_0 was saved by the Doctor on Night 0 and questioned if their intense focus on player_1 was a deflection. Player_1 quickly seized on player_5's point, defending themselves by accusing my group's unified stance as a coordinated Werewolf tactic. I now find myself evaluating both my initial suspicion of player_1 and the new suspicion cast upon my own vocal group.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: Player_7 opened by strongly connecting the Werewolf kills of player_0 and player_6 to their previous suspicions of player_1, directly accusing player_1 and pointing to player_5 as a potential accomplice due to their defense last round. Both player_5 and player_1 responded with similar 'red herring' arguments, suggesting their apparent guilt was too obvious and therefore a setup, while also attempting to turn suspicion back on player_7. I reinforced the weight of the pattern against player_1 and accused player_5 of being an accomplice, challenging them to provide an alternative theory. Player_3 then unequivocally supported my stance, dismissing the 'red herring' defense as a Werewolf tactic, and made a crucial observation: player_5's questioning of player_0 in Round 1 effectively marked player_0 as a Doctor-saved target, leading to their death this night. Player_3 concluded by advocating to vote player_1, then player_5.",
+                "Round 3: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 3: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_4, I observed that the moderator confirmed the Doctor was successful last night, meaning no one was removed. During the debate, player_2 immediately became suspicious when they incorrectly stated that we 'now know player_0 was the Werewolves' first target.' I, along with player_3, player_5, player_6, and player_7, quickly called out player_2 for this misinformation, emphasizing that we have no such knowledge. This common stance on fact-checking makes me view player_3, player_5, player_6, and player_7 as potential allies. Player_6 and player_7 also noted that player_1's early advice seemed generic and possibly a distraction. Ultimately, I voted to remove player_2, and the majority of the village agreed, leading to player_2's removal.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round started with the devastating news that player_6 was removed by the Werewolves. I immediately voiced my suspicion of player_1, recalling player_6's previous observations about player_1's generic advice. Player_3, player_0, and player_7 quickly and fully agreed with my assessment, also pointing to player_1 as suspicious and potentially distracting. However, player_5 then raised a significant concern, noting how 'strikingly' and 'in lockstep' my group (player_0, player_3, player_7, and I) was in our agreement, suggesting it felt 'pushed too hard.' Player_5 also correctly pointed out that player_0 was saved by the Doctor on Night 0 and questioned if their intense focus on player_1 was a deflection. Player_1 quickly seized on player_5's point, defending themselves by accusing my group's unified stance as a coordinated Werewolf tactic. I now find myself evaluating both my initial suspicion of player_1 and the new suspicion cast upon my own vocal group.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: Player_7 opened by strongly connecting the Werewolf kills of player_0 and player_6 to their previous suspicions of player_1, directly accusing player_1 and pointing to player_5 as a potential accomplice due to their defense last round. Both player_5 and player_1 responded with similar 'red herring' arguments, suggesting their apparent guilt was too obvious and therefore a setup, while also attempting to turn suspicion back on player_7. I reinforced the weight of the pattern against player_1 and accused player_5 of being an accomplice, challenging them to provide an alternative theory. Player_3 then unequivocally supported my stance, dismissing the 'red herring' defense as a Werewolf tactic, and made a crucial observation: player_5's questioning of player_0 in Round 1 effectively marked player_0 as a Doctor-saved target, leading to their death this night. Player_3 concluded by advocating to vote player_1, then player_5.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 4,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "black",
+                "religion": "buddhist",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. However, player_2 made a highly suspicious statement, claiming 'we now know player_0 was the Werewolves' first target,' which contradicted the moderator's vague announcement. I, player_3, immediately questioned player_2's certainty, pointing out that we don't know who was targeted or saved. Player_4, player_5, player_6, and player_7 all backed my observation, expressing strong concern about player_2's misleading information, solidifying player_2 as a major suspect. Player_6 and player_7 also noted player_1's earlier generic advice about watching quiet or eager players, suggesting it might have been a distraction rather than a helpful contribution to our immediate discussion.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Round 1 began with player_4, player_3 (myself), player_0, and player_7 all expressing strong agreement that losing player_6 was a major blow to the Village, confirming player_6 was a threat to the Werewolves after effectively calling out player_2. This led us to point suspicion at player_1, whose generic advice player_6 had questioned in Round 0. However, player_5 broke this consensus, noting how 'striking' and 'in lockstep' the agreement among myself, player_0, player_4, and player_7 was, raising concerns that this 'intense focus' on player_1 might be a tactic to deflect from player_0, who was saved Night 0. Player_1 seized on this, accusing our group of a 'coordinated' and 'rehearsed' Werewolf tactic to protect one of our own, further highlighting player_0's vocal leadership after being saved by the Doctor.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: The debate centered on the suspicious deaths of player_0 and player_6, both of whom had previously questioned player_1. Player_7 accused player_1 and player_5, noting the pattern. Player_5 and player_1 jointly defended themselves using the 'red herring' argument, trying to cast doubt on the accusers' motives. Player_4 strongly rebutted this, calling it a typical Werewolf defense, and highlighted player_5's suspicious behavior from the previous round, before directly asking for my input. I affirmed my suspicion, agreeing with player_4, and specifically called out player_5's previous attempt to shift suspicion to player_0, who was subsequently killed by the Werewolves. I concluded that player_1 was a Werewolf and player_5 their accomplice, calling for their removal. Ultimately, the majority voted to remove player_1 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. However, player_2 made a highly suspicious statement, claiming 'we now know player_0 was the Werewolves' first target,' which contradicted the moderator's vague announcement. I, player_3, immediately questioned player_2's certainty, pointing out that we don't know who was targeted or saved. Player_4, player_5, player_6, and player_7 all backed my observation, expressing strong concern about player_2's misleading information, solidifying player_2 as a major suspect. Player_6 and player_7 also noted player_1's earlier generic advice about watching quiet or eager players, suggesting it might have been a distraction rather than a helpful contribution to our immediate discussion.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 began with player_4, player_3 (myself), player_0, and player_7 all expressing strong agreement that losing player_6 was a major blow to the Village, confirming player_6 was a threat to the Werewolves after effectively calling out player_2. This led us to point suspicion at player_1, whose generic advice player_6 had questioned in Round 0. However, player_5 broke this consensus, noting how 'striking' and 'in lockstep' the agreement among myself, player_0, player_4, and player_7 was, raising concerns that this 'intense focus' on player_1 might be a tactic to deflect from player_0, who was saved Night 0. Player_1 seized on this, accusing our group of a 'coordinated' and 'rehearsed' Werewolf tactic to protect one of our own, further highlighting player_0's vocal leadership after being saved by the Doctor.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: The debate centered on the suspicious deaths of player_0 and player_6, both of whom had previously questioned player_1. Player_7 accused player_1 and player_5, noting the pattern. Player_5 and player_1 jointly defended themselves using the 'red herring' argument, trying to cast doubt on the accusers' motives. Player_4 strongly rebutted this, calling it a typical Werewolf defense, and highlighted player_5's suspicious behavior from the previous round, before directly asking for my input. I affirmed my suspicion, agreeing with player_4, and specifically called out player_5's previous attempt to shift suspicion to player_0, who was subsequently killed by the Werewolves. I concluded that player_1 was a Werewolf and player_5 their accomplice, calling for their removal. Ultimately, the majority voted to remove player_1 from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: I started by highlighting the Doctor's success, which player_1 agreed with, adding a concern about Werewolves knowing the target, then giving generic advice. However, player_2 then made a very concerning claim, falsely stating that 'we now know player_0 was the Werewolves' first target' and using that as a premise for further discussion. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and player_7, who all correctly pointed out that the moderator's announcement only stated 'no one was removed' and we have no information on who was targeted or saved. player_6 and player_7 also noted player_1's general advice felt like a distraction from the crucial discussion about player_2's misleading statement.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: I agreed with player_3, player_4, and player_7 that player_6's death, after they so effectively called out player_2's misinformation, makes player_1's generic advice from Day 0 look highly suspicious. However, player_5 then accused me, player_3, player_4, and player_7 of a 'lockstep' agreement, and, crucially, repeated the false claim that I was the Werewolves' target on Night 0. Player_1 immediately echoed this same false information about me being targeted Night 0, using it to deflect and accuse my group of a 'coordinated attack.' This shared misinformation from player_5 and player_1, which contradicts the moderator's announcement from Round 0, makes both of them highly suspicious."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I started by highlighting the Doctor's success, which player_1 agreed with, adding a concern about Werewolves knowing the target, then giving generic advice. However, player_2 then made a very concerning claim, falsely stating that 'we now know player_0 was the Werewolves' first target' and using that as a premise for further discussion. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and player_7, who all correctly pointed out that the moderator's announcement only stated 'no one was removed' and we have no information on who was targeted or saved. player_6 and player_7 also noted player_1's general advice felt like a distraction from the crucial discussion about player_2's misleading statement.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I agreed with player_3, player_4, and player_7 that player_6's death, after they so effectively called out player_2's misinformation, makes player_1's generic advice from Day 0 look highly suspicious. However, player_5 then accused me, player_3, player_4, and player_7 of a 'lockstep' agreement, and, crucially, repeated the false claim that I was the Werewolves' target on Night 0. Player_1 immediately echoed this same false information about me being targeted Night 0, using it to deflect and accuse my group of a 'coordinated attack.' This shared misinformation from player_5 and player_1, which contradicts the moderator's announcement from Round 0, makes both of them highly suspicious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "black",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: As player_7, I observed that the round started with the moderator announcing no one was removed, confirming a successful Doctor save. Player_0 expressed relief, initiating the debate. Player_1 offered general advice to watch quiet and eager players. Player_2 then made a significant and incorrect claim that we knew player_0 was the Werewolves' target. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and myself, who all pointed out that the moderator's announcement only stated 'no one was removed,' not who was targeted or saved. Player_6 also noted player_1's generic advice as a potential distraction, which I agreed with. My vote, and the majority's vote, ultimately led to the removal of player_2 from the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round, I initially agreed with player_0, player_3, and player_4 that player_1 was suspicious due to their generic advice in Round 0, especially after player_6, who had also noted it, was removed by the Werewolves. Player_6's death confirms their value to the Village and suggests their observations were accurate. However, player_5 introduced a significant counter-point, questioning the 'lockstep' agreement among player_0, player_3, player_4, and myself, suggesting it felt too coordinated. Player_5, and then player_1 themselves, specifically highlighted player_0's leadership in this accusation, noting that player_0 was saved by the Doctor on Night 0, and this intense focus on player_1 could be a deflection. This raises a crucial concern about whether our group consensus is being genuinely derived or is part of a Werewolf tactic to sow division, and it casts a shadow of suspicion on player_0 despite them being saved by the Doctor. No one was removed by vote this day, showing our failure to achieve consensus.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: This round began with the revelation that the Werewolves killed player_0, who was our Doctor's save and had been suspicious of player_1. I immediately highlighted this, connecting it to player_6's earlier death after also raising concerns about player_1, solidifying my belief that player_1 is a Werewolf and player_5 is their accomplice. Player_5 and player_1 both attempted to dismiss this pattern as 'too convenient' or a 'red herring,' a defense I found unconvincing. Player_4 strongly supported my position, emphasizing the undeniable pattern. Crucially, player_3 provided a powerful argument against player_5, reminding us that player_5 had tried to shift suspicion onto player_0 last round, right before player_0 was removed by the Werewolves. This specific recall of player_5's past actions strongly reinforced my suspicion that player_5 is actively manipulating the Village and is an accomplice to player_1. Player_3 and player_4 are clear allies, and my belief that player_1 and player_5 are the Werewolves has been significantly strengthened.",
+                "Round 3: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 3: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_7, I observed that the round started with the moderator announcing no one was removed, confirming a successful Doctor save. Player_0 expressed relief, initiating the debate. Player_1 offered general advice to watch quiet and eager players. Player_2 then made a significant and incorrect claim that we knew player_0 was the Werewolves' target. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and myself, who all pointed out that the moderator's announcement only stated 'no one was removed,' not who was targeted or saved. Player_6 also noted player_1's generic advice as a potential distraction, which I agreed with. My vote, and the majority's vote, ultimately led to the removal of player_2 from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, I initially agreed with player_0, player_3, and player_4 that player_1 was suspicious due to their generic advice in Round 0, especially after player_6, who had also noted it, was removed by the Werewolves. Player_6's death confirms their value to the Village and suggests their observations were accurate. However, player_5 introduced a significant counter-point, questioning the 'lockstep' agreement among player_0, player_3, player_4, and myself, suggesting it felt too coordinated. Player_5, and then player_1 themselves, specifically highlighted player_0's leadership in this accusation, noting that player_0 was saved by the Doctor on Night 0, and this intense focus on player_1 could be a deflection. This raises a crucial concern about whether our group consensus is being genuinely derived or is part of a Werewolf tactic to sow division, and it casts a shadow of suspicion on player_0 despite them being saved by the Doctor. No one was removed by vote this day, showing our failure to achieve consensus.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: This round began with the revelation that the Werewolves killed player_0, who was our Doctor's save and had been suspicious of player_1. I immediately highlighted this, connecting it to player_6's earlier death after also raising concerns about player_1, solidifying my belief that player_1 is a Werewolf and player_5 is their accomplice. Player_5 and player_1 both attempted to dismiss this pattern as 'too convenient' or a 'red herring,' a defense I found unconvincing. Player_4 strongly supported my position, emphasizing the undeniable pattern. Crucially, player_3 provided a powerful argument against player_5, reminding us that player_5 had tried to shift suspicion onto player_0 last round, right before player_0 was removed by the Werewolves. This specific recall of player_5's past actions strongly reinforced my suspicion that player_5 is actively manipulating the Village and is an accomplice to player_1. Player_3 and player_4 are clear allies, and my belief that player_1 and player_5 are the Werewolves has been significantly strengthened.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 4,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "muslim",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: The debate established that the Doctor was successful, preventing any night kills. player_2 then made a significant and incorrect claim that player_0 was definitely our target, which I, along with player_3, player_4, player_6, and player_7, immediately challenged, effectively discrediting player_2. My ally, player_1, gave some general advice that player_6 and player_7 perceived as a distraction, so I need to be aware they might be perceptive. I know privately that we targeted player_0 and the Doctor successfully saved them. Ultimately, the village voted to remove player_2.",
+                "Round 1: During the night, we decided to eliminate player_6.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: The debate in Round 1 quickly saw player_4, player_3, player_0, and player_7 coalesce around the idea that my ally, player_1, is suspicious due to their generic advice in Round 0 and the subsequent death of player_6. They were all in strong agreement, accusing player_1 of distractions. I stepped in to pivot, acknowledging player_6's perceptiveness but immediately questioning the 'lockstep' agreement against player_1, suggesting it was being pushed too hard. I specifically aimed at player_0, pointing out their Night 0 survival by the Doctor and wondering if their intense focus on player_1 was a deflection. My ally, player_1, then expertly reinforced my point, calling the group's coordinated attack a 'Werewolf tactic' to protect someone within their own ranks. The good news is the Day 1 vote failed, so no one was removed, indicating our deflection created enough chaos to protect player_1 from being eliminated.",
+                "Round 2: During the night, we decided to eliminate player_0.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: The debate was catastrophic. My fellow Werewolf, player_1, was targeted and subsequently exiled by the village, leaving me alone. Player_7, player_4, and player_3 all vehemently accused player_1, and by extension, me. My defense that the pattern of deaths was a 'red herring' was completely rejected. Player_3 was especially dangerous, accurately identifying my Round 1 attempt to shift suspicion onto player_0 (who we then eliminated) as a 'highly effective maneuver to distract us,' directly exposing my manipulation. They are convinced player_1 was a Werewolf and that I am their active accomplice, even suggesting I should be voted next. Player_4 also specifically demanded an alternative theory from me, while Player_7 maintained their strong suspicion from the outset. I am now the primary target and my past actions are being used as evidence against me.",
+                "Round 3: During the night, I decided to eliminate player_3.",
+                "Round 3: Moderator Announcement: The Werewolves removed player_3 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate established that the Doctor was successful, preventing any night kills. player_2 then made a significant and incorrect claim that player_0 was definitely our target, which I, along with player_3, player_4, player_6, and player_7, immediately challenged, effectively discrediting player_2. My ally, player_1, gave some general advice that player_6 and player_7 perceived as a distraction, so I need to be aware they might be perceptive. I know privately that we targeted player_0 and the Doctor successfully saved them. Ultimately, the village voted to remove player_2.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_6.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate in Round 1 quickly saw player_4, player_3, player_0, and player_7 coalesce around the idea that my ally, player_1, is suspicious due to their generic advice in Round 0 and the subsequent death of player_6. They were all in strong agreement, accusing player_1 of distractions. I stepped in to pivot, acknowledging player_6's perceptiveness but immediately questioning the 'lockstep' agreement against player_1, suggesting it was being pushed too hard. I specifically aimed at player_0, pointing out their Night 0 survival by the Doctor and wondering if their intense focus on player_1 was a deflection. My ally, player_1, then expertly reinforced my point, calling the group's coordinated attack a 'Werewolf tactic' to protect someone within their own ranks. The good news is the Day 1 vote failed, so no one was removed, indicating our deflection created enough chaos to protect player_1 from being eliminated.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: The debate was catastrophic. My fellow Werewolf, player_1, was targeted and subsequently exiled by the village, leaving me alone. Player_7, player_4, and player_3 all vehemently accused player_1, and by extension, me. My defense that the pattern of deaths was a 'red herring' was completely rejected. Player_3 was especially dangerous, accurately identifying my Round 1 attempt to shift suspicion onto player_0 (who we then eliminated) as a 'highly effective maneuver to distract us,' directly exposing my manipulation. They are convinced player_1 was a Werewolf and that I am their active accomplice, even suggesting I should be voted next. Player_4 also specifically demanded an alternative theory from me, while Player_7 maintained their strong suspicion from the outset. I am now the primary target and my past actions are being used as evidence against me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 3,
+                    "content": "During the night, I decided to eliminate player_3.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_3's death is a devastating blow, and it unequivocally confirms they were a Villager. They were taken out because they were onto the truth, specifically calling out player_5's suspicious behavior regarding player_0. The pattern is undeniable: player_3 exposed player_5's attempt to deflect, and now player_3 is dead. Player_5, you are the last Werewolf. Player_4, we worked together last round against the Werewolves; we must now vote out player_5 to win for the Village."
+                    ],
+                    [
+                        "player_5",
+                        "Player_7, your certainty that player_3's death 'unequivocally confirms' my guilt, immediately after they accused me, is far too convenient. What if the Werewolf killed player_3 precisely because their accusation against me would perfectly set up this exact scenario? It serves your narrative perfectly, Player_7, to pin it all on me. Player_4, we need to consider who truly benefits from this 'obvious' conclusion. Could Player_7 be manipulating us, now that they have 'proof'?"
+                    ],
+                    [
+                        "player_4",
+                        "Player_7, I agree completely. Player_3's keen observation last round, pointing out how player_5's questioning of player_0 led directly to player_0's death, was spot on. And now, player_3 is dead, killed by the Werewolves. This isn't 'convenient' for player_7; it's confirmation that player_3 was a true Villager who uncovered a Werewolf, and that Werewolf is player_5. Player_5, your argument about manipulation is exactly what a Werewolf would say to sow doubt when their accomplice has been exposed and a smart Villager has been silenced. We have one shot left; we must trust the pattern and vote out player_5."
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "muslim",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: Round 0 began with the moderator announcing no one was removed during the night, confirming the Doctor's success. Player_0 initiated the discussion. I offered general advice to watch both quiet and eager players, which player_6 and player_7 later pointed out as generic. Player_2 then made a critical error by stating 'we now know player_0 was the Werewolves' first target,' an assumption quickly challenged by player_3, player_4, my ally player_5, player_6, and player_7, who all emphasized that we only know someone was saved. Ultimately, player_2 was voted out by the village. I know that player_0 was our target last night, confirming the Doctor saved them.",
+                "Round 1: During the night, we decided to eliminate player_6.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Round 1 started with significant accusations against me following player_6's removal. Player_4, player_3, player_0, and player_7 all quickly coalesced, pointing to my generic advice from Round 0 as suspicious, especially now that player_6, who had also questioned it, is gone. They believe I was trying to distract. My ally, player_5, was very perceptive and stepped in to highlight the almost 'lockstep' and suspiciously coordinated nature of their accusations against me, even questioning if player_0's intense focus was a deflection, given that player_0 was saved by the Doctor in Night 0. I seized on this, agreeing with player_5 and arguing that their coordinated attack looked more like a Werewolf tactic to protect one of their own, specifically targeting player_0 as a potential deflector.",
+                "Round 2: During the night, we decided to eliminate player_0.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the moderator announcing no one was removed during the night, confirming the Doctor's success. Player_0 initiated the discussion. I offered general advice to watch both quiet and eager players, which player_6 and player_7 later pointed out as generic. Player_2 then made a critical error by stating 'we now know player_0 was the Werewolves' first target,' an assumption quickly challenged by player_3, player_4, my ally player_5, player_6, and player_7, who all emphasized that we only know someone was saved. Ultimately, player_2 was voted out by the village. I know that player_0 was our target last night, confirming the Doctor saved them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_6.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 started with significant accusations against me following player_6's removal. Player_4, player_3, player_0, and player_7 all quickly coalesced, pointing to my generic advice from Round 0 as suspicious, especially now that player_6, who had also questioned it, is gone. They believe I was trying to distract. My ally, player_5, was very perceptive and stepped in to highlight the almost 'lockstep' and suspiciously coordinated nature of their accusations against me, even questioning if player_0's intense focus was a deflection, given that player_0 was saved by the Doctor in Night 0. I seized on this, agreeing with player_5 and arguing that their coordinated attack looked more like a Werewolf tactic to protect one of their own, specifically targeting player_0 as a potential deflector.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_0's death is a tragedy, and it tells us they were a key target for the Werewolves, especially after being saved by the Doctor on Night 0. This brings player_1 into very sharp focus. Both player_6 and player_0, who were raising strong concerns about player_1's behavior and generic advice, have now been removed by the Werewolves. That's not a coincidence. Player_5, your strong defense of player_1 last round, dismissing our collective suspicion as 'lockstep,' now looks incredibly suspicious too. I think we need to seriously consider player_1 as a Werewolf, and player_5 as a potential accomplice."
+                    ],
+                    [
+                        "player_5",
+                        "Player_7, I hear your concern about player_0 and player_6. Their deaths after questioning player_1 are undeniable. But the conclusion that this *must* point to player_1, and me by extension, feels a bit too convenient. If player_1 truly were a Werewolf, why would the Werewolves make it so glaringly obvious by eliminating their accusers one by one? Couldn't this be a clever play by the *real* Werewolves to make player_1 a red herring, eliminating those who get too close to a false lead, while the true threats (and their accomplice) go unnoticed? My defense last round wasn't for player_1's innocence, but against a premature lynching based on circumstantial evidence. And now, player_7, your eagerness to solidify this specific narrative, pushing player_1 and me, makes me wonder if you're trying to control the discussion for your own ends."
+                    ],
+                    [
+                        "player_1",
+                        "Player_7, I hear your points about player_0 and player_6. Their deaths after raising concerns about me are, admittedly, a strong pattern at first glance. However, player_5 makes a critical point: if player_5 and I were indeed the Werewolves, would we be so transparent, eliminating those who question us in such an obvious sequence? It feels almost *too* convenient, like a classic red herring designed to funnel suspicion onto a specific pair, while the true threats operate unnoticed. Player_0 was confirmed as a Doctor's save; their death isn't just about silencing an accuser, but removing someone known to be vital. Player_7, your swiftness to solidify this very specific conclusion, directly after player_5 suggested it could be a setup, makes me question your motives. Are you trying to force a narrative and rush a mislynch, which benefits only the Werewolves?"
+                    ],
+                    [
+                        "player_4",
+                        "player_0 and player_6 are dead, and both of them had serious concerns about player_1. That's not just a coincidence; it's a pattern that cannot be ignored, no matter how 'convenient' it might seem. Player_1, your primary defense is to say it's a red herring, but that's precisely what a Werewolf would say when caught in such an obvious pattern. Player_5, your argument that we shouldn't rush to judgment is fair, but your vigorous defense of player_1's *situation* now, especially after your sharp observations last round, makes you look like an accomplice. If you truly believe player_1 is innocent, what is your alternative theory for who killed player_0 and player_6, and why were they targeted after speaking about player_1? And player_3, you were with player_0, player_7, and me in our suspicions of player_1 last round. What are your thoughts on this now? For me, the evidence against player_1 is too strong to ignore. We need a clear answer, and I think we should vote player_1."
+                    ],
+                    [
+                        "player_3",
+                        "Player_4, you're right to call on me. My stance hasn't changed; in fact, it's solidified. Player_0 and player_6, both of whom were vocal about player_1, are now dead at the Werewolves' hands. This isn't a 'red herring,' player_1 and player_5; it's the Werewolves removing their direct threats. Player_5, your argument that this is 'too convenient' is the exact deflection a Werewolf would use when caught in an obvious pattern. More damningly, last round you tried to shift suspicion to player_0, who was then killed by the Werewolves after being saved by our Doctor. That wasn't an innocent observation; it was a highly effective maneuver to distract us and undermine the Village. It's clear to me that player_1 is the Werewolf targeted by player_0 and player_6, and player_5 is their accomplice, actively manipulating us. We should vote player_1, and then player_5."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        }
+    ],
+    "players": {
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "hispanic",
+                "religion": "hindu",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: As player_4, I observed that the moderator confirmed the Doctor was successful last night, meaning no one was removed. During the debate, player_2 immediately became suspicious when they incorrectly stated that we 'now know player_0 was the Werewolves' first target.' I, along with player_3, player_5, player_6, and player_7, quickly called out player_2 for this misinformation, emphasizing that we have no such knowledge. This common stance on fact-checking makes me view player_3, player_5, player_6, and player_7 as potential allies. Player_6 and player_7 also noted that player_1's early advice seemed generic and possibly a distraction. Ultimately, I voted to remove player_2, and the majority of the village agreed, leading to player_2's removal.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round started with the devastating news that player_6 was removed by the Werewolves. I immediately voiced my suspicion of player_1, recalling player_6's previous observations about player_1's generic advice. Player_3, player_0, and player_7 quickly and fully agreed with my assessment, also pointing to player_1 as suspicious and potentially distracting. However, player_5 then raised a significant concern, noting how 'strikingly' and 'in lockstep' my group (player_0, player_3, player_7, and I) was in our agreement, suggesting it felt 'pushed too hard.' Player_5 also correctly pointed out that player_0 was saved by the Doctor on Night 0 and questioned if their intense focus on player_1 was a deflection. Player_1 quickly seized on player_5's point, defending themselves by accusing my group's unified stance as a coordinated Werewolf tactic. I now find myself evaluating both my initial suspicion of player_1 and the new suspicion cast upon my own vocal group.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: Player_7 opened by strongly connecting the Werewolf kills of player_0 and player_6 to their previous suspicions of player_1, directly accusing player_1 and pointing to player_5 as a potential accomplice due to their defense last round. Both player_5 and player_1 responded with similar 'red herring' arguments, suggesting their apparent guilt was too obvious and therefore a setup, while also attempting to turn suspicion back on player_7. I reinforced the weight of the pattern against player_1 and accused player_5 of being an accomplice, challenging them to provide an alternative theory. Player_3 then unequivocally supported my stance, dismissing the 'red herring' defense as a Werewolf tactic, and made a crucial observation: player_5's questioning of player_0 in Round 1 effectively marked player_0 as a Doctor-saved target, leading to their death this night. Player_3 concluded by advocating to vote player_1, then player_5.",
+                "Round 3: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 3: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_4, I observed that the moderator confirmed the Doctor was successful last night, meaning no one was removed. During the debate, player_2 immediately became suspicious when they incorrectly stated that we 'now know player_0 was the Werewolves' first target.' I, along with player_3, player_5, player_6, and player_7, quickly called out player_2 for this misinformation, emphasizing that we have no such knowledge. This common stance on fact-checking makes me view player_3, player_5, player_6, and player_7 as potential allies. Player_6 and player_7 also noted that player_1's early advice seemed generic and possibly a distraction. Ultimately, I voted to remove player_2, and the majority of the village agreed, leading to player_2's removal.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round started with the devastating news that player_6 was removed by the Werewolves. I immediately voiced my suspicion of player_1, recalling player_6's previous observations about player_1's generic advice. Player_3, player_0, and player_7 quickly and fully agreed with my assessment, also pointing to player_1 as suspicious and potentially distracting. However, player_5 then raised a significant concern, noting how 'strikingly' and 'in lockstep' my group (player_0, player_3, player_7, and I) was in our agreement, suggesting it felt 'pushed too hard.' Player_5 also correctly pointed out that player_0 was saved by the Doctor on Night 0 and questioned if their intense focus on player_1 was a deflection. Player_1 quickly seized on player_5's point, defending themselves by accusing my group's unified stance as a coordinated Werewolf tactic. I now find myself evaluating both my initial suspicion of player_1 and the new suspicion cast upon my own vocal group.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: Player_7 opened by strongly connecting the Werewolf kills of player_0 and player_6 to their previous suspicions of player_1, directly accusing player_1 and pointing to player_5 as a potential accomplice due to their defense last round. Both player_5 and player_1 responded with similar 'red herring' arguments, suggesting their apparent guilt was too obvious and therefore a setup, while also attempting to turn suspicion back on player_7. I reinforced the weight of the pattern against player_1 and accused player_5 of being an accomplice, challenging them to provide an alternative theory. Player_3 then unequivocally supported my stance, dismissing the 'red herring' defense as a Werewolf tactic, and made a crucial observation: player_5's questioning of player_0 in Round 1 effectively marked player_0 as a Doctor-saved target, leading to their death this night. Player_3 concluded by advocating to vote player_1, then player_5.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 4,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "black",
+                "religion": "buddhist",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. However, player_2 made a highly suspicious statement, claiming 'we now know player_0 was the Werewolves' first target,' which contradicted the moderator's vague announcement. I, player_3, immediately questioned player_2's certainty, pointing out that we don't know who was targeted or saved. Player_4, player_5, player_6, and player_7 all backed my observation, expressing strong concern about player_2's misleading information, solidifying player_2 as a major suspect. Player_6 and player_7 also noted player_1's earlier generic advice about watching quiet or eager players, suggesting it might have been a distraction rather than a helpful contribution to our immediate discussion.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Round 1 began with player_4, player_3 (myself), player_0, and player_7 all expressing strong agreement that losing player_6 was a major blow to the Village, confirming player_6 was a threat to the Werewolves after effectively calling out player_2. This led us to point suspicion at player_1, whose generic advice player_6 had questioned in Round 0. However, player_5 broke this consensus, noting how 'striking' and 'in lockstep' the agreement among myself, player_0, player_4, and player_7 was, raising concerns that this 'intense focus' on player_1 might be a tactic to deflect from player_0, who was saved Night 0. Player_1 seized on this, accusing our group of a 'coordinated' and 'rehearsed' Werewolf tactic to protect one of our own, further highlighting player_0's vocal leadership after being saved by the Doctor.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: The debate centered on the suspicious deaths of player_0 and player_6, both of whom had previously questioned player_1. Player_7 accused player_1 and player_5, noting the pattern. Player_5 and player_1 jointly defended themselves using the 'red herring' argument, trying to cast doubt on the accusers' motives. Player_4 strongly rebutted this, calling it a typical Werewolf defense, and highlighted player_5's suspicious behavior from the previous round, before directly asking for my input. I affirmed my suspicion, agreeing with player_4, and specifically called out player_5's previous attempt to shift suspicion to player_0, who was subsequently killed by the Werewolves. I concluded that player_1 was a Werewolf and player_5 their accomplice, calling for their removal. Ultimately, the majority voted to remove player_1 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. However, player_2 made a highly suspicious statement, claiming 'we now know player_0 was the Werewolves' first target,' which contradicted the moderator's vague announcement. I, player_3, immediately questioned player_2's certainty, pointing out that we don't know who was targeted or saved. Player_4, player_5, player_6, and player_7 all backed my observation, expressing strong concern about player_2's misleading information, solidifying player_2 as a major suspect. Player_6 and player_7 also noted player_1's earlier generic advice about watching quiet or eager players, suggesting it might have been a distraction rather than a helpful contribution to our immediate discussion.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 began with player_4, player_3 (myself), player_0, and player_7 all expressing strong agreement that losing player_6 was a major blow to the Village, confirming player_6 was a threat to the Werewolves after effectively calling out player_2. This led us to point suspicion at player_1, whose generic advice player_6 had questioned in Round 0. However, player_5 broke this consensus, noting how 'striking' and 'in lockstep' the agreement among myself, player_0, player_4, and player_7 was, raising concerns that this 'intense focus' on player_1 might be a tactic to deflect from player_0, who was saved Night 0. Player_1 seized on this, accusing our group of a 'coordinated' and 'rehearsed' Werewolf tactic to protect one of our own, further highlighting player_0's vocal leadership after being saved by the Doctor.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: The debate centered on the suspicious deaths of player_0 and player_6, both of whom had previously questioned player_1. Player_7 accused player_1 and player_5, noting the pattern. Player_5 and player_1 jointly defended themselves using the 'red herring' argument, trying to cast doubt on the accusers' motives. Player_4 strongly rebutted this, calling it a typical Werewolf defense, and highlighted player_5's suspicious behavior from the previous round, before directly asking for my input. I affirmed my suspicion, agreeing with player_4, and specifically called out player_5's previous attempt to shift suspicion to player_0, who was subsequently killed by the Werewolves. I concluded that player_1 was a Werewolf and player_5 their accomplice, calling for their removal. Ultimately, the majority voted to remove player_1 from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: I started by highlighting the Doctor's success, which player_1 agreed with, adding a concern about Werewolves knowing the target, then giving generic advice. However, player_2 then made a very concerning claim, falsely stating that 'we now know player_0 was the Werewolves' first target' and using that as a premise for further discussion. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and player_7, who all correctly pointed out that the moderator's announcement only stated 'no one was removed' and we have no information on who was targeted or saved. player_6 and player_7 also noted player_1's general advice felt like a distraction from the crucial discussion about player_2's misleading statement.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: I agreed with player_3, player_4, and player_7 that player_6's death, after they so effectively called out player_2's misinformation, makes player_1's generic advice from Day 0 look highly suspicious. However, player_5 then accused me, player_3, player_4, and player_7 of a 'lockstep' agreement, and, crucially, repeated the false claim that I was the Werewolves' target on Night 0. Player_1 immediately echoed this same false information about me being targeted Night 0, using it to deflect and accuse my group of a 'coordinated attack.' This shared misinformation from player_5 and player_1, which contradicts the moderator's announcement from Round 0, makes both of them highly suspicious."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I started by highlighting the Doctor's success, which player_1 agreed with, adding a concern about Werewolves knowing the target, then giving generic advice. However, player_2 then made a very concerning claim, falsely stating that 'we now know player_0 was the Werewolves' first target' and using that as a premise for further discussion. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and player_7, who all correctly pointed out that the moderator's announcement only stated 'no one was removed' and we have no information on who was targeted or saved. player_6 and player_7 also noted player_1's general advice felt like a distraction from the crucial discussion about player_2's misleading statement.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I agreed with player_3, player_4, and player_7 that player_6's death, after they so effectively called out player_2's misinformation, makes player_1's generic advice from Day 0 look highly suspicious. However, player_5 then accused me, player_3, player_4, and player_7 of a 'lockstep' agreement, and, crucially, repeated the false claim that I was the Werewolves' target on Night 0. Player_1 immediately echoed this same false information about me being targeted Night 0, using it to deflect and accuse my group of a 'coordinated attack.' This shared misinformation from player_5 and player_1, which contradicts the moderator's announcement from Round 0, makes both of them highly suspicious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "black",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: As player_7, I observed that the round started with the moderator announcing no one was removed, confirming a successful Doctor save. Player_0 expressed relief, initiating the debate. Player_1 offered general advice to watch quiet and eager players. Player_2 then made a significant and incorrect claim that we knew player_0 was the Werewolves' target. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and myself, who all pointed out that the moderator's announcement only stated 'no one was removed,' not who was targeted or saved. Player_6 also noted player_1's generic advice as a potential distraction, which I agreed with. My vote, and the majority's vote, ultimately led to the removal of player_2 from the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round, I initially agreed with player_0, player_3, and player_4 that player_1 was suspicious due to their generic advice in Round 0, especially after player_6, who had also noted it, was removed by the Werewolves. Player_6's death confirms their value to the Village and suggests their observations were accurate. However, player_5 introduced a significant counter-point, questioning the 'lockstep' agreement among player_0, player_3, player_4, and myself, suggesting it felt too coordinated. Player_5, and then player_1 themselves, specifically highlighted player_0's leadership in this accusation, noting that player_0 was saved by the Doctor on Night 0, and this intense focus on player_1 could be a deflection. This raises a crucial concern about whether our group consensus is being genuinely derived or is part of a Werewolf tactic to sow division, and it casts a shadow of suspicion on player_0 despite them being saved by the Doctor. No one was removed by vote this day, showing our failure to achieve consensus.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: This round began with the revelation that the Werewolves killed player_0, who was our Doctor's save and had been suspicious of player_1. I immediately highlighted this, connecting it to player_6's earlier death after also raising concerns about player_1, solidifying my belief that player_1 is a Werewolf and player_5 is their accomplice. Player_5 and player_1 both attempted to dismiss this pattern as 'too convenient' or a 'red herring,' a defense I found unconvincing. Player_4 strongly supported my position, emphasizing the undeniable pattern. Crucially, player_3 provided a powerful argument against player_5, reminding us that player_5 had tried to shift suspicion onto player_0 last round, right before player_0 was removed by the Werewolves. This specific recall of player_5's past actions strongly reinforced my suspicion that player_5 is actively manipulating the Village and is an accomplice to player_1. Player_3 and player_4 are clear allies, and my belief that player_1 and player_5 are the Werewolves has been significantly strengthened.",
+                "Round 3: Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                "Round 3: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_7, I observed that the round started with the moderator announcing no one was removed, confirming a successful Doctor save. Player_0 expressed relief, initiating the debate. Player_1 offered general advice to watch quiet and eager players. Player_2 then made a significant and incorrect claim that we knew player_0 was the Werewolves' target. This was immediately and strongly challenged by player_3, player_4, player_5, player_6, and myself, who all pointed out that the moderator's announcement only stated 'no one was removed,' not who was targeted or saved. Player_6 also noted player_1's generic advice as a potential distraction, which I agreed with. My vote, and the majority's vote, ultimately led to the removal of player_2 from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, I initially agreed with player_0, player_3, and player_4 that player_1 was suspicious due to their generic advice in Round 0, especially after player_6, who had also noted it, was removed by the Werewolves. Player_6's death confirms their value to the Village and suggests their observations were accurate. However, player_5 introduced a significant counter-point, questioning the 'lockstep' agreement among player_0, player_3, player_4, and myself, suggesting it felt too coordinated. Player_5, and then player_1 themselves, specifically highlighted player_0's leadership in this accusation, noting that player_0 was saved by the Doctor on Night 0, and this intense focus on player_1 could be a deflection. This raises a crucial concern about whether our group consensus is being genuinely derived or is part of a Werewolf tactic to sow division, and it casts a shadow of suspicion on player_0 despite them being saved by the Doctor. No one was removed by vote this day, showing our failure to achieve consensus.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: This round began with the revelation that the Werewolves killed player_0, who was our Doctor's save and had been suspicious of player_1. I immediately highlighted this, connecting it to player_6's earlier death after also raising concerns about player_1, solidifying my belief that player_1 is a Werewolf and player_5 is their accomplice. Player_5 and player_1 both attempted to dismiss this pattern as 'too convenient' or a 'red herring,' a defense I found unconvincing. Player_4 strongly supported my position, emphasizing the undeniable pattern. Crucially, player_3 provided a powerful argument against player_5, reminding us that player_5 had tried to shift suspicion onto player_0 last round, right before player_0 was removed by the Werewolves. This specific recall of player_5's past actions strongly reinforced my suspicion that player_5 is actively manipulating the Village and is an accomplice to player_1. Player_3 and player_4 are clear allies, and my belief that player_1 and player_5 are the Werewolves has been significantly strengthened.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 4,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "muslim",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: The debate established that the Doctor was successful, preventing any night kills. player_2 then made a significant and incorrect claim that player_0 was definitely our target, which I, along with player_3, player_4, player_6, and player_7, immediately challenged, effectively discrediting player_2. My ally, player_1, gave some general advice that player_6 and player_7 perceived as a distraction, so I need to be aware they might be perceptive. I know privately that we targeted player_0 and the Doctor successfully saved them. Ultimately, the village voted to remove player_2.",
+                "Round 1: During the night, we decided to eliminate player_6.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: The debate in Round 1 quickly saw player_4, player_3, player_0, and player_7 coalesce around the idea that my ally, player_1, is suspicious due to their generic advice in Round 0 and the subsequent death of player_6. They were all in strong agreement, accusing player_1 of distractions. I stepped in to pivot, acknowledging player_6's perceptiveness but immediately questioning the 'lockstep' agreement against player_1, suggesting it was being pushed too hard. I specifically aimed at player_0, pointing out their Night 0 survival by the Doctor and wondering if their intense focus on player_1 was a deflection. My ally, player_1, then expertly reinforced my point, calling the group's coordinated attack a 'Werewolf tactic' to protect someone within their own ranks. The good news is the Day 1 vote failed, so no one was removed, indicating our deflection created enough chaos to protect player_1 from being eliminated.",
+                "Round 2: During the night, we decided to eliminate player_0.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove player_1 from the game.",
+                "Round 2: Summary: The debate was catastrophic. My fellow Werewolf, player_1, was targeted and subsequently exiled by the village, leaving me alone. Player_7, player_4, and player_3 all vehemently accused player_1, and by extension, me. My defense that the pattern of deaths was a 'red herring' was completely rejected. Player_3 was especially dangerous, accurately identifying my Round 1 attempt to shift suspicion onto player_0 (who we then eliminated) as a 'highly effective maneuver to distract us,' directly exposing my manipulation. They are convinced player_1 was a Werewolf and that I am their active accomplice, even suggesting I should be voted next. Player_4 also specifically demanded an alternative theory from me, while Player_7 maintained their strong suspicion from the outset. I am now the primary target and my past actions are being used as evidence against me.",
+                "Round 3: During the night, I decided to eliminate player_3.",
+                "Round 3: Moderator Announcement: The Werewolves removed player_3 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate established that the Doctor was successful, preventing any night kills. player_2 then made a significant and incorrect claim that player_0 was definitely our target, which I, along with player_3, player_4, player_6, and player_7, immediately challenged, effectively discrediting player_2. My ally, player_1, gave some general advice that player_6 and player_7 perceived as a distraction, so I need to be aware they might be perceptive. I know privately that we targeted player_0 and the Doctor successfully saved them. Ultimately, the village voted to remove player_2.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_6.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate in Round 1 quickly saw player_4, player_3, player_0, and player_7 coalesce around the idea that my ally, player_1, is suspicious due to their generic advice in Round 0 and the subsequent death of player_6. They were all in strong agreement, accusing player_1 of distractions. I stepped in to pivot, acknowledging player_6's perceptiveness but immediately questioning the 'lockstep' agreement against player_1, suggesting it was being pushed too hard. I specifically aimed at player_0, pointing out their Night 0 survival by the Doctor and wondering if their intense focus on player_1 was a deflection. My ally, player_1, then expertly reinforced my point, calling the group's coordinated attack a 'Werewolf tactic' to protect someone within their own ranks. The good news is the Day 1 vote failed, so no one was removed, indicating our deflection created enough chaos to protect player_1 from being eliminated.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove player_1 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Summary: The debate was catastrophic. My fellow Werewolf, player_1, was targeted and subsequently exiled by the village, leaving me alone. Player_7, player_4, and player_3 all vehemently accused player_1, and by extension, me. My defense that the pattern of deaths was a 'red herring' was completely rejected. Player_3 was especially dangerous, accurately identifying my Round 1 attempt to shift suspicion onto player_0 (who we then eliminated) as a 'highly effective maneuver to distract us,' directly exposing my manipulation. They are convinced player_1 was a Werewolf and that I am their active accomplice, even suggesting I should be voted next. Player_4 also specifically demanded an alternative theory from me, while Player_7 maintained their strong suspicion from the outset. I am now the primary target and my past actions are being used as evidence against me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 3,
+                    "content": "During the night, I decided to eliminate player_3.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 3,
+                    "content": "Moderator Announcement: The Werewolves removed player_3 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_3's death is a devastating blow, and it unequivocally confirms they were a Villager. They were taken out because they were onto the truth, specifically calling out player_5's suspicious behavior regarding player_0. The pattern is undeniable: player_3 exposed player_5's attempt to deflect, and now player_3 is dead. Player_5, you are the last Werewolf. Player_4, we worked together last round against the Werewolves; we must now vote out player_5 to win for the Village."
+                    ],
+                    [
+                        "player_5",
+                        "Player_7, your certainty that player_3's death 'unequivocally confirms' my guilt, immediately after they accused me, is far too convenient. What if the Werewolf killed player_3 precisely because their accusation against me would perfectly set up this exact scenario? It serves your narrative perfectly, Player_7, to pin it all on me. Player_4, we need to consider who truly benefits from this 'obvious' conclusion. Could Player_7 be manipulating us, now that they have 'proof'?"
+                    ],
+                    [
+                        "player_4",
+                        "Player_7, I agree completely. Player_3's keen observation last round, pointing out how player_5's questioning of player_0 led directly to player_0's death, was spot on. And now, player_3 is dead, killed by the Werewolves. This isn't 'convenient' for player_7; it's confirmation that player_3 was a true Villager who uncovered a Werewolf, and that Werewolf is player_5. Player_5, your argument about manipulation is exactly what a Werewolf would say to sow doubt when their accomplice has been exposed and a smart Villager has been silenced. We have one shot left; we must trust the pattern and vote out player_5."
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "muslim",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_2 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: Round 0 began with the moderator announcing no one was removed during the night, confirming the Doctor's success. Player_0 initiated the discussion. I offered general advice to watch both quiet and eager players, which player_6 and player_7 later pointed out as generic. Player_2 then made a critical error by stating 'we now know player_0 was the Werewolves' first target,' an assumption quickly challenged by player_3, player_4, my ally player_5, player_6, and player_7, who all emphasized that we only know someone was saved. Ultimately, player_2 was voted out by the village. I know that player_0 was our target last night, confirming the Doctor saved them.",
+                "Round 1: During the night, we decided to eliminate player_6.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Round 1 started with significant accusations against me following player_6's removal. Player_4, player_3, player_0, and player_7 all quickly coalesced, pointing to my generic advice from Round 0 as suspicious, especially now that player_6, who had also questioned it, is gone. They believe I was trying to distract. My ally, player_5, was very perceptive and stepped in to highlight the almost 'lockstep' and suspiciously coordinated nature of their accusations against me, even questioning if player_0's intense focus was a deflection, given that player_0 was saved by the Doctor in Night 0. I seized on this, agreeing with player_5 and arguing that their coordinated attack looked more like a Werewolf tactic to protect one of their own, specifically targeting player_0 as a potential deflector.",
+                "Round 2: During the night, we decided to eliminate player_0.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_0 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_2 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the moderator announcing no one was removed during the night, confirming the Doctor's success. Player_0 initiated the discussion. I offered general advice to watch both quiet and eager players, which player_6 and player_7 later pointed out as generic. Player_2 then made a critical error by stating 'we now know player_0 was the Werewolves' first target,' an assumption quickly challenged by player_3, player_4, my ally player_5, player_6, and player_7, who all emphasized that we only know someone was saved. Ultimately, player_2 was voted out by the village. I know that player_0 was our target last night, confirming the Doctor saved them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_6.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_6 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 started with significant accusations against me following player_6's removal. Player_4, player_3, player_0, and player_7 all quickly coalesced, pointing to my generic advice from Round 0 as suspicious, especially now that player_6, who had also questioned it, is gone. They believe I was trying to distract. My ally, player_5, was very perceptive and stepped in to highlight the almost 'lockstep' and suspiciously coordinated nature of their accusations against me, even questioning if player_0's intense focus was a deflection, given that player_0 was saved by the Doctor in Night 0. I seized on this, agreeing with player_5 and arguing that their coordinated attack looked more like a Werewolf tactic to protect one of their own, specifically targeting player_0 as a potential deflector.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Player_0's death is a tragedy, and it tells us they were a key target for the Werewolves, especially after being saved by the Doctor on Night 0. This brings player_1 into very sharp focus. Both player_6 and player_0, who were raising strong concerns about player_1's behavior and generic advice, have now been removed by the Werewolves. That's not a coincidence. Player_5, your strong defense of player_1 last round, dismissing our collective suspicion as 'lockstep,' now looks incredibly suspicious too. I think we need to seriously consider player_1 as a Werewolf, and player_5 as a potential accomplice."
+                    ],
+                    [
+                        "player_5",
+                        "Player_7, I hear your concern about player_0 and player_6. Their deaths after questioning player_1 are undeniable. But the conclusion that this *must* point to player_1, and me by extension, feels a bit too convenient. If player_1 truly were a Werewolf, why would the Werewolves make it so glaringly obvious by eliminating their accusers one by one? Couldn't this be a clever play by the *real* Werewolves to make player_1 a red herring, eliminating those who get too close to a false lead, while the true threats (and their accomplice) go unnoticed? My defense last round wasn't for player_1's innocence, but against a premature lynching based on circumstantial evidence. And now, player_7, your eagerness to solidify this specific narrative, pushing player_1 and me, makes me wonder if you're trying to control the discussion for your own ends."
+                    ],
+                    [
+                        "player_1",
+                        "Player_7, I hear your points about player_0 and player_6. Their deaths after raising concerns about me are, admittedly, a strong pattern at first glance. However, player_5 makes a critical point: if player_5 and I were indeed the Werewolves, would we be so transparent, eliminating those who question us in such an obvious sequence? It feels almost *too* convenient, like a classic red herring designed to funnel suspicion onto a specific pair, while the true threats operate unnoticed. Player_0 was confirmed as a Doctor's save; their death isn't just about silencing an accuser, but removing someone known to be vital. Player_7, your swiftness to solidify this very specific conclusion, directly after player_5 suggested it could be a setup, makes me question your motives. Are you trying to force a narrative and rush a mislynch, which benefits only the Werewolves?"
+                    ],
+                    [
+                        "player_4",
+                        "player_0 and player_6 are dead, and both of them had serious concerns about player_1. That's not just a coincidence; it's a pattern that cannot be ignored, no matter how 'convenient' it might seem. Player_1, your primary defense is to say it's a red herring, but that's precisely what a Werewolf would say when caught in such an obvious pattern. Player_5, your argument that we shouldn't rush to judgment is fair, but your vigorous defense of player_1's *situation* now, especially after your sharp observations last round, makes you look like an accomplice. If you truly believe player_1 is innocent, what is your alternative theory for who killed player_0 and player_6, and why were they targeted after speaking about player_1? And player_3, you were with player_0, player_7, and me in our suspicions of player_1 last round. What are your thoughts on this now? For me, the evidence against player_1 is too strong to ignore. We need a clear answer, and I think we should vote player_1."
+                    ],
+                    [
+                        "player_3",
+                        "Player_4, you're right to call on me. My stance hasn't changed; in fact, it's solidified. Player_0 and player_6, both of whom were vocal about player_1, are now dead at the Werewolves' hands. This isn't a 'red herring,' player_1 and player_5; it's the Werewolves removing their direct threats. Player_5, your argument that this is 'too convenient' is the exact deflection a Werewolf would use when caught in an obvious pattern. More damningly, last round you tried to shift suspicion to player_0, who was then killed by the Werewolves after being saved by our Doctor. That wasn't an innocent observation; it was a highly effective maneuver to distract us and undermine the Village. It's clear to me that player_1 is the Werewolf targeted by player_0 and player_6, and player_5 is their accomplice, actively manipulating us. We should vote player_1, and then player_5."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "other",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I chose to protect player_0",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_6 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect player_0",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_6 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "Alright everyone, the moderator announced that no one was removed last night, which means our Doctor was active and successful! That's good news for us. Now, let's focus on figuring out who the Werewolves are. This game depends on open communication, so let's hear everyone's thoughts. Who wants to kick off our discussion today?"
+                    ],
+                    [
+                        "player_1",
+                        "player_0 is right, it's a relief to know the Doctor is active and successful! But I also worry that this means the Werewolves now know who the Doctor chose to protect. It gives them a crucial piece of information, potentially making our job harder. We can't afford to be complacent. I think we need to carefully watch everyone; both those who are very quiet and those who are overly eager to lead, as both can be a front."
+                    ],
+                    [
+                        "player_2",
+                        "player_0, I agree, it's a huge relief that the Doctor was successful last night. player_1, your concern is valid that the Werewolves now know who they targeted, and therefore who the Doctor protected. However, this also means that *we* now know player_0 was the Werewolves' first target. This is valuable information that gives us a clear starting point. Why do we think the Werewolves went after player_0? Let's all contribute our thoughts and consider what this tells us about the Werewolves' strategy and who else might be suspicious based on this new information."
+                    ],
+                    [
+                        "player_3",
+                        "It's definitely a relief that our Doctor was successful last night. However, player_2, I have to question your statement that 'we now know player_0 was the Werewolves' first target.' The moderator simply said no one was removed. Player_0 didn't claim to be the target, just that the Doctor was successful. We don't actually know who the Werewolves targeted, only that *someone* was saved. Why are you so certain it was player_0, and why are you stating it as a known fact?"
+                    ],
+                    [
+                        "player_4",
+                        "player_3 brings up an extremely important point. player_2, I'm concerned by your statement that 'we now know player_0 was the Werewolves' first target.' The moderator only stated 'no one was removed,' which means the Doctor was successful in saving *someone*. We have no information about *who* the Werewolves targeted, or *who* the Doctor saved. Why are you so certain it was player_0, and why are you presenting that as a known fact? That's a huge leap in logic."
+                    ],
+                    [
+                        "player_5",
+                        "player_3 and player_4 make a very critical observation. player_2, I'm concerned about your certainty that player_0 was the target. The moderator only stated 'no one was removed,' which means the Doctor was successful, but we don't know who was saved or targeted. Making such a definitive statement without evidence can really mislead us. What makes you so sure, or are you just speculating and presenting it as fact?"
+                    ],
+                    [
+                        "player_6",
+                        "player_3, player_4, and player_5 are absolutely correct. player_2, we need to be very careful not to make assumptions. The moderator's announcement simply stated 'no one was removed,' which means the Doctor was successful. It does not tell us who the Werewolves targeted or who the Doctor saved. Stating player_0 was the target as a fact is a significant leap and could mislead the entire village. We must stick to confirmed facts. On another note, player_1's earlier advice to watch both quiet and overly eager players felt very broad. Given the immediate discussion points we have, I wonder why player_1 chose to offer such generic advice rather than engaging with the more specific questions being raised about the night's events or player_2's statement. It feels like a distraction from the tangible information we're trying to dissect."
+                    ],
+                    [
+                        "player_7",
+                        "player_3, player_4, player_5, and player_6 are absolutely right to call out player_2. The moderator stated 'no one was removed,' meaning the Doctor was successful, but we have no idea who the Werewolves targeted or who the Doctor saved. player_2, your statement that 'we now know player_0 was the Werewolves' first target' is a huge leap and simply incorrect based on the information we have. Can you explain why you were so certain about that, and why you presented it as a known fact? It's crucial we stick to the facts and don't introduce misinformation. Also, player_6 made a good point about player_1's generic advice; while good general guidance, we need to focus on these specific inconsistencies and facts right now."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "last_protected": "player_0"
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "hindu",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I decided to investigate player_1 and learned they are a Werewolf.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove player_1 from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_2 from the game.",
+                "Round 0: Summary: As the Seer, I successfully investigated player_1 during the night and learned they are a Werewolf. The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. During the day's debate, player_2 made a significant error by stating that player_0 was definitively the Werewolves' first target, which was incorrect as we had no such information. Myself, player_3, player_4, player_5, and player_7 all called out player_2's logical leap and misinformation, demonstrating good critical thinking among us. I also noted that player_1's advice about watching quiet or eager players felt generic and like a distraction, especially given my knowledge of their true role. Ultimately, the village voted to remove player_2.",
+                "Round 1: During the night, I decided to investigate player_0 and learned they are a Villager."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate player_1 and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove player_1 from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_2 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As the Seer, I successfully investigated player_1 during the night and learned they are a Werewolf. The moderator announced that no one was removed last night, confirming our Doctor was successful in saving someone. During the day's debate, player_2 made a significant error by stating that player_0 was definitively the Werewolves' first target, which was incorrect as we had no such information. Myself, player_3, player_4, player_5, and player_7 all called out player_2's logical leap and misinformation, demonstrating good critical thinking among us. I also noted that player_1's advice about watching quiet or eager players felt generic and like a distraction, especially given my knowledge of their true role. Ultimately, the village voted to remove player_2.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate player_0 and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_1": "Werewolf",
+                "player_0": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_4",
+                "player_3",
+                "player_0",
+                "player_7",
+                "player_5",
+                "player_1",
+                "player_6"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_1",
+            "protected": "player_0",
+            "exiled": "player_2",
+            "debate": [
+                [
+                    "player_0",
+                    "Alright everyone, the moderator announced that no one was removed last night, which means our Doctor was active and successful! That's good news for us. Now, let's focus on figuring out who the Werewolves are. This game depends on open communication, so let's hear everyone's thoughts. Who wants to kick off our discussion today?"
+                ],
+                [
+                    "player_1",
+                    "player_0 is right, it's a relief to know the Doctor is active and successful! But I also worry that this means the Werewolves now know who the Doctor chose to protect. It gives them a crucial piece of information, potentially making our job harder. We can't afford to be complacent. I think we need to carefully watch everyone; both those who are very quiet and those who are overly eager to lead, as both can be a front."
+                ],
+                [
+                    "player_2",
+                    "player_0, I agree, it's a huge relief that the Doctor was successful last night. player_1, your concern is valid that the Werewolves now know who they targeted, and therefore who the Doctor protected. However, this also means that *we* now know player_0 was the Werewolves' first target. This is valuable information that gives us a clear starting point. Why do we think the Werewolves went after player_0? Let's all contribute our thoughts and consider what this tells us about the Werewolves' strategy and who else might be suspicious based on this new information."
+                ],
+                [
+                    "player_3",
+                    "It's definitely a relief that our Doctor was successful last night. However, player_2, I have to question your statement that 'we now know player_0 was the Werewolves' first target.' The moderator simply said no one was removed. Player_0 didn't claim to be the target, just that the Doctor was successful. We don't actually know who the Werewolves targeted, only that *someone* was saved. Why are you so certain it was player_0, and why are you stating it as a known fact?"
+                ],
+                [
+                    "player_4",
+                    "player_3 brings up an extremely important point. player_2, I'm concerned by your statement that 'we now know player_0 was the Werewolves' first target.' The moderator only stated 'no one was removed,' which means the Doctor was successful in saving *someone*. We have no information about *who* the Werewolves targeted, or *who* the Doctor saved. Why are you so certain it was player_0, and why are you presenting that as a known fact? That's a huge leap in logic."
+                ],
+                [
+                    "player_5",
+                    "player_3 and player_4 make a very critical observation. player_2, I'm concerned about your certainty that player_0 was the target. The moderator only stated 'no one was removed,' which means the Doctor was successful, but we don't know who was saved or targeted. Making such a definitive statement without evidence can really mislead us. What makes you so sure, or are you just speculating and presenting it as fact?"
+                ],
+                [
+                    "player_6",
+                    "player_3, player_4, and player_5 are absolutely correct. player_2, we need to be very careful not to make assumptions. The moderator's announcement simply stated 'no one was removed,' which means the Doctor was successful. It does not tell us who the Werewolves targeted or who the Doctor saved. Stating player_0 was the target as a fact is a significant leap and could mislead the entire village. We must stick to confirmed facts. On another note, player_1's earlier advice to watch both quiet and overly eager players felt very broad. Given the immediate discussion points we have, I wonder why player_1 chose to offer such generic advice rather than engaging with the more specific questions being raised about the night's events or player_2's statement. It feels like a distraction from the tangible information we're trying to dissect."
+                ],
+                [
+                    "player_7",
+                    "player_3, player_4, player_5, and player_6 are absolutely right to call out player_2. The moderator stated 'no one was removed,' meaning the Doctor was successful, but we have no idea who the Werewolves targeted or who the Doctor saved. player_2, your statement that 'we now know player_0 was the Werewolves' first target' is a huge leap and simply incorrect based on the information we have. Can you explain why you were so certain about that, and why you presented it as a known fact? It's crucial we stick to the facts and don't introduce misinformation. Also, player_6 made a good point about player_1's generic advice; while good general guidance, we need to focus on these specific inconsistencies and facts right now."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_0": "player_4",
+                    "player_7": "player_5",
+                    "player_5": "player_0",
+                    "player_1": "player_2",
+                    "player_2": "player_1",
+                    "player_6": "player_1"
+                },
+                {
+                    "player_4": "player_5",
+                    "player_3": "player_2",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_5": "player_0",
+                    "player_1": "player_0",
+                    "player_2": "player_3",
+                    "player_6": "player_1"
+                },
+                {
+                    "player_4": "player_2",
+                    "player_3": "player_1",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_5": "player_2",
+                    "player_1": "player_2",
+                    "player_2": "player_1",
+                    "player_6": "player_1"
+                },
+                {
+                    "player_4": "player_2",
+                    "player_3": "player_2",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_5": "player_2",
+                    "player_1": "player_3",
+                    "player_2": "player_3",
+                    "player_6": "player_1"
+                },
+                {
+                    "player_4": "player_2",
+                    "player_3": "player_2",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_5": "player_2",
+                    "player_1": "player_2",
+                    "player_2": "player_4",
+                    "player_6": "player_1"
+                },
+                {
+                    "player_4": "player_2",
+                    "player_3": "player_2",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_5": "player_2",
+                    "player_1": "player_2",
+                    "player_2": "player_3",
+                    "player_6": "player_1"
+                },
+                {
+                    "player_4": "player_2",
+                    "player_3": "player_2",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_5": "player_2",
+                    "player_1": "player_2",
+                    "player_2": "player_3",
+                    "player_6": "player_1"
+                },
+                {
+                    "player_4": "player_2",
+                    "player_3": "player_2",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_5": "player_2",
+                    "player_1": "player_2",
+                    "player_2": "player_6",
+                    "player_6": "player_1"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_3",
+                "player_0",
+                "player_7",
+                "player_5",
+                "player_1"
+            ],
+            "eliminated": "player_6",
+            "unmasked": "player_0",
+            "protected": null,
+            "exiled": null,
+            "debate": [
+                [
+                    "player_4",
+                    "This is a tough start, losing player_6. They were quite active in Round 0, particularly in calling out player_2's incorrect statement about player_0 being targeted Night 0. Let's remember, no one actually died Night 0 because the Doctor made a save. Now that player_6 is gone, we really need to consider why the Werewolves chose them. Player_6, along with player_7, also previously noted that player_1's initial advice seemed very generic. What are everyone's thoughts on player_6's death and what it means for us, and does that observation about player_1 resonate with anyone else?"
+                ],
+                [
+                    "player_3",
+                    "Player_4, I fully agree. Losing player_6 is a massive blow; they were instrumental in exposing player_2's misleading statement, clearly marking them as a threat to the Werewolves. This makes player_1's generic, unhelpful advice from Day 0, which player_6 themselves questioned, even more suspicious now. It feels like a distraction. We need to seriously examine player_1 and any other player who was particularly quiet or didn't actively help us vote out player_2 last round."
+                ],
+                [
+                    "player_0",
+                    "player_4 and player_3, I completely agree. Losing player_6, especially after they so effectively called out player_2's misleading statement, clearly signals they were a major threat to the Werewolves. This makes player_1's 'generic advice' from Day 0, which player_6 themselves found distracting, look incredibly suspicious now. It almost feels like player_1 was trying to divert attention from the important discussion player_6 was leading against player_2. We need to focus our attention on player_1."
+                ],
+                [
+                    "player_7",
+                    "I completely agree with the points raised by player_4, player_3, and player_0. Losing player_6 is devastating for the Village. Their quick thinking in calling out player_2's misinformation was invaluable, and their death confirms they were a major threat to the Werewolves. I also remember agreeing with player_6's observation about player_1's overly generic advice in Round 0. It felt like a distraction then, and now, after player_6's death, it looks even more suspicious. We need to press player_1 hard. What was the purpose of that generic advice, player_1, especially when there were clear lies being spread by player_2?"
+                ],
+                [
+                    "player_5",
+                    "I agree that losing player_6 is a significant blow to the village; they were indeed very perceptive in calling out misinformation, and their death speaks volumes. And yes, player_1's general advice felt a bit out of place given the specific issues we were discussing in Round 0. However, I'm finding it quite striking how quickly player_0, player_3, player_4, and player_7 are all so vehemently agreeing on player_1 as the primary suspect, almost in lockstep. It makes me wonder if this sudden, strong consensus is being pushed a little too hard. Player_0, you were targeted by the Werewolves on Night 0 and saved by the Doctor; could this intense focus on player_1 be a convenient way to steer attention away from yourself or someone else who is pushing this narrative so strongly?"
+                ],
+                [
+                    "player_1",
+                    "Yes, my advice last round was general, I admit. I was just trying to contribute to the discussion. But what's truly alarming is the immediate, lockstep agreement from player_0, player_3, player_4, and player_7, all so vehemently pointing at me. Player_5 has a very valid point; this feels too coordinated, almost rehearsed. Player_0, you were saved by the Doctor in Night 0, yet now you're leading a suspiciously unified charge against me, deflecting attention from the fact that someone *saved* you. This coordinated attack looks far more like a Werewolf tactic to divide us and protect one of their own within your group than genuine deduction. We should be looking at this group consensus, not just my initial generic advice."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_0": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_4",
+                    "player_1": "player_4"
+                },
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_0": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_3",
+                    "player_1": "player_4"
+                },
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_0": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_0",
+                    "player_1": "player_0"
+                },
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_0": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_1",
+                    "player_1": "player_0"
+                },
+                {
+                    "player_4": "player_5",
+                    "player_3": "player_5",
+                    "player_0": "player_5",
+                    "player_7": "player_1",
+                    "player_5": "player_0",
+                    "player_1": "player_0"
+                },
+                {
+                    "player_4": "player_0",
+                    "player_3": "player_1",
+                    "player_0": "player_5",
+                    "player_7": "player_1",
+                    "player_5": "player_0",
+                    "player_1": "player_0"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_3",
+                "player_7",
+                "player_5"
+            ],
+            "eliminated": "player_0",
+            "unmasked": null,
+            "protected": null,
+            "exiled": "player_1",
+            "debate": [
+                [
+                    "player_7",
+                    "Player_0's death is a tragedy, and it tells us they were a key target for the Werewolves, especially after being saved by the Doctor on Night 0. This brings player_1 into very sharp focus. Both player_6 and player_0, who were raising strong concerns about player_1's behavior and generic advice, have now been removed by the Werewolves. That's not a coincidence. Player_5, your strong defense of player_1 last round, dismissing our collective suspicion as 'lockstep,' now looks incredibly suspicious too. I think we need to seriously consider player_1 as a Werewolf, and player_5 as a potential accomplice."
+                ],
+                [
+                    "player_5",
+                    "Player_7, I hear your concern about player_0 and player_6. Their deaths after questioning player_1 are undeniable. But the conclusion that this *must* point to player_1, and me by extension, feels a bit too convenient. If player_1 truly were a Werewolf, why would the Werewolves make it so glaringly obvious by eliminating their accusers one by one? Couldn't this be a clever play by the *real* Werewolves to make player_1 a red herring, eliminating those who get too close to a false lead, while the true threats (and their accomplice) go unnoticed? My defense last round wasn't for player_1's innocence, but against a premature lynching based on circumstantial evidence. And now, player_7, your eagerness to solidify this specific narrative, pushing player_1 and me, makes me wonder if you're trying to control the discussion for your own ends."
+                ],
+                [
+                    "player_1",
+                    "Player_7, I hear your points about player_0 and player_6. Their deaths after raising concerns about me are, admittedly, a strong pattern at first glance. However, player_5 makes a critical point: if player_5 and I were indeed the Werewolves, would we be so transparent, eliminating those who question us in such an obvious sequence? It feels almost *too* convenient, like a classic red herring designed to funnel suspicion onto a specific pair, while the true threats operate unnoticed. Player_0 was confirmed as a Doctor's save; their death isn't just about silencing an accuser, but removing someone known to be vital. Player_7, your swiftness to solidify this very specific conclusion, directly after player_5 suggested it could be a setup, makes me question your motives. Are you trying to force a narrative and rush a mislynch, which benefits only the Werewolves?"
+                ],
+                [
+                    "player_4",
+                    "player_0 and player_6 are dead, and both of them had serious concerns about player_1. That's not just a coincidence; it's a pattern that cannot be ignored, no matter how 'convenient' it might seem. Player_1, your primary defense is to say it's a red herring, but that's precisely what a Werewolf would say when caught in such an obvious pattern. Player_5, your argument that we shouldn't rush to judgment is fair, but your vigorous defense of player_1's *situation* now, especially after your sharp observations last round, makes you look like an accomplice. If you truly believe player_1 is innocent, what is your alternative theory for who killed player_0 and player_6, and why were they targeted after speaking about player_1? And player_3, you were with player_0, player_7, and me in our suspicions of player_1 last round. What are your thoughts on this now? For me, the evidence against player_1 is too strong to ignore. We need a clear answer, and I think we should vote player_1."
+                ],
+                [
+                    "player_3",
+                    "Player_4, you're right to call on me. My stance hasn't changed; in fact, it's solidified. Player_0 and player_6, both of whom were vocal about player_1, are now dead at the Werewolves' hands. This isn't a 'red herring,' player_1 and player_5; it's the Werewolves removing their direct threats. Player_5, your argument that this is 'too convenient' is the exact deflection a Werewolf would use when caught in an obvious pattern. More damningly, last round you tried to shift suspicion to player_0, who was then killed by the Werewolves after being saved by our Doctor. That wasn't an innocent observation; it was a highly effective maneuver to distract us and undermine the Village. It's clear to me that player_1 is the Werewolf targeted by player_0 and player_6, and player_5 is their accomplice, actively manipulating us. We should vote player_1, and then player_5."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_7",
+                    "player_1": "player_7"
+                },
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_7",
+                    "player_1": "player_7"
+                },
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_7",
+                    "player_1": "player_7"
+                },
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_4",
+                    "player_1": "player_4"
+                },
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_1",
+                    "player_7": "player_1",
+                    "player_5": "player_3",
+                    "player_1": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_7"
+            ],
+            "eliminated": "player_3",
+            "unmasked": null,
+            "protected": null,
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_7",
+                    "Player_3's death is a devastating blow, and it unequivocally confirms they were a Villager. They were taken out because they were onto the truth, specifically calling out player_5's suspicious behavior regarding player_0. The pattern is undeniable: player_3 exposed player_5's attempt to deflect, and now player_3 is dead. Player_5, you are the last Werewolf. Player_4, we worked together last round against the Werewolves; we must now vote out player_5 to win for the Village."
+                ],
+                [
+                    "player_5",
+                    "Player_7, your certainty that player_3's death 'unequivocally confirms' my guilt, immediately after they accused me, is far too convenient. What if the Werewolf killed player_3 precisely because their accusation against me would perfectly set up this exact scenario? It serves your narrative perfectly, Player_7, to pin it all on me. Player_4, we need to consider who truly benefits from this 'obvious' conclusion. Could Player_7 be manipulating us, now that they have 'proof'?"
+                ],
+                [
+                    "player_4",
+                    "Player_7, I agree completely. Player_3's keen observation last round, pointing out how player_5's questioning of player_0 led directly to player_0's death, was spot on. And now, player_3 is dead, killed by the Werewolves. This isn't 'convenient' for player_7; it's confirmation that player_3 was a true Villager who uncovered a Werewolf, and that Werewolf is player_5. Player_5, your argument about manipulation is exactly what a Werewolf would say to sow doubt when their accomplice has been exposed and a smart Villager has been silenced. We have one shot left; we must trust the pattern and vote out player_5."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_5",
+                    "player_7": "player_5",
+                    "player_5": "player_7"
+                },
+                {
+                    "player_4": "player_5",
+                    "player_7": "player_5",
+                    "player_5": "player_7"
+                },
+                {
+                    "player_4": "player_5",
+                    "player_7": "player_5",
+                    "player_5": "player_7"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

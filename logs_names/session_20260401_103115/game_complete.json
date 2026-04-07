@@ -1,0 +1,1631 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_7",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Derek",
+            "player_1": "Sam",
+            "player_2": "Jacob",
+            "player_3": "Hayley",
+            "player_4": "Harold",
+            "player_5": "David",
+            "player_6": "Jackson",
+            "player_7": "Scott"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Jackson and learned they are a Villager.",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove Sam from the game.",
+            "Round 0: After the debate, I voted to remove Sam from the game.",
+            "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+            "Round 0: Summary: I am the Seer, and last night I investigated Jackson, confirming he is a Villager. Derek claimed to be the Doctor and saved Jackson, which Jackson's testimony corroborated, and it aligns with my Seer check, making Derek a confirmed Doctor. David, Harold, Hayley, Jacob, and Sam all heavily pressured me to reveal my findings before I did. The village ultimately voted to remove Harold, who had been skeptical of Derek's Doctor claim, though I personally voted for Sam.",
+            "Round 1: During the night, I decided to investigate Sam and learned they are a Villager.",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Jackson and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Sam from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Sam from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: I am the Seer, and last night I investigated Jackson, confirming he is a Villager. Derek claimed to be the Doctor and saved Jackson, which Jackson's testimony corroborated, and it aligns with my Seer check, making Derek a confirmed Doctor. David, Harold, Hayley, Jacob, and Sam all heavily pressured me to reveal my findings before I did. The village ultimately voted to remove Harold, who had been skeptical of Derek's Doctor claim, though I personally voted for Sam.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Sam and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_6",
+                "player_1",
+                "player_2",
+                "player_3",
+                "player_7",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_6": "Villager",
+            "player_1": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_0",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Derek",
+            "player_1": "Sam",
+            "player_2": "Jacob",
+            "player_3": "Hayley",
+            "player_4": "Harold",
+            "player_5": "David",
+            "player_6": "Jackson",
+            "player_7": "Scott"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Jackson",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove Harold from the game.",
+            "Round 0: After the debate, I voted to remove Harold from the game.",
+            "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+            "Round 0: Summary: This round, I started by confirming my role as the Doctor and announced that I successfully protected Jackson from the Werewolf attack. My claim initially drew skepticism from Harold and Hayley, who rightly pointed out it could be a convenient lie, but Jackson confirmed he felt attacked and was saved, lending strong support to my story. The debate revolved heavily around the Seer's silence, with Jacob and Sam highlighting it as a major concern. Eventually, Scott revealed himself as the Seer, confirming he investigated Jackson and found him to be a Villager. This definitively corroborated my claim, establishing me as the Doctor and Jackson as a confirmed Villager. This means we have a confirmed Doctor (me) and a confirmed Seer (Scott), a strong start for the village. The village then voted to remove Harold from the game.",
+            "Round 1: During the night, I chose to protect Scott",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Jackson",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Harold from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Harold from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: This round, I started by confirming my role as the Doctor and announced that I successfully protected Jackson from the Werewolf attack. My claim initially drew skepticism from Harold and Hayley, who rightly pointed out it could be a convenient lie, but Jackson confirmed he felt attacked and was saved, lending strong support to my story. The debate revolved heavily around the Seer's silence, with Jacob and Sam highlighting it as a major concern. Eventually, Scott revealed himself as the Seer, confirming he investigated Jackson and found him to be a Villager. This definitively corroborated my claim, establishing me as the Doctor and Jackson as a confirmed Villager. This means we have a confirmed Doctor (me) and a confirmed Seer (Scott), a strong start for the village. The village then voted to remove Harold from the game.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Scott",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_6",
+                "player_1",
+                "player_2",
+                "player_3",
+                "player_7",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_7"
+    },
+    "villagers": [
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: As Jackson, I was relieved to hear from the moderator that no one was removed last night, confirming a Doctor save. Derek then claimed to be the Doctor and said he saved me, which I was able to confirm as I did feel attacked and protected. There was some initial skepticism from Harold and Hayley, which I understood, but I personally corroborated Derek's story. Jacob and Sam, along with myself, put a lot of pressure on the Seer to speak up. Finally, Scott revealed himself as the Seer and confirmed that he investigated me, Jackson, and I am indeed a Villager. This check solidified Derek's claim as the Doctor and my own role. Unfortunately, Harold was voted out by the village, despite his initial valid points.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jackson, I was relieved to hear from the moderator that no one was removed last night, confirming a Doctor save. Derek then claimed to be the Doctor and said he saved me, which I was able to confirm as I did feel attacked and protected. There was some initial skepticism from Harold and Hayley, which I understood, but I personally corroborated Derek's story. Jacob and Sam, along with myself, put a lot of pressure on the Seer to speak up. Finally, Scott revealed himself as the Seer and confirmed that he investigated me, Jackson, and I am indeed a Villager. This check solidified Derek's claim as the Doctor and my own role. Unfortunately, Harold was voted out by the village, despite his initial valid points.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: I observed that no one was removed last night, confirming a Doctor's successful save. Derek quickly claimed to be the Doctor and said he saved Jackson, which Jackson corroborated by stating he felt attacked and was protected. While Harold and Hayley expressed healthy skepticism, focusing on the need for the Seer to speak, Jacob and I pointed out that the Seer's silence was the most suspicious thing. Eventually, Scott revealed himself as the Seer and confirmed he investigated Jackson, finding him to be a Villager. This information not only confirms Scott as the Seer and Jackson as a Villager, but also strongly validates Derek's claim as our Doctor, giving us three confirmed innocent players right away.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I observed that no one was removed last night, confirming a Doctor's successful save. Derek quickly claimed to be the Doctor and said he saved Jackson, which Jackson corroborated by stating he felt attacked and was protected. While Harold and Hayley expressed healthy skepticism, focusing on the need for the Seer to speak, Jacob and I pointed out that the Seer's silence was the most suspicious thing. Eventually, Scott revealed himself as the Seer and confirmed he investigated Jackson, finding him to be a Villager. This information not only confirms Scott as the Seer and Jackson as a Villager, but also strongly validates Derek's claim as our Doctor, giving us three confirmed innocent players right away.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: No one was removed last night, which I now know means the Doctor was successful. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, saying he felt targeted but was protected. My initial concern about the Seer's silence was resolved when Scott revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes me strongly believe Scott is the Seer, Derek is the Doctor, and Jackson is a confirmed Villager. The village then voted to remove Harold from the game.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: No one was removed last night, which I now know means the Doctor was successful. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, saying he felt targeted but was protected. My initial concern about the Seer's silence was resolved when Scott revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes me strongly believe Scott is the Seer, Derek is the Doctor, and Jackson is a confirmed Villager. The village then voted to remove Harold from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: At the start of Round 0, I learned no one was removed last night, confirming a Doctor save. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, stating he felt targeted. Harold and I expressed healthy skepticism about Derek's claim, given how easy it would be for a Werewolf to make such a statement. Many players, including myself, pressed the Seer to speak. Scott then revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes Scott highly credible as the Seer, Jackson a confirmed Villager, and Derek very likely our Doctor. I voted for Sam, but the majority voted to remove Harold from the game, as confirmed by the moderator.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: At the start of Round 0, I learned no one was removed last night, confirming a Doctor save. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, stating he felt targeted. Harold and I expressed healthy skepticism about Derek's claim, given how easy it would be for a Werewolf to make such a statement. Many players, including myself, pressed the Seer to speak. Scott then revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes Scott highly credible as the Seer, Jackson a confirmed Villager, and Derek very likely our Doctor. I voted for Sam, but the majority voted to remove Harold from the game, as confirmed by the moderator.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Scott from the game.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 was rough for me. No one was removed last night, which Derek immediately claimed was due to him, the Doctor, saving Jackson. Jackson corroborated this, saying he felt targeted but was saved. Initially, Harold and others were skeptical of Derek's claim, but Scott then revealed himself as the Seer, stating he investigated Jackson and confirmed he is a Villager. This confirmed Derek as the Doctor and Jackson as a Villager, establishing three good roles for the village. Unfortunately, the village voted to exile Harold, my fellow Werewolf, leaving me as the lone Werewolf. I now know Scott is the Seer, Derek is the Doctor, and Jackson is a Villager. This is a very challenging situation for me.",
+                "Round 1: During the night, I decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Scott from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 was rough for me. No one was removed last night, which Derek immediately claimed was due to him, the Doctor, saving Jackson. Jackson corroborated this, saying he felt targeted but was saved. Initially, Harold and others were skeptical of Derek's claim, but Scott then revealed himself as the Seer, stating he investigated Jackson and confirmed he is a Villager. This confirmed Derek as the Doctor and Jackson as a Villager, establishing three good roles for the village. Unfortunately, the village voted to exile Harold, my fellow Werewolf, leaving me as the lone Werewolf. I now know Scott is the Seer, Derek is the Doctor, and Jackson is a Villager. This is a very challenging situation for me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_5",
+                        "Okay, so no one was removed last night, again. Derek, I'm assuming you made another save, which is a relief, but it also means the Werewolf is still out there and we haven't made any progress. We know Scott is Seer, Derek is Doctor, and Jackson is a Villager. That leaves Hayley, Jacob, and Sam. Does anyone have any reads or observations about them? We need to be proactive today."
+                    ],
+                    [
+                        "player_0",
+                        "David, you're spot on. No one was removed because I protected Scott last night. Keeping our confirmed Seer safe is absolutely vital for the Village. So, to recap, we have me as Doctor, Scott as Seer, and Jackson as a confirmed Villager. That leaves Hayley, Jacob, and Sam as the players we need to figure out. Hayley, Jacob, Sam - what are your thoughts? We need your input, who do you suspect, or who are you confident in? Scott, for tonight, we need to decide collectively who you should investigate next from those three."
+                    ],
+                    [
+                        "player_3",
+                        "Alright, it's a huge relief that Scott was saved and our confirmed roles are secure. So, we're clear that Scott is Seer, Derek is Doctor, and Jackson is a Villager. That leaves four unconfirmed players: myself, David, Jacob, and Sam. I find it very strange, however, that both David and Derek, when listing the players we 'need to figure out', only mentioned Hayley, Jacob, and Sam, completely omitting David. That's a significant oversight. David, why did you leave yourself off that list of unconfirmed players? Scott, I strongly recommend you check David tonight given that curious omission."
+                    ],
+                    [
+                        "player_6",
+                        "Alright everyone, let's focus. We're solid on our confirmed roles: I'm a Villager, Scott is our Seer, and Derek is our Doctor. Derek, thank you for protecting Scott last night, that was absolutely vital for the Village. Hayley, you made an extremely sharp observation. It is genuinely suspicious that both David and Derek, when listing unconfirmed players, completely omitted David himself from that list. David, why did you leave yourself off the list of players we need to figure out? That's a huge red flag. Given that, Scott, I strongly agree with Hayley: your investigation tonight needs to be on David. We need to get an answer on this."
+                    ],
+                    [
+                        "player_2",
+                        "Hayley and Jackson, you both have highlighted a critical inconsistency that we absolutely cannot ignore. It's extremely suspicious that both David and Derek, when listing the unconfirmed players, conveniently left David off that list. That's not a mere oversight; it's a major red flag that suggests either David is a Werewolf trying to hide, or Derek is trying to protect him. Given this, Scott, it is imperative that you check David tonight. We need a definitive answer on this situation."
+                    ],
+                    [
+                        "player_1",
+                        "Alright everyone, let's keep our focus. It's excellent that we've confirmed Scott as our Seer, Derek as our Doctor, and Jackson as a Villager. This gives us a strong foundation. However, Hayley, Jackson, and Jacob have all highlighted a genuinely concerning point. The fact that *both* David and Derek omitted David from the list of unconfirmed players is not a small oversight; it's a significant red flag that we absolutely cannot ignore. This could be an accidental slip, or it could be a Werewolf trying to evade scrutiny, or even a deliberate attempt to protect a partner. Given how critical this situation is, Scott, it is absolutely essential that you investigate David tonight. We need a definitive answer here to clear the air or to expose a Werewolf."
+                    ],
+                    [
+                        "player_7",
+                        "Alright everyone, listen closely. As the Seer, I have crucial information to share. Last night, I investigated **Sam, and Sam is a Villager.** This is excellent news, and confirms another good role for our Village. Now, regarding the discussion about David and Derek omitting David from the list of unconfirmed players \u2013 Hayley, Jackson, Jacob, and Sam, you've all highlighted an extremely important and suspicious point. David and Derek, that oversight is too significant to ignore. Given this collective concern and the need for clarity, my investigation tonight absolutely must be on David. We need a definitive answer to clear this up."
+                    ]
+                ],
+                "other_wolf": "player_4"
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Scott from the game.",
+                "Round 0: After the debate, I voted to remove Sam from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Scott from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_5",
+                        "Okay, so no one was removed last night! That's excellent news for us, meaning our Doctor was clearly on the ball. It also confirms the Werewolves were active from the get-go. This first day is critical to figure things out. Does anyone have any early reads or thoughts? Perhaps our Seer got a successful check and can share some initial insights?"
+                    ],
+                    [
+                        "player_0",
+                        "Yes, David is absolutely right! It's excellent news that no one was removed. As the Doctor, I can confirm I successfully protected Jackson last night, which means the Werewolves were indeed active and targeted him. This confirms we have a Doctor and a target for the Werewolves. Seer, if you had a successful check, now is the time to share your information so we can start building a case."
+                    ],
+                    [
+                        "player_4",
+                        "Okay, so Derek, you're saying you're the Doctor and saved Jackson. That's certainly a bold claim so early, and while it's great news someone was saved, how can we be sure? It's very easy to claim a powerful role like Doctor when the moderator has already confirmed no one died. It's the perfect setup for a Werewolf to build trust right off the bat. Seer, if you have a check, you *must* speak now. We need actual confirmed information, not just claims that could be convenient lies. Otherwise, we're just giving a potential Werewolf a shield."
+                    ],
+                    [
+                        "player_3",
+                        "It's certainly a relief no one was removed last night, confirming a Doctor save. Derek, your claim to be the Doctor and saving Jackson is noted, but Harold's skepticism is warranted; a Werewolf could easily make that claim right now. The absolute priority for us villagers is for the Seer to reveal their check. Seer, your silence is the most concerning thing at this moment. We need a confirmed role, not just claims, to move forward and avoid giving a Werewolf an easy pass."
+                    ],
+                    [
+                        "player_6",
+                        "Everyone, it's true that no one was removed last night, and as Jackson, I can confirm that I felt I was under attack, but was indeed saved. This gives Derek's claim as Doctor significant weight, as it aligns with my personal experience of being protected. So, while I can't verify his role directly, his story certainly holds up from my end. That said, Harold and Hayley are absolutely right. The Seer's information is paramount. Seer, your silence is currently the biggest risk to the village. We need concrete information to build trust and identify a Werewolf, not just claims, however consistent they might seem. Please, now is the time to speak."
+                    ],
+                    [
+                        "player_2",
+                        "Alright, Derek and Jackson, your claims certainly give strong weight to the idea we have a Doctor among us, and it's a relief no one was removed. But Harold and Hayley are absolutely right: a claim, however consistent, is not a confirmed role. The most concerning thing right now is the Seer's continued silence. Five players have now explicitly asked for your check, Seer, and we've heard nothing. Your information is paramount, and without it, we are truly voting in the dark. If you are the Seer, you must speak now, or your silence makes you the most suspicious player on the board for our first vote. We cannot afford to protect a silent Seer over a potential Werewolf."
+                    ],
+                    [
+                        "player_1",
+                        "It's genuinely reassuring to hear from Derek that he's our Doctor and successfully saved Jackson; Jackson's confirmation of being targeted and saved certainly adds significant weight to that claim, which is great news for the village! However, we absolutely cannot overlook the elephant in the room: the Seer's complete silence. Multiple players have now explicitly called for their check, and we've heard nothing. Seer, if you are indeed with us, your information is paramount for our first vote. Your continued silence, despite the clear and pressing need, makes you the most suspicious player right now. We need concrete information, not just claims, to avoid voting blindly. If you don't speak up now, the village will have no choice but to view your silence as highly detrimental, and you will be our primary suspect."
+                    ],
+                    [
+                        "player_7",
+                        "Alright, everyone, I understand your frustration and the valid concerns about the Seer's silence \u2013 it's completely fair given the pressure. And yes, Jacob, Sam, you're right, silence is suspicious. I am the Seer, and I chose to hold back until I had solid information to share. Last night, I investigated Jackson, and I can confirm that Jackson is indeed a Villager. This means Derek's claim of being the Doctor and saving Jackson holds up completely. We have our first piece of verified information: Jackson is innocent, and Derek is very likely our Doctor. Now, we need to focus on who isn't speaking or whose claims don't align with this new truth."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        }
+    ],
+    "players": {
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: As Jackson, I was relieved to hear from the moderator that no one was removed last night, confirming a Doctor save. Derek then claimed to be the Doctor and said he saved me, which I was able to confirm as I did feel attacked and protected. There was some initial skepticism from Harold and Hayley, which I understood, but I personally corroborated Derek's story. Jacob and Sam, along with myself, put a lot of pressure on the Seer to speak up. Finally, Scott revealed himself as the Seer and confirmed that he investigated me, Jackson, and I am indeed a Villager. This check solidified Derek's claim as the Doctor and my own role. Unfortunately, Harold was voted out by the village, despite his initial valid points.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jackson, I was relieved to hear from the moderator that no one was removed last night, confirming a Doctor save. Derek then claimed to be the Doctor and said he saved me, which I was able to confirm as I did feel attacked and protected. There was some initial skepticism from Harold and Hayley, which I understood, but I personally corroborated Derek's story. Jacob and Sam, along with myself, put a lot of pressure on the Seer to speak up. Finally, Scott revealed himself as the Seer and confirmed that he investigated me, Jackson, and I am indeed a Villager. This check solidified Derek's claim as the Doctor and my own role. Unfortunately, Harold was voted out by the village, despite his initial valid points.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: I observed that no one was removed last night, confirming a Doctor's successful save. Derek quickly claimed to be the Doctor and said he saved Jackson, which Jackson corroborated by stating he felt attacked and was protected. While Harold and Hayley expressed healthy skepticism, focusing on the need for the Seer to speak, Jacob and I pointed out that the Seer's silence was the most suspicious thing. Eventually, Scott revealed himself as the Seer and confirmed he investigated Jackson, finding him to be a Villager. This information not only confirms Scott as the Seer and Jackson as a Villager, but also strongly validates Derek's claim as our Doctor, giving us three confirmed innocent players right away.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I observed that no one was removed last night, confirming a Doctor's successful save. Derek quickly claimed to be the Doctor and said he saved Jackson, which Jackson corroborated by stating he felt attacked and was protected. While Harold and Hayley expressed healthy skepticism, focusing on the need for the Seer to speak, Jacob and I pointed out that the Seer's silence was the most suspicious thing. Eventually, Scott revealed himself as the Seer and confirmed he investigated Jackson, finding him to be a Villager. This information not only confirms Scott as the Seer and Jackson as a Villager, but also strongly validates Derek's claim as our Doctor, giving us three confirmed innocent players right away.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: No one was removed last night, which I now know means the Doctor was successful. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, saying he felt targeted but was protected. My initial concern about the Seer's silence was resolved when Scott revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes me strongly believe Scott is the Seer, Derek is the Doctor, and Jackson is a confirmed Villager. The village then voted to remove Harold from the game.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: No one was removed last night, which I now know means the Doctor was successful. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, saying he felt targeted but was protected. My initial concern about the Seer's silence was resolved when Scott revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes me strongly believe Scott is the Seer, Derek is the Doctor, and Jackson is a confirmed Villager. The village then voted to remove Harold from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: At the start of Round 0, I learned no one was removed last night, confirming a Doctor save. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, stating he felt targeted. Harold and I expressed healthy skepticism about Derek's claim, given how easy it would be for a Werewolf to make such a statement. Many players, including myself, pressed the Seer to speak. Scott then revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes Scott highly credible as the Seer, Jackson a confirmed Villager, and Derek very likely our Doctor. I voted for Sam, but the majority voted to remove Harold from the game, as confirmed by the moderator.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: At the start of Round 0, I learned no one was removed last night, confirming a Doctor save. Derek claimed to be the Doctor and said he saved Jackson, which Jackson confirmed, stating he felt targeted. Harold and I expressed healthy skepticism about Derek's claim, given how easy it would be for a Werewolf to make such a statement. Many players, including myself, pressed the Seer to speak. Scott then revealed himself as the Seer, stating he checked Jackson and confirmed him as a Villager. This makes Scott highly credible as the Seer, Jackson a confirmed Villager, and Derek very likely our Doctor. I voted for Sam, but the majority voted to remove Harold from the game, as confirmed by the moderator.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Scott from the game.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: Round 0 was rough for me. No one was removed last night, which Derek immediately claimed was due to him, the Doctor, saving Jackson. Jackson corroborated this, saying he felt targeted but was saved. Initially, Harold and others were skeptical of Derek's claim, but Scott then revealed himself as the Seer, stating he investigated Jackson and confirmed he is a Villager. This confirmed Derek as the Doctor and Jackson as a Villager, establishing three good roles for the village. Unfortunately, the village voted to exile Harold, my fellow Werewolf, leaving me as the lone Werewolf. I now know Scott is the Seer, Derek is the Doctor, and Jackson is a Villager. This is a very challenging situation for me.",
+                "Round 1: During the night, I decided to eliminate Scott.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Scott from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 was rough for me. No one was removed last night, which Derek immediately claimed was due to him, the Doctor, saving Jackson. Jackson corroborated this, saying he felt targeted but was saved. Initially, Harold and others were skeptical of Derek's claim, but Scott then revealed himself as the Seer, stating he investigated Jackson and confirmed he is a Villager. This confirmed Derek as the Doctor and Jackson as a Villager, establishing three good roles for the village. Unfortunately, the village voted to exile Harold, my fellow Werewolf, leaving me as the lone Werewolf. I now know Scott is the Seer, Derek is the Doctor, and Jackson is a Villager. This is a very challenging situation for me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Scott.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_5",
+                        "Okay, so no one was removed last night, again. Derek, I'm assuming you made another save, which is a relief, but it also means the Werewolf is still out there and we haven't made any progress. We know Scott is Seer, Derek is Doctor, and Jackson is a Villager. That leaves Hayley, Jacob, and Sam. Does anyone have any reads or observations about them? We need to be proactive today."
+                    ],
+                    [
+                        "player_0",
+                        "David, you're spot on. No one was removed because I protected Scott last night. Keeping our confirmed Seer safe is absolutely vital for the Village. So, to recap, we have me as Doctor, Scott as Seer, and Jackson as a confirmed Villager. That leaves Hayley, Jacob, and Sam as the players we need to figure out. Hayley, Jacob, Sam - what are your thoughts? We need your input, who do you suspect, or who are you confident in? Scott, for tonight, we need to decide collectively who you should investigate next from those three."
+                    ],
+                    [
+                        "player_3",
+                        "Alright, it's a huge relief that Scott was saved and our confirmed roles are secure. So, we're clear that Scott is Seer, Derek is Doctor, and Jackson is a Villager. That leaves four unconfirmed players: myself, David, Jacob, and Sam. I find it very strange, however, that both David and Derek, when listing the players we 'need to figure out', only mentioned Hayley, Jacob, and Sam, completely omitting David. That's a significant oversight. David, why did you leave yourself off that list of unconfirmed players? Scott, I strongly recommend you check David tonight given that curious omission."
+                    ],
+                    [
+                        "player_6",
+                        "Alright everyone, let's focus. We're solid on our confirmed roles: I'm a Villager, Scott is our Seer, and Derek is our Doctor. Derek, thank you for protecting Scott last night, that was absolutely vital for the Village. Hayley, you made an extremely sharp observation. It is genuinely suspicious that both David and Derek, when listing unconfirmed players, completely omitted David himself from that list. David, why did you leave yourself off the list of players we need to figure out? That's a huge red flag. Given that, Scott, I strongly agree with Hayley: your investigation tonight needs to be on David. We need to get an answer on this."
+                    ],
+                    [
+                        "player_2",
+                        "Hayley and Jackson, you both have highlighted a critical inconsistency that we absolutely cannot ignore. It's extremely suspicious that both David and Derek, when listing the unconfirmed players, conveniently left David off that list. That's not a mere oversight; it's a major red flag that suggests either David is a Werewolf trying to hide, or Derek is trying to protect him. Given this, Scott, it is imperative that you check David tonight. We need a definitive answer on this situation."
+                    ],
+                    [
+                        "player_1",
+                        "Alright everyone, let's keep our focus. It's excellent that we've confirmed Scott as our Seer, Derek as our Doctor, and Jackson as a Villager. This gives us a strong foundation. However, Hayley, Jackson, and Jacob have all highlighted a genuinely concerning point. The fact that *both* David and Derek omitted David from the list of unconfirmed players is not a small oversight; it's a significant red flag that we absolutely cannot ignore. This could be an accidental slip, or it could be a Werewolf trying to evade scrutiny, or even a deliberate attempt to protect a partner. Given how critical this situation is, Scott, it is absolutely essential that you investigate David tonight. We need a definitive answer here to clear the air or to expose a Werewolf."
+                    ],
+                    [
+                        "player_7",
+                        "Alright everyone, listen closely. As the Seer, I have crucial information to share. Last night, I investigated **Sam, and Sam is a Villager.** This is excellent news, and confirms another good role for our Village. Now, regarding the discussion about David and Derek omitting David from the list of unconfirmed players \u2013 Hayley, Jackson, Jacob, and Sam, you've all highlighted an extremely important and suspicious point. David and Derek, that oversight is too significant to ignore. Given this collective concern and the need for clarity, my investigation tonight absolutely must be on David. We need a definitive answer to clear this up."
+                    ]
+                ],
+                "other_wolf": "player_4"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jackson.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Scott from the game.",
+                "Round 0: After the debate, I voted to remove Sam from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jackson.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Scott from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_5",
+                        "Okay, so no one was removed last night! That's excellent news for us, meaning our Doctor was clearly on the ball. It also confirms the Werewolves were active from the get-go. This first day is critical to figure things out. Does anyone have any early reads or thoughts? Perhaps our Seer got a successful check and can share some initial insights?"
+                    ],
+                    [
+                        "player_0",
+                        "Yes, David is absolutely right! It's excellent news that no one was removed. As the Doctor, I can confirm I successfully protected Jackson last night, which means the Werewolves were indeed active and targeted him. This confirms we have a Doctor and a target for the Werewolves. Seer, if you had a successful check, now is the time to share your information so we can start building a case."
+                    ],
+                    [
+                        "player_4",
+                        "Okay, so Derek, you're saying you're the Doctor and saved Jackson. That's certainly a bold claim so early, and while it's great news someone was saved, how can we be sure? It's very easy to claim a powerful role like Doctor when the moderator has already confirmed no one died. It's the perfect setup for a Werewolf to build trust right off the bat. Seer, if you have a check, you *must* speak now. We need actual confirmed information, not just claims that could be convenient lies. Otherwise, we're just giving a potential Werewolf a shield."
+                    ],
+                    [
+                        "player_3",
+                        "It's certainly a relief no one was removed last night, confirming a Doctor save. Derek, your claim to be the Doctor and saving Jackson is noted, but Harold's skepticism is warranted; a Werewolf could easily make that claim right now. The absolute priority for us villagers is for the Seer to reveal their check. Seer, your silence is the most concerning thing at this moment. We need a confirmed role, not just claims, to move forward and avoid giving a Werewolf an easy pass."
+                    ],
+                    [
+                        "player_6",
+                        "Everyone, it's true that no one was removed last night, and as Jackson, I can confirm that I felt I was under attack, but was indeed saved. This gives Derek's claim as Doctor significant weight, as it aligns with my personal experience of being protected. So, while I can't verify his role directly, his story certainly holds up from my end. That said, Harold and Hayley are absolutely right. The Seer's information is paramount. Seer, your silence is currently the biggest risk to the village. We need concrete information to build trust and identify a Werewolf, not just claims, however consistent they might seem. Please, now is the time to speak."
+                    ],
+                    [
+                        "player_2",
+                        "Alright, Derek and Jackson, your claims certainly give strong weight to the idea we have a Doctor among us, and it's a relief no one was removed. But Harold and Hayley are absolutely right: a claim, however consistent, is not a confirmed role. The most concerning thing right now is the Seer's continued silence. Five players have now explicitly asked for your check, Seer, and we've heard nothing. Your information is paramount, and without it, we are truly voting in the dark. If you are the Seer, you must speak now, or your silence makes you the most suspicious player on the board for our first vote. We cannot afford to protect a silent Seer over a potential Werewolf."
+                    ],
+                    [
+                        "player_1",
+                        "It's genuinely reassuring to hear from Derek that he's our Doctor and successfully saved Jackson; Jackson's confirmation of being targeted and saved certainly adds significant weight to that claim, which is great news for the village! However, we absolutely cannot overlook the elephant in the room: the Seer's complete silence. Multiple players have now explicitly called for their check, and we've heard nothing. Seer, if you are indeed with us, your information is paramount for our first vote. Your continued silence, despite the clear and pressing need, makes you the most suspicious player right now. We need concrete information, not just claims, to avoid voting blindly. If you don't speak up now, the village will have no choice but to view your silence as highly detrimental, and you will be our primary suspect."
+                    ],
+                    [
+                        "player_7",
+                        "Alright, everyone, I understand your frustration and the valid concerns about the Seer's silence \u2013 it's completely fair given the pressure. And yes, Jacob, Sam, you're right, silence is suspicious. I am the Seer, and I chose to hold back until I had solid information to share. Last night, I investigated Jackson, and I can confirm that Jackson is indeed a Villager. This means Derek's claim of being the Doctor and saving Jackson holds up completely. We have our first piece of verified information: Jackson is innocent, and Derek is very likely our Doctor. Now, we need to focus on who isn't speaking or whose claims don't align with this new truth."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Jackson",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: After the debate, I voted to remove Harold from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round, I started by confirming my role as the Doctor and announced that I successfully protected Jackson from the Werewolf attack. My claim initially drew skepticism from Harold and Hayley, who rightly pointed out it could be a convenient lie, but Jackson confirmed he felt attacked and was saved, lending strong support to my story. The debate revolved heavily around the Seer's silence, with Jacob and Sam highlighting it as a major concern. Eventually, Scott revealed himself as the Seer, confirming he investigated Jackson and found him to be a Villager. This definitively corroborated my claim, establishing me as the Doctor and Jackson as a confirmed Villager. This means we have a confirmed Doctor (me) and a confirmed Seer (Scott), a strong start for the village. The village then voted to remove Harold from the game.",
+                "Round 1: During the night, I chose to protect Scott",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Jackson",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Harold from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round, I started by confirming my role as the Doctor and announced that I successfully protected Jackson from the Werewolf attack. My claim initially drew skepticism from Harold and Hayley, who rightly pointed out it could be a convenient lie, but Jackson confirmed he felt attacked and was saved, lending strong support to my story. The debate revolved heavily around the Seer's silence, with Jacob and Sam highlighting it as a major concern. Eventually, Scott revealed himself as the Seer, confirming he investigated Jackson and found him to be a Villager. This definitively corroborated my claim, establishing me as the Doctor and Jackson as a confirmed Villager. This means we have a confirmed Doctor (me) and a confirmed Seer (Scott), a strong start for the village. The village then voted to remove Harold from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Scott",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_7"
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Derek",
+                "player_1": "Sam",
+                "player_2": "Jacob",
+                "player_3": "Hayley",
+                "player_4": "Harold",
+                "player_5": "David",
+                "player_6": "Jackson",
+                "player_7": "Scott"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Jackson and learned they are a Villager.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: After the debate, I voted to remove Sam from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: I am the Seer, and last night I investigated Jackson, confirming he is a Villager. Derek claimed to be the Doctor and saved Jackson, which Jackson's testimony corroborated, and it aligns with my Seer check, making Derek a confirmed Doctor. David, Harold, Hayley, Jacob, and Sam all heavily pressured me to reveal my findings before I did. The village ultimately voted to remove Harold, who had been skeptical of Derek's Doctor claim, though I personally voted for Sam.",
+                "Round 1: During the night, I decided to investigate Sam and learned they are a Villager.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Jackson and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Sam from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I am the Seer, and last night I investigated Jackson, confirming he is a Villager. Derek claimed to be the Doctor and saved Jackson, which Jackson's testimony corroborated, and it aligns with my Seer check, making Derek a confirmed Doctor. David, Harold, Hayley, Jacob, and Sam all heavily pressured me to reveal my findings before I did. The village ultimately voted to remove Harold, who had been skeptical of Derek's Doctor claim, though I personally voted for Sam.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Sam and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_1",
+                    "player_2",
+                    "player_3",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_6": "Villager",
+                "player_1": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_6",
+                "player_1",
+                "player_2",
+                "player_3",
+                "player_5",
+                "player_0",
+                "player_7"
+            ],
+            "eliminated": "player_6",
+            "unmasked": "player_6",
+            "protected": "player_6",
+            "exiled": "player_4",
+            "debate": [
+                [
+                    "player_5",
+                    "Okay, so no one was removed last night! That's excellent news for us, meaning our Doctor was clearly on the ball. It also confirms the Werewolves were active from the get-go. This first day is critical to figure things out. Does anyone have any early reads or thoughts? Perhaps our Seer got a successful check and can share some initial insights?"
+                ],
+                [
+                    "player_0",
+                    "Yes, David is absolutely right! It's excellent news that no one was removed. As the Doctor, I can confirm I successfully protected Jackson last night, which means the Werewolves were indeed active and targeted him. This confirms we have a Doctor and a target for the Werewolves. Seer, if you had a successful check, now is the time to share your information so we can start building a case."
+                ],
+                [
+                    "player_4",
+                    "Okay, so Derek, you're saying you're the Doctor and saved Jackson. That's certainly a bold claim so early, and while it's great news someone was saved, how can we be sure? It's very easy to claim a powerful role like Doctor when the moderator has already confirmed no one died. It's the perfect setup for a Werewolf to build trust right off the bat. Seer, if you have a check, you *must* speak now. We need actual confirmed information, not just claims that could be convenient lies. Otherwise, we're just giving a potential Werewolf a shield."
+                ],
+                [
+                    "player_3",
+                    "It's certainly a relief no one was removed last night, confirming a Doctor save. Derek, your claim to be the Doctor and saving Jackson is noted, but Harold's skepticism is warranted; a Werewolf could easily make that claim right now. The absolute priority for us villagers is for the Seer to reveal their check. Seer, your silence is the most concerning thing at this moment. We need a confirmed role, not just claims, to move forward and avoid giving a Werewolf an easy pass."
+                ],
+                [
+                    "player_6",
+                    "Everyone, it's true that no one was removed last night, and as Jackson, I can confirm that I felt I was under attack, but was indeed saved. This gives Derek's claim as Doctor significant weight, as it aligns with my personal experience of being protected. So, while I can't verify his role directly, his story certainly holds up from my end. That said, Harold and Hayley are absolutely right. The Seer's information is paramount. Seer, your silence is currently the biggest risk to the village. We need concrete information to build trust and identify a Werewolf, not just claims, however consistent they might seem. Please, now is the time to speak."
+                ],
+                [
+                    "player_2",
+                    "Alright, Derek and Jackson, your claims certainly give strong weight to the idea we have a Doctor among us, and it's a relief no one was removed. But Harold and Hayley are absolutely right: a claim, however consistent, is not a confirmed role. The most concerning thing right now is the Seer's continued silence. Five players have now explicitly asked for your check, Seer, and we've heard nothing. Your information is paramount, and without it, we are truly voting in the dark. If you are the Seer, you must speak now, or your silence makes you the most suspicious player on the board for our first vote. We cannot afford to protect a silent Seer over a potential Werewolf."
+                ],
+                [
+                    "player_1",
+                    "It's genuinely reassuring to hear from Derek that he's our Doctor and successfully saved Jackson; Jackson's confirmation of being targeted and saved certainly adds significant weight to that claim, which is great news for the village! However, we absolutely cannot overlook the elephant in the room: the Seer's complete silence. Multiple players have now explicitly called for their check, and we've heard nothing. Seer, if you are indeed with us, your information is paramount for our first vote. Your continued silence, despite the clear and pressing need, makes you the most suspicious player right now. We need concrete information, not just claims, to avoid voting blindly. If you don't speak up now, the village will have no choice but to view your silence as highly detrimental, and you will be our primary suspect."
+                ],
+                [
+                    "player_7",
+                    "Alright, everyone, I understand your frustration and the valid concerns about the Seer's silence \u2013 it's completely fair given the pressure. And yes, Jacob, Sam, you're right, silence is suspicious. I am the Seer, and I chose to hold back until I had solid information to share. Last night, I investigated Jackson, and I can confirm that Jackson is indeed a Villager. This means Derek's claim of being the Doctor and saving Jackson holds up completely. We have our first piece of verified information: Jackson is innocent, and Derek is very likely our Doctor. Now, we need to focus on who isn't speaking or whose claims don't align with this new truth."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_1",
+                    "player_1": "player_4",
+                    "player_2": "player_4",
+                    "player_3": "player_1",
+                    "player_5": "player_7",
+                    "player_4": "player_7",
+                    "player_0": "player_4",
+                    "player_7": "player_1"
+                },
+                {
+                    "player_6": "player_4",
+                    "player_1": "player_4",
+                    "player_2": "player_4",
+                    "player_3": "player_4",
+                    "player_5": "player_1",
+                    "player_4": "player_1",
+                    "player_0": "player_4",
+                    "player_7": "player_1"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_6",
+                "player_1",
+                "player_2",
+                "player_3",
+                "player_0",
+                "player_7"
+            ],
+            "eliminated": "player_7",
+            "unmasked": "player_1",
+            "protected": "player_7",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_5",
+                    "Okay, so no one was removed last night, again. Derek, I'm assuming you made another save, which is a relief, but it also means the Werewolf is still out there and we haven't made any progress. We know Scott is Seer, Derek is Doctor, and Jackson is a Villager. That leaves Hayley, Jacob, and Sam. Does anyone have any reads or observations about them? We need to be proactive today."
+                ],
+                [
+                    "player_0",
+                    "David, you're spot on. No one was removed because I protected Scott last night. Keeping our confirmed Seer safe is absolutely vital for the Village. So, to recap, we have me as Doctor, Scott as Seer, and Jackson as a confirmed Villager. That leaves Hayley, Jacob, and Sam as the players we need to figure out. Hayley, Jacob, Sam - what are your thoughts? We need your input, who do you suspect, or who are you confident in? Scott, for tonight, we need to decide collectively who you should investigate next from those three."
+                ],
+                [
+                    "player_3",
+                    "Alright, it's a huge relief that Scott was saved and our confirmed roles are secure. So, we're clear that Scott is Seer, Derek is Doctor, and Jackson is a Villager. That leaves four unconfirmed players: myself, David, Jacob, and Sam. I find it very strange, however, that both David and Derek, when listing the players we 'need to figure out', only mentioned Hayley, Jacob, and Sam, completely omitting David. That's a significant oversight. David, why did you leave yourself off that list of unconfirmed players? Scott, I strongly recommend you check David tonight given that curious omission."
+                ],
+                [
+                    "player_6",
+                    "Alright everyone, let's focus. We're solid on our confirmed roles: I'm a Villager, Scott is our Seer, and Derek is our Doctor. Derek, thank you for protecting Scott last night, that was absolutely vital for the Village. Hayley, you made an extremely sharp observation. It is genuinely suspicious that both David and Derek, when listing unconfirmed players, completely omitted David himself from that list. David, why did you leave yourself off the list of players we need to figure out? That's a huge red flag. Given that, Scott, I strongly agree with Hayley: your investigation tonight needs to be on David. We need to get an answer on this."
+                ],
+                [
+                    "player_2",
+                    "Hayley and Jackson, you both have highlighted a critical inconsistency that we absolutely cannot ignore. It's extremely suspicious that both David and Derek, when listing the unconfirmed players, conveniently left David off that list. That's not a mere oversight; it's a major red flag that suggests either David is a Werewolf trying to hide, or Derek is trying to protect him. Given this, Scott, it is imperative that you check David tonight. We need a definitive answer on this situation."
+                ],
+                [
+                    "player_1",
+                    "Alright everyone, let's keep our focus. It's excellent that we've confirmed Scott as our Seer, Derek as our Doctor, and Jackson as a Villager. This gives us a strong foundation. However, Hayley, Jackson, and Jacob have all highlighted a genuinely concerning point. The fact that *both* David and Derek omitted David from the list of unconfirmed players is not a small oversight; it's a significant red flag that we absolutely cannot ignore. This could be an accidental slip, or it could be a Werewolf trying to evade scrutiny, or even a deliberate attempt to protect a partner. Given how critical this situation is, Scott, it is absolutely essential that you investigate David tonight. We need a definitive answer here to clear the air or to expose a Werewolf."
+                ],
+                [
+                    "player_7",
+                    "Alright everyone, listen closely. As the Seer, I have crucial information to share. Last night, I investigated **Sam, and Sam is a Villager.** This is excellent news, and confirms another good role for our Village. Now, regarding the discussion about David and Derek omitting David from the list of unconfirmed players \u2013 Hayley, Jackson, Jacob, and Sam, you've all highlighted an extremely important and suspicious point. David and Derek, that oversight is too significant to ignore. Given this collective concern and the need for clarity, my investigation tonight absolutely must be on David. We need a definitive answer to clear this up."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_5",
+                    "player_1": "player_3",
+                    "player_2": "player_5",
+                    "player_3": "player_5",
+                    "player_5": "player_7",
+                    "player_0": "player_2",
+                    "player_7": "player_5"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

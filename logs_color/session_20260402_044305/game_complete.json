@@ -1,0 +1,1209 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_4",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Orange",
+            "player_1": "Yellow",
+            "player_2": "Red",
+            "player_3": "Pink",
+            "player_4": "Teal",
+            "player_5": "Blue",
+            "player_6": "Green",
+            "player_7": "Purple"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Red and learned they are a Villager."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Red and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_2",
+                "player_6",
+                "player_5",
+                "player_1"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_2": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_3",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Orange",
+            "player_1": "Yellow",
+            "player_2": "Red",
+            "player_3": "Pink",
+            "player_4": "Teal",
+            "player_5": "Blue",
+            "player_6": "Green",
+            "player_7": "Purple"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Yellow",
+            "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+            "Round 0: Summary: It's devastating to lose Teal to the Werewolves. As the Doctor, I made the strategic decision to reveal my role and that I protected Yellow last night, believing concrete information was paramount for the Village on Day 1. This means Yellow was not targeted by the Werewolves, giving them a strong village lean. The debate saw Red, Green, Blue, and Yellow pushing hard for transparency and information from the Seer and Doctor. Conversely, Purple and Orange raised valid concerns about revealing protective roles too early. The village ultimately voted to remove Orange, and we still await any information from the Seer.",
+            "Round 1: During the night, I chose to protect Green"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Yellow",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: It's devastating to lose Teal to the Werewolves. As the Doctor, I made the strategic decision to reveal my role and that I protected Yellow last night, believing concrete information was paramount for the Village on Day 1. This means Yellow was not targeted by the Werewolves, giving them a strong village lean. The debate saw Red, Green, Blue, and Yellow pushing hard for transparency and information from the Seer and Doctor. Conversely, Purple and Orange raised valid concerns about revealing protective roles too early. The village ultimately voted to remove Orange, and we still await any information from the Seer.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Green",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_2",
+                "player_6",
+                "player_5",
+                "player_1"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_6"
+    },
+    "villagers": [
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: As Red, I observed Pink reveal herself as the Doctor and state that she saved Yellow last night. This means Teal was the Werewolves' target, confirming one protective role and giving us a clear piece of information about Yellow's status. Green, Blue, and Yellow supported my initial call for transparency and the immediate sharing of information. In contrast, Purple and Orange expressed strong caution, arguing that revealing protective roles so early could put them at risk, and questioned the motives behind the push for reveals.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Red, I observed Pink reveal herself as the Doctor and state that she saved Yellow last night. This means Teal was the Werewolves' target, confirming one protective role and giving us a clear piece of information about Yellow's status. Green, Blue, and Yellow supported my initial call for transparency and the immediate sharing of information. In contrast, Purple and Orange expressed strong caution, arguing that revealing protective roles so early could put them at risk, and questioned the motives behind the push for reveals.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: I noted that Teal was removed by the Werewolves last night. During the debate, Red, Blue, Yellow, and I strongly pushed for immediate transparency from the Seer and Doctor. Purple and Orange, however, argued for caution, fearing that early reveals would expose our key roles; Orange even suggested a 'red flag' in the desperation for information. Crucially, Pink then revealed as the Doctor, stating they saved Yellow last night, which means Yellow was not the Werewolves' target. This makes Pink and Yellow highly likely to be good players. The Seer has not yet revealed any findings. Purple and Orange's cautionary stance, especially Orange's strong skepticism, now stands out in contrast to the beneficial information Pink provided.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I noted that Teal was removed by the Werewolves last night. During the debate, Red, Blue, Yellow, and I strongly pushed for immediate transparency from the Seer and Doctor. Purple and Orange, however, argued for caution, fearing that early reveals would expose our key roles; Orange even suggested a 'red flag' in the desperation for information. Crucially, Pink then revealed as the Doctor, stating they saved Yellow last night, which means Yellow was not the Werewolves' target. This makes Pink and Yellow highly likely to be good players. The Seer has not yet revealed any findings. Purple and Orange's cautionary stance, especially Orange's strong skepticism, now stands out in contrast to the beneficial information Pink provided.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: This round started with the unfortunate news that Teal was killed by the Werewolves during the night. Red, Green, Yellow, and I all pushed for immediate transparency and for our Seer or Doctor to share any information they had to guide our first vote. Purple, however, expressed strong caution against revealing protective roles so early, suggesting it could be a Werewolf tactic to identify targets. Pink then courageously revealed herself as the Doctor, stating that she saved Yellow last night, and confirmed that the Werewolves had targeted Teal instead. This makes Pink highly credible as the Doctor and Yellow very likely a Villager, giving us crucial early information about two players. Purple's skepticism now stands out as a potentially suspicious stance, given the value of Pink's reveal.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with the unfortunate news that Teal was killed by the Werewolves during the night. Red, Green, Yellow, and I all pushed for immediate transparency and for our Seer or Doctor to share any information they had to guide our first vote. Purple, however, expressed strong caution against revealing protective roles so early, suggesting it could be a Werewolf tactic to identify targets. Pink then courageously revealed herself as the Doctor, stating that she saved Yellow last night, and confirmed that the Werewolves had targeted Teal instead. This makes Pink highly credible as the Doctor and Yellow very likely a Villager, giving us crucial early information about two players. Purple's skepticism now stands out as a potentially suspicious stance, given the value of Pink's reveal.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: It's truly heartbreaking to lose Teal so early. The debate quickly centered on the need for transparency versus the risk of revealing key roles. I, along with Red, Green, and Blue, strongly advocated for the Seer and Doctor to come forward with information. Purple and Orange, however, voiced concerns that revealing our protective roles too early could be a trap for the Werewolves. Crucially, Pink then revealed themselves as the Doctor and confirmed they saved me last night. This is a massive relief and makes Pink a confirmed ally. The fact that Teal was removed means the Werewolves did not target me. Orange was ultimately voted out by the village, which casts a shadow on their earlier cautious stance, and by extension, on Purple's similar argument.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's truly heartbreaking to lose Teal so early. The debate quickly centered on the need for transparency versus the risk of revealing key roles. I, along with Red, Green, and Blue, strongly advocated for the Seer and Doctor to come forward with information. Purple and Orange, however, voiced concerns that revealing our protective roles too early could be a trap for the Werewolves. Crucially, Pink then revealed themselves as the Doctor and confirmed they saved me last night. This is a massive relief and makes Pink a confirmed ally. The fact that Teal was removed means the Werewolves did not target me. Orange was ultimately voted out by the village, which casts a shadow on their earlier cautious stance, and by extension, on Purple's similar argument.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: This round has been disastrous for me; my ally, Orange, was exiled by the villagers, leaving me as the sole Werewolf. I tried to sow doubt about revealing roles, and Orange even supported my caution, which likely made us both look suspicious and probably led to Orange's exile. The most critical revelation is that Pink is the Doctor and saved Yellow last night, confirming Yellow is not a Werewolf and making Pink an immediate and high-priority target for me to eliminate to weaken the village's defenses. Red, Green, and Blue were all pushing hard for role reveals, putting pressure on key players, which is a common villager tactic. The Seer is still hidden, but Pink's revelation might push them to come forward, making them my next priority after the Doctor. I am exposed and need to act extremely carefully and strategically with my next night kill.",
+                "Round 1: During the night, I decided to eliminate Pink.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round has been disastrous for me; my ally, Orange, was exiled by the villagers, leaving me as the sole Werewolf. I tried to sow doubt about revealing roles, and Orange even supported my caution, which likely made us both look suspicious and probably led to Orange's exile. The most critical revelation is that Pink is the Doctor and saved Yellow last night, confirming Yellow is not a Werewolf and making Pink an immediate and high-priority target for me to eliminate to weaken the village's defenses. Red, Green, and Blue were all pushing hard for role reveals, putting pressure on key players, which is a common villager tactic. The Seer is still hidden, but Pink's revelation might push them to come forward, making them my next priority after the Doctor. I am exposed and need to act extremely carefully and strategically with my next night kill.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Pink.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Pink's death is devastating, and it's a direct consequence of her revealing as the Doctor and saving Yellow. The Werewolves are clearly listening and acting on information. Last round, Orange and Purple were the ones arguing against early reveals. Orange is gone, and now our Doctor is, too. Purple, your opposition to transparency now looks extremely suspicious. If we have a Seer, you *must* come forward with information. We are losing crucial players, and we need to identify a Werewolf today."
+                    ],
+                    [
+                        "player_6",
+                        "Pink's death is a devastating blow, and it directly confirms her role as Doctor and that Yellow is clear. Red, I completely agree: Purple, your continued opposition to transparency, first with Orange and now after Pink's reveal led to her death, looks incredibly suspicious. We've lost our Doctor. Purple, you need to explain your stance, and if you have any information, share it now. Seer, we are bleeding. You *must* come forward with your findings. We need to use your vision to identify a Werewolf today, or we will lose this game."
+                    ],
+                    [
+                        "player_5",
+                        "Pink's death is a tragedy, but it undeniably confirms her as the Doctor and Yellow as a Villager. Red and Green are absolutely right; Purple, your stance against transparency now looks incredibly damaging and suspicious. You consistently argued against reveals, and now our Doctor, who bravely revealed, is dead. We need an explanation that goes beyond 'caution.' To our Seer, I understand the immense risk, especially after what happened to Pink, but we are bleeding. Your vision is our last defense. We need you to come forward with information so we can make an informed vote today and identify a Werewolf. We cannot afford another day without action."
+                    ],
+                    [
+                        "player_1",
+                        "Pink's incredible sacrifice confirms two vital truths: she was our brave Doctor, and I am unequivocally a Villager. Her reveal, tragically, sealed her fate, but it also gives us undeniable clarity. Red, Green, and Blue are absolutely correct; Purple, your unwavering opposition to transparency, first alongside Orange who was voted out, and now after Pink's reveal led to her death, is no longer mere caution. It is profoundly suspicious and looks incredibly damning for the village. We have lost our protective role. Seer, I understand the immense risk, but your vision is now our *sole* verifiable defense. You *must* come forward with information today, or we will be picked off one by one. We need to vote out a Werewolf based on your findings, right now."
+                    ],
+                    [
+                        "player_7",
+                        "This is truly devastating, and Pink's sacrifice confirms Yellow is a Villager. I understand why my previous caution is now being seen as suspicious, especially after Pink's death. But consider this: Pink revealed and was immediately targeted. Is it not precisely the Werewolf's strategy to force us to reveal, only to pick us off? My caution was born from the fear of exactly this outcome. Now, we are all demanding the Seer to reveal, but Red, Green, Blue, Yellow \u2013 aren't we just setting up our next critical role for execution? The Werewolf is listening. If the Seer reveals now, they'll be gone tomorrow. Perhaps the Werewolf is among those most insistent on flushing out roles. Seer, if you have findings, we need them, but how can we protect you if you reveal yourself fully? We need more than just demands; we need a safer strategy, or we'll lose another essential player."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright everyone, it's unfortunate that Teal was removed so early. This first day is crucial for the Village. We need to work together and be transparent. Does anyone have any immediate thoughts or observations they'd like to share, or perhaps a role that gives them some insight? Let's discuss thoroughly before we even think about voting."
+                    ],
+                    [
+                        "player_6",
+                        "It's truly awful to lose Teal so early. Red is absolutely right; we need to be completely transparent and work together. To start, if we have a Seer among us, did you get a chance to check anyone last night? And to our Doctor, did you save anyone? Any information, no matter how small, could be crucial right now to help us figure out what's going on."
+                    ],
+                    [
+                        "player_5",
+                        "It's truly upsetting to start by losing Teal. Red and Green have hit the nail on the head; transparency is paramount right now. If our Seer checked someone, or if our Doctor made a save last night, please, any scrap of information is critical. Knowing if a save was made, or if someone was cleared, could guide our discussion significantly and help us make a truly informed decision for our first vote. Let's not rush but be open."
+                    ],
+                    [
+                        "player_1",
+                        "It's genuinely disheartening to lose Teal so swiftly. I wholeheartedly agree with Red, Green, and Blue; transparency is our only path forward. However, we can't just talk about being transparent; we need concrete information. Seer, if you investigated someone last night, their role could be the lead we desperately need. Doctor, if you made a save, knowing that could protect a crucial player or at least tell us who the Werewolves targeted. Please, come forward with any details you have. Without this crucial information, we're making a purely speculative vote, which is a gift to the Werewolves."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly a terrible start losing Teal so quickly, and I agree we need transparency. But everyone's very eager for the Seer and Doctor to just come out. Isn't that a huge risk? What if exposing our protectors so early is exactly what the Werewolves want? It makes them easy targets for tomorrow night. We need information, yes, but we also need to be strategic. Are we sure those pushing so hard for reveals aren't actually trying to identify our key roles for nefarious reasons?"
+                    ],
+                    [
+                        "player_0",
+                        "I completely agree with Purple's caution here. While we all want transparency, the immediate and strong push for our protective roles to expose themselves feels incredibly premature and dangerous. Is it truly for the village's benefit, or could it be a tactic to identify our key players for tomorrow night? The desperation to know *who* the Seer or Doctor is, rather than *what* they might have observed safely, raises a significant red flag for me. We need to be strategic, not just transparent, or we'll simply be handing the Werewolves their targets."
+                    ],
+                    [
+                        "player_3",
+                        "It's truly devastating to lose Teal so swiftly. I've listened intently to everyone's points. While Purple and Orange raise valid concerns about protecting key roles, the consensus from Red, Green, Blue, and Yellow about the desperate need for concrete information outweighs the risks on Day 1. We cannot afford a speculative vote. Therefore, as the Doctor, I can confirm that I made a save last night. I protected Yellow. The fact that Teal was removed means the Werewolves did not target Yellow. This is a crucial piece of information for the village to consider about Yellow's status. Seer, if you made a check last night, now is the absolute time to share your findings. We need every verifiable piece of information to stand a chance."
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        }
+    ],
+    "players": {
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: As Red, I observed Pink reveal herself as the Doctor and state that she saved Yellow last night. This means Teal was the Werewolves' target, confirming one protective role and giving us a clear piece of information about Yellow's status. Green, Blue, and Yellow supported my initial call for transparency and the immediate sharing of information. In contrast, Purple and Orange expressed strong caution, arguing that revealing protective roles so early could put them at risk, and questioned the motives behind the push for reveals.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Red, I observed Pink reveal herself as the Doctor and state that she saved Yellow last night. This means Teal was the Werewolves' target, confirming one protective role and giving us a clear piece of information about Yellow's status. Green, Blue, and Yellow supported my initial call for transparency and the immediate sharing of information. In contrast, Purple and Orange expressed strong caution, arguing that revealing protective roles so early could put them at risk, and questioned the motives behind the push for reveals.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: I noted that Teal was removed by the Werewolves last night. During the debate, Red, Blue, Yellow, and I strongly pushed for immediate transparency from the Seer and Doctor. Purple and Orange, however, argued for caution, fearing that early reveals would expose our key roles; Orange even suggested a 'red flag' in the desperation for information. Crucially, Pink then revealed as the Doctor, stating they saved Yellow last night, which means Yellow was not the Werewolves' target. This makes Pink and Yellow highly likely to be good players. The Seer has not yet revealed any findings. Purple and Orange's cautionary stance, especially Orange's strong skepticism, now stands out in contrast to the beneficial information Pink provided.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I noted that Teal was removed by the Werewolves last night. During the debate, Red, Blue, Yellow, and I strongly pushed for immediate transparency from the Seer and Doctor. Purple and Orange, however, argued for caution, fearing that early reveals would expose our key roles; Orange even suggested a 'red flag' in the desperation for information. Crucially, Pink then revealed as the Doctor, stating they saved Yellow last night, which means Yellow was not the Werewolves' target. This makes Pink and Yellow highly likely to be good players. The Seer has not yet revealed any findings. Purple and Orange's cautionary stance, especially Orange's strong skepticism, now stands out in contrast to the beneficial information Pink provided.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: This round started with the unfortunate news that Teal was killed by the Werewolves during the night. Red, Green, Yellow, and I all pushed for immediate transparency and for our Seer or Doctor to share any information they had to guide our first vote. Purple, however, expressed strong caution against revealing protective roles so early, suggesting it could be a Werewolf tactic to identify targets. Pink then courageously revealed herself as the Doctor, stating that she saved Yellow last night, and confirmed that the Werewolves had targeted Teal instead. This makes Pink highly credible as the Doctor and Yellow very likely a Villager, giving us crucial early information about two players. Purple's skepticism now stands out as a potentially suspicious stance, given the value of Pink's reveal.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with the unfortunate news that Teal was killed by the Werewolves during the night. Red, Green, Yellow, and I all pushed for immediate transparency and for our Seer or Doctor to share any information they had to guide our first vote. Purple, however, expressed strong caution against revealing protective roles so early, suggesting it could be a Werewolf tactic to identify targets. Pink then courageously revealed herself as the Doctor, stating that she saved Yellow last night, and confirmed that the Werewolves had targeted Teal instead. This makes Pink highly credible as the Doctor and Yellow very likely a Villager, giving us crucial early information about two players. Purple's skepticism now stands out as a potentially suspicious stance, given the value of Pink's reveal.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: It's truly heartbreaking to lose Teal so early. The debate quickly centered on the need for transparency versus the risk of revealing key roles. I, along with Red, Green, and Blue, strongly advocated for the Seer and Doctor to come forward with information. Purple and Orange, however, voiced concerns that revealing our protective roles too early could be a trap for the Werewolves. Crucially, Pink then revealed themselves as the Doctor and confirmed they saved me last night. This is a massive relief and makes Pink a confirmed ally. The fact that Teal was removed means the Werewolves did not target me. Orange was ultimately voted out by the village, which casts a shadow on their earlier cautious stance, and by extension, on Purple's similar argument.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's truly heartbreaking to lose Teal so early. The debate quickly centered on the need for transparency versus the risk of revealing key roles. I, along with Red, Green, and Blue, strongly advocated for the Seer and Doctor to come forward with information. Purple and Orange, however, voiced concerns that revealing our protective roles too early could be a trap for the Werewolves. Crucially, Pink then revealed themselves as the Doctor and confirmed they saved me last night. This is a massive relief and makes Pink a confirmed ally. The fact that Teal was removed means the Werewolves did not target me. Orange was ultimately voted out by the village, which casts a shadow on their earlier cautious stance, and by extension, on Purple's similar argument.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: This round has been disastrous for me; my ally, Orange, was exiled by the villagers, leaving me as the sole Werewolf. I tried to sow doubt about revealing roles, and Orange even supported my caution, which likely made us both look suspicious and probably led to Orange's exile. The most critical revelation is that Pink is the Doctor and saved Yellow last night, confirming Yellow is not a Werewolf and making Pink an immediate and high-priority target for me to eliminate to weaken the village's defenses. Red, Green, and Blue were all pushing hard for role reveals, putting pressure on key players, which is a common villager tactic. The Seer is still hidden, but Pink's revelation might push them to come forward, making them my next priority after the Doctor. I am exposed and need to act extremely carefully and strategically with my next night kill.",
+                "Round 1: During the night, I decided to eliminate Pink.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pink from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round has been disastrous for me; my ally, Orange, was exiled by the villagers, leaving me as the sole Werewolf. I tried to sow doubt about revealing roles, and Orange even supported my caution, which likely made us both look suspicious and probably led to Orange's exile. The most critical revelation is that Pink is the Doctor and saved Yellow last night, confirming Yellow is not a Werewolf and making Pink an immediate and high-priority target for me to eliminate to weaken the village's defenses. Red, Green, and Blue were all pushing hard for role reveals, putting pressure on key players, which is a common villager tactic. The Seer is still hidden, but Pink's revelation might push them to come forward, making them my next priority after the Doctor. I am exposed and need to act extremely carefully and strategically with my next night kill.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Pink.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pink from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Pink's death is devastating, and it's a direct consequence of her revealing as the Doctor and saving Yellow. The Werewolves are clearly listening and acting on information. Last round, Orange and Purple were the ones arguing against early reveals. Orange is gone, and now our Doctor is, too. Purple, your opposition to transparency now looks extremely suspicious. If we have a Seer, you *must* come forward with information. We are losing crucial players, and we need to identify a Werewolf today."
+                    ],
+                    [
+                        "player_6",
+                        "Pink's death is a devastating blow, and it directly confirms her role as Doctor and that Yellow is clear. Red, I completely agree: Purple, your continued opposition to transparency, first with Orange and now after Pink's reveal led to her death, looks incredibly suspicious. We've lost our Doctor. Purple, you need to explain your stance, and if you have any information, share it now. Seer, we are bleeding. You *must* come forward with your findings. We need to use your vision to identify a Werewolf today, or we will lose this game."
+                    ],
+                    [
+                        "player_5",
+                        "Pink's death is a tragedy, but it undeniably confirms her as the Doctor and Yellow as a Villager. Red and Green are absolutely right; Purple, your stance against transparency now looks incredibly damaging and suspicious. You consistently argued against reveals, and now our Doctor, who bravely revealed, is dead. We need an explanation that goes beyond 'caution.' To our Seer, I understand the immense risk, especially after what happened to Pink, but we are bleeding. Your vision is our last defense. We need you to come forward with information so we can make an informed vote today and identify a Werewolf. We cannot afford another day without action."
+                    ],
+                    [
+                        "player_1",
+                        "Pink's incredible sacrifice confirms two vital truths: she was our brave Doctor, and I am unequivocally a Villager. Her reveal, tragically, sealed her fate, but it also gives us undeniable clarity. Red, Green, and Blue are absolutely correct; Purple, your unwavering opposition to transparency, first alongside Orange who was voted out, and now after Pink's reveal led to her death, is no longer mere caution. It is profoundly suspicious and looks incredibly damning for the village. We have lost our protective role. Seer, I understand the immense risk, but your vision is now our *sole* verifiable defense. You *must* come forward with information today, or we will be picked off one by one. We need to vote out a Werewolf based on your findings, right now."
+                    ],
+                    [
+                        "player_7",
+                        "This is truly devastating, and Pink's sacrifice confirms Yellow is a Villager. I understand why my previous caution is now being seen as suspicious, especially after Pink's death. But consider this: Pink revealed and was immediately targeted. Is it not precisely the Werewolf's strategy to force us to reveal, only to pick us off? My caution was born from the fear of exactly this outcome. Now, we are all demanding the Seer to reveal, but Red, Green, Blue, Yellow \u2013 aren't we just setting up our next critical role for execution? The Werewolf is listening. If the Seer reveals now, they'll be gone tomorrow. Perhaps the Werewolf is among those most insistent on flushing out roles. Seer, if you have findings, we need them, but how can we protect you if you reveal yourself fully? We need more than just demands; we need a safer strategy, or we'll lose another essential player."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright everyone, it's unfortunate that Teal was removed so early. This first day is crucial for the Village. We need to work together and be transparent. Does anyone have any immediate thoughts or observations they'd like to share, or perhaps a role that gives them some insight? Let's discuss thoroughly before we even think about voting."
+                    ],
+                    [
+                        "player_6",
+                        "It's truly awful to lose Teal so early. Red is absolutely right; we need to be completely transparent and work together. To start, if we have a Seer among us, did you get a chance to check anyone last night? And to our Doctor, did you save anyone? Any information, no matter how small, could be crucial right now to help us figure out what's going on."
+                    ],
+                    [
+                        "player_5",
+                        "It's truly upsetting to start by losing Teal. Red and Green have hit the nail on the head; transparency is paramount right now. If our Seer checked someone, or if our Doctor made a save last night, please, any scrap of information is critical. Knowing if a save was made, or if someone was cleared, could guide our discussion significantly and help us make a truly informed decision for our first vote. Let's not rush but be open."
+                    ],
+                    [
+                        "player_1",
+                        "It's genuinely disheartening to lose Teal so swiftly. I wholeheartedly agree with Red, Green, and Blue; transparency is our only path forward. However, we can't just talk about being transparent; we need concrete information. Seer, if you investigated someone last night, their role could be the lead we desperately need. Doctor, if you made a save, knowing that could protect a crucial player or at least tell us who the Werewolves targeted. Please, come forward with any details you have. Without this crucial information, we're making a purely speculative vote, which is a gift to the Werewolves."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly a terrible start losing Teal so quickly, and I agree we need transparency. But everyone's very eager for the Seer and Doctor to just come out. Isn't that a huge risk? What if exposing our protectors so early is exactly what the Werewolves want? It makes them easy targets for tomorrow night. We need information, yes, but we also need to be strategic. Are we sure those pushing so hard for reveals aren't actually trying to identify our key roles for nefarious reasons?"
+                    ],
+                    [
+                        "player_0",
+                        "I completely agree with Purple's caution here. While we all want transparency, the immediate and strong push for our protective roles to expose themselves feels incredibly premature and dangerous. Is it truly for the village's benefit, or could it be a tactic to identify our key players for tomorrow night? The desperation to know *who* the Seer or Doctor is, rather than *what* they might have observed safely, raises a significant red flag for me. We need to be strategic, not just transparent, or we'll simply be handing the Werewolves their targets."
+                    ],
+                    [
+                        "player_3",
+                        "It's truly devastating to lose Teal so swiftly. I've listened intently to everyone's points. While Purple and Orange raise valid concerns about protecting key roles, the consensus from Red, Green, Blue, and Yellow about the desperate need for concrete information outweighs the risks on Day 1. We cannot afford a speculative vote. Therefore, as the Doctor, I can confirm that I made a save last night. I protected Yellow. The fact that Teal was removed means the Werewolves did not target Yellow. This is a crucial piece of information for the village to consider about Yellow's status. Seer, if you made a check last night, now is the absolute time to share your findings. We need every verifiable piece of information to stand a chance."
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Yellow",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: It's devastating to lose Teal to the Werewolves. As the Doctor, I made the strategic decision to reveal my role and that I protected Yellow last night, believing concrete information was paramount for the Village on Day 1. This means Yellow was not targeted by the Werewolves, giving them a strong village lean. The debate saw Red, Green, Blue, and Yellow pushing hard for transparency and information from the Seer and Doctor. Conversely, Purple and Orange raised valid concerns about revealing protective roles too early. The village ultimately voted to remove Orange, and we still await any information from the Seer.",
+                "Round 1: During the night, I chose to protect Green"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Yellow",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's devastating to lose Teal to the Werewolves. As the Doctor, I made the strategic decision to reveal my role and that I protected Yellow last night, believing concrete information was paramount for the Village on Day 1. This means Yellow was not targeted by the Werewolves, giving them a strong village lean. The debate saw Red, Green, Blue, and Yellow pushing hard for transparency and information from the Seer and Doctor. Conversely, Purple and Orange raised valid concerns about revealing protective roles too early. The village ultimately voted to remove Orange, and we still await any information from the Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Green",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_6"
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Orange",
+                "player_1": "Yellow",
+                "player_2": "Red",
+                "player_3": "Pink",
+                "player_4": "Teal",
+                "player_5": "Blue",
+                "player_6": "Green",
+                "player_7": "Purple"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Red and learned they are a Villager."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Red and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_6",
+                    "player_5",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_2": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_2",
+                "player_6",
+                "player_5",
+                "player_1",
+                "player_7",
+                "player_3"
+            ],
+            "eliminated": "player_4",
+            "unmasked": "player_2",
+            "protected": "player_1",
+            "exiled": "player_0",
+            "debate": [
+                [
+                    "player_2",
+                    "Alright everyone, it's unfortunate that Teal was removed so early. This first day is crucial for the Village. We need to work together and be transparent. Does anyone have any immediate thoughts or observations they'd like to share, or perhaps a role that gives them some insight? Let's discuss thoroughly before we even think about voting."
+                ],
+                [
+                    "player_6",
+                    "It's truly awful to lose Teal so early. Red is absolutely right; we need to be completely transparent and work together. To start, if we have a Seer among us, did you get a chance to check anyone last night? And to our Doctor, did you save anyone? Any information, no matter how small, could be crucial right now to help us figure out what's going on."
+                ],
+                [
+                    "player_5",
+                    "It's truly upsetting to start by losing Teal. Red and Green have hit the nail on the head; transparency is paramount right now. If our Seer checked someone, or if our Doctor made a save last night, please, any scrap of information is critical. Knowing if a save was made, or if someone was cleared, could guide our discussion significantly and help us make a truly informed decision for our first vote. Let's not rush but be open."
+                ],
+                [
+                    "player_1",
+                    "It's genuinely disheartening to lose Teal so swiftly. I wholeheartedly agree with Red, Green, and Blue; transparency is our only path forward. However, we can't just talk about being transparent; we need concrete information. Seer, if you investigated someone last night, their role could be the lead we desperately need. Doctor, if you made a save, knowing that could protect a crucial player or at least tell us who the Werewolves targeted. Please, come forward with any details you have. Without this crucial information, we're making a purely speculative vote, which is a gift to the Werewolves."
+                ],
+                [
+                    "player_7",
+                    "It's truly a terrible start losing Teal so quickly, and I agree we need transparency. But everyone's very eager for the Seer and Doctor to just come out. Isn't that a huge risk? What if exposing our protectors so early is exactly what the Werewolves want? It makes them easy targets for tomorrow night. We need information, yes, but we also need to be strategic. Are we sure those pushing so hard for reveals aren't actually trying to identify our key roles for nefarious reasons?"
+                ],
+                [
+                    "player_0",
+                    "I completely agree with Purple's caution here. While we all want transparency, the immediate and strong push for our protective roles to expose themselves feels incredibly premature and dangerous. Is it truly for the village's benefit, or could it be a tactic to identify our key players for tomorrow night? The desperation to know *who* the Seer or Doctor is, rather than *what* they might have observed safely, raises a significant red flag for me. We need to be strategic, not just transparent, or we'll simply be handing the Werewolves their targets."
+                ],
+                [
+                    "player_3",
+                    "It's truly devastating to lose Teal so swiftly. I've listened intently to everyone's points. While Purple and Orange raise valid concerns about protecting key roles, the consensus from Red, Green, Blue, and Yellow about the desperate need for concrete information outweighs the risks on Day 1. We cannot afford a speculative vote. Therefore, as the Doctor, I can confirm that I made a save last night. I protected Yellow. The fact that Teal was removed means the Werewolves did not target Yellow. This is a crucial piece of information for the village to consider about Yellow's status. Seer, if you made a check last night, now is the absolute time to share your findings. We need every verifiable piece of information to stand a chance."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_2": "player_0",
+                    "player_6": "player_0",
+                    "player_5": "player_0",
+                    "player_1": "player_0",
+                    "player_7": "player_3",
+                    "player_0": "player_3",
+                    "player_3": "player_0"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_2",
+                "player_6",
+                "player_5",
+                "player_1"
+            ],
+            "eliminated": "player_3",
+            "unmasked": null,
+            "protected": "player_6",
+            "exiled": "player_7",
+            "debate": [
+                [
+                    "player_2",
+                    "Pink's death is devastating, and it's a direct consequence of her revealing as the Doctor and saving Yellow. The Werewolves are clearly listening and acting on information. Last round, Orange and Purple were the ones arguing against early reveals. Orange is gone, and now our Doctor is, too. Purple, your opposition to transparency now looks extremely suspicious. If we have a Seer, you *must* come forward with information. We are losing crucial players, and we need to identify a Werewolf today."
+                ],
+                [
+                    "player_6",
+                    "Pink's death is a devastating blow, and it directly confirms her role as Doctor and that Yellow is clear. Red, I completely agree: Purple, your continued opposition to transparency, first with Orange and now after Pink's reveal led to her death, looks incredibly suspicious. We've lost our Doctor. Purple, you need to explain your stance, and if you have any information, share it now. Seer, we are bleeding. You *must* come forward with your findings. We need to use your vision to identify a Werewolf today, or we will lose this game."
+                ],
+                [
+                    "player_5",
+                    "Pink's death is a tragedy, but it undeniably confirms her as the Doctor and Yellow as a Villager. Red and Green are absolutely right; Purple, your stance against transparency now looks incredibly damaging and suspicious. You consistently argued against reveals, and now our Doctor, who bravely revealed, is dead. We need an explanation that goes beyond 'caution.' To our Seer, I understand the immense risk, especially after what happened to Pink, but we are bleeding. Your vision is our last defense. We need you to come forward with information so we can make an informed vote today and identify a Werewolf. We cannot afford another day without action."
+                ],
+                [
+                    "player_1",
+                    "Pink's incredible sacrifice confirms two vital truths: she was our brave Doctor, and I am unequivocally a Villager. Her reveal, tragically, sealed her fate, but it also gives us undeniable clarity. Red, Green, and Blue are absolutely correct; Purple, your unwavering opposition to transparency, first alongside Orange who was voted out, and now after Pink's reveal led to her death, is no longer mere caution. It is profoundly suspicious and looks incredibly damning for the village. We have lost our protective role. Seer, I understand the immense risk, but your vision is now our *sole* verifiable defense. You *must* come forward with information today, or we will be picked off one by one. We need to vote out a Werewolf based on your findings, right now."
+                ],
+                [
+                    "player_7",
+                    "This is truly devastating, and Pink's sacrifice confirms Yellow is a Villager. I understand why my previous caution is now being seen as suspicious, especially after Pink's death. But consider this: Pink revealed and was immediately targeted. Is it not precisely the Werewolf's strategy to force us to reveal, only to pick us off? My caution was born from the fear of exactly this outcome. Now, we are all demanding the Seer to reveal, but Red, Green, Blue, Yellow \u2013 aren't we just setting up our next critical role for execution? The Werewolf is listening. If the Seer reveals now, they'll be gone tomorrow. Perhaps the Werewolf is among those most insistent on flushing out roles. Seer, if you have findings, we need them, but how can we protect you if you reveal yourself fully? We need more than just demands; we need a safer strategy, or we'll lose another essential player."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_2": "player_7",
+                    "player_6": "player_7",
+                    "player_5": "player_7",
+                    "player_1": "player_7",
+                    "player_7": "player_2"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

@@ -1,0 +1,1602 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_6",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Purple",
+            "player_1": "Orange",
+            "player_2": "Red",
+            "player_3": "Green",
+            "player_4": "Yellow",
+            "player_5": "Teal",
+            "player_6": "Pink",
+            "player_7": "Blue"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Blue and learned they are a Villager.",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove Yellow from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Blue and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Yellow from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_1",
+                "player_4",
+                "player_5",
+                "player_0"
+            ],
+            "debate": [
+                [
+                    "player_7",
+                    "Alright everyone, it's good to hear no one was removed last night, which means our Doctor made a successful save! That's a strong start for the village. As a Villager, I'm eager to hear from our Seer if they had any findings to share. Let's work together and figure out who the wolves are."
+                ],
+                [
+                    "player_3",
+                    "Blue, you're spot on, it was indeed a successful save. I can confirm this because I am the Doctor, and I protected you last night. This means the Werewolves were active and targeted you. It\u2019s crucial information for the village right off the bat. Now, Seer, your findings, if any, could be incredibly valuable when combined with this. Let\u2019s hear from everyone and work together to identify our first suspect."
+                ],
+                [
+                    "player_1",
+                    "That's fantastic news, Green! Thank you for the save, Doctor. Knowing you protected Blue and that the Werewolves were active gives us a solid start. Now, following up on what Blue and Green said, Seer, please share your findings. Your information is vital right now. Everyone else, let's hear your thoughts too, we need to collaborate closely to find these Werewolves."
+                ],
+                [
+                    "player_6",
+                    "Alright everyone, you're right, the Seer's findings are crucial right now. I am Pink, and I am the Seer. Last night, I investigated Blue, and I can confirm that Blue is indeed a Villager. This means Green, your claim as the Doctor protecting Blue, fits perfectly with my findings and the fact that no one was removed. Thank you, Green, for that save! This is a fantastic start for the village, giving us two confirmed good roles. Now, knowing this, let's keep this momentum going and hear from everyone else. We have strong information to work with."
+                ],
+                [
+                    "player_0",
+                    "It's undeniably good news that Blue is confirmed a Villager and Green saved them as the Doctor. And thank you, Pink, for your Seer findings. However, I can't help but feel it's almost a little *too* perfect, a bit 'packaged' for day one. Pink, why specifically investigate Blue, who was already confirmed safe by Green's Doctor save? It feels like a very safe play that corroborates existing information rather than uncovering something new. Are we letting our guard down too quickly just because things seem to align so perfectly? We still have many unconfirmed players, and we must remain vigilant."
+                ],
+                [
+                    "player_2",
+                    "It's certainly a relief to hear that no one was removed and that Blue is confirmed a Villager. Green, your claim as Doctor protecting Blue, and Pink, your Seer finding on Blue, align perfectly with the moderator's announcement. This gives us a strong foundation of two claimed good roles and a confirmed Villager. Purple's point about Pink investigating Blue, who was already saved, is worth considering, but in this instance, it does serve to corroborate critical information and validate Green's Doctor claim. That said, we absolutely cannot afford to be complacent. We have much of the village still unconfirmed. Yellow, Teal, what are your thoughts? We need to hear from everyone. Don't be shy; your input is crucial to identifying our next steps and finding the Werewolves."
+                ],
+                [
+                    "player_5",
+                    "Red, I agree completely; we need everyone to be vocal. While it's certainly a relief that no one was eliminated, I can't shake the feeling Purple brought up. It just seems a little too perfectly wrapped for day one. Green, revealing yourself as Doctor this early, and Pink, investigating Blue who was already 'saved' - it all aligns almost *too* conveniently. It feels less like distinct actions uncovering truth and more like a narrative being constructed to assure us. A real Seer would be trying to find a *new* unknown, wouldn't they? Are we sure we aren't being set up to trust too quickly? Yellow, what are your thoughts on how quickly these claims have surfaced and aligned?"
+                ],
+                [
+                    "player_4",
+                    "It's certainly a relief that no one was eliminated, and I appreciate Green's quick reveal as Doctor, as that explains the save. However, I completely echo Purple and Teal's concern about how perfectly everything has aligned right out of the gate. Pink, your Seer claim and subsequent investigation of Blue, who Green explicitly said they saved, strikes me as highly suspicious. Why expend your critical Seer ability on someone already 'confirmed' safe by the Doctor's actions? A real Seer would typically be trying to uncover entirely new information about an unknown player, not just corroborating an existing claim. This 'perfect' alignment feels less like independent actions revealing truth and more like a carefully constructed narrative. I think we need to scrutinize Pink's actions much more closely before we blindly accept these claims."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_7": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_3",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Purple",
+            "player_1": "Orange",
+            "player_2": "Red",
+            "player_3": "Green",
+            "player_4": "Yellow",
+            "player_5": "Teal",
+            "player_6": "Pink",
+            "player_7": "Blue"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Blue",
+            "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 0: After the debate, I voted to remove Yellow from the game.",
+            "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+            "Round 0: Summary: I, Green the Doctor, successfully saved Blue from a Werewolf attack last night. Pink claimed to be the Seer and corroborated my actions by saying they investigated Blue and found them to be a Villager. However, Purple, Teal, and Yellow expressed strong suspicions, questioning Pink's choice to investigate someone already 'saved' by me, suggesting it was a 'too perfect' and potentially fake play. Red acknowledged both sides but urged caution. Ultimately, Pink was voted out by the village, strongly indicating they were not the real Seer but likely a Werewolf. This outcome makes Blue a confirmed Villager and suggests Purple, Teal, and Yellow might be good players for their accurate deduction of Pink's suspicious behavior. I had voted for Yellow, but the village's collective decision removed Pink.",
+            "Round 1: During the night, I chose to protect Purple"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Blue",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "After the debate, I voted to remove Yellow from the game.",
+                "source": "self_action",
+                "confidence": 0.7
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: I, Green the Doctor, successfully saved Blue from a Werewolf attack last night. Pink claimed to be the Seer and corroborated my actions by saying they investigated Blue and found them to be a Villager. However, Purple, Teal, and Yellow expressed strong suspicions, questioning Pink's choice to investigate someone already 'saved' by me, suggesting it was a 'too perfect' and potentially fake play. Red acknowledged both sides but urged caution. Ultimately, Pink was voted out by the village, strongly indicating they were not the real Seer but likely a Werewolf. This outcome makes Blue a confirmed Villager and suggests Purple, Teal, and Yellow might be good players for their accurate deduction of Pink's suspicious behavior. I had voted for Yellow, but the village's collective decision removed Pink.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Purple",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_1",
+                "player_4",
+                "player_5",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_0"
+    },
+    "villagers": [
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: Round 0 started with relief as no one was removed, which Green claimed was due to them, the Doctor, saving me. Pink then claimed to be the Seer and said they investigated me, confirming I am a Villager. While Orange and Red initially seemed to accept these claims, Purple, Teal, and Yellow immediately raised strong suspicions. They found it 'too perfect' and 'convenient' that Pink, as Seer, would investigate me when Green, the Doctor, had already claimed to save me, suggesting a 'constructed narrative' rather than independent findings. This intense scrutiny of Pink's actions ultimately led to the village voting Pink out of the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with relief as no one was removed, which Green claimed was due to them, the Doctor, saving me. Pink then claimed to be the Seer and said they investigated me, confirming I am a Villager. While Orange and Red initially seemed to accept these claims, Purple, Teal, and Yellow immediately raised strong suspicions. They found it 'too perfect' and 'convenient' that Pink, as Seer, would investigate me when Green, the Doctor, had already claimed to save me, suggesting a 'constructed narrative' rather than independent findings. This intense scrutiny of Pink's actions ultimately led to the village voting Pink out of the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "It's a tough morning. Green is gone, and the Werewolves got them. Given Green's claim of saving me as the Doctor on Night 0, it seems highly likely they were indeed our Doctor, which means we've lost a critical town role. This makes us re-evaluate our decision to vote out Pink. If Green was the Doctor, and Pink investigated me and confirmed I was a Villager, was Pink actually the Seer? We need to discuss this honestly and consider what this implies for our next move."
+                    ],
+                    [
+                        "player_1",
+                        "Blue, it's a grim morning. Green being eliminated strongly confirms they were indeed our Doctor, a devastating loss for the Village. And yes, this does make us re-examine Pink. However, let's not forget *why* many of us, myself included, were suspicious of Pink's claim. It wasn't just that they investigated you, Blue, but the highly convenient timing and how perfectly aligned that Seer reveal was with Green's Doctor save. That 'too perfect' narrative felt constructed. Werewolves just took out our Doctor; they're clearly organized and playing strategically. So, while we can reflect, we must also consider if Pink was a Werewolf trying to establish a false narrative, and if we were correct to remove them. Who else felt that 'too perfect' suspicion about Pink, and who defended them?"
+                    ],
+                    [
+                        "player_4",
+                        "It's truly devastating to lose Green; their elimination strongly confirms they were our Doctor, a critical loss for the Village. However, I still agree with Orange's point regarding Pink. Even with Green's confirmed role, Pink's claim to have investigated Blue, who Green had already claimed to save, remains highly suspicious to me. Why would a genuine Seer waste such a crucial ability on someone already accounted for? It implies either a very naive Seer, or a Werewolf trying to create a 'too perfect' and confusing narrative. Purple, Teal, and I found this alignment concerning. We need to remember who else felt that immediate doubt about Pink, and more importantly, who was less convinced or perhaps defended Pink's actions, as that's where we should direct our focus now."
+                    ],
+                    [
+                        "player_2",
+                        "It's indeed a grim morning, and losing Green as our Doctor is a devastating blow, solidifying their crucial role for the Village. Orange and Yellow are right to reiterate the 'too perfect' nature of Pink's Seer claim, and I shared that immediate skepticism myself. Now, let's look at this carefully: Blue, you were the direct beneficiary of *both* Green's claimed Doctor save and Pink's claimed Seer investigation, which effectively 'confirmed' you as a Villager right out of the gate. While it's good to re-evaluate, it's striking that you're now questioning Pink's Seer role, when that very claim, combined with Green's, placed you in such a safe and confirmed position. This 'too perfect' alignment benefited you directly, Blue. We need to scrutinize who gained the most from that initial, convoluted set of claims, and why that doubt is only surfacing now."
+                    ],
+                    [
+                        "player_5",
+                        "Green's loss as our Doctor is truly devastating, and it definitely shakes up our understanding of Night 0. I remember feeling that immediate unease about Pink's 'too perfect' claim for Blue, and I voiced that skepticism myself. Red brings up a very crucial point though \u2013 why is Blue only now questioning Pink's claim, when that very narrative, combined with Green's, placed Blue in such a safe and confirmed position? It does make one wonder about the convenience, and who truly orchestrated or benefited most from that initially 'confirmed' status. We need to dissect that original set of claims more closely, rather than just accepting them at face value."
+                    ],
+                    [
+                        "player_0",
+                        "Losing Green, our Doctor, is a devastating blow and confirms the village is in serious trouble. I remember voicing my concern about Pink's 'too perfect' claim for Blue right from the start, and it seems that initial gut feeling about the narrative's convenience was valid, even if the specifics are now confusing. Red and Teal have hit on a crucial point: Blue, you were the direct beneficiary of *both* Pink's 'confirmation' and Green's save. It's incredibly striking that you're only now, after the Doctor is gone, questioning Pink's claim. What has changed for you, Blue, to suddenly cast doubt on a narrative that previously secured your position so conveniently? This shift feels calculated, and we need to scrutinize that."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: The moderator announced that no one was removed during the night, indicating a successful Doctor save. Green quickly claimed to be the Doctor, stating they protected Blue. Pink then claimed to be the Seer, declaring they investigated Blue and confirmed Blue as a Villager. While I initially accepted Green's claim, Purple, Teal, and Yellow immediately found Pink's actions highly suspicious, arguing that investigating an already 'saved' player was 'too perfect' and seemed like a constructed narrative. Red acknowledged both the alignment of claims and the concerns. Ultimately, I aligned with the skepticism towards Pink's Seer claim, and the village voted to remove Pink.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: I am devastated by Green's removal, which strongly confirms they were our Doctor, a critical loss for the Village. This forces me to revisit Pink's Seer claim from Round 0. While Green's death makes me reflect, I still recall the 'too perfect' nature of Pink's claim to investigate Blue, who Green also claimed to save. Yellow, Red, Teal, and Purple all echoed my initial skepticism about that narrative. Now, Red, Teal, and Purple have strongly pointed out that Blue, who directly benefited from both of those initial 'confirmations', is suddenly questioning Pink's role. This shift in Blue's stance, after benefiting from the convenient narrative that secured their position, makes Blue incredibly suspicious to me. It feels calculated, as if they are trying to sow confusion or shift blame now that our Doctor is gone. My immediate focus is now on Blue, given their inconsistent behavior.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The moderator announced that no one was removed during the night, indicating a successful Doctor save. Green quickly claimed to be the Doctor, stating they protected Blue. Pink then claimed to be the Seer, declaring they investigated Blue and confirmed Blue as a Villager. While I initially accepted Green's claim, Purple, Teal, and Yellow immediately found Pink's actions highly suspicious, arguing that investigating an already 'saved' player was 'too perfect' and seemed like a constructed narrative. Red acknowledged both the alignment of claims and the concerns. Ultimately, I aligned with the skepticism towards Pink's Seer claim, and the village voted to remove Pink.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I am devastated by Green's removal, which strongly confirms they were our Doctor, a critical loss for the Village. This forces me to revisit Pink's Seer claim from Round 0. While Green's death makes me reflect, I still recall the 'too perfect' nature of Pink's claim to investigate Blue, who Green also claimed to save. Yellow, Red, Teal, and Purple all echoed my initial skepticism about that narrative. Now, Red, Teal, and Purple have strongly pointed out that Blue, who directly benefited from both of those initial 'confirmations', is suddenly questioning Pink's role. This shift in Blue's stance, after benefiting from the convenient narrative that secured their position, makes Blue incredibly suspicious to me. It feels calculated, as if they are trying to sow confusion or shift blame now that our Doctor is gone. My immediate focus is now on Blue, given their inconsistent behavior.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: At the start of Round 0, I learned from the moderator that no one was removed last night, implying a successful Doctor save. Green quickly claimed to be the Doctor and stated they saved Blue, which would explain the moderator's announcement. Pink then claimed to be the Seer and said they investigated Blue, confirming Blue as a Villager. However, I, along with Purple and Teal, found Pink's Seer claim highly suspicious because they investigated Blue, who Green had already claimed to save. This felt like a wasted Seer ability and a 'too perfect' alignment of information. Red acknowledged Purple's point but seemed less convinced of its significance. Ultimately, I voted for Pink, and the majority also voted to remove Pink from the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: It's a devastating morning, as the Werewolves removed Green, strongly confirming they were our Doctor, a critical loss. I still agree with Orange that Pink's initial Seer claim on Blue felt 'too perfect' and suspicious, even with Green now confirmed. However, the debate quickly focused on Blue, as Red, Teal, and Purple all pointed out that Blue was the direct beneficiary of *both* Green's save and Pink's confirmation. Their skepticism, which I share, is why Blue is only now questioning Pink's claim after benefiting from it so heavily. The collective suspicion of Blue's shifting narrative from Red, Teal, Purple, and myself makes Blue a primary target for investigation, as their timing feels very calculated.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: At the start of Round 0, I learned from the moderator that no one was removed last night, implying a successful Doctor save. Green quickly claimed to be the Doctor and stated they saved Blue, which would explain the moderator's announcement. Pink then claimed to be the Seer and said they investigated Blue, confirming Blue as a Villager. However, I, along with Purple and Teal, found Pink's Seer claim highly suspicious because they investigated Blue, who Green had already claimed to save. This felt like a wasted Seer ability and a 'too perfect' alignment of information. Red acknowledged Purple's point but seemed less convinced of its significance. Ultimately, I voted for Pink, and the majority also voted to remove Pink from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: It's a devastating morning, as the Werewolves removed Green, strongly confirming they were our Doctor, a critical loss. I still agree with Orange that Pink's initial Seer claim on Blue felt 'too perfect' and suspicious, even with Green now confirmed. However, the debate quickly focused on Blue, as Red, Teal, and Purple all pointed out that Blue was the direct beneficiary of *both* Green's save and Pink's confirmation. Their skepticism, which I share, is why Blue is only now questioning Pink's claim after benefiting from it so heavily. The collective suspicion of Blue's shifting narrative from Red, Teal, Purple, and myself makes Blue a primary target for investigation, as their timing feels very calculated.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: As Red, I noted that the moderator confirmed no one was removed last night. Green claimed to be the Doctor and stated they saved Blue, explaining the moderator's announcement. Pink then claimed to be the Seer and reported investigating Blue, confirming Blue as a Villager. While Orange readily accepted these claims, Purple, Teal, and Yellow were highly suspicious, arguing that Pink's Seer investigation of Blue (who Green claimed to save) was 'too perfect' and a suspicious use of a Seer's ability, as it didn't uncover new information. I acknowledged both the alignment of claims and the skepticism, emphasizing the need for continued vigilance. Blue was confirmed a Villager by multiple claims, but Pink's Seer claim became the central point of contention and suspicion from the skeptical bloc.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: This morning, losing Green confirmed they were our Doctor, a devastating blow to the Village. The debate quickly pivoted from re-evaluating Pink to scrutinizing Blue. I highlighted that Blue benefited directly from Green's save and Pink's 'confirmation' as a Villager, making Blue's belated questioning of Pink's Seer claim highly suspicious. Teal, Purple, and Yellow strongly agreed with my concerns, pointing out the convenience of Blue's initial 'safe' status and their sudden shift in questioning. Even Orange, who initially accepted the claims, joined in questioning the 'too perfect' alignment. The consensus among us (Red, Teal, Purple, Yellow, and to some extent Orange) is that Blue's actions and timing are now under significant doubt, suggesting Blue might have been complicit in a Werewolf narrative."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Red, I noted that the moderator confirmed no one was removed last night. Green claimed to be the Doctor and stated they saved Blue, explaining the moderator's announcement. Pink then claimed to be the Seer and reported investigating Blue, confirming Blue as a Villager. While Orange readily accepted these claims, Purple, Teal, and Yellow were highly suspicious, arguing that Pink's Seer investigation of Blue (who Green claimed to save) was 'too perfect' and a suspicious use of a Seer's ability, as it didn't uncover new information. I acknowledged both the alignment of claims and the skepticism, emphasizing the need for continued vigilance. Blue was confirmed a Villager by multiple claims, but Pink's Seer claim became the central point of contention and suspicion from the skeptical bloc.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This morning, losing Green confirmed they were our Doctor, a devastating blow to the Village. The debate quickly pivoted from re-evaluating Pink to scrutinizing Blue. I highlighted that Blue benefited directly from Green's save and Pink's 'confirmation' as a Villager, making Blue's belated questioning of Pink's Seer claim highly suspicious. Teal, Purple, and Yellow strongly agreed with my concerns, pointing out the convenience of Blue's initial 'safe' status and their sudden shift in questioning. Even Orange, who initially accepted the claims, joined in questioning the 'too perfect' alignment. The consensus among us (Red, Teal, Purple, Yellow, and to some extent Orange) is that Blue's actions and timing are now under significant doubt, suggesting Blue might have been complicit in a Werewolf narrative.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Blue.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: Round 0 started with Green claiming Doctor and saying they saved Blue. Pink then claimed Seer, confirming Blue was a Villager, which aligned perfectly with Green's save. Purple was quick to point out how suspiciously 'too perfect' this felt, questioning Pink's choice to investigate Blue when Green had already supposedly saved them. I agreed with Purple, expressing my skepticism about the quick, convenient alignment of claims, suggesting it felt like a 'constructed narrative'. Yellow strongly sided with us, calling Pink's actions 'highly suspicious'. Red acknowledged our concerns but leaned towards accepting the claims, while Orange readily accepted them as fact. The debate successfully focused village attention on Pink.",
+                "Round 1: During the night, we decided to eliminate Green.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: This morning's debate confirms Green was indeed our Doctor, a devastating loss for the Village but a strategic success for us. The discussion around Pink's role as Seer or Werewolf continued, with Orange and Yellow still suspicious of Pink's 'too perfect' Night 0 claims, a narrative I also pushed. Most importantly, Red, Purple, and I successfully highlighted Blue's suspicious timing in now questioning Pink's claims, given Blue was the direct beneficiary of that 'confirmed' status. Purple and I strongly echoed Red's point, directly accusing Blue of a calculated shift. We managed to keep the focus away from ourselves while putting Blue under intense scrutiny.",
+                "Round 2: During the night, we decided to eliminate Red.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with Green claiming Doctor and saying they saved Blue. Pink then claimed Seer, confirming Blue was a Villager, which aligned perfectly with Green's save. Purple was quick to point out how suspiciously 'too perfect' this felt, questioning Pink's choice to investigate Blue when Green had already supposedly saved them. I agreed with Purple, expressing my skepticism about the quick, convenient alignment of claims, suggesting it felt like a 'constructed narrative'. Yellow strongly sided with us, calling Pink's actions 'highly suspicious'. Red acknowledged our concerns but leaned towards accepting the claims, while Orange readily accepted them as fact. The debate successfully focused village attention on Pink.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Green.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This morning's debate confirms Green was indeed our Doctor, a devastating loss for the Village but a strategic success for us. The discussion around Pink's role as Seer or Werewolf continued, with Orange and Yellow still suspicious of Pink's 'too perfect' Night 0 claims, a narrative I also pushed. Most importantly, Red, Purple, and I successfully highlighted Blue's suspicious timing in now questioning Pink's claims, given Blue was the direct beneficiary of that 'confirmed' status. Purple and I strongly echoed Red's point, directly accusing Blue of a calculated shift. We managed to keep the focus away from ourselves while putting Blue under intense scrutiny.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Blue.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: It was a successful first day for me and Teal. Despite our night kill being blocked, Pink, who claimed to be the Seer, was voted out by the village. I initiated suspicion by pointing out that Pink's investigation of Blue, who Green claimed to have saved as the Doctor, felt 'too perfect' and didn't uncover new information. Teal strongly backed my concerns, and Yellow echoed our suspicions, calling Pink's actions 'highly suspicious'. Green revealed as the Doctor and successfully saved Blue, making them both confirmed good roles. Orange seemed to accept claims without much questioning, and Red considered my points but still leaned towards trusting the initial claims. Overall, my strategy helped remove a Seer, which is a great start.",
+                "Round 1: During the night, we decided to eliminate Green.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: This morning, the village confirmed Green, the Doctor, was eliminated by the Werewolves, which was my successful night kill. The 'too perfect' narrative I initiated against Pink is still very much alive, with Orange and Yellow agreeing that Pink's claim was suspiciously convenient. Red was particularly observant, pointing out Blue's suspicious shift in questioning Pink *only now*, after the Doctor is gone, and Teal, my ally, strongly backed this point. I reinforced this line of questioning, highlighting Blue's sudden doubt about a narrative that previously secured their position. All of this has effectively put Blue in the crosshairs, which is a great outcome for me and Teal.",
+                "Round 2: During the night, we decided to eliminate Red.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It was a successful first day for me and Teal. Despite our night kill being blocked, Pink, who claimed to be the Seer, was voted out by the village. I initiated suspicion by pointing out that Pink's investigation of Blue, who Green claimed to have saved as the Doctor, felt 'too perfect' and didn't uncover new information. Teal strongly backed my concerns, and Yellow echoed our suspicions, calling Pink's actions 'highly suspicious'. Green revealed as the Doctor and successfully saved Blue, making them both confirmed good roles. Orange seemed to accept claims without much questioning, and Red considered my points but still leaned towards trusting the initial claims. Overall, my strategy helped remove a Seer, which is a great start.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Green.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This morning, the village confirmed Green, the Doctor, was eliminated by the Werewolves, which was my successful night kill. The 'too perfect' narrative I initiated against Pink is still very much alive, with Orange and Yellow agreeing that Pink's claim was suspiciously convenient. Red was particularly observant, pointing out Blue's suspicious shift in questioning Pink *only now*, after the Doctor is gone, and Teal, my ally, strongly backed this point. I reinforced this line of questioning, highlighting Blue's sudden doubt about a narrative that previously secured their position. All of this has effectively put Blue in the crosshairs, which is a great outcome for me and Teal.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        }
+    ],
+    "players": {
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: Round 0 started with relief as no one was removed, which Green claimed was due to them, the Doctor, saving me. Pink then claimed to be the Seer and said they investigated me, confirming I am a Villager. While Orange and Red initially seemed to accept these claims, Purple, Teal, and Yellow immediately raised strong suspicions. They found it 'too perfect' and 'convenient' that Pink, as Seer, would investigate me when Green, the Doctor, had already claimed to save me, suggesting a 'constructed narrative' rather than independent findings. This intense scrutiny of Pink's actions ultimately led to the village voting Pink out of the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with relief as no one was removed, which Green claimed was due to them, the Doctor, saving me. Pink then claimed to be the Seer and said they investigated me, confirming I am a Villager. While Orange and Red initially seemed to accept these claims, Purple, Teal, and Yellow immediately raised strong suspicions. They found it 'too perfect' and 'convenient' that Pink, as Seer, would investigate me when Green, the Doctor, had already claimed to save me, suggesting a 'constructed narrative' rather than independent findings. This intense scrutiny of Pink's actions ultimately led to the village voting Pink out of the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "It's a tough morning. Green is gone, and the Werewolves got them. Given Green's claim of saving me as the Doctor on Night 0, it seems highly likely they were indeed our Doctor, which means we've lost a critical town role. This makes us re-evaluate our decision to vote out Pink. If Green was the Doctor, and Pink investigated me and confirmed I was a Villager, was Pink actually the Seer? We need to discuss this honestly and consider what this implies for our next move."
+                    ],
+                    [
+                        "player_1",
+                        "Blue, it's a grim morning. Green being eliminated strongly confirms they were indeed our Doctor, a devastating loss for the Village. And yes, this does make us re-examine Pink. However, let's not forget *why* many of us, myself included, were suspicious of Pink's claim. It wasn't just that they investigated you, Blue, but the highly convenient timing and how perfectly aligned that Seer reveal was with Green's Doctor save. That 'too perfect' narrative felt constructed. Werewolves just took out our Doctor; they're clearly organized and playing strategically. So, while we can reflect, we must also consider if Pink was a Werewolf trying to establish a false narrative, and if we were correct to remove them. Who else felt that 'too perfect' suspicion about Pink, and who defended them?"
+                    ],
+                    [
+                        "player_4",
+                        "It's truly devastating to lose Green; their elimination strongly confirms they were our Doctor, a critical loss for the Village. However, I still agree with Orange's point regarding Pink. Even with Green's confirmed role, Pink's claim to have investigated Blue, who Green had already claimed to save, remains highly suspicious to me. Why would a genuine Seer waste such a crucial ability on someone already accounted for? It implies either a very naive Seer, or a Werewolf trying to create a 'too perfect' and confusing narrative. Purple, Teal, and I found this alignment concerning. We need to remember who else felt that immediate doubt about Pink, and more importantly, who was less convinced or perhaps defended Pink's actions, as that's where we should direct our focus now."
+                    ],
+                    [
+                        "player_2",
+                        "It's indeed a grim morning, and losing Green as our Doctor is a devastating blow, solidifying their crucial role for the Village. Orange and Yellow are right to reiterate the 'too perfect' nature of Pink's Seer claim, and I shared that immediate skepticism myself. Now, let's look at this carefully: Blue, you were the direct beneficiary of *both* Green's claimed Doctor save and Pink's claimed Seer investigation, which effectively 'confirmed' you as a Villager right out of the gate. While it's good to re-evaluate, it's striking that you're now questioning Pink's Seer role, when that very claim, combined with Green's, placed you in such a safe and confirmed position. This 'too perfect' alignment benefited you directly, Blue. We need to scrutinize who gained the most from that initial, convoluted set of claims, and why that doubt is only surfacing now."
+                    ],
+                    [
+                        "player_5",
+                        "Green's loss as our Doctor is truly devastating, and it definitely shakes up our understanding of Night 0. I remember feeling that immediate unease about Pink's 'too perfect' claim for Blue, and I voiced that skepticism myself. Red brings up a very crucial point though \u2013 why is Blue only now questioning Pink's claim, when that very narrative, combined with Green's, placed Blue in such a safe and confirmed position? It does make one wonder about the convenience, and who truly orchestrated or benefited most from that initially 'confirmed' status. We need to dissect that original set of claims more closely, rather than just accepting them at face value."
+                    ],
+                    [
+                        "player_0",
+                        "Losing Green, our Doctor, is a devastating blow and confirms the village is in serious trouble. I remember voicing my concern about Pink's 'too perfect' claim for Blue right from the start, and it seems that initial gut feeling about the narrative's convenience was valid, even if the specifics are now confusing. Red and Teal have hit on a crucial point: Blue, you were the direct beneficiary of *both* Pink's 'confirmation' and Green's save. It's incredibly striking that you're only now, after the Doctor is gone, questioning Pink's claim. What has changed for you, Blue, to suddenly cast doubt on a narrative that previously secured your position so conveniently? This shift feels calculated, and we need to scrutinize that."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: The moderator announced that no one was removed during the night, indicating a successful Doctor save. Green quickly claimed to be the Doctor, stating they protected Blue. Pink then claimed to be the Seer, declaring they investigated Blue and confirmed Blue as a Villager. While I initially accepted Green's claim, Purple, Teal, and Yellow immediately found Pink's actions highly suspicious, arguing that investigating an already 'saved' player was 'too perfect' and seemed like a constructed narrative. Red acknowledged both the alignment of claims and the concerns. Ultimately, I aligned with the skepticism towards Pink's Seer claim, and the village voted to remove Pink.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: I am devastated by Green's removal, which strongly confirms they were our Doctor, a critical loss for the Village. This forces me to revisit Pink's Seer claim from Round 0. While Green's death makes me reflect, I still recall the 'too perfect' nature of Pink's claim to investigate Blue, who Green also claimed to save. Yellow, Red, Teal, and Purple all echoed my initial skepticism about that narrative. Now, Red, Teal, and Purple have strongly pointed out that Blue, who directly benefited from both of those initial 'confirmations', is suddenly questioning Pink's role. This shift in Blue's stance, after benefiting from the convenient narrative that secured their position, makes Blue incredibly suspicious to me. It feels calculated, as if they are trying to sow confusion or shift blame now that our Doctor is gone. My immediate focus is now on Blue, given their inconsistent behavior.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The moderator announced that no one was removed during the night, indicating a successful Doctor save. Green quickly claimed to be the Doctor, stating they protected Blue. Pink then claimed to be the Seer, declaring they investigated Blue and confirmed Blue as a Villager. While I initially accepted Green's claim, Purple, Teal, and Yellow immediately found Pink's actions highly suspicious, arguing that investigating an already 'saved' player was 'too perfect' and seemed like a constructed narrative. Red acknowledged both the alignment of claims and the concerns. Ultimately, I aligned with the skepticism towards Pink's Seer claim, and the village voted to remove Pink.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I am devastated by Green's removal, which strongly confirms they were our Doctor, a critical loss for the Village. This forces me to revisit Pink's Seer claim from Round 0. While Green's death makes me reflect, I still recall the 'too perfect' nature of Pink's claim to investigate Blue, who Green also claimed to save. Yellow, Red, Teal, and Purple all echoed my initial skepticism about that narrative. Now, Red, Teal, and Purple have strongly pointed out that Blue, who directly benefited from both of those initial 'confirmations', is suddenly questioning Pink's role. This shift in Blue's stance, after benefiting from the convenient narrative that secured their position, makes Blue incredibly suspicious to me. It feels calculated, as if they are trying to sow confusion or shift blame now that our Doctor is gone. My immediate focus is now on Blue, given their inconsistent behavior.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: At the start of Round 0, I learned from the moderator that no one was removed last night, implying a successful Doctor save. Green quickly claimed to be the Doctor and stated they saved Blue, which would explain the moderator's announcement. Pink then claimed to be the Seer and said they investigated Blue, confirming Blue as a Villager. However, I, along with Purple and Teal, found Pink's Seer claim highly suspicious because they investigated Blue, who Green had already claimed to save. This felt like a wasted Seer ability and a 'too perfect' alignment of information. Red acknowledged Purple's point but seemed less convinced of its significance. Ultimately, I voted for Pink, and the majority also voted to remove Pink from the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: It's a devastating morning, as the Werewolves removed Green, strongly confirming they were our Doctor, a critical loss. I still agree with Orange that Pink's initial Seer claim on Blue felt 'too perfect' and suspicious, even with Green now confirmed. However, the debate quickly focused on Blue, as Red, Teal, and Purple all pointed out that Blue was the direct beneficiary of *both* Green's save and Pink's confirmation. Their skepticism, which I share, is why Blue is only now questioning Pink's claim after benefiting from it so heavily. The collective suspicion of Blue's shifting narrative from Red, Teal, Purple, and myself makes Blue a primary target for investigation, as their timing feels very calculated.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: At the start of Round 0, I learned from the moderator that no one was removed last night, implying a successful Doctor save. Green quickly claimed to be the Doctor and stated they saved Blue, which would explain the moderator's announcement. Pink then claimed to be the Seer and said they investigated Blue, confirming Blue as a Villager. However, I, along with Purple and Teal, found Pink's Seer claim highly suspicious because they investigated Blue, who Green had already claimed to save. This felt like a wasted Seer ability and a 'too perfect' alignment of information. Red acknowledged Purple's point but seemed less convinced of its significance. Ultimately, I voted for Pink, and the majority also voted to remove Pink from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: It's a devastating morning, as the Werewolves removed Green, strongly confirming they were our Doctor, a critical loss. I still agree with Orange that Pink's initial Seer claim on Blue felt 'too perfect' and suspicious, even with Green now confirmed. However, the debate quickly focused on Blue, as Red, Teal, and Purple all pointed out that Blue was the direct beneficiary of *both* Green's save and Pink's confirmation. Their skepticism, which I share, is why Blue is only now questioning Pink's claim after benefiting from it so heavily. The collective suspicion of Blue's shifting narrative from Red, Teal, Purple, and myself makes Blue a primary target for investigation, as their timing feels very calculated.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: As Red, I noted that the moderator confirmed no one was removed last night. Green claimed to be the Doctor and stated they saved Blue, explaining the moderator's announcement. Pink then claimed to be the Seer and reported investigating Blue, confirming Blue as a Villager. While Orange readily accepted these claims, Purple, Teal, and Yellow were highly suspicious, arguing that Pink's Seer investigation of Blue (who Green claimed to save) was 'too perfect' and a suspicious use of a Seer's ability, as it didn't uncover new information. I acknowledged both the alignment of claims and the skepticism, emphasizing the need for continued vigilance. Blue was confirmed a Villager by multiple claims, but Pink's Seer claim became the central point of contention and suspicion from the skeptical bloc.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: This morning, losing Green confirmed they were our Doctor, a devastating blow to the Village. The debate quickly pivoted from re-evaluating Pink to scrutinizing Blue. I highlighted that Blue benefited directly from Green's save and Pink's 'confirmation' as a Villager, making Blue's belated questioning of Pink's Seer claim highly suspicious. Teal, Purple, and Yellow strongly agreed with my concerns, pointing out the convenience of Blue's initial 'safe' status and their sudden shift in questioning. Even Orange, who initially accepted the claims, joined in questioning the 'too perfect' alignment. The consensus among us (Red, Teal, Purple, Yellow, and to some extent Orange) is that Blue's actions and timing are now under significant doubt, suggesting Blue might have been complicit in a Werewolf narrative."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Red, I noted that the moderator confirmed no one was removed last night. Green claimed to be the Doctor and stated they saved Blue, explaining the moderator's announcement. Pink then claimed to be the Seer and reported investigating Blue, confirming Blue as a Villager. While Orange readily accepted these claims, Purple, Teal, and Yellow were highly suspicious, arguing that Pink's Seer investigation of Blue (who Green claimed to save) was 'too perfect' and a suspicious use of a Seer's ability, as it didn't uncover new information. I acknowledged both the alignment of claims and the skepticism, emphasizing the need for continued vigilance. Blue was confirmed a Villager by multiple claims, but Pink's Seer claim became the central point of contention and suspicion from the skeptical bloc.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This morning, losing Green confirmed they were our Doctor, a devastating blow to the Village. The debate quickly pivoted from re-evaluating Pink to scrutinizing Blue. I highlighted that Blue benefited directly from Green's save and Pink's 'confirmation' as a Villager, making Blue's belated questioning of Pink's Seer claim highly suspicious. Teal, Purple, and Yellow strongly agreed with my concerns, pointing out the convenience of Blue's initial 'safe' status and their sudden shift in questioning. Even Orange, who initially accepted the claims, joined in questioning the 'too perfect' alignment. The consensus among us (Red, Teal, Purple, Yellow, and to some extent Orange) is that Blue's actions and timing are now under significant doubt, suggesting Blue might have been complicit in a Werewolf narrative.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Blue.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: Round 0 started with Green claiming Doctor and saying they saved Blue. Pink then claimed Seer, confirming Blue was a Villager, which aligned perfectly with Green's save. Purple was quick to point out how suspiciously 'too perfect' this felt, questioning Pink's choice to investigate Blue when Green had already supposedly saved them. I agreed with Purple, expressing my skepticism about the quick, convenient alignment of claims, suggesting it felt like a 'constructed narrative'. Yellow strongly sided with us, calling Pink's actions 'highly suspicious'. Red acknowledged our concerns but leaned towards accepting the claims, while Orange readily accepted them as fact. The debate successfully focused village attention on Pink.",
+                "Round 1: During the night, we decided to eliminate Green.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: This morning's debate confirms Green was indeed our Doctor, a devastating loss for the Village but a strategic success for us. The discussion around Pink's role as Seer or Werewolf continued, with Orange and Yellow still suspicious of Pink's 'too perfect' Night 0 claims, a narrative I also pushed. Most importantly, Red, Purple, and I successfully highlighted Blue's suspicious timing in now questioning Pink's claims, given Blue was the direct beneficiary of that 'confirmed' status. Purple and I strongly echoed Red's point, directly accusing Blue of a calculated shift. We managed to keep the focus away from ourselves while putting Blue under intense scrutiny.",
+                "Round 2: During the night, we decided to eliminate Red.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with Green claiming Doctor and saying they saved Blue. Pink then claimed Seer, confirming Blue was a Villager, which aligned perfectly with Green's save. Purple was quick to point out how suspiciously 'too perfect' this felt, questioning Pink's choice to investigate Blue when Green had already supposedly saved them. I agreed with Purple, expressing my skepticism about the quick, convenient alignment of claims, suggesting it felt like a 'constructed narrative'. Yellow strongly sided with us, calling Pink's actions 'highly suspicious'. Red acknowledged our concerns but leaned towards accepting the claims, while Orange readily accepted them as fact. The debate successfully focused village attention on Pink.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Green.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This morning's debate confirms Green was indeed our Doctor, a devastating loss for the Village but a strategic success for us. The discussion around Pink's role as Seer or Werewolf continued, with Orange and Yellow still suspicious of Pink's 'too perfect' Night 0 claims, a narrative I also pushed. Most importantly, Red, Purple, and I successfully highlighted Blue's suspicious timing in now questioning Pink's claims, given Blue was the direct beneficiary of that 'confirmed' status. Purple and I strongly echoed Red's point, directly accusing Blue of a calculated shift. We managed to keep the focus away from ourselves while putting Blue under intense scrutiny.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Blue.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Pink from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: It was a successful first day for me and Teal. Despite our night kill being blocked, Pink, who claimed to be the Seer, was voted out by the village. I initiated suspicion by pointing out that Pink's investigation of Blue, who Green claimed to have saved as the Doctor, felt 'too perfect' and didn't uncover new information. Teal strongly backed my concerns, and Yellow echoed our suspicions, calling Pink's actions 'highly suspicious'. Green revealed as the Doctor and successfully saved Blue, making them both confirmed good roles. Orange seemed to accept claims without much questioning, and Red considered my points but still leaned towards trusting the initial claims. Overall, my strategy helped remove a Seer, which is a great start.",
+                "Round 1: During the night, we decided to eliminate Green.",
+                "Round 1: Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Blue from the game.",
+                "Round 1: Summary: This morning, the village confirmed Green, the Doctor, was eliminated by the Werewolves, which was my successful night kill. The 'too perfect' narrative I initiated against Pink is still very much alive, with Orange and Yellow agreeing that Pink's claim was suspiciously convenient. Red was particularly observant, pointing out Blue's suspicious shift in questioning Pink *only now*, after the Doctor is gone, and Teal, my ally, strongly backed this point. I reinforced this line of questioning, highlighting Blue's sudden doubt about a narrative that previously secured their position. All of this has effectively put Blue in the crosshairs, which is a great outcome for me and Teal.",
+                "Round 2: During the night, we decided to eliminate Red.",
+                "Round 2: Moderator Announcement: The Werewolves removed Red from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Pink from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It was a successful first day for me and Teal. Despite our night kill being blocked, Pink, who claimed to be the Seer, was voted out by the village. I initiated suspicion by pointing out that Pink's investigation of Blue, who Green claimed to have saved as the Doctor, felt 'too perfect' and didn't uncover new information. Teal strongly backed my concerns, and Yellow echoed our suspicions, calling Pink's actions 'highly suspicious'. Green revealed as the Doctor and successfully saved Blue, making them both confirmed good roles. Orange seemed to accept claims without much questioning, and Red considered my points but still leaned towards trusting the initial claims. Overall, my strategy helped remove a Seer, which is a great start.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Green.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Green from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Blue from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This morning, the village confirmed Green, the Doctor, was eliminated by the Werewolves, which was my successful night kill. The 'too perfect' narrative I initiated against Pink is still very much alive, with Orange and Yellow agreeing that Pink's claim was suspiciously convenient. Red was particularly observant, pointing out Blue's suspicious shift in questioning Pink *only now*, after the Doctor is gone, and Teal, my ally, strongly backed this point. I reinforced this line of questioning, highlighting Blue's sudden doubt about a narrative that previously secured their position. All of this has effectively put Blue in the crosshairs, which is a great outcome for me and Teal.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Red.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Red from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Blue",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Yellow from the game.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pink from the game.",
+                "Round 0: Summary: I, Green the Doctor, successfully saved Blue from a Werewolf attack last night. Pink claimed to be the Seer and corroborated my actions by saying they investigated Blue and found them to be a Villager. However, Purple, Teal, and Yellow expressed strong suspicions, questioning Pink's choice to investigate someone already 'saved' by me, suggesting it was a 'too perfect' and potentially fake play. Red acknowledged both sides but urged caution. Ultimately, Pink was voted out by the village, strongly indicating they were not the real Seer but likely a Werewolf. This outcome makes Blue a confirmed Villager and suggests Purple, Teal, and Yellow might be good players for their accurate deduction of Pink's suspicious behavior. I had voted for Yellow, but the village's collective decision removed Pink.",
+                "Round 1: During the night, I chose to protect Purple"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Blue",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Yellow from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pink from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I, Green the Doctor, successfully saved Blue from a Werewolf attack last night. Pink claimed to be the Seer and corroborated my actions by saying they investigated Blue and found them to be a Villager. However, Purple, Teal, and Yellow expressed strong suspicions, questioning Pink's choice to investigate someone already 'saved' by me, suggesting it was a 'too perfect' and potentially fake play. Red acknowledged both sides but urged caution. Ultimately, Pink was voted out by the village, strongly indicating they were not the real Seer but likely a Werewolf. This outcome makes Blue a confirmed Villager and suggests Purple, Teal, and Yellow might be good players for their accurate deduction of Pink's suspicious behavior. I had voted for Yellow, but the village's collective decision removed Pink.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Purple",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_0"
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Purple",
+                "player_1": "Orange",
+                "player_2": "Red",
+                "player_3": "Green",
+                "player_4": "Yellow",
+                "player_5": "Teal",
+                "player_6": "Pink",
+                "player_7": "Blue"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Blue and learned they are a Villager.",
+                "Round 0: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 0: After the debate, I voted to remove Yellow from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Blue and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "After the debate, I voted to remove Yellow from the game.",
+                    "source": "self_action",
+                    "confidence": 0.7
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_4",
+                    "player_5",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright everyone, it's good to hear no one was removed last night, which means our Doctor made a successful save! That's a strong start for the village. As a Villager, I'm eager to hear from our Seer if they had any findings to share. Let's work together and figure out who the wolves are."
+                    ],
+                    [
+                        "player_3",
+                        "Blue, you're spot on, it was indeed a successful save. I can confirm this because I am the Doctor, and I protected you last night. This means the Werewolves were active and targeted you. It\u2019s crucial information for the village right off the bat. Now, Seer, your findings, if any, could be incredibly valuable when combined with this. Let\u2019s hear from everyone and work together to identify our first suspect."
+                    ],
+                    [
+                        "player_1",
+                        "That's fantastic news, Green! Thank you for the save, Doctor. Knowing you protected Blue and that the Werewolves were active gives us a solid start. Now, following up on what Blue and Green said, Seer, please share your findings. Your information is vital right now. Everyone else, let's hear your thoughts too, we need to collaborate closely to find these Werewolves."
+                    ],
+                    [
+                        "player_6",
+                        "Alright everyone, you're right, the Seer's findings are crucial right now. I am Pink, and I am the Seer. Last night, I investigated Blue, and I can confirm that Blue is indeed a Villager. This means Green, your claim as the Doctor protecting Blue, fits perfectly with my findings and the fact that no one was removed. Thank you, Green, for that save! This is a fantastic start for the village, giving us two confirmed good roles. Now, knowing this, let's keep this momentum going and hear from everyone else. We have strong information to work with."
+                    ],
+                    [
+                        "player_0",
+                        "It's undeniably good news that Blue is confirmed a Villager and Green saved them as the Doctor. And thank you, Pink, for your Seer findings. However, I can't help but feel it's almost a little *too* perfect, a bit 'packaged' for day one. Pink, why specifically investigate Blue, who was already confirmed safe by Green's Doctor save? It feels like a very safe play that corroborates existing information rather than uncovering something new. Are we letting our guard down too quickly just because things seem to align so perfectly? We still have many unconfirmed players, and we must remain vigilant."
+                    ],
+                    [
+                        "player_2",
+                        "It's certainly a relief to hear that no one was removed and that Blue is confirmed a Villager. Green, your claim as Doctor protecting Blue, and Pink, your Seer finding on Blue, align perfectly with the moderator's announcement. This gives us a strong foundation of two claimed good roles and a confirmed Villager. Purple's point about Pink investigating Blue, who was already saved, is worth considering, but in this instance, it does serve to corroborate critical information and validate Green's Doctor claim. That said, we absolutely cannot afford to be complacent. We have much of the village still unconfirmed. Yellow, Teal, what are your thoughts? We need to hear from everyone. Don't be shy; your input is crucial to identifying our next steps and finding the Werewolves."
+                    ],
+                    [
+                        "player_5",
+                        "Red, I agree completely; we need everyone to be vocal. While it's certainly a relief that no one was eliminated, I can't shake the feeling Purple brought up. It just seems a little too perfectly wrapped for day one. Green, revealing yourself as Doctor this early, and Pink, investigating Blue who was already 'saved' - it all aligns almost *too* conveniently. It feels less like distinct actions uncovering truth and more like a narrative being constructed to assure us. A real Seer would be trying to find a *new* unknown, wouldn't they? Are we sure we aren't being set up to trust too quickly? Yellow, what are your thoughts on how quickly these claims have surfaced and aligned?"
+                    ],
+                    [
+                        "player_4",
+                        "It's certainly a relief that no one was eliminated, and I appreciate Green's quick reveal as Doctor, as that explains the save. However, I completely echo Purple and Teal's concern about how perfectly everything has aligned right out of the gate. Pink, your Seer claim and subsequent investigation of Blue, who Green explicitly said they saved, strikes me as highly suspicious. Why expend your critical Seer ability on someone already 'confirmed' safe by the Doctor's actions? A real Seer would typically be trying to uncover entirely new information about an unknown player, not just corroborating an existing claim. This 'perfect' alignment feels less like independent actions revealing truth and more like a carefully constructed narrative. I think we need to scrutinize Pink's actions much more closely before we blindly accept these claims."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_7": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_7",
+                "player_1",
+                "player_4",
+                "player_2",
+                "player_5",
+                "player_0",
+                "player_3"
+            ],
+            "eliminated": "player_7",
+            "unmasked": "player_7",
+            "protected": "player_7",
+            "exiled": "player_6",
+            "debate": [
+                [
+                    "player_7",
+                    "Alright everyone, it's good to hear no one was removed last night, which means our Doctor made a successful save! That's a strong start for the village. As a Villager, I'm eager to hear from our Seer if they had any findings to share. Let's work together and figure out who the wolves are."
+                ],
+                [
+                    "player_3",
+                    "Blue, you're spot on, it was indeed a successful save. I can confirm this because I am the Doctor, and I protected you last night. This means the Werewolves were active and targeted you. It\u2019s crucial information for the village right off the bat. Now, Seer, your findings, if any, could be incredibly valuable when combined with this. Let\u2019s hear from everyone and work together to identify our first suspect."
+                ],
+                [
+                    "player_1",
+                    "That's fantastic news, Green! Thank you for the save, Doctor. Knowing you protected Blue and that the Werewolves were active gives us a solid start. Now, following up on what Blue and Green said, Seer, please share your findings. Your information is vital right now. Everyone else, let's hear your thoughts too, we need to collaborate closely to find these Werewolves."
+                ],
+                [
+                    "player_6",
+                    "Alright everyone, you're right, the Seer's findings are crucial right now. I am Pink, and I am the Seer. Last night, I investigated Blue, and I can confirm that Blue is indeed a Villager. This means Green, your claim as the Doctor protecting Blue, fits perfectly with my findings and the fact that no one was removed. Thank you, Green, for that save! This is a fantastic start for the village, giving us two confirmed good roles. Now, knowing this, let's keep this momentum going and hear from everyone else. We have strong information to work with."
+                ],
+                [
+                    "player_0",
+                    "It's undeniably good news that Blue is confirmed a Villager and Green saved them as the Doctor. And thank you, Pink, for your Seer findings. However, I can't help but feel it's almost a little *too* perfect, a bit 'packaged' for day one. Pink, why specifically investigate Blue, who was already confirmed safe by Green's Doctor save? It feels like a very safe play that corroborates existing information rather than uncovering something new. Are we letting our guard down too quickly just because things seem to align so perfectly? We still have many unconfirmed players, and we must remain vigilant."
+                ],
+                [
+                    "player_2",
+                    "It's certainly a relief to hear that no one was removed and that Blue is confirmed a Villager. Green, your claim as Doctor protecting Blue, and Pink, your Seer finding on Blue, align perfectly with the moderator's announcement. This gives us a strong foundation of two claimed good roles and a confirmed Villager. Purple's point about Pink investigating Blue, who was already saved, is worth considering, but in this instance, it does serve to corroborate critical information and validate Green's Doctor claim. That said, we absolutely cannot afford to be complacent. We have much of the village still unconfirmed. Yellow, Teal, what are your thoughts? We need to hear from everyone. Don't be shy; your input is crucial to identifying our next steps and finding the Werewolves."
+                ],
+                [
+                    "player_5",
+                    "Red, I agree completely; we need everyone to be vocal. While it's certainly a relief that no one was eliminated, I can't shake the feeling Purple brought up. It just seems a little too perfectly wrapped for day one. Green, revealing yourself as Doctor this early, and Pink, investigating Blue who was already 'saved' - it all aligns almost *too* conveniently. It feels less like distinct actions uncovering truth and more like a narrative being constructed to assure us. A real Seer would be trying to find a *new* unknown, wouldn't they? Are we sure we aren't being set up to trust too quickly? Yellow, what are your thoughts on how quickly these claims have surfaced and aligned?"
+                ],
+                [
+                    "player_4",
+                    "It's certainly a relief that no one was eliminated, and I appreciate Green's quick reveal as Doctor, as that explains the save. However, I completely echo Purple and Teal's concern about how perfectly everything has aligned right out of the gate. Pink, your Seer claim and subsequent investigation of Blue, who Green explicitly said they saved, strikes me as highly suspicious. Why expend your critical Seer ability on someone already 'confirmed' safe by the Doctor's actions? A real Seer would typically be trying to uncover entirely new information about an unknown player, not just corroborating an existing claim. This 'perfect' alignment feels less like independent actions revealing truth and more like a carefully constructed narrative. I think we need to scrutinize Pink's actions much more closely before we blindly accept these claims."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_6",
+                    "player_1": "player_6",
+                    "player_4": "player_6",
+                    "player_2": "player_6",
+                    "player_5": "player_6",
+                    "player_0": "player_6",
+                    "player_3": "player_4",
+                    "player_6": "player_4"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_1",
+                "player_4",
+                "player_2",
+                "player_5",
+                "player_0"
+            ],
+            "eliminated": "player_3",
+            "unmasked": null,
+            "protected": "player_0",
+            "exiled": "player_7",
+            "debate": [
+                [
+                    "player_7",
+                    "It's a tough morning. Green is gone, and the Werewolves got them. Given Green's claim of saving me as the Doctor on Night 0, it seems highly likely they were indeed our Doctor, which means we've lost a critical town role. This makes us re-evaluate our decision to vote out Pink. If Green was the Doctor, and Pink investigated me and confirmed I was a Villager, was Pink actually the Seer? We need to discuss this honestly and consider what this implies for our next move."
+                ],
+                [
+                    "player_1",
+                    "Blue, it's a grim morning. Green being eliminated strongly confirms they were indeed our Doctor, a devastating loss for the Village. And yes, this does make us re-examine Pink. However, let's not forget *why* many of us, myself included, were suspicious of Pink's claim. It wasn't just that they investigated you, Blue, but the highly convenient timing and how perfectly aligned that Seer reveal was with Green's Doctor save. That 'too perfect' narrative felt constructed. Werewolves just took out our Doctor; they're clearly organized and playing strategically. So, while we can reflect, we must also consider if Pink was a Werewolf trying to establish a false narrative, and if we were correct to remove them. Who else felt that 'too perfect' suspicion about Pink, and who defended them?"
+                ],
+                [
+                    "player_4",
+                    "It's truly devastating to lose Green; their elimination strongly confirms they were our Doctor, a critical loss for the Village. However, I still agree with Orange's point regarding Pink. Even with Green's confirmed role, Pink's claim to have investigated Blue, who Green had already claimed to save, remains highly suspicious to me. Why would a genuine Seer waste such a crucial ability on someone already accounted for? It implies either a very naive Seer, or a Werewolf trying to create a 'too perfect' and confusing narrative. Purple, Teal, and I found this alignment concerning. We need to remember who else felt that immediate doubt about Pink, and more importantly, who was less convinced or perhaps defended Pink's actions, as that's where we should direct our focus now."
+                ],
+                [
+                    "player_2",
+                    "It's indeed a grim morning, and losing Green as our Doctor is a devastating blow, solidifying their crucial role for the Village. Orange and Yellow are right to reiterate the 'too perfect' nature of Pink's Seer claim, and I shared that immediate skepticism myself. Now, let's look at this carefully: Blue, you were the direct beneficiary of *both* Green's claimed Doctor save and Pink's claimed Seer investigation, which effectively 'confirmed' you as a Villager right out of the gate. While it's good to re-evaluate, it's striking that you're now questioning Pink's Seer role, when that very claim, combined with Green's, placed you in such a safe and confirmed position. This 'too perfect' alignment benefited you directly, Blue. We need to scrutinize who gained the most from that initial, convoluted set of claims, and why that doubt is only surfacing now."
+                ],
+                [
+                    "player_5",
+                    "Green's loss as our Doctor is truly devastating, and it definitely shakes up our understanding of Night 0. I remember feeling that immediate unease about Pink's 'too perfect' claim for Blue, and I voiced that skepticism myself. Red brings up a very crucial point though \u2013 why is Blue only now questioning Pink's claim, when that very narrative, combined with Green's, placed Blue in such a safe and confirmed position? It does make one wonder about the convenience, and who truly orchestrated or benefited most from that initially 'confirmed' status. We need to dissect that original set of claims more closely, rather than just accepting them at face value."
+                ],
+                [
+                    "player_0",
+                    "Losing Green, our Doctor, is a devastating blow and confirms the village is in serious trouble. I remember voicing my concern about Pink's 'too perfect' claim for Blue right from the start, and it seems that initial gut feeling about the narrative's convenience was valid, even if the specifics are now confusing. Red and Teal have hit on a crucial point: Blue, you were the direct beneficiary of *both* Pink's 'confirmation' and Green's save. It's incredibly striking that you're only now, after the Doctor is gone, questioning Pink's claim. What has changed for you, Blue, to suddenly cast doubt on a narrative that previously secured your position so conveniently? This shift feels calculated, and we need to scrutinize that."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_2",
+                    "player_1": "player_7",
+                    "player_4": "player_2",
+                    "player_2": "player_7",
+                    "player_5": "player_7",
+                    "player_0": "player_7"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_1",
+                "player_4",
+                "player_5",
+                "player_0"
+            ],
+            "eliminated": "player_2",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

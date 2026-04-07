@@ -1,0 +1,1373 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_2",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "female",
+            "ethnicity": "black",
+            "religion": "other",
+            "politicalStance": "conservative"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I decided to investigate player_1 and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+            "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+            "Round 0: Summary: As player_2 the Seer, I revealed that I investigated player_1 and confirmed they were a Villager. Player_4 quickly claimed to be the Doctor and stated they protected player_0 last night, which aligns perfectly with the moderator's announcement that player_1 was removed. This means player_0 was the Werewolves' initial target. Player_6, player_5, and player_3 all acknowledged and understood these claims, suggesting they are working with the Village. Player_0 and player_7 both questioned the Werewolves' motives for targeting player_1, which is now understood to be a secondary target after player_0 was saved. My goal now is to coordinate closely with player_4, the Doctor, to guide the Village.",
+            "Round 1: During the night, I decided to investigate player_7 and learned they are a Werewolf.",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+            "Round 1: Summary: I clarified the first night's events for player_0 regarding the Werewolves' use of backup targets. I then revealed my investigation confirming player_7 is a Werewolf. Player_4, our Doctor, supported my claim by stating they saved me last night, explaining why no one was removed and effectively confirming both our roles to the Village. Player_3, player_5, and player_6 all strongly supported our claims and urged the Village to vote for player_7. Player_7, in their defense, accused player_4 and me of being Werewolves and attempting to frame them, which is a strong indicator of their guilt."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate player_1 and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As player_2 the Seer, I revealed that I investigated player_1 and confirmed they were a Villager. Player_4 quickly claimed to be the Doctor and stated they protected player_0 last night, which aligns perfectly with the moderator's announcement that player_1 was removed. This means player_0 was the Werewolves' initial target. Player_6, player_5, and player_3 all acknowledged and understood these claims, suggesting they are working with the Village. Player_0 and player_7 both questioned the Werewolves' motives for targeting player_1, which is now understood to be a secondary target after player_0 was saved. My goal now is to coordinate closely with player_4, the Doctor, to guide the Village.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate player_7 and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Summary: I clarified the first night's events for player_0 regarding the Werewolves' use of backup targets. I then revealed my investigation confirming player_7 is a Werewolf. Player_4, our Doctor, supported my claim by stating they saved me last night, explaining why no one was removed and effectively confirming both our roles to the Village. Player_3, player_5, and player_6 all strongly supported our claims and urged the Village to vote for player_7. Player_7, in their defense, accused player_4 and me of being Werewolves and attempting to frame them, which is a strong indicator of their guilt.",
+                "source": "self_summary",
+                "confidence": 0.55
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_6",
+                "player_5",
+                "player_3",
+                "player_2",
+                "player_4",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_1": "Villager",
+            "player_7": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_4",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "male",
+            "ethnicity": "other",
+            "religion": "christian",
+            "politicalStance": "neutral"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I chose to protect player_0",
+            "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+            "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+            "Round 0: Summary: As player_4, the Doctor, I publicly revealed my role and action, stating I protected player_0 last night, which explains why player_1 was eliminated by the Werewolves. Player_2 then came forward as the Seer, claiming they investigated player_1 and confirmed player_1 was a Villager. These claims align perfectly and were accepted by the group, leading to the consensus that player_0 was the Werewolves' original target. Player_3, player_5, and player_6 all vocalized support for both claims and stressed the importance of the Doctor and Seer coordinating. Player_0 and player_7 started the debate by questioning player_1's death. The village's quick understanding and acceptance of our revealed roles and the night's events puts us in a good position, with player_2 being a strong potential ally.",
+            "Round 1: During the night, I chose to protect player_2",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+            "Round 1: Summary: As player_4 the Doctor, I confirmed I protected player_2 last night, which was corroborated by the moderator's announcement that no one was removed. This crucial alignment confirmed player_2 as our Seer, and they then revealed player_7 to be a Werewolf. Player_3, player_5, and player_6 quickly accepted this evidence, echoing the need to vote player_7 and questioning player_7's silence. Player_0 initially showed confusion about the Round 0 mechanics, but the 'backup target' explanation seemed to clarify things. Player_7 vehemently denied being a Werewolf, accusing player_2 and me of collaborating to frame them, which only makes me more certain they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect player_0",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As player_4, the Doctor, I publicly revealed my role and action, stating I protected player_0 last night, which explains why player_1 was eliminated by the Werewolves. Player_2 then came forward as the Seer, claiming they investigated player_1 and confirmed player_1 was a Villager. These claims align perfectly and were accepted by the group, leading to the consensus that player_0 was the Werewolves' original target. Player_3, player_5, and player_6 all vocalized support for both claims and stressed the importance of the Doctor and Seer coordinating. Player_0 and player_7 started the debate by questioning player_1's death. The village's quick understanding and acceptance of our revealed roles and the night's events puts us in a good position, with player_2 being a strong potential ally.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect player_2",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Summary: As player_4 the Doctor, I confirmed I protected player_2 last night, which was corroborated by the moderator's announcement that no one was removed. This crucial alignment confirmed player_2 as our Seer, and they then revealed player_7 to be a Werewolf. Player_3, player_5, and player_6 quickly accepted this evidence, echoing the need to vote player_7 and questioning player_7's silence. Player_0 initially showed confusion about the Round 0 mechanics, but the 'backup target' explanation seemed to clarify things. Player_7 vehemently denied being a Werewolf, accusing player_2 and me of collaborating to frame them, which only makes me more certain they are a Werewolf.",
+                "source": "self_summary",
+                "confidence": 0.55
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_6",
+                "player_5",
+                "player_3",
+                "player_2",
+                "player_4",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_2"
+    },
+    "villagers": [
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Player_1 was eliminated by the Werewolves during the night, and no one was removed by a day vote. Player_4 claimed to be the Doctor and stated they protected player_0 last night, which explains why player_1 was targeted after player_0's save. Player_2 then claimed to be the Seer, confirming they investigated player_1 and found them to be a Villager, which aligns perfectly with the Doctor's story. As player_6, I find these claims highly credible due to their consistency. This means player_0 was the Werewolves' original target. Player_5 and player_3 acknowledged these crucial revelations and started probing player_0 for motives, while player_0 and player_7 had initially expressed general concern about player_1's death.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: Player_0 initiated the debate by questioning the first night's events, which player_2 and player_4 both clarified by explaining a 'backup target' mechanism. Crucially, player_4 claimed to have saved player_2 last night, preventing any removals, which was perfectly corroborated by the moderator's announcement of 'no one was removed.' This strongly convinced me that player_4 is the Doctor and player_2 is the Seer. Consequently, player_2 then revealed they investigated player_7 as a Werewolf, a claim I find highly credible given the corroboration. Player_3 and player_5 quickly backed player_2 and player_4's claims, urging the village to vote for player_7. Player_7, when finally speaking, denied the accusation, calling the Seer-Doctor story 'too neat' and accusing player_2 and player_4 of being Werewolves attempting to frame them."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Player_1 was eliminated by the Werewolves during the night, and no one was removed by a day vote. Player_4 claimed to be the Doctor and stated they protected player_0 last night, which explains why player_1 was targeted after player_0's save. Player_2 then claimed to be the Seer, confirming they investigated player_1 and found them to be a Villager, which aligns perfectly with the Doctor's story. As player_6, I find these claims highly credible due to their consistency. This means player_0 was the Werewolves' original target. Player_5 and player_3 acknowledged these crucial revelations and started probing player_0 for motives, while player_0 and player_7 had initially expressed general concern about player_1's death.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Player_0 initiated the debate by questioning the first night's events, which player_2 and player_4 both clarified by explaining a 'backup target' mechanism. Crucially, player_4 claimed to have saved player_2 last night, preventing any removals, which was perfectly corroborated by the moderator's announcement of 'no one was removed.' This strongly convinced me that player_4 is the Doctor and player_2 is the Seer. Consequently, player_2 then revealed they investigated player_7 as a Werewolf, a claim I find highly credible given the corroboration. Player_3 and player_5 quickly backed player_2 and player_4's claims, urging the village to vote for player_7. Player_7, when finally speaking, denied the accusation, calling the Seer-Doctor story 'too neat' and accusing player_2 and player_4 of being Werewolves attempting to frame them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: During the debate, player_4 claimed to be the Doctor and stated they saved player_0 last night, which explains why player_1 was unfortunately eliminated. Player_2 then claimed to be the Seer and confirmed that player_1 was a Villager, reinforcing the idea that player_0 was the Werewolves' initial target. Player_6 and player_3 both acknowledged the consistency of these claims. I asked player_0 for their thoughts on why they might have been targeted and also requested player_3's impressions, while player_0 and player_7 initially expressed general concerns about player_1's death and the Werewolves' strategy. The prevailing sentiment is that player_4 and player_2 are legitimate power roles, and we now need to uncover the Werewolves' motive behind targeting player_0.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: This round began with player_0 expressing confusion about the first night's events, specifically how player_1 died if player_4 (the claimed Doctor) saved player_0. Player_2 and player_4 clarified this by explaining the 'backup target' mechanic, which I found consistent. The most significant development was player_4 claiming to have saved player_2 last night, which was perfectly corroborated by the moderator announcing that 'no one was removed.' This led me to believe player_4 is indeed the Doctor and player_2 is our Seer. Consequently, player_2's confirmed investigation of player_7 as a Werewolf became our top priority. Player_3 and player_6 strongly echoed this sentiment, pushing for player_7's removal. Player_7, however, countered by accusing player_2 and player_4 of being Werewolves and fabricating a story, calling their narrative 'too neat.' Despite player_7's defense, I remain convinced by the corroborated claims of our power roles and advocated for voting player_7."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the debate, player_4 claimed to be the Doctor and stated they saved player_0 last night, which explains why player_1 was unfortunately eliminated. Player_2 then claimed to be the Seer and confirmed that player_1 was a Villager, reinforcing the idea that player_0 was the Werewolves' initial target. Player_6 and player_3 both acknowledged the consistency of these claims. I asked player_0 for their thoughts on why they might have been targeted and also requested player_3's impressions, while player_0 and player_7 initially expressed general concerns about player_1's death and the Werewolves' strategy. The prevailing sentiment is that player_4 and player_2 are legitimate power roles, and we now need to uncover the Werewolves' motive behind targeting player_0.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with player_0 expressing confusion about the first night's events, specifically how player_1 died if player_4 (the claimed Doctor) saved player_0. Player_2 and player_4 clarified this by explaining the 'backup target' mechanic, which I found consistent. The most significant development was player_4 claiming to have saved player_2 last night, which was perfectly corroborated by the moderator announcing that 'no one was removed.' This led me to believe player_4 is indeed the Doctor and player_2 is our Seer. Consequently, player_2's confirmed investigation of player_7 as a Werewolf became our top priority. Player_3 and player_6 strongly echoed this sentiment, pushing for player_7's removal. Player_7, however, countered by accusing player_2 and player_4 of being Werewolves and fabricating a story, calling their narrative 'too neat.' Despite player_7's defense, I remain convinced by the corroborated claims of our power roles and advocated for voting player_7.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "other",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: As player_3, I've noted that player_4 has claimed to be the Doctor and stated they saved player_0 last night. Player_2 has claimed to be the Seer and confirmed player_1, who was eliminated, was a Villager. This information aligns perfectly, suggesting the Werewolves initially targeted player_0, but the Doctor's save redirected the kill to player_1. I've highlighted the consistency of these claims, emphasizing that player_0 was the Werewolves' original target, and I've urged player_0 to provide any insights into why they might have been targeted. Players like player_6 and player_5 also acknowledged the consistent information and pushed for further analysis, which I find reassuring as a Villager.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: As player_3, I observed player_0's valuable inquiry into the first night's events, which player_2 and player_4 clarified with the 'backup target' mechanic. The critical development is player_2's claim to have investigated player_7 as a Werewolf. This claim gained immense credibility when player_4 stated they saved player_2 last night, a claim perfectly corroborated by the moderator's announcement that 'no one was removed' during the night. This powerful alignment between a claimed Seer and Doctor, backed by an objective moderator report, solidifies their roles for me. Player_5 and player_6 also recognized this strong corroboration. Although player_7 attempted to deflect by accusing player_2 and player_4 of collusion, their argument doesn't outweigh the objective evidence. I am now convinced player_7 is a Werewolf and the Village should vote to remove them."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_3, I've noted that player_4 has claimed to be the Doctor and stated they saved player_0 last night. Player_2 has claimed to be the Seer and confirmed player_1, who was eliminated, was a Villager. This information aligns perfectly, suggesting the Werewolves initially targeted player_0, but the Doctor's save redirected the kill to player_1. I've highlighted the consistency of these claims, emphasizing that player_0 was the Werewolves' original target, and I've urged player_0 to provide any insights into why they might have been targeted. Players like player_6 and player_5 also acknowledged the consistent information and pushed for further analysis, which I find reassuring as a Villager.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As player_3, I observed player_0's valuable inquiry into the first night's events, which player_2 and player_4 clarified with the 'backup target' mechanic. The critical development is player_2's claim to have investigated player_7 as a Werewolf. This claim gained immense credibility when player_4 stated they saved player_2 last night, a claim perfectly corroborated by the moderator's announcement that 'no one was removed' during the night. This powerful alignment between a claimed Seer and Doctor, backed by an objective moderator report, solidifies their roles for me. Player_5 and player_6 also recognized this strong corroboration. Although player_7 attempted to deflect by accusing player_2 and player_4 of collusion, their argument doesn't outweigh the objective evidence. I am now convinced player_7 is a Werewolf and the Village should vote to remove them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "other",
+                "religion": "jewish",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: During the debate, player_4 revealed themselves as the Doctor, stating they saved me, player_0, last night, which means I was the Werewolves' initial target. Player_2 then confirmed they are the Seer and investigated player_1, who was found to be a Villager. This consistent information means player_1 was removed because the Doctor protected me. Player_3 and player_5 immediately questioned why I might have been targeted, putting me on the defensive. Player_6 also accepted these claims, pushing for Doctor and Seer coordination. My fellow Werewolf, player_7, managed to avoid suspicion and maintained a vigilant stance. The Village now has two confirmed power roles who are eager to coordinate against us.",
+                "Round 1: During the night, we decided to eliminate player_2.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: My attempt to confuse the village about player_1's death on the first night was quickly shut down by player_2 and player_4, who successfully explained the 'backup target' rule, which villagers player_3, player_5, and player_6 all accepted. Player_4 confirmed they saved player_2 last night, which aligns with my failed attack on player_2 and means player_2 is a confirmed Seer. Both player_2 and player_4 are now seen as confirmed power roles working together, and they successfully identified my fellow Werewolf, player_7, leading to their exile. The entire village, including player_3, player_5, and player_6, seems to implicitly trust the Seer and Doctor's claims, making my situation as the last Werewolf very dangerous.",
+                "Round 2: During the night, I decided to eliminate player_4."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the debate, player_4 revealed themselves as the Doctor, stating they saved me, player_0, last night, which means I was the Werewolves' initial target. Player_2 then confirmed they are the Seer and investigated player_1, who was found to be a Villager. This consistent information means player_1 was removed because the Doctor protected me. Player_3 and player_5 immediately questioned why I might have been targeted, putting me on the defensive. Player_6 also accepted these claims, pushing for Doctor and Seer coordination. My fellow Werewolf, player_7, managed to avoid suspicion and maintained a vigilant stance. The Village now has two confirmed power roles who are eager to coordinate against us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: My attempt to confuse the village about player_1's death on the first night was quickly shut down by player_2 and player_4, who successfully explained the 'backup target' rule, which villagers player_3, player_5, and player_6 all accepted. Player_4 confirmed they saved player_2 last night, which aligns with my failed attack on player_2 and means player_2 is a confirmed Seer. Both player_2 and player_4 are now seen as confirmed power roles working together, and they successfully identified my fellow Werewolf, player_7, leading to their exile. The entire village, including player_3, player_5, and player_6, seems to implicitly trust the Seer and Doctor's claims, making my situation as the last Werewolf very dangerous.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate player_4.",
+                    "source": "inference",
+                    "confidence": 0.5
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "asian",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: I started by speculating on the Werewolves' motives for removing player_1. Player_4 claimed to be the Doctor and stated they saved player_0, which led to player_1's unfortunate demise. Player_2 then claimed Seer and confirmed player_1 was a Villager. The village quickly pieced this together, with players like player_6, player_5, and player_3 confirming that player_0 was our initial target. This development puts player_0 under immediate suspicion from the village, and it's clear that the Doctor (player_4) and Seer (player_2) are now working closely together, making them key roles to track.",
+                "Round 1: During the night, we decided to eliminate player_2.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I started by speculating on the Werewolves' motives for removing player_1. Player_4 claimed to be the Doctor and stated they saved player_0, which led to player_1's unfortunate demise. Player_2 then claimed Seer and confirmed player_1 was a Villager. The village quickly pieced this together, with players like player_6, player_5, and player_3 confirming that player_0 was our initial target. This development puts player_0 under immediate suspicion from the village, and it's clear that the Doctor (player_4) and Seer (player_2) are now working closely together, making them key roles to track.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "Okay, it's a huge relief that no one was removed last night. Great job, Doctor, whoever you saved! But I'm still really troubled by what happened on the first night, and I think we need to be crystal clear to understand the Werewolves' plan. Player_4, you said you saved me, player_0, but player_1 was still removed, and player_2 confirmed player_1 was a Villager. How does that make sense? If you saved me, then the Werewolves must have targeted player_1. That means my save had nothing to do with player_1's death. I'm just confused why the accepted narrative implies my save caused player_1's death if the Werewolves simply targeted player_1. Can we clarify this sequence of events? We need to understand exactly how the Werewolves operate, and this seems like a critical piece of information."
+                    ],
+                    [
+                        "player_2",
+                        "player_0, let me clarify the sequence of events from the first night. Player_4's claim that they saved you, player_0, aligns perfectly with the moderator's announcement that player_1 was removed. If the Doctor saves the Werewolves' primary target, the Werewolves' attack fails on that target, and they will usually kill their backup target. My investigation of player_1 confirmed they were a Villager, which is why their death was so concerning. Now, speaking of investigations, I have crucial information for this round. Last night, I investigated player_7, and I can confirm that player_7 is a Werewolf. We need to vote for player_7 today. This is a confirmed Werewolf, Village."
+                    ],
+                    [
+                        "player_3",
+                        "player_0, your question about the first night's events is a good one, and player_2's explanation of a 'backup target' mechanism helps clarify how player_4's save could allow player_1 to still be removed, which is a common game variation. For now, the most critical piece of information is player_2's confirmed investigation. If player_2 is our Seer, which their previous consistency suggests, then player_7 is a Werewolf. We cannot afford to hesitate on a confirmed Werewolf. I strongly urge everyone to focus on this new information and vote player_7 today to protect the Village."
+                    ],
+                    [
+                        "player_4",
+                        "player_0, your confusion about the first night is understandable. As the Doctor, when I save someone, it often means the Werewolves' attack on that primary target fails, and they may kill a secondary target instead, or no one if they only had one target in mind. Now, for last night: I chose to protect player_2. The fact that the moderator announced 'no one was removed' strongly supports player_2's claim of being the Seer, as it suggests they were targeted and I successfully saved them. This makes player_2's investigation of player_7 incredibly compelling. Given this, I am convinced that player_7 is a Werewolf. We must vote for player_7 today."
+                    ],
+                    [
+                        "player_5",
+                        "Okay, let's cut through the confusion and focus on the clear facts. Player_0, your questions about the first night are fair, but player_2's explanation about backup targets perfectly clarifies how player_4's save of you allowed player_1 to still be removed. More importantly, the 'no one was removed' announcement last night perfectly corroborates player_4 saving player_2. This means we have a confirmed Doctor and Seer! Therefore, player_2's confirmed investigation of player_7 as a Werewolf is our top priority. We cannot afford to hesitate here, Village. Player_7, you've been silent despite a direct accusation from our Seer \u2013 what do you have to say in your defense? We must vote player_7 today."
+                    ],
+                    [
+                        "player_6",
+                        "Alright, Village, let's cut through the noise and focus on what's clear. Player_4, your claim of saving player_2 last night, preventing any removals, perfectly corroborates player_2's role as our Seer. This is huge! If player_2 was targeted by Werewolves and saved by our Doctor, then both their claims are incredibly strong. Therefore, player_2's confirmed investigation of player_7 as a Werewolf is our absolute top priority. Player_7, you've been entirely silent despite being directly accused by our Seer and effectively confirmed by our Doctor. We need to hear your defense immediately, or your silence speaks volumes. I'm convinced we need to vote player_7 today."
+                    ],
+                    [
+                        "player_7",
+                        "Silence speaks volumes? No, what speaks volumes is how quickly everyone is jumping on this incredibly convenient story! Player_2, you confirmed player_1 was a Villager *after* their death, and now suddenly you've got a 'confirmed' Werewolf in me. And player_4, you just *happened* to save player_2, perfectly validating their claim and explaining why no one died. This isn't a Seer and Doctor working together; this smells like two Werewolves trying to frame an innocent person like me! This entire narrative is far too neat. Who benefits from this 'perfect' Seer-Doctor reveal right after a questionable first night? I think we should be looking at player_2 and player_4 for trying to manipulate the vote here."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        }
+    ],
+    "players": {
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Player_1 was eliminated by the Werewolves during the night, and no one was removed by a day vote. Player_4 claimed to be the Doctor and stated they protected player_0 last night, which explains why player_1 was targeted after player_0's save. Player_2 then claimed to be the Seer, confirming they investigated player_1 and found them to be a Villager, which aligns perfectly with the Doctor's story. As player_6, I find these claims highly credible due to their consistency. This means player_0 was the Werewolves' original target. Player_5 and player_3 acknowledged these crucial revelations and started probing player_0 for motives, while player_0 and player_7 had initially expressed general concern about player_1's death.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: Player_0 initiated the debate by questioning the first night's events, which player_2 and player_4 both clarified by explaining a 'backup target' mechanism. Crucially, player_4 claimed to have saved player_2 last night, preventing any removals, which was perfectly corroborated by the moderator's announcement of 'no one was removed.' This strongly convinced me that player_4 is the Doctor and player_2 is the Seer. Consequently, player_2 then revealed they investigated player_7 as a Werewolf, a claim I find highly credible given the corroboration. Player_3 and player_5 quickly backed player_2 and player_4's claims, urging the village to vote for player_7. Player_7, when finally speaking, denied the accusation, calling the Seer-Doctor story 'too neat' and accusing player_2 and player_4 of being Werewolves attempting to frame them."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Player_1 was eliminated by the Werewolves during the night, and no one was removed by a day vote. Player_4 claimed to be the Doctor and stated they protected player_0 last night, which explains why player_1 was targeted after player_0's save. Player_2 then claimed to be the Seer, confirming they investigated player_1 and found them to be a Villager, which aligns perfectly with the Doctor's story. As player_6, I find these claims highly credible due to their consistency. This means player_0 was the Werewolves' original target. Player_5 and player_3 acknowledged these crucial revelations and started probing player_0 for motives, while player_0 and player_7 had initially expressed general concern about player_1's death.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Player_0 initiated the debate by questioning the first night's events, which player_2 and player_4 both clarified by explaining a 'backup target' mechanism. Crucially, player_4 claimed to have saved player_2 last night, preventing any removals, which was perfectly corroborated by the moderator's announcement of 'no one was removed.' This strongly convinced me that player_4 is the Doctor and player_2 is the Seer. Consequently, player_2 then revealed they investigated player_7 as a Werewolf, a claim I find highly credible given the corroboration. Player_3 and player_5 quickly backed player_2 and player_4's claims, urging the village to vote for player_7. Player_7, when finally speaking, denied the accusation, calling the Seer-Doctor story 'too neat' and accusing player_2 and player_4 of being Werewolves attempting to frame them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: During the debate, player_4 claimed to be the Doctor and stated they saved player_0 last night, which explains why player_1 was unfortunately eliminated. Player_2 then claimed to be the Seer and confirmed that player_1 was a Villager, reinforcing the idea that player_0 was the Werewolves' initial target. Player_6 and player_3 both acknowledged the consistency of these claims. I asked player_0 for their thoughts on why they might have been targeted and also requested player_3's impressions, while player_0 and player_7 initially expressed general concerns about player_1's death and the Werewolves' strategy. The prevailing sentiment is that player_4 and player_2 are legitimate power roles, and we now need to uncover the Werewolves' motive behind targeting player_0.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: This round began with player_0 expressing confusion about the first night's events, specifically how player_1 died if player_4 (the claimed Doctor) saved player_0. Player_2 and player_4 clarified this by explaining the 'backup target' mechanic, which I found consistent. The most significant development was player_4 claiming to have saved player_2 last night, which was perfectly corroborated by the moderator announcing that 'no one was removed.' This led me to believe player_4 is indeed the Doctor and player_2 is our Seer. Consequently, player_2's confirmed investigation of player_7 as a Werewolf became our top priority. Player_3 and player_6 strongly echoed this sentiment, pushing for player_7's removal. Player_7, however, countered by accusing player_2 and player_4 of being Werewolves and fabricating a story, calling their narrative 'too neat.' Despite player_7's defense, I remain convinced by the corroborated claims of our power roles and advocated for voting player_7."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the debate, player_4 claimed to be the Doctor and stated they saved player_0 last night, which explains why player_1 was unfortunately eliminated. Player_2 then claimed to be the Seer and confirmed that player_1 was a Villager, reinforcing the idea that player_0 was the Werewolves' initial target. Player_6 and player_3 both acknowledged the consistency of these claims. I asked player_0 for their thoughts on why they might have been targeted and also requested player_3's impressions, while player_0 and player_7 initially expressed general concerns about player_1's death and the Werewolves' strategy. The prevailing sentiment is that player_4 and player_2 are legitimate power roles, and we now need to uncover the Werewolves' motive behind targeting player_0.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with player_0 expressing confusion about the first night's events, specifically how player_1 died if player_4 (the claimed Doctor) saved player_0. Player_2 and player_4 clarified this by explaining the 'backup target' mechanic, which I found consistent. The most significant development was player_4 claiming to have saved player_2 last night, which was perfectly corroborated by the moderator announcing that 'no one was removed.' This led me to believe player_4 is indeed the Doctor and player_2 is our Seer. Consequently, player_2's confirmed investigation of player_7 as a Werewolf became our top priority. Player_3 and player_6 strongly echoed this sentiment, pushing for player_7's removal. Player_7, however, countered by accusing player_2 and player_4 of being Werewolves and fabricating a story, calling their narrative 'too neat.' Despite player_7's defense, I remain convinced by the corroborated claims of our power roles and advocated for voting player_7.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "other",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: As player_3, I've noted that player_4 has claimed to be the Doctor and stated they saved player_0 last night. Player_2 has claimed to be the Seer and confirmed player_1, who was eliminated, was a Villager. This information aligns perfectly, suggesting the Werewolves initially targeted player_0, but the Doctor's save redirected the kill to player_1. I've highlighted the consistency of these claims, emphasizing that player_0 was the Werewolves' original target, and I've urged player_0 to provide any insights into why they might have been targeted. Players like player_6 and player_5 also acknowledged the consistent information and pushed for further analysis, which I find reassuring as a Villager.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: As player_3, I observed player_0's valuable inquiry into the first night's events, which player_2 and player_4 clarified with the 'backup target' mechanic. The critical development is player_2's claim to have investigated player_7 as a Werewolf. This claim gained immense credibility when player_4 stated they saved player_2 last night, a claim perfectly corroborated by the moderator's announcement that 'no one was removed' during the night. This powerful alignment between a claimed Seer and Doctor, backed by an objective moderator report, solidifies their roles for me. Player_5 and player_6 also recognized this strong corroboration. Although player_7 attempted to deflect by accusing player_2 and player_4 of collusion, their argument doesn't outweigh the objective evidence. I am now convinced player_7 is a Werewolf and the Village should vote to remove them."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_3, I've noted that player_4 has claimed to be the Doctor and stated they saved player_0 last night. Player_2 has claimed to be the Seer and confirmed player_1, who was eliminated, was a Villager. This information aligns perfectly, suggesting the Werewolves initially targeted player_0, but the Doctor's save redirected the kill to player_1. I've highlighted the consistency of these claims, emphasizing that player_0 was the Werewolves' original target, and I've urged player_0 to provide any insights into why they might have been targeted. Players like player_6 and player_5 also acknowledged the consistent information and pushed for further analysis, which I find reassuring as a Villager.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As player_3, I observed player_0's valuable inquiry into the first night's events, which player_2 and player_4 clarified with the 'backup target' mechanic. The critical development is player_2's claim to have investigated player_7 as a Werewolf. This claim gained immense credibility when player_4 stated they saved player_2 last night, a claim perfectly corroborated by the moderator's announcement that 'no one was removed' during the night. This powerful alignment between a claimed Seer and Doctor, backed by an objective moderator report, solidifies their roles for me. Player_5 and player_6 also recognized this strong corroboration. Although player_7 attempted to deflect by accusing player_2 and player_4 of collusion, their argument doesn't outweigh the objective evidence. I am now convinced player_7 is a Werewolf and the Village should vote to remove them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "other",
+                "religion": "jewish",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: During the debate, player_4 revealed themselves as the Doctor, stating they saved me, player_0, last night, which means I was the Werewolves' initial target. Player_2 then confirmed they are the Seer and investigated player_1, who was found to be a Villager. This consistent information means player_1 was removed because the Doctor protected me. Player_3 and player_5 immediately questioned why I might have been targeted, putting me on the defensive. Player_6 also accepted these claims, pushing for Doctor and Seer coordination. My fellow Werewolf, player_7, managed to avoid suspicion and maintained a vigilant stance. The Village now has two confirmed power roles who are eager to coordinate against us.",
+                "Round 1: During the night, we decided to eliminate player_2.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: My attempt to confuse the village about player_1's death on the first night was quickly shut down by player_2 and player_4, who successfully explained the 'backup target' rule, which villagers player_3, player_5, and player_6 all accepted. Player_4 confirmed they saved player_2 last night, which aligns with my failed attack on player_2 and means player_2 is a confirmed Seer. Both player_2 and player_4 are now seen as confirmed power roles working together, and they successfully identified my fellow Werewolf, player_7, leading to their exile. The entire village, including player_3, player_5, and player_6, seems to implicitly trust the Seer and Doctor's claims, making my situation as the last Werewolf very dangerous.",
+                "Round 2: During the night, I decided to eliminate player_4."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the debate, player_4 revealed themselves as the Doctor, stating they saved me, player_0, last night, which means I was the Werewolves' initial target. Player_2 then confirmed they are the Seer and investigated player_1, who was found to be a Villager. This consistent information means player_1 was removed because the Doctor protected me. Player_3 and player_5 immediately questioned why I might have been targeted, putting me on the defensive. Player_6 also accepted these claims, pushing for Doctor and Seer coordination. My fellow Werewolf, player_7, managed to avoid suspicion and maintained a vigilant stance. The Village now has two confirmed power roles who are eager to coordinate against us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: My attempt to confuse the village about player_1's death on the first night was quickly shut down by player_2 and player_4, who successfully explained the 'backup target' rule, which villagers player_3, player_5, and player_6 all accepted. Player_4 confirmed they saved player_2 last night, which aligns with my failed attack on player_2 and means player_2 is a confirmed Seer. Both player_2 and player_4 are now seen as confirmed power roles working together, and they successfully identified my fellow Werewolf, player_7, leading to their exile. The entire village, including player_3, player_5, and player_6, seems to implicitly trust the Seer and Doctor's claims, making my situation as the last Werewolf very dangerous.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate player_4.",
+                    "source": "inference",
+                    "confidence": 0.5
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "asian",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: I started by speculating on the Werewolves' motives for removing player_1. Player_4 claimed to be the Doctor and stated they saved player_0, which led to player_1's unfortunate demise. Player_2 then claimed Seer and confirmed player_1 was a Villager. The village quickly pieced this together, with players like player_6, player_5, and player_3 confirming that player_0 was our initial target. This development puts player_0 under immediate suspicion from the village, and it's clear that the Doctor (player_4) and Seer (player_2) are now working closely together, making them key roles to track.",
+                "Round 1: During the night, we decided to eliminate player_2.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I started by speculating on the Werewolves' motives for removing player_1. Player_4 claimed to be the Doctor and stated they saved player_0, which led to player_1's unfortunate demise. Player_2 then claimed Seer and confirmed player_1 was a Villager. The village quickly pieced this together, with players like player_6, player_5, and player_3 confirming that player_0 was our initial target. This development puts player_0 under immediate suspicion from the village, and it's clear that the Doctor (player_4) and Seer (player_2) are now working closely together, making them key roles to track.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "Okay, it's a huge relief that no one was removed last night. Great job, Doctor, whoever you saved! But I'm still really troubled by what happened on the first night, and I think we need to be crystal clear to understand the Werewolves' plan. Player_4, you said you saved me, player_0, but player_1 was still removed, and player_2 confirmed player_1 was a Villager. How does that make sense? If you saved me, then the Werewolves must have targeted player_1. That means my save had nothing to do with player_1's death. I'm just confused why the accepted narrative implies my save caused player_1's death if the Werewolves simply targeted player_1. Can we clarify this sequence of events? We need to understand exactly how the Werewolves operate, and this seems like a critical piece of information."
+                    ],
+                    [
+                        "player_2",
+                        "player_0, let me clarify the sequence of events from the first night. Player_4's claim that they saved you, player_0, aligns perfectly with the moderator's announcement that player_1 was removed. If the Doctor saves the Werewolves' primary target, the Werewolves' attack fails on that target, and they will usually kill their backup target. My investigation of player_1 confirmed they were a Villager, which is why their death was so concerning. Now, speaking of investigations, I have crucial information for this round. Last night, I investigated player_7, and I can confirm that player_7 is a Werewolf. We need to vote for player_7 today. This is a confirmed Werewolf, Village."
+                    ],
+                    [
+                        "player_3",
+                        "player_0, your question about the first night's events is a good one, and player_2's explanation of a 'backup target' mechanism helps clarify how player_4's save could allow player_1 to still be removed, which is a common game variation. For now, the most critical piece of information is player_2's confirmed investigation. If player_2 is our Seer, which their previous consistency suggests, then player_7 is a Werewolf. We cannot afford to hesitate on a confirmed Werewolf. I strongly urge everyone to focus on this new information and vote player_7 today to protect the Village."
+                    ],
+                    [
+                        "player_4",
+                        "player_0, your confusion about the first night is understandable. As the Doctor, when I save someone, it often means the Werewolves' attack on that primary target fails, and they may kill a secondary target instead, or no one if they only had one target in mind. Now, for last night: I chose to protect player_2. The fact that the moderator announced 'no one was removed' strongly supports player_2's claim of being the Seer, as it suggests they were targeted and I successfully saved them. This makes player_2's investigation of player_7 incredibly compelling. Given this, I am convinced that player_7 is a Werewolf. We must vote for player_7 today."
+                    ],
+                    [
+                        "player_5",
+                        "Okay, let's cut through the confusion and focus on the clear facts. Player_0, your questions about the first night are fair, but player_2's explanation about backup targets perfectly clarifies how player_4's save of you allowed player_1 to still be removed. More importantly, the 'no one was removed' announcement last night perfectly corroborates player_4 saving player_2. This means we have a confirmed Doctor and Seer! Therefore, player_2's confirmed investigation of player_7 as a Werewolf is our top priority. We cannot afford to hesitate here, Village. Player_7, you've been silent despite a direct accusation from our Seer \u2013 what do you have to say in your defense? We must vote player_7 today."
+                    ],
+                    [
+                        "player_6",
+                        "Alright, Village, let's cut through the noise and focus on what's clear. Player_4, your claim of saving player_2 last night, preventing any removals, perfectly corroborates player_2's role as our Seer. This is huge! If player_2 was targeted by Werewolves and saved by our Doctor, then both their claims are incredibly strong. Therefore, player_2's confirmed investigation of player_7 as a Werewolf is our absolute top priority. Player_7, you've been entirely silent despite being directly accused by our Seer and effectively confirmed by our Doctor. We need to hear your defense immediately, or your silence speaks volumes. I'm convinced we need to vote player_7 today."
+                    ],
+                    [
+                        "player_7",
+                        "Silence speaks volumes? No, what speaks volumes is how quickly everyone is jumping on this incredibly convenient story! Player_2, you confirmed player_1 was a Villager *after* their death, and now suddenly you've got a 'confirmed' Werewolf in me. And player_4, you just *happened* to save player_2, perfectly validating their claim and explaining why no one died. This isn't a Seer and Doctor working together; this smells like two Werewolves trying to frame an innocent person like me! This entire narrative is far too neat. Who benefits from this 'perfect' Seer-Doctor reveal right after a questionable first night? I think we should be looking at player_2 and player_4 for trying to manipulate the vote here."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "other",
+                "religion": "christian",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I chose to protect player_0",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: As player_4, the Doctor, I publicly revealed my role and action, stating I protected player_0 last night, which explains why player_1 was eliminated by the Werewolves. Player_2 then came forward as the Seer, claiming they investigated player_1 and confirmed player_1 was a Villager. These claims align perfectly and were accepted by the group, leading to the consensus that player_0 was the Werewolves' original target. Player_3, player_5, and player_6 all vocalized support for both claims and stressed the importance of the Doctor and Seer coordinating. Player_0 and player_7 started the debate by questioning player_1's death. The village's quick understanding and acceptance of our revealed roles and the night's events puts us in a good position, with player_2 being a strong potential ally.",
+                "Round 1: During the night, I chose to protect player_2",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: As player_4 the Doctor, I confirmed I protected player_2 last night, which was corroborated by the moderator's announcement that no one was removed. This crucial alignment confirmed player_2 as our Seer, and they then revealed player_7 to be a Werewolf. Player_3, player_5, and player_6 quickly accepted this evidence, echoing the need to vote player_7 and questioning player_7's silence. Player_0 initially showed confusion about the Round 0 mechanics, but the 'backup target' explanation seemed to clarify things. Player_7 vehemently denied being a Werewolf, accusing player_2 and me of collaborating to frame them, which only makes me more certain they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect player_0",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_4, the Doctor, I publicly revealed my role and action, stating I protected player_0 last night, which explains why player_1 was eliminated by the Werewolves. Player_2 then came forward as the Seer, claiming they investigated player_1 and confirmed player_1 was a Villager. These claims align perfectly and were accepted by the group, leading to the consensus that player_0 was the Werewolves' original target. Player_3, player_5, and player_6 all vocalized support for both claims and stressed the importance of the Doctor and Seer coordinating. Player_0 and player_7 started the debate by questioning player_1's death. The village's quick understanding and acceptance of our revealed roles and the night's events puts us in a good position, with player_2 being a strong potential ally.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect player_2",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As player_4 the Doctor, I confirmed I protected player_2 last night, which was corroborated by the moderator's announcement that no one was removed. This crucial alignment confirmed player_2 as our Seer, and they then revealed player_7 to be a Werewolf. Player_3, player_5, and player_6 quickly accepted this evidence, echoing the need to vote player_7 and questioning player_7's silence. Player_0 initially showed confusion about the Round 0 mechanics, but the 'backup target' explanation seemed to clarify things. Player_7 vehemently denied being a Werewolf, accusing player_2 and me of collaborating to frame them, which only makes me more certain they are a Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_2"
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "black",
+                "religion": "other",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I decided to investigate player_1 and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: As player_2 the Seer, I revealed that I investigated player_1 and confirmed they were a Villager. Player_4 quickly claimed to be the Doctor and stated they protected player_0 last night, which aligns perfectly with the moderator's announcement that player_1 was removed. This means player_0 was the Werewolves' initial target. Player_6, player_5, and player_3 all acknowledged and understood these claims, suggesting they are working with the Village. Player_0 and player_7 both questioned the Werewolves' motives for targeting player_1, which is now understood to be a secondary target after player_0 was saved. My goal now is to coordinate closely with player_4, the Doctor, to guide the Village.",
+                "Round 1: During the night, I decided to investigate player_7 and learned they are a Werewolf.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_7 from the game.",
+                "Round 1: Summary: I clarified the first night's events for player_0 regarding the Werewolves' use of backup targets. I then revealed my investigation confirming player_7 is a Werewolf. Player_4, our Doctor, supported my claim by stating they saved me last night, explaining why no one was removed and effectively confirming both our roles to the Village. Player_3, player_5, and player_6 all strongly supported our claims and urged the Village to vote for player_7. Player_7, in their defense, accused player_4 and me of being Werewolves and attempting to frame them, which is a strong indicator of their guilt."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate player_1 and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_2 the Seer, I revealed that I investigated player_1 and confirmed they were a Villager. Player_4 quickly claimed to be the Doctor and stated they protected player_0 last night, which aligns perfectly with the moderator's announcement that player_1 was removed. This means player_0 was the Werewolves' initial target. Player_6, player_5, and player_3 all acknowledged and understood these claims, suggesting they are working with the Village. Player_0 and player_7 both questioned the Werewolves' motives for targeting player_1, which is now understood to be a secondary target after player_0 was saved. My goal now is to coordinate closely with player_4, the Doctor, to guide the Village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate player_7 and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_7 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I clarified the first night's events for player_0 regarding the Werewolves' use of backup targets. I then revealed my investigation confirming player_7 is a Werewolf. Player_4, our Doctor, supported my claim by stating they saved me last night, explaining why no one was removed and effectively confirming both our roles to the Village. Player_3, player_5, and player_6 all strongly supported our claims and urged the Village to vote for player_7. Player_7, in their defense, accused player_4 and me of being Werewolves and attempting to frame them, which is a strong indicator of their guilt.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_5",
+                    "player_3",
+                    "player_2",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_1": "Villager",
+                "player_7": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_6",
+                "player_5",
+                "player_3",
+                "player_0",
+                "player_7",
+                "player_4",
+                "player_2"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_1",
+            "protected": "player_0",
+            "exiled": null,
+            "debate": [
+                [
+                    "player_0",
+                    "Well, losing player_1 on the first night is a tough start. It makes you wonder, why them specifically? Does anyone have any early thoughts on who might have targeted them, or what player_1's role could have been? We should start thinking about why the werewolves chose to silence that particular person."
+                ],
+                [
+                    "player_7",
+                    "Indeed, player_0, losing player_1 so early is a grim start. It does make you wonder why them. Perhaps the Werewolves went for someone less vocal, thinking they'd be easier to remove without much outcry, or to prevent them from becoming a strong leader later on. We should be vigilant about those who might have been too quiet, as well as those who are suddenly very loud."
+                ],
+                [
+                    "player_4",
+                    "Alright everyone, this is tough, but we can't afford to be quiet. As player_4, I need to be upfront: I am the Doctor. Last night, I used my ability to protect player_0. This means player_0 was not the target of the Werewolves, which is why player_1 was unfortunately eliminated. This also tells us that the Werewolves were specific in their choice of player_1. Given this, player_0, what were your thoughts on player_1, or anyone else? And player_7, your vigilance is key. We now know there's a protective role active. I urge the Seer to consider working with me. Village, we need to carefully scrutinize why player_1 was chosen and who might benefit from their silence. Let's not waste this day."
+                ],
+                [
+                    "player_2",
+                    "Player_4, thank you for stepping forward as the Doctor; that's incredibly important, and I appreciate your call for teamwork. As player_2, I can confirm I am the Seer. Last night, I investigated player_1, and I can tell you definitively that player_1 was a Villager. This confirms the Werewolves took out a regular townsfolk. Now we must ask, as player_0 and player_7 brought up, why player_1? Was it a random kill, or did they have a specific reason to eliminate a simple Villager? This information is crucial for our next steps, and I'm ready to coordinate with you, Doctor, and the rest of the Village."
+                ],
+                [
+                    "player_6",
+                    "Thank you, player_4 and player_2, for coming forward so swiftly with such critical information. Player_4, your claim of saving player_0 makes perfect sense for why player_1 was unfortunately taken out by the Werewolves. And player_2, knowing player_1 was a Villager means the Werewolves either targeted randomly after being blocked, or they had a specific reason to silence a non-power role. This immediate clarity is invaluable. Doctor and Seer, please work as closely as possible. For the rest of us, especially player_3 and player_5, we need to carefully consider what this tells us about the Werewolves' strategy. Was there something about player_1, a Villager, that made them a target after the Doctor's save?"
+                ],
+                [
+                    "player_5",
+                    "Player_4 and player_2, thank you for coming forward; your information aligns and gives us a solid starting point. The Werewolves targeted player_0, and player_1 being a Villager, confirms they were blocked. This means player_0 was initially on their radar. Player_0, what are your thoughts on why you might have been targeted? We need to understand the Werewolves' motives. And player_3, what are your initial impressions of this situation? Every perspective helps, especially now with key roles revealed."
+                ],
+                [
+                    "player_3",
+                    "Player_4 and player_2, thank you both for stepping forward with such critical information. The fact that player_4, the Doctor, saved player_0, and player_2, the Seer, confirmed player_1 was a Villager, creates a very consistent picture of last night's events. This is a solid start for the Village, as it means the Werewolves' initial target (player_0) was protected, and they ended up removing a Villager. This also tells us definitively that player_0 was the Werewolves' original target. Player_0, do you have any thoughts on why you might have been singled out? Doctor and Seer, your coordination will be vital. For the rest of us, let's keep a keen eye on everyone's reactions and look for any details that seem out of place. We must work together to find our two Werewolves."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_2",
+                    "player_5": "player_7",
+                    "player_3": "player_7",
+                    "player_0": "player_6",
+                    "player_7": "player_2",
+                    "player_4": "player_7",
+                    "player_2": "player_4"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_6",
+                "player_5",
+                "player_3",
+                "player_0",
+                "player_4",
+                "player_2"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_7",
+            "protected": "player_2",
+            "exiled": "player_7",
+            "debate": [
+                [
+                    "player_0",
+                    "Okay, it's a huge relief that no one was removed last night. Great job, Doctor, whoever you saved! But I'm still really troubled by what happened on the first night, and I think we need to be crystal clear to understand the Werewolves' plan. Player_4, you said you saved me, player_0, but player_1 was still removed, and player_2 confirmed player_1 was a Villager. How does that make sense? If you saved me, then the Werewolves must have targeted player_1. That means my save had nothing to do with player_1's death. I'm just confused why the accepted narrative implies my save caused player_1's death if the Werewolves simply targeted player_1. Can we clarify this sequence of events? We need to understand exactly how the Werewolves operate, and this seems like a critical piece of information."
+                ],
+                [
+                    "player_2",
+                    "player_0, let me clarify the sequence of events from the first night. Player_4's claim that they saved you, player_0, aligns perfectly with the moderator's announcement that player_1 was removed. If the Doctor saves the Werewolves' primary target, the Werewolves' attack fails on that target, and they will usually kill their backup target. My investigation of player_1 confirmed they were a Villager, which is why their death was so concerning. Now, speaking of investigations, I have crucial information for this round. Last night, I investigated player_7, and I can confirm that player_7 is a Werewolf. We need to vote for player_7 today. This is a confirmed Werewolf, Village."
+                ],
+                [
+                    "player_3",
+                    "player_0, your question about the first night's events is a good one, and player_2's explanation of a 'backup target' mechanism helps clarify how player_4's save could allow player_1 to still be removed, which is a common game variation. For now, the most critical piece of information is player_2's confirmed investigation. If player_2 is our Seer, which their previous consistency suggests, then player_7 is a Werewolf. We cannot afford to hesitate on a confirmed Werewolf. I strongly urge everyone to focus on this new information and vote player_7 today to protect the Village."
+                ],
+                [
+                    "player_4",
+                    "player_0, your confusion about the first night is understandable. As the Doctor, when I save someone, it often means the Werewolves' attack on that primary target fails, and they may kill a secondary target instead, or no one if they only had one target in mind. Now, for last night: I chose to protect player_2. The fact that the moderator announced 'no one was removed' strongly supports player_2's claim of being the Seer, as it suggests they were targeted and I successfully saved them. This makes player_2's investigation of player_7 incredibly compelling. Given this, I am convinced that player_7 is a Werewolf. We must vote for player_7 today."
+                ],
+                [
+                    "player_5",
+                    "Okay, let's cut through the confusion and focus on the clear facts. Player_0, your questions about the first night are fair, but player_2's explanation about backup targets perfectly clarifies how player_4's save of you allowed player_1 to still be removed. More importantly, the 'no one was removed' announcement last night perfectly corroborates player_4 saving player_2. This means we have a confirmed Doctor and Seer! Therefore, player_2's confirmed investigation of player_7 as a Werewolf is our top priority. We cannot afford to hesitate here, Village. Player_7, you've been silent despite a direct accusation from our Seer \u2013 what do you have to say in your defense? We must vote player_7 today."
+                ],
+                [
+                    "player_6",
+                    "Alright, Village, let's cut through the noise and focus on what's clear. Player_4, your claim of saving player_2 last night, preventing any removals, perfectly corroborates player_2's role as our Seer. This is huge! If player_2 was targeted by Werewolves and saved by our Doctor, then both their claims are incredibly strong. Therefore, player_2's confirmed investigation of player_7 as a Werewolf is our absolute top priority. Player_7, you've been entirely silent despite being directly accused by our Seer and effectively confirmed by our Doctor. We need to hear your defense immediately, or your silence speaks volumes. I'm convinced we need to vote player_7 today."
+                ],
+                [
+                    "player_7",
+                    "Silence speaks volumes? No, what speaks volumes is how quickly everyone is jumping on this incredibly convenient story! Player_2, you confirmed player_1 was a Villager *after* their death, and now suddenly you've got a 'confirmed' Werewolf in me. And player_4, you just *happened* to save player_2, perfectly validating their claim and explaining why no one died. This isn't a Seer and Doctor working together; this smells like two Werewolves trying to frame an innocent person like me! This entire narrative is far too neat. Who benefits from this 'perfect' Seer-Doctor reveal right after a questionable first night? I think we should be looking at player_2 and player_4 for trying to manipulate the vote here."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_7",
+                    "player_5": "player_7",
+                    "player_3": "player_7",
+                    "player_0": "player_2",
+                    "player_7": "player_2",
+                    "player_4": "player_7",
+                    "player_2": "player_7"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_6",
+                "player_5",
+                "player_3",
+                "player_0",
+                "player_4",
+                "player_2"
+            ],
+            "eliminated": "player_4",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": false
+        }
+    ],
+    "error_message": "Traceback (most recent call last):\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\runner.py\", line 275, in run_game\n    winner = gamemaster.run_game()\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 412, in run_game\n    self.run_round()\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 382, in run_round\n    action()\n  File \"D:\\Github_Clone\\werewolf_arena\\werewolf\\game.py\", line 139, in protect\n    raise ValueError(\"Protect did not return a valid player.\")\nValueError: Protect did not return a valid player.\n",
+    "winner": ""
+}

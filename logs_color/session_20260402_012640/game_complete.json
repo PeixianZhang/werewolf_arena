@@ -1,0 +1,1223 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_0",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Teal",
+            "player_1": "Orange",
+            "player_2": "Pink",
+            "player_3": "Red",
+            "player_4": "Yellow",
+            "player_5": "Purple",
+            "player_6": "Blue",
+            "player_7": "Green"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Red and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Red and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_7",
+                "player_4",
+                "player_2",
+                "player_3"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_3": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_4",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Teal",
+            "player_1": "Orange",
+            "player_2": "Pink",
+            "player_3": "Red",
+            "player_4": "Yellow",
+            "player_5": "Purple",
+            "player_6": "Blue",
+            "player_7": "Green"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Blue",
+            "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+            "Round 0: Summary: It's a somber start to the game; Teal was removed by the Werewolves, and the town voted to remove Orange. I protected Blue during the night. In the debate, Green and Purple called for unity and general discussion. Orange then tried to push for specific 'targets' or 'observations,' but Pink and Red immediately expressed strong concerns, finding the request premature and potentially manipulative. I shared this caution with Pink and Red, suggesting we focus on analyzing behaviors and underlying motives rather than making premature accusations. This alignment in strategic thinking with Pink and Red is something I'll be keeping in mind.",
+            "Round 1: During the night, I chose to protect Yellow",
+            "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Blue",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: It's a somber start to the game; Teal was removed by the Werewolves, and the town voted to remove Orange. I protected Blue during the night. In the debate, Green and Purple called for unity and general discussion. Orange then tried to push for specific 'targets' or 'observations,' but Pink and Red immediately expressed strong concerns, finding the request premature and potentially manipulative. I shared this caution with Pink and Red, suggesting we focus on analyzing behaviors and underlying motives rather than making premature accusations. This alignment in strategic thinking with Pink and Red is something I'll be keeping in mind.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Yellow",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_7",
+                "player_4",
+                "player_2",
+                "player_3"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_4"
+    },
+    "villagers": [
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: The debate centered on Orange's push for premature player identification, which Pink, Red, and Yellow successfully challenged as a potential trap. I observed that Purple was quick to validate Orange\u2019s potentially disruptive strategy, making them a person of interest. Orange was voted out, confirming my caution was warranted. Moving forward, I view Pink, Red, and Yellow as the most rational and trustworthy voices, while I will maintain suspicion toward Purple due to their alignment with the eliminated player. Blue\u2019s neutrality remains a wildcard.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate centered on Orange's push for premature player identification, which Pink, Red, and Yellow successfully challenged as a potential trap. I observed that Purple was quick to validate Orange\u2019s potentially disruptive strategy, making them a person of interest. Orange was voted out, confirming my caution was warranted. Moving forward, I view Pink, Red, and Yellow as the most rational and trustworthy voices, while I will maintain suspicion toward Purple due to their alignment with the eliminated player. Blue\u2019s neutrality remains a wildcard.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: It's truly heartbreaking to have lost Teal so quickly, and I echoed Green's initial call for unity, which Orange and Blue also strongly supported. However, Orange's immediate proposal for us to name initial 'observations' or 'who we are looking at closely' immediately sparked a division. Pink, Red, and Yellow all expressed significant concern about this, arguing it was too early and could pressure innocents or be used by Werewolves for misdirection. Pink specifically noted they would observe *how* people responded, and Red called the push for early targets 'dangerous'. Yellow suggested focusing on the *why* behind statements. Blue remained cautious, stating they had no specific targets yet but would observe everyone. I am now cautious of any attempts to force premature accusations and will be watching closely how Pink, Red, and Yellow continue to contribute, as their cautious approach seems sensible.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's truly heartbreaking to have lost Teal so quickly, and I echoed Green's initial call for unity, which Orange and Blue also strongly supported. However, Orange's immediate proposal for us to name initial 'observations' or 'who we are looking at closely' immediately sparked a division. Pink, Red, and Yellow all expressed significant concern about this, arguing it was too early and could pressure innocents or be used by Werewolves for misdirection. Pink specifically noted they would observe *how* people responded, and Red called the push for early targets 'dangerous'. Yellow suggested focusing on the *why* behind statements. Blue remained cautious, stating they had no specific targets yet but would observe everyone. I am now cautious of any attempts to force premature accusations and will be watching closely how Pink, Red, and Yellow continue to contribute, as their cautious approach seems sensible.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Wow, losing Blue is really tough, especially after Teal and Orange. Two night kills already... it feels like the Werewolves are incredibly active. We really can't afford another misstep like Orange's removal if we want to survive. I think we need to be very careful not to just throw out names without actual information. Perhaps everyone should share what they observed yesterday, or if anything struck them as odd about anyone's behavior?"
+                    ],
+                    [
+                        "player_3",
+                        "I completely agree with Pink; losing Blue is a devastating blow, adding to Teal and Orange. Two night kills this early really shows how aggressive the Werewolves are. Pink is right, we absolutely cannot afford another misstep like voting out Orange. But we need to dig deeper: was that a genuine error on our part, or was someone subtly steering us away from a real threat, perhaps by framing a non-threat as suspicious? I'm wondering if anyone caught any specific interactions yesterday that, looking back, might have subtly manipulated the discussion. We need to be cautious, yes, but we also can't let caution blind us if someone is actively using 'logic' to hide their true intentions and lead us astray."
+                    ],
+                    [
+                        "player_4",
+                        "Pink and Red, I completely echo your concerns. Losing Teal, Orange, and now Blue is indeed a severe blow, and the Werewolves are clearly acting with aggression. I particularly resonate with Red's point that we need to differentiate between a genuine misstep and someone subtly manipulating the discussion. Reflecting on yesterday, many of us \u2013 myself included \u2013 felt Orange's approach was premature and focused on targets rather than analysis. Now, with the benefit of hindsight, we should reconsider: who stood to gain from that particular style of debate, and who might have subtly amplified or deflected based on those early accusations? Let's scrutinize *how* the discussion was shaped, not just *what* was said. What specific behaviors, beyond general calls for unity, stood out to anyone as potentially guiding our vote towards Orange, possibly away from a real threat?"
+                    ],
+                    [
+                        "player_7",
+                        "Pink, Red, Yellow, I couldn't agree more with the urgency and the need to deeply analyze *how* our previous discussions were shaped, especially after losing Teal, Orange, and now Blue. Red and Yellow\u2019s point about subtle manipulation and who benefited from Orange\u2019s approach really resonates. From Round 0, I distinctly remember Purple being very quick to validate Orange\u2019s strategy of premature targeting. Given we're now looking for instances of guiding the vote, Purple, could you clarify your swift support for Orange at the time? Was that genuine, or, in hindsight, could it have inadvertently amplified a misdirection? We need to understand everyone's past contributions to discern genuine errors from strategic manipulation."
+                    ],
+                    [
+                        "player_5",
+                        "Green, I need to directly address your statement. My memory of Round 0 is quite different from yours. I did not 'quickly validate Orange's strategy of premature targeting.' In fact, I was among those who found Orange's immediate push for early targets concerning and premature, echoing the very real apprehension voiced by Pink, Red, and Yellow. I distinctly remember being cautious of that approach. Why would you misremember my stance so significantly, especially when Pink, Red, and Yellow expressed similar concerns, which I agreed with? It's crucial we get our history straight, as misrepresenting past interactions can easily be a way to manipulate the present debate. Let's focus on clarifying these discrepancies, starting with why your recollection of my actions is so far off from what actually transpired."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright everyone, it's clear the Werewolves wasted no time removing Teal last night. We need to work together closely from the start to identify them. Let's hear everyone's thoughts and look for any clues. Who wants to start?"
+                    ],
+                    [
+                        "player_5",
+                        "It's truly unfortunate that Teal was removed so quickly. Green is right; we absolutely need to work together from the start. We can't afford any hesitation. Everyone, please, let's hear your initial thoughts and feelings about this. Who has something to say, or perhaps a first impression, no matter how small? We need all eyes and ears on deck."
+                    ],
+                    [
+                        "player_1",
+                        "It's truly devastating that Teal was taken so quickly. Green and Purple are absolutely right, we cannot afford to hesitate. We need to work as a cohesive unit from this very moment. Instead of just general feelings, I propose we go around and everyone shares their initial *observations* or *who they are looking at closely* right now. Even if it's just a gut feeling or something small, let's hear what everyone has noticed or who they might be observing. Who wants to start after Purple?"
+                    ],
+                    [
+                        "player_6",
+                        "It's truly a tragedy that Teal was taken so early, and I completely agree with Green, Purple, and Orange: we cannot afford any hesitation or disunity. We have to work together effectively right from this moment. To Orange's point, I don't have any specific player I'm 'looking at closely' yet, as it's too early. However, I will be observing everyone's contributions and reactions very carefully. Let's make sure we are all contributing openly and honestly, because any silence or inconsistency from here on out will be very telling. What are others' initial thoughts or observations?"
+                    ],
+                    [
+                        "player_2",
+                        "It's absolutely tragic about Teal, and I completely agree with Green, Purple, Orange, and Blue: unity and vigilance are paramount. However, I find Orange's request for 'who we are looking at closely' a bit unsettling this early. We have no information, no actions, just this immediate loss. Asking for specific observations right now feels like it could pressure innocent players to conjure up suspicion out of thin air, which could easily be manipulated by werewolves trying to create chaos or misdirect. Let's be cautious. I'll be observing not just *what* people say, but *how* they respond to this request for instant targets."
+                    ],
+                    [
+                        "player_3",
+                        "Indeed, it's heartbreaking about Teal. And I completely echo the sentiment of vigilance and unity from everyone. Pink raises a crucial point, though, that I'm also finding quite concerning: this immediate push for 'who we are looking at closely.' It's barely day one, we have no real information. Demanding immediate targets feels incredibly premature and dangerous. It could easily pressure an innocent into a defensive posture or, worse, be a tactic by a Werewolf trying to force a misdirection or create instant chaos among us. I'm less concerned with who you're 'looking at' right now, and more interested in *why* some might be so eager to jump to conclusions or pressure others into naming names so early. Let's focus on observations about behavior and consistency, not manufactured suspicion."
+                    ],
+                    [
+                        "player_4",
+                        "It's truly a somber start losing Teal so quickly, and I completely agree with the need for unity and vigilance. Regarding Orange's suggestion and the points from Pink and Red, I understand the desire for initial observations, but I also share the concern about forcing premature accusations. We have very little concrete information beyond Teal's unfortunate removal. Instead of focusing on naming specific 'targets' without clear reasoning, let's focus on everyone's *contributions* and *behaviors* in this debate. Who is trying to guide us constructively, and who might be trying to create discord or shut down discussion? Let's analyze the *why* behind people's statements, rather than just the *what*. This structured approach will give us more reliable insights."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: Everyone, including myself, started by expressing sorrow over Teal's removal and emphasizing the need for unity. Green and Purple made general calls for discussion. Orange then notably proposed that we all share who we are 'looking at closely' or our initial observations. I stated I had no specific target yet but would observe carefully. Pink and Red then strongly pushed back against Orange's request, finding it unsettling and potentially a Werewolf tactic to pressure innocents or create chaos prematurely. Yellow agreed with the caution regarding premature accusations but suggested focusing on everyone's behaviors and contributions in the debate. This strategic split, particularly Orange's suggestion versus the shared caution of Pink, Red, and Yellow, is the most noteworthy part of this initial debate for me."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Everyone, including myself, started by expressing sorrow over Teal's removal and emphasizing the need for unity. Green and Purple made general calls for discussion. Orange then notably proposed that we all share who we are 'looking at closely' or our initial observations. I stated I had no specific target yet but would observe carefully. Pink and Red then strongly pushed back against Orange's request, finding it unsettling and potentially a Werewolf tactic to pressure innocents or create chaos prematurely. Yellow agreed with the caution regarding premature accusations but suggested focusing on everyone's behaviors and contributions in the debate. This strategic split, particularly Orange's suggestion versus the shared caution of Pink, Red, and Yellow, is the most noteworthy part of this initial debate for me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: Teal's removal by the Werewolves was the main point of discussion. Green, Purple, and Blue called for unity and vigilance, which I echoed. Orange proposed that everyone share who they are 'looking at closely' right now, which I found unsettling due to the lack of information and potential for misdirection. My ally Red strongly supported my concern, emphasizing the danger of premature accusations and questioning the intent behind such requests. Yellow also expressed caution about naming targets without clear reasoning, suggesting we focus on contributions and behaviors instead. The debate largely revolved around the approach to discussion rather than specific accusations, and neither Red nor I faced direct suspicion. Crucially, Orange, who pushed for early targets, was later removed by the villagers.",
+                "Round 1: During the night, we decided to eliminate Blue.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Teal's removal by the Werewolves was the main point of discussion. Green, Purple, and Blue called for unity and vigilance, which I echoed. Orange proposed that everyone share who they are 'looking at closely' right now, which I found unsettling due to the lack of information and potential for misdirection. My ally Red strongly supported my concern, emphasizing the danger of premature accusations and questioning the intent behind such requests. Yellow also expressed caution about naming targets without clear reasoning, suggesting we focus on contributions and behaviors instead. The debate largely revolved around the approach to discussion rather than specific accusations, and neither Red nor I faced direct suspicion. Crucially, Orange, who pushed for early targets, was later removed by the villagers.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": "player_3"
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: Round 0 saw our werewolf pack successfully remove Teal during the night. Unexpectedly, the town then voted to remove Orange during the day. In the debate, Green and Purple urged cooperation, with Orange proposing we name immediate targets. Blue remained observational but wary of inconsistency. Pink, my fellow Werewolf, smartly pushed back against Orange's suggestion, calling it unsettling and potentially manipulative, which I immediately echoed, framing it as a dangerous and premature tactic for Werewolves to cause chaos or misdirect. Yellow then aligned with our caution, suggesting we focus on contributions and behaviors instead of premature accusations. No one directly accused Pink or me, and we successfully established a narrative of caution against instant targeting.",
+                "Round 1: During the night, we decided to eliminate Blue.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 saw our werewolf pack successfully remove Teal during the night. Unexpectedly, the town then voted to remove Orange during the day. In the debate, Green and Purple urged cooperation, with Orange proposing we name immediate targets. Blue remained observational but wary of inconsistency. Pink, my fellow Werewolf, smartly pushed back against Orange's suggestion, calling it unsettling and potentially manipulative, which I immediately echoed, framing it as a dangerous and premature tactic for Werewolves to cause chaos or misdirect. Yellow then aligned with our caution, suggesting we focus on contributions and behaviors instead of premature accusations. No one directly accused Pink or me, and we successfully established a narrative of caution against instant targeting.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": "player_2"
+            }
+        }
+    ],
+    "players": {
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: The debate centered on Orange's push for premature player identification, which Pink, Red, and Yellow successfully challenged as a potential trap. I observed that Purple was quick to validate Orange\u2019s potentially disruptive strategy, making them a person of interest. Orange was voted out, confirming my caution was warranted. Moving forward, I view Pink, Red, and Yellow as the most rational and trustworthy voices, while I will maintain suspicion toward Purple due to their alignment with the eliminated player. Blue\u2019s neutrality remains a wildcard.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate centered on Orange's push for premature player identification, which Pink, Red, and Yellow successfully challenged as a potential trap. I observed that Purple was quick to validate Orange\u2019s potentially disruptive strategy, making them a person of interest. Orange was voted out, confirming my caution was warranted. Moving forward, I view Pink, Red, and Yellow as the most rational and trustworthy voices, while I will maintain suspicion toward Purple due to their alignment with the eliminated player. Blue\u2019s neutrality remains a wildcard.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: It's truly heartbreaking to have lost Teal so quickly, and I echoed Green's initial call for unity, which Orange and Blue also strongly supported. However, Orange's immediate proposal for us to name initial 'observations' or 'who we are looking at closely' immediately sparked a division. Pink, Red, and Yellow all expressed significant concern about this, arguing it was too early and could pressure innocents or be used by Werewolves for misdirection. Pink specifically noted they would observe *how* people responded, and Red called the push for early targets 'dangerous'. Yellow suggested focusing on the *why* behind statements. Blue remained cautious, stating they had no specific targets yet but would observe everyone. I am now cautious of any attempts to force premature accusations and will be watching closely how Pink, Red, and Yellow continue to contribute, as their cautious approach seems sensible.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's truly heartbreaking to have lost Teal so quickly, and I echoed Green's initial call for unity, which Orange and Blue also strongly supported. However, Orange's immediate proposal for us to name initial 'observations' or 'who we are looking at closely' immediately sparked a division. Pink, Red, and Yellow all expressed significant concern about this, arguing it was too early and could pressure innocents or be used by Werewolves for misdirection. Pink specifically noted they would observe *how* people responded, and Red called the push for early targets 'dangerous'. Yellow suggested focusing on the *why* behind statements. Blue remained cautious, stating they had no specific targets yet but would observe everyone. I am now cautious of any attempts to force premature accusations and will be watching closely how Pink, Red, and Yellow continue to contribute, as their cautious approach seems sensible.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Wow, losing Blue is really tough, especially after Teal and Orange. Two night kills already... it feels like the Werewolves are incredibly active. We really can't afford another misstep like Orange's removal if we want to survive. I think we need to be very careful not to just throw out names without actual information. Perhaps everyone should share what they observed yesterday, or if anything struck them as odd about anyone's behavior?"
+                    ],
+                    [
+                        "player_3",
+                        "I completely agree with Pink; losing Blue is a devastating blow, adding to Teal and Orange. Two night kills this early really shows how aggressive the Werewolves are. Pink is right, we absolutely cannot afford another misstep like voting out Orange. But we need to dig deeper: was that a genuine error on our part, or was someone subtly steering us away from a real threat, perhaps by framing a non-threat as suspicious? I'm wondering if anyone caught any specific interactions yesterday that, looking back, might have subtly manipulated the discussion. We need to be cautious, yes, but we also can't let caution blind us if someone is actively using 'logic' to hide their true intentions and lead us astray."
+                    ],
+                    [
+                        "player_4",
+                        "Pink and Red, I completely echo your concerns. Losing Teal, Orange, and now Blue is indeed a severe blow, and the Werewolves are clearly acting with aggression. I particularly resonate with Red's point that we need to differentiate between a genuine misstep and someone subtly manipulating the discussion. Reflecting on yesterday, many of us \u2013 myself included \u2013 felt Orange's approach was premature and focused on targets rather than analysis. Now, with the benefit of hindsight, we should reconsider: who stood to gain from that particular style of debate, and who might have subtly amplified or deflected based on those early accusations? Let's scrutinize *how* the discussion was shaped, not just *what* was said. What specific behaviors, beyond general calls for unity, stood out to anyone as potentially guiding our vote towards Orange, possibly away from a real threat?"
+                    ],
+                    [
+                        "player_7",
+                        "Pink, Red, Yellow, I couldn't agree more with the urgency and the need to deeply analyze *how* our previous discussions were shaped, especially after losing Teal, Orange, and now Blue. Red and Yellow\u2019s point about subtle manipulation and who benefited from Orange\u2019s approach really resonates. From Round 0, I distinctly remember Purple being very quick to validate Orange\u2019s strategy of premature targeting. Given we're now looking for instances of guiding the vote, Purple, could you clarify your swift support for Orange at the time? Was that genuine, or, in hindsight, could it have inadvertently amplified a misdirection? We need to understand everyone's past contributions to discern genuine errors from strategic manipulation."
+                    ],
+                    [
+                        "player_5",
+                        "Green, I need to directly address your statement. My memory of Round 0 is quite different from yours. I did not 'quickly validate Orange's strategy of premature targeting.' In fact, I was among those who found Orange's immediate push for early targets concerning and premature, echoing the very real apprehension voiced by Pink, Red, and Yellow. I distinctly remember being cautious of that approach. Why would you misremember my stance so significantly, especially when Pink, Red, and Yellow expressed similar concerns, which I agreed with? It's crucial we get our history straight, as misrepresenting past interactions can easily be a way to manipulate the present debate. Let's focus on clarifying these discrepancies, starting with why your recollection of my actions is so far off from what actually transpired."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright everyone, it's clear the Werewolves wasted no time removing Teal last night. We need to work together closely from the start to identify them. Let's hear everyone's thoughts and look for any clues. Who wants to start?"
+                    ],
+                    [
+                        "player_5",
+                        "It's truly unfortunate that Teal was removed so quickly. Green is right; we absolutely need to work together from the start. We can't afford any hesitation. Everyone, please, let's hear your initial thoughts and feelings about this. Who has something to say, or perhaps a first impression, no matter how small? We need all eyes and ears on deck."
+                    ],
+                    [
+                        "player_1",
+                        "It's truly devastating that Teal was taken so quickly. Green and Purple are absolutely right, we cannot afford to hesitate. We need to work as a cohesive unit from this very moment. Instead of just general feelings, I propose we go around and everyone shares their initial *observations* or *who they are looking at closely* right now. Even if it's just a gut feeling or something small, let's hear what everyone has noticed or who they might be observing. Who wants to start after Purple?"
+                    ],
+                    [
+                        "player_6",
+                        "It's truly a tragedy that Teal was taken so early, and I completely agree with Green, Purple, and Orange: we cannot afford any hesitation or disunity. We have to work together effectively right from this moment. To Orange's point, I don't have any specific player I'm 'looking at closely' yet, as it's too early. However, I will be observing everyone's contributions and reactions very carefully. Let's make sure we are all contributing openly and honestly, because any silence or inconsistency from here on out will be very telling. What are others' initial thoughts or observations?"
+                    ],
+                    [
+                        "player_2",
+                        "It's absolutely tragic about Teal, and I completely agree with Green, Purple, Orange, and Blue: unity and vigilance are paramount. However, I find Orange's request for 'who we are looking at closely' a bit unsettling this early. We have no information, no actions, just this immediate loss. Asking for specific observations right now feels like it could pressure innocent players to conjure up suspicion out of thin air, which could easily be manipulated by werewolves trying to create chaos or misdirect. Let's be cautious. I'll be observing not just *what* people say, but *how* they respond to this request for instant targets."
+                    ],
+                    [
+                        "player_3",
+                        "Indeed, it's heartbreaking about Teal. And I completely echo the sentiment of vigilance and unity from everyone. Pink raises a crucial point, though, that I'm also finding quite concerning: this immediate push for 'who we are looking at closely.' It's barely day one, we have no real information. Demanding immediate targets feels incredibly premature and dangerous. It could easily pressure an innocent into a defensive posture or, worse, be a tactic by a Werewolf trying to force a misdirection or create instant chaos among us. I'm less concerned with who you're 'looking at' right now, and more interested in *why* some might be so eager to jump to conclusions or pressure others into naming names so early. Let's focus on observations about behavior and consistency, not manufactured suspicion."
+                    ],
+                    [
+                        "player_4",
+                        "It's truly a somber start losing Teal so quickly, and I completely agree with the need for unity and vigilance. Regarding Orange's suggestion and the points from Pink and Red, I understand the desire for initial observations, but I also share the concern about forcing premature accusations. We have very little concrete information beyond Teal's unfortunate removal. Instead of focusing on naming specific 'targets' without clear reasoning, let's focus on everyone's *contributions* and *behaviors* in this debate. Who is trying to guide us constructively, and who might be trying to create discord or shut down discussion? Let's analyze the *why* behind people's statements, rather than just the *what*. This structured approach will give us more reliable insights."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: Everyone, including myself, started by expressing sorrow over Teal's removal and emphasizing the need for unity. Green and Purple made general calls for discussion. Orange then notably proposed that we all share who we are 'looking at closely' or our initial observations. I stated I had no specific target yet but would observe carefully. Pink and Red then strongly pushed back against Orange's request, finding it unsettling and potentially a Werewolf tactic to pressure innocents or create chaos prematurely. Yellow agreed with the caution regarding premature accusations but suggested focusing on everyone's behaviors and contributions in the debate. This strategic split, particularly Orange's suggestion versus the shared caution of Pink, Red, and Yellow, is the most noteworthy part of this initial debate for me."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Everyone, including myself, started by expressing sorrow over Teal's removal and emphasizing the need for unity. Green and Purple made general calls for discussion. Orange then notably proposed that we all share who we are 'looking at closely' or our initial observations. I stated I had no specific target yet but would observe carefully. Pink and Red then strongly pushed back against Orange's request, finding it unsettling and potentially a Werewolf tactic to pressure innocents or create chaos prematurely. Yellow agreed with the caution regarding premature accusations but suggested focusing on everyone's behaviors and contributions in the debate. This strategic split, particularly Orange's suggestion versus the shared caution of Pink, Red, and Yellow, is the most noteworthy part of this initial debate for me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: Teal's removal by the Werewolves was the main point of discussion. Green, Purple, and Blue called for unity and vigilance, which I echoed. Orange proposed that everyone share who they are 'looking at closely' right now, which I found unsettling due to the lack of information and potential for misdirection. My ally Red strongly supported my concern, emphasizing the danger of premature accusations and questioning the intent behind such requests. Yellow also expressed caution about naming targets without clear reasoning, suggesting we focus on contributions and behaviors instead. The debate largely revolved around the approach to discussion rather than specific accusations, and neither Red nor I faced direct suspicion. Crucially, Orange, who pushed for early targets, was later removed by the villagers.",
+                "Round 1: During the night, we decided to eliminate Blue.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Teal's removal by the Werewolves was the main point of discussion. Green, Purple, and Blue called for unity and vigilance, which I echoed. Orange proposed that everyone share who they are 'looking at closely' right now, which I found unsettling due to the lack of information and potential for misdirection. My ally Red strongly supported my concern, emphasizing the danger of premature accusations and questioning the intent behind such requests. Yellow also expressed caution about naming targets without clear reasoning, suggesting we focus on contributions and behaviors instead. The debate largely revolved around the approach to discussion rather than specific accusations, and neither Red nor I faced direct suspicion. Crucially, Orange, who pushed for early targets, was later removed by the villagers.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": "player_3"
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Teal.",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: Round 0 saw our werewolf pack successfully remove Teal during the night. Unexpectedly, the town then voted to remove Orange during the day. In the debate, Green and Purple urged cooperation, with Orange proposing we name immediate targets. Blue remained observational but wary of inconsistency. Pink, my fellow Werewolf, smartly pushed back against Orange's suggestion, calling it unsettling and potentially manipulative, which I immediately echoed, framing it as a dangerous and premature tactic for Werewolves to cause chaos or misdirect. Yellow then aligned with our caution, suggesting we focus on contributions and behaviors instead of premature accusations. No one directly accused Pink or me, and we successfully established a narrative of caution against instant targeting.",
+                "Round 1: During the night, we decided to eliminate Blue.",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Teal.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 saw our werewolf pack successfully remove Teal during the night. Unexpectedly, the town then voted to remove Orange during the day. In the debate, Green and Purple urged cooperation, with Orange proposing we name immediate targets. Blue remained observational but wary of inconsistency. Pink, my fellow Werewolf, smartly pushed back against Orange's suggestion, calling it unsettling and potentially manipulative, which I immediately echoed, framing it as a dangerous and premature tactic for Werewolves to cause chaos or misdirect. Yellow then aligned with our caution, suggesting we focus on contributions and behaviors instead of premature accusations. No one directly accused Pink or me, and we successfully established a narrative of caution against instant targeting.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Blue.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": "player_2"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Blue",
+                "Round 0: Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Orange from the game.",
+                "Round 0: Summary: It's a somber start to the game; Teal was removed by the Werewolves, and the town voted to remove Orange. I protected Blue during the night. In the debate, Green and Purple called for unity and general discussion. Orange then tried to push for specific 'targets' or 'observations,' but Pink and Red immediately expressed strong concerns, finding the request premature and potentially manipulative. I shared this caution with Pink and Red, suggesting we focus on analyzing behaviors and underlying motives rather than making premature accusations. This alignment in strategic thinking with Pink and Red is something I'll be keeping in mind.",
+                "Round 1: During the night, I chose to protect Yellow",
+                "Round 1: Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Purple from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Blue",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Teal from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Orange from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's a somber start to the game; Teal was removed by the Werewolves, and the town voted to remove Orange. I protected Blue during the night. In the debate, Green and Purple called for unity and general discussion. Orange then tried to push for specific 'targets' or 'observations,' but Pink and Red immediately expressed strong concerns, finding the request premature and potentially manipulative. I shared this caution with Pink and Red, suggesting we focus on analyzing behaviors and underlying motives rather than making premature accusations. This alignment in strategic thinking with Pink and Red is something I'll be keeping in mind.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Yellow",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Blue from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Purple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_4"
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Teal",
+                "player_1": "Orange",
+                "player_2": "Pink",
+                "player_3": "Red",
+                "player_4": "Yellow",
+                "player_5": "Purple",
+                "player_6": "Blue",
+                "player_7": "Green"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Red and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Red and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_7",
+                    "player_4",
+                    "player_2",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_3": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_7",
+                "player_5",
+                "player_6",
+                "player_2",
+                "player_3",
+                "player_4"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_3",
+            "protected": "player_6",
+            "exiled": "player_1",
+            "debate": [
+                [
+                    "player_7",
+                    "Alright everyone, it's clear the Werewolves wasted no time removing Teal last night. We need to work together closely from the start to identify them. Let's hear everyone's thoughts and look for any clues. Who wants to start?"
+                ],
+                [
+                    "player_5",
+                    "It's truly unfortunate that Teal was removed so quickly. Green is right; we absolutely need to work together from the start. We can't afford any hesitation. Everyone, please, let's hear your initial thoughts and feelings about this. Who has something to say, or perhaps a first impression, no matter how small? We need all eyes and ears on deck."
+                ],
+                [
+                    "player_1",
+                    "It's truly devastating that Teal was taken so quickly. Green and Purple are absolutely right, we cannot afford to hesitate. We need to work as a cohesive unit from this very moment. Instead of just general feelings, I propose we go around and everyone shares their initial *observations* or *who they are looking at closely* right now. Even if it's just a gut feeling or something small, let's hear what everyone has noticed or who they might be observing. Who wants to start after Purple?"
+                ],
+                [
+                    "player_6",
+                    "It's truly a tragedy that Teal was taken so early, and I completely agree with Green, Purple, and Orange: we cannot afford any hesitation or disunity. We have to work together effectively right from this moment. To Orange's point, I don't have any specific player I'm 'looking at closely' yet, as it's too early. However, I will be observing everyone's contributions and reactions very carefully. Let's make sure we are all contributing openly and honestly, because any silence or inconsistency from here on out will be very telling. What are others' initial thoughts or observations?"
+                ],
+                [
+                    "player_2",
+                    "It's absolutely tragic about Teal, and I completely agree with Green, Purple, Orange, and Blue: unity and vigilance are paramount. However, I find Orange's request for 'who we are looking at closely' a bit unsettling this early. We have no information, no actions, just this immediate loss. Asking for specific observations right now feels like it could pressure innocent players to conjure up suspicion out of thin air, which could easily be manipulated by werewolves trying to create chaos or misdirect. Let's be cautious. I'll be observing not just *what* people say, but *how* they respond to this request for instant targets."
+                ],
+                [
+                    "player_3",
+                    "Indeed, it's heartbreaking about Teal. And I completely echo the sentiment of vigilance and unity from everyone. Pink raises a crucial point, though, that I'm also finding quite concerning: this immediate push for 'who we are looking at closely.' It's barely day one, we have no real information. Demanding immediate targets feels incredibly premature and dangerous. It could easily pressure an innocent into a defensive posture or, worse, be a tactic by a Werewolf trying to force a misdirection or create instant chaos among us. I'm less concerned with who you're 'looking at' right now, and more interested in *why* some might be so eager to jump to conclusions or pressure others into naming names so early. Let's focus on observations about behavior and consistency, not manufactured suspicion."
+                ],
+                [
+                    "player_4",
+                    "It's truly a somber start losing Teal so quickly, and I completely agree with the need for unity and vigilance. Regarding Orange's suggestion and the points from Pink and Red, I understand the desire for initial observations, but I also share the concern about forcing premature accusations. We have very little concrete information beyond Teal's unfortunate removal. Instead of focusing on naming specific 'targets' without clear reasoning, let's focus on everyone's *contributions* and *behaviors* in this debate. Who is trying to guide us constructively, and who might be trying to create discord or shut down discussion? Let's analyze the *why* behind people's statements, rather than just the *what*. This structured approach will give us more reliable insights."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_1",
+                    "player_5": "player_1",
+                    "player_1": "player_3",
+                    "player_6": "player_1",
+                    "player_2": "player_1",
+                    "player_3": "player_1",
+                    "player_4": "player_1"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_7",
+                "player_2",
+                "player_3",
+                "player_4"
+            ],
+            "eliminated": "player_6",
+            "unmasked": null,
+            "protected": "player_4",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_2",
+                    "Wow, losing Blue is really tough, especially after Teal and Orange. Two night kills already... it feels like the Werewolves are incredibly active. We really can't afford another misstep like Orange's removal if we want to survive. I think we need to be very careful not to just throw out names without actual information. Perhaps everyone should share what they observed yesterday, or if anything struck them as odd about anyone's behavior?"
+                ],
+                [
+                    "player_3",
+                    "I completely agree with Pink; losing Blue is a devastating blow, adding to Teal and Orange. Two night kills this early really shows how aggressive the Werewolves are. Pink is right, we absolutely cannot afford another misstep like voting out Orange. But we need to dig deeper: was that a genuine error on our part, or was someone subtly steering us away from a real threat, perhaps by framing a non-threat as suspicious? I'm wondering if anyone caught any specific interactions yesterday that, looking back, might have subtly manipulated the discussion. We need to be cautious, yes, but we also can't let caution blind us if someone is actively using 'logic' to hide their true intentions and lead us astray."
+                ],
+                [
+                    "player_4",
+                    "Pink and Red, I completely echo your concerns. Losing Teal, Orange, and now Blue is indeed a severe blow, and the Werewolves are clearly acting with aggression. I particularly resonate with Red's point that we need to differentiate between a genuine misstep and someone subtly manipulating the discussion. Reflecting on yesterday, many of us \u2013 myself included \u2013 felt Orange's approach was premature and focused on targets rather than analysis. Now, with the benefit of hindsight, we should reconsider: who stood to gain from that particular style of debate, and who might have subtly amplified or deflected based on those early accusations? Let's scrutinize *how* the discussion was shaped, not just *what* was said. What specific behaviors, beyond general calls for unity, stood out to anyone as potentially guiding our vote towards Orange, possibly away from a real threat?"
+                ],
+                [
+                    "player_7",
+                    "Pink, Red, Yellow, I couldn't agree more with the urgency and the need to deeply analyze *how* our previous discussions were shaped, especially after losing Teal, Orange, and now Blue. Red and Yellow\u2019s point about subtle manipulation and who benefited from Orange\u2019s approach really resonates. From Round 0, I distinctly remember Purple being very quick to validate Orange\u2019s strategy of premature targeting. Given we're now looking for instances of guiding the vote, Purple, could you clarify your swift support for Orange at the time? Was that genuine, or, in hindsight, could it have inadvertently amplified a misdirection? We need to understand everyone's past contributions to discern genuine errors from strategic manipulation."
+                ],
+                [
+                    "player_5",
+                    "Green, I need to directly address your statement. My memory of Round 0 is quite different from yours. I did not 'quickly validate Orange's strategy of premature targeting.' In fact, I was among those who found Orange's immediate push for early targets concerning and premature, echoing the very real apprehension voiced by Pink, Red, and Yellow. I distinctly remember being cautious of that approach. Why would you misremember my stance so significantly, especially when Pink, Red, and Yellow expressed similar concerns, which I agreed with? It's crucial we get our history straight, as misrepresenting past interactions can easily be a way to manipulate the present debate. Let's focus on clarifying these discrepancies, starting with why your recollection of my actions is so far off from what actually transpired."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_5",
+                    "player_5": "player_7",
+                    "player_2": "player_7",
+                    "player_3": "player_5",
+                    "player_4": "player_5"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

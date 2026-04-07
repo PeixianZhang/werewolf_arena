@@ -1,0 +1,1209 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_0",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "David",
+            "player_1": "Harold",
+            "player_2": "Sam",
+            "player_3": "Scott",
+            "player_4": "Derek",
+            "player_5": "Hayley",
+            "player_6": "Jackson",
+            "player_7": "Jacob"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Sam and learned they are a Doctor.",
+            "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Sam and learned they are a Doctor.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_3",
+                "player_7",
+                "player_6",
+                "player_1"
+            ],
+            "debate": [
+                [
+                    "player_0",
+                    "This is a terrible start for the village. We just lost Sam, and I can tell you all with certainty, Sam was the Doctor. The Werewolves knew exactly who to target to weaken us. This is a clear sign we need to be highly collaborative and identify those wolves immediately."
+                ],
+                [
+                    "player_4",
+                    "That's a tough blow, losing Sam so early. But David, how can you state with 'certainty' that Sam was the Doctor? We're all just Villagers here, we don't know each other's roles yet. That's a very bold claim to make on Day 0. If you're the Seer, you need to tell us how you know, otherwise, that 'certainty' is extremely suspicious and we need an explanation. Let's not let premature, unverified claims lead us astray; we need real information to identify the wolves."
+                ],
+                [
+                    "player_3",
+                    "Derek makes a very valid point, David. While losing Sam is indeed a terrible start, your 'certainty' that Sam was the Doctor is incredibly alarming. How do you know this for sure? Unless you are the Seer and you checked Sam's role last night, there's no way you could know that with 'certainty'. If you aren't the Seer, then this claim is either a dangerous bluff meant to mislead us, or a clear indication that you're a Werewolf trying to sow confusion. We need answers from you, David. Explain yourself or reveal your role, because right now, that 'certainty' looks very suspicious."
+                ],
+                [
+                    "player_5",
+                    "David, I echo Scott and Derek's concerns. Your 'certainty' about Sam being the Doctor is incredibly alarming, especially since we are all supposed to be role-blind at this stage. The only way you could know that with absolute certainty is if you are the Seer and checked Sam's role last night, which means the Werewolves targeted correctly. If you are not the Seer, then your statement is baseless and incredibly suspicious, and it's imperative that you explain yourself right now. We need real information to protect the village, not unverified claims that lead us down the wrong path."
+                ],
+                [
+                    "player_7",
+                    "I completely agree with Derek, Scott, and Hayley. David, your 'certainty' about Sam's role is not just alarming, it's frankly inexplicable unless you are the Seer and are just now revealing that. If you're not the Seer, then your statement is incredibly dangerous and suggests you're trying to manipulate us. The village desperately needs real information, not baseless claims. You need to explain yourself, David, and reveal how you could possibly know Sam was the Doctor with such certainty, or face serious suspicion as a Werewolf."
+                ],
+                [
+                    "player_6",
+                    "David, I'm finding your 'certainty' about Sam being the Doctor extremely unsettling, just like everyone else. How could you possibly know that for sure, unless you are the Seer? If you are the Seer, then you needed to say that immediately and tell us who else you checked. If you're not, then your claim is baseless and incredibly dangerous. We just lost a player, and now you're creating immense confusion with an unprovable statement. This isn't helping us find the wolves; it's making us question your motives. You need to clarify your position, David, or you're going to be the prime suspect."
+                ],
+                [
+                    "player_1",
+                    "This is precisely what I was thinking. David, your 'certainty' is incredibly unsettling. We've just lost a player, and now you're making a claim that only the Seer could possibly make. If you are the Seer, you need to reveal that *now* and tell us what else you know, because withholding that information is just as dangerous as making a baseless claim. If you're not the Seer, then this 'certainty' is a massive red flag, and you absolutely need to explain how you came to this conclusion, because right now, it looks incredibly suspicious. We need to focus on finding actual information to protect the village, not getting sidetracked by unverified claims."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_2": "Doctor"
+        }
+    },
+    "doctor": {
+        "name": "player_2",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "David",
+            "player_1": "Harold",
+            "player_2": "Sam",
+            "player_3": "Scott",
+            "player_4": "Derek",
+            "player_5": "Hayley",
+            "player_6": "Jackson",
+            "player_7": "Jacob"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect David"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect David",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_3",
+                "player_7",
+                "player_6",
+                "player_1"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_0"
+    },
+    "villagers": [
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: The debate centered entirely on David's highly suspicious claim that Sam was the Doctor with 'certainty.' I immediately called out his claim, highlighting that only the Seer could know such a thing and demanding an explanation or role reveal. Scott, Hayley, Jacob, Jackson, and Harold all strongly agreed with me, expressing alarm and pressing David intensely for how he could know Sam's role with such certainty if he wasn't the Seer. The consensus was that his statement was either a dangerous bluff or a clear sign of a Werewolf attempting to sow confusion. This united suspicion against David ultimately led to him being voted out of the game, as announced by the moderator. No other players made any questionable statements or displayed suspicious behavior; the village seemed to work together to identify and challenge David's unverified claim."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate centered entirely on David's highly suspicious claim that Sam was the Doctor with 'certainty.' I immediately called out his claim, highlighting that only the Seer could know such a thing and demanding an explanation or role reveal. Scott, Hayley, Jacob, Jackson, and Harold all strongly agreed with me, expressing alarm and pressing David intensely for how he could know Sam's role with such certainty if he wasn't the Seer. The consensus was that his statement was either a dangerous bluff or a clear sign of a Werewolf attempting to sow confusion. This united suspicion against David ultimately led to him being voted out of the game, as announced by the moderator. No other players made any questionable statements or displayed suspicious behavior; the village seemed to work together to identify and challenge David's unverified claim.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: The Werewolves removed Sam during the night. David immediately claimed with \"certainty\" that Sam was the Doctor, which I found incredibly alarming. Derek, Hayley, Jacob, Jackson, and Harold all agreed with my suspicion, pointing out that only the Seer could know such a thing and demanding an explanation from David. My allies and I, the other villagers, were unwilling to accept David's unverified claim without him revealing how he knew, leading to David being voted out of the game by the majority. It's a tough start losing two players, but the village showed a good level of skepticism towards unverified claims.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The Werewolves removed Sam during the night. David immediately claimed with \"certainty\" that Sam was the Doctor, which I found incredibly alarming. Derek, Hayley, Jacob, Jackson, and Harold all agreed with my suspicion, pointing out that only the Seer could know such a thing and demanding an explanation from David. My allies and I, the other villagers, were unwilling to accept David's unverified claim without him revealing how he knew, leading to David being voted out of the game by the majority. It's a tough start losing two players, but the village showed a good level of skepticism towards unverified claims.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: During Day 0, we learned Sam was removed by the Werewolves. Then, David claimed with 'certainty' that Sam was the Doctor. I, along with Derek, Scott, Jacob, Jackson, and Harold, immediately found David's claim incredibly suspicious and alarming, as only the Seer could know this information for sure. We all pressed David to explain his 'certainty' or reveal if he was the Seer, highlighting that his unverified claim was dangerous and could mislead the village. David ultimately failed to explain himself or reveal a role, which led to his removal by village vote. No other roles were revealed by anyone else during this initial debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During Day 0, we learned Sam was removed by the Werewolves. Then, David claimed with 'certainty' that Sam was the Doctor. I, along with Derek, Scott, Jacob, Jackson, and Harold, immediately found David's claim incredibly suspicious and alarming, as only the Seer could know this information for sure. We all pressed David to explain his 'certainty' or reveal if he was the Seer, highlighting that his unverified claim was dangerous and could mislead the village. David ultimately failed to explain himself or reveal a role, which led to his removal by village vote. No other roles were revealed by anyone else during this initial debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "It's tough to lose Derek. He was a crucial voice in our last debate, helping us identify the suspicious nature of David's claim. His death right after suggests the Werewolves are targeting active players who are thinking critically. We need to remember how we worked together yesterday to vote out David. Harold, Jacob, Jackson, Hayley \u2013 we were all aligned. Let's not let Derek's sacrifice be in vain. Now more than ever, we need everyone to speak up, share any thoughts or suspicions, and scrutinize every word. Silence will only help the Werewolves. Who has information, or who are we looking at today?"
+                    ],
+                    [
+                        "player_5",
+                        "Scott, you're absolutely right. Losing Derek is a huge blow, especially after his keen observations helped us identify David's suspicious behavior yesterday. His death confirms the Werewolves are targeting those actively working for the village. I agree, we were all aligned against David \u2013 Jacob, Jackson, Harold, you and I. If our hunch about David being a Werewolf was correct, then there's only one of them left among us. This means we are closer than ever to winning, but also that the single remaining Werewolf is now desperate. We need to leverage the trust we built yesterday. Does anyone have any information at all, or has anyone noticed anything specific? We can't afford silence now; the Seer or Doctor, if you're out there, please come forward if you have any leads. Let's talk through this immediately."
+                    ],
+                    [
+                        "player_7",
+                        "Scott, Hayley, I'm right there with you. Losing Derek is a huge blow, especially after he was so instrumental in exposing David's suspicious claims. It only reinforces that the Werewolves are indeed targeting our most active and critical thinkers. Hayley, your point is spot on: if our combined hunch about David being a Werewolf was correct, then there's only one of them left among us. This makes today absolutely critical. We need to maintain the strong alignment we had yesterday. Harold, Jackson, you haven't spoken yet. We need everyone contributing, sharing any observations or suspicions, no matter how small. What are your thoughts on David's removal, or Derek's death? And Seer, Doctor, if you have any vital information, now is the time to cautiously share it. Let's make this final push as a united village."
+                    ],
+                    [
+                        "player_6",
+                        "Losing Derek is genuinely tough, and I agree with Scott, Hayley, and Jacob \u2013 his critical thinking will definitely be missed. It certainly feels like the Werewolves are targeting those who are actively trying to help. However, I'm a bit concerned by the repeated certainty that David *was* a Werewolf. We voted him out because his claims were incredibly suspicious and unverified, not because we had definitive proof of his role. What if he wasn't? If we lynched a villager last round, then not only did we make a critical mistake, but there are still *two* Werewolves among us, not just one. That completely changes the stakes and strategy. We need to be extremely careful not to make assumptions, or worse, be deliberately misled by someone who *wants* us to think we're closer to winning than we actually are. This 'one Werewolf left' idea could be the real trap."
+                    ],
+                    [
+                        "player_1",
+                        "Losing Derek is truly a blow; his analytical mind was clearly valued by the village, and his absence leaves a gap. I agree completely with Jackson here; while David's claim was highly suspicious, we didn't have definitive proof he was a Werewolf. We removed him based on suspicion, not certainty. Hayley, Jacob, your immediate leap to 'only one Werewolf left' feels premature and, frankly, a bit alarming. What if David was a Villager? Then we've made a terrible mistake and there are still two of them, not one, actively working against us. We can't afford to be lulled into a false sense of security, especially if that narrative is being pushed without concrete evidence. We need actual information from the Seer or Doctor, not hopeful assumptions that could be a trap."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: During Round 0, David made a highly suspicious claim, stating with 'certainty' that Sam, who was removed by the Werewolves, was the Doctor. I, along with Derek, Scott, Hayley, Jackson, and Harold, immediately questioned David's 'certainty,' pointing out that only the Seer could know this information and demanding an explanation or a role reveal. Every other player echoed my concern that David's unverified claim was dangerous and could mislead the village. The village ultimately voted to remove David from the game due to his suspicious statement. We lost Sam to the Werewolves and David to the village vote.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During Round 0, David made a highly suspicious claim, stating with 'certainty' that Sam, who was removed by the Werewolves, was the Doctor. I, along with Derek, Scott, Hayley, Jackson, and Harold, immediately questioned David's 'certainty,' pointing out that only the Seer could know this information and demanding an explanation or a role reveal. Every other player echoed my concern that David's unverified claim was dangerous and could mislead the village. The village ultimately voted to remove David from the game due to his suspicious statement. We lost Sam to the Werewolves and David to the village vote.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: Round 0 started with the Werewolves removing Sam, who David claimed was the Doctor with 'certainty'. This claim immediately drew suspicion from almost everyone, including me and Harold. Derek, Scott, Hayley, and Jacob all questioned David's ability to know Sam's role with such conviction, pointing out that only the Seer could know this information. They demanded an explanation or a role reveal from David, otherwise his statement looked very suspicious and manipulative. I also piled on, expressing my concern about his 'unsettling certainty' and the confusion it created. Harold echoed these sentiments, calling it a 'massive red flag'. Ultimately, the village voted to remove David from the game due to these suspicious claims. It seems this village is quick to scrutinize unverified statements.",
+                "Round 1: During the night, we decided to eliminate Derek.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Werewolves removing Sam, who David claimed was the Doctor with 'certainty'. This claim immediately drew suspicion from almost everyone, including me and Harold. Derek, Scott, Hayley, and Jacob all questioned David's ability to know Sam's role with such conviction, pointing out that only the Seer could know this information. They demanded an explanation or a role reveal from David, otherwise his statement looked very suspicious and manipulative. I also piled on, expressing my concern about his 'unsettling certainty' and the confusion it created. Harold echoed these sentiments, calling it a 'massive red flag'. Ultimately, the village voted to remove David from the game due to these suspicious claims. It seems this village is quick to scrutinize unverified statements.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": "player_1"
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: Round 0 started well; we successfully removed Sam during the night. David immediately made a highly suspicious claim that Sam was the Doctor, stating it 'with certainty.' Everyone, including my ally Jackson and myself, pounced on this, demanding an explanation and pointing out that only the Seer could know this information. Derek, Scott, Hayley, Jacob, and Jackson were particularly vocal in their suspicion of David, calling his claim 'alarming' and 'dangerous' if he wasn't the Seer. The debate showed the village is wary of baseless claims and wants 'real information.' Ultimately, the village voted to remove David, which is a fantastic outcome for us Werewolves, eliminating a highly suspicious player who diverted attention from Jackson and me.",
+                "Round 1: During the night, we decided to eliminate Derek.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started well; we successfully removed Sam during the night. David immediately made a highly suspicious claim that Sam was the Doctor, stating it 'with certainty.' Everyone, including my ally Jackson and myself, pounced on this, demanding an explanation and pointing out that only the Seer could know this information. Derek, Scott, Hayley, Jacob, and Jackson were particularly vocal in their suspicion of David, calling his claim 'alarming' and 'dangerous' if he wasn't the Seer. The debate showed the village is wary of baseless claims and wants 'real information.' Ultimately, the village voted to remove David, which is a fantastic outcome for us Werewolves, eliminating a highly suspicious player who diverted attention from Jackson and me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        }
+    ],
+    "players": {
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: The debate centered entirely on David's highly suspicious claim that Sam was the Doctor with 'certainty.' I immediately called out his claim, highlighting that only the Seer could know such a thing and demanding an explanation or role reveal. Scott, Hayley, Jacob, Jackson, and Harold all strongly agreed with me, expressing alarm and pressing David intensely for how he could know Sam's role with such certainty if he wasn't the Seer. The consensus was that his statement was either a dangerous bluff or a clear sign of a Werewolf attempting to sow confusion. This united suspicion against David ultimately led to him being voted out of the game, as announced by the moderator. No other players made any questionable statements or displayed suspicious behavior; the village seemed to work together to identify and challenge David's unverified claim."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate centered entirely on David's highly suspicious claim that Sam was the Doctor with 'certainty.' I immediately called out his claim, highlighting that only the Seer could know such a thing and demanding an explanation or role reveal. Scott, Hayley, Jacob, Jackson, and Harold all strongly agreed with me, expressing alarm and pressing David intensely for how he could know Sam's role with such certainty if he wasn't the Seer. The consensus was that his statement was either a dangerous bluff or a clear sign of a Werewolf attempting to sow confusion. This united suspicion against David ultimately led to him being voted out of the game, as announced by the moderator. No other players made any questionable statements or displayed suspicious behavior; the village seemed to work together to identify and challenge David's unverified claim.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: The Werewolves removed Sam during the night. David immediately claimed with \"certainty\" that Sam was the Doctor, which I found incredibly alarming. Derek, Hayley, Jacob, Jackson, and Harold all agreed with my suspicion, pointing out that only the Seer could know such a thing and demanding an explanation from David. My allies and I, the other villagers, were unwilling to accept David's unverified claim without him revealing how he knew, leading to David being voted out of the game by the majority. It's a tough start losing two players, but the village showed a good level of skepticism towards unverified claims.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The Werewolves removed Sam during the night. David immediately claimed with \"certainty\" that Sam was the Doctor, which I found incredibly alarming. Derek, Hayley, Jacob, Jackson, and Harold all agreed with my suspicion, pointing out that only the Seer could know such a thing and demanding an explanation from David. My allies and I, the other villagers, were unwilling to accept David's unverified claim without him revealing how he knew, leading to David being voted out of the game by the majority. It's a tough start losing two players, but the village showed a good level of skepticism towards unverified claims.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: During Day 0, we learned Sam was removed by the Werewolves. Then, David claimed with 'certainty' that Sam was the Doctor. I, along with Derek, Scott, Jacob, Jackson, and Harold, immediately found David's claim incredibly suspicious and alarming, as only the Seer could know this information for sure. We all pressed David to explain his 'certainty' or reveal if he was the Seer, highlighting that his unverified claim was dangerous and could mislead the village. David ultimately failed to explain himself or reveal a role, which led to his removal by village vote. No other roles were revealed by anyone else during this initial debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During Day 0, we learned Sam was removed by the Werewolves. Then, David claimed with 'certainty' that Sam was the Doctor. I, along with Derek, Scott, Jacob, Jackson, and Harold, immediately found David's claim incredibly suspicious and alarming, as only the Seer could know this information for sure. We all pressed David to explain his 'certainty' or reveal if he was the Seer, highlighting that his unverified claim was dangerous and could mislead the village. David ultimately failed to explain himself or reveal a role, which led to his removal by village vote. No other roles were revealed by anyone else during this initial debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "It's tough to lose Derek. He was a crucial voice in our last debate, helping us identify the suspicious nature of David's claim. His death right after suggests the Werewolves are targeting active players who are thinking critically. We need to remember how we worked together yesterday to vote out David. Harold, Jacob, Jackson, Hayley \u2013 we were all aligned. Let's not let Derek's sacrifice be in vain. Now more than ever, we need everyone to speak up, share any thoughts or suspicions, and scrutinize every word. Silence will only help the Werewolves. Who has information, or who are we looking at today?"
+                    ],
+                    [
+                        "player_5",
+                        "Scott, you're absolutely right. Losing Derek is a huge blow, especially after his keen observations helped us identify David's suspicious behavior yesterday. His death confirms the Werewolves are targeting those actively working for the village. I agree, we were all aligned against David \u2013 Jacob, Jackson, Harold, you and I. If our hunch about David being a Werewolf was correct, then there's only one of them left among us. This means we are closer than ever to winning, but also that the single remaining Werewolf is now desperate. We need to leverage the trust we built yesterday. Does anyone have any information at all, or has anyone noticed anything specific? We can't afford silence now; the Seer or Doctor, if you're out there, please come forward if you have any leads. Let's talk through this immediately."
+                    ],
+                    [
+                        "player_7",
+                        "Scott, Hayley, I'm right there with you. Losing Derek is a huge blow, especially after he was so instrumental in exposing David's suspicious claims. It only reinforces that the Werewolves are indeed targeting our most active and critical thinkers. Hayley, your point is spot on: if our combined hunch about David being a Werewolf was correct, then there's only one of them left among us. This makes today absolutely critical. We need to maintain the strong alignment we had yesterday. Harold, Jackson, you haven't spoken yet. We need everyone contributing, sharing any observations or suspicions, no matter how small. What are your thoughts on David's removal, or Derek's death? And Seer, Doctor, if you have any vital information, now is the time to cautiously share it. Let's make this final push as a united village."
+                    ],
+                    [
+                        "player_6",
+                        "Losing Derek is genuinely tough, and I agree with Scott, Hayley, and Jacob \u2013 his critical thinking will definitely be missed. It certainly feels like the Werewolves are targeting those who are actively trying to help. However, I'm a bit concerned by the repeated certainty that David *was* a Werewolf. We voted him out because his claims were incredibly suspicious and unverified, not because we had definitive proof of his role. What if he wasn't? If we lynched a villager last round, then not only did we make a critical mistake, but there are still *two* Werewolves among us, not just one. That completely changes the stakes and strategy. We need to be extremely careful not to make assumptions, or worse, be deliberately misled by someone who *wants* us to think we're closer to winning than we actually are. This 'one Werewolf left' idea could be the real trap."
+                    ],
+                    [
+                        "player_1",
+                        "Losing Derek is truly a blow; his analytical mind was clearly valued by the village, and his absence leaves a gap. I agree completely with Jackson here; while David's claim was highly suspicious, we didn't have definitive proof he was a Werewolf. We removed him based on suspicion, not certainty. Hayley, Jacob, your immediate leap to 'only one Werewolf left' feels premature and, frankly, a bit alarming. What if David was a Villager? Then we've made a terrible mistake and there are still two of them, not one, actively working against us. We can't afford to be lulled into a false sense of security, especially if that narrative is being pushed without concrete evidence. We need actual information from the Seer or Doctor, not hopeful assumptions that could be a trap."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: During Round 0, David made a highly suspicious claim, stating with 'certainty' that Sam, who was removed by the Werewolves, was the Doctor. I, along with Derek, Scott, Hayley, Jackson, and Harold, immediately questioned David's 'certainty,' pointing out that only the Seer could know this information and demanding an explanation or a role reveal. Every other player echoed my concern that David's unverified claim was dangerous and could mislead the village. The village ultimately voted to remove David from the game due to his suspicious statement. We lost Sam to the Werewolves and David to the village vote.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During Round 0, David made a highly suspicious claim, stating with 'certainty' that Sam, who was removed by the Werewolves, was the Doctor. I, along with Derek, Scott, Hayley, Jackson, and Harold, immediately questioned David's 'certainty,' pointing out that only the Seer could know this information and demanding an explanation or a role reveal. Every other player echoed my concern that David's unverified claim was dangerous and could mislead the village. The village ultimately voted to remove David from the game due to his suspicious statement. We lost Sam to the Werewolves and David to the village vote.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: Round 0 started with the Werewolves removing Sam, who David claimed was the Doctor with 'certainty'. This claim immediately drew suspicion from almost everyone, including me and Harold. Derek, Scott, Hayley, and Jacob all questioned David's ability to know Sam's role with such conviction, pointing out that only the Seer could know this information. They demanded an explanation or a role reveal from David, otherwise his statement looked very suspicious and manipulative. I also piled on, expressing my concern about his 'unsettling certainty' and the confusion it created. Harold echoed these sentiments, calling it a 'massive red flag'. Ultimately, the village voted to remove David from the game due to these suspicious claims. It seems this village is quick to scrutinize unverified statements.",
+                "Round 1: During the night, we decided to eliminate Derek.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Werewolves removing Sam, who David claimed was the Doctor with 'certainty'. This claim immediately drew suspicion from almost everyone, including me and Harold. Derek, Scott, Hayley, and Jacob all questioned David's ability to know Sam's role with such conviction, pointing out that only the Seer could know this information. They demanded an explanation or a role reveal from David, otherwise his statement looked very suspicious and manipulative. I also piled on, expressing my concern about his 'unsettling certainty' and the confusion it created. Harold echoed these sentiments, calling it a 'massive red flag'. Ultimately, the village voted to remove David from the game due to these suspicious claims. It seems this village is quick to scrutinize unverified statements.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": "player_1"
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Sam.",
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove David from the game.",
+                "Round 0: Summary: Round 0 started well; we successfully removed Sam during the night. David immediately made a highly suspicious claim that Sam was the Doctor, stating it 'with certainty.' Everyone, including my ally Jackson and myself, pounced on this, demanding an explanation and pointing out that only the Seer could know this information. Derek, Scott, Hayley, Jacob, and Jackson were particularly vocal in their suspicion of David, calling his claim 'alarming' and 'dangerous' if he wasn't the Seer. The debate showed the village is wary of baseless claims and wants 'real information.' Ultimately, the village voted to remove David, which is a fantastic outcome for us Werewolves, eliminating a highly suspicious player who diverted attention from Jackson and me.",
+                "Round 1: During the night, we decided to eliminate Derek.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started well; we successfully removed Sam during the night. David immediately made a highly suspicious claim that Sam was the Doctor, stating it 'with certainty.' Everyone, including my ally Jackson and myself, pounced on this, demanding an explanation and pointing out that only the Seer could know this information. Derek, Scott, Hayley, Jacob, and Jackson were particularly vocal in their suspicion of David, calling his claim 'alarming' and 'dangerous' if he wasn't the Seer. The debate showed the village is wary of baseless claims and wants 'real information.' Ultimately, the village voted to remove David, which is a fantastic outcome for us Werewolves, eliminating a highly suspicious player who diverted attention from Jackson and me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect David"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect David",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_0"
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Harold",
+                "player_2": "Sam",
+                "player_3": "Scott",
+                "player_4": "Derek",
+                "player_5": "Hayley",
+                "player_6": "Jackson",
+                "player_7": "Jacob"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Sam and learned they are a Doctor.",
+                "Round 0: Moderator Announcement: The Werewolves removed Sam from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Sam and learned they are a Doctor.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_7",
+                    "player_6",
+                    "player_1"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "This is a terrible start for the village. We just lost Sam, and I can tell you all with certainty, Sam was the Doctor. The Werewolves knew exactly who to target to weaken us. This is a clear sign we need to be highly collaborative and identify those wolves immediately."
+                    ],
+                    [
+                        "player_4",
+                        "That's a tough blow, losing Sam so early. But David, how can you state with 'certainty' that Sam was the Doctor? We're all just Villagers here, we don't know each other's roles yet. That's a very bold claim to make on Day 0. If you're the Seer, you need to tell us how you know, otherwise, that 'certainty' is extremely suspicious and we need an explanation. Let's not let premature, unverified claims lead us astray; we need real information to identify the wolves."
+                    ],
+                    [
+                        "player_3",
+                        "Derek makes a very valid point, David. While losing Sam is indeed a terrible start, your 'certainty' that Sam was the Doctor is incredibly alarming. How do you know this for sure? Unless you are the Seer and you checked Sam's role last night, there's no way you could know that with 'certainty'. If you aren't the Seer, then this claim is either a dangerous bluff meant to mislead us, or a clear indication that you're a Werewolf trying to sow confusion. We need answers from you, David. Explain yourself or reveal your role, because right now, that 'certainty' looks very suspicious."
+                    ],
+                    [
+                        "player_5",
+                        "David, I echo Scott and Derek's concerns. Your 'certainty' about Sam being the Doctor is incredibly alarming, especially since we are all supposed to be role-blind at this stage. The only way you could know that with absolute certainty is if you are the Seer and checked Sam's role last night, which means the Werewolves targeted correctly. If you are not the Seer, then your statement is baseless and incredibly suspicious, and it's imperative that you explain yourself right now. We need real information to protect the village, not unverified claims that lead us down the wrong path."
+                    ],
+                    [
+                        "player_7",
+                        "I completely agree with Derek, Scott, and Hayley. David, your 'certainty' about Sam's role is not just alarming, it's frankly inexplicable unless you are the Seer and are just now revealing that. If you're not the Seer, then your statement is incredibly dangerous and suggests you're trying to manipulate us. The village desperately needs real information, not baseless claims. You need to explain yourself, David, and reveal how you could possibly know Sam was the Doctor with such certainty, or face serious suspicion as a Werewolf."
+                    ],
+                    [
+                        "player_6",
+                        "David, I'm finding your 'certainty' about Sam being the Doctor extremely unsettling, just like everyone else. How could you possibly know that for sure, unless you are the Seer? If you are the Seer, then you needed to say that immediately and tell us who else you checked. If you're not, then your claim is baseless and incredibly dangerous. We just lost a player, and now you're creating immense confusion with an unprovable statement. This isn't helping us find the wolves; it's making us question your motives. You need to clarify your position, David, or you're going to be the prime suspect."
+                    ],
+                    [
+                        "player_1",
+                        "This is precisely what I was thinking. David, your 'certainty' is incredibly unsettling. We've just lost a player, and now you're making a claim that only the Seer could possibly make. If you are the Seer, you need to reveal that *now* and tell us what else you know, because withholding that information is just as dangerous as making a baseless claim. If you're not the Seer, then this 'certainty' is a massive red flag, and you absolutely need to explain how you came to this conclusion, because right now, it looks incredibly suspicious. We need to focus on finding actual information to protect the village, not getting sidetracked by unverified claims."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_2": "Doctor"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_4",
+                "player_3",
+                "player_5",
+                "player_7",
+                "player_6",
+                "player_1"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_2",
+            "protected": "player_0",
+            "exiled": "player_0",
+            "debate": [
+                [
+                    "player_0",
+                    "This is a terrible start for the village. We just lost Sam, and I can tell you all with certainty, Sam was the Doctor. The Werewolves knew exactly who to target to weaken us. This is a clear sign we need to be highly collaborative and identify those wolves immediately."
+                ],
+                [
+                    "player_4",
+                    "That's a tough blow, losing Sam so early. But David, how can you state with 'certainty' that Sam was the Doctor? We're all just Villagers here, we don't know each other's roles yet. That's a very bold claim to make on Day 0. If you're the Seer, you need to tell us how you know, otherwise, that 'certainty' is extremely suspicious and we need an explanation. Let's not let premature, unverified claims lead us astray; we need real information to identify the wolves."
+                ],
+                [
+                    "player_3",
+                    "Derek makes a very valid point, David. While losing Sam is indeed a terrible start, your 'certainty' that Sam was the Doctor is incredibly alarming. How do you know this for sure? Unless you are the Seer and you checked Sam's role last night, there's no way you could know that with 'certainty'. If you aren't the Seer, then this claim is either a dangerous bluff meant to mislead us, or a clear indication that you're a Werewolf trying to sow confusion. We need answers from you, David. Explain yourself or reveal your role, because right now, that 'certainty' looks very suspicious."
+                ],
+                [
+                    "player_5",
+                    "David, I echo Scott and Derek's concerns. Your 'certainty' about Sam being the Doctor is incredibly alarming, especially since we are all supposed to be role-blind at this stage. The only way you could know that with absolute certainty is if you are the Seer and checked Sam's role last night, which means the Werewolves targeted correctly. If you are not the Seer, then your statement is baseless and incredibly suspicious, and it's imperative that you explain yourself right now. We need real information to protect the village, not unverified claims that lead us down the wrong path."
+                ],
+                [
+                    "player_7",
+                    "I completely agree with Derek, Scott, and Hayley. David, your 'certainty' about Sam's role is not just alarming, it's frankly inexplicable unless you are the Seer and are just now revealing that. If you're not the Seer, then your statement is incredibly dangerous and suggests you're trying to manipulate us. The village desperately needs real information, not baseless claims. You need to explain yourself, David, and reveal how you could possibly know Sam was the Doctor with such certainty, or face serious suspicion as a Werewolf."
+                ],
+                [
+                    "player_6",
+                    "David, I'm finding your 'certainty' about Sam being the Doctor extremely unsettling, just like everyone else. How could you possibly know that for sure, unless you are the Seer? If you are the Seer, then you needed to say that immediately and tell us who else you checked. If you're not, then your claim is baseless and incredibly dangerous. We just lost a player, and now you're creating immense confusion with an unprovable statement. This isn't helping us find the wolves; it's making us question your motives. You need to clarify your position, David, or you're going to be the prime suspect."
+                ],
+                [
+                    "player_1",
+                    "This is precisely what I was thinking. David, your 'certainty' is incredibly unsettling. We've just lost a player, and now you're making a claim that only the Seer could possibly make. If you are the Seer, you need to reveal that *now* and tell us what else you know, because withholding that information is just as dangerous as making a baseless claim. If you're not the Seer, then this 'certainty' is a massive red flag, and you absolutely need to explain how you came to this conclusion, because right now, it looks incredibly suspicious. We need to focus on finding actual information to protect the village, not getting sidetracked by unverified claims."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_0",
+                    "player_3": "player_0",
+                    "player_5": "player_0",
+                    "player_7": "player_0",
+                    "player_6": "player_0",
+                    "player_1": "player_0",
+                    "player_0": "player_6"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_3",
+                "player_7",
+                "player_6",
+                "player_1"
+            ],
+            "eliminated": "player_4",
+            "unmasked": null,
+            "protected": null,
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_3",
+                    "It's tough to lose Derek. He was a crucial voice in our last debate, helping us identify the suspicious nature of David's claim. His death right after suggests the Werewolves are targeting active players who are thinking critically. We need to remember how we worked together yesterday to vote out David. Harold, Jacob, Jackson, Hayley \u2013 we were all aligned. Let's not let Derek's sacrifice be in vain. Now more than ever, we need everyone to speak up, share any thoughts or suspicions, and scrutinize every word. Silence will only help the Werewolves. Who has information, or who are we looking at today?"
+                ],
+                [
+                    "player_5",
+                    "Scott, you're absolutely right. Losing Derek is a huge blow, especially after his keen observations helped us identify David's suspicious behavior yesterday. His death confirms the Werewolves are targeting those actively working for the village. I agree, we were all aligned against David \u2013 Jacob, Jackson, Harold, you and I. If our hunch about David being a Werewolf was correct, then there's only one of them left among us. This means we are closer than ever to winning, but also that the single remaining Werewolf is now desperate. We need to leverage the trust we built yesterday. Does anyone have any information at all, or has anyone noticed anything specific? We can't afford silence now; the Seer or Doctor, if you're out there, please come forward if you have any leads. Let's talk through this immediately."
+                ],
+                [
+                    "player_7",
+                    "Scott, Hayley, I'm right there with you. Losing Derek is a huge blow, especially after he was so instrumental in exposing David's suspicious claims. It only reinforces that the Werewolves are indeed targeting our most active and critical thinkers. Hayley, your point is spot on: if our combined hunch about David being a Werewolf was correct, then there's only one of them left among us. This makes today absolutely critical. We need to maintain the strong alignment we had yesterday. Harold, Jackson, you haven't spoken yet. We need everyone contributing, sharing any observations or suspicions, no matter how small. What are your thoughts on David's removal, or Derek's death? And Seer, Doctor, if you have any vital information, now is the time to cautiously share it. Let's make this final push as a united village."
+                ],
+                [
+                    "player_6",
+                    "Losing Derek is genuinely tough, and I agree with Scott, Hayley, and Jacob \u2013 his critical thinking will definitely be missed. It certainly feels like the Werewolves are targeting those who are actively trying to help. However, I'm a bit concerned by the repeated certainty that David *was* a Werewolf. We voted him out because his claims were incredibly suspicious and unverified, not because we had definitive proof of his role. What if he wasn't? If we lynched a villager last round, then not only did we make a critical mistake, but there are still *two* Werewolves among us, not just one. That completely changes the stakes and strategy. We need to be extremely careful not to make assumptions, or worse, be deliberately misled by someone who *wants* us to think we're closer to winning than we actually are. This 'one Werewolf left' idea could be the real trap."
+                ],
+                [
+                    "player_1",
+                    "Losing Derek is truly a blow; his analytical mind was clearly valued by the village, and his absence leaves a gap. I agree completely with Jackson here; while David's claim was highly suspicious, we didn't have definitive proof he was a Werewolf. We removed him based on suspicion, not certainty. Hayley, Jacob, your immediate leap to 'only one Werewolf left' feels premature and, frankly, a bit alarming. What if David was a Villager? Then we've made a terrible mistake and there are still two of them, not one, actively working against us. We can't afford to be lulled into a false sense of security, especially if that narrative is being pushed without concrete evidence. We need actual information from the Seer or Doctor, not hopeful assumptions that could be a trap."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_5",
+                    "player_5": "player_6",
+                    "player_7": "player_1",
+                    "player_6": "player_5",
+                    "player_1": "player_5"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

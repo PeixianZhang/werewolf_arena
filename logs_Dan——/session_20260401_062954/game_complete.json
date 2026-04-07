@@ -1,0 +1,1211 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_1",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "David",
+            "player_1": "Sam",
+            "player_2": "Scott",
+            "player_3": "Dan",
+            "player_4": "Harold",
+            "player_5": "Hayley",
+            "player_6": "Jacob",
+            "player_7": "Jackson"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Dan and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+            "Round 0: Summary: I, Sam the Seer, started the round by confirming Dan as a Villager. Sadly, Hayley was removed by the Werewolves during the night. Dan, Harold, Jackson, and Jacob acknowledged my claim and the importance of Dan's confirmation, though they rightly stressed continued vigilance. David expressed more caution, warning against 'tunnel-visioning' on my claim and emphasizing the need to consider other suspicions. Scott, who echoed David's skepticism, was voted out during the day. This leaves David as the most openly cautious player about my Seer claim among the survivors, which I will keep in mind. I now have a confirmed Villager in Dan.",
+            "Round 1: During the night, I decided to investigate David and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Dan and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: I, Sam the Seer, started the round by confirming Dan as a Villager. Sadly, Hayley was removed by the Werewolves during the night. Dan, Harold, Jackson, and Jacob acknowledged my claim and the importance of Dan's confirmation, though they rightly stressed continued vigilance. David expressed more caution, warning against 'tunnel-visioning' on my claim and emphasizing the need to consider other suspicions. Scott, who echoed David's skepticism, was voted out during the day. This leaves David as the most openly cautious player about my Seer claim among the survivors, which I will keep in mind. I now have a confirmed Villager in Dan.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate David and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_4",
+                "player_3",
+                "player_7",
+                "player_6"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_3": "Villager",
+            "player_0": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_5",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "David",
+            "player_1": "Sam",
+            "player_2": "Scott",
+            "player_3": "Dan",
+            "player_4": "Harold",
+            "player_5": "Hayley",
+            "player_6": "Jacob",
+            "player_7": "Jackson"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Dan"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Dan",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_4",
+                "player_3",
+                "player_7",
+                "player_6"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_3"
+    },
+    "villagers": [
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: In Round 0, Hayley was removed by the Werewolves. Sam immediately claimed to be the Seer and announced that they investigated Dan, confirming Dan as a Villager. Dan expressed great relief and gratitude, while Jackson and Jacob generally supported using this information as a starting point, albeit with caveats about confirming Sam's role. I also thanked Sam but urged caution. David and Scott, however, were notably more skeptical, warning against tunnel vision and considering the possibility of a deceptive claim. Scott's strong skepticism particularly stands out, as he was subsequently voted out by the majority. This means the village either trusted Sam and removed a disruptive voice, or a Werewolf was removed, or a Villager was removed for being too critical.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: In Round 0, Hayley was removed by the Werewolves. Sam immediately claimed to be the Seer and announced that they investigated Dan, confirming Dan as a Villager. Dan expressed great relief and gratitude, while Jackson and Jacob generally supported using this information as a starting point, albeit with caveats about confirming Sam's role. I also thanked Sam but urged caution. David and Scott, however, were notably more skeptical, warning against tunnel vision and considering the possibility of a deceptive claim. Scott's strong skepticism particularly stands out, as he was subsequently voted out by the majority. This means the village either trusted Sam and removed a disruptive voice, or a Werewolf was removed, or a Villager was removed for being too critical.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: Round 0 started grimly with Hayley removed by the Werewolves. During the debate, Sam claimed Seer and confirmed me as a Villager, which was a huge relief and a strong starting point for the village. Harold, Jackson, and Jacob generally accepted this information, though they reminded us to stay vigilant. David and Scott were both more skeptical, urging everyone not to focus solely on Sam's claim and to seek other suspicions. Ultimately, the village voted to remove Scott from the game. This means we lost two players in Round 0, leaving six of us remaining.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started grimly with Hayley removed by the Werewolves. During the debate, Sam claimed Seer and confirmed me as a Villager, which was a huge relief and a strong starting point for the village. Harold, Jackson, and Jacob generally accepted this information, though they reminded us to stay vigilant. David and Scott were both more skeptical, urging everyone not to focus solely on Sam's claim and to seek other suspicions. Ultimately, the village voted to remove Scott from the game. This means we lost two players in Round 0, leaving six of us remaining.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: This round began with the tragic news of Hayley's removal by the Werewolves. Sam quickly claimed to be the Seer, stating he investigated Dan and found him to be a Villager. I, along with Harold and Jacob, expressed cautious support for Sam's claim, acknowledging its value if genuine, and Dan showed clear relief at his confirmation. David and Scott, however, voiced more skepticism, warning against tunnel vision and the possibility of a deceptive claim. It's now confirmed that Scott was removed by the majority vote, which makes his earlier skepticism about Sam's claim seem potentially more significant, possibly indicating he was a Werewolf trying to sow doubt, or a Villager whose intentions were misjudged. With both Hayley and Scott gone, we now have six players remaining.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the tragic news of Hayley's removal by the Werewolves. Sam quickly claimed to be the Seer, stating he investigated Dan and found him to be a Villager. I, along with Harold and Jacob, expressed cautious support for Sam's claim, acknowledging its value if genuine, and Dan showed clear relief at his confirmation. David and Scott, however, voiced more skepticism, warning against tunnel vision and the possibility of a deceptive claim. It's now confirmed that Scott was removed by the majority vote, which makes his earlier skepticism about Sam's claim seem potentially more significant, possibly indicating he was a Werewolf trying to sow doubt, or a Villager whose intentions were misjudged. With both Hayley and Scott gone, we now have six players remaining.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: Round 0 started tragically with Hayley being removed by the Werewolves during the night, followed by Scott being voted out by the majority during the day. Sam claimed to be the Seer and stated they investigated Dan, confirming him as a Villager. Harold, Dan, Jackson, and I acknowledged this information as a crucial starting point, though we all stressed the need for vigilance and that the claim needed to be genuine. Dan, in particular, was grateful for the confirmation of his Villager status. David and Scott, however, expressed strong skepticism, warning against tunnel vision and the possibility of a deceptive claim, urging us to look for other suspicions. Scott's removal makes his final statements particularly noteworthy now.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started tragically with Hayley being removed by the Werewolves during the night, followed by Scott being voted out by the majority during the day. Sam claimed to be the Seer and stated they investigated Dan, confirming him as a Villager. Harold, Dan, Jackson, and I acknowledged this information as a crucial starting point, though we all stressed the need for vigilance and that the claim needed to be genuine. Dan, in particular, was grateful for the confirmation of his Villager status. David and Scott, however, expressed strong skepticism, warning against tunnel vision and the possibility of a deceptive claim, urging us to look for other suspicions. Scott's removal makes his final statements particularly noteworthy now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Hayley.",
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: Hayley was removed from the game, which was my initial action with Scott. The debate quickly focused on Sam, who claimed to be the Seer and identified Dan as a Villager. Dan confirmed this, and most other players like Harold, Jackson, and Jacob seemed to readily accept this information, expressing relief at a confirmed Villager. Scott and I tried to sow caution, arguing against tunnel vision and asking for other suspicions, but it wasn't enough. Ultimately, the village voted to exile Scott, leaving me as the sole Werewolf. This means Sam is my immediate biggest threat as a claimed Seer, and I must find a way to eliminate them without revealing myself. The trust established between Sam and Dan, and their acceptance by players like Harold, Jackson, and Jacob, makes my position very precarious.",
+                "Round 1: During the night, I decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Hayley.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Hayley was removed from the game, which was my initial action with Scott. The debate quickly focused on Sam, who claimed to be the Seer and identified Dan as a Villager. Dan confirmed this, and most other players like Harold, Jackson, and Jacob seemed to readily accept this information, expressing relief at a confirmed Villager. Scott and I tried to sow caution, arguing against tunnel vision and asking for other suspicions, but it wasn't enough. Ultimately, the village voted to exile Scott, leaving me as the sole Werewolf. This means Sam is my immediate biggest threat as a claimed Seer, and I must find a way to eliminate them without revealing myself. The trust established between Sam and Dan, and their acceptance by players like Harold, Jackson, and Jacob, makes my position very precarious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "Friends, Sam's death last night is devastating, but it also tells us something crucial: Sam was our Seer, and Dan is definitively a Villager. The Werewolves took out Sam because he was a threat. This makes Scott's strong skepticism in Round 0, right before we voted him out, incredibly suspicious. He questioned the Seer, and then the Seer was killed. I'm willing to bet Scott was one of our Werewolves, and we did good to get him out. If so, we only have one Werewolf left. Doctor, now is the time to make yourself known so we can protect you and find our final target. What information do the rest of you have?"
+                    ],
+                    [
+                        "player_3",
+                        "Harold, I agree completely. Sam's sacrifice confirms he was our Seer and that his read on me as a Villager was accurate. This also means his death is a huge blow, but it does make Scott's skepticism last round look incredibly damning. It's very possible Scott was one of the Werewolves, and we did well to remove him. However, we need to be absolutely certain. If Scott was a Villager, then both Werewolves are still among us, and we are in a critical situation with only five players left. We must confirm this now. David, you also expressed strong skepticism about Sam's Seer claim last round, similar to Scott. Given Sam's death, that now looks very suspicious. What are your thoughts on this, and do you have any information for us? Regarding the Doctor, while I understand the impulse, we need to be very strategic. Let's get more information out first and try to pinpoint our remaining threat before exposing another vital role. What did everyone else observe?"
+                    ],
+                    [
+                        "player_7",
+                        "Harold and Dan, I agree completely. Sam's death provides strong, albeit tragic, confirmation that he was indeed our Seer, and consequently, Dan is a Villager. This immediately makes Scott's prior skepticism extremely suspicious, and it's a real possibility we removed a Werewolf. However, Dan's point about David's similar skepticism last round is now very critical. David, given that the Werewolves eliminated Sam, the very person you and Scott questioned, how do you explain your doubts now? We need to understand your perspective. Jacob, what are your thoughts on this? We can't afford any silence or ambiguity."
+                    ],
+                    [
+                        "player_6",
+                        "Friends, the tragic death of Sam speaks volumes. It's now overwhelmingly clear that Sam was our Seer, and Dan is definitively a Villager. This also makes Scott's skepticism last round, before we voted him out, incredibly suspicious. It strongly suggests we may have removed a Werewolf in Scott. However, Jackson and Dan are absolutely right to highlight David's similar skepticism towards Sam's Seer claim. David, with Sam now confirmed as our Seer and tragically murdered by the Werewolves, your earlier doubts stand out significantly. We need a clear explanation from you now. What was your basis for discrediting Sam, and what insights can you offer us now? I also agree with Dan; the Doctor should remain silent until we've pressed David for answers and gained more clarity."
+                    ],
+                    [
+                        "player_0",
+                        "Alright everyone, I understand completely why my skepticism last round, mirroring Scott's, now looks incredibly suspicious with Sam's tragic death. And I appreciate you all pressing me on it. My intention in Round 0 wasn't to discredit Sam, but rather to fulfill a crucial villager role: to rigorously question *any* new claim, especially a Seer, when information is scarce. We all know how easily a false claim can derail the village. Now, with Sam's death, it's easy to jump to the conclusion that he was definitively the Seer, and that his killers are now targeting those who doubted him, like myself. However, I urge us to consider this: what if this is precisely what the remaining Werewolf wants us to believe? They kill someone who made a significant claim, hoping we *assume* they were the Seer, and then perfectly frame those of us who, out of natural villager caution, asked for more proof. It would be a brilliant way to remove a genuinely cautious villager, like myself, and turn us against each other, while the real Werewolf goes unnoticed. If Scott *was* a Werewolf, then his skepticism had a malicious intent. My skepticism, however, was about ensuring we weren't being led astray. We need to avoid falling into a trap. Instead of fixating on past doubts, let's broaden our view. Jacob, Harold, Jackson, what was *your* immediate, unfiltered reaction to Sam's Seer claim in Round 0, before Dan's confirmation? Did you instantly believe him, or did you, like me, have any initial questions that perhaps you didn't voice as strongly? Let's ensure we're looking at all angles, not just the obvious one presented by a Werewolf's kill. And yes, Dan and Jacob are right, the Doctor should absolutely remain hidden until we've gained more clarity and identified a much clearer target."
+                    ]
+                ],
+                "other_wolf": "player_2"
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Hayley.",
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Hayley.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Alright everyone, the game has begun, and tragically, Hayley is our first casualty. I am Sam, the Seer. Last night, I investigated Dan, and I can confirm that Dan is a Villager. We now know for certain that Dan is on our side. Let's use this information to narrow down our suspects and vote carefully today. We need to work together to find the Werewolves before they claim more of us."
+                    ],
+                    [
+                        "player_4",
+                        "Thanks for sharing that, Sam. It's certainly a strong start to know Dan's alignment, assuming your role as Seer is genuine. Hayley's removal shows the Werewolves are already active, so we can't afford to be complacent. Let's use this information, but keep our eyes open. What does everyone else think? We need all voices to help us figure out who is truly on our side."
+                    ],
+                    [
+                        "player_3",
+                        "Thank you, Sam, for that early investigation and for confirming my role as a Villager. It's a huge relief to have a confirmed Villager in the game so early, and it gives us a solid starting point. Harold is right; we need to remain critical, but this piece of information is incredibly valuable. Now that we know for certain I am on the side of the Village, we can focus our attention on the remaining players. What have others observed, or who do you find suspicious among the others? We must work together to build on this lead and identify our first Werewolf."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly awful to start with Hayley's removal. Sam, thank you for stepping forward so quickly and for that investigation. Knowing Dan is a Villager, if your role as Seer is genuine, gives us a crucial starting point. Harold is right though; we must remain critical and not get complacent, as we don't have confirmation of roles beyond what's stated. Dan, it's good to know we have a confirmed Villager in you. Now, for everyone else, we need to hear from you. Who has suspicions, or other insights to share? Let's use this initial information to build our case and identify who our first target should be today."
+                    ],
+                    [
+                        "player_6",
+                        "It's truly heartbreaking to lose Hayley so early, and it shows the Werewolves are already striking. Sam, thank you for stepping forward so quickly with your Seer claim and for investigating Dan. Knowing Dan is a confirmed Villager, assuming your role is genuine, gives us a very solid starting point and a player we can trust immediately. Harold, Dan, and Jackson are right; we must remain vigilant. Now, we need to hear from everyone. David, Scott, what are your initial thoughts on this development? We need all voices active in this debate to piece together the truth and identify our first Werewolf today."
+                    ],
+                    [
+                        "player_0",
+                        "It's truly somber to start with Hayley's removal. Sam, your claim and the confirmation for Dan are certainly a *start*, and it's good to know we have one confirmed Villager. However, Jacob is right, we need to hear from everyone. While this information is valuable, we must also remember it's just one person's claim that we're all basing this trust on. We can't afford to be tunnel-visioned. My thought is we need to hear strong cases for suspicion on anyone *else*. Who among us do people find suspicious, or who hasn't been as clear in their intentions? We need to broaden our scope, not just focus on one data point, to truly find the Werewolves."
+                    ],
+                    [
+                        "player_2",
+                        "It's truly a grim start, losing Hayley. Sam, if your Seer claim is genuine, then knowing Dan is a Villager is indeed a crucial starting point. However, as David pointed out, we can't afford to get tunnel-visioned on just one piece of information, especially so early in the game. While it's valuable, we must also consider the possibility of a deceptive claim. Everyone has been quick to accept this, but what *other* suspicions are people holding? Who among us feels less certain? We need to hear more concrete thoughts and observations from *everyone*, not just agreement, to truly build a case and identify who the Werewolves might be. Let's not waste time assuming one claim is the whole truth."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        }
+    ],
+    "players": {
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: In Round 0, Hayley was removed by the Werewolves. Sam immediately claimed to be the Seer and announced that they investigated Dan, confirming Dan as a Villager. Dan expressed great relief and gratitude, while Jackson and Jacob generally supported using this information as a starting point, albeit with caveats about confirming Sam's role. I also thanked Sam but urged caution. David and Scott, however, were notably more skeptical, warning against tunnel vision and considering the possibility of a deceptive claim. Scott's strong skepticism particularly stands out, as he was subsequently voted out by the majority. This means the village either trusted Sam and removed a disruptive voice, or a Werewolf was removed, or a Villager was removed for being too critical.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: In Round 0, Hayley was removed by the Werewolves. Sam immediately claimed to be the Seer and announced that they investigated Dan, confirming Dan as a Villager. Dan expressed great relief and gratitude, while Jackson and Jacob generally supported using this information as a starting point, albeit with caveats about confirming Sam's role. I also thanked Sam but urged caution. David and Scott, however, were notably more skeptical, warning against tunnel vision and considering the possibility of a deceptive claim. Scott's strong skepticism particularly stands out, as he was subsequently voted out by the majority. This means the village either trusted Sam and removed a disruptive voice, or a Werewolf was removed, or a Villager was removed for being too critical.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: Round 0 started grimly with Hayley removed by the Werewolves. During the debate, Sam claimed Seer and confirmed me as a Villager, which was a huge relief and a strong starting point for the village. Harold, Jackson, and Jacob generally accepted this information, though they reminded us to stay vigilant. David and Scott were both more skeptical, urging everyone not to focus solely on Sam's claim and to seek other suspicions. Ultimately, the village voted to remove Scott from the game. This means we lost two players in Round 0, leaving six of us remaining.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started grimly with Hayley removed by the Werewolves. During the debate, Sam claimed Seer and confirmed me as a Villager, which was a huge relief and a strong starting point for the village. Harold, Jackson, and Jacob generally accepted this information, though they reminded us to stay vigilant. David and Scott were both more skeptical, urging everyone not to focus solely on Sam's claim and to seek other suspicions. Ultimately, the village voted to remove Scott from the game. This means we lost two players in Round 0, leaving six of us remaining.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: This round began with the tragic news of Hayley's removal by the Werewolves. Sam quickly claimed to be the Seer, stating he investigated Dan and found him to be a Villager. I, along with Harold and Jacob, expressed cautious support for Sam's claim, acknowledging its value if genuine, and Dan showed clear relief at his confirmation. David and Scott, however, voiced more skepticism, warning against tunnel vision and the possibility of a deceptive claim. It's now confirmed that Scott was removed by the majority vote, which makes his earlier skepticism about Sam's claim seem potentially more significant, possibly indicating he was a Werewolf trying to sow doubt, or a Villager whose intentions were misjudged. With both Hayley and Scott gone, we now have six players remaining.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the tragic news of Hayley's removal by the Werewolves. Sam quickly claimed to be the Seer, stating he investigated Dan and found him to be a Villager. I, along with Harold and Jacob, expressed cautious support for Sam's claim, acknowledging its value if genuine, and Dan showed clear relief at his confirmation. David and Scott, however, voiced more skepticism, warning against tunnel vision and the possibility of a deceptive claim. It's now confirmed that Scott was removed by the majority vote, which makes his earlier skepticism about Sam's claim seem potentially more significant, possibly indicating he was a Werewolf trying to sow doubt, or a Villager whose intentions were misjudged. With both Hayley and Scott gone, we now have six players remaining.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: Round 0 started tragically with Hayley being removed by the Werewolves during the night, followed by Scott being voted out by the majority during the day. Sam claimed to be the Seer and stated they investigated Dan, confirming him as a Villager. Harold, Dan, Jackson, and I acknowledged this information as a crucial starting point, though we all stressed the need for vigilance and that the claim needed to be genuine. Dan, in particular, was grateful for the confirmation of his Villager status. David and Scott, however, expressed strong skepticism, warning against tunnel vision and the possibility of a deceptive claim, urging us to look for other suspicions. Scott's removal makes his final statements particularly noteworthy now.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove David from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started tragically with Hayley being removed by the Werewolves during the night, followed by Scott being voted out by the majority during the day. Sam claimed to be the Seer and stated they investigated Dan, confirming him as a Villager. Harold, Dan, Jackson, and I acknowledged this information as a crucial starting point, though we all stressed the need for vigilance and that the claim needed to be genuine. Dan, in particular, was grateful for the confirmation of his Villager status. David and Scott, however, expressed strong skepticism, warning against tunnel vision and the possibility of a deceptive claim, urging us to look for other suspicions. Scott's removal makes his final statements particularly noteworthy now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove David from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Hayley.",
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: Hayley was removed from the game, which was my initial action with Scott. The debate quickly focused on Sam, who claimed to be the Seer and identified Dan as a Villager. Dan confirmed this, and most other players like Harold, Jackson, and Jacob seemed to readily accept this information, expressing relief at a confirmed Villager. Scott and I tried to sow caution, arguing against tunnel vision and asking for other suspicions, but it wasn't enough. Ultimately, the village voted to exile Scott, leaving me as the sole Werewolf. This means Sam is my immediate biggest threat as a claimed Seer, and I must find a way to eliminate them without revealing myself. The trust established between Sam and Dan, and their acceptance by players like Harold, Jackson, and Jacob, makes my position very precarious.",
+                "Round 1: During the night, I decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: The Werewolves removed Sam from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Hayley.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Hayley was removed from the game, which was my initial action with Scott. The debate quickly focused on Sam, who claimed to be the Seer and identified Dan as a Villager. Dan confirmed this, and most other players like Harold, Jackson, and Jacob seemed to readily accept this information, expressing relief at a confirmed Villager. Scott and I tried to sow caution, arguing against tunnel vision and asking for other suspicions, but it wasn't enough. Ultimately, the village voted to exile Scott, leaving me as the sole Werewolf. This means Sam is my immediate biggest threat as a claimed Seer, and I must find a way to eliminate them without revealing myself. The trust established between Sam and Dan, and their acceptance by players like Harold, Jackson, and Jacob, makes my position very precarious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Sam from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "Friends, Sam's death last night is devastating, but it also tells us something crucial: Sam was our Seer, and Dan is definitively a Villager. The Werewolves took out Sam because he was a threat. This makes Scott's strong skepticism in Round 0, right before we voted him out, incredibly suspicious. He questioned the Seer, and then the Seer was killed. I'm willing to bet Scott was one of our Werewolves, and we did good to get him out. If so, we only have one Werewolf left. Doctor, now is the time to make yourself known so we can protect you and find our final target. What information do the rest of you have?"
+                    ],
+                    [
+                        "player_3",
+                        "Harold, I agree completely. Sam's sacrifice confirms he was our Seer and that his read on me as a Villager was accurate. This also means his death is a huge blow, but it does make Scott's skepticism last round look incredibly damning. It's very possible Scott was one of the Werewolves, and we did well to remove him. However, we need to be absolutely certain. If Scott was a Villager, then both Werewolves are still among us, and we are in a critical situation with only five players left. We must confirm this now. David, you also expressed strong skepticism about Sam's Seer claim last round, similar to Scott. Given Sam's death, that now looks very suspicious. What are your thoughts on this, and do you have any information for us? Regarding the Doctor, while I understand the impulse, we need to be very strategic. Let's get more information out first and try to pinpoint our remaining threat before exposing another vital role. What did everyone else observe?"
+                    ],
+                    [
+                        "player_7",
+                        "Harold and Dan, I agree completely. Sam's death provides strong, albeit tragic, confirmation that he was indeed our Seer, and consequently, Dan is a Villager. This immediately makes Scott's prior skepticism extremely suspicious, and it's a real possibility we removed a Werewolf. However, Dan's point about David's similar skepticism last round is now very critical. David, given that the Werewolves eliminated Sam, the very person you and Scott questioned, how do you explain your doubts now? We need to understand your perspective. Jacob, what are your thoughts on this? We can't afford any silence or ambiguity."
+                    ],
+                    [
+                        "player_6",
+                        "Friends, the tragic death of Sam speaks volumes. It's now overwhelmingly clear that Sam was our Seer, and Dan is definitively a Villager. This also makes Scott's skepticism last round, before we voted him out, incredibly suspicious. It strongly suggests we may have removed a Werewolf in Scott. However, Jackson and Dan are absolutely right to highlight David's similar skepticism towards Sam's Seer claim. David, with Sam now confirmed as our Seer and tragically murdered by the Werewolves, your earlier doubts stand out significantly. We need a clear explanation from you now. What was your basis for discrediting Sam, and what insights can you offer us now? I also agree with Dan; the Doctor should remain silent until we've pressed David for answers and gained more clarity."
+                    ],
+                    [
+                        "player_0",
+                        "Alright everyone, I understand completely why my skepticism last round, mirroring Scott's, now looks incredibly suspicious with Sam's tragic death. And I appreciate you all pressing me on it. My intention in Round 0 wasn't to discredit Sam, but rather to fulfill a crucial villager role: to rigorously question *any* new claim, especially a Seer, when information is scarce. We all know how easily a false claim can derail the village. Now, with Sam's death, it's easy to jump to the conclusion that he was definitively the Seer, and that his killers are now targeting those who doubted him, like myself. However, I urge us to consider this: what if this is precisely what the remaining Werewolf wants us to believe? They kill someone who made a significant claim, hoping we *assume* they were the Seer, and then perfectly frame those of us who, out of natural villager caution, asked for more proof. It would be a brilliant way to remove a genuinely cautious villager, like myself, and turn us against each other, while the real Werewolf goes unnoticed. If Scott *was* a Werewolf, then his skepticism had a malicious intent. My skepticism, however, was about ensuring we weren't being led astray. We need to avoid falling into a trap. Instead of fixating on past doubts, let's broaden our view. Jacob, Harold, Jackson, what was *your* immediate, unfiltered reaction to Sam's Seer claim in Round 0, before Dan's confirmation? Did you instantly believe him, or did you, like me, have any initial questions that perhaps you didn't voice as strongly? Let's ensure we're looking at all angles, not just the obvious one presented by a Werewolf's kill. And yes, Dan and Jacob are right, the Doctor should absolutely remain hidden until we've gained more clarity and identified a much clearer target."
+                    ]
+                ],
+                "other_wolf": "player_2"
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Hayley.",
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Hayley.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Alright everyone, the game has begun, and tragically, Hayley is our first casualty. I am Sam, the Seer. Last night, I investigated Dan, and I can confirm that Dan is a Villager. We now know for certain that Dan is on our side. Let's use this information to narrow down our suspects and vote carefully today. We need to work together to find the Werewolves before they claim more of us."
+                    ],
+                    [
+                        "player_4",
+                        "Thanks for sharing that, Sam. It's certainly a strong start to know Dan's alignment, assuming your role as Seer is genuine. Hayley's removal shows the Werewolves are already active, so we can't afford to be complacent. Let's use this information, but keep our eyes open. What does everyone else think? We need all voices to help us figure out who is truly on our side."
+                    ],
+                    [
+                        "player_3",
+                        "Thank you, Sam, for that early investigation and for confirming my role as a Villager. It's a huge relief to have a confirmed Villager in the game so early, and it gives us a solid starting point. Harold is right; we need to remain critical, but this piece of information is incredibly valuable. Now that we know for certain I am on the side of the Village, we can focus our attention on the remaining players. What have others observed, or who do you find suspicious among the others? We must work together to build on this lead and identify our first Werewolf."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly awful to start with Hayley's removal. Sam, thank you for stepping forward so quickly and for that investigation. Knowing Dan is a Villager, if your role as Seer is genuine, gives us a crucial starting point. Harold is right though; we must remain critical and not get complacent, as we don't have confirmation of roles beyond what's stated. Dan, it's good to know we have a confirmed Villager in you. Now, for everyone else, we need to hear from you. Who has suspicions, or other insights to share? Let's use this initial information to build our case and identify who our first target should be today."
+                    ],
+                    [
+                        "player_6",
+                        "It's truly heartbreaking to lose Hayley so early, and it shows the Werewolves are already striking. Sam, thank you for stepping forward so quickly with your Seer claim and for investigating Dan. Knowing Dan is a confirmed Villager, assuming your role is genuine, gives us a very solid starting point and a player we can trust immediately. Harold, Dan, and Jackson are right; we must remain vigilant. Now, we need to hear from everyone. David, Scott, what are your initial thoughts on this development? We need all voices active in this debate to piece together the truth and identify our first Werewolf today."
+                    ],
+                    [
+                        "player_0",
+                        "It's truly somber to start with Hayley's removal. Sam, your claim and the confirmation for Dan are certainly a *start*, and it's good to know we have one confirmed Villager. However, Jacob is right, we need to hear from everyone. While this information is valuable, we must also remember it's just one person's claim that we're all basing this trust on. We can't afford to be tunnel-visioned. My thought is we need to hear strong cases for suspicion on anyone *else*. Who among us do people find suspicious, or who hasn't been as clear in their intentions? We need to broaden our scope, not just focus on one data point, to truly find the Werewolves."
+                    ],
+                    [
+                        "player_2",
+                        "It's truly a grim start, losing Hayley. Sam, if your Seer claim is genuine, then knowing Dan is a Villager is indeed a crucial starting point. However, as David pointed out, we can't afford to get tunnel-visioned on just one piece of information, especially so early in the game. While it's valuable, we must also consider the possibility of a deceptive claim. Everyone has been quick to accept this, but what *other* suspicions are people holding? Who among us feels less certain? We need to hear more concrete thoughts and observations from *everyone*, not just agreement, to truly build a case and identify who the Werewolves might be. Let's not waste time assuming one claim is the whole truth."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Dan"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Dan",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_3"
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "David",
+                "player_1": "Sam",
+                "player_2": "Scott",
+                "player_3": "Dan",
+                "player_4": "Harold",
+                "player_5": "Hayley",
+                "player_6": "Jacob",
+                "player_7": "Jackson"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Dan and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Scott from the game.",
+                "Round 0: Summary: I, Sam the Seer, started the round by confirming Dan as a Villager. Sadly, Hayley was removed by the Werewolves during the night. Dan, Harold, Jackson, and Jacob acknowledged my claim and the importance of Dan's confirmation, though they rightly stressed continued vigilance. David expressed more caution, warning against 'tunnel-visioning' on my claim and emphasizing the need to consider other suspicions. Scott, who echoed David's skepticism, was voted out during the day. This leaves David as the most openly cautious player about my Seer claim among the survivors, which I will keep in mind. I now have a confirmed Villager in Dan.",
+                "Round 1: During the night, I decided to investigate David and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Dan and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Hayley from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I, Sam the Seer, started the round by confirming Dan as a Villager. Sadly, Hayley was removed by the Werewolves during the night. Dan, Harold, Jackson, and Jacob acknowledged my claim and the importance of Dan's confirmation, though they rightly stressed continued vigilance. David expressed more caution, warning against 'tunnel-visioning' on my claim and emphasizing the need to consider other suspicions. Scott, who echoed David's skepticism, was voted out during the day. This leaves David as the most openly cautious player about my Seer claim among the survivors, which I will keep in mind. I now have a confirmed Villager in Dan.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate David and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_3",
+                    "player_7",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_3": "Villager",
+                "player_0": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_4",
+                "player_3",
+                "player_7",
+                "player_6",
+                "player_0",
+                "player_1"
+            ],
+            "eliminated": "player_5",
+            "unmasked": "player_3",
+            "protected": "player_3",
+            "exiled": "player_2",
+            "debate": [
+                [
+                    "player_1",
+                    "Alright everyone, the game has begun, and tragically, Hayley is our first casualty. I am Sam, the Seer. Last night, I investigated Dan, and I can confirm that Dan is a Villager. We now know for certain that Dan is on our side. Let's use this information to narrow down our suspects and vote carefully today. We need to work together to find the Werewolves before they claim more of us."
+                ],
+                [
+                    "player_4",
+                    "Thanks for sharing that, Sam. It's certainly a strong start to know Dan's alignment, assuming your role as Seer is genuine. Hayley's removal shows the Werewolves are already active, so we can't afford to be complacent. Let's use this information, but keep our eyes open. What does everyone else think? We need all voices to help us figure out who is truly on our side."
+                ],
+                [
+                    "player_3",
+                    "Thank you, Sam, for that early investigation and for confirming my role as a Villager. It's a huge relief to have a confirmed Villager in the game so early, and it gives us a solid starting point. Harold is right; we need to remain critical, but this piece of information is incredibly valuable. Now that we know for certain I am on the side of the Village, we can focus our attention on the remaining players. What have others observed, or who do you find suspicious among the others? We must work together to build on this lead and identify our first Werewolf."
+                ],
+                [
+                    "player_7",
+                    "It's truly awful to start with Hayley's removal. Sam, thank you for stepping forward so quickly and for that investigation. Knowing Dan is a Villager, if your role as Seer is genuine, gives us a crucial starting point. Harold is right though; we must remain critical and not get complacent, as we don't have confirmation of roles beyond what's stated. Dan, it's good to know we have a confirmed Villager in you. Now, for everyone else, we need to hear from you. Who has suspicions, or other insights to share? Let's use this initial information to build our case and identify who our first target should be today."
+                ],
+                [
+                    "player_6",
+                    "It's truly heartbreaking to lose Hayley so early, and it shows the Werewolves are already striking. Sam, thank you for stepping forward so quickly with your Seer claim and for investigating Dan. Knowing Dan is a confirmed Villager, assuming your role is genuine, gives us a very solid starting point and a player we can trust immediately. Harold, Dan, and Jackson are right; we must remain vigilant. Now, we need to hear from everyone. David, Scott, what are your initial thoughts on this development? We need all voices active in this debate to piece together the truth and identify our first Werewolf today."
+                ],
+                [
+                    "player_0",
+                    "It's truly somber to start with Hayley's removal. Sam, your claim and the confirmation for Dan are certainly a *start*, and it's good to know we have one confirmed Villager. However, Jacob is right, we need to hear from everyone. While this information is valuable, we must also remember it's just one person's claim that we're all basing this trust on. We can't afford to be tunnel-visioned. My thought is we need to hear strong cases for suspicion on anyone *else*. Who among us do people find suspicious, or who hasn't been as clear in their intentions? We need to broaden our scope, not just focus on one data point, to truly find the Werewolves."
+                ],
+                [
+                    "player_2",
+                    "It's truly a grim start, losing Hayley. Sam, if your Seer claim is genuine, then knowing Dan is a Villager is indeed a crucial starting point. However, as David pointed out, we can't afford to get tunnel-visioned on just one piece of information, especially so early in the game. While it's valuable, we must also consider the possibility of a deceptive claim. Everyone has been quick to accept this, but what *other* suspicions are people holding? Who among us feels less certain? We need to hear more concrete thoughts and observations from *everyone*, not just agreement, to truly build a case and identify who the Werewolves might be. Let's not waste time assuming one claim is the whole truth."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_1",
+                    "player_3": "player_2",
+                    "player_7": "player_2",
+                    "player_6": "player_2",
+                    "player_0": "player_1",
+                    "player_2": "player_1",
+                    "player_1": "player_2"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_3",
+                "player_7",
+                "player_6"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_0",
+            "protected": null,
+            "exiled": "player_0",
+            "debate": [
+                [
+                    "player_4",
+                    "Friends, Sam's death last night is devastating, but it also tells us something crucial: Sam was our Seer, and Dan is definitively a Villager. The Werewolves took out Sam because he was a threat. This makes Scott's strong skepticism in Round 0, right before we voted him out, incredibly suspicious. He questioned the Seer, and then the Seer was killed. I'm willing to bet Scott was one of our Werewolves, and we did good to get him out. If so, we only have one Werewolf left. Doctor, now is the time to make yourself known so we can protect you and find our final target. What information do the rest of you have?"
+                ],
+                [
+                    "player_3",
+                    "Harold, I agree completely. Sam's sacrifice confirms he was our Seer and that his read on me as a Villager was accurate. This also means his death is a huge blow, but it does make Scott's skepticism last round look incredibly damning. It's very possible Scott was one of the Werewolves, and we did well to remove him. However, we need to be absolutely certain. If Scott was a Villager, then both Werewolves are still among us, and we are in a critical situation with only five players left. We must confirm this now. David, you also expressed strong skepticism about Sam's Seer claim last round, similar to Scott. Given Sam's death, that now looks very suspicious. What are your thoughts on this, and do you have any information for us? Regarding the Doctor, while I understand the impulse, we need to be very strategic. Let's get more information out first and try to pinpoint our remaining threat before exposing another vital role. What did everyone else observe?"
+                ],
+                [
+                    "player_7",
+                    "Harold and Dan, I agree completely. Sam's death provides strong, albeit tragic, confirmation that he was indeed our Seer, and consequently, Dan is a Villager. This immediately makes Scott's prior skepticism extremely suspicious, and it's a real possibility we removed a Werewolf. However, Dan's point about David's similar skepticism last round is now very critical. David, given that the Werewolves eliminated Sam, the very person you and Scott questioned, how do you explain your doubts now? We need to understand your perspective. Jacob, what are your thoughts on this? We can't afford any silence or ambiguity."
+                ],
+                [
+                    "player_6",
+                    "Friends, the tragic death of Sam speaks volumes. It's now overwhelmingly clear that Sam was our Seer, and Dan is definitively a Villager. This also makes Scott's skepticism last round, before we voted him out, incredibly suspicious. It strongly suggests we may have removed a Werewolf in Scott. However, Jackson and Dan are absolutely right to highlight David's similar skepticism towards Sam's Seer claim. David, with Sam now confirmed as our Seer and tragically murdered by the Werewolves, your earlier doubts stand out significantly. We need a clear explanation from you now. What was your basis for discrediting Sam, and what insights can you offer us now? I also agree with Dan; the Doctor should remain silent until we've pressed David for answers and gained more clarity."
+                ],
+                [
+                    "player_0",
+                    "Alright everyone, I understand completely why my skepticism last round, mirroring Scott's, now looks incredibly suspicious with Sam's tragic death. And I appreciate you all pressing me on it. My intention in Round 0 wasn't to discredit Sam, but rather to fulfill a crucial villager role: to rigorously question *any* new claim, especially a Seer, when information is scarce. We all know how easily a false claim can derail the village. Now, with Sam's death, it's easy to jump to the conclusion that he was definitively the Seer, and that his killers are now targeting those who doubted him, like myself. However, I urge us to consider this: what if this is precisely what the remaining Werewolf wants us to believe? They kill someone who made a significant claim, hoping we *assume* they were the Seer, and then perfectly frame those of us who, out of natural villager caution, asked for more proof. It would be a brilliant way to remove a genuinely cautious villager, like myself, and turn us against each other, while the real Werewolf goes unnoticed. If Scott *was* a Werewolf, then his skepticism had a malicious intent. My skepticism, however, was about ensuring we weren't being led astray. We need to avoid falling into a trap. Instead of fixating on past doubts, let's broaden our view. Jacob, Harold, Jackson, what was *your* immediate, unfiltered reaction to Sam's Seer claim in Round 0, before Dan's confirmation? Did you instantly believe him, or did you, like me, have any initial questions that perhaps you didn't voice as strongly? Let's ensure we're looking at all angles, not just the obvious one presented by a Werewolf's kill. And yes, Dan and Jacob are right, the Doctor should absolutely remain hidden until we've gained more clarity and identified a much clearer target."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_0",
+                    "player_3": "player_0",
+                    "player_7": "player_0",
+                    "player_6": "player_0",
+                    "player_0": "player_4"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

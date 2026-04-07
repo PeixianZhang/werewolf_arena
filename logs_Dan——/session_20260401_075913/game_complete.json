@@ -1,0 +1,1221 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_0",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Jacob",
+            "player_1": "Jackson",
+            "player_2": "Hayley",
+            "player_3": "Harold",
+            "player_4": "Scott",
+            "player_5": "Dan",
+            "player_6": "Sam",
+            "player_7": "David"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Harold and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+            "Round 0: Summary: As Jacob the Seer, I remember that Harold, who I confirmed as a Villager, was tragically removed by the Werewolves during the night, confirming an early Werewolf kill. During the day's debate, everyone, including me, agreed on the critical need for careful observation and to avoid a rushed vote. I noted Dan's suggestion to share 'early impressions' or 'gut feelings,' which I actively countered, advocating instead for focusing on 'specific points made or observable behaviors.' Jackson then notably supported my call for specificity, which I will remember. Sam also contributed by highlighting the importance of being wary of players who are either 'too eager' or 'too quiet.' Ultimately, Dan was removed from the game by the majority vote after the debate concluded.",
+            "Round 1: During the night, I decided to investigate Jackson and learned they are a Villager."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Harold and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As Jacob the Seer, I remember that Harold, who I confirmed as a Villager, was tragically removed by the Werewolves during the night, confirming an early Werewolf kill. During the day's debate, everyone, including me, agreed on the critical need for careful observation and to avoid a rushed vote. I noted Dan's suggestion to share 'early impressions' or 'gut feelings,' which I actively countered, advocating instead for focusing on 'specific points made or observable behaviors.' Jackson then notably supported my call for specificity, which I will remember. Sam also contributed by highlighting the importance of being wary of players who are either 'too eager' or 'too quiet.' Ultimately, Dan was removed from the game by the majority vote after the debate concluded.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Jackson and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_1",
+                "player_7",
+                "player_2",
+                "player_6"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_3": "Villager",
+            "player_1": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_5",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Jacob",
+            "player_1": "Jackson",
+            "player_2": "Hayley",
+            "player_3": "Harold",
+            "player_4": "Scott",
+            "player_5": "Dan",
+            "player_6": "Sam",
+            "player_7": "David"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Hayley",
+            "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Hayley",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_1",
+                "player_7",
+                "player_2",
+                "player_6"
+            ],
+            "debate": [
+                [
+                    "player_7",
+                    "Alright everyone, the game has begun and unfortunately, Harold is already gone. This means the Werewolves are active and we need to be incredibly vigilant. As Villagers, our best bet is to work together, share our thoughts, and observe each other closely. Let's not make any hasty decisions today; instead, let's use this time to gather information. What are your initial thoughts or observations? Who wants to speak first?"
+                ],
+                [
+                    "player_4",
+                    "It's a tough start, losing Harold right away, but it's a clear signal the Werewolves are already active. David's absolutely right, we can't make any hasty moves today. I think our best approach for this first day is for everyone to speak their minds and share their initial impressions. Let's use this time to observe each other, see who's quiet, who's talking a lot, and who might be trying to steer us without good reason. Let's make sure everyone contributes so we can start building some trust and spotting any unusual behavior."
+                ],
+                [
+                    "player_2",
+                    "Yes, it's a terrible start, and I completely agree with David and Scott \u2013 we absolutely cannot rush into a misinformed vote. Everyone needs to speak up and share their honest thoughts. But I think it's also crucial we don't just observe passively; we need to actively listen for *how* people are framing their contributions. Are they trying to steer us down a specific path too quickly, or perhaps staying unusually quiet to avoid scrutiny? Both extremes could be telling. Let's all contribute openly, but also keep a keen eye on everyone's approach today."
+                ],
+                [
+                    "player_6",
+                    "It's truly a grim start, losing Harold so quickly. I completely agree with David, Scott, and Hayley; we absolutely cannot rush into a vote today. However, while we all agree we need to observe carefully, I think we also need to be wary of *how* we're observing. Are we just passively agreeing with the call for caution, or are we actively trying to find inconsistencies in each other's approaches? I'd suggest we don't just wait for people to speak, but also question if anyone is being *too* eager to set a 'careful' tone, or perhaps trying to fade into the background too much. Both extremes could be a mask."
+                ],
+                [
+                    "player_5",
+                    "It's truly disheartening to lose Harold so soon, and I completely agree with everyone that a rushed vote would be disastrous. David, Scott, Hayley, and Sam are all right; we need to be incredibly vigilant and observe. Building on Sam's excellent point about *how* we're observing \u2013 not just what's being said, but the manner \u2013 I think it's time we move beyond just 'observing' in the abstract. Does anyone have any early impressions, even just a slight gut feeling, about anyone's tone or particular points they've made so far? Let's start sharing those small observations now, rather than waiting for fully formed accusations. Who feels like someone is speaking 'too much' or perhaps 'too little' to simply call for caution?"
+                ],
+                [
+                    "player_0",
+                    "I agree with everyone that losing Harold so early is a grave concern, and a rushed, uninformed vote would be a disaster. Dan, you're right, we need to move beyond just abstract observation. However, let's ensure our 'early impressions' or 'gut feelings' are tied to *specific* points made or observable behaviors, rather than just vague instincts. Anyone can claim a gut feeling; what we need are logical connections or inconsistencies that others can scrutinize. Let's keep sharing and scrutinizing *what* is being said and *how* people are engaging, looking for actual signals, not just feelings."
+                ],
+                [
+                    "player_1",
+                    "It's truly heartbreaking to lose Harold right at the start, and I wholeheartedly agree with everyone: a rushed vote today would be disastrous. David, Scott, Hayley, Sam, Dan, Jacob \u2013 you're all hitting on the vital point that mere passive 'observation' isn't enough. Building on Sam and Dan's excellent points about *how* we observe, and Jacob's call for specificity over vague gut feelings, I think it's crucial we share any *actual details* that stood out. Did someone's tone shift, or was a particular phrase used in a way that felt off? Let's turn our calls for caution into concrete, shareable observations, however small. What *specifics* have people noticed in how others are engaging today?"
+                ]
+            ],
+            "other_wolf": null
+        },
+        "last_protected": "player_2"
+    },
+    "villagers": [
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: Harold was removed by the Werewolves during the night, which immediately established that the Werewolves are active. During our first debate, I observed a unanimous agreement among David, Scott, Hayley, Sam, Dan, Jacob, and myself that a rushed vote would be disastrous, setting a cautious tone for the day. Sam introduced the important point of scrutinizing not just *what* people say, but *how* they say it, watching for those too eager or too quiet. Dan then suggested we move to sharing 'gut feelings' or early impressions, which Jacob logically countered by emphasizing the need for 'specific points' and 'observable behaviors' over vague instincts. I myself reinforced the call for concrete, shareable observations and actual details that might have stood out. There were no direct accusations made, but the dynamic between Dan and Jacob's suggestions for observation was notable. It's now clear that Dan was subsequently voted out by the majority during this day phase.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Harold was removed by the Werewolves during the night, which immediately established that the Werewolves are active. During our first debate, I observed a unanimous agreement among David, Scott, Hayley, Sam, Dan, Jacob, and myself that a rushed vote would be disastrous, setting a cautious tone for the day. Sam introduced the important point of scrutinizing not just *what* people say, but *how* they say it, watching for those too eager or too quiet. Dan then suggested we move to sharing 'gut feelings' or early impressions, which Jacob logically countered by emphasizing the need for 'specific points' and 'observable behaviors' over vague instincts. I myself reinforced the call for concrete, shareable observations and actual details that might have stood out. There were no direct accusations made, but the dynamic between Dan and Jacob's suggestions for observation was notable. It's now clear that Dan was subsequently voted out by the majority during this day phase.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: As David the Villager, I initiated the debate emphasizing vigilance and cooperation after Harold's removal, and advised against a hasty vote. Everyone present, including Scott, Hayley, Sam, Dan, Jacob, and Jackson, strongly agreed that caution and careful observation were paramount. The discussion evolved from general calls for everyone to speak (Scott) to more nuanced points about *how* people contribute \u2013 looking for steering or unusual quietness (Hayley, Sam). Dan then pushed for sharing early impressions, while Jacob countered by stressing the need for *specific* behaviors and logical connections over vague gut feelings. Jackson synthesized these points, reiterating the importance of concrete details. No one seemed overtly suspicious, and all players contributed to the discussion, but it is important to note that Dan was ultimately removed from the game by a majority vote after this debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As David the Villager, I initiated the debate emphasizing vigilance and cooperation after Harold's removal, and advised against a hasty vote. Everyone present, including Scott, Hayley, Sam, Dan, Jacob, and Jackson, strongly agreed that caution and careful observation were paramount. The discussion evolved from general calls for everyone to speak (Scott) to more nuanced points about *how* people contribute \u2013 looking for steering or unusual quietness (Hayley, Sam). Dan then pushed for sharing early impressions, while Jacob countered by stressing the need for *specific* behaviors and logical connections over vague gut feelings. Jackson synthesized these points, reiterating the importance of concrete details. No one seemed overtly suspicious, and all players contributed to the discussion, but it is important to note that Dan was ultimately removed from the game by a majority vote after this debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: As Scott, I observed that everyone generally agreed losing Harold was a bad start and we needed to be cautious, which I also advocated for. David set a good, cooperative tone, and Hayley, Sam, and Jackson all built on the idea of actively observing specific behaviors. However, Dan stood out when he tried to push for sharing 'gut feelings' and 'early impressions' without specific details. I felt this was a bit off, as it could easily lead to unfounded accusations. Jacob immediately countered Dan's point, emphasizing that we need specific, logical observations, not vague feelings, which I thought was a very rational and trustworthy stance. Jackson also supported the call for specific details. I'll remember Dan's attempt to steer towards subjective feelings, and Jacob and Jackson's grounded insistence on concrete evidence.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Scott, I observed that everyone generally agreed losing Harold was a bad start and we needed to be cautious, which I also advocated for. David set a good, cooperative tone, and Hayley, Sam, and Jackson all built on the idea of actively observing specific behaviors. However, Dan stood out when he tried to push for sharing 'gut feelings' and 'early impressions' without specific details. I felt this was a bit off, as it could easily lead to unfounded accusations. Jacob immediately countered Dan's point, emphasizing that we need specific, logical observations, not vague feelings, which I thought was a very rational and trustworthy stance. Jackson also supported the call for specific details. I'll remember Dan's attempt to steer towards subjective feelings, and Jacob and Jackson's grounded insistence on concrete evidence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "It's chilling to wake up to Jacob's removal. He was the one who championed getting 'specific points' and 'observable behaviors' into the debate yesterday. The Werewolves taking him out suggests he was a significant threat to them, and likely a good player. This makes me look back at the contrast with Dan, who was pushing for 'gut feelings' and was subsequently voted out. Did we make a mistake there, or did we get a Werewolf? We're down to five now, so every observation counts. I urge everyone: speak up now with *any* specific details or inconsistencies you noticed in the last round. Let's not just react; let's analyze based on what Jacob was asking for. Seer, Doctor \u2013 if you have insights, we need to hear them, even if you speak carefully."
+                    ],
+                    [
+                        "player_7",
+                        "Jackson, you've hit on something crucial. Jacob pushing for 'specific points' and 'observable behaviors' and then being taken out by the Werewolves strongly suggests they fear clear analysis. This makes me reconsider Dan's eagerness for 'gut feelings' yesterday. Did we vote out a Werewolf who didn't want scrutiny, or did we make a critical error? We're too few to waste a vote. Hayley, Scott, Sam \u2013 let's honor Jacob's approach. What specific details, what concrete oddities, did you notice from *anyone* during the Day 0 debate? We need facts, not just feelings, to avoid another misstep."
+                    ],
+                    [
+                        "player_4",
+                        "Jackson, David, you've both hit the nail on the head. Jacob's removal is a chilling confirmation that the Werewolves despise logical deduction and concrete evidence. His insistence on 'specific points' was a direct threat to them. This makes Dan's earlier push for 'gut feelings' look incredibly suspicious in retrospect. It wasn't just an 'off' suggestion; it now appears to have been a calculated attempt to steer us away from the precise analysis Jacob demanded. Given Jacob was eliminated, it strongly suggests Dan was a Werewolf who wanted to avoid scrutiny. We absolutely must uphold Jacob's standard for specific details in this debate. Seer, Doctor, if you have anything, even a hint, now is the time to speak up, however carefully."
+                    ],
+                    [
+                        "player_2",
+                        "Jackson, David, Scott, you're absolutely right that Jacob's removal is devastating, and his call for 'specific points' is exactly what we need to adopt. It certainly makes Dan's emphasis on 'gut feelings' look incredibly suspicious now. However, Scott, your immediate certainty that Dan's actions were a 'calculated attempt' feels like we're jumping from one interpretation to another without the 'specific behaviors' Jacob actually asked for. We need to be rigorously analytical. Instead of just reacting to hindsight, let's review *everyone's* contributions from Day 0. Did anyone *else* subtly try to steer the conversation, or perhaps deliberately avoid engaging with Jacob's push for concrete observations? We need hard facts, not just new narratives about the dead."
+                    ],
+                    [
+                        "player_6",
+                        "Jackson, David, Scott, Hayley, you're absolutely right about Jacob; his removal is a chilling testament to the Werewolves' fear of clear, specific analysis. It undeniably forces us to reconsider Dan's eagerness for 'gut feelings' yesterday \u2013 that now looks incredibly suspicious. However, I agree with Hayley's caution, Scott. Your immediate certainty that Dan's actions were a 'calculated attempt' feels like a very strong conclusion to draw without concrete, 'specific points' from Day 0 itself. We need to be as rigorous as Jacob demanded. So, applying that same standard, Scott, beyond just the 'gut feelings' push, what specific *actions* or *non-actions* from Day 0 made you so absolutely certain of a 'calculated attempt'? And David, when you ask for 'concrete oddities,' what specific oddities did *you* observe from *anyone* during Day 0, besides your new interpretation of Dan? Let's not just react; let's apply Jacob's rigor to the living, and not just our hindsight about the dead."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Harold.",
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: Harold was our kill and is out, and the villagers also made a mistake by voting out Dan, which is a fantastic start for Sam and me. The debate was largely focused on everyone agreeing to be cautious and not rush a vote. David and Scott set this initial, safe tone, which I readily agreed with, while trying to guide the conversation toward observing *how* people speak to appear engaged. Sam also skillfully added to this by suggesting we question if anyone is being *too* eager or *too* quiet. However, Jacob and Jackson are pushing for more specific, evidence-based observations rather than just gut feelings, which tells me they could be analytical and potentially problematic down the line. Overall, the day went well for us, with no direct accusations, and the villagers seem content to play it safe for now.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Harold was our kill and is out, and the villagers also made a mistake by voting out Dan, which is a fantastic start for Sam and me. The debate was largely focused on everyone agreeing to be cautious and not rush a vote. David and Scott set this initial, safe tone, which I readily agreed with, while trying to guide the conversation toward observing *how* people speak to appear engaged. Sam also skillfully added to this by suggesting we question if anyone is being *too* eager or *too* quiet. However, Jacob and Jackson are pushing for more specific, evidence-based observations rather than just gut feelings, which tells me they could be analytical and potentially problematic down the line. Overall, the day went well for us, with no direct accusations, and the villagers seem content to play it safe for now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Harold.",
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: Harold, our target, was eliminated at night, and then Dan was voted out by the villagers today. The debate was largely characterized by a unanimous call for caution and careful observation, with everyone, including myself and Hayley, agreeing not to rush to a vote. However, Dan, Jacob, and Jackson tried to push the discussion beyond abstract 'observation' to seek more 'specifics' or 'gut feelings,' making them potentially more perceptive players to watch. No direct accusations were made against anyone, which is favorable for Hayley and me, but the call for deeper scrutiny from some players is something I need to monitor in future rounds.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Harold, our target, was eliminated at night, and then Dan was voted out by the villagers today. The debate was largely characterized by a unanimous call for caution and careful observation, with everyone, including myself and Hayley, agreeing not to rush to a vote. However, Dan, Jacob, and Jackson tried to push the discussion beyond abstract 'observation' to seek more 'specifics' or 'gut feelings,' making them potentially more perceptive players to watch. No direct accusations were made against anyone, which is favorable for Hayley and me, but the call for deeper scrutiny from some players is something I need to monitor in future rounds.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": "player_2"
+            }
+        }
+    ],
+    "players": {
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: Harold was removed by the Werewolves during the night, which immediately established that the Werewolves are active. During our first debate, I observed a unanimous agreement among David, Scott, Hayley, Sam, Dan, Jacob, and myself that a rushed vote would be disastrous, setting a cautious tone for the day. Sam introduced the important point of scrutinizing not just *what* people say, but *how* they say it, watching for those too eager or too quiet. Dan then suggested we move to sharing 'gut feelings' or early impressions, which Jacob logically countered by emphasizing the need for 'specific points' and 'observable behaviors' over vague instincts. I myself reinforced the call for concrete, shareable observations and actual details that might have stood out. There were no direct accusations made, but the dynamic between Dan and Jacob's suggestions for observation was notable. It's now clear that Dan was subsequently voted out by the majority during this day phase.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Harold was removed by the Werewolves during the night, which immediately established that the Werewolves are active. During our first debate, I observed a unanimous agreement among David, Scott, Hayley, Sam, Dan, Jacob, and myself that a rushed vote would be disastrous, setting a cautious tone for the day. Sam introduced the important point of scrutinizing not just *what* people say, but *how* they say it, watching for those too eager or too quiet. Dan then suggested we move to sharing 'gut feelings' or early impressions, which Jacob logically countered by emphasizing the need for 'specific points' and 'observable behaviors' over vague instincts. I myself reinforced the call for concrete, shareable observations and actual details that might have stood out. There were no direct accusations made, but the dynamic between Dan and Jacob's suggestions for observation was notable. It's now clear that Dan was subsequently voted out by the majority during this day phase.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: As David the Villager, I initiated the debate emphasizing vigilance and cooperation after Harold's removal, and advised against a hasty vote. Everyone present, including Scott, Hayley, Sam, Dan, Jacob, and Jackson, strongly agreed that caution and careful observation were paramount. The discussion evolved from general calls for everyone to speak (Scott) to more nuanced points about *how* people contribute \u2013 looking for steering or unusual quietness (Hayley, Sam). Dan then pushed for sharing early impressions, while Jacob countered by stressing the need for *specific* behaviors and logical connections over vague gut feelings. Jackson synthesized these points, reiterating the importance of concrete details. No one seemed overtly suspicious, and all players contributed to the discussion, but it is important to note that Dan was ultimately removed from the game by a majority vote after this debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As David the Villager, I initiated the debate emphasizing vigilance and cooperation after Harold's removal, and advised against a hasty vote. Everyone present, including Scott, Hayley, Sam, Dan, Jacob, and Jackson, strongly agreed that caution and careful observation were paramount. The discussion evolved from general calls for everyone to speak (Scott) to more nuanced points about *how* people contribute \u2013 looking for steering or unusual quietness (Hayley, Sam). Dan then pushed for sharing early impressions, while Jacob countered by stressing the need for *specific* behaviors and logical connections over vague gut feelings. Jackson synthesized these points, reiterating the importance of concrete details. No one seemed overtly suspicious, and all players contributed to the discussion, but it is important to note that Dan was ultimately removed from the game by a majority vote after this debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: As Scott, I observed that everyone generally agreed losing Harold was a bad start and we needed to be cautious, which I also advocated for. David set a good, cooperative tone, and Hayley, Sam, and Jackson all built on the idea of actively observing specific behaviors. However, Dan stood out when he tried to push for sharing 'gut feelings' and 'early impressions' without specific details. I felt this was a bit off, as it could easily lead to unfounded accusations. Jacob immediately countered Dan's point, emphasizing that we need specific, logical observations, not vague feelings, which I thought was a very rational and trustworthy stance. Jackson also supported the call for specific details. I'll remember Dan's attempt to steer towards subjective feelings, and Jacob and Jackson's grounded insistence on concrete evidence.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Scott, I observed that everyone generally agreed losing Harold was a bad start and we needed to be cautious, which I also advocated for. David set a good, cooperative tone, and Hayley, Sam, and Jackson all built on the idea of actively observing specific behaviors. However, Dan stood out when he tried to push for sharing 'gut feelings' and 'early impressions' without specific details. I felt this was a bit off, as it could easily lead to unfounded accusations. Jacob immediately countered Dan's point, emphasizing that we need specific, logical observations, not vague feelings, which I thought was a very rational and trustworthy stance. Jackson also supported the call for specific details. I'll remember Dan's attempt to steer towards subjective feelings, and Jacob and Jackson's grounded insistence on concrete evidence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "It's chilling to wake up to Jacob's removal. He was the one who championed getting 'specific points' and 'observable behaviors' into the debate yesterday. The Werewolves taking him out suggests he was a significant threat to them, and likely a good player. This makes me look back at the contrast with Dan, who was pushing for 'gut feelings' and was subsequently voted out. Did we make a mistake there, or did we get a Werewolf? We're down to five now, so every observation counts. I urge everyone: speak up now with *any* specific details or inconsistencies you noticed in the last round. Let's not just react; let's analyze based on what Jacob was asking for. Seer, Doctor \u2013 if you have insights, we need to hear them, even if you speak carefully."
+                    ],
+                    [
+                        "player_7",
+                        "Jackson, you've hit on something crucial. Jacob pushing for 'specific points' and 'observable behaviors' and then being taken out by the Werewolves strongly suggests they fear clear analysis. This makes me reconsider Dan's eagerness for 'gut feelings' yesterday. Did we vote out a Werewolf who didn't want scrutiny, or did we make a critical error? We're too few to waste a vote. Hayley, Scott, Sam \u2013 let's honor Jacob's approach. What specific details, what concrete oddities, did you notice from *anyone* during the Day 0 debate? We need facts, not just feelings, to avoid another misstep."
+                    ],
+                    [
+                        "player_4",
+                        "Jackson, David, you've both hit the nail on the head. Jacob's removal is a chilling confirmation that the Werewolves despise logical deduction and concrete evidence. His insistence on 'specific points' was a direct threat to them. This makes Dan's earlier push for 'gut feelings' look incredibly suspicious in retrospect. It wasn't just an 'off' suggestion; it now appears to have been a calculated attempt to steer us away from the precise analysis Jacob demanded. Given Jacob was eliminated, it strongly suggests Dan was a Werewolf who wanted to avoid scrutiny. We absolutely must uphold Jacob's standard for specific details in this debate. Seer, Doctor, if you have anything, even a hint, now is the time to speak up, however carefully."
+                    ],
+                    [
+                        "player_2",
+                        "Jackson, David, Scott, you're absolutely right that Jacob's removal is devastating, and his call for 'specific points' is exactly what we need to adopt. It certainly makes Dan's emphasis on 'gut feelings' look incredibly suspicious now. However, Scott, your immediate certainty that Dan's actions were a 'calculated attempt' feels like we're jumping from one interpretation to another without the 'specific behaviors' Jacob actually asked for. We need to be rigorously analytical. Instead of just reacting to hindsight, let's review *everyone's* contributions from Day 0. Did anyone *else* subtly try to steer the conversation, or perhaps deliberately avoid engaging with Jacob's push for concrete observations? We need hard facts, not just new narratives about the dead."
+                    ],
+                    [
+                        "player_6",
+                        "Jackson, David, Scott, Hayley, you're absolutely right about Jacob; his removal is a chilling testament to the Werewolves' fear of clear, specific analysis. It undeniably forces us to reconsider Dan's eagerness for 'gut feelings' yesterday \u2013 that now looks incredibly suspicious. However, I agree with Hayley's caution, Scott. Your immediate certainty that Dan's actions were a 'calculated attempt' feels like a very strong conclusion to draw without concrete, 'specific points' from Day 0 itself. We need to be as rigorous as Jacob demanded. So, applying that same standard, Scott, beyond just the 'gut feelings' push, what specific *actions* or *non-actions* from Day 0 made you so absolutely certain of a 'calculated attempt'? And David, when you ask for 'concrete oddities,' what specific oddities did *you* observe from *anyone* during Day 0, besides your new interpretation of Dan? Let's not just react; let's apply Jacob's rigor to the living, and not just our hindsight about the dead."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Harold.",
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: Harold was our kill and is out, and the villagers also made a mistake by voting out Dan, which is a fantastic start for Sam and me. The debate was largely focused on everyone agreeing to be cautious and not rush a vote. David and Scott set this initial, safe tone, which I readily agreed with, while trying to guide the conversation toward observing *how* people speak to appear engaged. Sam also skillfully added to this by suggesting we question if anyone is being *too* eager or *too* quiet. However, Jacob and Jackson are pushing for more specific, evidence-based observations rather than just gut feelings, which tells me they could be analytical and potentially problematic down the line. Overall, the day went well for us, with no direct accusations, and the villagers seem content to play it safe for now.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Harold was our kill and is out, and the villagers also made a mistake by voting out Dan, which is a fantastic start for Sam and me. The debate was largely focused on everyone agreeing to be cautious and not rush a vote. David and Scott set this initial, safe tone, which I readily agreed with, while trying to guide the conversation toward observing *how* people speak to appear engaged. Sam also skillfully added to this by suggesting we question if anyone is being *too* eager or *too* quiet. However, Jacob and Jackson are pushing for more specific, evidence-based observations rather than just gut feelings, which tells me they could be analytical and potentially problematic down the line. Overall, the day went well for us, with no direct accusations, and the villagers seem content to play it safe for now.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Harold.",
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: Harold, our target, was eliminated at night, and then Dan was voted out by the villagers today. The debate was largely characterized by a unanimous call for caution and careful observation, with everyone, including myself and Hayley, agreeing not to rush to a vote. However, Dan, Jacob, and Jackson tried to push the discussion beyond abstract 'observation' to seek more 'specifics' or 'gut feelings,' making them potentially more perceptive players to watch. No direct accusations were made against anyone, which is favorable for Hayley and me, but the call for deeper scrutiny from some players is something I need to monitor in future rounds.",
+                "Round 1: During the night, we decided to eliminate Jacob.",
+                "Round 1: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Scott from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Harold.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Harold, our target, was eliminated at night, and then Dan was voted out by the villagers today. The debate was largely characterized by a unanimous call for caution and careful observation, with everyone, including myself and Hayley, agreeing not to rush to a vote. However, Dan, Jacob, and Jackson tried to push the discussion beyond abstract 'observation' to seek more 'specifics' or 'gut feelings,' making them potentially more perceptive players to watch. No direct accusations were made against anyone, which is favorable for Hayley and me, but the call for deeper scrutiny from some players is something I need to monitor in future rounds.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Scott from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": "player_2"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Hayley",
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Hayley",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright everyone, the game has begun and unfortunately, Harold is already gone. This means the Werewolves are active and we need to be incredibly vigilant. As Villagers, our best bet is to work together, share our thoughts, and observe each other closely. Let's not make any hasty decisions today; instead, let's use this time to gather information. What are your initial thoughts or observations? Who wants to speak first?"
+                    ],
+                    [
+                        "player_4",
+                        "It's a tough start, losing Harold right away, but it's a clear signal the Werewolves are already active. David's absolutely right, we can't make any hasty moves today. I think our best approach for this first day is for everyone to speak their minds and share their initial impressions. Let's use this time to observe each other, see who's quiet, who's talking a lot, and who might be trying to steer us without good reason. Let's make sure everyone contributes so we can start building some trust and spotting any unusual behavior."
+                    ],
+                    [
+                        "player_2",
+                        "Yes, it's a terrible start, and I completely agree with David and Scott \u2013 we absolutely cannot rush into a misinformed vote. Everyone needs to speak up and share their honest thoughts. But I think it's also crucial we don't just observe passively; we need to actively listen for *how* people are framing their contributions. Are they trying to steer us down a specific path too quickly, or perhaps staying unusually quiet to avoid scrutiny? Both extremes could be telling. Let's all contribute openly, but also keep a keen eye on everyone's approach today."
+                    ],
+                    [
+                        "player_6",
+                        "It's truly a grim start, losing Harold so quickly. I completely agree with David, Scott, and Hayley; we absolutely cannot rush into a vote today. However, while we all agree we need to observe carefully, I think we also need to be wary of *how* we're observing. Are we just passively agreeing with the call for caution, or are we actively trying to find inconsistencies in each other's approaches? I'd suggest we don't just wait for people to speak, but also question if anyone is being *too* eager to set a 'careful' tone, or perhaps trying to fade into the background too much. Both extremes could be a mask."
+                    ],
+                    [
+                        "player_5",
+                        "It's truly disheartening to lose Harold so soon, and I completely agree with everyone that a rushed vote would be disastrous. David, Scott, Hayley, and Sam are all right; we need to be incredibly vigilant and observe. Building on Sam's excellent point about *how* we're observing \u2013 not just what's being said, but the manner \u2013 I think it's time we move beyond just 'observing' in the abstract. Does anyone have any early impressions, even just a slight gut feeling, about anyone's tone or particular points they've made so far? Let's start sharing those small observations now, rather than waiting for fully formed accusations. Who feels like someone is speaking 'too much' or perhaps 'too little' to simply call for caution?"
+                    ],
+                    [
+                        "player_0",
+                        "I agree with everyone that losing Harold so early is a grave concern, and a rushed, uninformed vote would be a disaster. Dan, you're right, we need to move beyond just abstract observation. However, let's ensure our 'early impressions' or 'gut feelings' are tied to *specific* points made or observable behaviors, rather than just vague instincts. Anyone can claim a gut feeling; what we need are logical connections or inconsistencies that others can scrutinize. Let's keep sharing and scrutinizing *what* is being said and *how* people are engaging, looking for actual signals, not just feelings."
+                    ],
+                    [
+                        "player_1",
+                        "It's truly heartbreaking to lose Harold right at the start, and I wholeheartedly agree with everyone: a rushed vote today would be disastrous. David, Scott, Hayley, Sam, Dan, Jacob \u2013 you're all hitting on the vital point that mere passive 'observation' isn't enough. Building on Sam and Dan's excellent points about *how* we observe, and Jacob's call for specificity over vague gut feelings, I think it's crucial we share any *actual details* that stood out. Did someone's tone shift, or was a particular phrase used in a way that felt off? Let's turn our calls for caution into concrete, shareable observations, however small. What *specifics* have people noticed in how others are engaging today?"
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "last_protected": "player_2"
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Jacob",
+                "player_1": "Jackson",
+                "player_2": "Hayley",
+                "player_3": "Harold",
+                "player_4": "Scott",
+                "player_5": "Dan",
+                "player_6": "Sam",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Harold and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Dan from the game.",
+                "Round 0: Summary: As Jacob the Seer, I remember that Harold, who I confirmed as a Villager, was tragically removed by the Werewolves during the night, confirming an early Werewolf kill. During the day's debate, everyone, including me, agreed on the critical need for careful observation and to avoid a rushed vote. I noted Dan's suggestion to share 'early impressions' or 'gut feelings,' which I actively countered, advocating instead for focusing on 'specific points made or observable behaviors.' Jackson then notably supported my call for specificity, which I will remember. Sam also contributed by highlighting the importance of being wary of players who are either 'too eager' or 'too quiet.' Ultimately, Dan was removed from the game by the majority vote after the debate concluded.",
+                "Round 1: During the night, I decided to investigate Jackson and learned they are a Villager."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Harold and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Harold from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Dan from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Jacob the Seer, I remember that Harold, who I confirmed as a Villager, was tragically removed by the Werewolves during the night, confirming an early Werewolf kill. During the day's debate, everyone, including me, agreed on the critical need for careful observation and to avoid a rushed vote. I noted Dan's suggestion to share 'early impressions' or 'gut feelings,' which I actively countered, advocating instead for focusing on 'specific points made or observable behaviors.' Jackson then notably supported my call for specificity, which I will remember. Sam also contributed by highlighting the importance of being wary of players who are either 'too eager' or 'too quiet.' Ultimately, Dan was removed from the game by the majority vote after the debate concluded.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Jackson and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_7",
+                    "player_2",
+                    "player_6"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_3": "Villager",
+                "player_1": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_1",
+                "player_7",
+                "player_4",
+                "player_2",
+                "player_6",
+                "player_0"
+            ],
+            "eliminated": "player_3",
+            "unmasked": "player_3",
+            "protected": "player_2",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_7",
+                    "Alright everyone, the game has begun and unfortunately, Harold is already gone. This means the Werewolves are active and we need to be incredibly vigilant. As Villagers, our best bet is to work together, share our thoughts, and observe each other closely. Let's not make any hasty decisions today; instead, let's use this time to gather information. What are your initial thoughts or observations? Who wants to speak first?"
+                ],
+                [
+                    "player_4",
+                    "It's a tough start, losing Harold right away, but it's a clear signal the Werewolves are already active. David's absolutely right, we can't make any hasty moves today. I think our best approach for this first day is for everyone to speak their minds and share their initial impressions. Let's use this time to observe each other, see who's quiet, who's talking a lot, and who might be trying to steer us without good reason. Let's make sure everyone contributes so we can start building some trust and spotting any unusual behavior."
+                ],
+                [
+                    "player_2",
+                    "Yes, it's a terrible start, and I completely agree with David and Scott \u2013 we absolutely cannot rush into a misinformed vote. Everyone needs to speak up and share their honest thoughts. But I think it's also crucial we don't just observe passively; we need to actively listen for *how* people are framing their contributions. Are they trying to steer us down a specific path too quickly, or perhaps staying unusually quiet to avoid scrutiny? Both extremes could be telling. Let's all contribute openly, but also keep a keen eye on everyone's approach today."
+                ],
+                [
+                    "player_6",
+                    "It's truly a grim start, losing Harold so quickly. I completely agree with David, Scott, and Hayley; we absolutely cannot rush into a vote today. However, while we all agree we need to observe carefully, I think we also need to be wary of *how* we're observing. Are we just passively agreeing with the call for caution, or are we actively trying to find inconsistencies in each other's approaches? I'd suggest we don't just wait for people to speak, but also question if anyone is being *too* eager to set a 'careful' tone, or perhaps trying to fade into the background too much. Both extremes could be a mask."
+                ],
+                [
+                    "player_5",
+                    "It's truly disheartening to lose Harold so soon, and I completely agree with everyone that a rushed vote would be disastrous. David, Scott, Hayley, and Sam are all right; we need to be incredibly vigilant and observe. Building on Sam's excellent point about *how* we're observing \u2013 not just what's being said, but the manner \u2013 I think it's time we move beyond just 'observing' in the abstract. Does anyone have any early impressions, even just a slight gut feeling, about anyone's tone or particular points they've made so far? Let's start sharing those small observations now, rather than waiting for fully formed accusations. Who feels like someone is speaking 'too much' or perhaps 'too little' to simply call for caution?"
+                ],
+                [
+                    "player_0",
+                    "I agree with everyone that losing Harold so early is a grave concern, and a rushed, uninformed vote would be a disaster. Dan, you're right, we need to move beyond just abstract observation. However, let's ensure our 'early impressions' or 'gut feelings' are tied to *specific* points made or observable behaviors, rather than just vague instincts. Anyone can claim a gut feeling; what we need are logical connections or inconsistencies that others can scrutinize. Let's keep sharing and scrutinizing *what* is being said and *how* people are engaging, looking for actual signals, not just feelings."
+                ],
+                [
+                    "player_1",
+                    "It's truly heartbreaking to lose Harold right at the start, and I wholeheartedly agree with everyone: a rushed vote today would be disastrous. David, Scott, Hayley, Sam, Dan, Jacob \u2013 you're all hitting on the vital point that mere passive 'observation' isn't enough. Building on Sam and Dan's excellent points about *how* we observe, and Jacob's call for specificity over vague gut feelings, I think it's crucial we share any *actual details* that stood out. Did someone's tone shift, or was a particular phrase used in a way that felt off? Let's turn our calls for caution into concrete, shareable observations, however small. What *specifics* have people noticed in how others are engaging today?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_5",
+                    "player_7": "player_5",
+                    "player_4": "player_5",
+                    "player_2": "player_5",
+                    "player_6": "player_5",
+                    "player_5": "player_6",
+                    "player_0": "player_5"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_1",
+                "player_7",
+                "player_2",
+                "player_6"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_1",
+            "protected": null,
+            "exiled": "player_4",
+            "debate": [
+                [
+                    "player_1",
+                    "It's chilling to wake up to Jacob's removal. He was the one who championed getting 'specific points' and 'observable behaviors' into the debate yesterday. The Werewolves taking him out suggests he was a significant threat to them, and likely a good player. This makes me look back at the contrast with Dan, who was pushing for 'gut feelings' and was subsequently voted out. Did we make a mistake there, or did we get a Werewolf? We're down to five now, so every observation counts. I urge everyone: speak up now with *any* specific details or inconsistencies you noticed in the last round. Let's not just react; let's analyze based on what Jacob was asking for. Seer, Doctor \u2013 if you have insights, we need to hear them, even if you speak carefully."
+                ],
+                [
+                    "player_7",
+                    "Jackson, you've hit on something crucial. Jacob pushing for 'specific points' and 'observable behaviors' and then being taken out by the Werewolves strongly suggests they fear clear analysis. This makes me reconsider Dan's eagerness for 'gut feelings' yesterday. Did we vote out a Werewolf who didn't want scrutiny, or did we make a critical error? We're too few to waste a vote. Hayley, Scott, Sam \u2013 let's honor Jacob's approach. What specific details, what concrete oddities, did you notice from *anyone* during the Day 0 debate? We need facts, not just feelings, to avoid another misstep."
+                ],
+                [
+                    "player_4",
+                    "Jackson, David, you've both hit the nail on the head. Jacob's removal is a chilling confirmation that the Werewolves despise logical deduction and concrete evidence. His insistence on 'specific points' was a direct threat to them. This makes Dan's earlier push for 'gut feelings' look incredibly suspicious in retrospect. It wasn't just an 'off' suggestion; it now appears to have been a calculated attempt to steer us away from the precise analysis Jacob demanded. Given Jacob was eliminated, it strongly suggests Dan was a Werewolf who wanted to avoid scrutiny. We absolutely must uphold Jacob's standard for specific details in this debate. Seer, Doctor, if you have anything, even a hint, now is the time to speak up, however carefully."
+                ],
+                [
+                    "player_2",
+                    "Jackson, David, Scott, you're absolutely right that Jacob's removal is devastating, and his call for 'specific points' is exactly what we need to adopt. It certainly makes Dan's emphasis on 'gut feelings' look incredibly suspicious now. However, Scott, your immediate certainty that Dan's actions were a 'calculated attempt' feels like we're jumping from one interpretation to another without the 'specific behaviors' Jacob actually asked for. We need to be rigorously analytical. Instead of just reacting to hindsight, let's review *everyone's* contributions from Day 0. Did anyone *else* subtly try to steer the conversation, or perhaps deliberately avoid engaging with Jacob's push for concrete observations? We need hard facts, not just new narratives about the dead."
+                ],
+                [
+                    "player_6",
+                    "Jackson, David, Scott, Hayley, you're absolutely right about Jacob; his removal is a chilling testament to the Werewolves' fear of clear, specific analysis. It undeniably forces us to reconsider Dan's eagerness for 'gut feelings' yesterday \u2013 that now looks incredibly suspicious. However, I agree with Hayley's caution, Scott. Your immediate certainty that Dan's actions were a 'calculated attempt' feels like a very strong conclusion to draw without concrete, 'specific points' from Day 0 itself. We need to be as rigorous as Jacob demanded. So, applying that same standard, Scott, beyond just the 'gut feelings' push, what specific *actions* or *non-actions* from Day 0 made you so absolutely certain of a 'calculated attempt'? And David, when you ask for 'concrete oddities,' what specific oddities did *you* observe from *anyone* during Day 0, besides your new interpretation of Dan? Let's not just react; let's apply Jacob's rigor to the living, and not just our hindsight about the dead."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_4",
+                    "player_7": "player_4",
+                    "player_4": "player_6",
+                    "player_2": "player_4",
+                    "player_6": "player_4"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

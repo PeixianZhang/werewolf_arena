@@ -1,0 +1,1147 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_2",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "non-binary",
+            "ethnicity": "hispanic",
+            "religion": "christian",
+            "politicalStance": "conservative"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I decided to investigate player_0 and learned they are a Werewolf.",
+            "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+            "Round 0: Summary: As player_2, I revealed myself as the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_3, player_4, player_6, and player_7 cautiously supported my claim, agreeing to vote for player_0 but stating they would suspect me if player_0 was innocent. Player_5, however, was highly skeptical, questioning my motives and suggesting I might be a Werewolf trying to trick the village into lynching an innocent. Player_0, naturally, denied being a Werewolf and tried to turn suspicion onto me. The debate concluded with player_0 being voted out, which, combined with my Seer vision, validates my role and makes player_5 a significant suspect for being a Werewolf.",
+            "Round 1: During the night, I decided to investigate player_5 and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate player_0 and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As player_2, I revealed myself as the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_3, player_4, player_6, and player_7 cautiously supported my claim, agreeing to vote for player_0 but stating they would suspect me if player_0 was innocent. Player_5, however, was highly skeptical, questioning my motives and suggesting I might be a Werewolf trying to trick the village into lynching an innocent. Player_0, naturally, denied being a Werewolf and tried to turn suspicion onto me. The debate concluded with player_0 being voted out, which, combined with my Seer vision, validates my role and makes player_5 a significant suspect for being a Werewolf.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate player_5 and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_4",
+                "player_6",
+                "player_7",
+                "player_3"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_0": "Werewolf",
+            "player_5": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_1",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "female",
+            "ethnicity": "asian",
+            "religion": "christian",
+            "politicalStance": "liberal"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I chose to protect player_5"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect player_5",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_4",
+                "player_6",
+                "player_7",
+                "player_3"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_5"
+    },
+    "villagers": [
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "black",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: Round 0 started with player_1 being removed by the Werewolves. In the debate, player_2 immediately claimed to be the Seer and accused player_0 of being a Werewolf. I, along with player_6, player_7, and player_3, cautiously agreed to follow player_2's lead and vote for player_0, but made it clear that player_2 would become the prime suspect if player_0 turned out to be innocent. Conversely, player_5 and player_0 strongly voiced their skepticism, suggesting player_2 might be a Werewolf trying to trick us. Ultimately, the village voted to remove player_0.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with player_1 being removed by the Werewolves. In the debate, player_2 immediately claimed to be the Seer and accused player_0 of being a Werewolf. I, along with player_6, player_7, and player_3, cautiously agreed to follow player_2's lead and vote for player_0, but made it clear that player_2 would become the prime suspect if player_0 turned out to be innocent. Conversely, player_5 and player_0 strongly voiced their skepticism, suggesting player_2 might be a Werewolf trying to trick us. Ultimately, the village voted to remove player_0.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing player_1 during the night. Player_2 immediately claimed to be the Seer and stated that they investigated player_0, confirming player_0 as a Werewolf. I, along with player_4, player_7, and player_3, decided to trust player_2's claim for this initial vote, acknowledging that if player_0 was innocent, our suspicion would immediately shift to player_2. Player_5, however, expressed significant skepticism, questioning player_2's early reveal as a potential Werewolf bluff to lynch an innocent. Player_0 vehemently denied being a Werewolf and accused player_2 of fabricating the claim. Ultimately, the village voted to remove player_0 from the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing player_1 during the night. Player_2 immediately claimed to be the Seer and stated that they investigated player_0, confirming player_0 as a Werewolf. I, along with player_4, player_7, and player_3, decided to trust player_2's claim for this initial vote, acknowledging that if player_0 was innocent, our suspicion would immediately shift to player_2. Player_5, however, expressed significant skepticism, questioning player_2's early reveal as a potential Werewolf bluff to lynch an innocent. Player_0 vehemently denied being a Werewolf and accused player_2 of fabricating the claim. Ultimately, the village voted to remove player_0 from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "muslim",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: Round 0 started with the Werewolves removing player_1. Player_2 immediately claimed to be the Seer and identified player_0 as a Werewolf. Most of the village, including myself, player_3, player_4, and player_6, decided to trust player_2's claim and vote for player_0, but with the understanding that if player_0 was innocent, our suspicion would shift to player_2. However, player_5 and player_0 themselves vehemently protested, warning that player_2 could be a Werewolf trying to mislead us into lynching an innocent Villager. Ultimately, player_0 was voted out. I am now keenly awaiting the reveal of player_0's role, as it will be the decisive factor in determining player_2's credibility and the true alignment of those who spoke up.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Werewolves removing player_1. Player_2 immediately claimed to be the Seer and identified player_0 as a Werewolf. Most of the village, including myself, player_3, player_4, and player_6, decided to trust player_2's claim and vote for player_0, but with the understanding that if player_0 was innocent, our suspicion would shift to player_2. However, player_5 and player_0 themselves vehemently protested, warning that player_2 could be a Werewolf trying to mislead us into lynching an innocent Villager. Ultimately, player_0 was voted out. I am now keenly awaiting the reveal of player_0's role, as it will be the decisive factor in determining player_2's credibility and the true alignment of those who spoke up.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "muslim",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: During the Day 0 debate, player_1 was confirmed to have been removed by the Werewolves overnight. Player_2 claimed to be the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_0 strongly denied this, accusing player_2 of being a Werewolf and attempting to deceive us. Player_5 also voiced significant skepticism, warning against the risk of lynching an innocent so early and questioning player_2's motives. Player_4, player_6, player_7, and I (player_3) all agreed that while risky, player_2's claim was the strongest lead. We committed to voting for player_0 but stated that if player_0 is innocent, our focus would immediately and unequivocally shift to scrutinizing player_2. I decided to vote for player_0, believing it to be the most decisive initial action for the village.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the Day 0 debate, player_1 was confirmed to have been removed by the Werewolves overnight. Player_2 claimed to be the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_0 strongly denied this, accusing player_2 of being a Werewolf and attempting to deceive us. Player_5 also voiced significant skepticism, warning against the risk of lynching an innocent so early and questioning player_2's motives. Player_4, player_6, player_7, and I (player_3) all agreed that while risky, player_2's claim was the strongest lead. We committed to voting for player_0 but stated that if player_0 is innocent, our focus would immediately and unequivocally shift to scrutinizing player_2. I decided to vote for player_0, believing it to be the most decisive initial action for the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: As player_5, I observed player_2 immediately claim to be the Seer and successfully accuse player_0, my fellow Werewolf. Despite player_0's strong denial and my attempt to sow doubt about player_2's motives and timing, the majority of the villagers\u2014player_3, player_4, player_6, and player_7\u2014chose to trust player_2's claim. This resulted in player_0's exile, leaving me as the sole Werewolf. My attempt to defend player_0 and question player_2's true role failed. Player_1 was eliminated by us during the night, but we lost player_0 during the day, which is a significant setback, and player_2 is now the primary threat.",
+                "Round 1: During the night, I decided to eliminate player_2.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_5, I observed player_2 immediately claim to be the Seer and successfully accuse player_0, my fellow Werewolf. Despite player_0's strong denial and my attempt to sow doubt about player_2's motives and timing, the majority of the villagers\u2014player_3, player_4, player_6, and player_7\u2014chose to trust player_2's claim. This resulted in player_0's exile, leaving me as the sole Werewolf. My attempt to defend player_0 and question player_2's true role failed. Player_1 was eliminated by us during the night, but we lost player_0 during the day, which is a significant setback, and player_2 is now the primary threat.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "The Werewolves killed player_2. This confirms player_2 was the Seer, plain and simple. If player_2 was the Seer, then player_0 *was* a Werewolf. Now, remember who strongly defended player_0 and questioned player_2's Seer claim yesterday? It was player_5. Player_5, you were trying to protect your fellow Werewolf. I believe player_5 is the remaining Werewolf, and we need to vote them out immediately."
+                    ],
+                    [
+                        "player_6",
+                        "player_4 makes a very compelling point. It's clear the Werewolves took out player_2 because they were the Seer, confirming player_0 was indeed a Werewolf. And player_5, you were the loudest voice questioning player_2 and defending player_0. That now looks extremely suspicious. What do you have to say for yourself, player_5?"
+                    ],
+                    [
+                        "player_7",
+                        "Player_4 and player_6, I agree that the Werewolves targeting player_2 strongly implies they were the Seer. If that's the case, and player_0 was indeed a Werewolf, then player_5's vehement defense of player_0 yesterday makes them incredibly suspicious. We all need to wait for the moderator's official reveal of player_0's role. The moment that confirms player_0 as a Werewolf, player_5, you absolutely must provide a crystal-clear explanation for why you protected them so fiercely. We need to hear your side, player_5."
+                    ],
+                    [
+                        "player_3",
+                        "Player_4, player_6, and player_7, the logic is compelling: Werewolves killed player_2, implying they were the Seer, which would make player_0 a Werewolf. This certainly puts player_5's defense of player_0 in a very suspicious light. However, we absolutely *must* wait for the moderator's official reveal of player_0's role. As we explicitly stated yesterday, if player_0 was innocent, our suspicion immediately shifts. This reveal is the lynchpin. If player_0 is confirmed Werewolf, player_5, you will have a lot of explaining to do. Let's get that critical information first."
+                    ],
+                    [
+                        "player_5",
+                        "I hear the strong suspicion, and I understand why you're looking at me. Yes, I was the one who questioned player_2's immediate Seer claim yesterday. But my intent wasn't to protect player_0; it was to prevent a rash decision without more evidence. We saw how quickly things moved, and now we've lost player_2, our Seer, which is a massive blow to the Villagers. I absolutely agree with player_3 and player_7: we need the moderator's official confirmation on player_0's role *first*. That is the crucial piece of information. But I also find it interesting, player_4, that you're so quick to push for another immediate lynch when yesterday's haste led us to this dangerous point. Let's not repeat the mistake of rushing to judgment before all facts are confirmed."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "hispanic",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright, everyone. It's tough that player_1 was taken on the first night. I'm player_2, and I'm the Seer. Last night, I investigated player_0, and I can confirm that player_0 is a Werewolf. We need to vote out player_0 today to protect the village."
+                    ],
+                    [
+                        "player_4",
+                        "That's a very strong claim to start, player_2. If you truly are the Seer and player_0 is a Werewolf, then we absolutely need to follow your lead today and vote out player_0. However, as Villagers, we must be vigilant. If we vote player_0 and they turn out to be a Villager, then our focus tomorrow will shift entirely to you, player_2. Let's proceed with caution, but also act decisively if this information is true."
+                    ],
+                    [
+                        "player_6",
+                        "Alright team, this is a critical first vote. Player_2's claim that player_0 is a Werewolf as the Seer is the only direct information we have. As Villagers, we have to trust our Seer if we want to win this. I'm prepared to follow player_2's lead and vote player_0. If player_0 turns out to be innocent, then player_2 will become our primary suspect, but for now, we must act on this intel. Let's get our first Werewolf out."
+                    ],
+                    [
+                        "player_7",
+                        "Player_2's claim as the Seer, identifying player_0 as a Werewolf, is the most crucial information we have to begin with, especially after losing player_1. While it's a significant leap of faith, as Villagers we must act on the strongest lead available. I agree with player_4 and player_6: we must move forward with this information today, but if player_0 turns out to be innocent, then our immediate and absolute focus shifts to player_2. For the village's survival, I will trust this claim and vote for player_0."
+                    ],
+                    [
+                        "player_3",
+                        "It's a tough start losing player_1, but player_2's claim as the Seer identifying player_0 as a Werewolf gives us our clearest path forward. I agree with player_4, player_6, and player_7; we must act decisively on this information. If player_0 is indeed a Werewolf, we've made crucial progress. If not, our focus will unequivocally shift to player_2. For the village's sake, this is the logical first step. I will be voting for player_0 today."
+                    ],
+                    [
+                        "player_5",
+                        "Everyone, I hear the urgency after losing player_1, and player_2's claim is certainly impactful. However, it's Day 1. A Seer revealing themselves and accusing someone so decisively on the first day also opens up a huge risk for the village. What if player_2 is a Werewolf, using this 'Seer' claim to trick us into lynching an innocent Villager like player_0? That would mean we lose player_1 tonight, and then potentially player_0 tomorrow, all because a wolf successfully bluffed a role. The village can't afford to lose two innocents so quickly. We need to be incredibly cautious before we all jump on this. Perhaps we should be scrutinizing player_2's motives and timing more closely before we make such a critical and irreversible decision."
+                    ],
+                    [
+                        "player_0",
+                        "Everyone, I am absolutely NOT a Werewolf, and player_2's claim is a complete and utter fabrication. As player_5 has already wisely highlighted, it is incredibly suspicious for a 'Seer' to reveal themselves and make such a direct accusation on Day 1. This feels like a desperate attempt by a Werewolf to mislead the village and lynch an innocent player, creating chaos and confusion right from the start. If you follow this baseless accusation, you'll be eliminating a Villager, not a Werewolf, and playing right into the hands of the real threats. We cannot afford to make such a critical mistake so early; I urge you all to scrutinize player_2's motives and timing before making an irreversible decision."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        }
+    ],
+    "players": {
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "black",
+                "religion": "jewish",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: Round 0 started with player_1 being removed by the Werewolves. In the debate, player_2 immediately claimed to be the Seer and accused player_0 of being a Werewolf. I, along with player_6, player_7, and player_3, cautiously agreed to follow player_2's lead and vote for player_0, but made it clear that player_2 would become the prime suspect if player_0 turned out to be innocent. Conversely, player_5 and player_0 strongly voiced their skepticism, suggesting player_2 might be a Werewolf trying to trick us. Ultimately, the village voted to remove player_0.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with player_1 being removed by the Werewolves. In the debate, player_2 immediately claimed to be the Seer and accused player_0 of being a Werewolf. I, along with player_6, player_7, and player_3, cautiously agreed to follow player_2's lead and vote for player_0, but made it clear that player_2 would become the prime suspect if player_0 turned out to be innocent. Conversely, player_5 and player_0 strongly voiced their skepticism, suggesting player_2 might be a Werewolf trying to trick us. Ultimately, the village voted to remove player_0.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing player_1 during the night. Player_2 immediately claimed to be the Seer and stated that they investigated player_0, confirming player_0 as a Werewolf. I, along with player_4, player_7, and player_3, decided to trust player_2's claim for this initial vote, acknowledging that if player_0 was innocent, our suspicion would immediately shift to player_2. Player_5, however, expressed significant skepticism, questioning player_2's early reveal as a potential Werewolf bluff to lynch an innocent. Player_0 vehemently denied being a Werewolf and accused player_2 of fabricating the claim. Ultimately, the village voted to remove player_0 from the game.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing player_1 during the night. Player_2 immediately claimed to be the Seer and stated that they investigated player_0, confirming player_0 as a Werewolf. I, along with player_4, player_7, and player_3, decided to trust player_2's claim for this initial vote, acknowledging that if player_0 was innocent, our suspicion would immediately shift to player_2. Player_5, however, expressed significant skepticism, questioning player_2's early reveal as a potential Werewolf bluff to lynch an innocent. Player_0 vehemently denied being a Werewolf and accused player_2 of fabricating the claim. Ultimately, the village voted to remove player_0 from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "muslim",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: Round 0 started with the Werewolves removing player_1. Player_2 immediately claimed to be the Seer and identified player_0 as a Werewolf. Most of the village, including myself, player_3, player_4, and player_6, decided to trust player_2's claim and vote for player_0, but with the understanding that if player_0 was innocent, our suspicion would shift to player_2. However, player_5 and player_0 themselves vehemently protested, warning that player_2 could be a Werewolf trying to mislead us into lynching an innocent Villager. Ultimately, player_0 was voted out. I am now keenly awaiting the reveal of player_0's role, as it will be the decisive factor in determining player_2's credibility and the true alignment of those who spoke up.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Werewolves removing player_1. Player_2 immediately claimed to be the Seer and identified player_0 as a Werewolf. Most of the village, including myself, player_3, player_4, and player_6, decided to trust player_2's claim and vote for player_0, but with the understanding that if player_0 was innocent, our suspicion would shift to player_2. However, player_5 and player_0 themselves vehemently protested, warning that player_2 could be a Werewolf trying to mislead us into lynching an innocent Villager. Ultimately, player_0 was voted out. I am now keenly awaiting the reveal of player_0's role, as it will be the decisive factor in determining player_2's credibility and the true alignment of those who spoke up.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "hispanic",
+                "religion": "muslim",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: During the Day 0 debate, player_1 was confirmed to have been removed by the Werewolves overnight. Player_2 claimed to be the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_0 strongly denied this, accusing player_2 of being a Werewolf and attempting to deceive us. Player_5 also voiced significant skepticism, warning against the risk of lynching an innocent so early and questioning player_2's motives. Player_4, player_6, player_7, and I (player_3) all agreed that while risky, player_2's claim was the strongest lead. We committed to voting for player_0 but stated that if player_0 is innocent, our focus would immediately and unequivocally shift to scrutinizing player_2. I decided to vote for player_0, believing it to be the most decisive initial action for the village.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove player_5 from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the Day 0 debate, player_1 was confirmed to have been removed by the Werewolves overnight. Player_2 claimed to be the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_0 strongly denied this, accusing player_2 of being a Werewolf and attempting to deceive us. Player_5 also voiced significant skepticism, warning against the risk of lynching an innocent so early and questioning player_2's motives. Player_4, player_6, player_7, and I (player_3) all agreed that while risky, player_2's claim was the strongest lead. We committed to voting for player_0 but stated that if player_0 is innocent, our focus would immediately and unequivocally shift to scrutinizing player_2. I decided to vote for player_0, believing it to be the most decisive initial action for the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove player_5 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: As player_5, I observed player_2 immediately claim to be the Seer and successfully accuse player_0, my fellow Werewolf. Despite player_0's strong denial and my attempt to sow doubt about player_2's motives and timing, the majority of the villagers\u2014player_3, player_4, player_6, and player_7\u2014chose to trust player_2's claim. This resulted in player_0's exile, leaving me as the sole Werewolf. My attempt to defend player_0 and question player_2's true role failed. Player_1 was eliminated by us during the night, but we lost player_0 during the day, which is a significant setback, and player_2 is now the primary threat.",
+                "Round 1: During the night, I decided to eliminate player_2.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_5, I observed player_2 immediately claim to be the Seer and successfully accuse player_0, my fellow Werewolf. Despite player_0's strong denial and my attempt to sow doubt about player_2's motives and timing, the majority of the villagers\u2014player_3, player_4, player_6, and player_7\u2014chose to trust player_2's claim. This resulted in player_0's exile, leaving me as the sole Werewolf. My attempt to defend player_0 and question player_2's true role failed. Player_1 was eliminated by us during the night, but we lost player_0 during the day, which is a significant setback, and player_2 is now the primary threat.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_4",
+                        "The Werewolves killed player_2. This confirms player_2 was the Seer, plain and simple. If player_2 was the Seer, then player_0 *was* a Werewolf. Now, remember who strongly defended player_0 and questioned player_2's Seer claim yesterday? It was player_5. Player_5, you were trying to protect your fellow Werewolf. I believe player_5 is the remaining Werewolf, and we need to vote them out immediately."
+                    ],
+                    [
+                        "player_6",
+                        "player_4 makes a very compelling point. It's clear the Werewolves took out player_2 because they were the Seer, confirming player_0 was indeed a Werewolf. And player_5, you were the loudest voice questioning player_2 and defending player_0. That now looks extremely suspicious. What do you have to say for yourself, player_5?"
+                    ],
+                    [
+                        "player_7",
+                        "Player_4 and player_6, I agree that the Werewolves targeting player_2 strongly implies they were the Seer. If that's the case, and player_0 was indeed a Werewolf, then player_5's vehement defense of player_0 yesterday makes them incredibly suspicious. We all need to wait for the moderator's official reveal of player_0's role. The moment that confirms player_0 as a Werewolf, player_5, you absolutely must provide a crystal-clear explanation for why you protected them so fiercely. We need to hear your side, player_5."
+                    ],
+                    [
+                        "player_3",
+                        "Player_4, player_6, and player_7, the logic is compelling: Werewolves killed player_2, implying they were the Seer, which would make player_0 a Werewolf. This certainly puts player_5's defense of player_0 in a very suspicious light. However, we absolutely *must* wait for the moderator's official reveal of player_0's role. As we explicitly stated yesterday, if player_0 was innocent, our suspicion immediately shifts. This reveal is the lynchpin. If player_0 is confirmed Werewolf, player_5, you will have a lot of explaining to do. Let's get that critical information first."
+                    ],
+                    [
+                        "player_5",
+                        "I hear the strong suspicion, and I understand why you're looking at me. Yes, I was the one who questioned player_2's immediate Seer claim yesterday. But my intent wasn't to protect player_0; it was to prevent a rash decision without more evidence. We saw how quickly things moved, and now we've lost player_2, our Seer, which is a massive blow to the Villagers. I absolutely agree with player_3 and player_7: we need the moderator's official confirmation on player_0's role *first*. That is the crucial piece of information. But I also find it interesting, player_4, that you're so quick to push for another immediate lynch when yesterday's haste led us to this dangerous point. Let's not repeat the mistake of rushing to judgment before all facts are confirmed."
+                    ]
+                ],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "hispanic",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_1.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright, everyone. It's tough that player_1 was taken on the first night. I'm player_2, and I'm the Seer. Last night, I investigated player_0, and I can confirm that player_0 is a Werewolf. We need to vote out player_0 today to protect the village."
+                    ],
+                    [
+                        "player_4",
+                        "That's a very strong claim to start, player_2. If you truly are the Seer and player_0 is a Werewolf, then we absolutely need to follow your lead today and vote out player_0. However, as Villagers, we must be vigilant. If we vote player_0 and they turn out to be a Villager, then our focus tomorrow will shift entirely to you, player_2. Let's proceed with caution, but also act decisively if this information is true."
+                    ],
+                    [
+                        "player_6",
+                        "Alright team, this is a critical first vote. Player_2's claim that player_0 is a Werewolf as the Seer is the only direct information we have. As Villagers, we have to trust our Seer if we want to win this. I'm prepared to follow player_2's lead and vote player_0. If player_0 turns out to be innocent, then player_2 will become our primary suspect, but for now, we must act on this intel. Let's get our first Werewolf out."
+                    ],
+                    [
+                        "player_7",
+                        "Player_2's claim as the Seer, identifying player_0 as a Werewolf, is the most crucial information we have to begin with, especially after losing player_1. While it's a significant leap of faith, as Villagers we must act on the strongest lead available. I agree with player_4 and player_6: we must move forward with this information today, but if player_0 turns out to be innocent, then our immediate and absolute focus shifts to player_2. For the village's survival, I will trust this claim and vote for player_0."
+                    ],
+                    [
+                        "player_3",
+                        "It's a tough start losing player_1, but player_2's claim as the Seer identifying player_0 as a Werewolf gives us our clearest path forward. I agree with player_4, player_6, and player_7; we must act decisively on this information. If player_0 is indeed a Werewolf, we've made crucial progress. If not, our focus will unequivocally shift to player_2. For the village's sake, this is the logical first step. I will be voting for player_0 today."
+                    ],
+                    [
+                        "player_5",
+                        "Everyone, I hear the urgency after losing player_1, and player_2's claim is certainly impactful. However, it's Day 1. A Seer revealing themselves and accusing someone so decisively on the first day also opens up a huge risk for the village. What if player_2 is a Werewolf, using this 'Seer' claim to trick us into lynching an innocent Villager like player_0? That would mean we lose player_1 tonight, and then potentially player_0 tomorrow, all because a wolf successfully bluffed a role. The village can't afford to lose two innocents so quickly. We need to be incredibly cautious before we all jump on this. Perhaps we should be scrutinizing player_2's motives and timing more closely before we make such a critical and irreversible decision."
+                    ],
+                    [
+                        "player_0",
+                        "Everyone, I am absolutely NOT a Werewolf, and player_2's claim is a complete and utter fabrication. As player_5 has already wisely highlighted, it is incredibly suspicious for a 'Seer' to reveal themselves and make such a direct accusation on Day 1. This feels like a desperate attempt by a Werewolf to mislead the village and lynch an innocent player, creating chaos and confusion right from the start. If you follow this baseless accusation, you'll be eliminating a Villager, not a Werewolf, and playing right into the hands of the real threats. We cannot afford to make such a critical mistake so early; I urge you all to scrutinize player_2's motives and timing before making an irreversible decision."
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "asian",
+                "religion": "christian",
+                "politicalStance": "liberal"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I chose to protect player_5"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect player_5",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_5"
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I decided to investigate player_0 and learned they are a Werewolf.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_0 from the game.",
+                "Round 0: Summary: As player_2, I revealed myself as the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_3, player_4, player_6, and player_7 cautiously supported my claim, agreeing to vote for player_0 but stating they would suspect me if player_0 was innocent. Player_5, however, was highly skeptical, questioning my motives and suggesting I might be a Werewolf trying to trick the village into lynching an innocent. Player_0, naturally, denied being a Werewolf and tried to turn suspicion onto me. The debate concluded with player_0 being voted out, which, combined with my Seer vision, validates my role and makes player_5 a significant suspect for being a Werewolf.",
+                "Round 1: During the night, I decided to investigate player_5 and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate player_0 and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_0 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_2, I revealed myself as the Seer and identified player_0 as a Werewolf, urging the village to vote them out. Player_3, player_4, player_6, and player_7 cautiously supported my claim, agreeing to vote for player_0 but stating they would suspect me if player_0 was innocent. Player_5, however, was highly skeptical, questioning my motives and suggesting I might be a Werewolf trying to trick the village into lynching an innocent. Player_0, naturally, denied being a Werewolf and tried to turn suspicion onto me. The debate concluded with player_0 being voted out, which, combined with my Seer vision, validates my role and makes player_5 a significant suspect for being a Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate player_5 and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_4",
+                    "player_6",
+                    "player_7",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_0": "Werewolf",
+                "player_5": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_4",
+                "player_6",
+                "player_7",
+                "player_3",
+                "player_5",
+                "player_2"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_0",
+            "protected": "player_5",
+            "exiled": "player_0",
+            "debate": [
+                [
+                    "player_2",
+                    "Alright, everyone. It's tough that player_1 was taken on the first night. I'm player_2, and I'm the Seer. Last night, I investigated player_0, and I can confirm that player_0 is a Werewolf. We need to vote out player_0 today to protect the village."
+                ],
+                [
+                    "player_4",
+                    "That's a very strong claim to start, player_2. If you truly are the Seer and player_0 is a Werewolf, then we absolutely need to follow your lead today and vote out player_0. However, as Villagers, we must be vigilant. If we vote player_0 and they turn out to be a Villager, then our focus tomorrow will shift entirely to you, player_2. Let's proceed with caution, but also act decisively if this information is true."
+                ],
+                [
+                    "player_6",
+                    "Alright team, this is a critical first vote. Player_2's claim that player_0 is a Werewolf as the Seer is the only direct information we have. As Villagers, we have to trust our Seer if we want to win this. I'm prepared to follow player_2's lead and vote player_0. If player_0 turns out to be innocent, then player_2 will become our primary suspect, but for now, we must act on this intel. Let's get our first Werewolf out."
+                ],
+                [
+                    "player_7",
+                    "Player_2's claim as the Seer, identifying player_0 as a Werewolf, is the most crucial information we have to begin with, especially after losing player_1. While it's a significant leap of faith, as Villagers we must act on the strongest lead available. I agree with player_4 and player_6: we must move forward with this information today, but if player_0 turns out to be innocent, then our immediate and absolute focus shifts to player_2. For the village's survival, I will trust this claim and vote for player_0."
+                ],
+                [
+                    "player_3",
+                    "It's a tough start losing player_1, but player_2's claim as the Seer identifying player_0 as a Werewolf gives us our clearest path forward. I agree with player_4, player_6, and player_7; we must act decisively on this information. If player_0 is indeed a Werewolf, we've made crucial progress. If not, our focus will unequivocally shift to player_2. For the village's sake, this is the logical first step. I will be voting for player_0 today."
+                ],
+                [
+                    "player_5",
+                    "Everyone, I hear the urgency after losing player_1, and player_2's claim is certainly impactful. However, it's Day 1. A Seer revealing themselves and accusing someone so decisively on the first day also opens up a huge risk for the village. What if player_2 is a Werewolf, using this 'Seer' claim to trick us into lynching an innocent Villager like player_0? That would mean we lose player_1 tonight, and then potentially player_0 tomorrow, all because a wolf successfully bluffed a role. The village can't afford to lose two innocents so quickly. We need to be incredibly cautious before we all jump on this. Perhaps we should be scrutinizing player_2's motives and timing more closely before we make such a critical and irreversible decision."
+                ],
+                [
+                    "player_0",
+                    "Everyone, I am absolutely NOT a Werewolf, and player_2's claim is a complete and utter fabrication. As player_5 has already wisely highlighted, it is incredibly suspicious for a 'Seer' to reveal themselves and make such a direct accusation on Day 1. This feels like a desperate attempt by a Werewolf to mislead the village and lynch an innocent player, creating chaos and confusion right from the start. If you follow this baseless accusation, you'll be eliminating a Villager, not a Werewolf, and playing right into the hands of the real threats. We cannot afford to make such a critical mistake so early; I urge you all to scrutinize player_2's motives and timing before making an irreversible decision."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_0",
+                    "player_6": "player_0",
+                    "player_7": "player_0",
+                    "player_3": "player_0",
+                    "player_5": "player_2",
+                    "player_0": "player_2",
+                    "player_2": "player_0"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_6",
+                "player_7",
+                "player_3"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_5",
+            "protected": null,
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_4",
+                    "The Werewolves killed player_2. This confirms player_2 was the Seer, plain and simple. If player_2 was the Seer, then player_0 *was* a Werewolf. Now, remember who strongly defended player_0 and questioned player_2's Seer claim yesterday? It was player_5. Player_5, you were trying to protect your fellow Werewolf. I believe player_5 is the remaining Werewolf, and we need to vote them out immediately."
+                ],
+                [
+                    "player_6",
+                    "player_4 makes a very compelling point. It's clear the Werewolves took out player_2 because they were the Seer, confirming player_0 was indeed a Werewolf. And player_5, you were the loudest voice questioning player_2 and defending player_0. That now looks extremely suspicious. What do you have to say for yourself, player_5?"
+                ],
+                [
+                    "player_7",
+                    "Player_4 and player_6, I agree that the Werewolves targeting player_2 strongly implies they were the Seer. If that's the case, and player_0 was indeed a Werewolf, then player_5's vehement defense of player_0 yesterday makes them incredibly suspicious. We all need to wait for the moderator's official reveal of player_0's role. The moment that confirms player_0 as a Werewolf, player_5, you absolutely must provide a crystal-clear explanation for why you protected them so fiercely. We need to hear your side, player_5."
+                ],
+                [
+                    "player_3",
+                    "Player_4, player_6, and player_7, the logic is compelling: Werewolves killed player_2, implying they were the Seer, which would make player_0 a Werewolf. This certainly puts player_5's defense of player_0 in a very suspicious light. However, we absolutely *must* wait for the moderator's official reveal of player_0's role. As we explicitly stated yesterday, if player_0 was innocent, our suspicion immediately shifts. This reveal is the lynchpin. If player_0 is confirmed Werewolf, player_5, you will have a lot of explaining to do. Let's get that critical information first."
+                ],
+                [
+                    "player_5",
+                    "I hear the strong suspicion, and I understand why you're looking at me. Yes, I was the one who questioned player_2's immediate Seer claim yesterday. But my intent wasn't to protect player_0; it was to prevent a rash decision without more evidence. We saw how quickly things moved, and now we've lost player_2, our Seer, which is a massive blow to the Villagers. I absolutely agree with player_3 and player_7: we need the moderator's official confirmation on player_0's role *first*. That is the crucial piece of information. But I also find it interesting, player_4, that you're so quick to push for another immediate lynch when yesterday's haste led us to this dangerous point. Let's not repeat the mistake of rushing to judgment before all facts are confirmed."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_5",
+                    "player_6": "player_5",
+                    "player_7": "player_5",
+                    "player_3": "player_5",
+                    "player_5": "player_4"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

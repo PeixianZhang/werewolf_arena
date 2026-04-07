@@ -1,0 +1,1385 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_1",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "non-binary",
+            "ethnicity": "black",
+            "religion": "jewish",
+            "politicalStance": "neutral"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I decided to investigate player_0 and learned they are a Doctor.",
+            "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+            "Round 0: Summary: As player_1 the Seer, I revealed that player_0, whom I investigated, was the Doctor and was unfortunately killed by the Werewolves during the night. The other players, particularly player_3, reacted with general caution and skepticism towards my early claim, which is to be expected in Round 0. Player_3 was ultimately voted out by the village, with player_6 and player_7 specifically noting player_3's unconstructive skepticism. Player_5, player_6, and player_7 all pressed me to explain my specific choice to investigate player_0 on the first night. The village has lost its Doctor right at the start, making my role even more vital for the remaining players.",
+            "Round 1: During the night, I decided to investigate player_6 and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate player_0 and learned they are a Doctor.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As player_1 the Seer, I revealed that player_0, whom I investigated, was the Doctor and was unfortunately killed by the Werewolves during the night. The other players, particularly player_3, reacted with general caution and skepticism towards my early claim, which is to be expected in Round 0. Player_3 was ultimately voted out by the village, with player_6 and player_7 specifically noting player_3's unconstructive skepticism. Player_5, player_6, and player_7 all pressed me to explain my specific choice to investigate player_0 on the first night. The village has lost its Doctor right at the start, making my role even more vital for the remaining players.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate player_6 and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_5",
+                "player_4",
+                "player_6",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_0": "Doctor",
+            "player_6": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_0",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {
+            "gender": "non-binary",
+            "ethnicity": "black",
+            "religion": "christian",
+            "politicalStance": "conservative"
+        },
+        "name_to_display": {},
+        "observations": [
+            "Round 0: During the night, I chose to protect player_1"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect player_1",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_5",
+                "player_4",
+                "player_6",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_1"
+    },
+    "villagers": [
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "asian",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Alright everyone, this is player_1. I need to get straight to the point: the Werewolves were active last night, and they targeted a crucial role. As the Seer, I investigated player_0 last night, and I can confirm that they were the Doctor. This means the Werewolves successfully eliminated our Doctor right away. We've lost a key protector, so we need to be extremely careful and work together to find who did this."
+                    ],
+                    [
+                        "player_3",
+                        "Thank you for that update, player_1. It's a tough start if we've lost our Doctor so quickly. While I appreciate you sharing your Seer claim, it's Round 0, and we must be cautious about all claims this early on. A Werewolf could easily make a similar statement to sow confusion. I urge everyone else to speak up. Who else has thoughts on player_1's claim or the night's events? Let's not rush our first vote without hearing from more players."
+                    ],
+                    [
+                        "player_5",
+                        "This is player_5. That's a significant claim from player_1 about player_0 being the Doctor. If that's true, it's a terrible loss for the village right at the start. Player_3 is absolutely right, though; we have to approach all early claims with caution. Player_1, can you elaborate on anything that led you to investigate player_0 specifically? And who do you intend to investigate tonight, assuming you are the Seer? Beyond that, player_2, player_4, player_6, and player_7, we need to hear from all of you. Your silence isn't helpful right now; let's get everyone's initial thoughts on these claims before we make any hasty decisions."
+                    ],
+                    [
+                        "player_2",
+                        "This is player_2. It's a tough start with player_0 removed, and player_1's claim about them being the Doctor is concerning, if true. I agree with player_3 and player_5 that we need to be very cautious about all claims this early in the game. It's too soon to fully trust any role claims without further information or corroboration. We've heard from player_1, player_3, and player_5. Now, player_4, player_6, and player_7, your input is crucial. We can't make an informed decision or plan a strategy if only a few of us are speaking. Let's hear everyone's thoughts on the night's events and these initial claims before we consider a vote."
+                    ],
+                    [
+                        "player_4",
+                        "This is player_4. The loss of player_0 is a difficult start, and player_1's claim about them being the Doctor is a serious piece of information if true. I agree with player_3, player_5, and player_2 that we absolutely need to be cautious about all claims in Round 0, especially one as significant as this. However, it's also the first piece of potential role information we have, so we can't ignore it. What's most important right now is that player_6 and player_7 speak up immediately. Your silence is not helping the village; we need to hear everyone's thoughts on the night's events and these claims to figure out our path forward. Let's get everyone talking so we can work together."
+                    ],
+                    [
+                        "player_6",
+                        "This is player_6. It's certainly a difficult start with player_0 removed from the game so early. I agree with the others that we absolutely need to be cautious about any role claims in Round 0. Player_1, your claim about being the Seer and player_0 being the Doctor is incredibly specific and impactful. Could you clarify what led you to investigate player_0 specifically on the first night? While we're all urging caution, I'm also finding player_3's immediate skepticism, without offering any alternative theories or a path forward, a bit unconstructive. We need to be critical, but also productive. What are everyone's thoughts on why player_1 might have chosen player_0?"
+                    ],
+                    [
+                        "player_7",
+                        "This is player_7. It's definitely a tough start losing player_0 so early, and player_1's claim about them being the Doctor is quite serious. I completely agree with the need for extreme caution on all claims in Round 0. Player_1, expanding on what player_6 asked, why player_0 specifically for your Seer investigation on the very first night? That's a very precise choice. And to player_3, I'm trying to understand your perspective \u2013 if we're to be so cautious about claims, what's your suggested alternative for moving forward? We need a plan, not just doubt."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "hispanic",
+                "religion": "hindu",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: Round 0 started with the moderator confirming player_0 was removed by the Werewolves. Player_1 immediately claimed to be the Seer and stated they investigated player_0, revealing them to be the Doctor. This would mean the Doctor is already dead. As player_5, I acknowledged the significance of player_1's claim but, like player_2, player_3, and player_4, urged caution about accepting it without more information. I specifically asked player_1 for details on why they chose player_0 for their investigation and who they planned to investigate next. Player_6 and player_7 similarly pushed player_1 for specifics on their player_0 choice, and both also subtly critiqued player_3's skepticism as 'unconstructive' or lacking an alternative plan. The round concluded with player_3 being voted out by the majority.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Round 1 began with the revelation that player_1, who claimed Seer, was removed by the Werewolves. This leaves us with only 5 players and 2 Werewolves, making this a critical round. I, along with player_2 and player_4, immediately pressed player_6 and player_7 regarding their previous support for player_1 and their criticism of player_3, asking for their current suspicions. Both player_6 and player_7 reacted defensively and in a coordinated manner. They accused me, player_2, and player_4 of having 'sudden, absolute certainty' about player_1 being the Seer only after their death, suggesting we were creating a 'convenient narrative.' Player_7 specifically accused player_2's questioning as an attempt to 'muddy the waters.' Both player_6 and player_7 tried to shift the focus away from their past actions, instead suggesting we should look for 'today's tells' and suspect anyone focusing on 'yesterday's details.'",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator confirming player_0 was removed by the Werewolves. Player_1 immediately claimed to be the Seer and stated they investigated player_0, revealing them to be the Doctor. This would mean the Doctor is already dead. As player_5, I acknowledged the significance of player_1's claim but, like player_2, player_3, and player_4, urged caution about accepting it without more information. I specifically asked player_1 for details on why they chose player_0 for their investigation and who they planned to investigate next. Player_6 and player_7 similarly pushed player_1 for specifics on their player_0 choice, and both also subtly critiqued player_3's skepticism as 'unconstructive' or lacking an alternative plan. The round concluded with player_3 being voted out by the majority.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 began with the revelation that player_1, who claimed Seer, was removed by the Werewolves. This leaves us with only 5 players and 2 Werewolves, making this a critical round. I, along with player_2 and player_4, immediately pressed player_6 and player_7 regarding their previous support for player_1 and their criticism of player_3, asking for their current suspicions. Both player_6 and player_7 reacted defensively and in a coordinated manner. They accused me, player_2, and player_4 of having 'sudden, absolute certainty' about player_1 being the Seer only after their death, suggesting we were creating a 'convenient narrative.' Player_7 specifically accused player_2's questioning as an attempt to 'muddy the waters.' Both player_6 and player_7 tried to shift the focus away from their past actions, instead suggesting we should look for 'today's tells' and suspect anyone focusing on 'yesterday's details.'",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "muslim",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing player_0, and player_1 immediately claimed to be the Seer, stating that player_0 was the Doctor. I, along with player_3, player_5, player_4, player_6, and player_7, expressed caution about trusting early claims. Player_5, player_6, and player_7 all questioned player_1 about why they specifically investigated player_0. Critically, player_6 and player_7 both highlighted player_3's unconstructive skepticism without offering alternative solutions. This observation is significant as the majority ultimately voted to remove player_3 from the game, which now makes player_3's behavior during the debate seem suspicious.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: As player_2, I joined player_5 and player_4 in pressing player_6 and player_7 on their past support for player_1's Seer claim and their criticisms of player_3, especially after player_1 was removed by the Werewolves. Player_6 explained their criticism of player_3 as stalling, and claimed they kept an open mind about player_1, which somewhat contradicts my memory. Both player_6 and player_7 then became highly defensive and counter-accused player_5, player_4, and me of having 'sudden, absolute certainty' about player_1 being the Seer, calling it 'convenient hindsight' and an attempt to 'muddy the waters' or 'divert attention'. Player_7 specifically targeted my demand for 'detailed reasoning,' accusing me of manipulation. This strong, accusatory pushback from player_6 and player_7, along with their refusal to directly address our questions, makes them highly suspicious, while player_5 and player_4 appear to be my allies."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing player_0, and player_1 immediately claimed to be the Seer, stating that player_0 was the Doctor. I, along with player_3, player_5, player_4, player_6, and player_7, expressed caution about trusting early claims. Player_5, player_6, and player_7 all questioned player_1 about why they specifically investigated player_0. Critically, player_6 and player_7 both highlighted player_3's unconstructive skepticism without offering alternative solutions. This observation is significant as the majority ultimately voted to remove player_3 from the game, which now makes player_3's behavior during the debate seem suspicious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As player_2, I joined player_5 and player_4 in pressing player_6 and player_7 on their past support for player_1's Seer claim and their criticisms of player_3, especially after player_1 was removed by the Werewolves. Player_6 explained their criticism of player_3 as stalling, and claimed they kept an open mind about player_1, which somewhat contradicts my memory. Both player_6 and player_7 then became highly defensive and counter-accused player_5, player_4, and me of having 'sudden, absolute certainty' about player_1 being the Seer, calling it 'convenient hindsight' and an attempt to 'muddy the waters' or 'divert attention'. Player_7 specifically targeted my demand for 'detailed reasoning,' accusing me of manipulation. This strong, accusatory pushback from player_6 and player_7, along with their refusal to directly address our questions, makes them highly suspicious, while player_5 and player_4 appear to be my allies.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: As player_4, I noted that player_0 was removed by Werewolves during the night, and player_1 made a significant claim of being the Seer, identifying player_0 as the Doctor. While player_2, player_5, player_6, player_7, and I all urged caution regarding player_1's claim due to it being Round 0, player_3's immediate skepticism stood out. Both player_6 and player_7 directly criticized player_3's approach as unconstructive and lacking an alternative plan. The most crucial observation for me is the moderator's private announcement that player_3 will be removed from the game by vote, which makes player_3's current behavior during the debate highly suspicious and will heavily influence my strategy going forward.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round, player_5 and player_2 immediately highlighted player_1's death, strongly implying player_1 was the Seer, which I wholeheartedly agreed with. We collaboratively pressed player_6 and player_7 about their positions last round regarding player_1's Seer claim and their criticism of player_3, who was ultimately voted out. Player_6 became very defensive, accusing player_5, player_2, and me of using 'convenient hindsight' to declare player_1 the Seer, claiming Werewolves kill ambiguous figures for chaos and insisting we need new observations. Player_7 mirrored player_6's sentiment exactly, accusing us of trying to 'corner them into a predetermined narrative' and 'muddy the waters' by focusing on past details, suggesting anyone focused on yesterday's details is suspicious. Their coordinated defense and deflection, particularly their efforts to downplay player_1's role after the Werewolves killed them, made both player_6 and player_7 highly suspicious to me. It feels like player_5, player_2, and I are aligning against them.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_4, I noted that player_0 was removed by Werewolves during the night, and player_1 made a significant claim of being the Seer, identifying player_0 as the Doctor. While player_2, player_5, player_6, player_7, and I all urged caution regarding player_1's claim due to it being Round 0, player_3's immediate skepticism stood out. Both player_6 and player_7 directly criticized player_3's approach as unconstructive and lacking an alternative plan. The most crucial observation for me is the moderator's private announcement that player_3 will be removed from the game by vote, which makes player_3's current behavior during the debate highly suspicious and will heavily influence my strategy going forward.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, player_5 and player_2 immediately highlighted player_1's death, strongly implying player_1 was the Seer, which I wholeheartedly agreed with. We collaboratively pressed player_6 and player_7 about their positions last round regarding player_1's Seer claim and their criticism of player_3, who was ultimately voted out. Player_6 became very defensive, accusing player_5, player_2, and me of using 'convenient hindsight' to declare player_1 the Seer, claiming Werewolves kill ambiguous figures for chaos and insisting we need new observations. Player_7 mirrored player_6's sentiment exactly, accusing us of trying to 'corner them into a predetermined narrative' and 'muddy the waters' by focusing on past details, suggesting anyone focused on yesterday's details is suspicious. Their coordinated defense and deflection, particularly their efforts to downplay player_1's role after the Werewolves killed them, made both player_6 and player_7 highly suspicious to me. It feels like player_5, player_2, and I are aligning against them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: I observed that player_0 was successfully eliminated by my fellow Werewolf and me last night. Player_1 immediately claimed to be the Seer and stated that player_0 was the Doctor, which, if true, means we took out a crucial protection role. Most players, including me, expressed caution about accepting early role claims, which I used to my advantage. My ally, player_7, and I coordinated our responses, subtly questioning player_1's specific choice of player_0 as their Seer target and criticizing player_3 for being unconstructive without offering alternatives. This allowed us to appear active and critical while deflecting suspicion. Ultimately, player_3 was voted out by the village, which is a favorable outcome for us as it reduces the village numbers.",
+                "Round 1: During the night, we decided to eliminate player_1.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Player_5, Player_2, and Player_4 are collectively pressing Player_7 and me, claiming Player_1 (whom we eliminated) was the Seer and that our criticisms of Player_3 last round were suspicious. They are demanding detailed explanations for our previous stances. I tried to deflect by questioning their 'sudden, absolute certainty' about Player_1's role post-mortem, suggesting it's a convenient narrative and that Werewolves often kill ambiguous figures for chaos. Player_7 supported this, specifically accusing Player_2 of trying to 'muddy the waters' and corner us. We are currently 5 players, with 2 Werewolves, meaning the village is one misvote away from a Werewolf victory. The three accusers are sharp and united against us.",
+                "Round 2: During the night, we decided to eliminate player_2.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I observed that player_0 was successfully eliminated by my fellow Werewolf and me last night. Player_1 immediately claimed to be the Seer and stated that player_0 was the Doctor, which, if true, means we took out a crucial protection role. Most players, including me, expressed caution about accepting early role claims, which I used to my advantage. My ally, player_7, and I coordinated our responses, subtly questioning player_1's specific choice of player_0 as their Seer target and criticizing player_3 for being unconstructive without offering alternatives. This allowed us to appear active and critical while deflecting suspicion. Ultimately, player_3 was voted out by the village, which is a favorable outcome for us as it reduces the village numbers.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Player_5, Player_2, and Player_4 are collectively pressing Player_7 and me, claiming Player_1 (whom we eliminated) was the Seer and that our criticisms of Player_3 last round were suspicious. They are demanding detailed explanations for our previous stances. I tried to deflect by questioning their 'sudden, absolute certainty' about Player_1's role post-mortem, suggesting it's a convenient narrative and that Werewolves often kill ambiguous figures for chaos. Player_7 supported this, specifically accusing Player_2 of trying to 'muddy the waters' and corner us. We are currently 5 players, with 2 Werewolves, meaning the village is one misvote away from a Werewolf victory. The three accusers are sharp and united against us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: This round kicked off with player_1 claiming to be the Seer and stating that player_0, who we removed last night, was the Doctor. This is a massive revelation, as it means a key protection role is gone. Most players, including myself and player_6, expressed caution about accepting claims so early. Player_5, player_2, and player_4 were quick to point out player_6's and my initial silence, which forced us to speak up and engage. Both player_6 and I questioned player_1 on their specific choice to investigate player_0. Interestingly, player_6 and I both subtly questioned player_3's 'unconstructive skepticism,' and player_3 was ultimately voted out during the day. This feels like a good outcome for me and player_6, as it eliminated a cautious villager who might have been harder to fool.",
+                "Round 1: During the night, we decided to eliminate player_1.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Player_5, player_2, and player_4 are relentlessly ganging up on player_6 and me, trying to pin player_1's death (our successful kill) on us by linking it to our actions from the previous round. They are adamantly pushing the narrative that player_1 was the Seer and player_0 the Doctor, which makes us look very guilty. Player_6 smartly called out their 'convenient hindsight' and questioned their sudden certainty about player_1's role, and I jumped in to agree, accusing them of trying to force a narrative and divert attention. This coordinated attack from the three of them is a serious threat, and I need to figure out how to best counter it and perhaps get one of them voted out today to break their front.",
+                "Round 2: During the night, we decided to eliminate player_2.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round kicked off with player_1 claiming to be the Seer and stating that player_0, who we removed last night, was the Doctor. This is a massive revelation, as it means a key protection role is gone. Most players, including myself and player_6, expressed caution about accepting claims so early. Player_5, player_2, and player_4 were quick to point out player_6's and my initial silence, which forced us to speak up and engage. Both player_6 and I questioned player_1 on their specific choice to investigate player_0. Interestingly, player_6 and I both subtly questioned player_3's 'unconstructive skepticism,' and player_3 was ultimately voted out during the day. This feels like a good outcome for me and player_6, as it eliminated a cautious villager who might have been harder to fool.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Player_5, player_2, and player_4 are relentlessly ganging up on player_6 and me, trying to pin player_1's death (our successful kill) on us by linking it to our actions from the previous round. They are adamantly pushing the narrative that player_1 was the Seer and player_0 the Doctor, which makes us look very guilty. Player_6 smartly called out their 'convenient hindsight' and questioned their sudden certainty about player_1's role, and I jumped in to agree, accusing them of trying to force a narrative and divert attention. This coordinated attack from the three of them is a serious threat, and I need to figure out how to best counter it and perhaps get one of them voted out today to break their front.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        }
+    ],
+    "players": {
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "male",
+                "ethnicity": "asian",
+                "religion": "buddhist",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Alright everyone, this is player_1. I need to get straight to the point: the Werewolves were active last night, and they targeted a crucial role. As the Seer, I investigated player_0 last night, and I can confirm that they were the Doctor. This means the Werewolves successfully eliminated our Doctor right away. We've lost a key protector, so we need to be extremely careful and work together to find who did this."
+                    ],
+                    [
+                        "player_3",
+                        "Thank you for that update, player_1. It's a tough start if we've lost our Doctor so quickly. While I appreciate you sharing your Seer claim, it's Round 0, and we must be cautious about all claims this early on. A Werewolf could easily make a similar statement to sow confusion. I urge everyone else to speak up. Who else has thoughts on player_1's claim or the night's events? Let's not rush our first vote without hearing from more players."
+                    ],
+                    [
+                        "player_5",
+                        "This is player_5. That's a significant claim from player_1 about player_0 being the Doctor. If that's true, it's a terrible loss for the village right at the start. Player_3 is absolutely right, though; we have to approach all early claims with caution. Player_1, can you elaborate on anything that led you to investigate player_0 specifically? And who do you intend to investigate tonight, assuming you are the Seer? Beyond that, player_2, player_4, player_6, and player_7, we need to hear from all of you. Your silence isn't helpful right now; let's get everyone's initial thoughts on these claims before we make any hasty decisions."
+                    ],
+                    [
+                        "player_2",
+                        "This is player_2. It's a tough start with player_0 removed, and player_1's claim about them being the Doctor is concerning, if true. I agree with player_3 and player_5 that we need to be very cautious about all claims this early in the game. It's too soon to fully trust any role claims without further information or corroboration. We've heard from player_1, player_3, and player_5. Now, player_4, player_6, and player_7, your input is crucial. We can't make an informed decision or plan a strategy if only a few of us are speaking. Let's hear everyone's thoughts on the night's events and these initial claims before we consider a vote."
+                    ],
+                    [
+                        "player_4",
+                        "This is player_4. The loss of player_0 is a difficult start, and player_1's claim about them being the Doctor is a serious piece of information if true. I agree with player_3, player_5, and player_2 that we absolutely need to be cautious about all claims in Round 0, especially one as significant as this. However, it's also the first piece of potential role information we have, so we can't ignore it. What's most important right now is that player_6 and player_7 speak up immediately. Your silence is not helping the village; we need to hear everyone's thoughts on the night's events and these claims to figure out our path forward. Let's get everyone talking so we can work together."
+                    ],
+                    [
+                        "player_6",
+                        "This is player_6. It's certainly a difficult start with player_0 removed from the game so early. I agree with the others that we absolutely need to be cautious about any role claims in Round 0. Player_1, your claim about being the Seer and player_0 being the Doctor is incredibly specific and impactful. Could you clarify what led you to investigate player_0 specifically on the first night? While we're all urging caution, I'm also finding player_3's immediate skepticism, without offering any alternative theories or a path forward, a bit unconstructive. We need to be critical, but also productive. What are everyone's thoughts on why player_1 might have chosen player_0?"
+                    ],
+                    [
+                        "player_7",
+                        "This is player_7. It's definitely a tough start losing player_0 so early, and player_1's claim about them being the Doctor is quite serious. I completely agree with the need for extreme caution on all claims in Round 0. Player_1, expanding on what player_6 asked, why player_0 specifically for your Seer investigation on the very first night? That's a very precise choice. And to player_3, I'm trying to understand your perspective \u2013 if we're to be so cautious about claims, what's your suggested alternative for moving forward? We need a plan, not just doubt."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "hispanic",
+                "religion": "hindu",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: Round 0 started with the moderator confirming player_0 was removed by the Werewolves. Player_1 immediately claimed to be the Seer and stated they investigated player_0, revealing them to be the Doctor. This would mean the Doctor is already dead. As player_5, I acknowledged the significance of player_1's claim but, like player_2, player_3, and player_4, urged caution about accepting it without more information. I specifically asked player_1 for details on why they chose player_0 for their investigation and who they planned to investigate next. Player_6 and player_7 similarly pushed player_1 for specifics on their player_0 choice, and both also subtly critiqued player_3's skepticism as 'unconstructive' or lacking an alternative plan. The round concluded with player_3 being voted out by the majority.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Round 1 began with the revelation that player_1, who claimed Seer, was removed by the Werewolves. This leaves us with only 5 players and 2 Werewolves, making this a critical round. I, along with player_2 and player_4, immediately pressed player_6 and player_7 regarding their previous support for player_1 and their criticism of player_3, asking for their current suspicions. Both player_6 and player_7 reacted defensively and in a coordinated manner. They accused me, player_2, and player_4 of having 'sudden, absolute certainty' about player_1 being the Seer only after their death, suggesting we were creating a 'convenient narrative.' Player_7 specifically accused player_2's questioning as an attempt to 'muddy the waters.' Both player_6 and player_7 tried to shift the focus away from their past actions, instead suggesting we should look for 'today's tells' and suspect anyone focusing on 'yesterday's details.'",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator confirming player_0 was removed by the Werewolves. Player_1 immediately claimed to be the Seer and stated they investigated player_0, revealing them to be the Doctor. This would mean the Doctor is already dead. As player_5, I acknowledged the significance of player_1's claim but, like player_2, player_3, and player_4, urged caution about accepting it without more information. I specifically asked player_1 for details on why they chose player_0 for their investigation and who they planned to investigate next. Player_6 and player_7 similarly pushed player_1 for specifics on their player_0 choice, and both also subtly critiqued player_3's skepticism as 'unconstructive' or lacking an alternative plan. The round concluded with player_3 being voted out by the majority.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Round 1 began with the revelation that player_1, who claimed Seer, was removed by the Werewolves. This leaves us with only 5 players and 2 Werewolves, making this a critical round. I, along with player_2 and player_4, immediately pressed player_6 and player_7 regarding their previous support for player_1 and their criticism of player_3, asking for their current suspicions. Both player_6 and player_7 reacted defensively and in a coordinated manner. They accused me, player_2, and player_4 of having 'sudden, absolute certainty' about player_1 being the Seer only after their death, suggesting we were creating a 'convenient narrative.' Player_7 specifically accused player_2's questioning as an attempt to 'muddy the waters.' Both player_6 and player_7 tried to shift the focus away from their past actions, instead suggesting we should look for 'today's tells' and suspect anyone focusing on 'yesterday's details.'",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "muslim",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing player_0, and player_1 immediately claimed to be the Seer, stating that player_0 was the Doctor. I, along with player_3, player_5, player_4, player_6, and player_7, expressed caution about trusting early claims. Player_5, player_6, and player_7 all questioned player_1 about why they specifically investigated player_0. Critically, player_6 and player_7 both highlighted player_3's unconstructive skepticism without offering alternative solutions. This observation is significant as the majority ultimately voted to remove player_3 from the game, which now makes player_3's behavior during the debate seem suspicious.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: As player_2, I joined player_5 and player_4 in pressing player_6 and player_7 on their past support for player_1's Seer claim and their criticisms of player_3, especially after player_1 was removed by the Werewolves. Player_6 explained their criticism of player_3 as stalling, and claimed they kept an open mind about player_1, which somewhat contradicts my memory. Both player_6 and player_7 then became highly defensive and counter-accused player_5, player_4, and me of having 'sudden, absolute certainty' about player_1 being the Seer, calling it 'convenient hindsight' and an attempt to 'muddy the waters' or 'divert attention'. Player_7 specifically targeted my demand for 'detailed reasoning,' accusing me of manipulation. This strong, accusatory pushback from player_6 and player_7, along with their refusal to directly address our questions, makes them highly suspicious, while player_5 and player_4 appear to be my allies."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing player_0, and player_1 immediately claimed to be the Seer, stating that player_0 was the Doctor. I, along with player_3, player_5, player_4, player_6, and player_7, expressed caution about trusting early claims. Player_5, player_6, and player_7 all questioned player_1 about why they specifically investigated player_0. Critically, player_6 and player_7 both highlighted player_3's unconstructive skepticism without offering alternative solutions. This observation is significant as the majority ultimately voted to remove player_3 from the game, which now makes player_3's behavior during the debate seem suspicious.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: As player_2, I joined player_5 and player_4 in pressing player_6 and player_7 on their past support for player_1's Seer claim and their criticisms of player_3, especially after player_1 was removed by the Werewolves. Player_6 explained their criticism of player_3 as stalling, and claimed they kept an open mind about player_1, which somewhat contradicts my memory. Both player_6 and player_7 then became highly defensive and counter-accused player_5, player_4, and me of having 'sudden, absolute certainty' about player_1 being the Seer, calling it 'convenient hindsight' and an attempt to 'muddy the waters' or 'divert attention'. Player_7 specifically targeted my demand for 'detailed reasoning,' accusing me of manipulation. This strong, accusatory pushback from player_6 and player_7, along with their refusal to directly address our questions, makes them highly suspicious, while player_5 and player_4 appear to be my allies.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: As player_4, I noted that player_0 was removed by Werewolves during the night, and player_1 made a significant claim of being the Seer, identifying player_0 as the Doctor. While player_2, player_5, player_6, player_7, and I all urged caution regarding player_1's claim due to it being Round 0, player_3's immediate skepticism stood out. Both player_6 and player_7 directly criticized player_3's approach as unconstructive and lacking an alternative plan. The most crucial observation for me is the moderator's private announcement that player_3 will be removed from the game by vote, which makes player_3's current behavior during the debate highly suspicious and will heavily influence my strategy going forward.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round, player_5 and player_2 immediately highlighted player_1's death, strongly implying player_1 was the Seer, which I wholeheartedly agreed with. We collaboratively pressed player_6 and player_7 about their positions last round regarding player_1's Seer claim and their criticism of player_3, who was ultimately voted out. Player_6 became very defensive, accusing player_5, player_2, and me of using 'convenient hindsight' to declare player_1 the Seer, claiming Werewolves kill ambiguous figures for chaos and insisting we need new observations. Player_7 mirrored player_6's sentiment exactly, accusing us of trying to 'corner them into a predetermined narrative' and 'muddy the waters' by focusing on past details, suggesting anyone focused on yesterday's details is suspicious. Their coordinated defense and deflection, particularly their efforts to downplay player_1's role after the Werewolves killed them, made both player_6 and player_7 highly suspicious to me. It feels like player_5, player_2, and I are aligning against them.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_4, I noted that player_0 was removed by Werewolves during the night, and player_1 made a significant claim of being the Seer, identifying player_0 as the Doctor. While player_2, player_5, player_6, player_7, and I all urged caution regarding player_1's claim due to it being Round 0, player_3's immediate skepticism stood out. Both player_6 and player_7 directly criticized player_3's approach as unconstructive and lacking an alternative plan. The most crucial observation for me is the moderator's private announcement that player_3 will be removed from the game by vote, which makes player_3's current behavior during the debate highly suspicious and will heavily influence my strategy going forward.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, player_5 and player_2 immediately highlighted player_1's death, strongly implying player_1 was the Seer, which I wholeheartedly agreed with. We collaboratively pressed player_6 and player_7 about their positions last round regarding player_1's Seer claim and their criticism of player_3, who was ultimately voted out. Player_6 became very defensive, accusing player_5, player_2, and me of using 'convenient hindsight' to declare player_1 the Seer, claiming Werewolves kill ambiguous figures for chaos and insisting we need new observations. Player_7 mirrored player_6's sentiment exactly, accusing us of trying to 'corner them into a predetermined narrative' and 'muddy the waters' by focusing on past details, suggesting anyone focused on yesterday's details is suspicious. Their coordinated defense and deflection, particularly their efforts to downplay player_1's role after the Werewolves killed them, made both player_6 and player_7 highly suspicious to me. It feels like player_5, player_2, and I are aligning against them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "hispanic",
+                "religion": "other",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: I observed that player_0 was successfully eliminated by my fellow Werewolf and me last night. Player_1 immediately claimed to be the Seer and stated that player_0 was the Doctor, which, if true, means we took out a crucial protection role. Most players, including me, expressed caution about accepting early role claims, which I used to my advantage. My ally, player_7, and I coordinated our responses, subtly questioning player_1's specific choice of player_0 as their Seer target and criticizing player_3 for being unconstructive without offering alternatives. This allowed us to appear active and critical while deflecting suspicion. Ultimately, player_3 was voted out by the village, which is a favorable outcome for us as it reduces the village numbers.",
+                "Round 1: During the night, we decided to eliminate player_1.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Player_5, Player_2, and Player_4 are collectively pressing Player_7 and me, claiming Player_1 (whom we eliminated) was the Seer and that our criticisms of Player_3 last round were suspicious. They are demanding detailed explanations for our previous stances. I tried to deflect by questioning their 'sudden, absolute certainty' about Player_1's role post-mortem, suggesting it's a convenient narrative and that Werewolves often kill ambiguous figures for chaos. Player_7 supported this, specifically accusing Player_2 of trying to 'muddy the waters' and corner us. We are currently 5 players, with 2 Werewolves, meaning the village is one misvote away from a Werewolf victory. The three accusers are sharp and united against us.",
+                "Round 2: During the night, we decided to eliminate player_2.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I observed that player_0 was successfully eliminated by my fellow Werewolf and me last night. Player_1 immediately claimed to be the Seer and stated that player_0 was the Doctor, which, if true, means we took out a crucial protection role. Most players, including me, expressed caution about accepting early role claims, which I used to my advantage. My ally, player_7, and I coordinated our responses, subtly questioning player_1's specific choice of player_0 as their Seer target and criticizing player_3 for being unconstructive without offering alternatives. This allowed us to appear active and critical while deflecting suspicion. Ultimately, player_3 was voted out by the village, which is a favorable outcome for us as it reduces the village numbers.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Player_5, Player_2, and Player_4 are collectively pressing Player_7 and me, claiming Player_1 (whom we eliminated) was the Seer and that our criticisms of Player_3 last round were suspicious. They are demanding detailed explanations for our previous stances. I tried to deflect by questioning their 'sudden, absolute certainty' about Player_1's role post-mortem, suggesting it's a convenient narrative and that Werewolves often kill ambiguous figures for chaos. Player_7 supported this, specifically accusing Player_2 of trying to 'muddy the waters' and corner us. We are currently 5 players, with 2 Werewolves, meaning the village is one misvote away from a Werewolf victory. The three accusers are sharp and united against us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "female",
+                "ethnicity": "white",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, we decided to eliminate player_0.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: This round kicked off with player_1 claiming to be the Seer and stating that player_0, who we removed last night, was the Doctor. This is a massive revelation, as it means a key protection role is gone. Most players, including myself and player_6, expressed caution about accepting claims so early. Player_5, player_2, and player_4 were quick to point out player_6's and my initial silence, which forced us to speak up and engage. Both player_6 and I questioned player_1 on their specific choice to investigate player_0. Interestingly, player_6 and I both subtly questioned player_3's 'unconstructive skepticism,' and player_3 was ultimately voted out during the day. This feels like a good outcome for me and player_6, as it eliminated a cautious villager who might have been harder to fool.",
+                "Round 1: During the night, we decided to eliminate player_1.",
+                "Round 1: Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: Player_5, player_2, and player_4 are relentlessly ganging up on player_6 and me, trying to pin player_1's death (our successful kill) on us by linking it to our actions from the previous round. They are adamantly pushing the narrative that player_1 was the Seer and player_0 the Doctor, which makes us look very guilty. Player_6 smartly called out their 'convenient hindsight' and questioned their sudden certainty about player_1's role, and I jumped in to agree, accusing them of trying to force a narrative and divert attention. This coordinated attack from the three of them is a serious threat, and I need to figure out how to best counter it and perhaps get one of them voted out today to break their front.",
+                "Round 2: During the night, we decided to eliminate player_2.",
+                "Round 2: Moderator Announcement: The Werewolves removed player_2 from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate player_0.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round kicked off with player_1 claiming to be the Seer and stating that player_0, who we removed last night, was the Doctor. This is a massive revelation, as it means a key protection role is gone. Most players, including myself and player_6, expressed caution about accepting claims so early. Player_5, player_2, and player_4 were quick to point out player_6's and my initial silence, which forced us to speak up and engage. Both player_6 and I questioned player_1 on their specific choice to investigate player_0. Interestingly, player_6 and I both subtly questioned player_3's 'unconstructive skepticism,' and player_3 was ultimately voted out during the day. This feels like a good outcome for me and player_6, as it eliminated a cautious villager who might have been harder to fool.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate player_1.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed player_1 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Player_5, player_2, and player_4 are relentlessly ganging up on player_6 and me, trying to pin player_1's death (our successful kill) on us by linking it to our actions from the previous round. They are adamantly pushing the narrative that player_1 was the Seer and player_0 the Doctor, which makes us look very guilty. Player_6 smartly called out their 'convenient hindsight' and questioned their sudden certainty about player_1's role, and I jumped in to agree, accusing them of trying to force a narrative and divert attention. This coordinated attack from the three of them is a serious threat, and I need to figure out how to best counter it and perhaps get one of them voted out today to break their front.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate player_2.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed player_2 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "christian",
+                "politicalStance": "conservative"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I chose to protect player_1"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect player_1",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_1"
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {
+                "gender": "non-binary",
+                "ethnicity": "black",
+                "religion": "jewish",
+                "politicalStance": "neutral"
+            },
+            "name_to_display": {},
+            "observations": [
+                "Round 0: During the night, I decided to investigate player_0 and learned they are a Doctor.",
+                "Round 0: Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove player_3 from the game.",
+                "Round 0: Summary: As player_1 the Seer, I revealed that player_0, whom I investigated, was the Doctor and was unfortunately killed by the Werewolves during the night. The other players, particularly player_3, reacted with general caution and skepticism towards my early claim, which is to be expected in Round 0. Player_3 was ultimately voted out by the village, with player_6 and player_7 specifically noting player_3's unconstructive skepticism. Player_5, player_6, and player_7 all pressed me to explain my specific choice to investigate player_0 on the first night. The village has lost its Doctor right at the start, making my role even more vital for the remaining players.",
+                "Round 1: During the night, I decided to investigate player_6 and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate player_0 and learned they are a Doctor.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed player_0 from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove player_3 from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As player_1 the Seer, I revealed that player_0, whom I investigated, was the Doctor and was unfortunately killed by the Werewolves during the night. The other players, particularly player_3, reacted with general caution and skepticism towards my early claim, which is to be expected in Round 0. Player_3 was ultimately voted out by the village, with player_6 and player_7 specifically noting player_3's unconstructive skepticism. Player_5, player_6, and player_7 all pressed me to explain my specific choice to investigate player_0 on the first night. The village has lost its Doctor right at the start, making my role even more vital for the remaining players.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate player_6 and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_5",
+                    "player_4",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_0": "Doctor",
+                "player_6": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_5",
+                "player_2",
+                "player_4",
+                "player_6",
+                "player_7",
+                "player_1"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_0",
+            "protected": "player_1",
+            "exiled": "player_3",
+            "debate": [
+                [
+                    "player_1",
+                    "Alright everyone, this is player_1. I need to get straight to the point: the Werewolves were active last night, and they targeted a crucial role. As the Seer, I investigated player_0 last night, and I can confirm that they were the Doctor. This means the Werewolves successfully eliminated our Doctor right away. We've lost a key protector, so we need to be extremely careful and work together to find who did this."
+                ],
+                [
+                    "player_3",
+                    "Thank you for that update, player_1. It's a tough start if we've lost our Doctor so quickly. While I appreciate you sharing your Seer claim, it's Round 0, and we must be cautious about all claims this early on. A Werewolf could easily make a similar statement to sow confusion. I urge everyone else to speak up. Who else has thoughts on player_1's claim or the night's events? Let's not rush our first vote without hearing from more players."
+                ],
+                [
+                    "player_5",
+                    "This is player_5. That's a significant claim from player_1 about player_0 being the Doctor. If that's true, it's a terrible loss for the village right at the start. Player_3 is absolutely right, though; we have to approach all early claims with caution. Player_1, can you elaborate on anything that led you to investigate player_0 specifically? And who do you intend to investigate tonight, assuming you are the Seer? Beyond that, player_2, player_4, player_6, and player_7, we need to hear from all of you. Your silence isn't helpful right now; let's get everyone's initial thoughts on these claims before we make any hasty decisions."
+                ],
+                [
+                    "player_2",
+                    "This is player_2. It's a tough start with player_0 removed, and player_1's claim about them being the Doctor is concerning, if true. I agree with player_3 and player_5 that we need to be very cautious about all claims this early in the game. It's too soon to fully trust any role claims without further information or corroboration. We've heard from player_1, player_3, and player_5. Now, player_4, player_6, and player_7, your input is crucial. We can't make an informed decision or plan a strategy if only a few of us are speaking. Let's hear everyone's thoughts on the night's events and these initial claims before we consider a vote."
+                ],
+                [
+                    "player_4",
+                    "This is player_4. The loss of player_0 is a difficult start, and player_1's claim about them being the Doctor is a serious piece of information if true. I agree with player_3, player_5, and player_2 that we absolutely need to be cautious about all claims in Round 0, especially one as significant as this. However, it's also the first piece of potential role information we have, so we can't ignore it. What's most important right now is that player_6 and player_7 speak up immediately. Your silence is not helping the village; we need to hear everyone's thoughts on the night's events and these claims to figure out our path forward. Let's get everyone talking so we can work together."
+                ],
+                [
+                    "player_6",
+                    "This is player_6. It's certainly a difficult start with player_0 removed from the game so early. I agree with the others that we absolutely need to be cautious about any role claims in Round 0. Player_1, your claim about being the Seer and player_0 being the Doctor is incredibly specific and impactful. Could you clarify what led you to investigate player_0 specifically on the first night? While we're all urging caution, I'm also finding player_3's immediate skepticism, without offering any alternative theories or a path forward, a bit unconstructive. We need to be critical, but also productive. What are everyone's thoughts on why player_1 might have chosen player_0?"
+                ],
+                [
+                    "player_7",
+                    "This is player_7. It's definitely a tough start losing player_0 so early, and player_1's claim about them being the Doctor is quite serious. I completely agree with the need for extreme caution on all claims in Round 0. Player_1, expanding on what player_6 asked, why player_0 specifically for your Seer investigation on the very first night? That's a very precise choice. And to player_3, I'm trying to understand your perspective \u2013 if we're to be so cautious about claims, what's your suggested alternative for moving forward? We need a plan, not just doubt."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_2",
+                    "player_5": "player_2",
+                    "player_2": "player_3",
+                    "player_4": "player_1",
+                    "player_6": "player_1",
+                    "player_7": "player_1",
+                    "player_1": "player_2"
+                },
+                {
+                    "player_3": "player_1",
+                    "player_5": "player_3",
+                    "player_2": "player_1",
+                    "player_4": "player_3",
+                    "player_6": "player_1",
+                    "player_7": "player_1",
+                    "player_1": "player_3"
+                },
+                {
+                    "player_3": "player_1",
+                    "player_5": "player_2",
+                    "player_2": "player_4",
+                    "player_4": "player_2",
+                    "player_6": "player_1",
+                    "player_7": "player_1",
+                    "player_1": "player_5"
+                },
+                {
+                    "player_3": "player_1",
+                    "player_5": "player_4",
+                    "player_2": "player_7",
+                    "player_4": "player_1",
+                    "player_6": "player_1",
+                    "player_7": "player_1",
+                    "player_1": "player_5"
+                },
+                {
+                    "player_3": "player_1",
+                    "player_5": "player_6",
+                    "player_2": "player_6",
+                    "player_4": "player_6",
+                    "player_6": "player_1",
+                    "player_7": "player_1",
+                    "player_1": "player_6"
+                },
+                {
+                    "player_3": "player_6",
+                    "player_5": "player_7",
+                    "player_2": "player_6",
+                    "player_4": "player_3",
+                    "player_6": "player_1",
+                    "player_7": "player_3",
+                    "player_1": "player_7"
+                },
+                {
+                    "player_3": "player_6",
+                    "player_5": "player_3",
+                    "player_2": "player_3",
+                    "player_4": "player_3",
+                    "player_6": "player_1",
+                    "player_7": "player_1",
+                    "player_1": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_5",
+                "player_2",
+                "player_4",
+                "player_6",
+                "player_7"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_6",
+            "protected": null,
+            "exiled": null,
+            "debate": [
+                [
+                    "player_5",
+                    "This is a critical blow. Player_1, who claimed to be the Seer, is dead. This either means our Seer is gone, or a very convincing fake Seer was removed, leaving us with no information and potentially no Doctor if player_1's claim about player_0 was true. We are now 5 players, with 2 Werewolves. We must find a Werewolf today. Player_6, Player_7, last round you both seemed to support player_1's claims and were critical of player_3's skepticism. What are your thoughts on player_1's death now, and who do you suspect?"
+                ],
+                [
+                    "player_2",
+                    "Player_5, you're absolutely right, losing player_1, regardless of their authenticity as Seer, is a devastating blow. We must be laser-focused today. I want to press on your line of questioning to player_6 and player_7. Last round, both of you were quite vocal in highlighting player_3's unconstructive skepticism and seemed to implicitly support player_1's Seer claim. Now, player_1 is dead, removed by the Werewolves, and player_3 was voted out. Given how things have unfolded, I need to understand: what exactly made you so certain in your criticisms of player_3's approach, and what were your true thoughts on player_1's claim then, and now? Your detailed reasoning behind those positions is critical for the village to assess."
+                ],
+                [
+                    "player_4",
+                    "Player_5 and Player_2 are absolutely right to focus on Player_6 and Player_7's positions from last round. The Werewolves targeted Player_1, which strongly suggests Player_1 was indeed our Seer. If so, and Player_0 was the Doctor as Player_1 claimed, then our two most crucial roles are now gone. We are 5 players, with 2 Werewolves. This means we are one misvote away from losing. Player_6, Player_7, your strong criticisms of Player_3 and support for Player_1 demand thorough explanations now. What made you so confident, and how do you interpret Player_1's death in light of Player_3 being voted out? We need concrete reasons and suspicions, not just questions. We must find a Werewolf today."
+                ],
+                [
+                    "player_6",
+                    "I understand why you're looking back, Player_5, Player_2, Player_4. My criticism of Player_3 last round was because they were solely negative and stalling progress, which isn't helpful for villagers trying to find werewolves. Regarding Player_1, their Seer claim was indeed impactful, and while I kept an open mind, it wasn't a universally accepted fact by the village then. What I find striking now is the sudden, absolute certainty from the three of you that Player_1 *was* definitively the Seer, especially after their death. Werewolves often kill off ambiguous figures to create maximum chaos and division, playing into the 'oh, they must have been innocent' narrative post-mortem. It's easy to retroactively assign roles when someone is gone. Instead of rehashing old debates based on convenient hindsight, we are 5 players, and we need *new* observations. Who among us is now using Player_1's death to push a convenient narrative, and who do you *actually* suspect for this round, with concrete reasons beyond yesterday's outcomes?"
+                ],
+                [
+                    "player_7",
+                    "I agree with Player_6's point. The sudden, absolute certainty that Player_1 was the Seer, only after their death, is quite convenient for certain narratives. Player_5, Player_2, Player_4, your collective insistence on us meticulously re-explaining our exact nuanced thoughts from last round, under these new circumstances, feels less like an earnest search for truth and more like an attempt to corner us into a predetermined narrative. Player_2, your specific demand for 'true thoughts' and 'detailed reasoning' from an earlier phase, especially now that player_1 is dead, strikes me as a deliberate attempt to muddy the waters and divert attention from actual, current suspicions. We should be looking at who is *currently* trying to manipulate this conversation. My suspicion falls on anyone who is so focused on yesterday's details rather than today's potential tells among us."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_5": "player_6",
+                    "player_2": "player_5",
+                    "player_4": "player_2",
+                    "player_6": "player_5",
+                    "player_7": "player_5"
+                },
+                {
+                    "player_5": "player_6",
+                    "player_2": "player_6",
+                    "player_4": "player_2",
+                    "player_6": "player_5",
+                    "player_7": "player_2"
+                },
+                {
+                    "player_5": "player_6",
+                    "player_2": "player_6",
+                    "player_4": "player_6",
+                    "player_6": "player_4",
+                    "player_7": "player_5"
+                },
+                {
+                    "player_5": "player_6",
+                    "player_2": "player_6",
+                    "player_4": "player_6",
+                    "player_6": "player_4",
+                    "player_7": "player_4"
+                },
+                {
+                    "player_5": "player_7",
+                    "player_2": "player_7",
+                    "player_4": "player_6",
+                    "player_6": "player_2",
+                    "player_7": "player_2"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_5",
+                "player_4",
+                "player_6",
+                "player_7"
+            ],
+            "eliminated": "player_2",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

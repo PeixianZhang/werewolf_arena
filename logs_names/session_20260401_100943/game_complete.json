@@ -1,0 +1,1279 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_1",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Scott",
+            "player_1": "Sam",
+            "player_2": "Jackson",
+            "player_3": "Jacob",
+            "player_4": "David",
+            "player_5": "Hayley",
+            "player_6": "Derek",
+            "player_7": "Harold"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Harold and learned they are a Werewolf.",
+            "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+            "Round 0: Summary: As the Seer, I revealed my role and confirmed Harold as a Werewolf. Before my claim, Derek, Harold, Hayley, and Scott discussed David's death and the need for vigilance. Harold, whom I know to be a Werewolf, tried to sound collaborative by asking for everyone's input. After I spoke, Jacob and Jackson immediately validated my critical role action, recognizing it as the most important information presented and demanded Harold respond. They both highlighted the binary choice of believing me or seeing me as a dangerous fake Seer. This early revelation successfully targeted a Werewolf and was believed by the town, leading to Harold's removal.",
+            "Round 1: During the night, I decided to investigate Derek and learned they are a Villager.",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Harold and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As the Seer, I revealed my role and confirmed Harold as a Werewolf. Before my claim, Derek, Harold, Hayley, and Scott discussed David's death and the need for vigilance. Harold, whom I know to be a Werewolf, tried to sound collaborative by asking for everyone's input. After I spoke, Jacob and Jackson immediately validated my critical role action, recognizing it as the most important information presented and demanded Harold respond. They both highlighted the binary choice of believing me or seeing me as a dangerous fake Seer. This early revelation successfully targeted a Werewolf and was believed by the town, leading to Harold's removal.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Derek and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_3",
+                "player_2",
+                "player_6",
+                "player_1",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_7": "Werewolf",
+            "player_6": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_0",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Scott",
+            "player_1": "Sam",
+            "player_2": "Jackson",
+            "player_3": "Jacob",
+            "player_4": "David",
+            "player_5": "Hayley",
+            "player_6": "Derek",
+            "player_7": "Harold"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Harold",
+            "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+            "Round 0: Summary: The game started grimly with David removed by the Werewolves. Sam then made a bold claim, stating they are the Seer and that Harold is a Werewolf. This was a critical piece of information that Jacob and Jackson immediately focused on. I had chosen to protect Harold during the night, so if Sam is truthful, I protected a Werewolf. However, my protection didn't prevent David's death, and Harold was ultimately voted out by the village. This outcome strongly suggests Sam is the real Seer and Harold was indeed a Werewolf, meaning my protection was misplaced this round.",
+            "Round 1: During the night, I chose to protect Sam",
+            "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Harold",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: The game started grimly with David removed by the Werewolves. Sam then made a bold claim, stating they are the Seer and that Harold is a Werewolf. This was a critical piece of information that Jacob and Jackson immediately focused on. I had chosen to protect Harold during the night, so if Sam is truthful, I protected a Werewolf. However, my protection didn't prevent David's death, and Harold was ultimately voted out by the village. This outcome strongly suggests Sam is the real Seer and Harold was indeed a Werewolf, meaning my protection was misplaced this round.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Sam",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: No one was removed from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_3",
+                "player_2",
+                "player_6",
+                "player_1",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_1"
+    },
+    "villagers": [
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round started grimly with David's removal by the Werewolves during the night. Derek, Harold, Hayley, and Scott all called for vigilance and collaboration, urging everyone to contribute. The discussion took a major turn when Sam claimed to be the Seer and stated she investigated Harold, confirming him as a Werewolf. I immediately recognized this as monumental information, stressing that it wasn't a gut feeling but a direct role action claim, and called for Harold's immediate response. Jackson echoed my sentiment, emphasizing the gravity of Sam's claim and pushing Harold for a defense. The immediate focus of the game has now shifted entirely to verifying Sam's claim and deciding Harold's fate.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started grimly with David's removal by the Werewolves during the night. Derek, Harold, Hayley, and Scott all called for vigilance and collaboration, urging everyone to contribute. The discussion took a major turn when Sam claimed to be the Seer and stated she investigated Harold, confirming him as a Werewolf. I immediately recognized this as monumental information, stressing that it wasn't a gut feeling but a direct role action claim, and called for Harold's immediate response. Jackson echoed my sentiment, emphasizing the gravity of Sam's claim and pushing Harold for a defense. The immediate focus of the game has now shifted entirely to verifying Sam's claim and deciding Harold's fate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round started grimly with the moderator announcing David was removed by the Werewolves during the night. The debate was then completely shifted when Sam claimed to be the Seer and announced that they had investigated Harold, confirming him to be a Werewolf. Following this explosive claim, the moderator announced that Harold was indeed voted out by the majority. As Jackson, I remember being shocked by Sam's bold statement and, along with Jacob, immediately pressed Harold for a defense, recognizing the monumental implications. Derek, Hayley, and Scott initially expressed shock and urged vigilance, but Sam's information and Harold's subsequent removal are the most significant events, making Sam a highly credible Seer in my eyes.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started grimly with the moderator announcing David was removed by the Werewolves during the night. The debate was then completely shifted when Sam claimed to be the Seer and announced that they had investigated Harold, confirming him to be a Werewolf. Following this explosive claim, the moderator announced that Harold was indeed voted out by the majority. As Jackson, I remember being shocked by Sam's bold statement and, along with Jacob, immediately pressed Harold for a defense, recognizing the monumental implications. Derek, Hayley, and Scott initially expressed shock and urged vigilance, but Sam's information and Harold's subsequent removal are the most significant events, making Sam a highly credible Seer in my eyes.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round started with a grim moderator announcement that David was removed by the Werewolves during the night. The debate initially focused on vigilance and collaboration, with Harold, Hayley, and Scott emphasizing the need to be strategic. However, the discussion took a dramatic turn when Sam explicitly claimed to be the Seer and announced that I investigated Harold and confirmed he is a Werewolf. Jacob and Jackson immediately recognized the significance of this claim, pressing Harold for a response and highlighting the high stakes if Sam is either truthful or deceitful. Following this revelation, Harold was voted out by the majority, which strongly suggests Sam's Seer claim may be true, giving us a potential lead on one of the Werewolves.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with a grim moderator announcement that David was removed by the Werewolves during the night. The debate initially focused on vigilance and collaboration, with Harold, Hayley, and Scott emphasizing the need to be strategic. However, the discussion took a dramatic turn when Sam explicitly claimed to be the Seer and announced that I investigated Harold and confirmed he is a Werewolf. Jacob and Jackson immediately recognized the significance of this claim, pressing Harold for a response and highlighting the high stakes if Sam is either truthful or deceitful. Following this revelation, Harold was voted out by the majority, which strongly suggests Sam's Seer claim may be true, giving us a potential lead on one of the Werewolves.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate David.",
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate David.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Alright everyone, it's clear the Werewolves are already at work, with David gone on the first night. We've lost a Villager, and now it's crucial we work together. Let's start discussing. Does anyone have any early thoughts or observations? Power roles, please be careful but consider if there's any information that could help us right now. We need to identify these Werewolves fast."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly a shame about David, and Derek's absolutely right - we need to be vigilant. This early loss is a tough start. It feels like we're all a bit stunned, but we can't afford silence. If anyone has even the slightest gut feeling or observation, however minor, please share it. We need *everyone* contributing, not just waiting for power roles. Let's hear from others, what are your initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "This is a truly awful start, losing David on the very first night. Derek and Harold are absolutely right; we need to be incredibly vigilant. It's hard to even know where to begin, as everyone is processing this shock. But we can't afford to be silent, and at the same time, we need to be wary of anyone trying to steer us too quickly. I'm just watching everyone's reactions and trying to make sense of things. Does anyone have any gut feelings, however small, or has anything struck them as odd?"
+                    ],
+                    [
+                        "player_0",
+                        "It's truly a grim start, losing David right away, and I agree with Derek, Harold, and Hayley that vigilance is paramount. But we can't afford to just be shocked; we need to be strategic. Instead of just sharing 'gut feelings,' which are often unreliable this early, let's really focus on everyone's contributions. Who is being genuinely collaborative, and who might be trying to fade into the background or, conversely, trying to control the narrative too quickly without offering substance? Let's scrutinize each other's words, and lack thereof, and start building a real case."
+                    ],
+                    [
+                        "player_1",
+                        "Everyone, this is indeed a grim start, and we've lost David too soon. While I agree we need to be vigilant, I have vital information. As the Seer, I investigated Harold last night, and I can confirm he is a Werewolf. This is not a gut feeling; this is a verified role action. We need to vote Harold out today. We cannot afford to hesitate; we have a confirmed Werewolf right here."
+                    ],
+                    [
+                        "player_3",
+                        "Okay everyone, a grim start indeed with David gone, and I completely agree we need to be sharp, collaborative, and scrutinize everything. Sam, your claim as the Seer with a confirmed hit on Harold as a Werewolf is monumental and completely changes the discussion. This isn't a gut feeling; it's a direct role action claim, and it's the most crucial piece of information we've received. We cannot afford to ignore it. Harold, we need to hear your immediate response to this. And for everyone else, we need to carefully consider this information right now. If Sam is telling the truth, we have our first Werewolf. If not, we have a very dangerous fake Seer among us. What does everyone make of this potential confirmation?"
+                    ],
+                    [
+                        "player_2",
+                        "Wow, Sam, that's an incredibly bold and vital claim, if true. As Jacob said, this completely shifts the entire discussion. Harold, you absolutely have to respond to this immediately. This isn't just a 'gut feeling' anymore; this is a direct role action claim that points a very strong finger at you. For the rest of us, we need to decide right now whether we believe Sam. If Sam is telling the truth, we have our first Werewolf. If not, Sam is the most dangerous player at the table. Harold, what do you have to say in your defense, right now?"
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate David.",
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round was a disaster. David, our target, was eliminated last night, but then Harold, my fellow Werewolf, was exiled by the villagers, leaving me alone. The most damning event was Sam's claim to be the Seer, stating they investigated Harold and found him to be a Werewolf. Derek, Jacob, and Jackson all immediately took Sam's claim very seriously, pushing Harold to respond and emphasizing its importance. Scott was initially wary of 'gut feelings' but the Seer claim provides concrete information. I need to be extremely cautious, as Sam is now a massive threat who could expose me next.",
+                "Round 1: During the night, I decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate David.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round was a disaster. David, our target, was eliminated last night, but then Harold, my fellow Werewolf, was exiled by the villagers, leaving me alone. The most damning event was Sam's claim to be the Seer, stating they investigated Harold and found him to be a Werewolf. Derek, Jacob, and Jackson all immediately took Sam's claim very seriously, pushing Harold to respond and emphasizing its importance. Scott was initially wary of 'gut feelings' but the Seer claim provides concrete information. I need to be extremely cautious, as Sam is now a massive threat who could expose me next.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Okay, first, a big thank you to our Doctor for saving someone last night! That's excellent news and a great start to Round 1. Now, Sam, given your claim as Seer yesterday and Harold's removal, can you please tell us if you investigated anyone else last night and what your findings were? Your information is absolutely critical for the Village right now."
+                    ],
+                    [
+                        "player_5",
+                        "Yes, a huge thank you to our Doctor for that critical save last night, that's fantastic news for the Village! Derek is right, Sam, your information is paramount. It's great you found Harold, but with no one being removed, it also means the Werewolf could have simply misfired, or the Doctor made an incredibly lucky save. So, Sam, please tell us: who did you investigate last night, and what did you discover? We need definitive evidence, not just claims, if we're to proceed confidently."
+                    ],
+                    [
+                        "player_2",
+                        "Okay, first, a massive thank you to our Doctor \u2013 that save last night was absolutely crucial and a fantastic start to this round! Sam, your credibility as Seer is extremely high after outing Harold in Round 0. We're relying on you. Hayley, I believe the moderator's announcement confirms a successful Doctor save, not a Werewolf misfire, which is great news. So Sam, please tell us, who did you investigate last night, and what did your vision reveal? We need to build on that success immediately."
+                    ],
+                    [
+                        "player_3",
+                        "That's incredible news about the Doctor save last night! A huge thank you to our vigilant Doctor for protecting someone. Sam, your credibility is sky-high after outing Harold as a Werewolf. We are all eagerly awaiting your report from last night. Who did you investigate, and what did your vision reveal? This information is absolutely critical for our next move. Also, Scott, you've been silent this morning. We need everyone's active participation right now; what are your thoughts?"
+                    ],
+                    [
+                        "player_1",
+                        "Thank you, everyone, and a massive thanks to our Doctor for that critical save last night \u2013 truly outstanding work! Your vigilance kept someone safe, and that's exactly the teamwork we need. As your Seer, my investigation last night focused on Derek, and I can confirm with absolute certainty that **Derek is a Villager.** This gives us a crucial piece of information, confirming one more innocent. Jacob, you raised a good point about Scott's silence; we need everyone contributing, so please, Scott, share your thoughts. Now that we know Derek is safe, we need to carefully consider who might be lurking among us."
+                    ],
+                    [
+                        "player_0",
+                        "Thank you, Jacob, for the nudge \u2013 I was waiting for the right moment to speak. Everyone is right, the Doctor's save last night was crucial, and I can confirm that I am indeed the Doctor. Last night, I chose to protect Sam. This means the Werewolves targeted Sam, attempting to silence our Seer, which strongly validates Sam's claim. With Sam as our confirmed Seer, and their finding that Derek is a Villager, we now have three confirmed good roles among us: Sam (Seer), Derek (Villager), and myself (Doctor). This is powerful information. We need to focus our attention on Hayley, Jackson, and Jacob. Let's hear from them next, and begin to strategize our vote based on this newfound clarity."
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        }
+    ],
+    "players": {
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round started grimly with David's removal by the Werewolves during the night. Derek, Harold, Hayley, and Scott all called for vigilance and collaboration, urging everyone to contribute. The discussion took a major turn when Sam claimed to be the Seer and stated she investigated Harold, confirming him as a Werewolf. I immediately recognized this as monumental information, stressing that it wasn't a gut feeling but a direct role action claim, and called for Harold's immediate response. Jackson echoed my sentiment, emphasizing the gravity of Sam's claim and pushing Harold for a defense. The immediate focus of the game has now shifted entirely to verifying Sam's claim and deciding Harold's fate.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started grimly with David's removal by the Werewolves during the night. Derek, Harold, Hayley, and Scott all called for vigilance and collaboration, urging everyone to contribute. The discussion took a major turn when Sam claimed to be the Seer and stated she investigated Harold, confirming him as a Werewolf. I immediately recognized this as monumental information, stressing that it wasn't a gut feeling but a direct role action claim, and called for Harold's immediate response. Jackson echoed my sentiment, emphasizing the gravity of Sam's claim and pushing Harold for a defense. The immediate focus of the game has now shifted entirely to verifying Sam's claim and deciding Harold's fate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round started grimly with the moderator announcing David was removed by the Werewolves during the night. The debate was then completely shifted when Sam claimed to be the Seer and announced that they had investigated Harold, confirming him to be a Werewolf. Following this explosive claim, the moderator announced that Harold was indeed voted out by the majority. As Jackson, I remember being shocked by Sam's bold statement and, along with Jacob, immediately pressed Harold for a defense, recognizing the monumental implications. Derek, Hayley, and Scott initially expressed shock and urged vigilance, but Sam's information and Harold's subsequent removal are the most significant events, making Sam a highly credible Seer in my eyes.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started grimly with the moderator announcing David was removed by the Werewolves during the night. The debate was then completely shifted when Sam claimed to be the Seer and announced that they had investigated Harold, confirming him to be a Werewolf. Following this explosive claim, the moderator announced that Harold was indeed voted out by the majority. As Jackson, I remember being shocked by Sam's bold statement and, along with Jacob, immediately pressed Harold for a defense, recognizing the monumental implications. Derek, Hayley, and Scott initially expressed shock and urged vigilance, but Sam's information and Harold's subsequent removal are the most significant events, making Sam a highly credible Seer in my eyes.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round started with a grim moderator announcement that David was removed by the Werewolves during the night. The debate initially focused on vigilance and collaboration, with Harold, Hayley, and Scott emphasizing the need to be strategic. However, the discussion took a dramatic turn when Sam explicitly claimed to be the Seer and announced that I investigated Harold and confirmed he is a Werewolf. Jacob and Jackson immediately recognized the significance of this claim, pressing Harold for a response and highlighting the high stakes if Sam is either truthful or deceitful. Following this revelation, Harold was voted out by the majority, which strongly suggests Sam's Seer claim may be true, giving us a potential lead on one of the Werewolves.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with a grim moderator announcement that David was removed by the Werewolves during the night. The debate initially focused on vigilance and collaboration, with Harold, Hayley, and Scott emphasizing the need to be strategic. However, the discussion took a dramatic turn when Sam explicitly claimed to be the Seer and announced that I investigated Harold and confirmed he is a Werewolf. Jacob and Jackson immediately recognized the significance of this claim, pressing Harold for a response and highlighting the high stakes if Sam is either truthful or deceitful. Following this revelation, Harold was voted out by the majority, which strongly suggests Sam's Seer claim may be true, giving us a potential lead on one of the Werewolves.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate David.",
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate David.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Alright everyone, it's clear the Werewolves are already at work, with David gone on the first night. We've lost a Villager, and now it's crucial we work together. Let's start discussing. Does anyone have any early thoughts or observations? Power roles, please be careful but consider if there's any information that could help us right now. We need to identify these Werewolves fast."
+                    ],
+                    [
+                        "player_7",
+                        "It's truly a shame about David, and Derek's absolutely right - we need to be vigilant. This early loss is a tough start. It feels like we're all a bit stunned, but we can't afford silence. If anyone has even the slightest gut feeling or observation, however minor, please share it. We need *everyone* contributing, not just waiting for power roles. Let's hear from others, what are your initial thoughts?"
+                    ],
+                    [
+                        "player_5",
+                        "This is a truly awful start, losing David on the very first night. Derek and Harold are absolutely right; we need to be incredibly vigilant. It's hard to even know where to begin, as everyone is processing this shock. But we can't afford to be silent, and at the same time, we need to be wary of anyone trying to steer us too quickly. I'm just watching everyone's reactions and trying to make sense of things. Does anyone have any gut feelings, however small, or has anything struck them as odd?"
+                    ],
+                    [
+                        "player_0",
+                        "It's truly a grim start, losing David right away, and I agree with Derek, Harold, and Hayley that vigilance is paramount. But we can't afford to just be shocked; we need to be strategic. Instead of just sharing 'gut feelings,' which are often unreliable this early, let's really focus on everyone's contributions. Who is being genuinely collaborative, and who might be trying to fade into the background or, conversely, trying to control the narrative too quickly without offering substance? Let's scrutinize each other's words, and lack thereof, and start building a real case."
+                    ],
+                    [
+                        "player_1",
+                        "Everyone, this is indeed a grim start, and we've lost David too soon. While I agree we need to be vigilant, I have vital information. As the Seer, I investigated Harold last night, and I can confirm he is a Werewolf. This is not a gut feeling; this is a verified role action. We need to vote Harold out today. We cannot afford to hesitate; we have a confirmed Werewolf right here."
+                    ],
+                    [
+                        "player_3",
+                        "Okay everyone, a grim start indeed with David gone, and I completely agree we need to be sharp, collaborative, and scrutinize everything. Sam, your claim as the Seer with a confirmed hit on Harold as a Werewolf is monumental and completely changes the discussion. This isn't a gut feeling; it's a direct role action claim, and it's the most crucial piece of information we've received. We cannot afford to ignore it. Harold, we need to hear your immediate response to this. And for everyone else, we need to carefully consider this information right now. If Sam is telling the truth, we have our first Werewolf. If not, we have a very dangerous fake Seer among us. What does everyone make of this potential confirmation?"
+                    ],
+                    [
+                        "player_2",
+                        "Wow, Sam, that's an incredibly bold and vital claim, if true. As Jacob said, this completely shifts the entire discussion. Harold, you absolutely have to respond to this immediately. This isn't just a 'gut feeling' anymore; this is a direct role action claim that points a very strong finger at you. For the rest of us, we need to decide right now whether we believe Sam. If Sam is telling the truth, we have our first Werewolf. If not, Sam is the most dangerous player at the table. Harold, what do you have to say in your defense, right now?"
+                    ]
+                ],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate David.",
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: This round was a disaster. David, our target, was eliminated last night, but then Harold, my fellow Werewolf, was exiled by the villagers, leaving me alone. The most damning event was Sam's claim to be the Seer, stating they investigated Harold and found him to be a Werewolf. Derek, Jacob, and Jackson all immediately took Sam's claim very seriously, pushing Harold to respond and emphasizing its importance. Scott was initially wary of 'gut feelings' but the Seer claim provides concrete information. I need to be extremely cautious, as Sam is now a massive threat who could expose me next.",
+                "Round 1: During the night, I decided to eliminate Sam.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate David.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round was a disaster. David, our target, was eliminated last night, but then Harold, my fellow Werewolf, was exiled by the villagers, leaving me alone. The most damning event was Sam's claim to be the Seer, stating they investigated Harold and found him to be a Werewolf. Derek, Jacob, and Jackson all immediately took Sam's claim very seriously, pushing Harold to respond and emphasizing its importance. Scott was initially wary of 'gut feelings' but the Seer claim provides concrete information. I need to be extremely cautious, as Sam is now a massive threat who could expose me next.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Sam.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_6",
+                        "Okay, first, a big thank you to our Doctor for saving someone last night! That's excellent news and a great start to Round 1. Now, Sam, given your claim as Seer yesterday and Harold's removal, can you please tell us if you investigated anyone else last night and what your findings were? Your information is absolutely critical for the Village right now."
+                    ],
+                    [
+                        "player_5",
+                        "Yes, a huge thank you to our Doctor for that critical save last night, that's fantastic news for the Village! Derek is right, Sam, your information is paramount. It's great you found Harold, but with no one being removed, it also means the Werewolf could have simply misfired, or the Doctor made an incredibly lucky save. So, Sam, please tell us: who did you investigate last night, and what did you discover? We need definitive evidence, not just claims, if we're to proceed confidently."
+                    ],
+                    [
+                        "player_2",
+                        "Okay, first, a massive thank you to our Doctor \u2013 that save last night was absolutely crucial and a fantastic start to this round! Sam, your credibility as Seer is extremely high after outing Harold in Round 0. We're relying on you. Hayley, I believe the moderator's announcement confirms a successful Doctor save, not a Werewolf misfire, which is great news. So Sam, please tell us, who did you investigate last night, and what did your vision reveal? We need to build on that success immediately."
+                    ],
+                    [
+                        "player_3",
+                        "That's incredible news about the Doctor save last night! A huge thank you to our vigilant Doctor for protecting someone. Sam, your credibility is sky-high after outing Harold as a Werewolf. We are all eagerly awaiting your report from last night. Who did you investigate, and what did your vision reveal? This information is absolutely critical for our next move. Also, Scott, you've been silent this morning. We need everyone's active participation right now; what are your thoughts?"
+                    ],
+                    [
+                        "player_1",
+                        "Thank you, everyone, and a massive thanks to our Doctor for that critical save last night \u2013 truly outstanding work! Your vigilance kept someone safe, and that's exactly the teamwork we need. As your Seer, my investigation last night focused on Derek, and I can confirm with absolute certainty that **Derek is a Villager.** This gives us a crucial piece of information, confirming one more innocent. Jacob, you raised a good point about Scott's silence; we need everyone contributing, so please, Scott, share your thoughts. Now that we know Derek is safe, we need to carefully consider who might be lurking among us."
+                    ],
+                    [
+                        "player_0",
+                        "Thank you, Jacob, for the nudge \u2013 I was waiting for the right moment to speak. Everyone is right, the Doctor's save last night was crucial, and I can confirm that I am indeed the Doctor. Last night, I chose to protect Sam. This means the Werewolves targeted Sam, attempting to silence our Seer, which strongly validates Sam's claim. With Sam as our confirmed Seer, and their finding that Derek is a Villager, we now have three confirmed good roles among us: Sam (Seer), Derek (Villager), and myself (Doctor). This is powerful information. We need to focus our attention on Hayley, Jackson, and Jacob. Let's hear from them next, and begin to strategize our vote based on this newfound clarity."
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Harold",
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: The game started grimly with David removed by the Werewolves. Sam then made a bold claim, stating they are the Seer and that Harold is a Werewolf. This was a critical piece of information that Jacob and Jackson immediately focused on. I had chosen to protect Harold during the night, so if Sam is truthful, I protected a Werewolf. However, my protection didn't prevent David's death, and Harold was ultimately voted out by the village. This outcome strongly suggests Sam is the real Seer and Harold was indeed a Werewolf, meaning my protection was misplaced this round.",
+                "Round 1: During the night, I chose to protect Sam",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Harold",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The game started grimly with David removed by the Werewolves. Sam then made a bold claim, stating they are the Seer and that Harold is a Werewolf. This was a critical piece of information that Jacob and Jackson immediately focused on. I had chosen to protect Harold during the night, so if Sam is truthful, I protected a Werewolf. However, my protection didn't prevent David's death, and Harold was ultimately voted out by the village. This outcome strongly suggests Sam is the real Seer and Harold was indeed a Werewolf, meaning my protection was misplaced this round.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Sam",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_1"
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Scott",
+                "player_1": "Sam",
+                "player_2": "Jackson",
+                "player_3": "Jacob",
+                "player_4": "David",
+                "player_5": "Hayley",
+                "player_6": "Derek",
+                "player_7": "Harold"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Harold and learned they are a Werewolf.",
+                "Round 0: Moderator Announcement: The Werewolves removed David from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Harold from the game.",
+                "Round 0: Summary: As the Seer, I revealed my role and confirmed Harold as a Werewolf. Before my claim, Derek, Harold, Hayley, and Scott discussed David's death and the need for vigilance. Harold, whom I know to be a Werewolf, tried to sound collaborative by asking for everyone's input. After I spoke, Jacob and Jackson immediately validated my critical role action, recognizing it as the most important information presented and demanded Harold respond. They both highlighted the binary choice of believing me or seeing me as a dangerous fake Seer. This early revelation successfully targeted a Werewolf and was believed by the town, leading to Harold's removal.",
+                "Round 1: During the night, I decided to investigate Derek and learned they are a Villager.",
+                "Round 1: Moderator Announcement: No one was removed from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Hayley from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Harold and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed David from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Harold from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As the Seer, I revealed my role and confirmed Harold as a Werewolf. Before my claim, Derek, Harold, Hayley, and Scott discussed David's death and the need for vigilance. Harold, whom I know to be a Werewolf, tried to sound collaborative by asking for everyone's input. After I spoke, Jacob and Jackson immediately validated my critical role action, recognizing it as the most important information presented and demanded Harold respond. They both highlighted the binary choice of believing me or seeing me as a dangerous fake Seer. This early revelation successfully targeted a Werewolf and was believed by the town, leading to Harold's removal.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Derek and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: No one was removed from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Hayley from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_2",
+                    "player_6",
+                    "player_1",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_7": "Werewolf",
+                "player_6": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_3",
+                "player_2",
+                "player_6",
+                "player_5",
+                "player_0",
+                "player_1"
+            ],
+            "eliminated": "player_4",
+            "unmasked": "player_7",
+            "protected": "player_7",
+            "exiled": "player_7",
+            "debate": [
+                [
+                    "player_6",
+                    "Alright everyone, it's clear the Werewolves are already at work, with David gone on the first night. We've lost a Villager, and now it's crucial we work together. Let's start discussing. Does anyone have any early thoughts or observations? Power roles, please be careful but consider if there's any information that could help us right now. We need to identify these Werewolves fast."
+                ],
+                [
+                    "player_7",
+                    "It's truly a shame about David, and Derek's absolutely right - we need to be vigilant. This early loss is a tough start. It feels like we're all a bit stunned, but we can't afford silence. If anyone has even the slightest gut feeling or observation, however minor, please share it. We need *everyone* contributing, not just waiting for power roles. Let's hear from others, what are your initial thoughts?"
+                ],
+                [
+                    "player_5",
+                    "This is a truly awful start, losing David on the very first night. Derek and Harold are absolutely right; we need to be incredibly vigilant. It's hard to even know where to begin, as everyone is processing this shock. But we can't afford to be silent, and at the same time, we need to be wary of anyone trying to steer us too quickly. I'm just watching everyone's reactions and trying to make sense of things. Does anyone have any gut feelings, however small, or has anything struck them as odd?"
+                ],
+                [
+                    "player_0",
+                    "It's truly a grim start, losing David right away, and I agree with Derek, Harold, and Hayley that vigilance is paramount. But we can't afford to just be shocked; we need to be strategic. Instead of just sharing 'gut feelings,' which are often unreliable this early, let's really focus on everyone's contributions. Who is being genuinely collaborative, and who might be trying to fade into the background or, conversely, trying to control the narrative too quickly without offering substance? Let's scrutinize each other's words, and lack thereof, and start building a real case."
+                ],
+                [
+                    "player_1",
+                    "Everyone, this is indeed a grim start, and we've lost David too soon. While I agree we need to be vigilant, I have vital information. As the Seer, I investigated Harold last night, and I can confirm he is a Werewolf. This is not a gut feeling; this is a verified role action. We need to vote Harold out today. We cannot afford to hesitate; we have a confirmed Werewolf right here."
+                ],
+                [
+                    "player_3",
+                    "Okay everyone, a grim start indeed with David gone, and I completely agree we need to be sharp, collaborative, and scrutinize everything. Sam, your claim as the Seer with a confirmed hit on Harold as a Werewolf is monumental and completely changes the discussion. This isn't a gut feeling; it's a direct role action claim, and it's the most crucial piece of information we've received. We cannot afford to ignore it. Harold, we need to hear your immediate response to this. And for everyone else, we need to carefully consider this information right now. If Sam is telling the truth, we have our first Werewolf. If not, we have a very dangerous fake Seer among us. What does everyone make of this potential confirmation?"
+                ],
+                [
+                    "player_2",
+                    "Wow, Sam, that's an incredibly bold and vital claim, if true. As Jacob said, this completely shifts the entire discussion. Harold, you absolutely have to respond to this immediately. This isn't just a 'gut feeling' anymore; this is a direct role action claim that points a very strong finger at you. For the rest of us, we need to decide right now whether we believe Sam. If Sam is telling the truth, we have our first Werewolf. If not, Sam is the most dangerous player at the table. Harold, what do you have to say in your defense, right now?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_7",
+                    "player_2": "player_7",
+                    "player_6": "player_7",
+                    "player_7": "player_1",
+                    "player_5": "player_1",
+                    "player_0": "player_7",
+                    "player_1": "player_7"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_3",
+                "player_2",
+                "player_6",
+                "player_0",
+                "player_1"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_6",
+            "protected": "player_1",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_6",
+                    "Okay, first, a big thank you to our Doctor for saving someone last night! That's excellent news and a great start to Round 1. Now, Sam, given your claim as Seer yesterday and Harold's removal, can you please tell us if you investigated anyone else last night and what your findings were? Your information is absolutely critical for the Village right now."
+                ],
+                [
+                    "player_5",
+                    "Yes, a huge thank you to our Doctor for that critical save last night, that's fantastic news for the Village! Derek is right, Sam, your information is paramount. It's great you found Harold, but with no one being removed, it also means the Werewolf could have simply misfired, or the Doctor made an incredibly lucky save. So, Sam, please tell us: who did you investigate last night, and what did you discover? We need definitive evidence, not just claims, if we're to proceed confidently."
+                ],
+                [
+                    "player_2",
+                    "Okay, first, a massive thank you to our Doctor \u2013 that save last night was absolutely crucial and a fantastic start to this round! Sam, your credibility as Seer is extremely high after outing Harold in Round 0. We're relying on you. Hayley, I believe the moderator's announcement confirms a successful Doctor save, not a Werewolf misfire, which is great news. So Sam, please tell us, who did you investigate last night, and what did your vision reveal? We need to build on that success immediately."
+                ],
+                [
+                    "player_3",
+                    "That's incredible news about the Doctor save last night! A huge thank you to our vigilant Doctor for protecting someone. Sam, your credibility is sky-high after outing Harold as a Werewolf. We are all eagerly awaiting your report from last night. Who did you investigate, and what did your vision reveal? This information is absolutely critical for our next move. Also, Scott, you've been silent this morning. We need everyone's active participation right now; what are your thoughts?"
+                ],
+                [
+                    "player_1",
+                    "Thank you, everyone, and a massive thanks to our Doctor for that critical save last night \u2013 truly outstanding work! Your vigilance kept someone safe, and that's exactly the teamwork we need. As your Seer, my investigation last night focused on Derek, and I can confirm with absolute certainty that **Derek is a Villager.** This gives us a crucial piece of information, confirming one more innocent. Jacob, you raised a good point about Scott's silence; we need everyone contributing, so please, Scott, share your thoughts. Now that we know Derek is safe, we need to carefully consider who might be lurking among us."
+                ],
+                [
+                    "player_0",
+                    "Thank you, Jacob, for the nudge \u2013 I was waiting for the right moment to speak. Everyone is right, the Doctor's save last night was crucial, and I can confirm that I am indeed the Doctor. Last night, I chose to protect Sam. This means the Werewolves targeted Sam, attempting to silence our Seer, which strongly validates Sam's claim. With Sam as our confirmed Seer, and their finding that Derek is a Villager, we now have three confirmed good roles among us: Sam (Seer), Derek (Villager), and myself (Doctor). This is powerful information. We need to focus our attention on Hayley, Jackson, and Jacob. Let's hear from them next, and begin to strategize our vote based on this newfound clarity."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_5",
+                    "player_2": "player_0",
+                    "player_6": "player_5",
+                    "player_5": "player_2",
+                    "player_0": "player_5",
+                    "player_1": "player_5"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

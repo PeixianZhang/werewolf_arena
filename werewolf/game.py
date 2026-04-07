@@ -51,6 +51,76 @@ class GameMaster:
   def this_round_log(self) -> RoundLog:
     return self.logs[self.current_round_num]
 
+  def _resolve_wolf_decision(
+      self,
+      werewolves_alive,
+      legal_targets,
+      wolf_votes,
+      wolf_logs,
+  ):
+    """Resolve wolf target without random tie-breaking."""
+    valid_votes = {
+        name: target
+        for name, target in wolf_votes.items()
+        if target in legal_targets
+    }
+    if len(valid_votes) == 1:
+      return next(iter(valid_votes.items())), wolf_logs
+    if len(valid_votes) >= 2:
+      vote_counter = Counter(valid_votes.values())
+      max_votes = max(vote_counter.values())
+      top_targets = [
+          target for target, count in vote_counter.items() if count == max_votes
+      ]
+      if len(top_targets) == 1:
+        decided_target = top_targets[0]
+        decided_wolf = next(
+            name for name, target in valid_votes.items() if target == decided_target
+        )
+        return (decided_wolf, decided_target), wolf_logs
+
+      # One extra decision round among tied targets.
+      runoff_votes = {}
+      runoff_logs = {}
+      for wolf in werewolves_alive:
+        runoff_target, runoff_log = wolf.eliminate(candidate_options=top_targets)
+        runoff_votes[wolf.name] = runoff_target
+        runoff_logs[wolf.name] = runoff_log
+
+      runoff_valid = {
+          name: target
+          for name, target in runoff_votes.items()
+          if target in top_targets
+      }
+      if runoff_valid:
+        runoff_counter = Counter(runoff_valid.values())
+        runoff_max = max(runoff_counter.values())
+        runoff_top = [
+            target
+            for target, count in runoff_counter.items()
+            if count == runoff_max
+        ]
+        if len(runoff_top) == 1:
+          decided_target = runoff_top[0]
+          decided_wolf = next(
+              name
+              for name, target in runoff_valid.items()
+              if target == decided_target
+          )
+          return (decided_wolf, decided_target), runoff_logs
+
+        # Still tied: deterministic fallback (seat order at round start).
+        for name in self.round_start_players:
+          if name in runoff_top:
+            decided_target = name
+            break
+        else:
+          decided_target = sorted(runoff_top)[0]
+        decided_wolf = werewolves_alive[0].name
+        return (decided_wolf, decided_target), runoff_logs
+
+    return (None, None), wolf_logs
+
   def eliminate(self):
     """Werewolves choose a player to eliminate."""
     werewolves_alive = [
@@ -72,32 +142,17 @@ class GameMaster:
         for name in self.this_round.players
         if name not in [wolf.name for wolf in werewolves_alive]
     ]
-    valid_votes = {
-        name: target
-        for name, target in wolf_votes.items()
-        if target in legal_targets
-    }
-
-    eliminated = None
-    deciding_wolf_name = None
-
-    if len(valid_votes) == 1:
-      deciding_wolf_name, eliminated = next(iter(valid_votes.items()))
-    elif len(valid_votes) >= 2:
-      voted_targets = list(valid_votes.values())
-      if len(set(voted_targets)) == 1:
-        eliminated = voted_targets[0]
-      else:
-        eliminated = random.choice(voted_targets)
-      # Keep one deciding wolf for logging compatibility.
-      deciding_wolf_name = next(
-          name for name, target in valid_votes.items() if target == eliminated
-      )
+    (deciding_wolf_name, eliminated), decision_logs = self._resolve_wolf_decision(
+        werewolves_alive=werewolves_alive,
+        legal_targets=legal_targets,
+        wolf_votes=wolf_votes,
+        wolf_logs=wolf_logs,
+    )
 
     if eliminated is None:
       if not legal_targets:
         raise ValueError("Werewolves could not eliminate: no legal targets.")
-      eliminated = random.choice(legal_targets)
+      eliminated = legal_targets[0]
       deciding_wolf_name = werewolves_alive[0].name
       deciding_display = werewolves_alive[0].get_display_name(deciding_wolf_name)
       eliminated_display = werewolves_alive[0].get_display_name(eliminated)
@@ -106,7 +161,7 @@ class GameMaster:
           f" target is {eliminated_display}."
       )
 
-    self.this_round_log.eliminate = wolf_logs.get(
+    self.this_round_log.eliminate = decision_logs.get(
         deciding_wolf_name, next(iter(wolf_logs.values()))
     )
     self.this_round.eliminated = eliminated
@@ -245,23 +300,33 @@ class GameMaster:
       display_vote = player_obj.get_display_name(vote)
       tqdm.tqdm.write(f"{display_player} voted to remove {display_vote}")
 
-  def run_voting(self):
+  def run_voting(self, candidate_options=None):
     """Conduct a vote among players to exile someone."""
     vote_log = []
     votes = {}
+    allowed_candidates = None
+    if candidate_options is not None:
+      allowed_candidates = [
+          c for c in candidate_options if c in self.this_round.players
+      ]
 
     with ThreadPoolExecutor(max_workers=self.num_threads) as executor:
       player_votes = {
-          name: executor.submit(self.state.players[name].vote)
+          name: executor.submit(self.state.players[name].vote, allowed_candidates)
           for name in self.this_round.players
       }
 
       for player_name, vote_task in player_votes.items():
         vote, log = vote_task.result()
         if vote is None:
-          fallback_options = [
-              name for name in self.this_round.players if name != player_name
-          ]
+          if allowed_candidates:
+            fallback_options = [
+                name for name in allowed_candidates if name != player_name
+            ]
+          else:
+            fallback_options = [
+                name for name in self.this_round.players if name != player_name
+            ]
           if not fallback_options:
             raise ValueError(
                 f"{player_name} could not vote and no fallback targets exist."
@@ -290,7 +355,24 @@ class GameMaster:
         player for player, count in vote_counter.items() if count == vote_count
     ]
 
-    # Tie at top votes means no exile this round.
+    # Tie at top votes triggers one runoff among tied candidates.
+    if len(top_candidates) > 1:
+      tied_display = ", ".join(
+          self.state.players[self.this_round.players[0]].get_display_name(c)
+          for c in top_candidates
+      )
+      tqdm.tqdm.write(
+          f"Top vote tie between: {tied_display}. Running one runoff vote."
+      )
+      runoff_votes, runoff_vote_logs = self.run_voting(top_candidates)
+      self.this_round.votes.append(runoff_votes)
+      self.this_round_log.votes.append(runoff_vote_logs)
+      vote_counter = Counter(runoff_votes.values())
+      most_voted, vote_count = vote_counter.most_common(1)[0]
+      top_candidates = [
+          player for player, count in vote_counter.items() if count == vote_count
+      ]
+
     if (
         len(top_candidates) == 1
         and vote_count >= len(self.this_round.players) / 2

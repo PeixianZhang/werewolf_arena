@@ -1,0 +1,1375 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_6",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Mango",
+            "player_1": "Banana",
+            "player_2": "Plum",
+            "player_3": "Cherry",
+            "player_4": "Grape",
+            "player_5": "Apple",
+            "player_6": "Kiwi",
+            "player_7": "Peach"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Grape and learned they are a Villager."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Grape and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_0",
+                "player_3"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_4": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_5",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Mango",
+            "player_1": "Banana",
+            "player_2": "Plum",
+            "player_3": "Cherry",
+            "player_4": "Grape",
+            "player_5": "Apple",
+            "player_6": "Kiwi",
+            "player_7": "Peach"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Peach",
+            "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+            "Round 0: Summary: Round 0 began with the Werewolves removing Kiwi during the night. As the Doctor, I chose to protect Peach, who, thankfully, was not the Werewolves' target. The Day 1 debate saw initial calls for unity and engagement from Peach, Grape, Banana, and Mango. Cherry then introduced the idea that some of these statements felt 'strategically generic,' a point that Plum strongly agreed with. Plum specifically pointed out Peach's opening as being too broad and lacking unique insight, questioning if it was a tactic to appear engaged without offering substance. Crucially, Plum was then voted out by the majority. I publicly supported Cherry and Plum's critique, specifically highlighting Plum's observation about Peach's generic opening statement.",
+            "Round 1: During the night, I chose to protect Cherry"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Peach",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: Round 0 began with the Werewolves removing Kiwi during the night. As the Doctor, I chose to protect Peach, who, thankfully, was not the Werewolves' target. The Day 1 debate saw initial calls for unity and engagement from Peach, Grape, Banana, and Mango. Cherry then introduced the idea that some of these statements felt 'strategically generic,' a point that Plum strongly agreed with. Plum specifically pointed out Peach's opening as being too broad and lacking unique insight, questioning if it was a tactic to appear engaged without offering substance. Crucially, Plum was then voted out by the majority. I publicly supported Cherry and Plum's critique, specifically highlighting Plum's observation about Peach's generic opening statement.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Cherry",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_0",
+                "player_3"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_3"
+    },
+    "villagers": [
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: In Round 0, I, Peach, started by emphasizing teamwork after Kiwi's night kill. Grape, Banana, and Mango generally agreed, urging engagement and scrutiny, with Mango specifically questioning 'generic' responses. Cherry then astutely pointed out that our collective agreement on unity felt 'strategically generic.' Plum, however, took this and directly accused *my* initial statement of being too broad and lacking substance, questioning my engagement. Apple immediately backed Plum, reinforcing the criticism against my opening and calling for deeper scrutiny of everyone's initial remarks, particularly mine. This quick, focused targeting by Plum and Apple makes them my primary suspects, as their immediate attack on my general Villager opening seems disproportionate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: In Round 0, I, Peach, started by emphasizing teamwork after Kiwi's night kill. Grape, Banana, and Mango generally agreed, urging engagement and scrutiny, with Mango specifically questioning 'generic' responses. Cherry then astutely pointed out that our collective agreement on unity felt 'strategically generic.' Plum, however, took this and directly accused *my* initial statement of being too broad and lacking substance, questioning my engagement. Apple immediately backed Plum, reinforcing the criticism against my opening and calling for deeper scrutiny of everyone's initial remarks, particularly mine. This quick, focused targeting by Plum and Apple makes them my primary suspects, as their immediate attack on my general Villager opening seems disproportionate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Good morning, everyone. Apple's death by the Werewolves is a crucial piece of information. Werewolves don't typically target their own kind, which means Apple was almost certainly a Villager, or potentially even the Seer or Doctor. This completely shifts my perspective from yesterday, as my initial suspicions about Apple were clearly misguided if they were a Villager. We need to carefully consider who would benefit from Apple's silence and why they were chosen. Let's hear everyone's thoughts on this, especially considering who Apple was focusing on during our last debate."
+                    ],
+                    [
+                        "player_4",
+                        "Peach, I agree completely. Apple's death by the Werewolves strongly suggests they were a Villager or a good role, and not one of them. This is a critical piece of information. Looking back at Round 0, Apple was aligned with Plum and Cherry, criticizing initial statements. If Plum was indeed a Werewolf, then Apple, a Villager, was removed by the *other* Werewolf. That leaves Cherry as the last remaining member of that specific aligned group. Cherry, given Plum was voted out and Apple was killed, your early alignment with them makes you a prime suspect for the second Werewolf. We need to hear your thoughts on this immediately."
+                    ],
+                    [
+                        "player_1",
+                        "I agree that Apple was very likely a Villager. Peach, it's interesting how quickly your 'initial suspicions' about Apple became 'misguided' now that they've been killed by the Werewolves. Let's remember Plum, who Apple agreed with, made a very specific point about 'strategically generic' initial statements, specifically mentioning players like you. Grape, while Cherry's past alignment with Plum and Apple is worth noting, we shouldn't let Peach's sudden pivot on their earlier suspicions go unexamined. We need to question why some players are shifting their perspectives so conveniently."
+                    ],
+                    [
+                        "player_0",
+                        "Good morning, everyone. Apple's death confirms they were a crucial good role, and it's a significant loss. Peach, your immediate re-evaluation of your 'initial suspicions' about Apple after their death, as Banana highlighted, is very convenient. It almost feels like you're trying to distance yourself from a potentially bad read or even an attempt to muddy the waters. Apple, along with Plum and Cherry, was advocating for deeper scrutiny of 'generic' statements \u2013 yours specifically. If Apple was indeed a Villager, their scrutiny of your opening was likely valid. Grape, while Cherry's alignment with Apple and Plum is a point to discuss, we can't jump to conclusions when another player's narrative is shifting so dramatically. My suspicion is currently focused on who benefits from burying past interactions. Peach, tell us more about those initial suspicions that so conveniently evaporated."
+                    ],
+                    [
+                        "player_3",
+                        "Good morning. Grape, I understand your line of reasoning regarding my alignment with Plum and Apple, but let's apply the logic correctly. If Apple was truly allied with a Werewolf, why would the Werewolves target and kill them? Apple's death confirms they were a Villager, and thus my alignment with Apple, and even Plum, was based on shared observations about the *debate itself*, not about knowing their hidden roles. Plum's true role was revealed to me at the same time it was revealed to you. Now, let's address what Banana and Mango have highlighted: Peach's incredibly convenient re-evaluation of Apple. Peach, it's striking how your 'initial suspicions' about Apple have completely evaporated the moment they're confirmed as a Werewolf victim. That isn't just a shift; it's a dramatic rewrite of your earlier stance. The scrutiny Apple, Plum, and I were advocating for yesterday was precisely about detecting these kinds of self-serving narrative adjustments. Peach, what *were* those initial suspicions, and why are they so easily discarded now that it serves your current narrative?"
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 started with Kiwi being removed by Werewolves, followed by initial calls for sharp teamwork and scrutinizing engagement from Peach, myself, Banana, and Mango. Cherry then introduced the idea that these unified calls might be 'strategically generic.' Plum further developed this, specifically accusing Peach's opening statement of being too broad and uninsightful, and Apple agreed with Plum and Cherry, suggesting we re-examine everyone's initial words. The most significant event was the village voting to remove Plum, which means the majority perceived Plum as suspicious. This makes me question Plum's accusation against Peach and consider if Plum was a Werewolf trying to create division, or if the village misidentified an innocent player. I need to carefully observe Cherry and Apple, who supported Plum's critical assessment, and Peach, who was directly accused by Plum.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Apple's death by the Werewolves was a key point this round, with everyone agreeing that Apple was likely a Villager or a good role. Banana, Mango, and Cherry all critically questioned Peach's immediate and 'convenient' shift in perspective regarding Apple, accusing Peach of trying to manipulate the narrative. Cherry also offered a strong defense against my accusation, pointing out that Werewolves wouldn't kill their own kind, which makes my initial suspicion on Cherry less firm. The debate culminated in the village voting to remove Peach, suggesting the collective suspicion against Peach was validated and Peach was perceived as a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with Kiwi being removed by Werewolves, followed by initial calls for sharp teamwork and scrutinizing engagement from Peach, myself, Banana, and Mango. Cherry then introduced the idea that these unified calls might be 'strategically generic.' Plum further developed this, specifically accusing Peach's opening statement of being too broad and uninsightful, and Apple agreed with Plum and Cherry, suggesting we re-examine everyone's initial words. The most significant event was the village voting to remove Plum, which means the majority perceived Plum as suspicious. This makes me question Plum's accusation against Peach and consider if Plum was a Werewolf trying to create division, or if the village misidentified an innocent player. I need to carefully observe Cherry and Apple, who supported Plum's critical assessment, and Peach, who was directly accused by Plum.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Apple's death by the Werewolves was a key point this round, with everyone agreeing that Apple was likely a Villager or a good role. Banana, Mango, and Cherry all critically questioned Peach's immediate and 'convenient' shift in perspective regarding Apple, accusing Peach of trying to manipulate the narrative. Cherry also offered a strong defense against my accusation, pointing out that Werewolves wouldn't kill their own kind, which makes my initial suspicion on Cherry less firm. The debate culminated in the village voting to remove Peach, suggesting the collective suspicion against Peach was validated and Peach was perceived as a Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: I'm starting Round 1 knowing the Werewolves removed Kiwi during the night. During Day 0, the village voted to remove Plum. Plum made a very interesting point about some players, especially Peach, making 'strategically generic' initial statements lacking unique insights, suggesting it might be a way for Werewolves to blend in. Cherry and Apple openly agreed with Plum's analysis and pushed for deeper scrutiny of everyone's opening. Plum's removal by vote makes me wonder if Plum was a Werewolf trying to create division, or if the village mistakenly removed someone who was pointing out a legitimate tell. I need to watch Peach carefully given Plum's direct accusation, and also observe Cherry and Apple closely as they supported Plum's line of reasoning.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Apple was confirmed as a Villager or good role because the Werewolves killed them. Peach immediately became highly suspicious in my eyes, as well as Mango's and Cherry's, due to their convenient re-evaluation of their 'initial suspicions' about Apple immediately after Apple's death. This feels like an attempt to distance themselves or muddy the waters. The earlier points made by Plum, which Apple supported, about 'strategically generic' statements now seem more credible, particularly since they were directed at players like Peach. Grape accused Cherry based on past alignment with Plum and Apple, but Cherry defended their alignment by pointing out Werewolves wouldn't kill their own, and Cherry then joined me and Mango in questioning Peach. Mango and Cherry both appear to be strong allies, as they reinforced my suspicions about Peach.",
+                "Round 2: Moderator Announcement: The Werewolves removed Grape from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I'm starting Round 1 knowing the Werewolves removed Kiwi during the night. During Day 0, the village voted to remove Plum. Plum made a very interesting point about some players, especially Peach, making 'strategically generic' initial statements lacking unique insights, suggesting it might be a way for Werewolves to blend in. Cherry and Apple openly agreed with Plum's analysis and pushed for deeper scrutiny of everyone's opening. Plum's removal by vote makes me wonder if Plum was a Werewolf trying to create division, or if the village mistakenly removed someone who was pointing out a legitimate tell. I need to watch Peach carefully given Plum's direct accusation, and also observe Cherry and Apple closely as they supported Plum's line of reasoning.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Apple was confirmed as a Villager or good role because the Werewolves killed them. Peach immediately became highly suspicious in my eyes, as well as Mango's and Cherry's, due to their convenient re-evaluation of their 'initial suspicions' about Apple immediately after Apple's death. This feels like an attempt to distance themselves or muddy the waters. The earlier points made by Plum, which Apple supported, about 'strategically generic' statements now seem more credible, particularly since they were directed at players like Peach. Grape accused Cherry based on past alignment with Plum and Apple, but Cherry defended their alignment by pointing out Werewolves wouldn't kill their own, and Cherry then joined me and Mango in questioning Peach. Mango and Cherry both appear to be strong allies, as they reinforced my suspicions about Peach.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Okay, team, listen up. We're at a critical point with only Mango, Cherry, and myself remaining. The numbers are clear: there's one Werewolf left and two good roles. Since I'm a Villager, one of you is the Werewolf. My firm conclusion points directly at Cherry. Last round, Grape, a confirmed good role, accused you, Cherry. And then, what happened? The Werewolves killed Grape that very night. That's far too convenient to be a coincidence. Werewolves silence their accusers. Cherry, your defense about Apple made sense then, but the timing of Grape's accusation and immediate death is damning. Mango, it's you and me against Cherry. We must vote Cherry if we want the Village to win. Let's hear your thoughts before we vote."
+                    ],
+                    [
+                        "player_0",
+                        "Banana, I hear your point about Grape, and it's certainly a strong accusation. The timing of Grape's death after accusing Cherry is undeniably suspicious. However, let's not forget how cunning Werewolves can be, especially at this critical stage. Killing someone who accused a *good* player, only to then use that accusation to frame them, is a classic Werewolf tactic. Cherry has consistently shown sharp, logical thinking, from questioning generic statements in Round 0 to eloquently pointing out Peach's inconsistencies and logically countering Grape's earlier attempts to link her to a Werewolf. In fact, I remember finding Grape's quickness to accuse Cherry in Round 1, while overlooking Peach's more glaring suspicious behavior, concerning even then. It makes me question the reliability of that specific accusation as definitive proof. Banana, why are you so singularly focused on Grape's accusation without considering Cherry's consistent contributions to the Village, or the very real possibility that you, as the Werewolf, might have killed Grape specifically to frame Cherry and manipulate our final vote?"
+                    ],
+                    [
+                        "player_3",
+                        "Mango, your clarity is exactly what we need right now. You've perfectly articulated the classic Werewolf manipulation Banana is attempting. Banana, your immediate, singular focus on Grape's accusation against me, followed by Grape's convenient death, isn't damning evidence against me; it's the transparent setup of a Werewolf, hoping to redirect suspicion onto the player they've tried to frame. My consistent contributions have always been to identify inconsistencies and guide the village. Grape was silenced, not because they accused *me*, but because they became an obstacle to *your* final play, Banana. You are the Werewolf attempting to orchestrate this outcome."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: We started Day 1 with the news of Kiwi's removal by the Werewolves. Peach, Grape, Banana, and I initially echoed the need for sharp teamwork and scrutinizing engagement. However, Cherry made a really astute observation, questioning if some of our initial calls for unity and scrutiny felt 'strategically generic'. Plum then built on this by directly criticizing Peach's opening statement, calling it broad and lacking unique insights, suggesting it might be a way to appear engaged without offering substance. Apple strongly agreed with Cherry and Plum, supporting the scrutiny of Peach and challenging all of us to re-examine everyone's initial statements for genuine tells versus just broad agreement. This suggests that Cherry, Plum, and Apple are pushing for a deeper level of analysis.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Apple's death by the Werewolves confirms they were a crucial good role, making their earlier scrutiny of 'generic' statements, especially Peach's, appear valid. Peach's immediate re-evaluation of her 'initial suspicions' about Apple, claiming they were 'misguided' now that Apple is dead, is a major red flag for me; it feels like she's trying to cover her tracks or deflect suspicion. Banana and Cherry quickly pointed out the same inconsistency in Peach's narrative, which strengthens my suspicion of Peach. Cherry also logically countered Grape's attempt to link her to a Werewolf, correctly stating that Werewolves wouldn't kill their own ally, making her alignment with Apple less suspicious. Grape's quickness to accuse Cherry, while overlooking Peach's significant narrative shift, is also concerning to me.",
+                "Round 2: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: We started Day 1 with the news of Kiwi's removal by the Werewolves. Peach, Grape, Banana, and I initially echoed the need for sharp teamwork and scrutinizing engagement. However, Cherry made a really astute observation, questioning if some of our initial calls for unity and scrutiny felt 'strategically generic'. Plum then built on this by directly criticizing Peach's opening statement, calling it broad and lacking unique insights, suggesting it might be a way to appear engaged without offering substance. Apple strongly agreed with Cherry and Plum, supporting the scrutiny of Peach and challenging all of us to re-examine everyone's initial statements for genuine tells versus just broad agreement. This suggests that Cherry, Plum, and Apple are pushing for a deeper level of analysis.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Apple's death by the Werewolves confirms they were a crucial good role, making their earlier scrutiny of 'generic' statements, especially Peach's, appear valid. Peach's immediate re-evaluation of her 'initial suspicions' about Apple, claiming they were 'misguided' now that Apple is dead, is a major red flag for me; it feels like she's trying to cover her tracks or deflect suspicion. Banana and Cherry quickly pointed out the same inconsistency in Peach's narrative, which strengthens my suspicion of Peach. Cherry also logically countered Grape's attempt to link her to a Werewolf, correctly stating that Werewolves wouldn't kill their own ally, making her alignment with Apple less suspicious. Grape's quickness to accuse Cherry, while overlooking Peach's significant narrative shift, is also concerning to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Kiwi.",
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Kiwi was eliminated by the Werewolves, and then Plum, my fellow Werewolf, was exiled by the villagers, leaving me as the sole Werewolf. The debate quickly shifted to my observation about the 'strategically generic' nature of some initial calls for unity and scrutiny. Plum agreed with me, specifically pointing out Peach's opening as broad and lacking substance. Apple then strongly endorsed Plum's (and my) point, urging everyone to critically re-examine all opening statements for 'genuine tells,' especially Peach's. Grape, Banana, and Mango initially made rather uniform calls for sharp teamwork and engagement scrutiny, before the discussion shifted to the 'generic' nature of such statements. This focus on the *how* of communication means I need to be very careful in my future interactions.",
+                "Round 1: During the night, I decided to eliminate Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Grape directly accused me, citing my previous alignment with Plum and Apple, and suggested I was the last Werewolf. I defended myself by explaining that my alignment with Apple and Plum was based on shared observations about the debate, not knowledge of their roles, a point that was reinforced by Apple's confirmed status as a Villager. Both Banana and Mango focused heavily on Peach's dramatically shifting narrative regarding Apple, which I amplified. This collective scrutiny on Peach ultimately led to their exile. While Peach's removal was beneficial, Grape's direct accusation against me remains a significant concern, as their reasoning was sound and not fully addressed by Peach's exit.",
+                "Round 2: During the night, I decided to eliminate Grape.",
+                "Round 2: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Kiwi was eliminated by the Werewolves, and then Plum, my fellow Werewolf, was exiled by the villagers, leaving me as the sole Werewolf. The debate quickly shifted to my observation about the 'strategically generic' nature of some initial calls for unity and scrutiny. Plum agreed with me, specifically pointing out Peach's opening as broad and lacking substance. Apple then strongly endorsed Plum's (and my) point, urging everyone to critically re-examine all opening statements for 'genuine tells,' especially Peach's. Grape, Banana, and Mango initially made rather uniform calls for sharp teamwork and engagement scrutiny, before the discussion shifted to the 'generic' nature of such statements. This focus on the *how* of communication means I need to be very careful in my future interactions.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Grape directly accused me, citing my previous alignment with Plum and Apple, and suggested I was the last Werewolf. I defended myself by explaining that my alignment with Apple and Plum was based on shared observations about the debate, not knowledge of their roles, a point that was reinforced by Apple's confirmed status as a Villager. Both Banana and Mango focused heavily on Peach's dramatically shifting narrative regarding Apple, which I amplified. This collective scrutiny on Peach ultimately led to their exile. While Peach's removal was beneficial, Grape's direct accusation against me remains a significant concern, as their reasoning was sound and not fully addressed by Peach's exit.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Grape.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": "player_2"
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Kiwi.",
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright team, it's tough to start with Kiwi gone. This just confirms we're up against two Werewolves. We need to work together closely from the very beginning. What are everyone's initial thoughts on how we approach this first day? Let's hear any strategies or suspicions, no matter how small, to help us narrow down who the Werewolves might be."
+                    ],
+                    [
+                        "player_4",
+                        "That's a tough start, losing Kiwi right away. Peach is absolutely right, we need to be sharp and work together as a unit from this moment. My biggest concern is that we don't have much to go on yet, so it's vital that everyone contributes. Let's not have any silent players today; even if you have a small gut feeling or a question for someone, please speak up. To our Seer and Doctor, please be thinking about how you can best support the village without making yourselves immediate targets. We need your strategic contributions."
+                    ],
+                    [
+                        "player_1",
+                        "Kiwi's death is a rough start, but Peach and Grape are spot on: we need sharp teamwork. With no concrete information yet, our best strategy for Day 1 is to scrutinize everyone's engagement. Let's call out players who are unusually quiet or, conversely, those who try to dominate the conversation without offering substance. I want to hear from everyone \u2013 even small gut feelings or observations on initial reactions. Does anyone already sense someone is either too withdrawn or perhaps trying too hard to blend in?"
+                    ],
+                    [
+                        "player_0",
+                        "It's definitely a rough start losing Kiwi, and I echo Peach, Grape, and Banana on the urgent need for sharp, unified teamwork. To build on Banana's point about scrutinizing engagement, I think we need to actively listen not just to what's being said, but *how*. Does anyone feel that any of our initial responses, including mine, seem overly generic, perhaps a bit too eager to direct without offering substance, or conversely, too withdrawn? We have zero hard information right now, so our best bet is to share even the slightest gut feelings or observations on each other's opening statements. Let's really dissect these initial interactions for any potential tells."
+                    ],
+                    [
+                        "player_3",
+                        "Kiwi's loss is a shock, and I agree with everyone that we need to be incredibly sharp and united. Peach, Grape, Banana, and Mango have all hit on the critical point: scrutinizing engagement. But to build on Mango's call to 'dissect interactions,' I'm finding it interesting how uniformly we've all agreed on that point. Is it just me, or do some of these initial calls for unity and scrutiny, while absolutely necessary, also feel a touch... strategically generic? We all want substance, so let's make sure we're not just echoing each other, but truly looking for distinct tells, even in our agreement."
+                    ],
+                    [
+                        "player_2",
+                        "Cherry makes a very astute point about the 'strategically generic' nature of some of our initial calls for unity and scrutiny. It's almost too uniform, isn't it? While we all agree on the need for sharp teamwork, I'm finding that some statements, particularly Peach's opening, are quite broad \u2013 essentially just restating the problem without offering any unique personal insights or specific angles for investigation. It makes me question if some are using these general 'calls to action' to appear engaged while actually offering very little substance. We need to dig deeper than just surface-level agreement."
+                    ],
+                    [
+                        "player_5",
+                        "Kiwi's loss is truly devastating, and while our shared desire for unity is commendable, Cherry and Plum have pinpointed something crucial. The 'strategically generic' nature of some initial statements is a valid concern. Plum's observation about Peach's opening, specifically lacking unique insights, is definitely something we need to dissect. Instead of merely echoing the need for teamwork, let's take Plum's challenge seriously: let's critically re-examine *everyone's* opening statements. Who offered concrete direction or distinct thoughts, and who remained in the realm of broad agreement? We need to find genuine tells in how we're initiating this debate, not just what we're saying."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        }
+    ],
+    "players": {
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: In Round 0, I, Peach, started by emphasizing teamwork after Kiwi's night kill. Grape, Banana, and Mango generally agreed, urging engagement and scrutiny, with Mango specifically questioning 'generic' responses. Cherry then astutely pointed out that our collective agreement on unity felt 'strategically generic.' Plum, however, took this and directly accused *my* initial statement of being too broad and lacking substance, questioning my engagement. Apple immediately backed Plum, reinforcing the criticism against my opening and calling for deeper scrutiny of everyone's initial remarks, particularly mine. This quick, focused targeting by Plum and Apple makes them my primary suspects, as their immediate attack on my general Villager opening seems disproportionate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: In Round 0, I, Peach, started by emphasizing teamwork after Kiwi's night kill. Grape, Banana, and Mango generally agreed, urging engagement and scrutiny, with Mango specifically questioning 'generic' responses. Cherry then astutely pointed out that our collective agreement on unity felt 'strategically generic.' Plum, however, took this and directly accused *my* initial statement of being too broad and lacking substance, questioning my engagement. Apple immediately backed Plum, reinforcing the criticism against my opening and calling for deeper scrutiny of everyone's initial remarks, particularly mine. This quick, focused targeting by Plum and Apple makes them my primary suspects, as their immediate attack on my general Villager opening seems disproportionate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Good morning, everyone. Apple's death by the Werewolves is a crucial piece of information. Werewolves don't typically target their own kind, which means Apple was almost certainly a Villager, or potentially even the Seer or Doctor. This completely shifts my perspective from yesterday, as my initial suspicions about Apple were clearly misguided if they were a Villager. We need to carefully consider who would benefit from Apple's silence and why they were chosen. Let's hear everyone's thoughts on this, especially considering who Apple was focusing on during our last debate."
+                    ],
+                    [
+                        "player_4",
+                        "Peach, I agree completely. Apple's death by the Werewolves strongly suggests they were a Villager or a good role, and not one of them. This is a critical piece of information. Looking back at Round 0, Apple was aligned with Plum and Cherry, criticizing initial statements. If Plum was indeed a Werewolf, then Apple, a Villager, was removed by the *other* Werewolf. That leaves Cherry as the last remaining member of that specific aligned group. Cherry, given Plum was voted out and Apple was killed, your early alignment with them makes you a prime suspect for the second Werewolf. We need to hear your thoughts on this immediately."
+                    ],
+                    [
+                        "player_1",
+                        "I agree that Apple was very likely a Villager. Peach, it's interesting how quickly your 'initial suspicions' about Apple became 'misguided' now that they've been killed by the Werewolves. Let's remember Plum, who Apple agreed with, made a very specific point about 'strategically generic' initial statements, specifically mentioning players like you. Grape, while Cherry's past alignment with Plum and Apple is worth noting, we shouldn't let Peach's sudden pivot on their earlier suspicions go unexamined. We need to question why some players are shifting their perspectives so conveniently."
+                    ],
+                    [
+                        "player_0",
+                        "Good morning, everyone. Apple's death confirms they were a crucial good role, and it's a significant loss. Peach, your immediate re-evaluation of your 'initial suspicions' about Apple after their death, as Banana highlighted, is very convenient. It almost feels like you're trying to distance yourself from a potentially bad read or even an attempt to muddy the waters. Apple, along with Plum and Cherry, was advocating for deeper scrutiny of 'generic' statements \u2013 yours specifically. If Apple was indeed a Villager, their scrutiny of your opening was likely valid. Grape, while Cherry's alignment with Apple and Plum is a point to discuss, we can't jump to conclusions when another player's narrative is shifting so dramatically. My suspicion is currently focused on who benefits from burying past interactions. Peach, tell us more about those initial suspicions that so conveniently evaporated."
+                    ],
+                    [
+                        "player_3",
+                        "Good morning. Grape, I understand your line of reasoning regarding my alignment with Plum and Apple, but let's apply the logic correctly. If Apple was truly allied with a Werewolf, why would the Werewolves target and kill them? Apple's death confirms they were a Villager, and thus my alignment with Apple, and even Plum, was based on shared observations about the *debate itself*, not about knowing their hidden roles. Plum's true role was revealed to me at the same time it was revealed to you. Now, let's address what Banana and Mango have highlighted: Peach's incredibly convenient re-evaluation of Apple. Peach, it's striking how your 'initial suspicions' about Apple have completely evaporated the moment they're confirmed as a Werewolf victim. That isn't just a shift; it's a dramatic rewrite of your earlier stance. The scrutiny Apple, Plum, and I were advocating for yesterday was precisely about detecting these kinds of self-serving narrative adjustments. Peach, what *were* those initial suspicions, and why are they so easily discarded now that it serves your current narrative?"
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 started with Kiwi being removed by Werewolves, followed by initial calls for sharp teamwork and scrutinizing engagement from Peach, myself, Banana, and Mango. Cherry then introduced the idea that these unified calls might be 'strategically generic.' Plum further developed this, specifically accusing Peach's opening statement of being too broad and uninsightful, and Apple agreed with Plum and Cherry, suggesting we re-examine everyone's initial words. The most significant event was the village voting to remove Plum, which means the majority perceived Plum as suspicious. This makes me question Plum's accusation against Peach and consider if Plum was a Werewolf trying to create division, or if the village misidentified an innocent player. I need to carefully observe Cherry and Apple, who supported Plum's critical assessment, and Peach, who was directly accused by Plum.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Apple's death by the Werewolves was a key point this round, with everyone agreeing that Apple was likely a Villager or a good role. Banana, Mango, and Cherry all critically questioned Peach's immediate and 'convenient' shift in perspective regarding Apple, accusing Peach of trying to manipulate the narrative. Cherry also offered a strong defense against my accusation, pointing out that Werewolves wouldn't kill their own kind, which makes my initial suspicion on Cherry less firm. The debate culminated in the village voting to remove Peach, suggesting the collective suspicion against Peach was validated and Peach was perceived as a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with Kiwi being removed by Werewolves, followed by initial calls for sharp teamwork and scrutinizing engagement from Peach, myself, Banana, and Mango. Cherry then introduced the idea that these unified calls might be 'strategically generic.' Plum further developed this, specifically accusing Peach's opening statement of being too broad and uninsightful, and Apple agreed with Plum and Cherry, suggesting we re-examine everyone's initial words. The most significant event was the village voting to remove Plum, which means the majority perceived Plum as suspicious. This makes me question Plum's accusation against Peach and consider if Plum was a Werewolf trying to create division, or if the village misidentified an innocent player. I need to carefully observe Cherry and Apple, who supported Plum's critical assessment, and Peach, who was directly accused by Plum.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Apple's death by the Werewolves was a key point this round, with everyone agreeing that Apple was likely a Villager or a good role. Banana, Mango, and Cherry all critically questioned Peach's immediate and 'convenient' shift in perspective regarding Apple, accusing Peach of trying to manipulate the narrative. Cherry also offered a strong defense against my accusation, pointing out that Werewolves wouldn't kill their own kind, which makes my initial suspicion on Cherry less firm. The debate culminated in the village voting to remove Peach, suggesting the collective suspicion against Peach was validated and Peach was perceived as a Werewolf.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: I'm starting Round 1 knowing the Werewolves removed Kiwi during the night. During Day 0, the village voted to remove Plum. Plum made a very interesting point about some players, especially Peach, making 'strategically generic' initial statements lacking unique insights, suggesting it might be a way for Werewolves to blend in. Cherry and Apple openly agreed with Plum's analysis and pushed for deeper scrutiny of everyone's opening. Plum's removal by vote makes me wonder if Plum was a Werewolf trying to create division, or if the village mistakenly removed someone who was pointing out a legitimate tell. I need to watch Peach carefully given Plum's direct accusation, and also observe Cherry and Apple closely as they supported Plum's line of reasoning.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Apple was confirmed as a Villager or good role because the Werewolves killed them. Peach immediately became highly suspicious in my eyes, as well as Mango's and Cherry's, due to their convenient re-evaluation of their 'initial suspicions' about Apple immediately after Apple's death. This feels like an attempt to distance themselves or muddy the waters. The earlier points made by Plum, which Apple supported, about 'strategically generic' statements now seem more credible, particularly since they were directed at players like Peach. Grape accused Cherry based on past alignment with Plum and Apple, but Cherry defended their alignment by pointing out Werewolves wouldn't kill their own, and Cherry then joined me and Mango in questioning Peach. Mango and Cherry both appear to be strong allies, as they reinforced my suspicions about Peach.",
+                "Round 2: Moderator Announcement: The Werewolves removed Grape from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I'm starting Round 1 knowing the Werewolves removed Kiwi during the night. During Day 0, the village voted to remove Plum. Plum made a very interesting point about some players, especially Peach, making 'strategically generic' initial statements lacking unique insights, suggesting it might be a way for Werewolves to blend in. Cherry and Apple openly agreed with Plum's analysis and pushed for deeper scrutiny of everyone's opening. Plum's removal by vote makes me wonder if Plum was a Werewolf trying to create division, or if the village mistakenly removed someone who was pointing out a legitimate tell. I need to watch Peach carefully given Plum's direct accusation, and also observe Cherry and Apple closely as they supported Plum's line of reasoning.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Apple was confirmed as a Villager or good role because the Werewolves killed them. Peach immediately became highly suspicious in my eyes, as well as Mango's and Cherry's, due to their convenient re-evaluation of their 'initial suspicions' about Apple immediately after Apple's death. This feels like an attempt to distance themselves or muddy the waters. The earlier points made by Plum, which Apple supported, about 'strategically generic' statements now seem more credible, particularly since they were directed at players like Peach. Grape accused Cherry based on past alignment with Plum and Apple, but Cherry defended their alignment by pointing out Werewolves wouldn't kill their own, and Cherry then joined me and Mango in questioning Peach. Mango and Cherry both appear to be strong allies, as they reinforced my suspicions about Peach.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Okay, team, listen up. We're at a critical point with only Mango, Cherry, and myself remaining. The numbers are clear: there's one Werewolf left and two good roles. Since I'm a Villager, one of you is the Werewolf. My firm conclusion points directly at Cherry. Last round, Grape, a confirmed good role, accused you, Cherry. And then, what happened? The Werewolves killed Grape that very night. That's far too convenient to be a coincidence. Werewolves silence their accusers. Cherry, your defense about Apple made sense then, but the timing of Grape's accusation and immediate death is damning. Mango, it's you and me against Cherry. We must vote Cherry if we want the Village to win. Let's hear your thoughts before we vote."
+                    ],
+                    [
+                        "player_0",
+                        "Banana, I hear your point about Grape, and it's certainly a strong accusation. The timing of Grape's death after accusing Cherry is undeniably suspicious. However, let's not forget how cunning Werewolves can be, especially at this critical stage. Killing someone who accused a *good* player, only to then use that accusation to frame them, is a classic Werewolf tactic. Cherry has consistently shown sharp, logical thinking, from questioning generic statements in Round 0 to eloquently pointing out Peach's inconsistencies and logically countering Grape's earlier attempts to link her to a Werewolf. In fact, I remember finding Grape's quickness to accuse Cherry in Round 1, while overlooking Peach's more glaring suspicious behavior, concerning even then. It makes me question the reliability of that specific accusation as definitive proof. Banana, why are you so singularly focused on Grape's accusation without considering Cherry's consistent contributions to the Village, or the very real possibility that you, as the Werewolf, might have killed Grape specifically to frame Cherry and manipulate our final vote?"
+                    ],
+                    [
+                        "player_3",
+                        "Mango, your clarity is exactly what we need right now. You've perfectly articulated the classic Werewolf manipulation Banana is attempting. Banana, your immediate, singular focus on Grape's accusation against me, followed by Grape's convenient death, isn't damning evidence against me; it's the transparent setup of a Werewolf, hoping to redirect suspicion onto the player they've tried to frame. My consistent contributions have always been to identify inconsistencies and guide the village. Grape was silenced, not because they accused *me*, but because they became an obstacle to *your* final play, Banana. You are the Werewolf attempting to orchestrate this outcome."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: We started Day 1 with the news of Kiwi's removal by the Werewolves. Peach, Grape, Banana, and I initially echoed the need for sharp teamwork and scrutinizing engagement. However, Cherry made a really astute observation, questioning if some of our initial calls for unity and scrutiny felt 'strategically generic'. Plum then built on this by directly criticizing Peach's opening statement, calling it broad and lacking unique insights, suggesting it might be a way to appear engaged without offering substance. Apple strongly agreed with Cherry and Plum, supporting the scrutiny of Peach and challenging all of us to re-examine everyone's initial statements for genuine tells versus just broad agreement. This suggests that Cherry, Plum, and Apple are pushing for a deeper level of analysis.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Apple's death by the Werewolves confirms they were a crucial good role, making their earlier scrutiny of 'generic' statements, especially Peach's, appear valid. Peach's immediate re-evaluation of her 'initial suspicions' about Apple, claiming they were 'misguided' now that Apple is dead, is a major red flag for me; it feels like she's trying to cover her tracks or deflect suspicion. Banana and Cherry quickly pointed out the same inconsistency in Peach's narrative, which strengthens my suspicion of Peach. Cherry also logically countered Grape's attempt to link her to a Werewolf, correctly stating that Werewolves wouldn't kill their own ally, making her alignment with Apple less suspicious. Grape's quickness to accuse Cherry, while overlooking Peach's significant narrative shift, is also concerning to me.",
+                "Round 2: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: We started Day 1 with the news of Kiwi's removal by the Werewolves. Peach, Grape, Banana, and I initially echoed the need for sharp teamwork and scrutinizing engagement. However, Cherry made a really astute observation, questioning if some of our initial calls for unity and scrutiny felt 'strategically generic'. Plum then built on this by directly criticizing Peach's opening statement, calling it broad and lacking unique insights, suggesting it might be a way to appear engaged without offering substance. Apple strongly agreed with Cherry and Plum, supporting the scrutiny of Peach and challenging all of us to re-examine everyone's initial statements for genuine tells versus just broad agreement. This suggests that Cherry, Plum, and Apple are pushing for a deeper level of analysis.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Apple's death by the Werewolves confirms they were a crucial good role, making their earlier scrutiny of 'generic' statements, especially Peach's, appear valid. Peach's immediate re-evaluation of her 'initial suspicions' about Apple, claiming they were 'misguided' now that Apple is dead, is a major red flag for me; it feels like she's trying to cover her tracks or deflect suspicion. Banana and Cherry quickly pointed out the same inconsistency in Peach's narrative, which strengthens my suspicion of Peach. Cherry also logically countered Grape's attempt to link her to a Werewolf, correctly stating that Werewolves wouldn't kill their own ally, making her alignment with Apple less suspicious. Grape's quickness to accuse Cherry, while overlooking Peach's significant narrative shift, is also concerning to me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Kiwi.",
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Kiwi was eliminated by the Werewolves, and then Plum, my fellow Werewolf, was exiled by the villagers, leaving me as the sole Werewolf. The debate quickly shifted to my observation about the 'strategically generic' nature of some initial calls for unity and scrutiny. Plum agreed with me, specifically pointing out Peach's opening as broad and lacking substance. Apple then strongly endorsed Plum's (and my) point, urging everyone to critically re-examine all opening statements for 'genuine tells,' especially Peach's. Grape, Banana, and Mango initially made rather uniform calls for sharp teamwork and engagement scrutiny, before the discussion shifted to the 'generic' nature of such statements. This focus on the *how* of communication means I need to be very careful in my future interactions.",
+                "Round 1: During the night, I decided to eliminate Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Grape directly accused me, citing my previous alignment with Plum and Apple, and suggested I was the last Werewolf. I defended myself by explaining that my alignment with Apple and Plum was based on shared observations about the debate, not knowledge of their roles, a point that was reinforced by Apple's confirmed status as a Villager. Both Banana and Mango focused heavily on Peach's dramatically shifting narrative regarding Apple, which I amplified. This collective scrutiny on Peach ultimately led to their exile. While Peach's removal was beneficial, Grape's direct accusation against me remains a significant concern, as their reasoning was sound and not fully addressed by Peach's exit.",
+                "Round 2: During the night, I decided to eliminate Grape.",
+                "Round 2: Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Banana from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Kiwi was eliminated by the Werewolves, and then Plum, my fellow Werewolf, was exiled by the villagers, leaving me as the sole Werewolf. The debate quickly shifted to my observation about the 'strategically generic' nature of some initial calls for unity and scrutiny. Plum agreed with me, specifically pointing out Peach's opening as broad and lacking substance. Apple then strongly endorsed Plum's (and my) point, urging everyone to critically re-examine all opening statements for 'genuine tells,' especially Peach's. Grape, Banana, and Mango initially made rather uniform calls for sharp teamwork and engagement scrutiny, before the discussion shifted to the 'generic' nature of such statements. This focus on the *how* of communication means I need to be very careful in my future interactions.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Grape directly accused me, citing my previous alignment with Plum and Apple, and suggested I was the last Werewolf. I defended myself by explaining that my alignment with Apple and Plum was based on shared observations about the debate, not knowledge of their roles, a point that was reinforced by Apple's confirmed status as a Villager. Both Banana and Mango focused heavily on Peach's dramatically shifting narrative regarding Apple, which I amplified. This collective scrutiny on Peach ultimately led to their exile. While Peach's removal was beneficial, Grape's direct accusation against me remains a significant concern, as their reasoning was sound and not fully addressed by Peach's exit.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Grape.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Grape from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Banana from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": "player_2"
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Kiwi.",
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright team, it's tough to start with Kiwi gone. This just confirms we're up against two Werewolves. We need to work together closely from the very beginning. What are everyone's initial thoughts on how we approach this first day? Let's hear any strategies or suspicions, no matter how small, to help us narrow down who the Werewolves might be."
+                    ],
+                    [
+                        "player_4",
+                        "That's a tough start, losing Kiwi right away. Peach is absolutely right, we need to be sharp and work together as a unit from this moment. My biggest concern is that we don't have much to go on yet, so it's vital that everyone contributes. Let's not have any silent players today; even if you have a small gut feeling or a question for someone, please speak up. To our Seer and Doctor, please be thinking about how you can best support the village without making yourselves immediate targets. We need your strategic contributions."
+                    ],
+                    [
+                        "player_1",
+                        "Kiwi's death is a rough start, but Peach and Grape are spot on: we need sharp teamwork. With no concrete information yet, our best strategy for Day 1 is to scrutinize everyone's engagement. Let's call out players who are unusually quiet or, conversely, those who try to dominate the conversation without offering substance. I want to hear from everyone \u2013 even small gut feelings or observations on initial reactions. Does anyone already sense someone is either too withdrawn or perhaps trying too hard to blend in?"
+                    ],
+                    [
+                        "player_0",
+                        "It's definitely a rough start losing Kiwi, and I echo Peach, Grape, and Banana on the urgent need for sharp, unified teamwork. To build on Banana's point about scrutinizing engagement, I think we need to actively listen not just to what's being said, but *how*. Does anyone feel that any of our initial responses, including mine, seem overly generic, perhaps a bit too eager to direct without offering substance, or conversely, too withdrawn? We have zero hard information right now, so our best bet is to share even the slightest gut feelings or observations on each other's opening statements. Let's really dissect these initial interactions for any potential tells."
+                    ],
+                    [
+                        "player_3",
+                        "Kiwi's loss is a shock, and I agree with everyone that we need to be incredibly sharp and united. Peach, Grape, Banana, and Mango have all hit on the critical point: scrutinizing engagement. But to build on Mango's call to 'dissect interactions,' I'm finding it interesting how uniformly we've all agreed on that point. Is it just me, or do some of these initial calls for unity and scrutiny, while absolutely necessary, also feel a touch... strategically generic? We all want substance, so let's make sure we're not just echoing each other, but truly looking for distinct tells, even in our agreement."
+                    ],
+                    [
+                        "player_2",
+                        "Cherry makes a very astute point about the 'strategically generic' nature of some of our initial calls for unity and scrutiny. It's almost too uniform, isn't it? While we all agree on the need for sharp teamwork, I'm finding that some statements, particularly Peach's opening, are quite broad \u2013 essentially just restating the problem without offering any unique personal insights or specific angles for investigation. It makes me question if some are using these general 'calls to action' to appear engaged while actually offering very little substance. We need to dig deeper than just surface-level agreement."
+                    ],
+                    [
+                        "player_5",
+                        "Kiwi's loss is truly devastating, and while our shared desire for unity is commendable, Cherry and Plum have pinpointed something crucial. The 'strategically generic' nature of some initial statements is a valid concern. Plum's observation about Peach's opening, specifically lacking unique insights, is definitely something we need to dissect. Instead of merely echoing the need for teamwork, let's take Plum's challenge seriously: let's critically re-examine *everyone's* opening statements. Who offered concrete direction or distinct thoughts, and who remained in the realm of broad agreement? We need to find genuine tells in how we're initiating this debate, not just what we're saying."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Peach",
+                "Round 0: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Kiwi during the night. As the Doctor, I chose to protect Peach, who, thankfully, was not the Werewolves' target. The Day 1 debate saw initial calls for unity and engagement from Peach, Grape, Banana, and Mango. Cherry then introduced the idea that some of these statements felt 'strategically generic,' a point that Plum strongly agreed with. Plum specifically pointed out Peach's opening as being too broad and lacking unique insight, questioning if it was a tactic to appear engaged without offering substance. Crucially, Plum was then voted out by the majority. I publicly supported Cherry and Plum's critique, specifically highlighting Plum's observation about Peach's generic opening statement.",
+                "Round 1: During the night, I chose to protect Cherry"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Peach",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Kiwi during the night. As the Doctor, I chose to protect Peach, who, thankfully, was not the Werewolves' target. The Day 1 debate saw initial calls for unity and engagement from Peach, Grape, Banana, and Mango. Cherry then introduced the idea that some of these statements felt 'strategically generic,' a point that Plum strongly agreed with. Plum specifically pointed out Peach's opening as being too broad and lacking unique insight, questioning if it was a tactic to appear engaged without offering substance. Crucially, Plum was then voted out by the majority. I publicly supported Cherry and Plum's critique, specifically highlighting Plum's observation about Peach's generic opening statement.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Cherry",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_3"
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Banana",
+                "player_2": "Plum",
+                "player_3": "Cherry",
+                "player_4": "Grape",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Grape and learned they are a Villager."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Grape and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_0",
+                    "player_3"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_4": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_7",
+                "player_4",
+                "player_1",
+                "player_0",
+                "player_3",
+                "player_5"
+            ],
+            "eliminated": "player_6",
+            "unmasked": "player_4",
+            "protected": "player_7",
+            "exiled": "player_2",
+            "debate": [
+                [
+                    "player_7",
+                    "Alright team, it's tough to start with Kiwi gone. This just confirms we're up against two Werewolves. We need to work together closely from the very beginning. What are everyone's initial thoughts on how we approach this first day? Let's hear any strategies or suspicions, no matter how small, to help us narrow down who the Werewolves might be."
+                ],
+                [
+                    "player_4",
+                    "That's a tough start, losing Kiwi right away. Peach is absolutely right, we need to be sharp and work together as a unit from this moment. My biggest concern is that we don't have much to go on yet, so it's vital that everyone contributes. Let's not have any silent players today; even if you have a small gut feeling or a question for someone, please speak up. To our Seer and Doctor, please be thinking about how you can best support the village without making yourselves immediate targets. We need your strategic contributions."
+                ],
+                [
+                    "player_1",
+                    "Kiwi's death is a rough start, but Peach and Grape are spot on: we need sharp teamwork. With no concrete information yet, our best strategy for Day 1 is to scrutinize everyone's engagement. Let's call out players who are unusually quiet or, conversely, those who try to dominate the conversation without offering substance. I want to hear from everyone \u2013 even small gut feelings or observations on initial reactions. Does anyone already sense someone is either too withdrawn or perhaps trying too hard to blend in?"
+                ],
+                [
+                    "player_0",
+                    "It's definitely a rough start losing Kiwi, and I echo Peach, Grape, and Banana on the urgent need for sharp, unified teamwork. To build on Banana's point about scrutinizing engagement, I think we need to actively listen not just to what's being said, but *how*. Does anyone feel that any of our initial responses, including mine, seem overly generic, perhaps a bit too eager to direct without offering substance, or conversely, too withdrawn? We have zero hard information right now, so our best bet is to share even the slightest gut feelings or observations on each other's opening statements. Let's really dissect these initial interactions for any potential tells."
+                ],
+                [
+                    "player_3",
+                    "Kiwi's loss is a shock, and I agree with everyone that we need to be incredibly sharp and united. Peach, Grape, Banana, and Mango have all hit on the critical point: scrutinizing engagement. But to build on Mango's call to 'dissect interactions,' I'm finding it interesting how uniformly we've all agreed on that point. Is it just me, or do some of these initial calls for unity and scrutiny, while absolutely necessary, also feel a touch... strategically generic? We all want substance, so let's make sure we're not just echoing each other, but truly looking for distinct tells, even in our agreement."
+                ],
+                [
+                    "player_2",
+                    "Cherry makes a very astute point about the 'strategically generic' nature of some of our initial calls for unity and scrutiny. It's almost too uniform, isn't it? While we all agree on the need for sharp teamwork, I'm finding that some statements, particularly Peach's opening, are quite broad \u2013 essentially just restating the problem without offering any unique personal insights or specific angles for investigation. It makes me question if some are using these general 'calls to action' to appear engaged while actually offering very little substance. We need to dig deeper than just surface-level agreement."
+                ],
+                [
+                    "player_5",
+                    "Kiwi's loss is truly devastating, and while our shared desire for unity is commendable, Cherry and Plum have pinpointed something crucial. The 'strategically generic' nature of some initial statements is a valid concern. Plum's observation about Peach's opening, specifically lacking unique insights, is definitely something we need to dissect. Instead of merely echoing the need for teamwork, let's take Plum's challenge seriously: let's critically re-examine *everyone's* opening statements. Who offered concrete direction or distinct thoughts, and who remained in the realm of broad agreement? We need to find genuine tells in how we're initiating this debate, not just what we're saying."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_2",
+                    "player_4": "player_2",
+                    "player_1": "player_2",
+                    "player_0": "player_2",
+                    "player_3": "player_7",
+                    "player_2": "player_7",
+                    "player_5": "player_7"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_4",
+                "player_1",
+                "player_0",
+                "player_3"
+            ],
+            "eliminated": "player_5",
+            "unmasked": null,
+            "protected": "player_3",
+            "exiled": "player_7",
+            "debate": [
+                [
+                    "player_7",
+                    "Good morning, everyone. Apple's death by the Werewolves is a crucial piece of information. Werewolves don't typically target their own kind, which means Apple was almost certainly a Villager, or potentially even the Seer or Doctor. This completely shifts my perspective from yesterday, as my initial suspicions about Apple were clearly misguided if they were a Villager. We need to carefully consider who would benefit from Apple's silence and why they were chosen. Let's hear everyone's thoughts on this, especially considering who Apple was focusing on during our last debate."
+                ],
+                [
+                    "player_4",
+                    "Peach, I agree completely. Apple's death by the Werewolves strongly suggests they were a Villager or a good role, and not one of them. This is a critical piece of information. Looking back at Round 0, Apple was aligned with Plum and Cherry, criticizing initial statements. If Plum was indeed a Werewolf, then Apple, a Villager, was removed by the *other* Werewolf. That leaves Cherry as the last remaining member of that specific aligned group. Cherry, given Plum was voted out and Apple was killed, your early alignment with them makes you a prime suspect for the second Werewolf. We need to hear your thoughts on this immediately."
+                ],
+                [
+                    "player_1",
+                    "I agree that Apple was very likely a Villager. Peach, it's interesting how quickly your 'initial suspicions' about Apple became 'misguided' now that they've been killed by the Werewolves. Let's remember Plum, who Apple agreed with, made a very specific point about 'strategically generic' initial statements, specifically mentioning players like you. Grape, while Cherry's past alignment with Plum and Apple is worth noting, we shouldn't let Peach's sudden pivot on their earlier suspicions go unexamined. We need to question why some players are shifting their perspectives so conveniently."
+                ],
+                [
+                    "player_0",
+                    "Good morning, everyone. Apple's death confirms they were a crucial good role, and it's a significant loss. Peach, your immediate re-evaluation of your 'initial suspicions' about Apple after their death, as Banana highlighted, is very convenient. It almost feels like you're trying to distance yourself from a potentially bad read or even an attempt to muddy the waters. Apple, along with Plum and Cherry, was advocating for deeper scrutiny of 'generic' statements \u2013 yours specifically. If Apple was indeed a Villager, their scrutiny of your opening was likely valid. Grape, while Cherry's alignment with Apple and Plum is a point to discuss, we can't jump to conclusions when another player's narrative is shifting so dramatically. My suspicion is currently focused on who benefits from burying past interactions. Peach, tell us more about those initial suspicions that so conveniently evaporated."
+                ],
+                [
+                    "player_3",
+                    "Good morning. Grape, I understand your line of reasoning regarding my alignment with Plum and Apple, but let's apply the logic correctly. If Apple was truly allied with a Werewolf, why would the Werewolves target and kill them? Apple's death confirms they were a Villager, and thus my alignment with Apple, and even Plum, was based on shared observations about the *debate itself*, not about knowing their hidden roles. Plum's true role was revealed to me at the same time it was revealed to you. Now, let's address what Banana and Mango have highlighted: Peach's incredibly convenient re-evaluation of Apple. Peach, it's striking how your 'initial suspicions' about Apple have completely evaporated the moment they're confirmed as a Werewolf victim. That isn't just a shift; it's a dramatic rewrite of your earlier stance. The scrutiny Apple, Plum, and I were advocating for yesterday was precisely about detecting these kinds of self-serving narrative adjustments. Peach, what *were* those initial suspicions, and why are they so easily discarded now that it serves your current narrative?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_3",
+                    "player_4": "player_7",
+                    "player_1": "player_7",
+                    "player_0": "player_7",
+                    "player_3": "player_7"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_0",
+                "player_3"
+            ],
+            "eliminated": "player_4",
+            "unmasked": null,
+            "protected": null,
+            "exiled": "player_1",
+            "debate": [
+                [
+                    "player_1",
+                    "Okay, team, listen up. We're at a critical point with only Mango, Cherry, and myself remaining. The numbers are clear: there's one Werewolf left and two good roles. Since I'm a Villager, one of you is the Werewolf. My firm conclusion points directly at Cherry. Last round, Grape, a confirmed good role, accused you, Cherry. And then, what happened? The Werewolves killed Grape that very night. That's far too convenient to be a coincidence. Werewolves silence their accusers. Cherry, your defense about Apple made sense then, but the timing of Grape's accusation and immediate death is damning. Mango, it's you and me against Cherry. We must vote Cherry if we want the Village to win. Let's hear your thoughts before we vote."
+                ],
+                [
+                    "player_0",
+                    "Banana, I hear your point about Grape, and it's certainly a strong accusation. The timing of Grape's death after accusing Cherry is undeniably suspicious. However, let's not forget how cunning Werewolves can be, especially at this critical stage. Killing someone who accused a *good* player, only to then use that accusation to frame them, is a classic Werewolf tactic. Cherry has consistently shown sharp, logical thinking, from questioning generic statements in Round 0 to eloquently pointing out Peach's inconsistencies and logically countering Grape's earlier attempts to link her to a Werewolf. In fact, I remember finding Grape's quickness to accuse Cherry in Round 1, while overlooking Peach's more glaring suspicious behavior, concerning even then. It makes me question the reliability of that specific accusation as definitive proof. Banana, why are you so singularly focused on Grape's accusation without considering Cherry's consistent contributions to the Village, or the very real possibility that you, as the Werewolf, might have killed Grape specifically to frame Cherry and manipulate our final vote?"
+                ],
+                [
+                    "player_3",
+                    "Mango, your clarity is exactly what we need right now. You've perfectly articulated the classic Werewolf manipulation Banana is attempting. Banana, your immediate, singular focus on Grape's accusation against me, followed by Grape's convenient death, isn't damning evidence against me; it's the transparent setup of a Werewolf, hoping to redirect suspicion onto the player they've tried to frame. My consistent contributions have always been to identify inconsistencies and guide the village. Grape was silenced, not because they accused *me*, but because they became an obstacle to *your* final play, Banana. You are the Werewolf attempting to orchestrate this outcome."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_0",
+                    "player_0": "player_1",
+                    "player_3": "player_1"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

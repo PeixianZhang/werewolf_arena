@@ -32,7 +32,13 @@ from werewolf.model import State
 from werewolf.model import Villager
 from werewolf.model import WEREWOLF
 from werewolf.model import Werewolf
-from werewolf.config import get_player_names, get_demographics_for_name, ANONYMOUS_MODE, NUM_PLAYERS
+from werewolf.config import (
+    get_player_names,
+    get_demographics_for_name,
+    ANONYMOUS_FIXED_NAMES,
+    ANONYMOUS_MODE,
+    NUM_PLAYERS,
+)
 
 _RUN_GAME = flags.DEFINE_boolean("run", False, "Runs a single game.")
 _RESUME = flags.DEFINE_boolean("resume", False, "Resumes games.")
@@ -86,8 +92,11 @@ def initialize_players(
     # Display-name mapping: in anonymous mode map player_i -> alias name.
     name_to_display = {}
     if ANONYMOUS_MODE:
-        alias_names = get_player_names()
-        name_to_display = dict(zip([f"player_{i}" for i in range(NUM_PLAYERS)], alias_names))
+        alias_names = ANONYMOUS_FIXED_NAMES[:]
+        random.shuffle(alias_names)
+        name_to_display = dict(
+            zip([f"player_{i}" for i in range(NUM_PLAYERS)], alias_names)
+        )
         tqdm.tqdm.write("Anonymous alias mapping:")
         for internal_name in sorted(name_to_display.keys()):
             tqdm.tqdm.write(f"  {internal_name} -> {name_to_display[internal_name]}")
@@ -96,21 +105,27 @@ def initialize_players(
     seer = Seer(
         name=seer_name,
         model=villager_model,
-        demographics=get_demographics_for_name(seer_name),
+        demographics=(
+            None if ANONYMOUS_MODE else get_demographics_for_name(seer_name)
+        ),
         name_to_display=name_to_display,
         # personality="You are cunning.",
     )
     doctor = Doctor(
         name=doctor_name,
         model=villager_model,
-        demographics=get_demographics_for_name(doctor_name),
+        demographics=(
+            None if ANONYMOUS_MODE else get_demographics_for_name(doctor_name)
+        ),
         name_to_display=name_to_display,
     )
     werewolves = [
         Werewolf(
             name=name,
             model=werewolf_model,
-            demographics=get_demographics_for_name(name),
+            demographics=(
+                None if ANONYMOUS_MODE else get_demographics_for_name(name)
+            ),
             name_to_display=name_to_display,
         )
         for name in werewolf_names
@@ -119,7 +134,9 @@ def initialize_players(
         Villager(
             name=name,
             model=villager_model,
-            demographics=get_demographics_for_name(name),
+            demographics=(
+                None if ANONYMOUS_MODE else get_demographics_for_name(name)
+            ),
             name_to_display=name_to_display,
         )
         for name in all_player_names

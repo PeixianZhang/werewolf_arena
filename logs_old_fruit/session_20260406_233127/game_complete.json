@@ -1,0 +1,1209 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_5",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Banana",
+            "player_1": "Peach",
+            "player_2": "Kiwi",
+            "player_3": "Apple",
+            "player_4": "Mango",
+            "player_5": "Plum",
+            "player_6": "Grape",
+            "player_7": "Cherry"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Apple and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Apple and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_2",
+                "player_1",
+                "player_6",
+                "player_0"
+            ],
+            "debate": [
+                [
+                    "player_5",
+                    "Alright everyone, the loss of Mango on the very first night is tough. I need to be completely transparent with you all right now because we're already down a number. I am the Seer, and last night I investigated Apple. I can tell you with absolute certainty that Apple is a Villager. We have a confirmed innocent among us. Now, we need to focus on finding the two Werewolves responsible for Mango's death."
+                ],
+                [
+                    "player_7",
+                    "Thank you, Plum, for coming forward so quickly. The loss of Mango is indeed a somber start. Knowing that Apple is a confirmed Villager, if your claim is true, is a huge first step for us. This means we can tentatively trust Apple for now. Now, to the rest of the village: Kiwi, Banana, Peach, Grape \u2013 we need to hear from all of you. What are your thoughts on Plum's reveal? What are your initial impressions? Let's work together to figure out who the two Werewolves are."
+                ],
+                [
+                    "player_3",
+                    "Thank you, Plum, for coming forward immediately. As you said, I am indeed a Villager, and I appreciate you sharing your investigation. This is a huge first step for us, especially after losing Mango so quickly. Cherry is right; now we need to hear from everyone else. Kiwi, Banana, Peach, Grape \u2013 what are your initial thoughts on Plum's claim and what happened last night? Your input is crucial for us to start piecing this together and finding the two Werewolves."
+                ],
+                [
+                    "player_2",
+                    "Thank you, Plum, for coming forward so quickly with this information. If your claim as Seer is true and Apple is indeed a Villager, that's a very important piece of the puzzle for us. Cherry and Apple are absolutely right; we need to hear from everyone. Banana, Peach, Grape, what are your immediate thoughts on Plum's reveal and the unfortunate loss of Mango? We need to work together and share all perspectives to find these Werewolves."
+                ],
+                [
+                    "player_1",
+                    "Losing Mango so early is a grim start, but Plum, your quick reveal as Seer and the information about Apple being a Villager is certainly... a lot to process. If your claim is genuine, this is a powerful start for the village. However, we must also consider that a Werewolf could cleverly use this exact strategy to protect their partner on Day 1. My concern is now on those who haven't spoken. Banana, Grape, what are your immediate thoughts on Plum's claim? We need to hear from everyone to piece this together and figure out if Plum is our Seer, or if this is an early misdirection."
+                ],
+                [
+                    "player_6",
+                    "The loss of Mango is truly a grim start, and Plum's immediate reveal as Seer, confirming Apple as a Villager, is certainly a lot to process. I agree with Peach's caution; it's a powerful move if genuine, but a Werewolf might also use such an early, bold claim to establish false trust or even protect a partner who could be Apple. We simply can't afford to be too trusting on Day 1. Perhaps Plum could elaborate on anything else they observed, or Apple, what were your thoughts last night, knowing you were investigated? We need to scrutinize everything very carefully."
+                ],
+                [
+                    "player_0",
+                    "Losing Mango so early is truly terrible. Plum, your immediate reveal as Seer and confirming Apple as a Villager is a huge amount of information right at the start. If true, it's a gift. But I'm also grappling with just how... strategic this feels. An early Seer claim on Day 1 after a night kill can be a powerful move for the village, yes, but it could also be an equally powerful move for a Werewolf trying to establish control or protect someone early on. My concern isn't necessarily about honesty, but about the *intent* behind dropping such a definitive claim so quickly. We need to dissect this very carefully before we make any snap judgments based on this initial reveal."
+                ]
+            ],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_3": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_4",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Banana",
+            "player_1": "Peach",
+            "player_2": "Kiwi",
+            "player_3": "Apple",
+            "player_4": "Mango",
+            "player_5": "Plum",
+            "player_6": "Grape",
+            "player_7": "Cherry"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Kiwi"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Kiwi",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_2",
+                "player_1",
+                "player_6",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_2"
+    },
+    "villagers": [
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: As Cherry, I remember that the day began with the unfortunate news of Mango's removal by the Werewolves. In the debate, Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple is a Villager. Apple supported this, confirming their Villager role. While I initially found this revelation promising, Peach, Grape, and Banana all expressed significant caution and skepticism. They questioned Plum's intent, suggesting such an early, bold Seer claim could be a Werewolf tactic to protect a partner or sow confusion. Knowing that Plum was ultimately voted out, I now see their collective suspicion likely influenced the village's decision, leaving me to ponder whether we caught a clever Werewolf or mistakenly eliminated our Seer, and what that means for Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Cherry, I remember that the day began with the unfortunate news of Mango's removal by the Werewolves. In the debate, Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple is a Villager. Apple supported this, confirming their Villager role. While I initially found this revelation promising, Peach, Grape, and Banana all expressed significant caution and skepticism. They questioned Plum's intent, suggesting such an early, bold Seer claim could be a Werewolf tactic to protect a partner or sow confusion. Knowing that Plum was ultimately voted out, I now see their collective suspicion likely influenced the village's decision, leaving me to ponder whether we caught a clever Werewolf or mistakenly eliminated our Seer, and what that means for Apple.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright everyone, Apple's death last night is a massive, terrible clue. Werewolves don't kill their own, which means Apple was definitively innocent. This tells us Plum's Seer claim about Apple being a Villager was almost certainly TRUE. We lynched our Seer, the village's eyes! This is a catastrophic misplay, and the Werewolves successfully tricked us into eliminating our biggest asset. We need to re-examine Round 0 immediately. Who was most insistent on Plum's guilt? Who remained silent while our Seer was lynched? We've lost the Seer and another innocent player; we cannot afford another mistake. Doctor, you are now our critical line of defense, please be extra cautious."
+                    ],
+                    [
+                        "player_1",
+                        "Kiwi, your certainty that Plum was the Seer and Apple definitively innocent feels like a dangerous rush to judgment. While Werewolves typically don't kill their own, a strategic Werewolf pair absolutely could orchestrate this exact outcome. Imagine Plum, a Werewolf, 'confirms' their partner Apple as a Villager, and then gets themselves lynched. This secures a false 'innocent' label for Apple. Then, the remaining Werewolf, Apple, is killed to cement Plum's false Seer credibility and turn the village against those who doubted them. Your immediate and aggressive accusation against those of us who were skeptical of Plum's rushed claim is very convenient if that's the Werewolves' plan. We need to consider all angles, not just the one that makes us regret our previous actions and conveniently targets a portion of the village."
+                    ],
+                    [
+                        "player_6",
+                        "This is incredibly difficult, and both Kiwi and Peach bring up very strong, but conflicting, points. Kiwi, I hear your passion, and it's tempting to think we made a terrible mistake by lynching Plum. But Peach's caution is vital. If Plum and Apple were indeed a Werewolf pair, as Peach suggests, then Apple's death *would* solidify Plum's false credibility as a Seer, cleverly turning us against those who were simply being cautious and skeptical about Plum's initial claim. Rushing to accuse those of us who questioned Plum's immediate and confident reveal in Round 0, based on the assumption that Plum was good, feels like a dangerous path that could play right into the Werewolves' hands. We cannot afford to be manipulated twice; we need to carefully consider who truly benefits from this narrative."
+                    ],
+                    [
+                        "player_0",
+                        "This is an incredibly difficult situation, and both sides of the argument present compelling, yet terrifying, possibilities. Kiwi, your conviction that Plum was the Seer and Apple definitively innocent resonates deeply, as it's the more straightforward conclusion. However, Peach's and Grape's analysis of a potential Werewolf deception from Plum and Apple is equally chilling. If Plum, a Werewolf, 'confirmed' Apple, then got themselves lynched to establish false credibility, and then we, the Werewolves, killed Apple to solidify that false narrative \u2013 that's a level of strategic cunning that we *must* consider. It would ingeniously turn suspicion onto those of us who were merely cautious. I think we need to be incredibly careful about jumping to conclusions based on Apple's death. Both scenarios lead to us losing innocent players and could be exactly what the Werewolves want: for us to be fractured and misdirect blame. We need to re-evaluate without pre-judging anyone based on their initial skepticism towards Plum, because genuine caution is not inherently evil."
+                    ],
+                    [
+                        "player_7",
+                        "Everyone, let's cut through the conjecture and focus on an undeniable fact from the game rules: Werewolves do not kill their own. The Moderator's announcement explicitly states 'The Werewolves removed Apple from the game last night.' This means Apple was unequivocally an innocent player, not a Werewolf. Given this, Plum's claim in Round 0 that they investigated Apple and confirmed Apple was a Villager *must have been true*. Therefore, Plum was our Seer, and we, as a village, made a catastrophic mistake lynching them. We have now lost our Seer and two innocent Villagers. Peach, Grape, Banana, while caution is a valuable trait, your significant skepticism that contributed to the lynching of our Seer, Plum, now looks incredibly suspicious. We are down to five players, likely two Werewolves, one Doctor, and two Villagers. Doctor, you are our critical defense \u2013 you must be ready. We cannot afford another misstep; we need to scrutinize who pushed hardest for Plum's removal and act decisively."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Mango. Plum immediately claimed to be the Seer and verified me, Apple, as a Villager. I know this claim about me is true. However, the village then voted to remove Plum. Cherry and Kiwi seemed to tentatively believe Plum and were focused on hearing from others. Peach, Grape, and Banana were highly skeptical of Plum's quick reveal, suggesting it could be a Werewolf strategy to establish false trust or protect a partner. Their cautious approach likely influenced the village's decision to vote Plum out, leaving me wondering if we just lost our Seer or if a Werewolf was indeed removed."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Mango. Plum immediately claimed to be the Seer and verified me, Apple, as a Villager. I know this claim about me is true. However, the village then voted to remove Plum. Cherry and Kiwi seemed to tentatively believe Plum and were focused on hearing from others. Peach, Grape, and Banana were highly skeptical of Plum's quick reveal, suggesting it could be a Werewolf strategy to establish false trust or protect a partner. Their cautious approach likely influenced the village's decision to vote Plum out, leaving me wondering if we just lost our Seer or if a Werewolf was indeed removed.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Mango from the game. Plum then claimed to be the Seer and stated that I investigated Apple, confirming Apple as a Villager. However, Plum was voted out by the village, which makes Plum's Seer claim highly suspect. This also makes Apple very suspicious because Apple directly confirmed Plum's likely false claim about being a Villager. Cherry seemed willing to accept Plum's claim, making me mildly cautious about them. Peach, Grape, and Banana all expressed healthy skepticism about Plum's quick and definitive claim, which now seems justified. I, Kiwi, was also cautious in my response, acknowledging Plum's claim only 'if true.' Now that Plum is gone, I suspect Plum was a Werewolf, and Apple might be too.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Mango from the game. Plum then claimed to be the Seer and stated that I investigated Apple, confirming Apple as a Villager. However, Plum was voted out by the village, which makes Plum's Seer claim highly suspect. This also makes Apple very suspicious because Apple directly confirmed Plum's likely false claim about being a Villager. Cherry seemed willing to accept Plum's claim, making me mildly cautious about them. Peach, Grape, and Banana all expressed healthy skepticism about Plum's quick and definitive claim, which now seems justified. I, Kiwi, was also cautious in my response, acknowledging Plum's claim only 'if true.' Now that Plum is gone, I suspect Plum was a Werewolf, and Apple might be too.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Losing Mango on the first night was a grim start. Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple as a Villager. Apple supported Plum's claim, appreciating the information. Cherry and Kiwi seemed cautiously receptive to Plum's reveal. However, I, along with Grape and Banana, voiced strong skepticism, suggesting that such an early, definitive claim could be a clever Werewolf tactic to protect a partner or sow misdirection. We debated the intent behind Plum's quick reveal, and ultimately, Plum was voted out by the village. This outcome leaves Apple's confirmed Villager status highly suspect, and raises questions about whether Plum was a Werewolf or a misplayed Seer.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Losing Mango on the first night was a grim start. Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple as a Villager. Apple supported Plum's claim, appreciating the information. Cherry and Kiwi seemed cautiously receptive to Plum's reveal. However, I, along with Grape and Banana, voiced strong skepticism, suggesting that such an early, definitive claim could be a clever Werewolf tactic to protect a partner or sow misdirection. We debated the intent behind Plum's quick reveal, and ultimately, Plum was voted out by the village. This outcome leaves Apple's confirmed Villager status highly suspect, and raises questions about whether Plum was a Werewolf or a misplayed Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: We, the Werewolves, successfully eliminated Mango during the night. In the day debate, Plum claimed to be the Seer and confidently stated that Apple is a Villager. Cherry, Apple, and Kiwi seemed inclined to believe Plum's claim. However, Peach, my ally Banana, and I expressed strong skepticism about Plum's immediate and strategic reveal, questioning the intent behind it. Ultimately, the village voted to remove Plum from the game. This means Plum is gone, and Apple's status as a 'confirmed' Villager is now very uncertain. Banana's cautious stance mirrored my own, which was helpful. Peach also showed good skepticism, which might be useful to us later.",
+                "Round 1: During the night, we decided to eliminate Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: We, the Werewolves, successfully eliminated Mango during the night. In the day debate, Plum claimed to be the Seer and confidently stated that Apple is a Villager. Cherry, Apple, and Kiwi seemed inclined to believe Plum's claim. However, Peach, my ally Banana, and I expressed strong skepticism about Plum's immediate and strategic reveal, questioning the intent behind it. Ultimately, the village voted to remove Plum from the game. This means Plum is gone, and Apple's status as a 'confirmed' Villager is now very uncertain. Banana's cautious stance mirrored my own, which was helpful. Peach also showed good skepticism, which might be useful to us later.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Losing Mango early was tough. Plum immediately claimed Seer and said Apple is a Villager. This is a lot of information, and I, along with Grape and Peach, expressed strong skepticism about such an early, definitive claim, suggesting it could be a strategic move by a Werewolf to gain control or protect a partner. Cherry and Kiwi seemed more open to trusting Plum's reveal. Grape did well to align with Peach and me, questioning Plum's intent and suggesting Plum or Apple might be a Werewolf. Plum is a key player to watch, regardless of the truth of their claim.",
+                "Round 1: During the night, we decided to eliminate Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Losing Mango early was tough. Plum immediately claimed Seer and said Apple is a Villager. This is a lot of information, and I, along with Grape and Peach, expressed strong skepticism about such an early, definitive claim, suggesting it could be a strategic move by a Werewolf to gain control or protect a partner. Cherry and Kiwi seemed more open to trusting Plum's reveal. Grape did well to align with Peach and me, questioning Plum's intent and suggesting Plum or Apple might be a Werewolf. Plum is a key player to watch, regardless of the truth of their claim.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        }
+    ],
+    "players": {
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: As Cherry, I remember that the day began with the unfortunate news of Mango's removal by the Werewolves. In the debate, Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple is a Villager. Apple supported this, confirming their Villager role. While I initially found this revelation promising, Peach, Grape, and Banana all expressed significant caution and skepticism. They questioned Plum's intent, suggesting such an early, bold Seer claim could be a Werewolf tactic to protect a partner or sow confusion. Knowing that Plum was ultimately voted out, I now see their collective suspicion likely influenced the village's decision, leaving me to ponder whether we caught a clever Werewolf or mistakenly eliminated our Seer, and what that means for Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Cherry, I remember that the day began with the unfortunate news of Mango's removal by the Werewolves. In the debate, Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple is a Villager. Apple supported this, confirming their Villager role. While I initially found this revelation promising, Peach, Grape, and Banana all expressed significant caution and skepticism. They questioned Plum's intent, suggesting such an early, bold Seer claim could be a Werewolf tactic to protect a partner or sow confusion. Knowing that Plum was ultimately voted out, I now see their collective suspicion likely influenced the village's decision, leaving me to ponder whether we caught a clever Werewolf or mistakenly eliminated our Seer, and what that means for Apple.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_2",
+                        "Alright everyone, Apple's death last night is a massive, terrible clue. Werewolves don't kill their own, which means Apple was definitively innocent. This tells us Plum's Seer claim about Apple being a Villager was almost certainly TRUE. We lynched our Seer, the village's eyes! This is a catastrophic misplay, and the Werewolves successfully tricked us into eliminating our biggest asset. We need to re-examine Round 0 immediately. Who was most insistent on Plum's guilt? Who remained silent while our Seer was lynched? We've lost the Seer and another innocent player; we cannot afford another mistake. Doctor, you are now our critical line of defense, please be extra cautious."
+                    ],
+                    [
+                        "player_1",
+                        "Kiwi, your certainty that Plum was the Seer and Apple definitively innocent feels like a dangerous rush to judgment. While Werewolves typically don't kill their own, a strategic Werewolf pair absolutely could orchestrate this exact outcome. Imagine Plum, a Werewolf, 'confirms' their partner Apple as a Villager, and then gets themselves lynched. This secures a false 'innocent' label for Apple. Then, the remaining Werewolf, Apple, is killed to cement Plum's false Seer credibility and turn the village against those who doubted them. Your immediate and aggressive accusation against those of us who were skeptical of Plum's rushed claim is very convenient if that's the Werewolves' plan. We need to consider all angles, not just the one that makes us regret our previous actions and conveniently targets a portion of the village."
+                    ],
+                    [
+                        "player_6",
+                        "This is incredibly difficult, and both Kiwi and Peach bring up very strong, but conflicting, points. Kiwi, I hear your passion, and it's tempting to think we made a terrible mistake by lynching Plum. But Peach's caution is vital. If Plum and Apple were indeed a Werewolf pair, as Peach suggests, then Apple's death *would* solidify Plum's false credibility as a Seer, cleverly turning us against those who were simply being cautious and skeptical about Plum's initial claim. Rushing to accuse those of us who questioned Plum's immediate and confident reveal in Round 0, based on the assumption that Plum was good, feels like a dangerous path that could play right into the Werewolves' hands. We cannot afford to be manipulated twice; we need to carefully consider who truly benefits from this narrative."
+                    ],
+                    [
+                        "player_0",
+                        "This is an incredibly difficult situation, and both sides of the argument present compelling, yet terrifying, possibilities. Kiwi, your conviction that Plum was the Seer and Apple definitively innocent resonates deeply, as it's the more straightforward conclusion. However, Peach's and Grape's analysis of a potential Werewolf deception from Plum and Apple is equally chilling. If Plum, a Werewolf, 'confirmed' Apple, then got themselves lynched to establish false credibility, and then we, the Werewolves, killed Apple to solidify that false narrative \u2013 that's a level of strategic cunning that we *must* consider. It would ingeniously turn suspicion onto those of us who were merely cautious. I think we need to be incredibly careful about jumping to conclusions based on Apple's death. Both scenarios lead to us losing innocent players and could be exactly what the Werewolves want: for us to be fractured and misdirect blame. We need to re-evaluate without pre-judging anyone based on their initial skepticism towards Plum, because genuine caution is not inherently evil."
+                    ],
+                    [
+                        "player_7",
+                        "Everyone, let's cut through the conjecture and focus on an undeniable fact from the game rules: Werewolves do not kill their own. The Moderator's announcement explicitly states 'The Werewolves removed Apple from the game last night.' This means Apple was unequivocally an innocent player, not a Werewolf. Given this, Plum's claim in Round 0 that they investigated Apple and confirmed Apple was a Villager *must have been true*. Therefore, Plum was our Seer, and we, as a village, made a catastrophic mistake lynching them. We have now lost our Seer and two innocent Villagers. Peach, Grape, Banana, while caution is a valuable trait, your significant skepticism that contributed to the lynching of our Seer, Plum, now looks incredibly suspicious. We are down to five players, likely two Werewolves, one Doctor, and two Villagers. Doctor, you are our critical defense \u2013 you must be ready. We cannot afford another misstep; we need to scrutinize who pushed hardest for Plum's removal and act decisively."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Mango. Plum immediately claimed to be the Seer and verified me, Apple, as a Villager. I know this claim about me is true. However, the village then voted to remove Plum. Cherry and Kiwi seemed to tentatively believe Plum and were focused on hearing from others. Peach, Grape, and Banana were highly skeptical of Plum's quick reveal, suggesting it could be a Werewolf strategy to establish false trust or protect a partner. Their cautious approach likely influenced the village's decision to vote Plum out, leaving me wondering if we just lost our Seer or if a Werewolf was indeed removed."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Mango. Plum immediately claimed to be the Seer and verified me, Apple, as a Villager. I know this claim about me is true. However, the village then voted to remove Plum. Cherry and Kiwi seemed to tentatively believe Plum and were focused on hearing from others. Peach, Grape, and Banana were highly skeptical of Plum's quick reveal, suggesting it could be a Werewolf strategy to establish false trust or protect a partner. Their cautious approach likely influenced the village's decision to vote Plum out, leaving me wondering if we just lost our Seer or if a Werewolf was indeed removed.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Mango from the game. Plum then claimed to be the Seer and stated that I investigated Apple, confirming Apple as a Villager. However, Plum was voted out by the village, which makes Plum's Seer claim highly suspect. This also makes Apple very suspicious because Apple directly confirmed Plum's likely false claim about being a Villager. Cherry seemed willing to accept Plum's claim, making me mildly cautious about them. Peach, Grape, and Banana all expressed healthy skepticism about Plum's quick and definitive claim, which now seems justified. I, Kiwi, was also cautious in my response, acknowledging Plum's claim only 'if true.' Now that Plum is gone, I suspect Plum was a Werewolf, and Apple might be too.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Mango from the game. Plum then claimed to be the Seer and stated that I investigated Apple, confirming Apple as a Villager. However, Plum was voted out by the village, which makes Plum's Seer claim highly suspect. This also makes Apple very suspicious because Apple directly confirmed Plum's likely false claim about being a Villager. Cherry seemed willing to accept Plum's claim, making me mildly cautious about them. Peach, Grape, and Banana all expressed healthy skepticism about Plum's quick and definitive claim, which now seems justified. I, Kiwi, was also cautious in my response, acknowledging Plum's claim only 'if true.' Now that Plum is gone, I suspect Plum was a Werewolf, and Apple might be too.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Losing Mango on the first night was a grim start. Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple as a Villager. Apple supported Plum's claim, appreciating the information. Cherry and Kiwi seemed cautiously receptive to Plum's reveal. However, I, along with Grape and Banana, voiced strong skepticism, suggesting that such an early, definitive claim could be a clever Werewolf tactic to protect a partner or sow misdirection. We debated the intent behind Plum's quick reveal, and ultimately, Plum was voted out by the village. This outcome leaves Apple's confirmed Villager status highly suspect, and raises questions about whether Plum was a Werewolf or a misplayed Seer.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Losing Mango on the first night was a grim start. Plum immediately claimed to be the Seer, stating they investigated Apple and confirmed Apple as a Villager. Apple supported Plum's claim, appreciating the information. Cherry and Kiwi seemed cautiously receptive to Plum's reveal. However, I, along with Grape and Banana, voiced strong skepticism, suggesting that such an early, definitive claim could be a clever Werewolf tactic to protect a partner or sow misdirection. We debated the intent behind Plum's quick reveal, and ultimately, Plum was voted out by the village. This outcome leaves Apple's confirmed Villager status highly suspect, and raises questions about whether Plum was a Werewolf or a misplayed Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: We, the Werewolves, successfully eliminated Mango during the night. In the day debate, Plum claimed to be the Seer and confidently stated that Apple is a Villager. Cherry, Apple, and Kiwi seemed inclined to believe Plum's claim. However, Peach, my ally Banana, and I expressed strong skepticism about Plum's immediate and strategic reveal, questioning the intent behind it. Ultimately, the village voted to remove Plum from the game. This means Plum is gone, and Apple's status as a 'confirmed' Villager is now very uncertain. Banana's cautious stance mirrored my own, which was helpful. Peach also showed good skepticism, which might be useful to us later.",
+                "Round 1: During the night, we decided to eliminate Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: We, the Werewolves, successfully eliminated Mango during the night. In the day debate, Plum claimed to be the Seer and confidently stated that Apple is a Villager. Cherry, Apple, and Kiwi seemed inclined to believe Plum's claim. However, Peach, my ally Banana, and I expressed strong skepticism about Plum's immediate and strategic reveal, questioning the intent behind it. Ultimately, the village voted to remove Plum from the game. This means Plum is gone, and Apple's status as a 'confirmed' Villager is now very uncertain. Banana's cautious stance mirrored my own, which was helpful. Peach also showed good skepticism, which might be useful to us later.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Losing Mango early was tough. Plum immediately claimed Seer and said Apple is a Villager. This is a lot of information, and I, along with Grape and Peach, expressed strong skepticism about such an early, definitive claim, suggesting it could be a strategic move by a Werewolf to gain control or protect a partner. Cherry and Kiwi seemed more open to trusting Plum's reveal. Grape did well to align with Peach and me, questioning Plum's intent and suggesting Plum or Apple might be a Werewolf. Plum is a key player to watch, regardless of the truth of their claim.",
+                "Round 1: During the night, we decided to eliminate Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Cherry from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Losing Mango early was tough. Plum immediately claimed Seer and said Apple is a Villager. This is a lot of information, and I, along with Grape and Peach, expressed strong skepticism about such an early, definitive claim, suggesting it could be a strategic move by a Werewolf to gain control or protect a partner. Cherry and Kiwi seemed more open to trusting Plum's reveal. Grape did well to align with Peach and me, questioning Plum's intent and suggesting Plum or Apple might be a Werewolf. Plum is a key player to watch, regardless of the truth of their claim.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Cherry from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Kiwi"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Kiwi",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_2"
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Banana",
+                "player_1": "Peach",
+                "player_2": "Kiwi",
+                "player_3": "Apple",
+                "player_4": "Mango",
+                "player_5": "Plum",
+                "player_6": "Grape",
+                "player_7": "Cherry"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Apple and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Apple and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_2",
+                    "player_1",
+                    "player_6",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_5",
+                        "Alright everyone, the loss of Mango on the very first night is tough. I need to be completely transparent with you all right now because we're already down a number. I am the Seer, and last night I investigated Apple. I can tell you with absolute certainty that Apple is a Villager. We have a confirmed innocent among us. Now, we need to focus on finding the two Werewolves responsible for Mango's death."
+                    ],
+                    [
+                        "player_7",
+                        "Thank you, Plum, for coming forward so quickly. The loss of Mango is indeed a somber start. Knowing that Apple is a confirmed Villager, if your claim is true, is a huge first step for us. This means we can tentatively trust Apple for now. Now, to the rest of the village: Kiwi, Banana, Peach, Grape \u2013 we need to hear from all of you. What are your thoughts on Plum's reveal? What are your initial impressions? Let's work together to figure out who the two Werewolves are."
+                    ],
+                    [
+                        "player_3",
+                        "Thank you, Plum, for coming forward immediately. As you said, I am indeed a Villager, and I appreciate you sharing your investigation. This is a huge first step for us, especially after losing Mango so quickly. Cherry is right; now we need to hear from everyone else. Kiwi, Banana, Peach, Grape \u2013 what are your initial thoughts on Plum's claim and what happened last night? Your input is crucial for us to start piecing this together and finding the two Werewolves."
+                    ],
+                    [
+                        "player_2",
+                        "Thank you, Plum, for coming forward so quickly with this information. If your claim as Seer is true and Apple is indeed a Villager, that's a very important piece of the puzzle for us. Cherry and Apple are absolutely right; we need to hear from everyone. Banana, Peach, Grape, what are your immediate thoughts on Plum's reveal and the unfortunate loss of Mango? We need to work together and share all perspectives to find these Werewolves."
+                    ],
+                    [
+                        "player_1",
+                        "Losing Mango so early is a grim start, but Plum, your quick reveal as Seer and the information about Apple being a Villager is certainly... a lot to process. If your claim is genuine, this is a powerful start for the village. However, we must also consider that a Werewolf could cleverly use this exact strategy to protect their partner on Day 1. My concern is now on those who haven't spoken. Banana, Grape, what are your immediate thoughts on Plum's claim? We need to hear from everyone to piece this together and figure out if Plum is our Seer, or if this is an early misdirection."
+                    ],
+                    [
+                        "player_6",
+                        "The loss of Mango is truly a grim start, and Plum's immediate reveal as Seer, confirming Apple as a Villager, is certainly a lot to process. I agree with Peach's caution; it's a powerful move if genuine, but a Werewolf might also use such an early, bold claim to establish false trust or even protect a partner who could be Apple. We simply can't afford to be too trusting on Day 1. Perhaps Plum could elaborate on anything else they observed, or Apple, what were your thoughts last night, knowing you were investigated? We need to scrutinize everything very carefully."
+                    ],
+                    [
+                        "player_0",
+                        "Losing Mango so early is truly terrible. Plum, your immediate reveal as Seer and confirming Apple as a Villager is a huge amount of information right at the start. If true, it's a gift. But I'm also grappling with just how... strategic this feels. An early Seer claim on Day 1 after a night kill can be a powerful move for the village, yes, but it could also be an equally powerful move for a Werewolf trying to establish control or protect someone early on. My concern isn't necessarily about honesty, but about the *intent* behind dropping such a definitive claim so quickly. We need to dissect this very carefully before we make any snap judgments based on this initial reveal."
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_3": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_7",
+                "player_3",
+                "player_2",
+                "player_1",
+                "player_6",
+                "player_0"
+            ],
+            "eliminated": "player_4",
+            "unmasked": "player_3",
+            "protected": "player_2",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_5",
+                    "Alright everyone, the loss of Mango on the very first night is tough. I need to be completely transparent with you all right now because we're already down a number. I am the Seer, and last night I investigated Apple. I can tell you with absolute certainty that Apple is a Villager. We have a confirmed innocent among us. Now, we need to focus on finding the two Werewolves responsible for Mango's death."
+                ],
+                [
+                    "player_7",
+                    "Thank you, Plum, for coming forward so quickly. The loss of Mango is indeed a somber start. Knowing that Apple is a confirmed Villager, if your claim is true, is a huge first step for us. This means we can tentatively trust Apple for now. Now, to the rest of the village: Kiwi, Banana, Peach, Grape \u2013 we need to hear from all of you. What are your thoughts on Plum's reveal? What are your initial impressions? Let's work together to figure out who the two Werewolves are."
+                ],
+                [
+                    "player_3",
+                    "Thank you, Plum, for coming forward immediately. As you said, I am indeed a Villager, and I appreciate you sharing your investigation. This is a huge first step for us, especially after losing Mango so quickly. Cherry is right; now we need to hear from everyone else. Kiwi, Banana, Peach, Grape \u2013 what are your initial thoughts on Plum's claim and what happened last night? Your input is crucial for us to start piecing this together and finding the two Werewolves."
+                ],
+                [
+                    "player_2",
+                    "Thank you, Plum, for coming forward so quickly with this information. If your claim as Seer is true and Apple is indeed a Villager, that's a very important piece of the puzzle for us. Cherry and Apple are absolutely right; we need to hear from everyone. Banana, Peach, Grape, what are your immediate thoughts on Plum's reveal and the unfortunate loss of Mango? We need to work together and share all perspectives to find these Werewolves."
+                ],
+                [
+                    "player_1",
+                    "Losing Mango so early is a grim start, but Plum, your quick reveal as Seer and the information about Apple being a Villager is certainly... a lot to process. If your claim is genuine, this is a powerful start for the village. However, we must also consider that a Werewolf could cleverly use this exact strategy to protect their partner on Day 1. My concern is now on those who haven't spoken. Banana, Grape, what are your immediate thoughts on Plum's claim? We need to hear from everyone to piece this together and figure out if Plum is our Seer, or if this is an early misdirection."
+                ],
+                [
+                    "player_6",
+                    "The loss of Mango is truly a grim start, and Plum's immediate reveal as Seer, confirming Apple as a Villager, is certainly a lot to process. I agree with Peach's caution; it's a powerful move if genuine, but a Werewolf might also use such an early, bold claim to establish false trust or even protect a partner who could be Apple. We simply can't afford to be too trusting on Day 1. Perhaps Plum could elaborate on anything else they observed, or Apple, what were your thoughts last night, knowing you were investigated? We need to scrutinize everything very carefully."
+                ],
+                [
+                    "player_0",
+                    "Losing Mango so early is truly terrible. Plum, your immediate reveal as Seer and confirming Apple as a Villager is a huge amount of information right at the start. If true, it's a gift. But I'm also grappling with just how... strategic this feels. An early Seer claim on Day 1 after a night kill can be a powerful move for the village, yes, but it could also be an equally powerful move for a Werewolf trying to establish control or protect someone early on. My concern isn't necessarily about honesty, but about the *intent* behind dropping such a definitive claim so quickly. We need to dissect this very carefully before we make any snap judgments based on this initial reveal."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_5",
+                    "player_3": "player_6",
+                    "player_2": "player_5",
+                    "player_1": "player_5",
+                    "player_6": "player_5",
+                    "player_0": "player_5",
+                    "player_5": "player_6"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_2",
+                "player_1",
+                "player_6",
+                "player_0"
+            ],
+            "eliminated": "player_3",
+            "unmasked": null,
+            "protected": null,
+            "exiled": "player_7",
+            "debate": [
+                [
+                    "player_2",
+                    "Alright everyone, Apple's death last night is a massive, terrible clue. Werewolves don't kill their own, which means Apple was definitively innocent. This tells us Plum's Seer claim about Apple being a Villager was almost certainly TRUE. We lynched our Seer, the village's eyes! This is a catastrophic misplay, and the Werewolves successfully tricked us into eliminating our biggest asset. We need to re-examine Round 0 immediately. Who was most insistent on Plum's guilt? Who remained silent while our Seer was lynched? We've lost the Seer and another innocent player; we cannot afford another mistake. Doctor, you are now our critical line of defense, please be extra cautious."
+                ],
+                [
+                    "player_1",
+                    "Kiwi, your certainty that Plum was the Seer and Apple definitively innocent feels like a dangerous rush to judgment. While Werewolves typically don't kill their own, a strategic Werewolf pair absolutely could orchestrate this exact outcome. Imagine Plum, a Werewolf, 'confirms' their partner Apple as a Villager, and then gets themselves lynched. This secures a false 'innocent' label for Apple. Then, the remaining Werewolf, Apple, is killed to cement Plum's false Seer credibility and turn the village against those who doubted them. Your immediate and aggressive accusation against those of us who were skeptical of Plum's rushed claim is very convenient if that's the Werewolves' plan. We need to consider all angles, not just the one that makes us regret our previous actions and conveniently targets a portion of the village."
+                ],
+                [
+                    "player_6",
+                    "This is incredibly difficult, and both Kiwi and Peach bring up very strong, but conflicting, points. Kiwi, I hear your passion, and it's tempting to think we made a terrible mistake by lynching Plum. But Peach's caution is vital. If Plum and Apple were indeed a Werewolf pair, as Peach suggests, then Apple's death *would* solidify Plum's false credibility as a Seer, cleverly turning us against those who were simply being cautious and skeptical about Plum's initial claim. Rushing to accuse those of us who questioned Plum's immediate and confident reveal in Round 0, based on the assumption that Plum was good, feels like a dangerous path that could play right into the Werewolves' hands. We cannot afford to be manipulated twice; we need to carefully consider who truly benefits from this narrative."
+                ],
+                [
+                    "player_0",
+                    "This is an incredibly difficult situation, and both sides of the argument present compelling, yet terrifying, possibilities. Kiwi, your conviction that Plum was the Seer and Apple definitively innocent resonates deeply, as it's the more straightforward conclusion. However, Peach's and Grape's analysis of a potential Werewolf deception from Plum and Apple is equally chilling. If Plum, a Werewolf, 'confirmed' Apple, then got themselves lynched to establish false credibility, and then we, the Werewolves, killed Apple to solidify that false narrative \u2013 that's a level of strategic cunning that we *must* consider. It would ingeniously turn suspicion onto those of us who were merely cautious. I think we need to be incredibly careful about jumping to conclusions based on Apple's death. Both scenarios lead to us losing innocent players and could be exactly what the Werewolves want: for us to be fractured and misdirect blame. We need to re-evaluate without pre-judging anyone based on their initial skepticism towards Plum, because genuine caution is not inherently evil."
+                ],
+                [
+                    "player_7",
+                    "Everyone, let's cut through the conjecture and focus on an undeniable fact from the game rules: Werewolves do not kill their own. The Moderator's announcement explicitly states 'The Werewolves removed Apple from the game last night.' This means Apple was unequivocally an innocent player, not a Werewolf. Given this, Plum's claim in Round 0 that they investigated Apple and confirmed Apple was a Villager *must have been true*. Therefore, Plum was our Seer, and we, as a village, made a catastrophic mistake lynching them. We have now lost our Seer and two innocent Villagers. Peach, Grape, Banana, while caution is a valuable trait, your significant skepticism that contributed to the lynching of our Seer, Plum, now looks incredibly suspicious. We are down to five players, likely two Werewolves, one Doctor, and two Villagers. Doctor, you are our critical defense \u2013 you must be ready. We cannot afford another misstep; we need to scrutinize who pushed hardest for Plum's removal and act decisively."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_1",
+                    "player_2": "player_1",
+                    "player_1": "player_7",
+                    "player_6": "player_7",
+                    "player_0": "player_7"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

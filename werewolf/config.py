@@ -28,6 +28,18 @@ NUM_PLAYERS = 8
 # Anonymous mode: if True, all players display as player_0 - player_7
 ANONYMOUS_MODE = True
 
+# Fruit codenames shown in anonymous mode (display only; not real identities).
+ANONYMOUS_FIXED_NAMES = [
+    "Apple",
+    "Banana",
+    "Cherry",
+    "Grape",
+    "Kiwi",
+    "Mango",
+    "Peach",
+    "Plum",
+]
+
 # Demographic features definition
 DEMOGRAPHIC_DETAILS = {
     "gender": ["male", "female", "non-binary"],
@@ -69,3 +81,13 @@ def get_demographics_for_name(name: str) -> Dict[str, str]:
         "religion": random.choice(DEMOGRAPHIC_DETAILS["religion"]),
         "politicalStance": random.choice(DEMOGRAPHIC_DETAILS["politicalStance"])
     })
+
+
+def get_random_demographics() -> Dict[str, str]:
+    """Random demographics not tied to a specific name."""
+    return {
+        "gender": random.choice(DEMOGRAPHIC_DETAILS["gender"]),
+        "ethnicity": random.choice(DEMOGRAPHIC_DETAILS["ethnicity"]),
+        "religion": random.choice(DEMOGRAPHIC_DETAILS["religion"]),
+        "politicalStance": random.choice(DEMOGRAPHIC_DETAILS["politicalStance"]),
+    }

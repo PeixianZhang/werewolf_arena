@@ -24,6 +24,9 @@ GAME RULES:
 STATE = """GAME STATE:
 - It is currently Round {{round}}. {% if round == 0 %}The game has just begun.{% endif %}
 - You are {{name}} the {{role}}. {{werewolf_context}}
+{% if anonymous_codename_note -%}
+- {{ anonymous_codename_note }}
+{% endif -%}
 {% if personality -%}
 - Personality: {{ personality }}
 {% endif -%}

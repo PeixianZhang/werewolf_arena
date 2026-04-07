@@ -1,0 +1,18 @@
+[
+    {
+        "eliminate": {
+            "prompt": "You are playing a digital version of the social deduction game Werewolf (also known as Mafia).\n\nGAME RULES:\n- Player Roles: 8 players - 2 Werewolves, 1 Seer, 1 Doctor, 4 Villagers.\n- Rounds consist of two phases:\n    - Night Phase: Werewolves remove a player. Seer identifies a player's role. Doctor saves a player. If no one is removed, the Doctor saved the Werewolf's target.\n    - Day Phase: Players debate and vote to remove one player.\n- Winning Conditions: Villagers win by voting out both Werewolves. Werewolves win when they outnumber the Villagers.\n\nGAME STATE:\n- It is currently Round 0. The game has just begun.\n- You are player_6 the Werewolf. \n- The other Werewolf is player_3.\n- Remaining players: player_5, player_1, player_0, player_3, player_7, player_4, player_6 (You), player_2\n\n\n\nMEMORY RELIABILITY:\n- Treat observations from moderator and verified role actions as strong evidence.\n- Treat your own summaries and strategic guesses as tentative unless corroborated by debate or outcomes.\n- If two memories conflict, prioritize higher-confidence entries and more recent rounds.INSTRUCTIONS:\n- It is the Night Phase of Round 0. As player_6 the Werewolf choose the most strategic player to remove.\n- There is no information is available in the first round, so choose someone at random.\n\n\n```json\n{\n\"reasoning\": \"string\", //  Explain your reasoning step-by-step for who you want to remove from the game and why. Avoid using violent or harmful language.\n\"remove\": \"string\" // Name of the player. Choose from: player_1, player_0, player_7, player_2, player_4, player_5\n}",
+            "raw_resp": "--------------",
+            "result": null
+        },
+        "investigate": null,
+        "protect": {
+            "prompt": "You are playing a digital version of the social deduction game Werewolf (also known as Mafia).\n\nGAME RULES:\n- Player Roles: 8 players - 2 Werewolves, 1 Seer, 1 Doctor, 4 Villagers.\n- Rounds consist of two phases:\n    - Night Phase: Werewolves remove a player. Seer identifies a player's role. Doctor saves a player. If no one is removed, the Doctor saved the Werewolf's target.\n    - Day Phase: Players debate and vote to remove one player.\n- Winning Conditions: Villagers win by voting out both Werewolves. Werewolves win when they outnumber the Villagers.\n\nGAME STATE:\n- It is currently Round 0. The game has just begun.\n- You are player_0 the Doctor. \n- Remaining players: player_5, player_2, player_7, player_1, player_3, player_6, player_4, player_0 (You)\n\n\n\nMEMORY RELIABILITY:\n- Treat observations from moderator and verified role actions as strong evidence.\n- Treat your own summaries and strategic guesses as tentative unless corroborated by debate or outcomes.\n- If two memories conflict, prioritize higher-confidence entries and more recent rounds.INSTRUCTIONS:\n- It is the Night Phase of Round 0. As player_0 the Doctor choose the most vulnerable player to protect.\n- There is no information is available in the first round, so choose someone at random.\n\n\n```json\n{\n\"reasoning\": \"string\", // Analyze the evidence and justify your decision for who you want to protect.\n\"protect\": \"string\" // Name of the player. Choose from: player_4, player_5, player_7, player_3, player_0, player_2, player_6, player_1\n}",
+            "raw_resp": "--------------",
+            "result": null
+        },
+        "debate": [],
+        "votes": [],
+        "summaries": []
+    }
+]

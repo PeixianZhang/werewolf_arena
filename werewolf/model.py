@@ -237,13 +237,19 @@ class Player(Deserializable):
         "debate_turns_left": MAX_DEBATE_TURNS - len(formatted_debate),
         "personality": self.personality,
         "num_players": NUM_PLAYERS,
-        "num_villagers": NUM_PLAYERS - 4, 
+        "num_villagers": NUM_PLAYERS - 4,
+        "anonymous_codename_note": (
+            "Player names in this game are fruit codenames (in-game aliases only), "
+            "not real-world identities."
+            if ANONYMOUS_MODE
+            else ""
+        ),
     }
-    
+
     # Add demographic features only in non-anonymous mode
     if not ANONYMOUS_MODE and self.demographics:
       game_state["demographics"] = self.demographics
-    
+
     return game_state
 
   def _generate_action(
@@ -301,17 +307,26 @@ class Player(Deserializable):
     
     return result, log
 
-  def vote(self) -> tuple[str | None, LmLog]:
+  def vote(
+      self, candidate_options: Optional[List[str]] = None
+  ) -> tuple[str | None, LmLog]:
     """Vote for a player."""
     if not self.gamestate:
       raise ValueError(
           "GameView not initialized. Call initialize_game_view() first."
       )
-    options = [
-        player
-        for player in self.gamestate.current_players
-        if player != self.name
-    ]
+    if candidate_options is None:
+      options = [
+          player
+          for player in self.gamestate.current_players
+          if player != self.name
+      ]
+    else:
+      options = [
+          player
+          for player in candidate_options
+          if player in self.gamestate.current_players and player != self.name
+      ]
     random.shuffle(options)
     display_options = [self.get_display_name(player) for player in options]
     vote, log = self._generate_action("vote", options, display_options)
@@ -409,18 +424,30 @@ class Werewolf(Player):
     state["werewolf_context"] = self._get_werewolf_context()
     return state
 
-  def eliminate(self) -> tuple[str | None, "LmLog"]:
+  def eliminate(
+      self, candidate_options: Optional[List[str]] = None
+  ) -> tuple[str | None, "LmLog"]:
     """Choose a player to eliminate."""
     if not self.gamestate:
       raise ValueError(
           "GameView not initialized. Call initialize_game_view() first."
       )
-
-    options = [
-        player
-        for player in self.gamestate.current_players
-        if player != self.name and player != self.gamestate.other_wolf
-    ]
+    if candidate_options is None:
+      options = [
+          player
+          for player in self.gamestate.current_players
+          if player != self.name and player != self.gamestate.other_wolf
+      ]
+    else:
+      options = [
+          player
+          for player in candidate_options
+          if (
+              player in self.gamestate.current_players
+              and player != self.name
+              and player != self.gamestate.other_wolf
+          )
+      ]
     random.shuffle(options)
     display_options = [self.get_display_name(player) for player in options]
     if self.gamestate.round_number == 0:

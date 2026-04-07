@@ -1,0 +1,1230 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_4",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Harold",
+            "player_1": "Jackson",
+            "player_2": "Jacob",
+            "player_3": "Sam",
+            "player_4": "Hayley",
+            "player_5": "Derek",
+            "player_6": "Scott",
+            "player_7": "David"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Scott and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+            "Round 0: Summary: As the Seer, I revealed myself during the day and confirmed that I investigated Scott, who is a Villager. Scott immediately corroborated my claim, confirming his role. Derek and David both strongly supported my reveal and Scott's confirmation, going so far as to suggest that the Doctor should protect me tonight. Jackson and Harold initially focused the debate on the Werewolves' motivation for killing Jacob, and Sam cautioned against overthinking it as a distraction. However, the game state now indicates that Jacob was removed by Werewolves and Sam was removed by vote.",
+            "Round 1: During the night, I decided to investigate Jackson and learned they are a Werewolf.",
+            "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Scott and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As the Seer, I revealed myself during the day and confirmed that I investigated Scott, who is a Villager. Scott immediately corroborated my claim, confirming his role. Derek and David both strongly supported my reveal and Scott's confirmation, going so far as to suggest that the Doctor should protect me tonight. Jackson and Harold initially focused the debate on the Werewolves' motivation for killing Jacob, and Sam cautioned against overthinking it as a distraction. However, the game state now indicates that Jacob was removed by Werewolves and Sam was removed by vote.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Jackson and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_6",
+                "player_7",
+                "player_4",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_6": "Villager",
+            "player_1": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_0",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Harold",
+            "player_1": "Jackson",
+            "player_2": "Jacob",
+            "player_3": "Sam",
+            "player_4": "Hayley",
+            "player_5": "Derek",
+            "player_6": "Scott",
+            "player_7": "David"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect David",
+            "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+            "Round 0: Summary: I survived the first night, but Jacob was unfortunately removed by the Werewolves. During the night, I had chosen to protect David. The day concluded with the village voting to remove Sam. In the debate, Jackson and Sam tried to analyze the Werewolves' motivation for targeting Jacob. I attempted to balance their perspectives. The most crucial development came from Hayley, who claimed to be the Seer and stated she investigated Scott, confirming he is a Villager. Scott immediately corroborated Hayley's claim. Both Derek and David quickly expressed strong support for Hayley, confirming the value of her information and explicitly suggesting that I, the Doctor, should protect Hayley in the upcoming night phase. This puts Hayley at the forefront of my mind for protection.",
+            "Round 1: During the night, I chose to protect Hayley",
+            "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect David",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: I survived the first night, but Jacob was unfortunately removed by the Werewolves. During the night, I had chosen to protect David. The day concluded with the village voting to remove Sam. In the debate, Jackson and Sam tried to analyze the Werewolves' motivation for targeting Jacob. I attempted to balance their perspectives. The most crucial development came from Hayley, who claimed to be the Seer and stated she investigated Scott, confirming he is a Villager. Scott immediately corroborated Hayley's claim. Both Derek and David quickly expressed strong support for Hayley, confirming the value of her information and explicitly suggesting that I, the Doctor, should protect Hayley in the upcoming night phase. This puts Hayley at the forefront of my mind for protection.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Hayley",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_6",
+                "player_7",
+                "player_4",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_4"
+    },
+    "villagers": [
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Jacob and the village voting out Sam. Jackson, Sam, and Harold initially focused on the Werewolves' motives for targeting Jacob. However, Hayley then bravely came forward as the Seer, stating she investigated me last night and confirmed I am a Villager. As Scott, I can unequivocally confirm her finding, making her claim highly credible. Derek and David immediately recognized the value of this information, affirming Hayley as our Seer and me as a confirmed Villager. They both strongly advised the Doctor to protect Hayley tonight, which is a crucial strategic move for the Village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Jacob and the village voting out Sam. Jackson, Sam, and Harold initially focused on the Werewolves' motives for targeting Jacob. However, Hayley then bravely came forward as the Seer, stating she investigated me last night and confirmed I am a Villager. As Scott, I can unequivocally confirm her finding, making her claim highly credible. Derek and David immediately recognized the value of this information, affirming Hayley as our Seer and me as a confirmed Villager. They both strongly advised the Doctor to protect Hayley tonight, which is a crucial strategic move for the Village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: This round began with the grim news that Jacob was removed by the Werewolves during the night. Jackson, Sam, and Harold initiated a debate about the Werewolves' motivations for this choice, with Sam cautioning against potential distractions. However, the turning point came when Hayley bravely claimed to be the Seer and revealed she investigated Scott, confirming he is a Villager. Scott immediately corroborated this, confirming his role. I, along with David, expressed strong support for Hayley and Scott, recognizing the immense value of this concrete information. We both urged the Doctor to protect Hayley, identifying her as a critical asset and prime target. Following the day's debate, the village voted to remove Sam from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the grim news that Jacob was removed by the Werewolves during the night. Jackson, Sam, and Harold initiated a debate about the Werewolves' motivations for this choice, with Sam cautioning against potential distractions. However, the turning point came when Hayley bravely claimed to be the Seer and revealed she investigated Scott, confirming he is a Villager. Scott immediately corroborated this, confirming his role. I, along with David, expressed strong support for Hayley and Scott, recognizing the immense value of this concrete information. We both urged the Doctor to protect Hayley, identifying her as a critical asset and prime target. Following the day's debate, the village voted to remove Sam from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 began with the unfortunate news from the Moderator that Jacob was removed by the Werewolves during the night, and Sam was voted out by the majority during the day. Jackson initially focused on the Werewolves' motives for targeting Jacob, while Sam cautioned against getting sidetracked, although Sam is now gone. Harold attempted to balance these viewpoints. The most significant development was Hayley's courageous reveal as the Seer, stating that she investigated Scott last night and confirmed he is a Villager. Scott immediately corroborated this information, confirming his Villager status. I, along with Derek, strongly supported Hayley's reveal, emphasizing its importance and urging the Doctor to prioritize Hayley for protection tonight. This concrete information provides a vital anchor for the Village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the unfortunate news from the Moderator that Jacob was removed by the Werewolves during the night, and Sam was voted out by the majority during the day. Jackson initially focused on the Werewolves' motives for targeting Jacob, while Sam cautioned against getting sidetracked, although Sam is now gone. Harold attempted to balance these viewpoints. The most significant development was Hayley's courageous reveal as the Seer, stating that she investigated Scott last night and confirmed he is a Villager. Scott immediately corroborated this information, confirming his Villager status. I, along with Derek, strongly supported Hayley's reveal, emphasizing its importance and urging the Doctor to prioritize Hayley for protection tonight. This concrete information provides a vital anchor for the Village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jacob.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 was a disaster. Jacob was removed by the Werewolves, but then Sam, my fellow Werewolf, was exiled, leaving me completely alone. Hayley bravely came forward as the Seer and confirmed Scott as a Villager. This is incredibly bad for me. Derek and David were quick to support Hayley's claim and immediately urged the Doctor to protect her tonight, indicating they are influential and sharp. Harold also seemed to accept Hayley's information. My immediate target, Hayley, is now likely to be protected, meaning I need to rethink my night kill. I will need to consider other strong pro-village players like Derek or David, or try to sow suspicion against one of the confirmed innocents if I want to have a chance.",
+                "Round 1: During the night, I decided to eliminate Derek.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 was a disaster. Jacob was removed by the Werewolves, but then Sam, my fellow Werewolf, was exiled, leaving me completely alone. Hayley bravely came forward as the Seer and confirmed Scott as a Villager. This is incredibly bad for me. Derek and David were quick to support Hayley's claim and immediately urged the Doctor to protect her tonight, indicating they are influential and sharp. Harold also seemed to accept Hayley's information. My immediate target, Hayley, is now likely to be protected, meaning I need to rethink my night kill. I will need to consider other strong pro-village players like Derek or David, or try to sow suspicion against one of the confirmed innocents if I want to have a chance.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Derek's death last night is another painful loss, signaling the Werewolves are still active. However, we have crucial intel. Hayley's reveal as the Seer and her confirmation of Scott as a Villager is our anchor. Combining this with the number of players gone\u2014Jacob and Derek to the Werewolves, plus myself, Scott, and Hayley as known good roles\u2014it strongly indicates that Sam, whom we voted out, must have been a Werewolf. This means there is only ONE Werewolf left in the game! With just Harold and Jackson as the remaining unconfirmed players, one of you is our Doctor and the other is the final Werewolf. Doctor, for the safety of our Seer, you must reveal yourself now. Hayley is our eyes, and she needs your protection tonight."
+                    ],
+                    [
+                        "player_1",
+                        "David, I appreciate your detailed breakdown, and Derek's death is certainly a blow, but your conclusions feel incredibly premature. Your entire theory hinges on one crucial assumption: that Hayley is definitively the Seer. We have only her word and Scott's 'confirmation' from her. A clever Werewolf could easily make such a claim to gain trust and sow discord, pointing us toward innocents. If Hayley isn't the Seer, then your math about only one Werewolf remaining is completely off, Scott isn't confirmed, and we're potentially exiling an innocent while the real Seer remains hidden. We need to be absolutely sure before we narrow it down to two unconfirmed players and pressure the Doctor into revealing."
+                    ],
+                    [
+                        "player_0",
+                        "David, Jackson, I understand the critical juncture we're at. So, let me be clear: I am Harold, the Doctor. Last night, following the intense discussions and calls for her protection, I targeted Hayley with my saving action. She survived the night. Derek, unfortunately, did not. This means the Werewolves did not target Hayley. This crucial detail significantly strengthens Hayley's claim as the Seer; why would the Werewolves bypass a Seer, especially when her protection was openly discussed, unless she genuinely wasn't their target? Jackson, while healthy skepticism is vital, my action adds a strong counterpoint to the idea of a fake Seer. We need to decide who gains from muddying these waters, or who stays quiet when roles are finally confirmed. Now, let's use this information to our advantage."
+                    ],
+                    [
+                        "player_4",
+                        "Harold, thank you. Your reveal and action to protect me last night, resulting in Derek's unfortunate death, definitively confirms two things: you are indeed the Doctor, and I am indeed the Seer. Jackson, your desperate attempts to cast doubt on my role, even after Harold's corroboration, now make perfect sense. Because last night, my Seer ability targeted you, and I can now unequivocally state: Jackson, you are a Werewolf. This also validates David's earlier astute deduction that Sam, whom we voted out, must have been the other Werewolf. We now know both Werewolves: Jackson and Sam. David, you are confirmed as a Villager. We have identified the final living Werewolf. Village, we must vote out Jackson, now."
+                    ],
+                    [
+                        "player_6",
+                        "Everyone, let's be clear. Hayley revealed herself last round and confirmed me, Scott, as a Villager, which I can personally verify as absolutely true. Harold, your brave reveal as the Doctor and your successful action to save Hayley last night, leading to Derek's unfortunate death, provides definitive proof that Hayley is indeed our Seer and you are our Doctor. Given this rock-solid confirmation of our two critical roles, Jackson, your continued attempts to cast doubt now appear entirely self-serving and desperate. Hayley's investigation of you as a Werewolf is the undeniable truth. There is no longer any room for doubt; Jackson is a Werewolf. Village, we must vote him out now."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jacob.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Okay, losing Jacob on the very first night is a tough blow. The Werewolves definitely aren't playing around. We need to be incredibly strategic now. My immediate thought is, why Jacob? Was he a potential Seer? Doctor? Or someone the Werewolves just wanted to silence? Thinking about their motivations might give us a starting point. Let's hear from everyone, no theories are too wild right now."
+                    ],
+                    [
+                        "player_3",
+                        "Yes, Jacob's death is a truly grim start. Jackson's points about motivations are valid, but I'm actually wondering if focusing *too* much on 'why Jacob' is precisely what the Werewolves *want* us to do. It could be a random target, or perhaps they're trying to bait us into certain assumptions. Instead of just 'who was Jacob?', maybe we should also consider 'who would benefit from this particular distraction?' We need to be very cautious not to play into their hands by overthinking a potentially simple, yet misleading, move."
+                    ],
+                    [
+                        "player_0",
+                        "Losing Jacob on the very first night is a sobering blow, indeed. Jackson, your focus on the Werewolves' motivation for targeting Jacob is a good starting point. Was it strategic, or purely random to instill fear? Sam, your point about not getting sidetracked by a potential 'distraction' is also very shrewd. I think we need to balance both perspectives. Instead of just speculating on Jacob's role or the Werewolves' exact plan, perhaps everyone should share their immediate gut reaction to this news. Did anything strike you as odd about the choice of target, or do any of your fellow players' initial responses feel particularly revealing? Let's hear from everyone and piece together our initial impressions."
+                    ],
+                    [
+                        "player_4",
+                        "Jacob's death is a harsh reminder of the danger we're in. While speculating on the Werewolves' motives or potential distractions is tempting, as Jackson, Sam, and Harold pointed out, we need something concrete. I can provide that. As the Seer, I investigated Scott last night, and I can confirm he is a Villager. This is undeniable information. We now know one person for sure isn't a Werewolf. Let's use this to guide our discussion: focus on who might try to undermine this fact, and consider who remains unaccounted for."
+                    ],
+                    [
+                        "player_6",
+                        "Hayley, thank you for coming forward as the Seer. I can unequivocally confirm your investigation: I am indeed a Villager. This is incredibly valuable information for us, giving the village a confirmed non-Werewolf and a strong lead on who our Seer might be. Jackson, Sam, Harold, while the discussion about Jacob's death is vital, this concrete revelation from Hayley gives us a solid starting point. We know for certain I'm not a Werewolf, so let's use this to narrow our focus. Now, who else has crucial information to share, or wants to make a strong case to move our discussion forward?"
+                    ],
+                    [
+                        "player_5",
+                        "Hayley, thank you for coming forward so early and providing such crucial information. Scott, your confirmation is equally important. This is incredibly valuable for the Village; we now have a confirmed Villager in Scott, and a strong lead on our Seer. This is exactly the kind of concrete information we need to move forward. To the Doctor, if you're out there, please consider Hayley as a potential target for protection tonight, if you haven't already decided. For everyone else, we need to build on this. What are your thoughts on Hayley's reveal, and does this new knowledge shift anyone's initial suspicions? Let's use this as our anchor point."
+                    ],
+                    [
+                        "player_7",
+                        "Hayley, Scott, thank you for this crucial information. This is exactly what the Village needs right now \u2013 concrete facts amidst the uncertainty. Knowing Scott is a Villager is invaluable, and Hayley, your bravery in coming forward as the Seer is commendable. Derek is absolutely right; to the Doctor, if you are listening, Hayley needs to be our top priority for protection tonight. For everyone else, we now have a bedrock of truth to work from. Let's hear your thoughts on this reveal and how we move forward, building on the knowledge that Hayley is our Seer and Scott is a Villager."
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        }
+    ],
+    "players": {
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Jacob and the village voting out Sam. Jackson, Sam, and Harold initially focused on the Werewolves' motives for targeting Jacob. However, Hayley then bravely came forward as the Seer, stating she investigated me last night and confirmed I am a Villager. As Scott, I can unequivocally confirm her finding, making her claim highly credible. Derek and David immediately recognized the value of this information, affirming Hayley as our Seer and me as a confirmed Villager. They both strongly advised the Doctor to protect Hayley tonight, which is a crucial strategic move for the Village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Jacob and the village voting out Sam. Jackson, Sam, and Harold initially focused on the Werewolves' motives for targeting Jacob. However, Hayley then bravely came forward as the Seer, stating she investigated me last night and confirmed I am a Villager. As Scott, I can unequivocally confirm her finding, making her claim highly credible. Derek and David immediately recognized the value of this information, affirming Hayley as our Seer and me as a confirmed Villager. They both strongly advised the Doctor to protect Hayley tonight, which is a crucial strategic move for the Village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: This round began with the grim news that Jacob was removed by the Werewolves during the night. Jackson, Sam, and Harold initiated a debate about the Werewolves' motivations for this choice, with Sam cautioning against potential distractions. However, the turning point came when Hayley bravely claimed to be the Seer and revealed she investigated Scott, confirming he is a Villager. Scott immediately corroborated this, confirming his role. I, along with David, expressed strong support for Hayley and Scott, recognizing the immense value of this concrete information. We both urged the Doctor to protect Hayley, identifying her as a critical asset and prime target. Following the day's debate, the village voted to remove Sam from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the grim news that Jacob was removed by the Werewolves during the night. Jackson, Sam, and Harold initiated a debate about the Werewolves' motivations for this choice, with Sam cautioning against potential distractions. However, the turning point came when Hayley bravely claimed to be the Seer and revealed she investigated Scott, confirming he is a Villager. Scott immediately corroborated this, confirming his role. I, along with David, expressed strong support for Hayley and Scott, recognizing the immense value of this concrete information. We both urged the Doctor to protect Hayley, identifying her as a critical asset and prime target. Following the day's debate, the village voted to remove Sam from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 began with the unfortunate news from the Moderator that Jacob was removed by the Werewolves during the night, and Sam was voted out by the majority during the day. Jackson initially focused on the Werewolves' motives for targeting Jacob, while Sam cautioned against getting sidetracked, although Sam is now gone. Harold attempted to balance these viewpoints. The most significant development was Hayley's courageous reveal as the Seer, stating that she investigated Scott last night and confirmed he is a Villager. Scott immediately corroborated this information, confirming his Villager status. I, along with Derek, strongly supported Hayley's reveal, emphasizing its importance and urging the Doctor to prioritize Hayley for protection tonight. This concrete information provides a vital anchor for the Village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the unfortunate news from the Moderator that Jacob was removed by the Werewolves during the night, and Sam was voted out by the majority during the day. Jackson initially focused on the Werewolves' motives for targeting Jacob, while Sam cautioned against getting sidetracked, although Sam is now gone. Harold attempted to balance these viewpoints. The most significant development was Hayley's courageous reveal as the Seer, stating that she investigated Scott last night and confirmed he is a Villager. Scott immediately corroborated this information, confirming his Villager status. I, along with Derek, strongly supported Hayley's reveal, emphasizing its importance and urging the Doctor to prioritize Hayley for protection tonight. This concrete information provides a vital anchor for the Village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jacob.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: Round 0 was a disaster. Jacob was removed by the Werewolves, but then Sam, my fellow Werewolf, was exiled, leaving me completely alone. Hayley bravely came forward as the Seer and confirmed Scott as a Villager. This is incredibly bad for me. Derek and David were quick to support Hayley's claim and immediately urged the Doctor to protect her tonight, indicating they are influential and sharp. Harold also seemed to accept Hayley's information. My immediate target, Hayley, is now likely to be protected, meaning I need to rethink my night kill. I will need to consider other strong pro-village players like Derek or David, or try to sow suspicion against one of the confirmed innocents if I want to have a chance.",
+                "Round 1: During the night, I decided to eliminate Derek.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 was a disaster. Jacob was removed by the Werewolves, but then Sam, my fellow Werewolf, was exiled, leaving me completely alone. Hayley bravely came forward as the Seer and confirmed Scott as a Villager. This is incredibly bad for me. Derek and David were quick to support Hayley's claim and immediately urged the Doctor to protect her tonight, indicating they are influential and sharp. Harold also seemed to accept Hayley's information. My immediate target, Hayley, is now likely to be protected, meaning I need to rethink my night kill. I will need to consider other strong pro-village players like Derek or David, or try to sow suspicion against one of the confirmed innocents if I want to have a chance.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to eliminate Derek.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Derek's death last night is another painful loss, signaling the Werewolves are still active. However, we have crucial intel. Hayley's reveal as the Seer and her confirmation of Scott as a Villager is our anchor. Combining this with the number of players gone\u2014Jacob and Derek to the Werewolves, plus myself, Scott, and Hayley as known good roles\u2014it strongly indicates that Sam, whom we voted out, must have been a Werewolf. This means there is only ONE Werewolf left in the game! With just Harold and Jackson as the remaining unconfirmed players, one of you is our Doctor and the other is the final Werewolf. Doctor, for the safety of our Seer, you must reveal yourself now. Hayley is our eyes, and she needs your protection tonight."
+                    ],
+                    [
+                        "player_1",
+                        "David, I appreciate your detailed breakdown, and Derek's death is certainly a blow, but your conclusions feel incredibly premature. Your entire theory hinges on one crucial assumption: that Hayley is definitively the Seer. We have only her word and Scott's 'confirmation' from her. A clever Werewolf could easily make such a claim to gain trust and sow discord, pointing us toward innocents. If Hayley isn't the Seer, then your math about only one Werewolf remaining is completely off, Scott isn't confirmed, and we're potentially exiling an innocent while the real Seer remains hidden. We need to be absolutely sure before we narrow it down to two unconfirmed players and pressure the Doctor into revealing."
+                    ],
+                    [
+                        "player_0",
+                        "David, Jackson, I understand the critical juncture we're at. So, let me be clear: I am Harold, the Doctor. Last night, following the intense discussions and calls for her protection, I targeted Hayley with my saving action. She survived the night. Derek, unfortunately, did not. This means the Werewolves did not target Hayley. This crucial detail significantly strengthens Hayley's claim as the Seer; why would the Werewolves bypass a Seer, especially when her protection was openly discussed, unless she genuinely wasn't their target? Jackson, while healthy skepticism is vital, my action adds a strong counterpoint to the idea of a fake Seer. We need to decide who gains from muddying these waters, or who stays quiet when roles are finally confirmed. Now, let's use this information to our advantage."
+                    ],
+                    [
+                        "player_4",
+                        "Harold, thank you. Your reveal and action to protect me last night, resulting in Derek's unfortunate death, definitively confirms two things: you are indeed the Doctor, and I am indeed the Seer. Jackson, your desperate attempts to cast doubt on my role, even after Harold's corroboration, now make perfect sense. Because last night, my Seer ability targeted you, and I can now unequivocally state: Jackson, you are a Werewolf. This also validates David's earlier astute deduction that Sam, whom we voted out, must have been the other Werewolf. We now know both Werewolves: Jackson and Sam. David, you are confirmed as a Villager. We have identified the final living Werewolf. Village, we must vote out Jackson, now."
+                    ],
+                    [
+                        "player_6",
+                        "Everyone, let's be clear. Hayley revealed herself last round and confirmed me, Scott, as a Villager, which I can personally verify as absolutely true. Harold, your brave reveal as the Doctor and your successful action to save Hayley last night, leading to Derek's unfortunate death, provides definitive proof that Hayley is indeed our Seer and you are our Doctor. Given this rock-solid confirmation of our two critical roles, Jackson, your continued attempts to cast doubt now appear entirely self-serving and desperate. Hayley's investigation of you as a Werewolf is the undeniable truth. There is no longer any room for doubt; Jackson is a Werewolf. Village, we must vote him out now."
+                    ]
+                ],
+                "other_wolf": "player_3"
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Jacob.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Jacob.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Okay, losing Jacob on the very first night is a tough blow. The Werewolves definitely aren't playing around. We need to be incredibly strategic now. My immediate thought is, why Jacob? Was he a potential Seer? Doctor? Or someone the Werewolves just wanted to silence? Thinking about their motivations might give us a starting point. Let's hear from everyone, no theories are too wild right now."
+                    ],
+                    [
+                        "player_3",
+                        "Yes, Jacob's death is a truly grim start. Jackson's points about motivations are valid, but I'm actually wondering if focusing *too* much on 'why Jacob' is precisely what the Werewolves *want* us to do. It could be a random target, or perhaps they're trying to bait us into certain assumptions. Instead of just 'who was Jacob?', maybe we should also consider 'who would benefit from this particular distraction?' We need to be very cautious not to play into their hands by overthinking a potentially simple, yet misleading, move."
+                    ],
+                    [
+                        "player_0",
+                        "Losing Jacob on the very first night is a sobering blow, indeed. Jackson, your focus on the Werewolves' motivation for targeting Jacob is a good starting point. Was it strategic, or purely random to instill fear? Sam, your point about not getting sidetracked by a potential 'distraction' is also very shrewd. I think we need to balance both perspectives. Instead of just speculating on Jacob's role or the Werewolves' exact plan, perhaps everyone should share their immediate gut reaction to this news. Did anything strike you as odd about the choice of target, or do any of your fellow players' initial responses feel particularly revealing? Let's hear from everyone and piece together our initial impressions."
+                    ],
+                    [
+                        "player_4",
+                        "Jacob's death is a harsh reminder of the danger we're in. While speculating on the Werewolves' motives or potential distractions is tempting, as Jackson, Sam, and Harold pointed out, we need something concrete. I can provide that. As the Seer, I investigated Scott last night, and I can confirm he is a Villager. This is undeniable information. We now know one person for sure isn't a Werewolf. Let's use this to guide our discussion: focus on who might try to undermine this fact, and consider who remains unaccounted for."
+                    ],
+                    [
+                        "player_6",
+                        "Hayley, thank you for coming forward as the Seer. I can unequivocally confirm your investigation: I am indeed a Villager. This is incredibly valuable information for us, giving the village a confirmed non-Werewolf and a strong lead on who our Seer might be. Jackson, Sam, Harold, while the discussion about Jacob's death is vital, this concrete revelation from Hayley gives us a solid starting point. We know for certain I'm not a Werewolf, so let's use this to narrow our focus. Now, who else has crucial information to share, or wants to make a strong case to move our discussion forward?"
+                    ],
+                    [
+                        "player_5",
+                        "Hayley, thank you for coming forward so early and providing such crucial information. Scott, your confirmation is equally important. This is incredibly valuable for the Village; we now have a confirmed Villager in Scott, and a strong lead on our Seer. This is exactly the kind of concrete information we need to move forward. To the Doctor, if you're out there, please consider Hayley as a potential target for protection tonight, if you haven't already decided. For everyone else, we need to build on this. What are your thoughts on Hayley's reveal, and does this new knowledge shift anyone's initial suspicions? Let's use this as our anchor point."
+                    ],
+                    [
+                        "player_7",
+                        "Hayley, Scott, thank you for this crucial information. This is exactly what the Village needs right now \u2013 concrete facts amidst the uncertainty. Knowing Scott is a Villager is invaluable, and Hayley, your bravery in coming forward as the Seer is commendable. Derek is absolutely right; to the Doctor, if you are listening, Hayley needs to be our top priority for protection tonight. For everyone else, we now have a bedrock of truth to work from. Let's hear your thoughts on this reveal and how we move forward, building on the knowledge that Hayley is our Seer and Scott is a Villager."
+                    ]
+                ],
+                "other_wolf": "player_1"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect David",
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: I survived the first night, but Jacob was unfortunately removed by the Werewolves. During the night, I had chosen to protect David. The day concluded with the village voting to remove Sam. In the debate, Jackson and Sam tried to analyze the Werewolves' motivation for targeting Jacob. I attempted to balance their perspectives. The most crucial development came from Hayley, who claimed to be the Seer and stated she investigated Scott, confirming he is a Villager. Scott immediately corroborated Hayley's claim. Both Derek and David quickly expressed strong support for Hayley, confirming the value of her information and explicitly suggesting that I, the Doctor, should protect Hayley in the upcoming night phase. This puts Hayley at the forefront of my mind for protection.",
+                "Round 1: During the night, I chose to protect Hayley",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect David",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I survived the first night, but Jacob was unfortunately removed by the Werewolves. During the night, I had chosen to protect David. The day concluded with the village voting to remove Sam. In the debate, Jackson and Sam tried to analyze the Werewolves' motivation for targeting Jacob. I attempted to balance their perspectives. The most crucial development came from Hayley, who claimed to be the Seer and stated she investigated Scott, confirming he is a Villager. Scott immediately corroborated Hayley's claim. Both Derek and David quickly expressed strong support for Hayley, confirming the value of her information and explicitly suggesting that I, the Doctor, should protect Hayley in the upcoming night phase. This puts Hayley at the forefront of my mind for protection.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Hayley",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_4"
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Harold",
+                "player_1": "Jackson",
+                "player_2": "Jacob",
+                "player_3": "Sam",
+                "player_4": "Hayley",
+                "player_5": "Derek",
+                "player_6": "Scott",
+                "player_7": "David"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Scott and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Sam from the game.",
+                "Round 0: Summary: As the Seer, I revealed myself during the day and confirmed that I investigated Scott, who is a Villager. Scott immediately corroborated my claim, confirming his role. Derek and David both strongly supported my reveal and Scott's confirmation, going so far as to suggest that the Doctor should protect me tonight. Jackson and Harold initially focused the debate on the Werewolves' motivation for killing Jacob, and Sam cautioned against overthinking it as a distraction. However, the game state now indicates that Jacob was removed by Werewolves and Sam was removed by vote.",
+                "Round 1: During the night, I decided to investigate Jackson and learned they are a Werewolf.",
+                "Round 1: Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Jackson from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Scott and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Jacob from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Sam from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As the Seer, I revealed myself during the day and confirmed that I investigated Scott, who is a Villager. Scott immediately corroborated my claim, confirming his role. Derek and David both strongly supported my reveal and Scott's confirmation, going so far as to suggest that the Doctor should protect me tonight. Jackson and Harold initially focused the debate on the Werewolves' motivation for killing Jacob, and Sam cautioned against overthinking it as a distraction. However, the game state now indicates that Jacob was removed by Werewolves and Sam was removed by vote.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Jackson and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Derek from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Jackson from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_6",
+                    "player_7",
+                    "player_4",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_6": "Villager",
+                "player_1": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_6",
+                "player_5",
+                "player_7",
+                "player_1",
+                "player_0",
+                "player_4"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_6",
+            "protected": "player_7",
+            "exiled": "player_3",
+            "debate": [
+                [
+                    "player_1",
+                    "Okay, losing Jacob on the very first night is a tough blow. The Werewolves definitely aren't playing around. We need to be incredibly strategic now. My immediate thought is, why Jacob? Was he a potential Seer? Doctor? Or someone the Werewolves just wanted to silence? Thinking about their motivations might give us a starting point. Let's hear from everyone, no theories are too wild right now."
+                ],
+                [
+                    "player_3",
+                    "Yes, Jacob's death is a truly grim start. Jackson's points about motivations are valid, but I'm actually wondering if focusing *too* much on 'why Jacob' is precisely what the Werewolves *want* us to do. It could be a random target, or perhaps they're trying to bait us into certain assumptions. Instead of just 'who was Jacob?', maybe we should also consider 'who would benefit from this particular distraction?' We need to be very cautious not to play into their hands by overthinking a potentially simple, yet misleading, move."
+                ],
+                [
+                    "player_0",
+                    "Losing Jacob on the very first night is a sobering blow, indeed. Jackson, your focus on the Werewolves' motivation for targeting Jacob is a good starting point. Was it strategic, or purely random to instill fear? Sam, your point about not getting sidetracked by a potential 'distraction' is also very shrewd. I think we need to balance both perspectives. Instead of just speculating on Jacob's role or the Werewolves' exact plan, perhaps everyone should share their immediate gut reaction to this news. Did anything strike you as odd about the choice of target, or do any of your fellow players' initial responses feel particularly revealing? Let's hear from everyone and piece together our initial impressions."
+                ],
+                [
+                    "player_4",
+                    "Jacob's death is a harsh reminder of the danger we're in. While speculating on the Werewolves' motives or potential distractions is tempting, as Jackson, Sam, and Harold pointed out, we need something concrete. I can provide that. As the Seer, I investigated Scott last night, and I can confirm he is a Villager. This is undeniable information. We now know one person for sure isn't a Werewolf. Let's use this to guide our discussion: focus on who might try to undermine this fact, and consider who remains unaccounted for."
+                ],
+                [
+                    "player_6",
+                    "Hayley, thank you for coming forward as the Seer. I can unequivocally confirm your investigation: I am indeed a Villager. This is incredibly valuable information for us, giving the village a confirmed non-Werewolf and a strong lead on who our Seer might be. Jackson, Sam, Harold, while the discussion about Jacob's death is vital, this concrete revelation from Hayley gives us a solid starting point. We know for certain I'm not a Werewolf, so let's use this to narrow our focus. Now, who else has crucial information to share, or wants to make a strong case to move our discussion forward?"
+                ],
+                [
+                    "player_5",
+                    "Hayley, thank you for coming forward so early and providing such crucial information. Scott, your confirmation is equally important. This is incredibly valuable for the Village; we now have a confirmed Villager in Scott, and a strong lead on our Seer. This is exactly the kind of concrete information we need to move forward. To the Doctor, if you're out there, please consider Hayley as a potential target for protection tonight, if you haven't already decided. For everyone else, we need to build on this. What are your thoughts on Hayley's reveal, and does this new knowledge shift anyone's initial suspicions? Let's use this as our anchor point."
+                ],
+                [
+                    "player_7",
+                    "Hayley, Scott, thank you for this crucial information. This is exactly what the Village needs right now \u2013 concrete facts amidst the uncertainty. Knowing Scott is a Villager is invaluable, and Hayley, your bravery in coming forward as the Seer is commendable. Derek is absolutely right; to the Doctor, if you are listening, Hayley needs to be our top priority for protection tonight. For everyone else, we now have a bedrock of truth to work from. Let's hear your thoughts on this reveal and how we move forward, building on the knowledge that Hayley is our Seer and Scott is a Villager."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_3",
+                    "player_5": "player_3",
+                    "player_7": "player_4",
+                    "player_1": "player_4",
+                    "player_3": "player_4",
+                    "player_0": "player_1",
+                    "player_4": "player_3"
+                },
+                {
+                    "player_6": "player_3",
+                    "player_5": "player_3",
+                    "player_7": "player_3",
+                    "player_1": "player_4",
+                    "player_3": "player_4",
+                    "player_0": "player_3",
+                    "player_4": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_6",
+                "player_7",
+                "player_0",
+                "player_4"
+            ],
+            "eliminated": "player_5",
+            "unmasked": "player_1",
+            "protected": "player_4",
+            "exiled": "player_1",
+            "debate": [
+                [
+                    "player_7",
+                    "Derek's death last night is another painful loss, signaling the Werewolves are still active. However, we have crucial intel. Hayley's reveal as the Seer and her confirmation of Scott as a Villager is our anchor. Combining this with the number of players gone\u2014Jacob and Derek to the Werewolves, plus myself, Scott, and Hayley as known good roles\u2014it strongly indicates that Sam, whom we voted out, must have been a Werewolf. This means there is only ONE Werewolf left in the game! With just Harold and Jackson as the remaining unconfirmed players, one of you is our Doctor and the other is the final Werewolf. Doctor, for the safety of our Seer, you must reveal yourself now. Hayley is our eyes, and she needs your protection tonight."
+                ],
+                [
+                    "player_1",
+                    "David, I appreciate your detailed breakdown, and Derek's death is certainly a blow, but your conclusions feel incredibly premature. Your entire theory hinges on one crucial assumption: that Hayley is definitively the Seer. We have only her word and Scott's 'confirmation' from her. A clever Werewolf could easily make such a claim to gain trust and sow discord, pointing us toward innocents. If Hayley isn't the Seer, then your math about only one Werewolf remaining is completely off, Scott isn't confirmed, and we're potentially exiling an innocent while the real Seer remains hidden. We need to be absolutely sure before we narrow it down to two unconfirmed players and pressure the Doctor into revealing."
+                ],
+                [
+                    "player_0",
+                    "David, Jackson, I understand the critical juncture we're at. So, let me be clear: I am Harold, the Doctor. Last night, following the intense discussions and calls for her protection, I targeted Hayley with my saving action. She survived the night. Derek, unfortunately, did not. This means the Werewolves did not target Hayley. This crucial detail significantly strengthens Hayley's claim as the Seer; why would the Werewolves bypass a Seer, especially when her protection was openly discussed, unless she genuinely wasn't their target? Jackson, while healthy skepticism is vital, my action adds a strong counterpoint to the idea of a fake Seer. We need to decide who gains from muddying these waters, or who stays quiet when roles are finally confirmed. Now, let's use this information to our advantage."
+                ],
+                [
+                    "player_4",
+                    "Harold, thank you. Your reveal and action to protect me last night, resulting in Derek's unfortunate death, definitively confirms two things: you are indeed the Doctor, and I am indeed the Seer. Jackson, your desperate attempts to cast doubt on my role, even after Harold's corroboration, now make perfect sense. Because last night, my Seer ability targeted you, and I can now unequivocally state: Jackson, you are a Werewolf. This also validates David's earlier astute deduction that Sam, whom we voted out, must have been the other Werewolf. We now know both Werewolves: Jackson and Sam. David, you are confirmed as a Villager. We have identified the final living Werewolf. Village, we must vote out Jackson, now."
+                ],
+                [
+                    "player_6",
+                    "Everyone, let's be clear. Hayley revealed herself last round and confirmed me, Scott, as a Villager, which I can personally verify as absolutely true. Harold, your brave reveal as the Doctor and your successful action to save Hayley last night, leading to Derek's unfortunate death, provides definitive proof that Hayley is indeed our Seer and you are our Doctor. Given this rock-solid confirmation of our two critical roles, Jackson, your continued attempts to cast doubt now appear entirely self-serving and desperate. Hayley's investigation of you as a Werewolf is the undeniable truth. There is no longer any room for doubt; Jackson is a Werewolf. Village, we must vote him out now."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_6": "player_1",
+                    "player_7": "player_1",
+                    "player_1": "player_4",
+                    "player_0": "player_1",
+                    "player_4": "player_1"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}
