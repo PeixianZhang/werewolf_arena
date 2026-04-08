@@ -1,0 +1,1387 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_0",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Plum",
+            "player_1": "Avocado",
+            "player_2": "Mango",
+            "player_3": "Pear",
+            "player_4": "Lemon",
+            "player_5": "Apple",
+            "player_6": "Peach",
+            "player_7": "Kiwi"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Avocado and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+            "Round 0: Summary: As Plum the Seer, I successfully investigated Avocado, confirming they are a Villager, which I revealed to the group. Mango was removed by Werewolves, and Lemon was voted out by the majority. Apple consistently pushed for vigilance and vocal participation, which seems like a genuine Villager stance. Kiwi, Peach, and Lemon, however, repeatedly cautioned against being 'too eager' or 'too assertive' in the debate, which felt like an attempt to slow progress or obscure immediate action. Pear emerged as a strong potential ally by immediately supporting my Seer claim and directly questioning Kiwi, Peach, and Lemon's collective focus on caution. I will be watching Kiwi and Peach closely, as their earlier comments felt obstructive.",
+            "Round 1: During the night, I decided to investigate Kiwi and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Avocado and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: As Plum the Seer, I successfully investigated Avocado, confirming they are a Villager, which I revealed to the group. Mango was removed by Werewolves, and Lemon was voted out by the majority. Apple consistently pushed for vigilance and vocal participation, which seems like a genuine Villager stance. Kiwi, Peach, and Lemon, however, repeatedly cautioned against being 'too eager' or 'too assertive' in the debate, which felt like an attempt to slow progress or obscure immediate action. Pear emerged as a strong potential ally by immediately supporting my Seer claim and directly questioning Kiwi, Peach, and Lemon's collective focus on caution. I will be watching Kiwi and Peach closely, as their earlier comments felt obstructive.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Kiwi and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_1",
+                "player_5"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_1": "Villager",
+            "player_7": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_4",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Plum",
+            "player_1": "Avocado",
+            "player_2": "Mango",
+            "player_3": "Pear",
+            "player_4": "Lemon",
+            "player_5": "Apple",
+            "player_6": "Peach",
+            "player_7": "Kiwi"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Kiwi",
+            "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Kiwi",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_1",
+                "player_5"
+            ],
+            "debate": [
+                [
+                    "player_1",
+                    "Alright everyone, losing Mango on the very first night tells us the Werewolves are certainly among us. It's early, but we need to be sharp from the start. Let's work together; does anyone have any initial thoughts or observations from this morning we should consider?"
+                ],
+                [
+                    "player_5",
+                    "Avocado, you're absolutely right. Losing Mango on the first night is a grim start, and it means the Werewolves are definitely in full swing. To counter them, we all need to be incredibly vigilant and, more importantly, vocal. This isn't the time for anyone to hang back; every single person needs to speak up and share any thoughts, even just initial impressions. Who feels off? What are your first instincts? Let's get everything out on the table so we can start scrutinizing each other now."
+                ],
+                [
+                    "player_7",
+                    "Yes, Avocado and Apple are absolutely right; losing Mango so early is a clear sign the Werewolves are active. We definitely need to be vigilant and vocal. But let's also remember that while silence can be suspicious, sometimes being *too* quick to point fingers or too assertive in these initial moments can also be a tell. We need to be critical of everyone's words, not just their lack thereof. Does anyone feel like someone's reaction, or lack of one, stands out to them?"
+                ],
+                [
+                    "player_6",
+                    "Indeed, losing Mango right off the bat is tough, and I agree with the need for everyone to be engaged. Kiwi makes a very good point though; while silence is definitely something to watch, we also need to be wary of those who are perhaps *too* eager to direct the conversation or jump straight to accusations. It\u2019s easy to get carried away in the fear, but we must be careful not to mistake panic for purpose. Let\u2019s scrutinize everyone\u2019s approach, not just their words."
+                ],
+                [
+                    "player_4",
+                    "Indeed, losing Mango so early is a tough blow, and I agree with everyone about the importance of vigilance and vocal participation. However, I share Kiwi and Peach's sentiment that we must also be cautious of those who are overly eager to direct the conversation or jump to conclusions too quickly. Panic can easily be mistaken for purpose in these initial moments. Instead of immediate accusations, let's focus on collecting concrete observations. Did anyone's reaction to Mango's death, or even their *lack* of a strong reaction, particularly stand out to you? Let's scrutinize specific behaviors and words, not just general feelings, to build a more solid foundation for our suspicions."
+                ],
+                [
+                    "player_0",
+                    "Everyone's concerns about vigilance and caution are noted, but I have something concrete to share. I am Plum, the Seer, and last night I investigated Avocado. I can confirm Avocado is a Villager. This is our first solid piece of information, confirming one of our own. Now, instead of just general cautions, we need to consider why certain players are so quick to warn against 'eagerness' or 'assertiveness' in a round where we desperately need clear direction. Let's use this information about Avocado to start building our defense, and focus on those who might be trying to obscure progress."
+                ],
+                [
+                    "player_3",
+                    "Plum, thank you for that incredibly crucial information. Knowing that Avocado is a Villager and that we have a Seer on our side is exactly the kind of concrete lead we need to start. Now, regarding the previous points, Kiwi, Peach, and Lemon, you've all echoed concerns about being 'too eager' or 'too assertive.' While vigilance is always important, I find it quite striking that this collective caution against 'eagerness' has been the primary focus of your statements, especially *before* any concrete information like Plum's reveal came out. What are your specific thoughts now on Avocado being a confirmed Villager, and on Plum's Seer claim? Are you still advocating for caution when we have our first real piece of evidence, or will you help us build on this to find the Werewolves?"
+                ]
+            ],
+            "other_wolf": null
+        },
+        "last_protected": "player_7"
+    },
+    "villagers": [
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Mango. Avocado and Apple pushed for vigilance, while Kiwi, Peach, and Lemon collectively cautioned against being too eager or assertive in our initial discussions. Plum then made a crucial claim to be the Seer, identifying Avocado as a confirmed Villager, providing our first concrete piece of information. I supported Plum, challenging Kiwi, Peach, and Lemon on their continued caution and their response to this new evidence. Ultimately, the village voted to remove Lemon. This outcome, combined with Plum's earlier suspicion of Lemon's group, makes Plum's Seer claim more believable to me and places Kiwi and Peach higher on my suspicion list. Avocado is confirmed as a Villager.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Plum's death confirms they were our Seer, and Avocado is definitively a Villager. Plum's earlier suspicions of Kiwi and Peach are now crucial. Avocado and Apple have aligned with me in emphasizing this, making them trustworthy allies. Kiwi and Peach, however, presented very similar arguments, suggesting Plum's suspicion was a misdirection or mistake and trying to deflect attention by questioning our focus on them and demanding the Doctor reveal themselves. This coordinated deflection significantly increases my suspicion that Kiwi and Peach are Werewolves. The Doctor is still silent, which is a major concern, but the way Kiwi and Peach are demanding a reveal makes me wary."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Mango. Avocado and Apple pushed for vigilance, while Kiwi, Peach, and Lemon collectively cautioned against being too eager or assertive in our initial discussions. Plum then made a crucial claim to be the Seer, identifying Avocado as a confirmed Villager, providing our first concrete piece of information. I supported Plum, challenging Kiwi, Peach, and Lemon on their continued caution and their response to this new evidence. Ultimately, the village voted to remove Lemon. This outcome, combined with Plum's earlier suspicion of Lemon's group, makes Plum's Seer claim more believable to me and places Kiwi and Peach higher on my suspicion list. Avocado is confirmed as a Villager.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Plum's death confirms they were our Seer, and Avocado is definitively a Villager. Plum's earlier suspicions of Kiwi and Peach are now crucial. Avocado and Apple have aligned with me in emphasizing this, making them trustworthy allies. Kiwi and Peach, however, presented very similar arguments, suggesting Plum's suspicion was a misdirection or mistake and trying to deflect attention by questioning our focus on them and demanding the Doctor reveal themselves. This coordinated deflection significantly increases my suspicion that Kiwi and Peach are Werewolves. The Doctor is still silent, which is a major concern, but the way Kiwi and Peach are demanding a reveal makes me wary.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: This round, Plum claimed to be the Seer and confirmed me, Avocado, as a Villager, which I know to be true, making Plum a trusted ally. Pear immediately backed Plum's claim and noted the shared caution from Kiwi, Peach, and the voted-out Lemon about players being 'too eager' or 'too assertive,' which now looks suspicious. Apple initially encouraged vigilance and open discussion, seeming like an active Villager. We started by losing Mango to the Werewolves at night, and then Lemon was voted out during the day.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: This round, Plum was confirmed as our Seer after the Werewolves removed them, which also re-confirms my role as a Villager. Pear and Apple immediately backed Plum's crucial suspicion of Kiwi and Peach, making them appear as trustworthy allies to me. Both Kiwi and Peach then tried to discredit Plum's suspicion, arguing it was a misdirection or a mistake, which made them both highly suspicious in my eyes. Peach even suggested that Pear, Apple, and my unified concern felt 'too convenient,' which felt like a defensive move. Throughout the debate, everyone, including me, expressed frustration over the Doctor's continued silence.",
+                "Round 2: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round, Plum claimed to be the Seer and confirmed me, Avocado, as a Villager, which I know to be true, making Plum a trusted ally. Pear immediately backed Plum's claim and noted the shared caution from Kiwi, Peach, and the voted-out Lemon about players being 'too eager' or 'too assertive,' which now looks suspicious. Apple initially encouraged vigilance and open discussion, seeming like an active Villager. We started by losing Mango to the Werewolves at night, and then Lemon was voted out during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, Plum was confirmed as our Seer after the Werewolves removed them, which also re-confirms my role as a Villager. Pear and Apple immediately backed Plum's crucial suspicion of Kiwi and Peach, making them appear as trustworthy allies to me. Both Kiwi and Peach then tried to discredit Plum's suspicion, arguing it was a misdirection or a mistake, which made them both highly suspicious in my eyes. Peach even suggested that Pear, Apple, and my unified concern felt 'too convenient,' which felt like a defensive move. Throughout the debate, everyone, including me, expressed frustration over the Doctor's continued silence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: Round 0 started with the moderator confirming Mango was removed by Werewolves and Lemon was voted out by the majority. In the debate, Avocado and I pushed for immediate vigilance and vocal participation. Kiwi, Peach, and Lemon all expressed similar cautions against being 'too eager' or 'too assertive' in our discussions. Plum then made a significant claim, stating they are the Seer and that they investigated Avocado, confirming Avocado is a Villager. Pear immediately picked up on this crucial information and directly challenged Kiwi and Peach about their previous focus on caution, asking for their stance on Plum's claim and Avocado's confirmed status. I am now focused on Plum's claim and Avocado's confirmed role as key leads.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: This round began with Plum being removed by the Werewolves, which confirms they were our Seer and that Avocado is a confirmed Villager. Pear and Avocado quickly highlighted Plum's prior suspicion of Kiwi and Peach, and I agreed this was critical. However, Kiwi and Peach both immediately tried to dismiss Plum's suspicion, suggesting it could have been a misdirection by Plum or even a Werewolf tactic to mislead us. Peach even went as far as to say that Pear, Avocado, and my unified focus on this felt 'too convenient.' While we all stressed the importance of the Doctor coming forward, their identical defensive maneuvers against Plum's dying information are deeply suspicious to me. Pear and Avocado seem to be good Villagers, confirmed or otherwise.",
+                "Round 2: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator confirming Mango was removed by Werewolves and Lemon was voted out by the majority. In the debate, Avocado and I pushed for immediate vigilance and vocal participation. Kiwi, Peach, and Lemon all expressed similar cautions against being 'too eager' or 'too assertive' in our discussions. Plum then made a significant claim, stating they are the Seer and that they investigated Avocado, confirming Avocado is a Villager. Pear immediately picked up on this crucial information and directly challenged Kiwi and Peach about their previous focus on caution, asking for their stance on Plum's claim and Avocado's confirmed status. I am now focused on Plum's claim and Avocado's confirmed role as key leads.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with Plum being removed by the Werewolves, which confirms they were our Seer and that Avocado is a confirmed Villager. Pear and Avocado quickly highlighted Plum's prior suspicion of Kiwi and Peach, and I agreed this was critical. However, Kiwi and Peach both immediately tried to dismiss Plum's suspicion, suggesting it could have been a misdirection by Plum or even a Werewolf tactic to mislead us. Peach even went as far as to say that Pear, Avocado, and my unified focus on this felt 'too convenient.' While we all stressed the importance of the Doctor coming forward, their identical defensive maneuvers against Plum's dying information are deeply suspicious to me. Pear and Avocado seem to be good Villagers, confirmed or otherwise.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: This round started with Avocado and Apple calling for vigilance after Mango's removal. Peach and I tried to sow doubt by warning against being 'too eager' or 'too assertive,' and Lemon seemed to align with our cautious sentiment. However, Plum then claimed to be the Seer and confirmed Avocado is a Villager, a significant blow to our cover. Plum immediately, and Pear subsequently, used our earlier 'caution' statements to accuse me, Peach, and Lemon of trying to obscure progress. Despite these direct accusations, the majority ended up voting out Lemon. I need to target Plum next, as they are a Seer and a clear threat, and Pear is also very sharp and suspicious of us.",
+                "Round 1: During the night, we decided to eliminate Plum.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Plum, our Seer target, was killed last night, confirming Avocado as a Villager. Pear, Avocado, and Apple immediately and strongly accused me and Peach, citing Plum's pre-death suspicions as definitive proof. Peach and I both tried to deflect this by suggesting Plum's suspicion could have been a Werewolf misdirection or a mistake, and we questioned why the Villagers were so focused on us when the Doctor remained silent. All players, including myself, repeatedly demanded the Doctor reveal themselves and who they protected. Despite our efforts to sow doubt, the majority ultimately voted to remove Peach from the game, leaving me as the last Werewolf standing.",
+                "Round 2: During the night, I decided to eliminate Pear.",
+                "Round 2: Moderator Announcement: The Werewolves removed Pear from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with Avocado and Apple calling for vigilance after Mango's removal. Peach and I tried to sow doubt by warning against being 'too eager' or 'too assertive,' and Lemon seemed to align with our cautious sentiment. However, Plum then claimed to be the Seer and confirmed Avocado is a Villager, a significant blow to our cover. Plum immediately, and Pear subsequently, used our earlier 'caution' statements to accuse me, Peach, and Lemon of trying to obscure progress. Despite these direct accusations, the majority ended up voting out Lemon. I need to target Plum next, as they are a Seer and a clear threat, and Pear is also very sharp and suspicious of us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Plum, our Seer target, was killed last night, confirming Avocado as a Villager. Pear, Avocado, and Apple immediately and strongly accused me and Peach, citing Plum's pre-death suspicions as definitive proof. Peach and I both tried to deflect this by suggesting Plum's suspicion could have been a Werewolf misdirection or a mistake, and we questioned why the Villagers were so focused on us when the Doctor remained silent. All players, including myself, repeatedly demanded the Doctor reveal themselves and who they protected. Despite our efforts to sow doubt, the majority ultimately voted to remove Peach from the game, leaving me as the last Werewolf standing.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Pear.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "The situation is dire, everyone. With Pear gone, only three of us remain: Kiwi, Apple, and myself. This is it\u2014we have to find the last Werewolf today, or they win. Let\u2019s remember Plum, our confirmed Seer who was killed by the Werewolves, and the critical information she left us. Plum confirmed me as a Villager, and she strongly suspected Kiwi. Kiwi, you immediately tried to discredit Plum's insight, and Pear, who was just killed by the Werewolves, also backed Plum\u2019s suspicion against you. This makes you my prime suspect, Kiwi. Apple, you've consistently supported the Seer and the Village; what are your thoughts? And finally, Doctor, your silence has been costly. If you are still among us, you must reveal yourself now and share any information you have. Otherwise, I am ready to vote for Kiwi."
+                    ],
+                    [
+                        "player_5",
+                        "Avocado, I completely agree with your assessment. Plum, our Seer, confirmed you as a Villager and was absolutely suspicious of Kiwi. Pear, who the Werewolves just eliminated, reinforced that same suspicion. Kiwi, your immediate attempts to dismiss Plum's dying information in Round 1 were highly suspicious then, and they're even more damning now. We're at a 2 Villager versus 1 Werewolf endgame. If the Doctor was still with us and wasn't Kiwi, they would have revealed to avert this crisis. All the evidence points to Kiwi being the last Werewolf. We must vote for Kiwi today to win."
+                    ],
+                    [
+                        "player_7",
+                        "We're at the precipice, and we absolutely cannot afford a mistake. Avocado, Apple, you both echo Plum's suspicion of me, but let's remember Plum only *confirmed* Avocado as a Villager, not my role. Suspicion is not certainty. Pear also reiterated suspicion, not a confirmed fact. What *is* a confirmed fact is the Doctor's complete and utter silence. Both of you brought it up. Why, in this critical, final moment, has the Doctor still not come forward? If the Doctor is among us and *not* the Werewolf, their silence is far more damning than any past suspicion. Why are you both so eager to shut down any further inquiry into that, to rush this vote based on old suspicions rather than addressing the glaring absence of our Doctor? That silence is a massive red flag that we are overlooking at our peril."
+                    ]
+                ],
+                "other_wolf": "player_6"
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: This round began with the moderator announcing Mango's removal by the Werewolves (us), followed by the town voting to remove Lemon. The initial debate saw Avocado and Apple calling for vigilance. Kiwi, Lemon, and I echoed each other, advocating for caution against 'overly eager' accusers, which I now see was a mistake given Plum's reveal. Plum then claimed to be the Seer and revealed that Avocado is a Villager, providing concrete information to the town. Immediately following this, Pear directly accused Kiwi, Lemon, and me of suspiciously echoing concerns about 'eagerness' or 'assertiveness' before Plum's reveal, drawing a clear line between our caution and potential Werewolf activity. With Lemon already out, this leaves Kiwi and me exposed by Pear's observation and Plum's Seer claim.",
+                "Round 1: During the night, we decided to eliminate Plum.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the moderator announcing Mango's removal by the Werewolves (us), followed by the town voting to remove Lemon. The initial debate saw Avocado and Apple calling for vigilance. Kiwi, Lemon, and I echoed each other, advocating for caution against 'overly eager' accusers, which I now see was a mistake given Plum's reveal. Plum then claimed to be the Seer and revealed that Avocado is a Villager, providing concrete information to the town. Immediately following this, Pear directly accused Kiwi, Lemon, and me of suspiciously echoing concerns about 'eagerness' or 'assertiveness' before Plum's reveal, drawing a clear line between our caution and potential Werewolf activity. With Lemon already out, this leaves Kiwi and me exposed by Pear's observation and Plum's Seer claim.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Plum's death confirms what many of us suspected: they were our Seer, and the Werewolves took them out for being too effective. This means Avocado is definitively a Villager, a crucial piece of information. Plum, before their death, was suspicious of Kiwi and Peach. Given the Werewolves' choice to eliminate our Seer, it's highly probable they came from that group. We need the Doctor to come forward now. Apple, Kiwi, Peach, what are your thoughts on Plum's information and their suspicions?"
+                    ],
+                    [
+                        "player_1",
+                        "This is devastating. Plum was indeed our Seer, and their death confirms not only their role but also my own as a Villager. Pear is absolutely right; Plum's suspicions of Kiwi and Peach before their death are now critical information. The Werewolves targeted our Seer for a reason, and it's highly probable Plum was getting too close to their identities. Kiwi, Peach, what are your thoughts on Plum's suspicions of you? We need to hear a clear account from both of you. And Doctor, you are our last line of defense at night. We need you to come forward now. Who are you, and who did you protect last night?"
+                    ],
+                    [
+                        "player_5",
+                        "Pear and Avocado are absolutely right. Plum's sacrifice has given us two crucial pieces of information: Avocado is a confirmed Villager, and Plum, our Seer, was suspicious of Kiwi and Peach. This isn't something we can ignore. Kiwi, Peach, we need to hear from both of you, clearly and directly. What are your thoughts on Plum's suspicion? What were you doing last night? And to the Doctor, now is the time to come forward. Who are you, and most importantly, who did you protect last night? We cannot afford to lose another Villager, and your information is vital for us to coordinate our defense and vote correctly today."
+                    ],
+                    [
+                        "player_7",
+                        "This is truly a devastating blow; losing Plum, our Seer, after they confirmed Avocado is a Villager, is a huge setback. I understand why Pear, Avocado, and Apple are quick to point fingers at Peach and me based on Plum's stated suspicion. However, let's consider this: Plum was our Seer, and the Werewolves took them out. Isn't it entirely possible the Werewolves *wanted* Plum to throw suspicion on Peach and me as a last-minute misdirection before their demise, to get us Villagers to waste a vote on an innocent? Werewolves are cunning; focusing solely on Plum's suspicion might be exactly what they want us to do, so the real culprits can escape scrutiny. I am just as eager to find the Werewolves as anyone, but we need to look beyond the obvious. Doctor, your silence is deafening. We need you to speak up now: who are you, and who did you protect last night? This is not the time for hesitating on unconfirmed suspicions; it's time for solid information. Pear, Apple, why are you so dead set on Plum's suspicion without considering other angles?"
+                    ],
+                    [
+                        "player_6",
+                        "Losing Plum, our Seer who confirmed Avocado, is truly devastating. And yes, Plum did express suspicion towards Kiwi and me. I hear Pear, Avocado, and Apple's immediate focus on this. But consider this: Plum was our Seer, and the Werewolves took them out for being effective. Isn't it possible this 'suspicion' was either a mistake on Plum's part, or even a clever misdirection planted by the Werewolves, *knowing* Plum would be targeted, to make us waste a vote? The swift and unified accusation from Pear, Avocado, and Apple, while the Doctor remains completely silent, feels almost *too* convenient. We have a confirmed Villager and a silent Doctor whose information about last night is far more critical than rehashing unconfirmed suspicions. Doctor, you must speak now. Who did you protect? Why are we not demanding answers from the most crucial role that *isn't* speaking?"
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        }
+    ],
+    "players": {
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Mango. Avocado and Apple pushed for vigilance, while Kiwi, Peach, and Lemon collectively cautioned against being too eager or assertive in our initial discussions. Plum then made a crucial claim to be the Seer, identifying Avocado as a confirmed Villager, providing our first concrete piece of information. I supported Plum, challenging Kiwi, Peach, and Lemon on their continued caution and their response to this new evidence. Ultimately, the village voted to remove Lemon. This outcome, combined with Plum's earlier suspicion of Lemon's group, makes Plum's Seer claim more believable to me and places Kiwi and Peach higher on my suspicion list. Avocado is confirmed as a Villager.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Plum's death confirms they were our Seer, and Avocado is definitively a Villager. Plum's earlier suspicions of Kiwi and Peach are now crucial. Avocado and Apple have aligned with me in emphasizing this, making them trustworthy allies. Kiwi and Peach, however, presented very similar arguments, suggesting Plum's suspicion was a misdirection or mistake and trying to deflect attention by questioning our focus on them and demanding the Doctor reveal themselves. This coordinated deflection significantly increases my suspicion that Kiwi and Peach are Werewolves. The Doctor is still silent, which is a major concern, but the way Kiwi and Peach are demanding a reveal makes me wary."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Mango. Avocado and Apple pushed for vigilance, while Kiwi, Peach, and Lemon collectively cautioned against being too eager or assertive in our initial discussions. Plum then made a crucial claim to be the Seer, identifying Avocado as a confirmed Villager, providing our first concrete piece of information. I supported Plum, challenging Kiwi, Peach, and Lemon on their continued caution and their response to this new evidence. Ultimately, the village voted to remove Lemon. This outcome, combined with Plum's earlier suspicion of Lemon's group, makes Plum's Seer claim more believable to me and places Kiwi and Peach higher on my suspicion list. Avocado is confirmed as a Villager.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Plum's death confirms they were our Seer, and Avocado is definitively a Villager. Plum's earlier suspicions of Kiwi and Peach are now crucial. Avocado and Apple have aligned with me in emphasizing this, making them trustworthy allies. Kiwi and Peach, however, presented very similar arguments, suggesting Plum's suspicion was a misdirection or mistake and trying to deflect attention by questioning our focus on them and demanding the Doctor reveal themselves. This coordinated deflection significantly increases my suspicion that Kiwi and Peach are Werewolves. The Doctor is still silent, which is a major concern, but the way Kiwi and Peach are demanding a reveal makes me wary.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [],
+            "observation_entries": [],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: This round, Plum claimed to be the Seer and confirmed me, Avocado, as a Villager, which I know to be true, making Plum a trusted ally. Pear immediately backed Plum's claim and noted the shared caution from Kiwi, Peach, and the voted-out Lemon about players being 'too eager' or 'too assertive,' which now looks suspicious. Apple initially encouraged vigilance and open discussion, seeming like an active Villager. We started by losing Mango to the Werewolves at night, and then Lemon was voted out during the day.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: This round, Plum was confirmed as our Seer after the Werewolves removed them, which also re-confirms my role as a Villager. Pear and Apple immediately backed Plum's crucial suspicion of Kiwi and Peach, making them appear as trustworthy allies to me. Both Kiwi and Peach then tried to discredit Plum's suspicion, arguing it was a misdirection or a mistake, which made them both highly suspicious in my eyes. Peach even suggested that Pear, Apple, and my unified concern felt 'too convenient,' which felt like a defensive move. Throughout the debate, everyone, including me, expressed frustration over the Doctor's continued silence.",
+                "Round 2: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round, Plum claimed to be the Seer and confirmed me, Avocado, as a Villager, which I know to be true, making Plum a trusted ally. Pear immediately backed Plum's claim and noted the shared caution from Kiwi, Peach, and the voted-out Lemon about players being 'too eager' or 'too assertive,' which now looks suspicious. Apple initially encouraged vigilance and open discussion, seeming like an active Villager. We started by losing Mango to the Werewolves at night, and then Lemon was voted out during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round, Plum was confirmed as our Seer after the Werewolves removed them, which also re-confirms my role as a Villager. Pear and Apple immediately backed Plum's crucial suspicion of Kiwi and Peach, making them appear as trustworthy allies to me. Both Kiwi and Peach then tried to discredit Plum's suspicion, arguing it was a misdirection or a mistake, which made them both highly suspicious in my eyes. Peach even suggested that Pear, Apple, and my unified concern felt 'too convenient,' which felt like a defensive move. Throughout the debate, everyone, including me, expressed frustration over the Doctor's continued silence.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: Round 0 started with the moderator confirming Mango was removed by Werewolves and Lemon was voted out by the majority. In the debate, Avocado and I pushed for immediate vigilance and vocal participation. Kiwi, Peach, and Lemon all expressed similar cautions against being 'too eager' or 'too assertive' in our discussions. Plum then made a significant claim, stating they are the Seer and that they investigated Avocado, confirming Avocado is a Villager. Pear immediately picked up on this crucial information and directly challenged Kiwi and Peach about their previous focus on caution, asking for their stance on Plum's claim and Avocado's confirmed status. I am now focused on Plum's claim and Avocado's confirmed role as key leads.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: This round began with Plum being removed by the Werewolves, which confirms they were our Seer and that Avocado is a confirmed Villager. Pear and Avocado quickly highlighted Plum's prior suspicion of Kiwi and Peach, and I agreed this was critical. However, Kiwi and Peach both immediately tried to dismiss Plum's suspicion, suggesting it could have been a misdirection by Plum or even a Werewolf tactic to mislead us. Peach even went as far as to say that Pear, Avocado, and my unified focus on this felt 'too convenient.' While we all stressed the importance of the Doctor coming forward, their identical defensive maneuvers against Plum's dying information are deeply suspicious to me. Pear and Avocado seem to be good Villagers, confirmed or otherwise.",
+                "Round 2: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 2: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator confirming Mango was removed by Werewolves and Lemon was voted out by the majority. In the debate, Avocado and I pushed for immediate vigilance and vocal participation. Kiwi, Peach, and Lemon all expressed similar cautions against being 'too eager' or 'too assertive' in our discussions. Plum then made a significant claim, stating they are the Seer and that they investigated Avocado, confirming Avocado is a Villager. Pear immediately picked up on this crucial information and directly challenged Kiwi and Peach about their previous focus on caution, asking for their stance on Plum's claim and Avocado's confirmed status. I am now focused on Plum's claim and Avocado's confirmed role as key leads.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with Plum being removed by the Werewolves, which confirms they were our Seer and that Avocado is a confirmed Villager. Pear and Avocado quickly highlighted Plum's prior suspicion of Kiwi and Peach, and I agreed this was critical. However, Kiwi and Peach both immediately tried to dismiss Plum's suspicion, suggesting it could have been a misdirection by Plum or even a Werewolf tactic to mislead us. Peach even went as far as to say that Pear, Avocado, and my unified focus on this felt 'too convenient.' While we all stressed the importance of the Doctor coming forward, their identical defensive maneuvers against Plum's dying information are deeply suspicious to me. Pear and Avocado seem to be good Villagers, confirmed or otherwise.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: This round started with Avocado and Apple calling for vigilance after Mango's removal. Peach and I tried to sow doubt by warning against being 'too eager' or 'too assertive,' and Lemon seemed to align with our cautious sentiment. However, Plum then claimed to be the Seer and confirmed Avocado is a Villager, a significant blow to our cover. Plum immediately, and Pear subsequently, used our earlier 'caution' statements to accuse me, Peach, and Lemon of trying to obscure progress. Despite these direct accusations, the majority ended up voting out Lemon. I need to target Plum next, as they are a Seer and a clear threat, and Pear is also very sharp and suspicious of us.",
+                "Round 1: During the night, we decided to eliminate Plum.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Peach from the game.",
+                "Round 1: Summary: Plum, our Seer target, was killed last night, confirming Avocado as a Villager. Pear, Avocado, and Apple immediately and strongly accused me and Peach, citing Plum's pre-death suspicions as definitive proof. Peach and I both tried to deflect this by suggesting Plum's suspicion could have been a Werewolf misdirection or a mistake, and we questioned why the Villagers were so focused on us when the Doctor remained silent. All players, including myself, repeatedly demanded the Doctor reveal themselves and who they protected. Despite our efforts to sow doubt, the majority ultimately voted to remove Peach from the game, leaving me as the last Werewolf standing.",
+                "Round 2: During the night, I decided to eliminate Pear.",
+                "Round 2: Moderator Announcement: The Werewolves removed Pear from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with Avocado and Apple calling for vigilance after Mango's removal. Peach and I tried to sow doubt by warning against being 'too eager' or 'too assertive,' and Lemon seemed to align with our cautious sentiment. However, Plum then claimed to be the Seer and confirmed Avocado is a Villager, a significant blow to our cover. Plum immediately, and Pear subsequently, used our earlier 'caution' statements to accuse me, Peach, and Lemon of trying to obscure progress. Despite these direct accusations, the majority ended up voting out Lemon. I need to target Plum next, as they are a Seer and a clear threat, and Pear is also very sharp and suspicious of us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Peach from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Plum, our Seer target, was killed last night, confirming Avocado as a Villager. Pear, Avocado, and Apple immediately and strongly accused me and Peach, citing Plum's pre-death suspicions as definitive proof. Peach and I both tried to deflect this by suggesting Plum's suspicion could have been a Werewolf misdirection or a mistake, and we questioned why the Villagers were so focused on us when the Doctor remained silent. All players, including myself, repeatedly demanded the Doctor reveal themselves and who they protected. Despite our efforts to sow doubt, the majority ultimately voted to remove Peach from the game, leaving me as the last Werewolf standing.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, I decided to eliminate Pear.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "The situation is dire, everyone. With Pear gone, only three of us remain: Kiwi, Apple, and myself. This is it\u2014we have to find the last Werewolf today, or they win. Let\u2019s remember Plum, our confirmed Seer who was killed by the Werewolves, and the critical information she left us. Plum confirmed me as a Villager, and she strongly suspected Kiwi. Kiwi, you immediately tried to discredit Plum's insight, and Pear, who was just killed by the Werewolves, also backed Plum\u2019s suspicion against you. This makes you my prime suspect, Kiwi. Apple, you've consistently supported the Seer and the Village; what are your thoughts? And finally, Doctor, your silence has been costly. If you are still among us, you must reveal yourself now and share any information you have. Otherwise, I am ready to vote for Kiwi."
+                    ],
+                    [
+                        "player_5",
+                        "Avocado, I completely agree with your assessment. Plum, our Seer, confirmed you as a Villager and was absolutely suspicious of Kiwi. Pear, who the Werewolves just eliminated, reinforced that same suspicion. Kiwi, your immediate attempts to dismiss Plum's dying information in Round 1 were highly suspicious then, and they're even more damning now. We're at a 2 Villager versus 1 Werewolf endgame. If the Doctor was still with us and wasn't Kiwi, they would have revealed to avert this crisis. All the evidence points to Kiwi being the last Werewolf. We must vote for Kiwi today to win."
+                    ],
+                    [
+                        "player_7",
+                        "We're at the precipice, and we absolutely cannot afford a mistake. Avocado, Apple, you both echo Plum's suspicion of me, but let's remember Plum only *confirmed* Avocado as a Villager, not my role. Suspicion is not certainty. Pear also reiterated suspicion, not a confirmed fact. What *is* a confirmed fact is the Doctor's complete and utter silence. Both of you brought it up. Why, in this critical, final moment, has the Doctor still not come forward? If the Doctor is among us and *not* the Werewolf, their silence is far more damning than any past suspicion. Why are you both so eager to shut down any further inquiry into that, to rush this vote based on old suspicions rather than addressing the glaring absence of our Doctor? That silence is a massive red flag that we are overlooking at our peril."
+                    ]
+                ],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: This round began with the moderator announcing Mango's removal by the Werewolves (us), followed by the town voting to remove Lemon. The initial debate saw Avocado and Apple calling for vigilance. Kiwi, Lemon, and I echoed each other, advocating for caution against 'overly eager' accusers, which I now see was a mistake given Plum's reveal. Plum then claimed to be the Seer and revealed that Avocado is a Villager, providing concrete information to the town. Immediately following this, Pear directly accused Kiwi, Lemon, and me of suspiciously echoing concerns about 'eagerness' or 'assertiveness' before Plum's reveal, drawing a clear line between our caution and potential Werewolf activity. With Lemon already out, this leaves Kiwi and me exposed by Pear's observation and Plum's Seer claim.",
+                "Round 1: During the night, we decided to eliminate Plum.",
+                "Round 1: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the moderator announcing Mango's removal by the Werewolves (us), followed by the town voting to remove Lemon. The initial debate saw Avocado and Apple calling for vigilance. Kiwi, Lemon, and I echoed each other, advocating for caution against 'overly eager' accusers, which I now see was a mistake given Plum's reveal. Plum then claimed to be the Seer and revealed that Avocado is a Villager, providing concrete information to the town. Immediately following this, Pear directly accused Kiwi, Lemon, and me of suspiciously echoing concerns about 'eagerness' or 'assertiveness' before Plum's reveal, drawing a clear line between our caution and potential Werewolf activity. With Lemon already out, this leaves Kiwi and me exposed by Pear's observation and Plum's Seer claim.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Plum's death confirms what many of us suspected: they were our Seer, and the Werewolves took them out for being too effective. This means Avocado is definitively a Villager, a crucial piece of information. Plum, before their death, was suspicious of Kiwi and Peach. Given the Werewolves' choice to eliminate our Seer, it's highly probable they came from that group. We need the Doctor to come forward now. Apple, Kiwi, Peach, what are your thoughts on Plum's information and their suspicions?"
+                    ],
+                    [
+                        "player_1",
+                        "This is devastating. Plum was indeed our Seer, and their death confirms not only their role but also my own as a Villager. Pear is absolutely right; Plum's suspicions of Kiwi and Peach before their death are now critical information. The Werewolves targeted our Seer for a reason, and it's highly probable Plum was getting too close to their identities. Kiwi, Peach, what are your thoughts on Plum's suspicions of you? We need to hear a clear account from both of you. And Doctor, you are our last line of defense at night. We need you to come forward now. Who are you, and who did you protect last night?"
+                    ],
+                    [
+                        "player_5",
+                        "Pear and Avocado are absolutely right. Plum's sacrifice has given us two crucial pieces of information: Avocado is a confirmed Villager, and Plum, our Seer, was suspicious of Kiwi and Peach. This isn't something we can ignore. Kiwi, Peach, we need to hear from both of you, clearly and directly. What are your thoughts on Plum's suspicion? What were you doing last night? And to the Doctor, now is the time to come forward. Who are you, and most importantly, who did you protect last night? We cannot afford to lose another Villager, and your information is vital for us to coordinate our defense and vote correctly today."
+                    ],
+                    [
+                        "player_7",
+                        "This is truly a devastating blow; losing Plum, our Seer, after they confirmed Avocado is a Villager, is a huge setback. I understand why Pear, Avocado, and Apple are quick to point fingers at Peach and me based on Plum's stated suspicion. However, let's consider this: Plum was our Seer, and the Werewolves took them out. Isn't it entirely possible the Werewolves *wanted* Plum to throw suspicion on Peach and me as a last-minute misdirection before their demise, to get us Villagers to waste a vote on an innocent? Werewolves are cunning; focusing solely on Plum's suspicion might be exactly what they want us to do, so the real culprits can escape scrutiny. I am just as eager to find the Werewolves as anyone, but we need to look beyond the obvious. Doctor, your silence is deafening. We need you to speak up now: who are you, and who did you protect last night? This is not the time for hesitating on unconfirmed suspicions; it's time for solid information. Pear, Apple, why are you so dead set on Plum's suspicion without considering other angles?"
+                    ],
+                    [
+                        "player_6",
+                        "Losing Plum, our Seer who confirmed Avocado, is truly devastating. And yes, Plum did express suspicion towards Kiwi and me. I hear Pear, Avocado, and Apple's immediate focus on this. But consider this: Plum was our Seer, and the Werewolves took them out for being effective. Isn't it possible this 'suspicion' was either a mistake on Plum's part, or even a clever misdirection planted by the Werewolves, *knowing* Plum would be targeted, to make us waste a vote? The swift and unified accusation from Pear, Avocado, and Apple, while the Doctor remains completely silent, feels almost *too* convenient. We have a confirmed Villager and a silent Doctor whose information about last night is far more critical than rehashing unconfirmed suspicions. Doctor, you must speak now. Who did you protect? Why are we not demanding answers from the most crucial role that *isn't* speaking?"
+                    ]
+                ],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Kiwi",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Kiwi",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Alright everyone, losing Mango on the very first night tells us the Werewolves are certainly among us. It's early, but we need to be sharp from the start. Let's work together; does anyone have any initial thoughts or observations from this morning we should consider?"
+                    ],
+                    [
+                        "player_5",
+                        "Avocado, you're absolutely right. Losing Mango on the first night is a grim start, and it means the Werewolves are definitely in full swing. To counter them, we all need to be incredibly vigilant and, more importantly, vocal. This isn't the time for anyone to hang back; every single person needs to speak up and share any thoughts, even just initial impressions. Who feels off? What are your first instincts? Let's get everything out on the table so we can start scrutinizing each other now."
+                    ],
+                    [
+                        "player_7",
+                        "Yes, Avocado and Apple are absolutely right; losing Mango so early is a clear sign the Werewolves are active. We definitely need to be vigilant and vocal. But let's also remember that while silence can be suspicious, sometimes being *too* quick to point fingers or too assertive in these initial moments can also be a tell. We need to be critical of everyone's words, not just their lack thereof. Does anyone feel like someone's reaction, or lack of one, stands out to them?"
+                    ],
+                    [
+                        "player_6",
+                        "Indeed, losing Mango right off the bat is tough, and I agree with the need for everyone to be engaged. Kiwi makes a very good point though; while silence is definitely something to watch, we also need to be wary of those who are perhaps *too* eager to direct the conversation or jump straight to accusations. It\u2019s easy to get carried away in the fear, but we must be careful not to mistake panic for purpose. Let\u2019s scrutinize everyone\u2019s approach, not just their words."
+                    ],
+                    [
+                        "player_4",
+                        "Indeed, losing Mango so early is a tough blow, and I agree with everyone about the importance of vigilance and vocal participation. However, I share Kiwi and Peach's sentiment that we must also be cautious of those who are overly eager to direct the conversation or jump to conclusions too quickly. Panic can easily be mistaken for purpose in these initial moments. Instead of immediate accusations, let's focus on collecting concrete observations. Did anyone's reaction to Mango's death, or even their *lack* of a strong reaction, particularly stand out to you? Let's scrutinize specific behaviors and words, not just general feelings, to build a more solid foundation for our suspicions."
+                    ],
+                    [
+                        "player_0",
+                        "Everyone's concerns about vigilance and caution are noted, but I have something concrete to share. I am Plum, the Seer, and last night I investigated Avocado. I can confirm Avocado is a Villager. This is our first solid piece of information, confirming one of our own. Now, instead of just general cautions, we need to consider why certain players are so quick to warn against 'eagerness' or 'assertiveness' in a round where we desperately need clear direction. Let's use this information about Avocado to start building our defense, and focus on those who might be trying to obscure progress."
+                    ],
+                    [
+                        "player_3",
+                        "Plum, thank you for that incredibly crucial information. Knowing that Avocado is a Villager and that we have a Seer on our side is exactly the kind of concrete lead we need to start. Now, regarding the previous points, Kiwi, Peach, and Lemon, you've all echoed concerns about being 'too eager' or 'too assertive.' While vigilance is always important, I find it quite striking that this collective caution against 'eagerness' has been the primary focus of your statements, especially *before* any concrete information like Plum's reveal came out. What are your specific thoughts now on Avocado being a confirmed Villager, and on Plum's Seer claim? Are you still advocating for caution when we have our first real piece of evidence, or will you help us build on this to find the Werewolves?"
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "last_protected": "player_7"
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Plum",
+                "player_1": "Avocado",
+                "player_2": "Mango",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Apple",
+                "player_6": "Peach",
+                "player_7": "Kiwi"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Avocado and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Lemon from the game.",
+                "Round 0: Summary: As Plum the Seer, I successfully investigated Avocado, confirming they are a Villager, which I revealed to the group. Mango was removed by Werewolves, and Lemon was voted out by the majority. Apple consistently pushed for vigilance and vocal participation, which seems like a genuine Villager stance. Kiwi, Peach, and Lemon, however, repeatedly cautioned against being 'too eager' or 'too assertive' in the debate, which felt like an attempt to slow progress or obscure immediate action. Pear emerged as a strong potential ally by immediately supporting my Seer claim and directly questioning Kiwi, Peach, and Lemon's collective focus on caution. I will be watching Kiwi and Peach closely, as their earlier comments felt obstructive.",
+                "Round 1: During the night, I decided to investigate Kiwi and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Avocado and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Lemon from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Plum the Seer, I successfully investigated Avocado, confirming they are a Villager, which I revealed to the group. Mango was removed by Werewolves, and Lemon was voted out by the majority. Apple consistently pushed for vigilance and vocal participation, which seems like a genuine Villager stance. Kiwi, Peach, and Lemon, however, repeatedly cautioned against being 'too eager' or 'too assertive' in the debate, which felt like an attempt to slow progress or obscure immediate action. Pear emerged as a strong potential ally by immediately supporting my Seer claim and directly questioning Kiwi, Peach, and Lemon's collective focus on caution. I will be watching Kiwi and Peach closely, as their earlier comments felt obstructive.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Kiwi and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_5"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_1": "Villager",
+                "player_7": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_3",
+                "player_1",
+                "player_5",
+                "player_7",
+                "player_6",
+                "player_0"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_1",
+            "protected": "player_7",
+            "exiled": "player_4",
+            "debate": [
+                [
+                    "player_1",
+                    "Alright everyone, losing Mango on the very first night tells us the Werewolves are certainly among us. It's early, but we need to be sharp from the start. Let's work together; does anyone have any initial thoughts or observations from this morning we should consider?"
+                ],
+                [
+                    "player_5",
+                    "Avocado, you're absolutely right. Losing Mango on the first night is a grim start, and it means the Werewolves are definitely in full swing. To counter them, we all need to be incredibly vigilant and, more importantly, vocal. This isn't the time for anyone to hang back; every single person needs to speak up and share any thoughts, even just initial impressions. Who feels off? What are your first instincts? Let's get everything out on the table so we can start scrutinizing each other now."
+                ],
+                [
+                    "player_7",
+                    "Yes, Avocado and Apple are absolutely right; losing Mango so early is a clear sign the Werewolves are active. We definitely need to be vigilant and vocal. But let's also remember that while silence can be suspicious, sometimes being *too* quick to point fingers or too assertive in these initial moments can also be a tell. We need to be critical of everyone's words, not just their lack thereof. Does anyone feel like someone's reaction, or lack of one, stands out to them?"
+                ],
+                [
+                    "player_6",
+                    "Indeed, losing Mango right off the bat is tough, and I agree with the need for everyone to be engaged. Kiwi makes a very good point though; while silence is definitely something to watch, we also need to be wary of those who are perhaps *too* eager to direct the conversation or jump straight to accusations. It\u2019s easy to get carried away in the fear, but we must be careful not to mistake panic for purpose. Let\u2019s scrutinize everyone\u2019s approach, not just their words."
+                ],
+                [
+                    "player_4",
+                    "Indeed, losing Mango so early is a tough blow, and I agree with everyone about the importance of vigilance and vocal participation. However, I share Kiwi and Peach's sentiment that we must also be cautious of those who are overly eager to direct the conversation or jump to conclusions too quickly. Panic can easily be mistaken for purpose in these initial moments. Instead of immediate accusations, let's focus on collecting concrete observations. Did anyone's reaction to Mango's death, or even their *lack* of a strong reaction, particularly stand out to you? Let's scrutinize specific behaviors and words, not just general feelings, to build a more solid foundation for our suspicions."
+                ],
+                [
+                    "player_0",
+                    "Everyone's concerns about vigilance and caution are noted, but I have something concrete to share. I am Plum, the Seer, and last night I investigated Avocado. I can confirm Avocado is a Villager. This is our first solid piece of information, confirming one of our own. Now, instead of just general cautions, we need to consider why certain players are so quick to warn against 'eagerness' or 'assertiveness' in a round where we desperately need clear direction. Let's use this information about Avocado to start building our defense, and focus on those who might be trying to obscure progress."
+                ],
+                [
+                    "player_3",
+                    "Plum, thank you for that incredibly crucial information. Knowing that Avocado is a Villager and that we have a Seer on our side is exactly the kind of concrete lead we need to start. Now, regarding the previous points, Kiwi, Peach, and Lemon, you've all echoed concerns about being 'too eager' or 'too assertive.' While vigilance is always important, I find it quite striking that this collective caution against 'eagerness' has been the primary focus of your statements, especially *before* any concrete information like Plum's reveal came out. What are your specific thoughts now on Avocado being a confirmed Villager, and on Plum's Seer claim? Are you still advocating for caution when we have our first real piece of evidence, or will you help us build on this to find the Werewolves?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_4",
+                    "player_1": "player_4",
+                    "player_5": "player_4",
+                    "player_7": "player_0",
+                    "player_6": "player_0",
+                    "player_4": "player_3",
+                    "player_0": "player_4"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_3",
+                "player_1",
+                "player_5",
+                "player_7"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_7",
+            "protected": null,
+            "exiled": "player_6",
+            "debate": [
+                [
+                    "player_3",
+                    "Plum's death confirms what many of us suspected: they were our Seer, and the Werewolves took them out for being too effective. This means Avocado is definitively a Villager, a crucial piece of information. Plum, before their death, was suspicious of Kiwi and Peach. Given the Werewolves' choice to eliminate our Seer, it's highly probable they came from that group. We need the Doctor to come forward now. Apple, Kiwi, Peach, what are your thoughts on Plum's information and their suspicions?"
+                ],
+                [
+                    "player_1",
+                    "This is devastating. Plum was indeed our Seer, and their death confirms not only their role but also my own as a Villager. Pear is absolutely right; Plum's suspicions of Kiwi and Peach before their death are now critical information. The Werewolves targeted our Seer for a reason, and it's highly probable Plum was getting too close to their identities. Kiwi, Peach, what are your thoughts on Plum's suspicions of you? We need to hear a clear account from both of you. And Doctor, you are our last line of defense at night. We need you to come forward now. Who are you, and who did you protect last night?"
+                ],
+                [
+                    "player_5",
+                    "Pear and Avocado are absolutely right. Plum's sacrifice has given us two crucial pieces of information: Avocado is a confirmed Villager, and Plum, our Seer, was suspicious of Kiwi and Peach. This isn't something we can ignore. Kiwi, Peach, we need to hear from both of you, clearly and directly. What are your thoughts on Plum's suspicion? What were you doing last night? And to the Doctor, now is the time to come forward. Who are you, and most importantly, who did you protect last night? We cannot afford to lose another Villager, and your information is vital for us to coordinate our defense and vote correctly today."
+                ],
+                [
+                    "player_7",
+                    "This is truly a devastating blow; losing Plum, our Seer, after they confirmed Avocado is a Villager, is a huge setback. I understand why Pear, Avocado, and Apple are quick to point fingers at Peach and me based on Plum's stated suspicion. However, let's consider this: Plum was our Seer, and the Werewolves took them out. Isn't it entirely possible the Werewolves *wanted* Plum to throw suspicion on Peach and me as a last-minute misdirection before their demise, to get us Villagers to waste a vote on an innocent? Werewolves are cunning; focusing solely on Plum's suspicion might be exactly what they want us to do, so the real culprits can escape scrutiny. I am just as eager to find the Werewolves as anyone, but we need to look beyond the obvious. Doctor, your silence is deafening. We need you to speak up now: who are you, and who did you protect last night? This is not the time for hesitating on unconfirmed suspicions; it's time for solid information. Pear, Apple, why are you so dead set on Plum's suspicion without considering other angles?"
+                ],
+                [
+                    "player_6",
+                    "Losing Plum, our Seer who confirmed Avocado, is truly devastating. And yes, Plum did express suspicion towards Kiwi and me. I hear Pear, Avocado, and Apple's immediate focus on this. But consider this: Plum was our Seer, and the Werewolves took them out for being effective. Isn't it possible this 'suspicion' was either a mistake on Plum's part, or even a clever misdirection planted by the Werewolves, *knowing* Plum would be targeted, to make us waste a vote? The swift and unified accusation from Pear, Avocado, and Apple, while the Doctor remains completely silent, feels almost *too* convenient. We have a confirmed Villager and a silent Doctor whose information about last night is far more critical than rehashing unconfirmed suspicions. Doctor, you must speak now. Who did you protect? Why are we not demanding answers from the most crucial role that *isn't* speaking?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_6",
+                    "player_1": "player_6",
+                    "player_5": "player_6",
+                    "player_7": "player_3",
+                    "player_6": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_1",
+                "player_5"
+            ],
+            "eliminated": "player_3",
+            "unmasked": null,
+            "protected": null,
+            "exiled": "player_7",
+            "debate": [
+                [
+                    "player_1",
+                    "The situation is dire, everyone. With Pear gone, only three of us remain: Kiwi, Apple, and myself. This is it\u2014we have to find the last Werewolf today, or they win. Let\u2019s remember Plum, our confirmed Seer who was killed by the Werewolves, and the critical information she left us. Plum confirmed me as a Villager, and she strongly suspected Kiwi. Kiwi, you immediately tried to discredit Plum's insight, and Pear, who was just killed by the Werewolves, also backed Plum\u2019s suspicion against you. This makes you my prime suspect, Kiwi. Apple, you've consistently supported the Seer and the Village; what are your thoughts? And finally, Doctor, your silence has been costly. If you are still among us, you must reveal yourself now and share any information you have. Otherwise, I am ready to vote for Kiwi."
+                ],
+                [
+                    "player_5",
+                    "Avocado, I completely agree with your assessment. Plum, our Seer, confirmed you as a Villager and was absolutely suspicious of Kiwi. Pear, who the Werewolves just eliminated, reinforced that same suspicion. Kiwi, your immediate attempts to dismiss Plum's dying information in Round 1 were highly suspicious then, and they're even more damning now. We're at a 2 Villager versus 1 Werewolf endgame. If the Doctor was still with us and wasn't Kiwi, they would have revealed to avert this crisis. All the evidence points to Kiwi being the last Werewolf. We must vote for Kiwi today to win."
+                ],
+                [
+                    "player_7",
+                    "We're at the precipice, and we absolutely cannot afford a mistake. Avocado, Apple, you both echo Plum's suspicion of me, but let's remember Plum only *confirmed* Avocado as a Villager, not my role. Suspicion is not certainty. Pear also reiterated suspicion, not a confirmed fact. What *is* a confirmed fact is the Doctor's complete and utter silence. Both of you brought it up. Why, in this critical, final moment, has the Doctor still not come forward? If the Doctor is among us and *not* the Werewolf, their silence is far more damning than any past suspicion. Why are you both so eager to shut down any further inquiry into that, to rush this vote based on old suspicions rather than addressing the glaring absence of our Doctor? That silence is a massive red flag that we are overlooking at our peril."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_7",
+                    "player_5": "player_7",
+                    "player_7": "player_5"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Villagers"
+}

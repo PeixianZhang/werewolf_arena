@@ -31,9 +31,9 @@ ANONYMOUS_MODE = True
 # Fruit codenames shown in anonymous mode (display only; not real identities).
 ANONYMOUS_FIXED_NAMES = [
     "Apple",
-    "Banana",
-    "Cherry",
-    "Grape",
+    "Avocado",
+    "Orange",
+    "Lemon",
     "Kiwi",
     "Mango",
     "Peach",

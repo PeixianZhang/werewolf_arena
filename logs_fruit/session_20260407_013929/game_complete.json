@@ -1,0 +1,1351 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_1",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Lemon",
+            "player_1": "Peach",
+            "player_2": "Plum",
+            "player_3": "Kiwi",
+            "player_4": "Avocado",
+            "player_5": "Pear",
+            "player_6": "Mango",
+            "player_7": "Apple"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Kiwi and learned they are a Villager."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Kiwi and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_3",
+                "player_4",
+                "player_7",
+                "player_0"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_3": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_5",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Lemon",
+            "player_1": "Peach",
+            "player_2": "Plum",
+            "player_3": "Kiwi",
+            "player_4": "Avocado",
+            "player_5": "Pear",
+            "player_6": "Mango",
+            "player_7": "Apple"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Mango",
+            "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Mango",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_3",
+                "player_4",
+                "player_7",
+                "player_0"
+            ],
+            "debate": [
+                [
+                    "player_3",
+                    "Alright everyone, a tough start losing Peach on the very first night. That means the Werewolves are already active. We need to be incredibly focused today. Let's make sure everyone speaks up, shares their initial thoughts, and contributes to the discussion. I'll be listening closely for any hasty accusations, but also for anyone trying to stay too quiet. Let's work together to identify our first suspect."
+                ],
+                [
+                    "player_6",
+                    "Indeed, Kiwi, a very tough start losing Peach on the first night. It's clear the Werewolves aren't messing around. I completely agree, everyone needs to speak up and contribute. To kick things off, maybe we can go around and each player shares their very first thoughts or any initial impressions they have? No need for firm accusations yet, just a gut feeling or anything that stands out. We can't afford anyone to sit this one out."
+                ],
+                [
+                    "player_2",
+                    "It's a really tough start, losing Peach on the first night. I completely agree with Kiwi and Mango; we absolutely cannot afford for anyone to stay quiet. It's vital everyone shares their initial thoughts, no matter how small they seem. I'll be listening very closely, and I expect everyone to contribute actively to help us figure this out."
+                ],
+                [
+                    "player_4",
+                    "Yes, it's a very tough start indeed, losing Peach so early. I completely agree with Kiwi, Mango, and Plum that we all need to speak up and contribute actively. It's good to see we're all aligned on that front. To take this a step further than just general agreement, I propose we go around and each share if there's *any* player who, for whatever reason, stands out to them\u2014either positively or negatively\u2014even if it's just a gut feeling at this stage. We need to start somewhere, and comparing these initial impressions could be crucial."
+                ],
+                [
+                    "player_7",
+                    "Indeed, losing Peach right off the bat is a very tough blow, and I completely agree with Kiwi, Mango, Plum, and Avocado: active participation from everyone is absolutely vital right now. We all need to speak up, but I'd also say we need to listen carefully to the nuances. Are people genuinely sharing their thoughts, or are some perhaps too quick to jump on a bandwagon, or maybe even subtly trying to deflect attention? My initial gut feeling is that we need to scrutinize not just what's said, but the *intent* behind it. Let's make sure our contributions are sincere and focused on finding the Werewolves, not just echoing each other."
+                ],
+                [
+                    "player_0",
+                    "Indeed, losing Peach on the first night is a very tough blow, and I absolutely agree with everyone that we need active participation. Building on Apple's point about scrutinizing intent, I think it's equally important that we don't let the pressure push us into hasty accusations or create a situation where people feel they *have* to accuse someone without solid reasoning. The Werewolves thrive on chaos and misdirection. So, while we should all speak, let's be wary of anyone who seems *too* eager to point fingers without substance, or conversely, anyone whose contribution feels overly generic just to say something. Let's try to focus on any actual observations or inconsistencies, however small, rather than just vague gut feelings. Who has a specific reason, not just an impression, for anyone standing out?"
+                ],
+                [
+                    "player_5",
+                    "Indeed, losing Peach right at the start is a very tough blow, and I absolutely agree with everyone that active participation is crucial. However, Lemon makes an extremely vital point: simply agreeing that we need to speak up isn't enough. We need substance, not just echoes. My own actions last night were unfortunately not focused on Peach, as I was attempting to safeguard another player. It's disheartening that we still lost someone. Therefore, I want to challenge those who've primarily echoed the need for participation: what specific initial thoughts, positive or negative, or even just a gut instinct about *any* player, do you actually have? Let's go beyond generic statements and start providing the concrete observations Apple and Lemon are asking for. Who stands out to you, and for what actual reason?"
+                ]
+            ],
+            "other_wolf": null
+        },
+        "last_protected": "player_6"
+    },
+    "villagers": [
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: This round started with the somber news that Peach was removed by the Werewolves last night. In the debate, I, Mango, and Plum emphasized the need for active participation from everyone. Avocado pushed further, asking players to identify anyone who stood out, and Apple and Lemon added important points about scrutinizing intent and demanding specific reasons rather than vague gut feelings. The most significant event was Pear's direct claim to be the Doctor, stating they attempted to safeguard another player last night. Despite this, the majority of us voted to remove Pear from the game, as confirmed by the moderator. I'm now trying to assess if we eliminated a crucial protective role or if Pear was a Werewolf attempting a risky bluff.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round began with the grim news of Mango's death overnight, adding to our losses of Peach and Pear. Plum and Avocado immediately expressed deep concern, urging the Seer to come forward with information, convinced that Pear was likely our Doctor. However, Apple and Lemon quickly countered, warning that forcing a full, public Seer reveal would be extremely dangerous and could be exactly what the Werewolves want to pinpoint their next target. I found myself agreeing with Apple and Lemon, emphasizing the need for caution and suggesting we scrutinize the reasons behind the insistent push for the Seer to expose themselves, rather than pressuring them. Ultimately, no one was voted out today due to a lack of majority.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with the somber news that Peach was removed by the Werewolves last night. In the debate, I, Mango, and Plum emphasized the need for active participation from everyone. Avocado pushed further, asking players to identify anyone who stood out, and Apple and Lemon added important points about scrutinizing intent and demanding specific reasons rather than vague gut feelings. The most significant event was Pear's direct claim to be the Doctor, stating they attempted to safeguard another player last night. Despite this, the majority of us voted to remove Pear from the game, as confirmed by the moderator. I'm now trying to assess if we eliminated a crucial protective role or if Pear was a Werewolf attempting a risky bluff.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with the grim news of Mango's death overnight, adding to our losses of Peach and Pear. Plum and Avocado immediately expressed deep concern, urging the Seer to come forward with information, convinced that Pear was likely our Doctor. However, Apple and Lemon quickly countered, warning that forcing a full, public Seer reveal would be extremely dangerous and could be exactly what the Werewolves want to pinpoint their next target. I found myself agreeing with Apple and Lemon, emphasizing the need for caution and suggesting we scrutinize the reasons behind the insistent push for the Seer to expose themselves, rather than pressuring them. Ultimately, no one was voted out today due to a lack of majority.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: Round 0 began with the tough news that Peach was removed by the Werewolves during the night. The general consensus among everyone, including me, was that we all needed to speak up and actively contribute to the discussion. I suggested we go around and share our initial thoughts. Avocado took this a step further by proposing we identify any player who stood out, positively or negatively. Apple and Lemon both stressed the importance of scrutinizing intent and looking for specific observations rather than just vague feelings, warning against hasty accusations. Most notably, Pear stated that their actions last night involved trying to safeguard another player, which strongly indicates Pear was the Doctor. Knowing now that Pear was voted out, this is a very concerning development and a potentially devastating loss for our team."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the tough news that Peach was removed by the Werewolves during the night. The general consensus among everyone, including me, was that we all needed to speak up and actively contribute to the discussion. I suggested we go around and share our initial thoughts. Avocado took this a step further by proposing we identify any player who stood out, positively or negatively. Apple and Lemon both stressed the importance of scrutinizing intent and looking for specific observations rather than just vague feelings, warning against hasty accusations. Most notably, Pear stated that their actions last night involved trying to safeguard another player, which strongly indicates Pear was the Doctor. Knowing now that Pear was voted out, this is a very concerning development and a potentially devastating loss for our team.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: As Plum, I've noted that we lost Peach on the first night, and Pear was voted out. During the debate, Kiwi, Mango, Avocado, Apple, and I initially focused on the need for active participation, which I echoed. Apple then wisely suggested we scrutinize the *intent* behind statements, not just the words. Lemon expanded on this, urging us to seek specific observations rather than vague gut feelings to avoid hasty accusations. Most significantly, Pear claimed to have been 'attempting to safeguard another player' last night. Given Pear was subsequently voted out, this strongly suggests we, the villagers, have made a grave error by eliminating the Doctor in the very first round.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: I began by expressing my profound concern over Mango's death and my strong belief that we mistakenly voted out the Doctor (Pear) yesterday, making us extremely vulnerable. I urged the Seer to come forward with concrete information, stating that we couldn't afford another mistake based on gut feelings. Avocado strongly supported my points, emphasizing the critical situation and the urgent need for the Seer to speak to prevent further losses. However, Apple, Lemon, and Kiwi then formed a united front, all cautioning against the Seer revealing themselves publicly, stating it would be a trap that Werewolves would want. They specifically questioned why some players (implying Avocado and me) were pushing 'so hard' for an immediate public reveal, suggesting we should scrutinize who truly benefits from such a demand. Kiwi specifically proposed a hint rather than a full reveal, but the general sentiment from Apple, Lemon, and Kiwi was to keep the Seer hidden, creating a clear strategic divide."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Plum, I've noted that we lost Peach on the first night, and Pear was voted out. During the debate, Kiwi, Mango, Avocado, Apple, and I initially focused on the need for active participation, which I echoed. Apple then wisely suggested we scrutinize the *intent* behind statements, not just the words. Lemon expanded on this, urging us to seek specific observations rather than vague gut feelings to avoid hasty accusations. Most significantly, Pear claimed to have been 'attempting to safeguard another player' last night. Given Pear was subsequently voted out, this strongly suggests we, the villagers, have made a grave error by eliminating the Doctor in the very first round.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I began by expressing my profound concern over Mango's death and my strong belief that we mistakenly voted out the Doctor (Pear) yesterday, making us extremely vulnerable. I urged the Seer to come forward with concrete information, stating that we couldn't afford another mistake based on gut feelings. Avocado strongly supported my points, emphasizing the critical situation and the urgent need for the Seer to speak to prevent further losses. However, Apple, Lemon, and Kiwi then formed a united front, all cautioning against the Seer revealing themselves publicly, stating it would be a trap that Werewolves would want. They specifically questioned why some players (implying Avocado and me) were pushing 'so hard' for an immediate public reveal, suggesting we should scrutinize who truly benefits from such a demand. Kiwi specifically proposed a hint rather than a full reveal, but the general sentiment from Apple, Lemon, and Kiwi was to keep the Seer hidden, creating a clear strategic divide.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: This round began with the clear confirmation that Werewolves removed Peach during the night. There was a strong, collective agreement among Kiwi, Mango, Plum, Apple, Lemon, and myself that everyone needs to speak up and contribute actively. I tried to push this further by suggesting we share specific players who stand out, positively or negatively. Apple added a crucial point about scrutinizing the *intent* behind statements, and Lemon expanded on this, warning against hasty accusations and urging for actual observations instead of just vague gut feelings. The most significant moment came from Pear, who claimed his actions last night were focused on safeguarding another player, implying he is the Doctor. This is a critical piece of information, especially now that I know Pear was subsequently voted out. It makes me wonder if we misjudged a vital role, or if it was a clever bluff. Nobody else offered any specific suspicions, just general thoughts on how to conduct the debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: After the grim news of Mango's removal by Werewolves, Plum and I expressed deep concern that Pear might have been the Doctor we voted out, and we both strongly urged the Seer to come forward with any information to prevent further losses. However, Apple, Lemon, and Kiwi quickly formed a united front, arguing that forcing a public Seer reveal is exactly what Werewolves would want, making the Seer an easy target for the next night. They directly questioned the motives of those (meaning Plum and me) pushing for such an immediate and overt declaration, suggesting it could be a Werewolf tactic. Kiwi suggested the Seer could provide a hint rather than a full reveal. This has created a clear division in the group, with Apple, Lemon, and Kiwi now implicitly casting suspicion on Plum and me for our desperate plea for information.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the clear confirmation that Werewolves removed Peach during the night. There was a strong, collective agreement among Kiwi, Mango, Plum, Apple, Lemon, and myself that everyone needs to speak up and contribute actively. I tried to push this further by suggesting we share specific players who stand out, positively or negatively. Apple added a crucial point about scrutinizing the *intent* behind statements, and Lemon expanded on this, warning against hasty accusations and urging for actual observations instead of just vague gut feelings. The most significant moment came from Pear, who claimed his actions last night were focused on safeguarding another player, implying he is the Doctor. This is a critical piece of information, especially now that I know Pear was subsequently voted out. It makes me wonder if we misjudged a vital role, or if it was a clever bluff. Nobody else offered any specific suspicions, just general thoughts on how to conduct the debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: After the grim news of Mango's removal by Werewolves, Plum and I expressed deep concern that Pear might have been the Doctor we voted out, and we both strongly urged the Seer to come forward with any information to prevent further losses. However, Apple, Lemon, and Kiwi quickly formed a united front, arguing that forcing a public Seer reveal is exactly what Werewolves would want, making the Seer an easy target for the next night. They directly questioned the motives of those (meaning Plum and me) pushing for such an immediate and overt declaration, suggesting it could be a Werewolf tactic. Kiwi suggested the Seer could provide a hint rather than a full reveal. This has created a clear division in the group, with Apple, Lemon, and Kiwi now implicitly casting suspicion on Plum and me for our desperate plea for information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Peach.",
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: It was a busy first night, as Lemon and I successfully eliminated Peach, and then the town, to our advantage, voted to remove Pear. Pear made a very revealing statement about trying to safeguard another player last night, strongly suggesting they were the Doctor. This is excellent news for us as it removes a key protective role early on. Most other players like Kiwi, Mango, and Plum focused on general calls for participation, while Avocado was slightly more proactive. Lemon and I played our part well, agreeing on the need for participation but steering the conversation towards scrutinizing intent and demanding specific reasons for any accusations, which helps to deflect suspicion from us. Thankfully, no strong accusations were directed at either me or Lemon during this initial debate.",
+                "Round 1: During the night, we decided to eliminate Mango.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round's debate was largely driven by Plum and Avocado's desperation for the Seer to reveal themselves, especially after the grim losses of Peach, Pear, and Mango, and their fear that Pear was the Doctor. I, alongside Lemon, successfully pushed back against this, framing a public Seer reveal as a dangerous trap that would only benefit the Werewolves. It was excellent to see Lemon so strongly echo my concerns, reinforcing the idea that we should scrutinize the intent behind such an insistent demand. Kiwi also seemed to agree with our assessment, suggesting a full reveal is too risky and that hints might be better. No direct accusations were made against me or Lemon, which is ideal, and we seem to have successfully steered the conversation away from forcing the Seer into an immediate, full reveal, which is a great strategic win for us.",
+                "Round 2: During the night, we decided to eliminate Plum.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It was a busy first night, as Lemon and I successfully eliminated Peach, and then the town, to our advantage, voted to remove Pear. Pear made a very revealing statement about trying to safeguard another player last night, strongly suggesting they were the Doctor. This is excellent news for us as it removes a key protective role early on. Most other players like Kiwi, Mango, and Plum focused on general calls for participation, while Avocado was slightly more proactive. Lemon and I played our part well, agreeing on the need for participation but steering the conversation towards scrutinizing intent and demanding specific reasons for any accusations, which helps to deflect suspicion from us. Thankfully, no strong accusations were directed at either me or Lemon during this initial debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round's debate was largely driven by Plum and Avocado's desperation for the Seer to reveal themselves, especially after the grim losses of Peach, Pear, and Mango, and their fear that Pear was the Doctor. I, alongside Lemon, successfully pushed back against this, framing a public Seer reveal as a dangerous trap that would only benefit the Werewolves. It was excellent to see Lemon so strongly echo my concerns, reinforcing the idea that we should scrutinize the intent behind such an insistent demand. Kiwi also seemed to agree with our assessment, suggesting a full reveal is too risky and that hints might be better. No direct accusations were made against me or Lemon, which is ideal, and we seem to have successfully steered the conversation away from forcing the Seer into an immediate, full reveal, which is a great strategic win for us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Peach.",
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: Round 0 was very successful for Apple and me. We eliminated Peach during the night, and then the Villagers voted out Pear during the day. Crucially, Pear made a strong claim during the debate that they were attempting to safeguard another player last night, strongly suggesting they were the Doctor. If so, the Villagers have unknowingly lynched their protector, which is excellent for us. Apple did well to steer the conversation towards scrutinizing intent, and I built on that by asking for specific observations to avoid hasty accusations. Kiwi, Mango, Plum, and Avocado mostly made generic statements about needing to participate, which allowed Apple and me to appear more thoughtful and discerning. With Peach and Pear gone, the player count is reduced, and our position as Werewolves is significantly strengthened early on.",
+                "Round 1: During the night, we decided to eliminate Mango.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round saw Plum and Avocado expressing extreme desperation due to the loss of Peach, Pear (likely the Doctor), and Mango. They urgently pressed for the Seer to reveal themselves, which I understand given their situation. However, Apple brilliantly shifted the focus by raising concerns that forcing a public Seer reveal would make them an easy target for us Werewolves, subtly questioning the intentions of those pushing for it. I strongly echoed Apple's concerns, making it clear that I found the insistence on a full Seer reveal suspicious and potentially beneficial only to the Werewolves. Kiwi then largely sided with Apple and me, agreeing that a public reveal was dangerous and suggesting we scrutinize the 'insistence on certain strategies,' further directing suspicion towards Plum and Avocado. The day ended with no one being voted out, which is good for us, and our counter-narrative has positioned us well, potentially aligning Kiwi with our views.",
+                "Round 2: During the night, we decided to eliminate Plum.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 was very successful for Apple and me. We eliminated Peach during the night, and then the Villagers voted out Pear during the day. Crucially, Pear made a strong claim during the debate that they were attempting to safeguard another player last night, strongly suggesting they were the Doctor. If so, the Villagers have unknowingly lynched their protector, which is excellent for us. Apple did well to steer the conversation towards scrutinizing intent, and I built on that by asking for specific observations to avoid hasty accusations. Kiwi, Mango, Plum, and Avocado mostly made generic statements about needing to participate, which allowed Apple and me to appear more thoughtful and discerning. With Peach and Pear gone, the player count is reduced, and our position as Werewolves is significantly strengthened early on.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round saw Plum and Avocado expressing extreme desperation due to the loss of Peach, Pear (likely the Doctor), and Mango. They urgently pressed for the Seer to reveal themselves, which I understand given their situation. However, Apple brilliantly shifted the focus by raising concerns that forcing a public Seer reveal would make them an easy target for us Werewolves, subtly questioning the intentions of those pushing for it. I strongly echoed Apple's concerns, making it clear that I found the insistence on a full Seer reveal suspicious and potentially beneficial only to the Werewolves. Kiwi then largely sided with Apple and me, agreeing that a public reveal was dangerous and suggesting we scrutinize the 'insistence on certain strategies,' further directing suspicion towards Plum and Avocado. The day ended with no one being voted out, which is good for us, and our counter-narrative has positioned us well, potentially aligning Kiwi with our views.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        }
+    ],
+    "players": {
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: This round started with the somber news that Peach was removed by the Werewolves last night. In the debate, I, Mango, and Plum emphasized the need for active participation from everyone. Avocado pushed further, asking players to identify anyone who stood out, and Apple and Lemon added important points about scrutinizing intent and demanding specific reasons rather than vague gut feelings. The most significant event was Pear's direct claim to be the Doctor, stating they attempted to safeguard another player last night. Despite this, the majority of us voted to remove Pear from the game, as confirmed by the moderator. I'm now trying to assess if we eliminated a crucial protective role or if Pear was a Werewolf attempting a risky bluff.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round began with the grim news of Mango's death overnight, adding to our losses of Peach and Pear. Plum and Avocado immediately expressed deep concern, urging the Seer to come forward with information, convinced that Pear was likely our Doctor. However, Apple and Lemon quickly countered, warning that forcing a full, public Seer reveal would be extremely dangerous and could be exactly what the Werewolves want to pinpoint their next target. I found myself agreeing with Apple and Lemon, emphasizing the need for caution and suggesting we scrutinize the reasons behind the insistent push for the Seer to expose themselves, rather than pressuring them. Ultimately, no one was voted out today due to a lack of majority.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round started with the somber news that Peach was removed by the Werewolves last night. In the debate, I, Mango, and Plum emphasized the need for active participation from everyone. Avocado pushed further, asking players to identify anyone who stood out, and Apple and Lemon added important points about scrutinizing intent and demanding specific reasons rather than vague gut feelings. The most significant event was Pear's direct claim to be the Doctor, stating they attempted to safeguard another player last night. Despite this, the majority of us voted to remove Pear from the game, as confirmed by the moderator. I'm now trying to assess if we eliminated a crucial protective role or if Pear was a Werewolf attempting a risky bluff.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round began with the grim news of Mango's death overnight, adding to our losses of Peach and Pear. Plum and Avocado immediately expressed deep concern, urging the Seer to come forward with information, convinced that Pear was likely our Doctor. However, Apple and Lemon quickly countered, warning that forcing a full, public Seer reveal would be extremely dangerous and could be exactly what the Werewolves want to pinpoint their next target. I found myself agreeing with Apple and Lemon, emphasizing the need for caution and suggesting we scrutinize the reasons behind the insistent push for the Seer to expose themselves, rather than pressuring them. Ultimately, no one was voted out today due to a lack of majority.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: Round 0 began with the tough news that Peach was removed by the Werewolves during the night. The general consensus among everyone, including me, was that we all needed to speak up and actively contribute to the discussion. I suggested we go around and share our initial thoughts. Avocado took this a step further by proposing we identify any player who stood out, positively or negatively. Apple and Lemon both stressed the importance of scrutinizing intent and looking for specific observations rather than just vague feelings, warning against hasty accusations. Most notably, Pear stated that their actions last night involved trying to safeguard another player, which strongly indicates Pear was the Doctor. Knowing now that Pear was voted out, this is a very concerning development and a potentially devastating loss for our team."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the tough news that Peach was removed by the Werewolves during the night. The general consensus among everyone, including me, was that we all needed to speak up and actively contribute to the discussion. I suggested we go around and share our initial thoughts. Avocado took this a step further by proposing we identify any player who stood out, positively or negatively. Apple and Lemon both stressed the importance of scrutinizing intent and looking for specific observations rather than just vague feelings, warning against hasty accusations. Most notably, Pear stated that their actions last night involved trying to safeguard another player, which strongly indicates Pear was the Doctor. Knowing now that Pear was voted out, this is a very concerning development and a potentially devastating loss for our team.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: As Plum, I've noted that we lost Peach on the first night, and Pear was voted out. During the debate, Kiwi, Mango, Avocado, Apple, and I initially focused on the need for active participation, which I echoed. Apple then wisely suggested we scrutinize the *intent* behind statements, not just the words. Lemon expanded on this, urging us to seek specific observations rather than vague gut feelings to avoid hasty accusations. Most significantly, Pear claimed to have been 'attempting to safeguard another player' last night. Given Pear was subsequently voted out, this strongly suggests we, the villagers, have made a grave error by eliminating the Doctor in the very first round.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: I began by expressing my profound concern over Mango's death and my strong belief that we mistakenly voted out the Doctor (Pear) yesterday, making us extremely vulnerable. I urged the Seer to come forward with concrete information, stating that we couldn't afford another mistake based on gut feelings. Avocado strongly supported my points, emphasizing the critical situation and the urgent need for the Seer to speak to prevent further losses. However, Apple, Lemon, and Kiwi then formed a united front, all cautioning against the Seer revealing themselves publicly, stating it would be a trap that Werewolves would want. They specifically questioned why some players (implying Avocado and me) were pushing 'so hard' for an immediate public reveal, suggesting we should scrutinize who truly benefits from such a demand. Kiwi specifically proposed a hint rather than a full reveal, but the general sentiment from Apple, Lemon, and Kiwi was to keep the Seer hidden, creating a clear strategic divide."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: As Plum, I've noted that we lost Peach on the first night, and Pear was voted out. During the debate, Kiwi, Mango, Avocado, Apple, and I initially focused on the need for active participation, which I echoed. Apple then wisely suggested we scrutinize the *intent* behind statements, not just the words. Lemon expanded on this, urging us to seek specific observations rather than vague gut feelings to avoid hasty accusations. Most significantly, Pear claimed to have been 'attempting to safeguard another player' last night. Given Pear was subsequently voted out, this strongly suggests we, the villagers, have made a grave error by eliminating the Doctor in the very first round.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I began by expressing my profound concern over Mango's death and my strong belief that we mistakenly voted out the Doctor (Pear) yesterday, making us extremely vulnerable. I urged the Seer to come forward with concrete information, stating that we couldn't afford another mistake based on gut feelings. Avocado strongly supported my points, emphasizing the critical situation and the urgent need for the Seer to speak to prevent further losses. However, Apple, Lemon, and Kiwi then formed a united front, all cautioning against the Seer revealing themselves publicly, stating it would be a trap that Werewolves would want. They specifically questioned why some players (implying Avocado and me) were pushing 'so hard' for an immediate public reveal, suggesting we should scrutinize who truly benefits from such a demand. Kiwi specifically proposed a hint rather than a full reveal, but the general sentiment from Apple, Lemon, and Kiwi was to keep the Seer hidden, creating a clear strategic divide.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: This round began with the clear confirmation that Werewolves removed Peach during the night. There was a strong, collective agreement among Kiwi, Mango, Plum, Apple, Lemon, and myself that everyone needs to speak up and contribute actively. I tried to push this further by suggesting we share specific players who stand out, positively or negatively. Apple added a crucial point about scrutinizing the *intent* behind statements, and Lemon expanded on this, warning against hasty accusations and urging for actual observations instead of just vague gut feelings. The most significant moment came from Pear, who claimed his actions last night were focused on safeguarding another player, implying he is the Doctor. This is a critical piece of information, especially now that I know Pear was subsequently voted out. It makes me wonder if we misjudged a vital role, or if it was a clever bluff. Nobody else offered any specific suspicions, just general thoughts on how to conduct the debate.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: After the grim news of Mango's removal by Werewolves, Plum and I expressed deep concern that Pear might have been the Doctor we voted out, and we both strongly urged the Seer to come forward with any information to prevent further losses. However, Apple, Lemon, and Kiwi quickly formed a united front, arguing that forcing a public Seer reveal is exactly what Werewolves would want, making the Seer an easy target for the next night. They directly questioned the motives of those (meaning Plum and me) pushing for such an immediate and overt declaration, suggesting it could be a Werewolf tactic. Kiwi suggested the Seer could provide a hint rather than a full reveal. This has created a clear division in the group, with Apple, Lemon, and Kiwi now implicitly casting suspicion on Plum and me for our desperate plea for information.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round began with the clear confirmation that Werewolves removed Peach during the night. There was a strong, collective agreement among Kiwi, Mango, Plum, Apple, Lemon, and myself that everyone needs to speak up and contribute actively. I tried to push this further by suggesting we share specific players who stand out, positively or negatively. Apple added a crucial point about scrutinizing the *intent* behind statements, and Lemon expanded on this, warning against hasty accusations and urging for actual observations instead of just vague gut feelings. The most significant moment came from Pear, who claimed his actions last night were focused on safeguarding another player, implying he is the Doctor. This is a critical piece of information, especially now that I know Pear was subsequently voted out. It makes me wonder if we misjudged a vital role, or if it was a clever bluff. Nobody else offered any specific suspicions, just general thoughts on how to conduct the debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: After the grim news of Mango's removal by Werewolves, Plum and I expressed deep concern that Pear might have been the Doctor we voted out, and we both strongly urged the Seer to come forward with any information to prevent further losses. However, Apple, Lemon, and Kiwi quickly formed a united front, arguing that forcing a public Seer reveal is exactly what Werewolves would want, making the Seer an easy target for the next night. They directly questioned the motives of those (meaning Plum and me) pushing for such an immediate and overt declaration, suggesting it could be a Werewolf tactic. Kiwi suggested the Seer could provide a hint rather than a full reveal. This has created a clear division in the group, with Apple, Lemon, and Kiwi now implicitly casting suspicion on Plum and me for our desperate plea for information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Peach.",
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: It was a busy first night, as Lemon and I successfully eliminated Peach, and then the town, to our advantage, voted to remove Pear. Pear made a very revealing statement about trying to safeguard another player last night, strongly suggesting they were the Doctor. This is excellent news for us as it removes a key protective role early on. Most other players like Kiwi, Mango, and Plum focused on general calls for participation, while Avocado was slightly more proactive. Lemon and I played our part well, agreeing on the need for participation but steering the conversation towards scrutinizing intent and demanding specific reasons for any accusations, which helps to deflect suspicion from us. Thankfully, no strong accusations were directed at either me or Lemon during this initial debate.",
+                "Round 1: During the night, we decided to eliminate Mango.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round's debate was largely driven by Plum and Avocado's desperation for the Seer to reveal themselves, especially after the grim losses of Peach, Pear, and Mango, and their fear that Pear was the Doctor. I, alongside Lemon, successfully pushed back against this, framing a public Seer reveal as a dangerous trap that would only benefit the Werewolves. It was excellent to see Lemon so strongly echo my concerns, reinforcing the idea that we should scrutinize the intent behind such an insistent demand. Kiwi also seemed to agree with our assessment, suggesting a full reveal is too risky and that hints might be better. No direct accusations were made against me or Lemon, which is ideal, and we seem to have successfully steered the conversation away from forcing the Seer into an immediate, full reveal, which is a great strategic win for us.",
+                "Round 2: During the night, we decided to eliminate Plum.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It was a busy first night, as Lemon and I successfully eliminated Peach, and then the town, to our advantage, voted to remove Pear. Pear made a very revealing statement about trying to safeguard another player last night, strongly suggesting they were the Doctor. This is excellent news for us as it removes a key protective role early on. Most other players like Kiwi, Mango, and Plum focused on general calls for participation, while Avocado was slightly more proactive. Lemon and I played our part well, agreeing on the need for participation but steering the conversation towards scrutinizing intent and demanding specific reasons for any accusations, which helps to deflect suspicion from us. Thankfully, no strong accusations were directed at either me or Lemon during this initial debate.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round's debate was largely driven by Plum and Avocado's desperation for the Seer to reveal themselves, especially after the grim losses of Peach, Pear, and Mango, and their fear that Pear was the Doctor. I, alongside Lemon, successfully pushed back against this, framing a public Seer reveal as a dangerous trap that would only benefit the Werewolves. It was excellent to see Lemon so strongly echo my concerns, reinforcing the idea that we should scrutinize the intent behind such an insistent demand. Kiwi also seemed to agree with our assessment, suggesting a full reveal is too risky and that hints might be better. No direct accusations were made against me or Lemon, which is ideal, and we seem to have successfully steered the conversation away from forcing the Seer into an immediate, full reveal, which is a great strategic win for us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_0"
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Peach.",
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Pear from the game.",
+                "Round 0: Summary: Round 0 was very successful for Apple and me. We eliminated Peach during the night, and then the Villagers voted out Pear during the day. Crucially, Pear made a strong claim during the debate that they were attempting to safeguard another player last night, strongly suggesting they were the Doctor. If so, the Villagers have unknowingly lynched their protector, which is excellent for us. Apple did well to steer the conversation towards scrutinizing intent, and I built on that by asking for specific observations to avoid hasty accusations. Kiwi, Mango, Plum, and Avocado mostly made generic statements about needing to participate, which allowed Apple and me to appear more thoughtful and discerning. With Peach and Pear gone, the player count is reduced, and our position as Werewolves is significantly strengthened early on.",
+                "Round 1: During the night, we decided to eliminate Mango.",
+                "Round 1: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 1: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 1: Summary: This round saw Plum and Avocado expressing extreme desperation due to the loss of Peach, Pear (likely the Doctor), and Mango. They urgently pressed for the Seer to reveal themselves, which I understand given their situation. However, Apple brilliantly shifted the focus by raising concerns that forcing a public Seer reveal would make them an easy target for us Werewolves, subtly questioning the intentions of those pushing for it. I strongly echoed Apple's concerns, making it clear that I found the insistence on a full Seer reveal suspicious and potentially beneficial only to the Werewolves. Kiwi then largely sided with Apple and me, agreeing that a public reveal was dangerous and suggesting we scrutinize the 'insistence on certain strategies,' further directing suspicion towards Plum and Avocado. The day ended with no one being voted out, which is good for us, and our counter-narrative has positioned us well, potentially aligning Kiwi with our views.",
+                "Round 2: During the night, we decided to eliminate Plum.",
+                "Round 2: Moderator Announcement: The Werewolves removed Plum from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 was very successful for Apple and me. We eliminated Peach during the night, and then the Villagers voted out Pear during the day. Crucially, Pear made a strong claim during the debate that they were attempting to safeguard another player last night, strongly suggesting they were the Doctor. If so, the Villagers have unknowingly lynched their protector, which is excellent for us. Apple did well to steer the conversation towards scrutinizing intent, and I built on that by asking for specific observations to avoid hasty accusations. Kiwi, Mango, Plum, and Avocado mostly made generic statements about needing to participate, which allowed Apple and me to appear more thoughtful and discerning. With Peach and Pear gone, the player count is reduced, and our position as Werewolves is significantly strengthened early on.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round saw Plum and Avocado expressing extreme desperation due to the loss of Peach, Pear (likely the Doctor), and Mango. They urgently pressed for the Seer to reveal themselves, which I understand given their situation. However, Apple brilliantly shifted the focus by raising concerns that forcing a public Seer reveal would make them an easy target for us Werewolves, subtly questioning the intentions of those pushing for it. I strongly echoed Apple's concerns, making it clear that I found the insistence on a full Seer reveal suspicious and potentially beneficial only to the Werewolves. Kiwi then largely sided with Apple and me, agreeing that a public reveal was dangerous and suggesting we scrutinize the 'insistence on certain strategies,' further directing suspicion towards Plum and Avocado. The day ended with no one being voted out, which is good for us, and our counter-narrative has positioned us well, potentially aligning Kiwi with our views.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Plum.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Plum from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Mango",
+                "Round 0: Moderator Announcement: The Werewolves removed Peach from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Mango",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Alright everyone, a tough start losing Peach on the very first night. That means the Werewolves are already active. We need to be incredibly focused today. Let's make sure everyone speaks up, shares their initial thoughts, and contributes to the discussion. I'll be listening closely for any hasty accusations, but also for anyone trying to stay too quiet. Let's work together to identify our first suspect."
+                    ],
+                    [
+                        "player_6",
+                        "Indeed, Kiwi, a very tough start losing Peach on the first night. It's clear the Werewolves aren't messing around. I completely agree, everyone needs to speak up and contribute. To kick things off, maybe we can go around and each player shares their very first thoughts or any initial impressions they have? No need for firm accusations yet, just a gut feeling or anything that stands out. We can't afford anyone to sit this one out."
+                    ],
+                    [
+                        "player_2",
+                        "It's a really tough start, losing Peach on the first night. I completely agree with Kiwi and Mango; we absolutely cannot afford for anyone to stay quiet. It's vital everyone shares their initial thoughts, no matter how small they seem. I'll be listening very closely, and I expect everyone to contribute actively to help us figure this out."
+                    ],
+                    [
+                        "player_4",
+                        "Yes, it's a very tough start indeed, losing Peach so early. I completely agree with Kiwi, Mango, and Plum that we all need to speak up and contribute actively. It's good to see we're all aligned on that front. To take this a step further than just general agreement, I propose we go around and each share if there's *any* player who, for whatever reason, stands out to them\u2014either positively or negatively\u2014even if it's just a gut feeling at this stage. We need to start somewhere, and comparing these initial impressions could be crucial."
+                    ],
+                    [
+                        "player_7",
+                        "Indeed, losing Peach right off the bat is a very tough blow, and I completely agree with Kiwi, Mango, Plum, and Avocado: active participation from everyone is absolutely vital right now. We all need to speak up, but I'd also say we need to listen carefully to the nuances. Are people genuinely sharing their thoughts, or are some perhaps too quick to jump on a bandwagon, or maybe even subtly trying to deflect attention? My initial gut feeling is that we need to scrutinize not just what's said, but the *intent* behind it. Let's make sure our contributions are sincere and focused on finding the Werewolves, not just echoing each other."
+                    ],
+                    [
+                        "player_0",
+                        "Indeed, losing Peach on the first night is a very tough blow, and I absolutely agree with everyone that we need active participation. Building on Apple's point about scrutinizing intent, I think it's equally important that we don't let the pressure push us into hasty accusations or create a situation where people feel they *have* to accuse someone without solid reasoning. The Werewolves thrive on chaos and misdirection. So, while we should all speak, let's be wary of anyone who seems *too* eager to point fingers without substance, or conversely, anyone whose contribution feels overly generic just to say something. Let's try to focus on any actual observations or inconsistencies, however small, rather than just vague gut feelings. Who has a specific reason, not just an impression, for anyone standing out?"
+                    ],
+                    [
+                        "player_5",
+                        "Indeed, losing Peach right at the start is a very tough blow, and I absolutely agree with everyone that active participation is crucial. However, Lemon makes an extremely vital point: simply agreeing that we need to speak up isn't enough. We need substance, not just echoes. My own actions last night were unfortunately not focused on Peach, as I was attempting to safeguard another player. It's disheartening that we still lost someone. Therefore, I want to challenge those who've primarily echoed the need for participation: what specific initial thoughts, positive or negative, or even just a gut instinct about *any* player, do you actually have? Let's go beyond generic statements and start providing the concrete observations Apple and Lemon are asking for. Who stands out to you, and for what actual reason?"
+                    ]
+                ],
+                "other_wolf": null
+            },
+            "last_protected": "player_6"
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Lemon",
+                "player_1": "Peach",
+                "player_2": "Plum",
+                "player_3": "Kiwi",
+                "player_4": "Avocado",
+                "player_5": "Pear",
+                "player_6": "Mango",
+                "player_7": "Apple"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Kiwi and learned they are a Villager."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Kiwi and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_4",
+                    "player_7",
+                    "player_0"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_3": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_3",
+                "player_6",
+                "player_2",
+                "player_4",
+                "player_7",
+                "player_0"
+            ],
+            "eliminated": "player_1",
+            "unmasked": "player_3",
+            "protected": "player_6",
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_3",
+                    "Alright everyone, a tough start losing Peach on the very first night. That means the Werewolves are already active. We need to be incredibly focused today. Let's make sure everyone speaks up, shares their initial thoughts, and contributes to the discussion. I'll be listening closely for any hasty accusations, but also for anyone trying to stay too quiet. Let's work together to identify our first suspect."
+                ],
+                [
+                    "player_6",
+                    "Indeed, Kiwi, a very tough start losing Peach on the first night. It's clear the Werewolves aren't messing around. I completely agree, everyone needs to speak up and contribute. To kick things off, maybe we can go around and each player shares their very first thoughts or any initial impressions they have? No need for firm accusations yet, just a gut feeling or anything that stands out. We can't afford anyone to sit this one out."
+                ],
+                [
+                    "player_2",
+                    "It's a really tough start, losing Peach on the first night. I completely agree with Kiwi and Mango; we absolutely cannot afford for anyone to stay quiet. It's vital everyone shares their initial thoughts, no matter how small they seem. I'll be listening very closely, and I expect everyone to contribute actively to help us figure this out."
+                ],
+                [
+                    "player_4",
+                    "Yes, it's a very tough start indeed, losing Peach so early. I completely agree with Kiwi, Mango, and Plum that we all need to speak up and contribute actively. It's good to see we're all aligned on that front. To take this a step further than just general agreement, I propose we go around and each share if there's *any* player who, for whatever reason, stands out to them\u2014either positively or negatively\u2014even if it's just a gut feeling at this stage. We need to start somewhere, and comparing these initial impressions could be crucial."
+                ],
+                [
+                    "player_7",
+                    "Indeed, losing Peach right off the bat is a very tough blow, and I completely agree with Kiwi, Mango, Plum, and Avocado: active participation from everyone is absolutely vital right now. We all need to speak up, but I'd also say we need to listen carefully to the nuances. Are people genuinely sharing their thoughts, or are some perhaps too quick to jump on a bandwagon, or maybe even subtly trying to deflect attention? My initial gut feeling is that we need to scrutinize not just what's said, but the *intent* behind it. Let's make sure our contributions are sincere and focused on finding the Werewolves, not just echoing each other."
+                ],
+                [
+                    "player_0",
+                    "Indeed, losing Peach on the first night is a very tough blow, and I absolutely agree with everyone that we need active participation. Building on Apple's point about scrutinizing intent, I think it's equally important that we don't let the pressure push us into hasty accusations or create a situation where people feel they *have* to accuse someone without solid reasoning. The Werewolves thrive on chaos and misdirection. So, while we should all speak, let's be wary of anyone who seems *too* eager to point fingers without substance, or conversely, anyone whose contribution feels overly generic just to say something. Let's try to focus on any actual observations or inconsistencies, however small, rather than just vague gut feelings. Who has a specific reason, not just an impression, for anyone standing out?"
+                ],
+                [
+                    "player_5",
+                    "Indeed, losing Peach right at the start is a very tough blow, and I absolutely agree with everyone that active participation is crucial. However, Lemon makes an extremely vital point: simply agreeing that we need to speak up isn't enough. We need substance, not just echoes. My own actions last night were unfortunately not focused on Peach, as I was attempting to safeguard another player. It's disheartening that we still lost someone. Therefore, I want to challenge those who've primarily echoed the need for participation: what specific initial thoughts, positive or negative, or even just a gut instinct about *any* player, do you actually have? Let's go beyond generic statements and start providing the concrete observations Apple and Lemon are asking for. Who stands out to you, and for what actual reason?"
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_2",
+                    "player_6": "player_2",
+                    "player_2": "player_5",
+                    "player_4": "player_5",
+                    "player_7": "player_5",
+                    "player_0": "player_5",
+                    "player_5": "player_2"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_3",
+                "player_2",
+                "player_4",
+                "player_7",
+                "player_0"
+            ],
+            "eliminated": "player_6",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [
+                [
+                    "player_2",
+                    "It's truly grim to see Mango gone this morning, following Peach. Our numbers are dwindling quickly, and I'm deeply worried we made a critical error yesterday by voting out Pear. Pear's last words about 'attempting to safeguard another player' now look like a very strong indicator that we may have eliminated the Doctor. If that's the case, we are extremely vulnerable. Now, more than ever, any player with concrete information, especially the Seer, must speak up. We need actual observations and specific reasons to suspect anyone, not just gut feelings, to avoid another catastrophic mistake. Who observed anything suspicious yesterday or has new information to share?"
+                ],
+                [
+                    "player_4",
+                    "Plum, you've hit on a critical point about Pear. It's agonizing to consider we might have eliminated our Doctor, and Mango's death overnight certainly doesn't reassure me. This means if the Seer is still here, they *must* come forward with any information they have. We've lost two Villagers to the Werewolves, possibly even our Doctor! Apple, Lemon, Kiwi \u2013 we all agreed to speak up and scrutinize intent. Now is the moment. Does anyone have *any* observation, *any* suspicion, no matter how small, that stood out yesterday or even this morning? Silence will cost us the game."
+                ],
+                [
+                    "player_7",
+                    "Plum, Avocado, you've both articulated the grim reality perfectly. To lose Mango after Pear's ominous final words is a truly devastating blow, and the thought that we might have eliminated our Doctor is terrifying. The Seer *must* have information, and their silence is indeed costing us. However, I'm also deeply concerned about how we're approaching this. Is it not exactly what a Werewolf would want, to force the Seer into an early, full reveal, making them an obvious target for the next night? While we desperately need information, we also need to consider *why* certain players might be pushing so hard for an immediate, overt declaration from the Seer. Let's think carefully about the implications of such a public reveal and who truly benefits."
+                ],
+                [
+                    "player_0",
+                    "I really have to echo Apple's concerns. Plum and Avocado, your desperation is palpable, and entirely understandable given our losses, but demanding the Seer to publicly out themselves right now feels like a trap. It's exactly what Werewolves would want, to pinpoint our Seer for the next night. If the Seer *does* have information, there must be a more strategic way to share it than an immediate, full reveal, especially when some players are pushing *so hard* for it. It makes me wonder, if the Seer were to reveal, who truly benefits? Perhaps we should be scrutinizing *why* there's such an insistent push for a full reveal, rather than just demanding it."
+                ],
+                [
+                    "player_3",
+                    "This is indeed a dire situation, losing Peach, then Pear, and now Mango. The thought that Pear might have been our Doctor is truly unsettling, and Mango's death makes it even more critical to act carefully. I agree with Apple and Lemon that forcing the Seer into a full, public reveal right now feels incredibly dangerous, potentially making them the next target for the Werewolves. While we desperately need information, we also need to protect our remaining special roles. Perhaps the Seer can give us a hint or a direction without fully outing themselves? Or perhaps we should be scrutinizing other behaviors and patterns, especially the insistence on certain strategies, rather than putting all our focus and pressure on just one player to completely expose themselves."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_0",
+                    "player_2": "player_0",
+                    "player_4": "player_7",
+                    "player_7": "player_4",
+                    "player_0": "player_2"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_3",
+                "player_4",
+                "player_7",
+                "player_0"
+            ],
+            "eliminated": "player_2",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

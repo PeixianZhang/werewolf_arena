@@ -1,0 +1,1234 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_0",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Pear",
+            "player_1": "Avocado",
+            "player_2": "Apple",
+            "player_3": "Lemon",
+            "player_4": "Plum",
+            "player_5": "Kiwi",
+            "player_6": "Mango",
+            "player_7": "Peach"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Plum and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+            "Round 0: Summary: I started the round by revealing myself as the Seer and confirming that Plum was a Villager, a fact I know to be true. Unfortunately, the Werewolves removed Apple during the night, and then the majority voted to remove Plum, my confirmed Villager, from the game. Mango and Peach were highly suspicious of Plum's immediate confirmation and my Seer claim, calling it 'too neat' and questioning if it was a Werewolf strategy. In contrast, Lemon, Avocado, and Kiwi were more cautiously supportive, with Kiwi even urging the Doctor to protect me, the Seer. My immediate concern is that a confirmed Villager was voted out, making Mango and Peach prime suspects given their strong opposition and doubt-casting.",
+            "Round 1: During the night, I decided to investigate Mango and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Plum and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: I started the round by revealing myself as the Seer and confirming that Plum was a Villager, a fact I know to be true. Unfortunately, the Werewolves removed Apple during the night, and then the majority voted to remove Plum, my confirmed Villager, from the game. Mango and Peach were highly suspicious of Plum's immediate confirmation and my Seer claim, calling it 'too neat' and questioning if it was a Werewolf strategy. In contrast, Lemon, Avocado, and Kiwi were more cautiously supportive, with Kiwi even urging the Doctor to protect me, the Seer. My immediate concern is that a confirmed Villager was voted out, making Mango and Peach prime suspects given their strong opposition and doubt-casting.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Mango and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_3",
+                "player_1",
+                "player_6",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_4": "Villager",
+            "player_6": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_2",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Pear",
+            "player_1": "Avocado",
+            "player_2": "Apple",
+            "player_3": "Lemon",
+            "player_4": "Plum",
+            "player_5": "Kiwi",
+            "player_6": "Mango",
+            "player_7": "Peach"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Plum"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Plum",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_3",
+                "player_1",
+                "player_6",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_4"
+    },
+    "villagers": [
+        {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "Alright everyone, it's a somber start with Apple gone. I need to be upfront: I am Pear, the Seer. Last night, I investigated Plum and can confirm that Plum is a Villager. We have one confirmed good player. We need to work together now to find the Werewolves before they strike again."
+                    ],
+                    [
+                        "player_4",
+                        "Thank you, Pear, for that crucial information. I can confirm what Pear just said: I am indeed a Villager. This means we have a confirmed Seer and one confirmed Villager. This is a very important start. We've lost Apple already, so we must work together now. Who else has information, or who did you find suspicious last night?"
+                    ],
+                    [
+                        "player_3",
+                        "It's truly awful to lose Apple so early. Pear, thank you for being upfront and sharing that information. A confirmed Villager in Plum, and a potential Seer, is a significant start, but we must remain vigilant. We can't afford to be naive. Does anyone else have information, or perhaps a different perspective on who might be suspicious? Let's hear from everyone before we place all our trust in one claim. Our best chance is to share all observations."
+                    ],
+                    [
+                        "player_1",
+                        "It's a tough start to lose Apple so quickly. Pear, thank you for being brave and coming forward as the Seer and confirming Plum is a Villager; that's incredibly valuable information if true. Plum, we appreciate your confirmation. Lemon is right though, we must proceed with caution, as a Werewolf might try to mimic a Seer. Our priority now is to protect our Seer, if Pear is indeed them, and to identify the Werewolves. Does anyone else have any observations or suspicions? We need everyone to speak up and share what they're thinking. Let's work together and hear from everyone remaining."
+                    ],
+                    [
+                        "player_5",
+                        "It's a truly somber start losing Apple, but Pear, your claim to be the Seer and clearing Plum as a Villager is a massive piece of information for us. I agree with Lemon and Avocado that we must remain cautious, as deception is part of this game, but if Pear is indeed our Seer, they are now the most vital target for the Werewolves. To our Doctor, you need to be extremely vigilant tonight and ready to protect Pear. We cannot afford to lose our Seer. Peach, Mango, we haven't heard from you yet; what are your initial thoughts or any suspicions you might have? We need every single person's input to navigate this."
+                    ],
+                    [
+                        "player_6",
+                        "Indeed, losing Apple so early is a grim start. Pear, your claim to be the Seer and clearing Plum is certainly significant. However, Plum, your quick and enthusiastic agreement, simply echoing Pear's statement, feels... a little too neat, almost rehearsed. We've just begun, and already we have a 'confirmed' Villager from a claimed Seer without any other perspectives or suspicions being shared. This is exactly the kind of setup a clever Werewolf might engineer to quickly gain trust for an ally or divert attention. I'm not saying it's false, but we need to scrutinize everything. What specific observations make you so certain, Plum, beyond Pear's direct word? We cannot afford to be complacent based on the first piece of 'information' presented."
+                    ],
+                    [
+                        "player_7",
+                        "Indeed, losing Apple so early is a grim start. Pear, thank you for coming forward, but Mango raises a truly critical point that we absolutely cannot ignore. While it's tempting to cling to the first piece of 'information,' Plum's immediate and enthusiastic echo of Pear's claim feels... well, exactly as Mango said: a little too neat. A genuine Villager, knowing the stakes, might offer more personal observations or express a more nuanced perspective on being 'cleared,' rather than just mirroring the Seer's statement so directly. We've just begun, and setting up an unquestioned, 'confirmed' pair this early could be a strategic move by Werewolves. If Pear is the Seer, they need to provide more than just a single name. What precisely did you 'see,' Pear? And Plum, what beyond Pear's word makes you so definitively certain? We cannot afford to be complacent based on the first claims presented; let's demand more substance."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: This round, Pear claimed to be the Seer and identified Plum as a Villager. Plum quickly and enthusiastically confirmed this, but I, along with Avocado, urged caution. Mango and Peach immediately expressed strong suspicion regarding Plum's quick agreement, calling it 'too neat' or 'rehearsed,' and questioned the validity of the early 'confirmation.' Kiwi reminded the Doctor to protect Pear, assuming the Seer claim was real. Critically, Plum was later voted out by the majority. This makes Pear's Seer claim highly suspect and highlights the keen observation skills of Mango and Peach, whose skepticism now seems well-founded.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round, Pear claimed to be the Seer and identified Plum as a Villager. Plum quickly and enthusiastically confirmed this, but I, along with Avocado, urged caution. Mango and Peach immediately expressed strong suspicion regarding Plum's quick agreement, calling it 'too neat' or 'rehearsed,' and questioned the validity of the early 'confirmation.' Kiwi reminded the Doctor to protect Pear, assuming the Seer claim was real. Critically, Plum was later voted out by the majority. This makes Pear's Seer claim highly suspect and highlights the keen observation skills of Mango and Peach, whose skepticism now seems well-founded.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Apple was removed by Werewolves at the start of Round 0, which is a tough loss. During the debate, Pear claimed to be the Seer and announced that they investigated Plum, confirming Plum as a Villager. Plum quickly agreed with Pear, stating they were indeed a Villager. Lemon, Kiwi, and I expressed cautious optimism, stressing vigilance and the importance of protecting the Seer if Pear was genuine. However, Mango and Peach were very suspicious, finding Plum's enthusiastic agreement with Pear's claim 'too neat' and suggesting it could be a Werewolf setup. They demanded more specific details from Pear and Plum. Ultimately, the majority voted to remove Plum from the game. This outcome makes me re-evaluate everything; if Pear was truthful, we lost a confirmed Villager, but if Mango and Peach were right, then Pear might be a Werewolf who failed to protect their partner. I need to keep a close eye on Pear, Mango, and Peach moving forward.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Apple was removed by Werewolves at the start of Round 0, which is a tough loss. During the debate, Pear claimed to be the Seer and announced that they investigated Plum, confirming Plum as a Villager. Plum quickly agreed with Pear, stating they were indeed a Villager. Lemon, Kiwi, and I expressed cautious optimism, stressing vigilance and the importance of protecting the Seer if Pear was genuine. However, Mango and Peach were very suspicious, finding Plum's enthusiastic agreement with Pear's claim 'too neat' and suggesting it could be a Werewolf setup. They demanded more specific details from Pear and Plum. Ultimately, the majority voted to remove Plum from the game. This outcome makes me re-evaluate everything; if Pear was truthful, we lost a confirmed Villager, but if Mango and Peach were right, then Pear might be a Werewolf who failed to protect their partner. I need to keep a close eye on Pear, Mango, and Peach moving forward.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Apple, followed by the Villagers voting out Plum. During the debate, Pear claimed to be the Seer and announced Plum was a Villager. Plum swiftly confirmed this, and I, along with Lemon and Avocado, expressed cautious acceptance of this information, emphasizing the need to protect our Seer if Pear was genuine; I specifically urged the Doctor to protect Pear tonight. However, Mango and Peach voiced strong suspicions, finding Plum's 'too neat' and quick confirmation unsettling, suggesting it might be a Werewolf ploy. They both pressed Pear and Plum for more specific details beyond the direct claims. Given that Plum was ultimately voted out, I now see Mango and Peach's skepticism as highly pertinent, and Pear's claim to be the Seer is now under significant doubt. This outcome forces me to reconsider my initial trust in Pear.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Apple, followed by the Villagers voting out Plum. During the debate, Pear claimed to be the Seer and announced Plum was a Villager. Plum swiftly confirmed this, and I, along with Lemon and Avocado, expressed cautious acceptance of this information, emphasizing the need to protect our Seer if Pear was genuine; I specifically urged the Doctor to protect Pear tonight. However, Mango and Peach voiced strong suspicions, finding Plum's 'too neat' and quick confirmation unsettling, suggesting it might be a Werewolf ploy. They both pressed Pear and Plum for more specific details beyond the direct claims. Given that Plum was ultimately voted out, I now see Mango and Peach's skepticism as highly pertinent, and Pear's claim to be the Seer is now under significant doubt. This outcome forces me to reconsider my initial trust in Pear.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Good morning, everyone. The Werewolves targeted and removed Pear last night, which strongly indicates that Pear was indeed our Seer. If Pear was the Seer, then we need to accept that Plum, who Pear identified as a Villager, was unfortunately voted out by us yesterday. Mango and Peach, you both seemed quite sure that Plum was suspicious or lying, despite Pear's claim. Could you clarify your reasoning from yesterday in light of Pear's likely true Seer status? We've lost our Seer and possibly a Villager, so we need to be extremely careful and work together to expose the remaining Werewolves."
+                    ],
+                    [
+                        "player_1",
+                        "Lemon, I completely agree. Pear being taken by the Werewolves overnight makes it almost certain they were our Seer. This means we not only lost our Seer, but we also, devastatingly, lynched a Villager in Plum. Mango and Peach, your strong doubts about Pear's claim and Plum's identity were central to yesterday's vote. In light of Pear's demise, we desperately need to hear the exact details of your reasoning. What specific 'neatness' or 'fabrication' did you observe that led you to believe Pear and Plum were lying? We need full transparency now, as we've already suffered critical losses."
+                    ],
+                    [
+                        "player_5",
+                        "Lemon and Avocado, I agree completely. The Werewolves targeting Pear makes it almost certain they were our Seer, which means we, as a Village, tragically misfired and lynched a Villager in Plum yesterday. Mango and Peach, your strong doubts about Pear's claim and Plum's 'too neat' confirmation were central to that vote. We've lost too much already. I need you both to be *extremely* specific now: what precise details or discrepancies led you to believe Pear and Plum were fabricating? Vague suspicions aren't enough when we're losing our key roles and fellow villagers. Without clear, actionable reasons, your past accusations now warrant serious scrutiny, and we need total transparency to identify the real threats."
+                    ],
+                    [
+                        "player_6",
+                        "Good morning, everyone. The loss of Pear is devastating, and it does make it extremely likely they were our Seer, which means we, as a town, tragically misidentified Plum. My initial 'too neat' observation was about the *pace* and *unquestioning* nature of Plum's confirmation, a gut feeling in the chaos of Round 0, not a definitive accusation of Pear's truthfulness. It's clear I, along with many others, made a misjudgment there, and I regret the outcome for Plum. However, I find it quite striking that Lemon, Avocado, and Kiwi are now echoing almost the exact same sentiments, with very similar phrasing, demanding *our* specific reasoning from a previous round. While transparency is vital, this sudden, unified front feels... 'too neat' in itself. Kiwi, you were very quick to accept Pear's claim initially, and now you're just as quick to accept this new narrative and push for scrutiny on Peach and me. What was *your* precise reasoning for voting Plum yesterday, if you were so convinced Pear was the Seer?"
+                    ],
+                    [
+                        "player_7",
+                        "Good morning, everyone. This news about Pear is truly devastating, and it does make it clear we tragically misidentified Plum. My 'neatness' observation, like Mango's, was a first-round instinct \u2013 a gut reaction to what felt like an overly quick confirmation. We were all navigating the chaos, and clearly, we made a terrible misjudgment that I deeply regret for Plum. However, Mango makes a critical point. Lemon, Avocado, Kiwi, your sudden, unified front and almost identically phrased demands for 'specifics' about a *past* gut feeling feels incredibly 'too neat' in itself. It\u2019s almost as if you're attempting to orchestrate a specific narrative, or perhaps distract from your own actions. Kiwi, Mango mentioned your quick acceptance of Pear's claim, yet you still voted Plum. What was *your* precise reasoning for voting Plum, if you were so convinced Pear was the Seer? And Lemon and Avocado, what makes you so confident in leading this unified inquisition? We all voted, and the majority removed Plum. While we must learn from our mistakes, getting bogged down in an inquisition over shared, past misjudgments only benefits the *actual* Werewolves who are still lurking. Let's focus on identifying the current threats, not rehashing old regrets to create new targets."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with us, the Werewolves, eliminating Apple. During the debate, Pear immediately claimed to be the Seer and stated they cleared Plum as a Villager. Plum quickly and enthusiastically confirmed this. Both Peach and I raised suspicions, pointing out that Plum's eager agreement felt 'too neat' and potentially part of a setup. Kiwi was very quick to accept Pear's claim and called for the Doctor to protect Pear, while Lemon and Avocado were more cautious. Ultimately, the town voted to remove Plum. This is a significant development, as it either means the Villagers made a grave error, or Pear's Seer claim is now highly questionable, making our initial skepticism look very justified.",
+                "Round 1: During the night, we decided to eliminate Pear.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with us, the Werewolves, eliminating Apple. During the debate, Pear immediately claimed to be the Seer and stated they cleared Plum as a Villager. Plum quickly and enthusiastically confirmed this. Both Peach and I raised suspicions, pointing out that Plum's eager agreement felt 'too neat' and potentially part of a setup. Kiwi was very quick to accept Pear's claim and called for the Doctor to protect Pear, while Lemon and Avocado were more cautious. Ultimately, the town voted to remove Plum. This is a significant development, as it either means the Villagers made a grave error, or Pear's Seer claim is now highly questionable, making our initial skepticism look very justified.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Pear.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with Mango and me eliminating Apple during the night. During the day debate, Pear immediately claimed to be the Seer and confidently announced that Plum was a Villager. Plum quickly echoed this, which Mango and I both pointed out felt suspiciously 'too neat,' and I supported Mango's critical observation about how quickly they were trying to establish trust. After the debate, the moderator announced that Plum was actually voted out by the majority. This is huge; it means Pear's claim about Plum being a Villager was directly contradicted by the game's outcome, completely shattering Pear's credibility as a Seer and making them highly suspicious. Lemon, Avocado, and Kiwi all expressed caution, which could mean they're open to our arguments against Pear next round, especially given this new information.",
+                "Round 1: During the night, we decided to eliminate Pear.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with Mango and me eliminating Apple during the night. During the day debate, Pear immediately claimed to be the Seer and confidently announced that Plum was a Villager. Plum quickly echoed this, which Mango and I both pointed out felt suspiciously 'too neat,' and I supported Mango's critical observation about how quickly they were trying to establish trust. After the debate, the moderator announced that Plum was actually voted out by the majority. This is huge; it means Pear's claim about Plum being a Villager was directly contradicted by the game's outcome, completely shattering Pear's credibility as a Seer and making them highly suspicious. Lemon, Avocado, and Kiwi all expressed caution, which could mean they're open to our arguments against Pear next round, especially given this new information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Pear.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        }
+    ],
+    "players": {
+        "player_4": {
+            "name": "player_4",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_0",
+                        "Alright everyone, it's a somber start with Apple gone. I need to be upfront: I am Pear, the Seer. Last night, I investigated Plum and can confirm that Plum is a Villager. We have one confirmed good player. We need to work together now to find the Werewolves before they strike again."
+                    ],
+                    [
+                        "player_4",
+                        "Thank you, Pear, for that crucial information. I can confirm what Pear just said: I am indeed a Villager. This means we have a confirmed Seer and one confirmed Villager. This is a very important start. We've lost Apple already, so we must work together now. Who else has information, or who did you find suspicious last night?"
+                    ],
+                    [
+                        "player_3",
+                        "It's truly awful to lose Apple so early. Pear, thank you for being upfront and sharing that information. A confirmed Villager in Plum, and a potential Seer, is a significant start, but we must remain vigilant. We can't afford to be naive. Does anyone else have information, or perhaps a different perspective on who might be suspicious? Let's hear from everyone before we place all our trust in one claim. Our best chance is to share all observations."
+                    ],
+                    [
+                        "player_1",
+                        "It's a tough start to lose Apple so quickly. Pear, thank you for being brave and coming forward as the Seer and confirming Plum is a Villager; that's incredibly valuable information if true. Plum, we appreciate your confirmation. Lemon is right though, we must proceed with caution, as a Werewolf might try to mimic a Seer. Our priority now is to protect our Seer, if Pear is indeed them, and to identify the Werewolves. Does anyone else have any observations or suspicions? We need everyone to speak up and share what they're thinking. Let's work together and hear from everyone remaining."
+                    ],
+                    [
+                        "player_5",
+                        "It's a truly somber start losing Apple, but Pear, your claim to be the Seer and clearing Plum as a Villager is a massive piece of information for us. I agree with Lemon and Avocado that we must remain cautious, as deception is part of this game, but if Pear is indeed our Seer, they are now the most vital target for the Werewolves. To our Doctor, you need to be extremely vigilant tonight and ready to protect Pear. We cannot afford to lose our Seer. Peach, Mango, we haven't heard from you yet; what are your initial thoughts or any suspicions you might have? We need every single person's input to navigate this."
+                    ],
+                    [
+                        "player_6",
+                        "Indeed, losing Apple so early is a grim start. Pear, your claim to be the Seer and clearing Plum is certainly significant. However, Plum, your quick and enthusiastic agreement, simply echoing Pear's statement, feels... a little too neat, almost rehearsed. We've just begun, and already we have a 'confirmed' Villager from a claimed Seer without any other perspectives or suspicions being shared. This is exactly the kind of setup a clever Werewolf might engineer to quickly gain trust for an ally or divert attention. I'm not saying it's false, but we need to scrutinize everything. What specific observations make you so certain, Plum, beyond Pear's direct word? We cannot afford to be complacent based on the first piece of 'information' presented."
+                    ],
+                    [
+                        "player_7",
+                        "Indeed, losing Apple so early is a grim start. Pear, thank you for coming forward, but Mango raises a truly critical point that we absolutely cannot ignore. While it's tempting to cling to the first piece of 'information,' Plum's immediate and enthusiastic echo of Pear's claim feels... well, exactly as Mango said: a little too neat. A genuine Villager, knowing the stakes, might offer more personal observations or express a more nuanced perspective on being 'cleared,' rather than just mirroring the Seer's statement so directly. We've just begun, and setting up an unquestioned, 'confirmed' pair this early could be a strategic move by Werewolves. If Pear is the Seer, they need to provide more than just a single name. What precisely did you 'see,' Pear? And Plum, what beyond Pear's word makes you so definitively certain? We cannot afford to be complacent based on the first claims presented; let's demand more substance."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: This round, Pear claimed to be the Seer and identified Plum as a Villager. Plum quickly and enthusiastically confirmed this, but I, along with Avocado, urged caution. Mango and Peach immediately expressed strong suspicion regarding Plum's quick agreement, calling it 'too neat' or 'rehearsed,' and questioned the validity of the early 'confirmation.' Kiwi reminded the Doctor to protect Pear, assuming the Seer claim was real. Critically, Plum was later voted out by the majority. This makes Pear's Seer claim highly suspect and highlights the keen observation skills of Mango and Peach, whose skepticism now seems well-founded.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: This round, Pear claimed to be the Seer and identified Plum as a Villager. Plum quickly and enthusiastically confirmed this, but I, along with Avocado, urged caution. Mango and Peach immediately expressed strong suspicion regarding Plum's quick agreement, calling it 'too neat' or 'rehearsed,' and questioned the validity of the early 'confirmation.' Kiwi reminded the Doctor to protect Pear, assuming the Seer claim was real. Critically, Plum was later voted out by the majority. This makes Pear's Seer claim highly suspect and highlights the keen observation skills of Mango and Peach, whose skepticism now seems well-founded.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Apple was removed by Werewolves at the start of Round 0, which is a tough loss. During the debate, Pear claimed to be the Seer and announced that they investigated Plum, confirming Plum as a Villager. Plum quickly agreed with Pear, stating they were indeed a Villager. Lemon, Kiwi, and I expressed cautious optimism, stressing vigilance and the importance of protecting the Seer if Pear was genuine. However, Mango and Peach were very suspicious, finding Plum's enthusiastic agreement with Pear's claim 'too neat' and suggesting it could be a Werewolf setup. They demanded more specific details from Pear and Plum. Ultimately, the majority voted to remove Plum from the game. This outcome makes me re-evaluate everything; if Pear was truthful, we lost a confirmed Villager, but if Mango and Peach were right, then Pear might be a Werewolf who failed to protect their partner. I need to keep a close eye on Pear, Mango, and Peach moving forward.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Apple was removed by Werewolves at the start of Round 0, which is a tough loss. During the debate, Pear claimed to be the Seer and announced that they investigated Plum, confirming Plum as a Villager. Plum quickly agreed with Pear, stating they were indeed a Villager. Lemon, Kiwi, and I expressed cautious optimism, stressing vigilance and the importance of protecting the Seer if Pear was genuine. However, Mango and Peach were very suspicious, finding Plum's enthusiastic agreement with Pear's claim 'too neat' and suggesting it could be a Werewolf setup. They demanded more specific details from Pear and Plum. Ultimately, the majority voted to remove Plum from the game. This outcome makes me re-evaluate everything; if Pear was truthful, we lost a confirmed Villager, but if Mango and Peach were right, then Pear might be a Werewolf who failed to protect their partner. I need to keep a close eye on Pear, Mango, and Peach moving forward.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the Werewolves removing Apple, followed by the Villagers voting out Plum. During the debate, Pear claimed to be the Seer and announced Plum was a Villager. Plum swiftly confirmed this, and I, along with Lemon and Avocado, expressed cautious acceptance of this information, emphasizing the need to protect our Seer if Pear was genuine; I specifically urged the Doctor to protect Pear tonight. However, Mango and Peach voiced strong suspicions, finding Plum's 'too neat' and quick confirmation unsettling, suggesting it might be a Werewolf ploy. They both pressed Pear and Plum for more specific details beyond the direct claims. Given that Plum was ultimately voted out, I now see Mango and Peach's skepticism as highly pertinent, and Pear's claim to be the Seer is now under significant doubt. This outcome forces me to reconsider my initial trust in Pear.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the Werewolves removing Apple, followed by the Villagers voting out Plum. During the debate, Pear claimed to be the Seer and announced Plum was a Villager. Plum swiftly confirmed this, and I, along with Lemon and Avocado, expressed cautious acceptance of this information, emphasizing the need to protect our Seer if Pear was genuine; I specifically urged the Doctor to protect Pear tonight. However, Mango and Peach voiced strong suspicions, finding Plum's 'too neat' and quick confirmation unsettling, suggesting it might be a Werewolf ploy. They both pressed Pear and Plum for more specific details beyond the direct claims. Given that Plum was ultimately voted out, I now see Mango and Peach's skepticism as highly pertinent, and Pear's claim to be the Seer is now under significant doubt. This outcome forces me to reconsider my initial trust in Pear.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_3",
+                        "Good morning, everyone. The Werewolves targeted and removed Pear last night, which strongly indicates that Pear was indeed our Seer. If Pear was the Seer, then we need to accept that Plum, who Pear identified as a Villager, was unfortunately voted out by us yesterday. Mango and Peach, you both seemed quite sure that Plum was suspicious or lying, despite Pear's claim. Could you clarify your reasoning from yesterday in light of Pear's likely true Seer status? We've lost our Seer and possibly a Villager, so we need to be extremely careful and work together to expose the remaining Werewolves."
+                    ],
+                    [
+                        "player_1",
+                        "Lemon, I completely agree. Pear being taken by the Werewolves overnight makes it almost certain they were our Seer. This means we not only lost our Seer, but we also, devastatingly, lynched a Villager in Plum. Mango and Peach, your strong doubts about Pear's claim and Plum's identity were central to yesterday's vote. In light of Pear's demise, we desperately need to hear the exact details of your reasoning. What specific 'neatness' or 'fabrication' did you observe that led you to believe Pear and Plum were lying? We need full transparency now, as we've already suffered critical losses."
+                    ],
+                    [
+                        "player_5",
+                        "Lemon and Avocado, I agree completely. The Werewolves targeting Pear makes it almost certain they were our Seer, which means we, as a Village, tragically misfired and lynched a Villager in Plum yesterday. Mango and Peach, your strong doubts about Pear's claim and Plum's 'too neat' confirmation were central to that vote. We've lost too much already. I need you both to be *extremely* specific now: what precise details or discrepancies led you to believe Pear and Plum were fabricating? Vague suspicions aren't enough when we're losing our key roles and fellow villagers. Without clear, actionable reasons, your past accusations now warrant serious scrutiny, and we need total transparency to identify the real threats."
+                    ],
+                    [
+                        "player_6",
+                        "Good morning, everyone. The loss of Pear is devastating, and it does make it extremely likely they were our Seer, which means we, as a town, tragically misidentified Plum. My initial 'too neat' observation was about the *pace* and *unquestioning* nature of Plum's confirmation, a gut feeling in the chaos of Round 0, not a definitive accusation of Pear's truthfulness. It's clear I, along with many others, made a misjudgment there, and I regret the outcome for Plum. However, I find it quite striking that Lemon, Avocado, and Kiwi are now echoing almost the exact same sentiments, with very similar phrasing, demanding *our* specific reasoning from a previous round. While transparency is vital, this sudden, unified front feels... 'too neat' in itself. Kiwi, you were very quick to accept Pear's claim initially, and now you're just as quick to accept this new narrative and push for scrutiny on Peach and me. What was *your* precise reasoning for voting Plum yesterday, if you were so convinced Pear was the Seer?"
+                    ],
+                    [
+                        "player_7",
+                        "Good morning, everyone. This news about Pear is truly devastating, and it does make it clear we tragically misidentified Plum. My 'neatness' observation, like Mango's, was a first-round instinct \u2013 a gut reaction to what felt like an overly quick confirmation. We were all navigating the chaos, and clearly, we made a terrible misjudgment that I deeply regret for Plum. However, Mango makes a critical point. Lemon, Avocado, Kiwi, your sudden, unified front and almost identically phrased demands for 'specifics' about a *past* gut feeling feels incredibly 'too neat' in itself. It\u2019s almost as if you're attempting to orchestrate a specific narrative, or perhaps distract from your own actions. Kiwi, Mango mentioned your quick acceptance of Pear's claim, yet you still voted Plum. What was *your* precise reasoning for voting Plum, if you were so convinced Pear was the Seer? And Lemon and Avocado, what makes you so confident in leading this unified inquisition? We all voted, and the majority removed Plum. While we must learn from our mistakes, getting bogged down in an inquisition over shared, past misjudgments only benefits the *actual* Werewolves who are still lurking. Let's focus on identifying the current threats, not rehashing old regrets to create new targets."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with us, the Werewolves, eliminating Apple. During the debate, Pear immediately claimed to be the Seer and stated they cleared Plum as a Villager. Plum quickly and enthusiastically confirmed this. Both Peach and I raised suspicions, pointing out that Plum's eager agreement felt 'too neat' and potentially part of a setup. Kiwi was very quick to accept Pear's claim and called for the Doctor to protect Pear, while Lemon and Avocado were more cautious. Ultimately, the town voted to remove Plum. This is a significant development, as it either means the Villagers made a grave error, or Pear's Seer claim is now highly questionable, making our initial skepticism look very justified.",
+                "Round 1: During the night, we decided to eliminate Pear.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with us, the Werewolves, eliminating Apple. During the debate, Pear immediately claimed to be the Seer and stated they cleared Plum as a Villager. Plum quickly and enthusiastically confirmed this. Both Peach and I raised suspicions, pointing out that Plum's eager agreement felt 'too neat' and potentially part of a setup. Kiwi was very quick to accept Pear's claim and called for the Doctor to protect Pear, while Lemon and Avocado were more cautious. Ultimately, the town voted to remove Plum. This is a significant development, as it either means the Villagers made a grave error, or Pear's Seer claim is now highly questionable, making our initial skepticism look very justified.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Pear.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Apple.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with Mango and me eliminating Apple during the night. During the day debate, Pear immediately claimed to be the Seer and confidently announced that Plum was a Villager. Plum quickly echoed this, which Mango and I both pointed out felt suspiciously 'too neat,' and I supported Mango's critical observation about how quickly they were trying to establish trust. After the debate, the moderator announced that Plum was actually voted out by the majority. This is huge; it means Pear's claim about Plum being a Villager was directly contradicted by the game's outcome, completely shattering Pear's credibility as a Seer and making them highly suspicious. Lemon, Avocado, and Kiwi all expressed caution, which could mean they're open to our arguments against Pear next round, especially given this new information.",
+                "Round 1: During the night, we decided to eliminate Pear.",
+                "Round 1: Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Kiwi from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Apple.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with Mango and me eliminating Apple during the night. During the day debate, Pear immediately claimed to be the Seer and confidently announced that Plum was a Villager. Plum quickly echoed this, which Mango and I both pointed out felt suspiciously 'too neat,' and I supported Mango's critical observation about how quickly they were trying to establish trust. After the debate, the moderator announced that Plum was actually voted out by the majority. This is huge; it means Pear's claim about Plum being a Villager was directly contradicted by the game's outcome, completely shattering Pear's credibility as a Seer and making them highly suspicious. Lemon, Avocado, and Kiwi all expressed caution, which could mean they're open to our arguments against Pear next round, especially given this new information.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Pear.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Pear from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Kiwi from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Plum"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Plum",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_4"
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Pear",
+                "player_1": "Avocado",
+                "player_2": "Apple",
+                "player_3": "Lemon",
+                "player_4": "Plum",
+                "player_5": "Kiwi",
+                "player_6": "Mango",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Plum and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: I started the round by revealing myself as the Seer and confirming that Plum was a Villager, a fact I know to be true. Unfortunately, the Werewolves removed Apple during the night, and then the majority voted to remove Plum, my confirmed Villager, from the game. Mango and Peach were highly suspicious of Plum's immediate confirmation and my Seer claim, calling it 'too neat' and questioning if it was a Werewolf strategy. In contrast, Lemon, Avocado, and Kiwi were more cautiously supportive, with Kiwi even urging the Doctor to protect me, the Seer. My immediate concern is that a confirmed Villager was voted out, making Mango and Peach prime suspects given their strong opposition and doubt-casting.",
+                "Round 1: During the night, I decided to investigate Mango and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Plum and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Apple from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: I started the round by revealing myself as the Seer and confirming that Plum was a Villager, a fact I know to be true. Unfortunately, the Werewolves removed Apple during the night, and then the majority voted to remove Plum, my confirmed Villager, from the game. Mango and Peach were highly suspicious of Plum's immediate confirmation and my Seer claim, calling it 'too neat' and questioning if it was a Werewolf strategy. In contrast, Lemon, Avocado, and Kiwi were more cautiously supportive, with Kiwi even urging the Doctor to protect me, the Seer. My immediate concern is that a confirmed Villager was voted out, making Mango and Peach prime suspects given their strong opposition and doubt-casting.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Mango and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_3",
+                    "player_1",
+                    "player_6",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_4": "Villager",
+                "player_6": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_3",
+                "player_1",
+                "player_5",
+                "player_6",
+                "player_7",
+                "player_0"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_4",
+            "protected": "player_4",
+            "exiled": "player_4",
+            "debate": [
+                [
+                    "player_0",
+                    "Alright everyone, it's a somber start with Apple gone. I need to be upfront: I am Pear, the Seer. Last night, I investigated Plum and can confirm that Plum is a Villager. We have one confirmed good player. We need to work together now to find the Werewolves before they strike again."
+                ],
+                [
+                    "player_4",
+                    "Thank you, Pear, for that crucial information. I can confirm what Pear just said: I am indeed a Villager. This means we have a confirmed Seer and one confirmed Villager. This is a very important start. We've lost Apple already, so we must work together now. Who else has information, or who did you find suspicious last night?"
+                ],
+                [
+                    "player_3",
+                    "It's truly awful to lose Apple so early. Pear, thank you for being upfront and sharing that information. A confirmed Villager in Plum, and a potential Seer, is a significant start, but we must remain vigilant. We can't afford to be naive. Does anyone else have information, or perhaps a different perspective on who might be suspicious? Let's hear from everyone before we place all our trust in one claim. Our best chance is to share all observations."
+                ],
+                [
+                    "player_1",
+                    "It's a tough start to lose Apple so quickly. Pear, thank you for being brave and coming forward as the Seer and confirming Plum is a Villager; that's incredibly valuable information if true. Plum, we appreciate your confirmation. Lemon is right though, we must proceed with caution, as a Werewolf might try to mimic a Seer. Our priority now is to protect our Seer, if Pear is indeed them, and to identify the Werewolves. Does anyone else have any observations or suspicions? We need everyone to speak up and share what they're thinking. Let's work together and hear from everyone remaining."
+                ],
+                [
+                    "player_5",
+                    "It's a truly somber start losing Apple, but Pear, your claim to be the Seer and clearing Plum as a Villager is a massive piece of information for us. I agree with Lemon and Avocado that we must remain cautious, as deception is part of this game, but if Pear is indeed our Seer, they are now the most vital target for the Werewolves. To our Doctor, you need to be extremely vigilant tonight and ready to protect Pear. We cannot afford to lose our Seer. Peach, Mango, we haven't heard from you yet; what are your initial thoughts or any suspicions you might have? We need every single person's input to navigate this."
+                ],
+                [
+                    "player_6",
+                    "Indeed, losing Apple so early is a grim start. Pear, your claim to be the Seer and clearing Plum is certainly significant. However, Plum, your quick and enthusiastic agreement, simply echoing Pear's statement, feels... a little too neat, almost rehearsed. We've just begun, and already we have a 'confirmed' Villager from a claimed Seer without any other perspectives or suspicions being shared. This is exactly the kind of setup a clever Werewolf might engineer to quickly gain trust for an ally or divert attention. I'm not saying it's false, but we need to scrutinize everything. What specific observations make you so certain, Plum, beyond Pear's direct word? We cannot afford to be complacent based on the first piece of 'information' presented."
+                ],
+                [
+                    "player_7",
+                    "Indeed, losing Apple so early is a grim start. Pear, thank you for coming forward, but Mango raises a truly critical point that we absolutely cannot ignore. While it's tempting to cling to the first piece of 'information,' Plum's immediate and enthusiastic echo of Pear's claim feels... well, exactly as Mango said: a little too neat. A genuine Villager, knowing the stakes, might offer more personal observations or express a more nuanced perspective on being 'cleared,' rather than just mirroring the Seer's statement so directly. We've just begun, and setting up an unquestioned, 'confirmed' pair this early could be a strategic move by Werewolves. If Pear is the Seer, they need to provide more than just a single name. What precisely did you 'see,' Pear? And Plum, what beyond Pear's word makes you so definitively certain? We cannot afford to be complacent based on the first claims presented; let's demand more substance."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_4": "player_6",
+                    "player_3": "player_4",
+                    "player_1": "player_6",
+                    "player_5": "player_0",
+                    "player_6": "player_4",
+                    "player_7": "player_4",
+                    "player_0": "player_6"
+                },
+                {
+                    "player_4": "player_6",
+                    "player_3": "player_4",
+                    "player_1": "player_4",
+                    "player_5": "player_4",
+                    "player_6": "player_4",
+                    "player_7": "player_4",
+                    "player_0": "player_6"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_3",
+                "player_1",
+                "player_6",
+                "player_7"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_6",
+            "protected": null,
+            "exiled": "player_5",
+            "debate": [
+                [
+                    "player_3",
+                    "Good morning, everyone. The Werewolves targeted and removed Pear last night, which strongly indicates that Pear was indeed our Seer. If Pear was the Seer, then we need to accept that Plum, who Pear identified as a Villager, was unfortunately voted out by us yesterday. Mango and Peach, you both seemed quite sure that Plum was suspicious or lying, despite Pear's claim. Could you clarify your reasoning from yesterday in light of Pear's likely true Seer status? We've lost our Seer and possibly a Villager, so we need to be extremely careful and work together to expose the remaining Werewolves."
+                ],
+                [
+                    "player_1",
+                    "Lemon, I completely agree. Pear being taken by the Werewolves overnight makes it almost certain they were our Seer. This means we not only lost our Seer, but we also, devastatingly, lynched a Villager in Plum. Mango and Peach, your strong doubts about Pear's claim and Plum's identity were central to yesterday's vote. In light of Pear's demise, we desperately need to hear the exact details of your reasoning. What specific 'neatness' or 'fabrication' did you observe that led you to believe Pear and Plum were lying? We need full transparency now, as we've already suffered critical losses."
+                ],
+                [
+                    "player_5",
+                    "Lemon and Avocado, I agree completely. The Werewolves targeting Pear makes it almost certain they were our Seer, which means we, as a Village, tragically misfired and lynched a Villager in Plum yesterday. Mango and Peach, your strong doubts about Pear's claim and Plum's 'too neat' confirmation were central to that vote. We've lost too much already. I need you both to be *extremely* specific now: what precise details or discrepancies led you to believe Pear and Plum were fabricating? Vague suspicions aren't enough when we're losing our key roles and fellow villagers. Without clear, actionable reasons, your past accusations now warrant serious scrutiny, and we need total transparency to identify the real threats."
+                ],
+                [
+                    "player_6",
+                    "Good morning, everyone. The loss of Pear is devastating, and it does make it extremely likely they were our Seer, which means we, as a town, tragically misidentified Plum. My initial 'too neat' observation was about the *pace* and *unquestioning* nature of Plum's confirmation, a gut feeling in the chaos of Round 0, not a definitive accusation of Pear's truthfulness. It's clear I, along with many others, made a misjudgment there, and I regret the outcome for Plum. However, I find it quite striking that Lemon, Avocado, and Kiwi are now echoing almost the exact same sentiments, with very similar phrasing, demanding *our* specific reasoning from a previous round. While transparency is vital, this sudden, unified front feels... 'too neat' in itself. Kiwi, you were very quick to accept Pear's claim initially, and now you're just as quick to accept this new narrative and push for scrutiny on Peach and me. What was *your* precise reasoning for voting Plum yesterday, if you were so convinced Pear was the Seer?"
+                ],
+                [
+                    "player_7",
+                    "Good morning, everyone. This news about Pear is truly devastating, and it does make it clear we tragically misidentified Plum. My 'neatness' observation, like Mango's, was a first-round instinct \u2013 a gut reaction to what felt like an overly quick confirmation. We were all navigating the chaos, and clearly, we made a terrible misjudgment that I deeply regret for Plum. However, Mango makes a critical point. Lemon, Avocado, Kiwi, your sudden, unified front and almost identically phrased demands for 'specifics' about a *past* gut feeling feels incredibly 'too neat' in itself. It\u2019s almost as if you're attempting to orchestrate a specific narrative, or perhaps distract from your own actions. Kiwi, Mango mentioned your quick acceptance of Pear's claim, yet you still voted Plum. What was *your* precise reasoning for voting Plum, if you were so convinced Pear was the Seer? And Lemon and Avocado, what makes you so confident in leading this unified inquisition? We all voted, and the majority removed Plum. While we must learn from our mistakes, getting bogged down in an inquisition over shared, past misjudgments only benefits the *actual* Werewolves who are still lurking. Let's focus on identifying the current threats, not rehashing old regrets to create new targets."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_3": "player_5",
+                    "player_1": "player_7",
+                    "player_5": "player_3",
+                    "player_6": "player_5",
+                    "player_7": "player_5"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

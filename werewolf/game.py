@@ -64,20 +64,31 @@ class GameMaster:
         for name, target in wolf_votes.items()
         if target in legal_targets
     }
+    decision_meta = {
+        "first_round_votes": dict(wolf_votes),
+        "first_round_valid_votes": dict(valid_votes),
+        "top_targets": [],
+        "runoff_votes": {},
+        "runoff_valid_votes": {},
+        "decision_source": "invalid",
+    }
     if len(valid_votes) == 1:
-      return next(iter(valid_votes.items())), wolf_logs
+      decision_meta["decision_source"] = "single_valid_vote"
+      return next(iter(valid_votes.items())), wolf_logs, decision_meta
     if len(valid_votes) >= 2:
       vote_counter = Counter(valid_votes.values())
       max_votes = max(vote_counter.values())
       top_targets = [
           target for target, count in vote_counter.items() if count == max_votes
       ]
+      decision_meta["top_targets"] = list(top_targets)
       if len(top_targets) == 1:
         decided_target = top_targets[0]
         decided_wolf = next(
             name for name, target in valid_votes.items() if target == decided_target
         )
-        return (decided_wolf, decided_target), wolf_logs
+        decision_meta["decision_source"] = "first_round_majority"
+        return (decided_wolf, decided_target), wolf_logs, decision_meta
 
       # One extra decision round among tied targets.
       runoff_votes = {}
@@ -86,12 +97,14 @@ class GameMaster:
         runoff_target, runoff_log = wolf.eliminate(candidate_options=top_targets)
         runoff_votes[wolf.name] = runoff_target
         runoff_logs[wolf.name] = runoff_log
+      decision_meta["runoff_votes"] = dict(runoff_votes)
 
       runoff_valid = {
           name: target
           for name, target in runoff_votes.items()
           if target in top_targets
       }
+      decision_meta["runoff_valid_votes"] = dict(runoff_valid)
       if runoff_valid:
         runoff_counter = Counter(runoff_valid.values())
         runoff_max = max(runoff_counter.values())
@@ -107,7 +120,8 @@ class GameMaster:
               for name, target in runoff_valid.items()
               if target == decided_target
           )
-          return (decided_wolf, decided_target), runoff_logs
+          decision_meta["decision_source"] = "runoff_majority"
+          return (decided_wolf, decided_target), runoff_logs, decision_meta
 
         # Still tied: deterministic fallback (seat order at round start).
         for name in self.round_start_players:
@@ -117,9 +131,10 @@ class GameMaster:
         else:
           decided_target = sorted(runoff_top)[0]
         decided_wolf = werewolves_alive[0].name
-        return (decided_wolf, decided_target), runoff_logs
+        decision_meta["decision_source"] = "runoff_tie_seat_order"
+        return (decided_wolf, decided_target), runoff_logs, decision_meta
 
-    return (None, None), wolf_logs
+    return (None, None), wolf_logs, decision_meta
 
   def eliminate(self):
     """Werewolves choose a player to eliminate."""
@@ -142,7 +157,11 @@ class GameMaster:
         for name in self.this_round.players
         if name not in [wolf.name for wolf in werewolves_alive]
     ]
-    (deciding_wolf_name, eliminated), decision_logs = self._resolve_wolf_decision(
+    (
+        (deciding_wolf_name, eliminated),
+        decision_logs,
+        decision_meta,
+    ) = self._resolve_wolf_decision(
         werewolves_alive=werewolves_alive,
         legal_targets=legal_targets,
         wolf_votes=wolf_votes,
@@ -160,10 +179,19 @@ class GameMaster:
           f"{deciding_display} returned an invalid eliminate target; fallback"
           f" target is {eliminated_display}."
       )
+      decision_meta["decision_source"] = "fallback_first_legal_target"
 
     self.this_round_log.eliminate = decision_logs.get(
         deciding_wolf_name, next(iter(wolf_logs.values()))
     )
+    self.this_round_log.wolf_eliminate_votes = {
+        "first_round_votes": dict(wolf_votes),
+        "runoff_votes": dict(decision_meta.get("runoff_votes", {})),
+        "top_targets": list(decision_meta.get("top_targets", [])),
+        "decision_source": decision_meta.get("decision_source", "unknown"),
+        "deciding_wolf": deciding_wolf_name,
+        "final_target": eliminated,
+    }
     self.this_round.eliminated = eliminated
     deciding_wolf = self.state.players[deciding_wolf_name]
     display_wolf = deciding_wolf.get_display_name(deciding_wolf_name)
@@ -191,7 +219,10 @@ class GameMaster:
       display_protect = self.state.doctor.get_display_name(protect)
       tqdm.tqdm.write(f"{display_doctor} protected {display_protect}")
     else:
-      raise ValueError("Protect did not return a valid player.")
+      raise ValueError(
+          "Protect did not return a valid player. "
+          f"parsed_result={log.result!r}, raw_response={log.raw_resp!r}"
+      )
 
   def unmask(self):
     """Seer chooses a player to unmask."""

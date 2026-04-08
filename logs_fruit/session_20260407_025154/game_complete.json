@@ -1,0 +1,1223 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_0",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Mango",
+            "player_1": "Lemon",
+            "player_2": "Pear",
+            "player_3": "Plum",
+            "player_4": "Avocado",
+            "player_5": "Apple",
+            "player_6": "Kiwi",
+            "player_7": "Peach"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Peach and learned they are a Villager."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Peach and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_1",
+                "player_5",
+                "player_6",
+                "player_4"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_7": "Villager"
+        }
+    },
+    "doctor": {
+        "name": "player_5",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Mango",
+            "player_1": "Lemon",
+            "player_2": "Pear",
+            "player_3": "Plum",
+            "player_4": "Avocado",
+            "player_5": "Apple",
+            "player_6": "Kiwi",
+            "player_7": "Peach"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Peach",
+            "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+            "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+            "Round 0: Summary: It's truly unfortunate that Mango was removed on the first night by the Werewolves, confirming they are active. During the night, I chose to protect Peach. In the debate, I observed that Peach, Lemon, and Pear had very similar opening statements, which felt a bit like treading water, a sentiment shared by Kiwi and Avocado. Plum then pushed for 'specifics' from everyone, but like Kiwi and Avocado, I felt it was too early and could lead to fabricated details or unnecessary pressure. Ultimately, the group voted to remove Plum from the game.",
+            "Round 1: During the night, I chose to protect Apple",
+            "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+            "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Peach",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: It's truly unfortunate that Mango was removed on the first night by the Werewolves, confirming they are active. During the night, I chose to protect Peach. In the debate, I observed that Peach, Lemon, and Pear had very similar opening statements, which felt a bit like treading water, a sentiment shared by Kiwi and Avocado. Plum then pushed for 'specifics' from everyone, but like Kiwi and Avocado, I felt it was too early and could lead to fabricated details or unnecessary pressure. Ultimately, the group voted to remove Plum from the game.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I chose to protect Apple",
+                "source": "role_action",
+                "confidence": 0.85
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 1,
+                "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            }
+        ],
+        "gamestate": {
+            "round_number": 2,
+            "current_players": [
+                "player_1",
+                "player_5",
+                "player_6",
+                "player_4"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_5"
+    },
+    "villagers": [
+        {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the unfortunate news from the moderator that Mango was taken by the Werewolves during the night, confirming their presence. I started by calling for open communication, and Lemon and Pear echoed my sentiments closely. However, Kiwi, Avocado, and Apple all pointed out the similarity in our opening statements, suggesting it felt like 'treading water' or 'repeating platitudes.' Plum tried to push for more 'specific' observations, but Kiwi, Avocado, and Apple were skeptical, believing it was too early and could lead to fabricated details or unnecessary pressure. These three players (Kiwi, Avocado, Apple) seemed to align, focusing on *how* people were speaking and questioning any attempts to control the narrative. By the end of the day, the majority voted to remove Plum from the game, which is a significant outcome I need to consider carefully."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the unfortunate news from the moderator that Mango was taken by the Werewolves during the night, confirming their presence. I started by calling for open communication, and Lemon and Pear echoed my sentiments closely. However, Kiwi, Avocado, and Apple all pointed out the similarity in our opening statements, suggesting it felt like 'treading water' or 'repeating platitudes.' Plum tried to push for more 'specific' observations, but Kiwi, Avocado, and Apple were skeptical, believing it was too early and could lead to fabricated details or unnecessary pressure. These three players (Kiwi, Avocado, Apple) seemed to align, focusing on *how* people were speaking and questioning any attempts to control the narrative. By the end of the day, the majority voted to remove Plum from the game, which is a significant outcome I need to consider carefully.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 started with the Werewolves taking Mango. The debate saw Peach, Pear, and I, Lemon, repeatedly call for open communication. Plum, who claimed to be a Villager, then pushed for specific observations, which was met with skepticism by Kiwi, Avocado, and Apple. They questioned if Plum's push for 'specifics' was too early or potentially pressuring. Kiwi, Avocado, and Apple also pointed out the repetition in my, Peach's, and Pear's opening statements, suggesting a more critical focus on *how* players communicate and any attempts to control the narrative. Unfortunately, the majority then voted to remove Plum. I need to be careful with how I am perceived, and focus on the analytical players who are looking for deeper meaning beyond surface-level statements.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Werewolves taking Mango. The debate saw Peach, Pear, and I, Lemon, repeatedly call for open communication. Plum, who claimed to be a Villager, then pushed for specific observations, which was met with skepticism by Kiwi, Avocado, and Apple. They questioned if Plum's push for 'specifics' was too early or potentially pressuring. Kiwi, Avocado, and Apple also pointed out the repetition in my, Peach's, and Pear's opening statements, suggesting a more critical focus on *how* players communicate and any attempts to control the narrative. Unfortunately, the majority then voted to remove Plum. I need to be careful with how I am perceived, and focus on the analytical players who are looking for deeper meaning beyond surface-level statements.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 started with the moderator confirming Mango was removed by the Werewolves during the night, and then Plum was voted out by the majority. Peach, Lemon, and I (Pear) all made similar opening statements calling for open communication and sharing initial thoughts. Plum then tried to push us to move beyond general calls and provide *specific* observations, claiming to be a Villager. However, Kiwi, Avocado, and Apple all noted the repetition in Peach's, Lemon's, and my own statements, expressing concern that Plum's demand for specifics *this* early could lead to fabricated details or put undue pressure on players. They suggested we should focus on *how* players are engaging and if anyone is trying to control the narrative. I need to be aware that my initial statement was grouped with Peach and Lemon and drew scrutiny, and consider the implications of Plum's removal very carefully.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator confirming Mango was removed by the Werewolves during the night, and then Plum was voted out by the majority. Peach, Lemon, and I (Pear) all made similar opening statements calling for open communication and sharing initial thoughts. Plum then tried to push us to move beyond general calls and provide *specific* observations, claiming to be a Villager. However, Kiwi, Avocado, and Apple all noted the repetition in Peach's, Lemon's, and my own statements, expressing concern that Plum's demand for specifics *this* early could lead to fabricated details or put undue pressure on players. They suggested we should focus on *how* players are engaging and if anyone is trying to control the narrative. I need to be aware that my initial statement was grouped with Peach and Lemon and drew scrutiny, and consider the implications of Plum's removal very carefully.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "It's truly alarming that Peach was taken last night. She, Pear, and I were all advocating for open communication in Round 0. This pattern of Werewolf kills, targeting active communicators, is very suspicious. I want to hear everyone's immediate thoughts on Peach's death, and also, let's reflect on our decision to remove Plum. We need to critically analyze not just what is said, but *who* is saying it and *why* they are choosing their words or silence. Let's collaborate to connect these dots and expose our hidden threats."
+                    ],
+                    [
+                        "player_2",
+                        "Lemon, it's indeed troubling that Peach was targeted, especially given our similar initial statements. However, before we settle on a pattern, I think we *must* revisit our decision to remove Plum. Plum was advocating for specific observations, and Kiwi, Avocado, and Apple were quite vocal with their suspicions about that approach. Now, with Peach gone, I need to hear from everyone who voted for Plum \u2013 and especially Kiwi, Avocado, and Apple \u2013 about your reasons then, and your current thoughts on Peach's death. This isn't about rehashing; it's about connecting the dots with the new information and understanding if we misidentified Plum or if their early push was indeed a Werewolf tactic. We need specifics now."
+                    ],
+                    [
+                        "player_6",
+                        "Pear, your sudden demand for 'specifics now' about the Plum vote, after *that very approach* was what raised suspicion about Plum in Round 0, is quite an interesting pivot. It makes me question if we're truly connecting dots or just chasing our tails. Lemon, your observation about 'active communicators' being targeted is noted, but Mango's removal wasn't exactly from a vocally 'active communicator' either, was it? Let's not invent patterns that don't fully fit. Instead of rehashing a past village decision and pointing fingers at those who voted, perhaps we should be asking why some players are so eager to redirect our focus to old debates rather than analyzing who benefits from the current chaos, or why Pear is pushing this specific narrative so hard right now. We need to identify living threats, not dwell on ghosts."
+                    ],
+                    [
+                        "player_4",
+                        "Lemon, I agree that reflecting on patterns after Peach's tragic removal is vital. However, Pear, I find your immediate and forceful insistence to re-litigate the Plum vote, specifically targeting myself, Kiwi, and Apple, deeply concerning. Kiwi is absolutely right; this demand for 'specifics now' about a *past village decision* is eerily similar to the approach Plum took in Round 0 that we, as a group, found suspicious. Are you genuinely connecting dots, or are you attempting to divert our focus and create internal divisions by rehashing old votes? This only serves the Werewolves' agenda, not the village's. We need to identify who is benefiting from this current distraction, not get bogged down in manufactured conflicts."
+                    ],
+                    [
+                        "player_5",
+                        "Pear, your direct targeting of Kiwi, Avocado, and myself, demanding 'specifics now' about the Plum vote, is profoundly suspicious. I voted against Plum because their aggressive push for early specifics felt like a divisive tactic, not a collaborative one. Your current approach, mirroring Plum's, is creating the exact kind of internal conflict that benefits the Werewolves, as Kiwi and Avocado have rightly pointed out. This isn't 'connecting dots'; it's a blatant attempt to distract us. As the Doctor, I protected Peach on Night 0, but Mango was killed. Last night, I protected myself, and sadly, Peach was the Werewolves' target and died. My actions confirm the Werewolves' targets. Your insistence on re-litigating a past village vote, while ignoring the crucial new information from the night, makes you look incredibly suspect, Pear. Let's focus on identifying the living Werewolves, not manufactured distractions."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright team, the game has begun and unfortunately, Mango was taken by the Werewolves on the first night. This means they are active and among us. We need to work together closely from the start. Let's hear everyone's initial thoughts and observations. Who is feeling quiet, or who wants to start us off? Open communication is our best weapon."
+                    ],
+                    [
+                        "player_1",
+                        "Absolutely Peach, it's a tough start losing Mango on the first night. That means the Werewolves are already active. I completely agree, we need to be transparent and communicate openly if we want to catch them. Everyone, please, share any initial thoughts, feelings, or observations, no matter how small. Our best defense is our collective information."
+                    ],
+                    [
+                        "player_2",
+                        "It's definitely a tough start losing Mango on the first night, and it confirms the Werewolves are already active. I completely agree with Peach and Lemon; our best shot is to communicate openly and transparently. To get us started, I think it would be helpful if everyone could share their initial thoughts, or even just a 'gut feeling' about the situation or anyone who might seem quiet. Let's make sure everyone speaks up; silence helps only the Werewolves."
+                    ],
+                    [
+                        "player_3",
+                        "Alright team, like Peach, Lemon, and Pear have all said, losing Mango on the first night is tough, and open communication is absolutely vital. We're all on the same page there. But now that we've established that, I think we need to move beyond just calling for communication. Does anyone have any *specific* initial observations, thoughts, or even a tiny gut feeling about anything, or anyone, that they can share? We need details, not just general statements, to start piecing this together and exposing the Werewolves. As a Villager, I'm ready to dig in and work with all of you to find them."
+                    ],
+                    [
+                        "player_6",
+                        "Alright, everyone's hit the nail on the head: losing Mango is a rough start, and transparency is crucial. Peach, Lemon, Pear, your consistent calls for open communication definitely set the tone. As Plum noted, they were quite similar. That's not necessarily a bad thing, but it does make me wonder if we're all just repeating platitudes. Plum, I agree we need details, but I also wonder if pushing for 'specifics' *this* early is genuinely helpful or if it's a way to pressure someone. It's so early that *any* specific detail could be easily fabricated. My gut feeling right now is to look at who is repeating others, and who is trying to rush the process. We need substance, not just calls for it, and not just demands for details that might not even exist yet."
+                    ],
+                    [
+                        "player_4",
+                        "Alright, it's a tough blow losing Mango so early, and I agree, open communication is our only path forward. Kiwi, I think you hit on a crucial point regarding the similar sentiments from Peach, Lemon, and Pear; that repetition, while well-intentioned, can feel a bit like treading water when we need to be digging deeper. And Plum, I understand the desire for specifics, but I also share Kiwi's hesitation \u2013 demanding details *this* early might just lead to fabricated stories or put unnecessary pressure on people who genuinely have no immediate 'specifics' to offer. Perhaps we should be looking at not just *what* is being said, but *how* it's being said, and if anyone is trying to subtly control the narrative by either being too vague or pushing for information that might not even exist yet. Let's not let anyone dictate how we should be thinking or what kind of information is valid at this exact moment."
+                    ],
+                    [
+                        "player_5",
+                        "It's truly unfortunate that Mango was taken so early; it definitely sets a serious tone. I really want to echo what Kiwi and Avocado brought up about the similarity in opening statements from Peach, Lemon, and Pear. While calling for communication is vital, that level of repetition, as Avocado put it, can feel a bit like treading water. And Plum, I understand your desire for specifics, but I agree with the others that it's too soon for anything reliable from most of us, potentially forcing fabricated details. We need to be wary of those who might be trying to control the initial narrative or pushing for information that might not genuinely exist yet. Let's focus on dissecting how everyone is engaging, not just what they're saying."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: During the Round 0 debate, I highlighted the repetitive nature of Peach, Lemon, and Pear's initial statements and questioned Plum's early push for specifics, suggesting it could lead to fabrication or undue pressure. My ally, Avocado, strongly supported my points, reinforcing the idea that we should be wary of general platitudes and premature demands for information. Apple also echoed our concerns about the similar opening statements and the early push for specifics, which is a good sign that they are aligned with our line of thinking. It's noteworthy that Plum, who was demanding specifics, was ultimately voted out. This early success in shaping the narrative and influencing others is a strong start for Avocado and me.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the Round 0 debate, I highlighted the repetitive nature of Peach, Lemon, and Pear's initial statements and questioned Plum's early push for specifics, suggesting it could lead to fabrication or undue pressure. My ally, Avocado, strongly supported my points, reinforcing the idea that we should be wary of general platitudes and premature demands for information. Apple also echoed our concerns about the similar opening statements and the early push for specifics, which is a good sign that they are aligned with our line of thinking. It's noteworthy that Plum, who was demanding specifics, was ultimately voted out. This early success in shaping the narrative and influencing others is a strong start for Avocado and me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_4"
+            }
+        },
+        {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Mango was removed by the Werewolves during the first night. In the day debate, Peach, Lemon, and Pear opened with very similar calls for open communication. Plum then pushed for more specific observations. Kiwi, my fellow Werewolf, and I, Avocado, both pointed out the repetitive nature of the initial calls and questioned Plum's early demand for specifics, suggesting it could force fabricated information or undue pressure. Apple echoed our sentiments, agreeing with Kiwi and me that it was too early for reliable specifics and that we should focus on *how* people were engaging. Ultimately, Plum was voted out by the group during the day.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Mango was removed by the Werewolves during the first night. In the day debate, Peach, Lemon, and Pear opened with very similar calls for open communication. Plum then pushed for more specific observations. Kiwi, my fellow Werewolf, and I, Avocado, both pointed out the repetitive nature of the initial calls and questioned Plum's early demand for specifics, suggesting it could force fabricated information or undue pressure. Apple echoed our sentiments, agreeing with Kiwi and me that it was too early for reliable specifics and that we should focus on *how* people were engaging. Ultimately, Plum was voted out by the group during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        }
+    ],
+    "players": {
+        "player_7": {
+            "name": "player_7",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 began with the unfortunate news from the moderator that Mango was taken by the Werewolves during the night, confirming their presence. I started by calling for open communication, and Lemon and Pear echoed my sentiments closely. However, Kiwi, Avocado, and Apple all pointed out the similarity in our opening statements, suggesting it felt like 'treading water' or 'repeating platitudes.' Plum tried to push for more 'specific' observations, but Kiwi, Avocado, and Apple were skeptical, believing it was too early and could lead to fabricated details or unnecessary pressure. These three players (Kiwi, Avocado, Apple) seemed to align, focusing on *how* people were speaking and questioning any attempts to control the narrative. By the end of the day, the majority voted to remove Plum from the game, which is a significant outcome I need to consider carefully."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 began with the unfortunate news from the moderator that Mango was taken by the Werewolves during the night, confirming their presence. I started by calling for open communication, and Lemon and Pear echoed my sentiments closely. However, Kiwi, Avocado, and Apple all pointed out the similarity in our opening statements, suggesting it felt like 'treading water' or 'repeating platitudes.' Plum tried to push for more 'specific' observations, but Kiwi, Avocado, and Apple were skeptical, believing it was too early and could lead to fabricated details or unnecessary pressure. These three players (Kiwi, Avocado, Apple) seemed to align, focusing on *how* people were speaking and questioning any attempts to control the narrative. By the end of the day, the majority voted to remove Plum from the game, which is a significant outcome I need to consider carefully.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 started with the Werewolves taking Mango. The debate saw Peach, Pear, and I, Lemon, repeatedly call for open communication. Plum, who claimed to be a Villager, then pushed for specific observations, which was met with skepticism by Kiwi, Avocado, and Apple. They questioned if Plum's push for 'specifics' was too early or potentially pressuring. Kiwi, Avocado, and Apple also pointed out the repetition in my, Peach's, and Pear's opening statements, suggesting a more critical focus on *how* players communicate and any attempts to control the narrative. Unfortunately, the majority then voted to remove Plum. I need to be careful with how I am perceived, and focus on the analytical players who are looking for deeper meaning beyond surface-level statements.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Werewolves taking Mango. The debate saw Peach, Pear, and I, Lemon, repeatedly call for open communication. Plum, who claimed to be a Villager, then pushed for specific observations, which was met with skepticism by Kiwi, Avocado, and Apple. They questioned if Plum's push for 'specifics' was too early or potentially pressuring. Kiwi, Avocado, and Apple also pointed out the repetition in my, Peach's, and Pear's opening statements, suggesting a more critical focus on *how* players communicate and any attempts to control the narrative. Unfortunately, the majority then voted to remove Plum. I need to be careful with how I am perceived, and focus on the analytical players who are looking for deeper meaning beyond surface-level statements.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Round 0 started with the moderator confirming Mango was removed by the Werewolves during the night, and then Plum was voted out by the majority. Peach, Lemon, and I (Pear) all made similar opening statements calling for open communication and sharing initial thoughts. Plum then tried to push us to move beyond general calls and provide *specific* observations, claiming to be a Villager. However, Kiwi, Avocado, and Apple all noted the repetition in Peach's, Lemon's, and my own statements, expressing concern that Plum's demand for specifics *this* early could lead to fabricated details or put undue pressure on players. They suggested we should focus on *how* players are engaging and if anyone is trying to control the narrative. I need to be aware that my initial statement was grouped with Peach and Lemon and drew scrutiny, and consider the implications of Plum's removal very carefully.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the moderator confirming Mango was removed by the Werewolves during the night, and then Plum was voted out by the majority. Peach, Lemon, and I (Pear) all made similar opening statements calling for open communication and sharing initial thoughts. Plum then tried to push us to move beyond general calls and provide *specific* observations, claiming to be a Villager. However, Kiwi, Avocado, and Apple all noted the repetition in Peach's, Lemon's, and my own statements, expressing concern that Plum's demand for specifics *this* early could lead to fabricated details or put undue pressure on players. They suggested we should focus on *how* players are engaging and if anyone is trying to control the narrative. I need to be aware that my initial statement was grouped with Peach and Lemon and drew scrutiny, and consider the implications of Plum's removal very carefully.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "It's truly alarming that Peach was taken last night. She, Pear, and I were all advocating for open communication in Round 0. This pattern of Werewolf kills, targeting active communicators, is very suspicious. I want to hear everyone's immediate thoughts on Peach's death, and also, let's reflect on our decision to remove Plum. We need to critically analyze not just what is said, but *who* is saying it and *why* they are choosing their words or silence. Let's collaborate to connect these dots and expose our hidden threats."
+                    ],
+                    [
+                        "player_2",
+                        "Lemon, it's indeed troubling that Peach was targeted, especially given our similar initial statements. However, before we settle on a pattern, I think we *must* revisit our decision to remove Plum. Plum was advocating for specific observations, and Kiwi, Avocado, and Apple were quite vocal with their suspicions about that approach. Now, with Peach gone, I need to hear from everyone who voted for Plum \u2013 and especially Kiwi, Avocado, and Apple \u2013 about your reasons then, and your current thoughts on Peach's death. This isn't about rehashing; it's about connecting the dots with the new information and understanding if we misidentified Plum or if their early push was indeed a Werewolf tactic. We need specifics now."
+                    ],
+                    [
+                        "player_6",
+                        "Pear, your sudden demand for 'specifics now' about the Plum vote, after *that very approach* was what raised suspicion about Plum in Round 0, is quite an interesting pivot. It makes me question if we're truly connecting dots or just chasing our tails. Lemon, your observation about 'active communicators' being targeted is noted, but Mango's removal wasn't exactly from a vocally 'active communicator' either, was it? Let's not invent patterns that don't fully fit. Instead of rehashing a past village decision and pointing fingers at those who voted, perhaps we should be asking why some players are so eager to redirect our focus to old debates rather than analyzing who benefits from the current chaos, or why Pear is pushing this specific narrative so hard right now. We need to identify living threats, not dwell on ghosts."
+                    ],
+                    [
+                        "player_4",
+                        "Lemon, I agree that reflecting on patterns after Peach's tragic removal is vital. However, Pear, I find your immediate and forceful insistence to re-litigate the Plum vote, specifically targeting myself, Kiwi, and Apple, deeply concerning. Kiwi is absolutely right; this demand for 'specifics now' about a *past village decision* is eerily similar to the approach Plum took in Round 0 that we, as a group, found suspicious. Are you genuinely connecting dots, or are you attempting to divert our focus and create internal divisions by rehashing old votes? This only serves the Werewolves' agenda, not the village's. We need to identify who is benefiting from this current distraction, not get bogged down in manufactured conflicts."
+                    ],
+                    [
+                        "player_5",
+                        "Pear, your direct targeting of Kiwi, Avocado, and myself, demanding 'specifics now' about the Plum vote, is profoundly suspicious. I voted against Plum because their aggressive push for early specifics felt like a divisive tactic, not a collaborative one. Your current approach, mirroring Plum's, is creating the exact kind of internal conflict that benefits the Werewolves, as Kiwi and Avocado have rightly pointed out. This isn't 'connecting dots'; it's a blatant attempt to distract us. As the Doctor, I protected Peach on Night 0, but Mango was killed. Last night, I protected myself, and sadly, Peach was the Werewolves' target and died. My actions confirm the Werewolves' targets. Your insistence on re-litigating a past village vote, while ignoring the crucial new information from the night, makes you look incredibly suspect, Pear. Let's focus on identifying the living Werewolves, not manufactured distractions."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [
+                    [
+                        "player_7",
+                        "Alright team, the game has begun and unfortunately, Mango was taken by the Werewolves on the first night. This means they are active and among us. We need to work together closely from the start. Let's hear everyone's initial thoughts and observations. Who is feeling quiet, or who wants to start us off? Open communication is our best weapon."
+                    ],
+                    [
+                        "player_1",
+                        "Absolutely Peach, it's a tough start losing Mango on the first night. That means the Werewolves are already active. I completely agree, we need to be transparent and communicate openly if we want to catch them. Everyone, please, share any initial thoughts, feelings, or observations, no matter how small. Our best defense is our collective information."
+                    ],
+                    [
+                        "player_2",
+                        "It's definitely a tough start losing Mango on the first night, and it confirms the Werewolves are already active. I completely agree with Peach and Lemon; our best shot is to communicate openly and transparently. To get us started, I think it would be helpful if everyone could share their initial thoughts, or even just a 'gut feeling' about the situation or anyone who might seem quiet. Let's make sure everyone speaks up; silence helps only the Werewolves."
+                    ],
+                    [
+                        "player_3",
+                        "Alright team, like Peach, Lemon, and Pear have all said, losing Mango on the first night is tough, and open communication is absolutely vital. We're all on the same page there. But now that we've established that, I think we need to move beyond just calling for communication. Does anyone have any *specific* initial observations, thoughts, or even a tiny gut feeling about anything, or anyone, that they can share? We need details, not just general statements, to start piecing this together and exposing the Werewolves. As a Villager, I'm ready to dig in and work with all of you to find them."
+                    ],
+                    [
+                        "player_6",
+                        "Alright, everyone's hit the nail on the head: losing Mango is a rough start, and transparency is crucial. Peach, Lemon, Pear, your consistent calls for open communication definitely set the tone. As Plum noted, they were quite similar. That's not necessarily a bad thing, but it does make me wonder if we're all just repeating platitudes. Plum, I agree we need details, but I also wonder if pushing for 'specifics' *this* early is genuinely helpful or if it's a way to pressure someone. It's so early that *any* specific detail could be easily fabricated. My gut feeling right now is to look at who is repeating others, and who is trying to rush the process. We need substance, not just calls for it, and not just demands for details that might not even exist yet."
+                    ],
+                    [
+                        "player_4",
+                        "Alright, it's a tough blow losing Mango so early, and I agree, open communication is our only path forward. Kiwi, I think you hit on a crucial point regarding the similar sentiments from Peach, Lemon, and Pear; that repetition, while well-intentioned, can feel a bit like treading water when we need to be digging deeper. And Plum, I understand the desire for specifics, but I also share Kiwi's hesitation \u2013 demanding details *this* early might just lead to fabricated stories or put unnecessary pressure on people who genuinely have no immediate 'specifics' to offer. Perhaps we should be looking at not just *what* is being said, but *how* it's being said, and if anyone is trying to subtly control the narrative by either being too vague or pushing for information that might not even exist yet. Let's not let anyone dictate how we should be thinking or what kind of information is valid at this exact moment."
+                    ],
+                    [
+                        "player_5",
+                        "It's truly unfortunate that Mango was taken so early; it definitely sets a serious tone. I really want to echo what Kiwi and Avocado brought up about the similarity in opening statements from Peach, Lemon, and Pear. While calling for communication is vital, that level of repetition, as Avocado put it, can feel a bit like treading water. And Plum, I understand your desire for specifics, but I agree with the others that it's too soon for anything reliable from most of us, potentially forcing fabricated details. We need to be wary of those who might be trying to control the initial narrative or pushing for information that might not genuinely exist yet. Let's focus on dissecting how everyone is engaging, not just what they're saying."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: During the Round 0 debate, I highlighted the repetitive nature of Peach, Lemon, and Pear's initial statements and questioned Plum's early push for specifics, suggesting it could lead to fabrication or undue pressure. My ally, Avocado, strongly supported my points, reinforcing the idea that we should be wary of general platitudes and premature demands for information. Apple also echoed our concerns about the similar opening statements and the early push for specifics, which is a good sign that they are aligned with our line of thinking. It's noteworthy that Plum, who was demanding specifics, was ultimately voted out. This early success in shaping the narrative and influencing others is a strong start for Avocado and me.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: During the Round 0 debate, I highlighted the repetitive nature of Peach, Lemon, and Pear's initial statements and questioned Plum's early push for specifics, suggesting it could lead to fabrication or undue pressure. My ally, Avocado, strongly supported my points, reinforcing the idea that we should be wary of general platitudes and premature demands for information. Apple also echoed our concerns about the similar opening statements and the early push for specifics, which is a good sign that they are aligned with our line of thinking. It's noteworthy that Plum, who was demanding specifics, was ultimately voted out. This early success in shaping the narrative and influencing others is a strong start for Avocado and me.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_4"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Mango.",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: Mango was removed by the Werewolves during the first night. In the day debate, Peach, Lemon, and Pear opened with very similar calls for open communication. Plum then pushed for more specific observations. Kiwi, my fellow Werewolf, and I, Avocado, both pointed out the repetitive nature of the initial calls and questioned Plum's early demand for specifics, suggesting it could force fabricated information or undue pressure. Apple echoed our sentiments, agreeing with Kiwi and me that it was too early for reliable specifics and that we should focus on *how* people were engaging. Ultimately, Plum was voted out by the group during the day.",
+                "Round 1: During the night, we decided to eliminate Peach.",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Mango was removed by the Werewolves during the first night. In the day debate, Peach, Lemon, and Pear opened with very similar calls for open communication. Plum then pushed for more specific observations. Kiwi, my fellow Werewolf, and I, Avocado, both pointed out the repetitive nature of the initial calls and questioned Plum's early demand for specifics, suggesting it could force fabricated information or undue pressure. Apple echoed our sentiments, agreeing with Kiwi and me that it was too early for reliable specifics and that we should focus on *how* people were engaging. Ultimately, Plum was voted out by the group during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Peach.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": "player_6"
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Peach",
+                "Round 0: Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                "Round 0: Moderator Announcement: The majority voted to remove Plum from the game.",
+                "Round 0: Summary: It's truly unfortunate that Mango was removed on the first night by the Werewolves, confirming they are active. During the night, I chose to protect Peach. In the debate, I observed that Peach, Lemon, and Pear had very similar opening statements, which felt a bit like treading water, a sentiment shared by Kiwi and Avocado. Plum then pushed for 'specifics' from everyone, but like Kiwi and Avocado, I felt it was too early and could lead to fabricated details or unnecessary pressure. Ultimately, the group voted to remove Plum from the game.",
+                "Round 1: During the night, I chose to protect Apple",
+                "Round 1: Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Pear from the game."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Peach",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The majority voted to remove Plum from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: It's truly unfortunate that Mango was removed on the first night by the Werewolves, confirming they are active. During the night, I chose to protect Peach. In the debate, I observed that Peach, Lemon, and Pear had very similar opening statements, which felt a bit like treading water, a sentiment shared by Kiwi and Avocado. Plum then pushed for 'specifics' from everyone, but like Kiwi and Avocado, I felt it was too early and could lead to fabricated details or unnecessary pressure. Ultimately, the group voted to remove Plum from the game.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I chose to protect Apple",
+                    "source": "role_action",
+                    "confidence": 0.85
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Peach from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Pear from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_5"
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Mango",
+                "player_1": "Lemon",
+                "player_2": "Pear",
+                "player_3": "Plum",
+                "player_4": "Avocado",
+                "player_5": "Apple",
+                "player_6": "Kiwi",
+                "player_7": "Peach"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Peach and learned they are a Villager."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Peach and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_1",
+                    "player_5",
+                    "player_6",
+                    "player_4"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_7": "Villager"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_7",
+                "player_1",
+                "player_2",
+                "player_6",
+                "player_4",
+                "player_5"
+            ],
+            "eliminated": "player_0",
+            "unmasked": "player_7",
+            "protected": "player_7",
+            "exiled": "player_3",
+            "debate": [
+                [
+                    "player_7",
+                    "Alright team, the game has begun and unfortunately, Mango was taken by the Werewolves on the first night. This means they are active and among us. We need to work together closely from the start. Let's hear everyone's initial thoughts and observations. Who is feeling quiet, or who wants to start us off? Open communication is our best weapon."
+                ],
+                [
+                    "player_1",
+                    "Absolutely Peach, it's a tough start losing Mango on the first night. That means the Werewolves are already active. I completely agree, we need to be transparent and communicate openly if we want to catch them. Everyone, please, share any initial thoughts, feelings, or observations, no matter how small. Our best defense is our collective information."
+                ],
+                [
+                    "player_2",
+                    "It's definitely a tough start losing Mango on the first night, and it confirms the Werewolves are already active. I completely agree with Peach and Lemon; our best shot is to communicate openly and transparently. To get us started, I think it would be helpful if everyone could share their initial thoughts, or even just a 'gut feeling' about the situation or anyone who might seem quiet. Let's make sure everyone speaks up; silence helps only the Werewolves."
+                ],
+                [
+                    "player_3",
+                    "Alright team, like Peach, Lemon, and Pear have all said, losing Mango on the first night is tough, and open communication is absolutely vital. We're all on the same page there. But now that we've established that, I think we need to move beyond just calling for communication. Does anyone have any *specific* initial observations, thoughts, or even a tiny gut feeling about anything, or anyone, that they can share? We need details, not just general statements, to start piecing this together and exposing the Werewolves. As a Villager, I'm ready to dig in and work with all of you to find them."
+                ],
+                [
+                    "player_6",
+                    "Alright, everyone's hit the nail on the head: losing Mango is a rough start, and transparency is crucial. Peach, Lemon, Pear, your consistent calls for open communication definitely set the tone. As Plum noted, they were quite similar. That's not necessarily a bad thing, but it does make me wonder if we're all just repeating platitudes. Plum, I agree we need details, but I also wonder if pushing for 'specifics' *this* early is genuinely helpful or if it's a way to pressure someone. It's so early that *any* specific detail could be easily fabricated. My gut feeling right now is to look at who is repeating others, and who is trying to rush the process. We need substance, not just calls for it, and not just demands for details that might not even exist yet."
+                ],
+                [
+                    "player_4",
+                    "Alright, it's a tough blow losing Mango so early, and I agree, open communication is our only path forward. Kiwi, I think you hit on a crucial point regarding the similar sentiments from Peach, Lemon, and Pear; that repetition, while well-intentioned, can feel a bit like treading water when we need to be digging deeper. And Plum, I understand the desire for specifics, but I also share Kiwi's hesitation \u2013 demanding details *this* early might just lead to fabricated stories or put unnecessary pressure on people who genuinely have no immediate 'specifics' to offer. Perhaps we should be looking at not just *what* is being said, but *how* it's being said, and if anyone is trying to subtly control the narrative by either being too vague or pushing for information that might not even exist yet. Let's not let anyone dictate how we should be thinking or what kind of information is valid at this exact moment."
+                ],
+                [
+                    "player_5",
+                    "It's truly unfortunate that Mango was taken so early; it definitely sets a serious tone. I really want to echo what Kiwi and Avocado brought up about the similarity in opening statements from Peach, Lemon, and Pear. While calling for communication is vital, that level of repetition, as Avocado put it, can feel a bit like treading water. And Plum, I understand your desire for specifics, but I agree with the others that it's too soon for anything reliable from most of us, potentially forcing fabricated details. We need to be wary of those who might be trying to control the initial narrative or pushing for information that might not genuinely exist yet. Let's focus on dissecting how everyone is engaging, not just what they're saying."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_7": "player_5",
+                    "player_1": "player_3",
+                    "player_2": "player_3",
+                    "player_3": "player_1",
+                    "player_6": "player_3",
+                    "player_4": "player_3",
+                    "player_5": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_1",
+                "player_6",
+                "player_4",
+                "player_5"
+            ],
+            "eliminated": "player_7",
+            "unmasked": null,
+            "protected": "player_5",
+            "exiled": "player_2",
+            "debate": [
+                [
+                    "player_1",
+                    "It's truly alarming that Peach was taken last night. She, Pear, and I were all advocating for open communication in Round 0. This pattern of Werewolf kills, targeting active communicators, is very suspicious. I want to hear everyone's immediate thoughts on Peach's death, and also, let's reflect on our decision to remove Plum. We need to critically analyze not just what is said, but *who* is saying it and *why* they are choosing their words or silence. Let's collaborate to connect these dots and expose our hidden threats."
+                ],
+                [
+                    "player_2",
+                    "Lemon, it's indeed troubling that Peach was targeted, especially given our similar initial statements. However, before we settle on a pattern, I think we *must* revisit our decision to remove Plum. Plum was advocating for specific observations, and Kiwi, Avocado, and Apple were quite vocal with their suspicions about that approach. Now, with Peach gone, I need to hear from everyone who voted for Plum \u2013 and especially Kiwi, Avocado, and Apple \u2013 about your reasons then, and your current thoughts on Peach's death. This isn't about rehashing; it's about connecting the dots with the new information and understanding if we misidentified Plum or if their early push was indeed a Werewolf tactic. We need specifics now."
+                ],
+                [
+                    "player_6",
+                    "Pear, your sudden demand for 'specifics now' about the Plum vote, after *that very approach* was what raised suspicion about Plum in Round 0, is quite an interesting pivot. It makes me question if we're truly connecting dots or just chasing our tails. Lemon, your observation about 'active communicators' being targeted is noted, but Mango's removal wasn't exactly from a vocally 'active communicator' either, was it? Let's not invent patterns that don't fully fit. Instead of rehashing a past village decision and pointing fingers at those who voted, perhaps we should be asking why some players are so eager to redirect our focus to old debates rather than analyzing who benefits from the current chaos, or why Pear is pushing this specific narrative so hard right now. We need to identify living threats, not dwell on ghosts."
+                ],
+                [
+                    "player_4",
+                    "Lemon, I agree that reflecting on patterns after Peach's tragic removal is vital. However, Pear, I find your immediate and forceful insistence to re-litigate the Plum vote, specifically targeting myself, Kiwi, and Apple, deeply concerning. Kiwi is absolutely right; this demand for 'specifics now' about a *past village decision* is eerily similar to the approach Plum took in Round 0 that we, as a group, found suspicious. Are you genuinely connecting dots, or are you attempting to divert our focus and create internal divisions by rehashing old votes? This only serves the Werewolves' agenda, not the village's. We need to identify who is benefiting from this current distraction, not get bogged down in manufactured conflicts."
+                ],
+                [
+                    "player_5",
+                    "Pear, your direct targeting of Kiwi, Avocado, and myself, demanding 'specifics now' about the Plum vote, is profoundly suspicious. I voted against Plum because their aggressive push for early specifics felt like a divisive tactic, not a collaborative one. Your current approach, mirroring Plum's, is creating the exact kind of internal conflict that benefits the Werewolves, as Kiwi and Avocado have rightly pointed out. This isn't 'connecting dots'; it's a blatant attempt to distract us. As the Doctor, I protected Peach on Night 0, but Mango was killed. Last night, I protected myself, and sadly, Peach was the Werewolves' target and died. My actions confirm the Werewolves' targets. Your insistence on re-litigating a past village vote, while ignoring the crucial new information from the night, makes you look incredibly suspect, Pear. Let's focus on identifying the living Werewolves, not manufactured distractions."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_2",
+                    "player_2": "player_4",
+                    "player_6": "player_2",
+                    "player_4": "player_2",
+                    "player_5": "player_2"
+                }
+            ],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

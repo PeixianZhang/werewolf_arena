@@ -1,0 +1,1407 @@
+{
+    "session_id": "10",
+    "seer": {
+        "name": "player_2",
+        "role": "Seer",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Peach",
+            "player_1": "Mango",
+            "player_2": "Kiwi",
+            "player_3": "Pear",
+            "player_4": "Lemon",
+            "player_5": "Plum",
+            "player_6": "Apple",
+            "player_7": "Avocado"
+        },
+        "observations": [
+            "Round 0: During the night, I decided to investigate Apple and learned they are a Villager.",
+            "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+            "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+            "Round 0: Summary: Round 0 started with the Werewolves removing Lemon. I revealed that I had investigated Apple and learned they are a Villager. Mango and Peach immediately questioned how I knew this, asking me to clarify if I was the Seer. Apple confirmed my information, stating they are indeed a Villager, and also urged me to reveal my role. However, Pear, Plum, and Avocado became highly suspicious of both Apple and me, suggesting our interaction was coordinated or staged due to Apple's 'confirmation' of my information. They all strongly pushed for me to reveal my role as Seer, ending the debate with significant distrust directed at me and Apple.",
+            "Round 1: During the night, I decided to investigate Plum and learned they are a Werewolf."
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I decided to investigate Apple and learned they are a Villager.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "source": "moderator",
+                "confidence": 0.95
+            },
+            {
+                "round": 0,
+                "content": "Summary: Round 0 started with the Werewolves removing Lemon. I revealed that I had investigated Apple and learned they are a Villager. Mango and Peach immediately questioned how I knew this, asking me to clarify if I was the Seer. Apple confirmed my information, stating they are indeed a Villager, and also urged me to reveal my role. However, Pear, Plum, and Avocado became highly suspicious of both Apple and me, suggesting our interaction was coordinated or staged due to Apple's 'confirmation' of my information. They all strongly pushed for me to reveal my role as Seer, ending the debate with significant distrust directed at me and Apple.",
+                "source": "self_summary",
+                "confidence": 0.55
+            },
+            {
+                "round": 1,
+                "content": "During the night, I decided to investigate Plum and learned they are a Werewolf.",
+                "source": "role_action_verified",
+                "confidence": 1.0
+            }
+        ],
+        "gamestate": {
+            "round_number": 1,
+            "current_players": [
+                "player_0",
+                "player_3",
+                "player_5",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "previously_unmasked": {
+            "player_6": "Villager",
+            "player_5": "Werewolf"
+        }
+    },
+    "doctor": {
+        "name": "player_4",
+        "role": "Doctor",
+        "personality": null,
+        "model": "gemini-2.5-flash",
+        "demographics": {},
+        "name_to_display": {
+            "player_0": "Peach",
+            "player_1": "Mango",
+            "player_2": "Kiwi",
+            "player_3": "Pear",
+            "player_4": "Lemon",
+            "player_5": "Plum",
+            "player_6": "Apple",
+            "player_7": "Avocado"
+        },
+        "observations": [
+            "Round 0: During the night, I chose to protect Plum"
+        ],
+        "observation_entries": [
+            {
+                "round": 0,
+                "content": "During the night, I chose to protect Plum",
+                "source": "role_action",
+                "confidence": 0.85
+            }
+        ],
+        "gamestate": {
+            "round_number": 0,
+            "current_players": [
+                "player_0",
+                "player_3",
+                "player_5",
+                "player_7"
+            ],
+            "debate": [],
+            "other_wolf": null
+        },
+        "last_protected": "player_5"
+    },
+    "villagers": [
+        {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: We started with the tough news that Lemon was removed during the night. Kiwi then claimed Apple is a Villager, which I found important but immediately questioned the source, as did Peach. However, Apple's response was concerning; they 'confirmed' Kiwi's information, which Pear, Plum, and Avocado quickly identified as highly suspicious, suggesting coordination between Apple and Kiwi. They argued that Apple shouldn't be able to confirm Kiwi's 'vision' unless they were working together. This makes both Kiwi and Apple look very suspicious to me, possibly as Werewolves attempting a coordinated lie. Pear, Plum, and Avocado seem to be thinking very critically.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: I started by reiterating my suspicion of Apple, given their previous 'confirmation' of Kiwi's vision, and suggested Kiwi's removal might have been a cleanup by Werewolves. Peach strongly agreed with me, reinforcing the suspicion on Apple. Apple fiercely defended themselves, arguing that Kiwi's death proved Kiwi was the Seer and that I and Peach were misdirecting the village. They claimed their 'confirmation' was to validate the Seer. Pear, Plum, and Avocado acknowledged the compelling argument that Kiwi was likely the Seer, but critically, all of them remained highly skeptical of Apple's explanation for 'confirming' the Seer's vision, finding it unusual or indicative of meta-knowledge. They also noted Apple's aggressive and overly defensive tone towards me and Peach as suspicious. My main takeaway is that while Kiwi was probably the Seer, Apple's suspicious behavior has not been adequately explained, and their defensive posture is only making them look guiltier to myself and several others."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: We started with the tough news that Lemon was removed during the night. Kiwi then claimed Apple is a Villager, which I found important but immediately questioned the source, as did Peach. However, Apple's response was concerning; they 'confirmed' Kiwi's information, which Pear, Plum, and Avocado quickly identified as highly suspicious, suggesting coordination between Apple and Kiwi. They argued that Apple shouldn't be able to confirm Kiwi's 'vision' unless they were working together. This makes both Kiwi and Apple look very suspicious to me, possibly as Werewolves attempting a coordinated lie. Pear, Plum, and Avocado seem to be thinking very critically.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I started by reiterating my suspicion of Apple, given their previous 'confirmation' of Kiwi's vision, and suggested Kiwi's removal might have been a cleanup by Werewolves. Peach strongly agreed with me, reinforcing the suspicion on Apple. Apple fiercely defended themselves, arguing that Kiwi's death proved Kiwi was the Seer and that I and Peach were misdirecting the village. They claimed their 'confirmation' was to validate the Seer. Pear, Plum, and Avocado acknowledged the compelling argument that Kiwi was likely the Seer, but critically, all of them remained highly skeptical of Apple's explanation for 'confirming' the Seer's vision, finding it unusual or indicative of meta-knowledge. They also noted Apple's aggressive and overly defensive tone towards me and Peach as suspicious. My main takeaway is that while Kiwi was probably the Seer, Apple's suspicious behavior has not been adequately explained, and their defensive posture is only making them look guiltier to myself and several others.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Losing Lemon so early is a tough start for our village. Kiwi claimed that Apple is a Villager, but didn't reveal how they knew this. My biggest concern, and one shared by Pear, Plum, and Avocado, is Apple's 'confirmation' of Kiwi's information. Apple can only know their own role, not the source or accuracy of Kiwi's 'vision,' which makes their exchange look highly coordinated and suspicious. Pear, Plum, and Avocado all highlighted this exact point, which made me feel their logic aligns with mine. Mango also asked Kiwi for their source of information. Based on this debate, I am highly suspicious of both Kiwi and Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: Kiwi was eliminated by the Werewolves last night, which everyone, including me, believes strongly suggests Kiwi was the Seer. However, this doesn't clear Apple for me. Mango, Pear, Plum, Avocado, and I all agreed that Apple's previous 'confirmation' of Kiwi's read was incredibly suspicious and still lacks a convincing explanation. Apple's argument that Werewolves don't kill their own doesn't fully convince me, as Mango proposed that Kiwi's removal could be a 'cleanup' operation by the Werewolves to protect Apple. Apple's defensive and aggressive tone when challenged by Mango and me, and later by Pear, Plum, and Avocado, only deepens my suspicion. It feels like the village has a solid lead on Apple, and I believe we should seriously consider voting on them.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Losing Lemon so early is a tough start for our village. Kiwi claimed that Apple is a Villager, but didn't reveal how they knew this. My biggest concern, and one shared by Pear, Plum, and Avocado, is Apple's 'confirmation' of Kiwi's information. Apple can only know their own role, not the source or accuracy of Kiwi's 'vision,' which makes their exchange look highly coordinated and suspicious. Pear, Plum, and Avocado all highlighted this exact point, which made me feel their logic aligns with mine. Mango also asked Kiwi for their source of information. Based on this debate, I am highly suspicious of both Kiwi and Apple.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Kiwi was eliminated by the Werewolves last night, which everyone, including me, believes strongly suggests Kiwi was the Seer. However, this doesn't clear Apple for me. Mango, Pear, Plum, Avocado, and I all agreed that Apple's previous 'confirmation' of Kiwi's read was incredibly suspicious and still lacks a convincing explanation. Apple's argument that Werewolves don't kill their own doesn't fully convince me, as Mango proposed that Kiwi's removal could be a 'cleanup' operation by the Werewolves to protect Apple. Apple's defensive and aggressive tone when challenged by Mango and me, and later by Pear, Plum, and Avocado, only deepens my suspicion. It feels like the village has a solid lead on Apple, and I believe we should seriously consider voting on them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Lemon was tragically removed by the Werewolves during the night, setting a somber tone. Kiwi then stated that I am a Villager, which I know is true, leading me to believe Kiwi is likely the Seer. I attempted to confirm this information, hoping to validate Kiwi and encourage a Seer reveal. However, Pear, Plum, and Avocado immediately saw my 'confirmation' as highly suspicious and coordinated, implying I was in league with Kiwi to deceive the village. Mango and Peach, while also questioning Kiwi's source, focused more on encouraging a role reveal rather than directly accusing me. My attempt to help has unfortunately made both me and potentially the Seer look suspicious to a large portion of the village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Lemon was tragically removed by the Werewolves during the night, setting a somber tone. Kiwi then stated that I am a Villager, which I know is true, leading me to believe Kiwi is likely the Seer. I attempted to confirm this information, hoping to validate Kiwi and encourage a Seer reveal. However, Pear, Plum, and Avocado immediately saw my 'confirmation' as highly suspicious and coordinated, implying I was in league with Kiwi to deceive the village. Mango and Peach, while also questioning Kiwi's source, focused more on encouraging a role reveal rather than directly accusing me. My attempt to help has unfortunately made both me and potentially the Seer look suspicious to a large portion of the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Alright everyone, Kiwi being removed by the Werewolves last night is a critical piece of information, but I don't think it clears Apple. Remember yesterday, Kiwi claimed Apple was a Villager, and Apple 'confirmed' it? That immediate 'confirmation' was highly suspicious to many of us \u2013 including Peach, Plum, Pear, Avocado, and myself \u2013 suggesting a coordinated effort. Now that Kiwi is gone, it makes me wonder if the Werewolves removed Kiwi specifically to try and make Apple look less suspicious, removing their 'accomplice' from the debate. Apple, you need to explain how you could possibly 'confirm' Kiwi's vision. To me, that still points to you being a Werewolf, potentially working with Kiwi. I think we need to keep our focus on Apple today."
+                    ],
+                    [
+                        "player_0",
+                        "Mango, I completely agree with your assessment. When Kiwi claimed Apple was a Villager, and Apple immediately 'confirmed' it, that felt incredibly suspicious to me, and as you rightly pointed out, to Pear, Plum, and Avocado as well. Kiwi's removal last night absolutely does not clear Apple; in fact, it makes me even more suspicious. It looks too much like the Werewolves cleaned up an accomplice to make the remaining Werewolf look innocent. Apple, you need to explain, clearly and convincingly, how you could possibly 'confirm' Kiwi's vision. Without a solid explanation, I think the village has a very strong lead here, and we need to consider voting on you today."
+                    ],
+                    [
+                        "player_6",
+                        "Mango and Peach, your interpretation is completely backwards and frankly, suspicious. Kiwi stating I was a Villager, which I *am*, was my attempt to validate their vision and encourage a Seer reveal. The Werewolves killing Kiwi last night *confirms* Kiwi was the Seer, not my accomplice. Werewolves don't eliminate their own; they eliminate roles like the Seer who can expose them. Your persistent focus on me, actively ignoring this crucial evidence and trying to lynch someone the Seer vouched for, looks like a direct attempt to misdirect the village and get an innocent player removed. We should be looking at who is trying to remove a Villager, not who was confirmed by the Seer."
+                    ],
+                    [
+                        "player_3",
+                        "Apple, your point about the Werewolves targeting the Seer is indeed compelling. Kiwi's elimination last night does strongly suggest they were a powerful role, likely the Seer, which is a significant blow to the village. However, that doesn't completely resolve the earlier concerns. Your 'confirmation' of Kiwi's vision was still incredibly unusual for a Villager, even if your intention was to 'validate' them or encourage a reveal. It sounded like you had information you shouldn't have. And now, your immediate and strong accusation against Mango and Peach for 'misdirection' feels overly defensive, especially if you were truly just a Villager making a clumsy mistake. If Kiwi was the Seer and identified you as a Villager, why are you so quick to attack fellow Villagers instead of clearly explaining your initial odd behavior? We need complete transparency and a more satisfactory explanation from you, Apple."
+                    ],
+                    [
+                        "player_5",
+                        "Apple, while I agree that Kiwi's elimination strongly suggests they were indeed the Seer, that doesn't magically clear your earlier actions. Your immediate 'confirmation' of Kiwi's read was profoundly strange for a Villager, regardless of whether Kiwi was right. It sounded like you had meta-knowledge. And now, your swift and aggressive attack on Mango and Peach for simply asking for an explanation strikes me as overly defensive. If you're a genuine Villager, Apple, why are you so quick to turn on fellow Villagers who are merely trying to understand your highly unusual behavior?"
+                    ],
+                    [
+                        "player_7",
+                        "I agree with Plum and Pear that Kiwi's elimination strongly suggests they were the Seer, and that's a tough loss for us. But Apple, your 'explanation' for 'confirming' Kiwi's vision still feels incredibly odd. If Kiwi truly was the Seer and you're a Villager, why such a strange, almost knowing response? A Villager usually wouldn't 'confirm' a Seer's read; they'd just accept it. Your quick counter-accusation against Mango and Peach for asking valid questions about your unusual behavior also makes me pause. We need a clear, genuine explanation for that initial moment, not just a defensive dismissal of those trying to understand it."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Lemon was removed by the Werewolves during the night, a tough start for the village. Kiwi claimed that Apple is a Villager, but what immediately caught my attention was Apple's 'confirmation' of Kiwi's statement. I found this interaction highly suspicious and potentially coordinated, as Apple shouldn't be able to confirm Kiwi's 'vision'. Both Plum and Avocado strongly agreed with my suspicion, pointing out that Apple's confirmation makes the exchange look staged, suggesting coordination between Kiwi and Apple. Mango and Peach also questioned Kiwi's source but did not explicitly highlight the suspicious nature of Apple's confirmation. The village is demanding Kiwi reveal how they know Apple's role, particularly if they are the Seer.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: This round's debate was intense, primarily focused on Apple and the deceased Kiwi. Most of us, including myself, Plum, Avocado, Mango, and Peach, agree that Kiwi's elimination by the Werewolves makes it highly probable they were the Seer, which is a significant loss. However, this doesn't fully clear Apple for me. Apple's earlier \"confirmation\" of Kiwi's vision, claiming Apple was a Villager, still feels incredibly unnatural and suspicious to me, Plum, and Avocado, even with Apple's explanation of trying to \"validate\" the Seer. Mango and Peach pushed this point hard, even suggesting Kiwi's removal could be the Werewolves cleaning up an accomplice. Apple vehemently denied this, accusing Mango and Peach of misdirection and being Werewolves for targeting someone a Seer vouched for. I found Apple's immediate and aggressive counter-accusations overly defensive, and Plum and Avocado shared this concern, wondering why Apple was so quick to attack fellow Villagers simply asking for clarification. It feels like we're caught between the logic of a Seer's confirmation and Apple's continuously suspicious behavior.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Lemon was removed by the Werewolves during the night, a tough start for the village. Kiwi claimed that Apple is a Villager, but what immediately caught my attention was Apple's 'confirmation' of Kiwi's statement. I found this interaction highly suspicious and potentially coordinated, as Apple shouldn't be able to confirm Kiwi's 'vision'. Both Plum and Avocado strongly agreed with my suspicion, pointing out that Apple's confirmation makes the exchange look staged, suggesting coordination between Kiwi and Apple. Mango and Peach also questioned Kiwi's source but did not explicitly highlight the suspicious nature of Apple's confirmation. The village is demanding Kiwi reveal how they know Apple's role, particularly if they are the Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round's debate was intense, primarily focused on Apple and the deceased Kiwi. Most of us, including myself, Plum, Avocado, Mango, and Peach, agree that Kiwi's elimination by the Werewolves makes it highly probable they were the Seer, which is a significant loss. However, this doesn't fully clear Apple for me. Apple's earlier \"confirmation\" of Kiwi's vision, claiming Apple was a Villager, still feels incredibly unnatural and suspicious to me, Plum, and Avocado, even with Apple's explanation of trying to \"validate\" the Seer. Mango and Peach pushed this point hard, even suggesting Kiwi's removal could be the Werewolves cleaning up an accomplice. Apple vehemently denied this, accusing Mango and Peach of misdirection and being Werewolves for targeting someone a Seer vouched for. I found Apple's immediate and aggressive counter-accusations overly defensive, and Plum and Avocado shared this concern, wondering why Apple was so quick to attack fellow Villagers simply asking for clarification. It feels like we're caught between the logic of a Seer's confirmation and Apple's continuously suspicious behavior.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        }
+    ],
+    "werewolves": [
+        {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Lemon.",
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Round 0 started with Lemon's removal by the Werewolves. Kiwi immediately claimed Apple is a Villager, implying they are the Seer. Apple 'confirmed' Kiwi's information about me, which I, along with Pear and Avocado, found highly suspicious, suggesting a coordinated effort to mislead the village. Mango and Peach also questioned Kiwi's source of information, but weren't as aggressive in their accusations of coordination. Currently, there's significant suspicion on both Kiwi and Apple, and I am aligned with Pear and Avocado in pushing this narrative.",
+                "Round 1: During the night, we decided to eliminate Kiwi.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: This round was excellent for us. We successfully killed Kiwi, who Apple's defense strongly suggested was the Seer. During the day, Mango and Peach were very vocal in their suspicion of Apple's previous 'confirmation' of Kiwi's read, despite Apple's claims that Kiwi was the Seer and that they were a Villager. Pear, Avocado, and I all maintained that Apple's initial behavior and their subsequent defensiveness were suspicious. Ultimately, the village voted to remove Apple, a likely Villager. This means we've eliminated both the Seer and another Villager in one round, leaving only Peach, Mango, and Pear as potential Villagers, one of whom must be the Doctor. We are now very close to winning.",
+                "Round 2: During the night, we decided to eliminate Mango.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Lemon.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with Lemon's removal by the Werewolves. Kiwi immediately claimed Apple is a Villager, implying they are the Seer. Apple 'confirmed' Kiwi's information about me, which I, along with Pear and Avocado, found highly suspicious, suggesting a coordinated effort to mislead the village. Mango and Peach also questioned Kiwi's source of information, but weren't as aggressive in their accusations of coordination. Currently, there's significant suspicion on both Kiwi and Apple, and I am aligned with Pear and Avocado in pushing this narrative.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round was excellent for us. We successfully killed Kiwi, who Apple's defense strongly suggested was the Seer. During the day, Mango and Peach were very vocal in their suspicion of Apple's previous 'confirmation' of Kiwi's read, despite Apple's claims that Kiwi was the Seer and that they were a Villager. Pear, Avocado, and I all maintained that Apple's initial behavior and their subsequent defensiveness were suspicious. Ultimately, the village voted to remove Apple, a likely Villager. This means we've eliminated both the Seer and another Villager in one round, leaving only Peach, Mango, and Pear as potential Villagers, one of whom must be the Doctor. We are now very close to winning.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Lemon.",
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: The debate in Round 0 revolved around Kiwi's claim that Apple is a Villager, following Lemon's removal during the night. Mango and Peach questioned how Kiwi knew this, prompting a potential Seer reveal. However, Apple's quick 'confirmation' of Kiwi's statement struck Pear, Plum, and me as highly suspicious, suggesting coordination. My ally Plum and I amplified Pear's concerns, effectively casting doubt on both Kiwi and Apple and linking them as potentially deceptive. This creates strong suspicion on Kiwi, who could be the Seer, and Apple as an accomplice, which is a good outcome for us.",
+                "Round 1: During the night, we decided to eliminate Kiwi.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: The debate confirmed that Kiwi was likely the Seer, which means our night kill was a huge success. I, along with Plum, Mango, Peach, and Pear, effectively maintained suspicion on Apple regarding their 'confirmation' of Kiwi's vision from Round 0. Even though Apple tried to argue that Kiwi's death proved he was a Seer, I continued to question Apple's unusual explanation and defensive attitude. Plum did an excellent job reinforcing my points. Mango and Peach were very vocal in their suspicion of Apple, and Pear, while acknowledging Kiwi as a Seer, still found Apple's behavior odd. Ultimately, Apple was removed by vote, which is an excellent outcome for me and Plum; we removed the Seer at night and got the village to lynch one of their own during the day.",
+                "Round 2: During the night, we decided to eliminate Mango.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Lemon.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate in Round 0 revolved around Kiwi's claim that Apple is a Villager, following Lemon's removal during the night. Mango and Peach questioned how Kiwi knew this, prompting a potential Seer reveal. However, Apple's quick 'confirmation' of Kiwi's statement struck Pear, Plum, and me as highly suspicious, suggesting coordination. My ally Plum and I amplified Pear's concerns, effectively casting doubt on both Kiwi and Apple and linking them as potentially deceptive. This creates strong suspicion on Kiwi, who could be the Seer, and Apple as an accomplice, which is a good outcome for us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate confirmed that Kiwi was likely the Seer, which means our night kill was a huge success. I, along with Plum, Mango, Peach, and Pear, effectively maintained suspicion on Apple regarding their 'confirmation' of Kiwi's vision from Round 0. Even though Apple tried to argue that Kiwi's death proved he was a Seer, I continued to question Apple's unusual explanation and defensive attitude. Plum did an excellent job reinforcing my points. Mango and Peach were very vocal in their suspicion of Apple, and Pear, while acknowledging Kiwi as a Seer, still found Apple's behavior odd. Ultimately, Apple was removed by vote, which is an excellent outcome for me and Plum; we removed the Seer at night and got the village to lynch one of their own during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        }
+    ],
+    "players": {
+        "player_1": {
+            "name": "player_1",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: We started with the tough news that Lemon was removed during the night. Kiwi then claimed Apple is a Villager, which I found important but immediately questioned the source, as did Peach. However, Apple's response was concerning; they 'confirmed' Kiwi's information, which Pear, Plum, and Avocado quickly identified as highly suspicious, suggesting coordination between Apple and Kiwi. They argued that Apple shouldn't be able to confirm Kiwi's 'vision' unless they were working together. This makes both Kiwi and Apple look very suspicious to me, possibly as Werewolves attempting a coordinated lie. Pear, Plum, and Avocado seem to be thinking very critically.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: I started by reiterating my suspicion of Apple, given their previous 'confirmation' of Kiwi's vision, and suggested Kiwi's removal might have been a cleanup by Werewolves. Peach strongly agreed with me, reinforcing the suspicion on Apple. Apple fiercely defended themselves, arguing that Kiwi's death proved Kiwi was the Seer and that I and Peach were misdirecting the village. They claimed their 'confirmation' was to validate the Seer. Pear, Plum, and Avocado acknowledged the compelling argument that Kiwi was likely the Seer, but critically, all of them remained highly skeptical of Apple's explanation for 'confirming' the Seer's vision, finding it unusual or indicative of meta-knowledge. They also noted Apple's aggressive and overly defensive tone towards me and Peach as suspicious. My main takeaway is that while Kiwi was probably the Seer, Apple's suspicious behavior has not been adequately explained, and their defensive posture is only making them look guiltier to myself and several others."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: We started with the tough news that Lemon was removed during the night. Kiwi then claimed Apple is a Villager, which I found important but immediately questioned the source, as did Peach. However, Apple's response was concerning; they 'confirmed' Kiwi's information, which Pear, Plum, and Avocado quickly identified as highly suspicious, suggesting coordination between Apple and Kiwi. They argued that Apple shouldn't be able to confirm Kiwi's 'vision' unless they were working together. This makes both Kiwi and Apple look very suspicious to me, possibly as Werewolves attempting a coordinated lie. Pear, Plum, and Avocado seem to be thinking very critically.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: I started by reiterating my suspicion of Apple, given their previous 'confirmation' of Kiwi's vision, and suggested Kiwi's removal might have been a cleanup by Werewolves. Peach strongly agreed with me, reinforcing the suspicion on Apple. Apple fiercely defended themselves, arguing that Kiwi's death proved Kiwi was the Seer and that I and Peach were misdirecting the village. They claimed their 'confirmation' was to validate the Seer. Pear, Plum, and Avocado acknowledged the compelling argument that Kiwi was likely the Seer, but critically, all of them remained highly skeptical of Apple's explanation for 'confirming' the Seer's vision, finding it unusual or indicative of meta-knowledge. They also noted Apple's aggressive and overly defensive tone towards me and Peach as suspicious. My main takeaway is that while Kiwi was probably the Seer, Apple's suspicious behavior has not been adequately explained, and their defensive posture is only making them look guiltier to myself and several others.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                }
+            ],
+            "gamestate": {
+                "round_number": 2,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_0": {
+            "name": "player_0",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Losing Lemon so early is a tough start for our village. Kiwi claimed that Apple is a Villager, but didn't reveal how they knew this. My biggest concern, and one shared by Pear, Plum, and Avocado, is Apple's 'confirmation' of Kiwi's information. Apple can only know their own role, not the source or accuracy of Kiwi's 'vision,' which makes their exchange look highly coordinated and suspicious. Pear, Plum, and Avocado all highlighted this exact point, which made me feel their logic aligns with mine. Mango also asked Kiwi for their source of information. Based on this debate, I am highly suspicious of both Kiwi and Apple.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: Kiwi was eliminated by the Werewolves last night, which everyone, including me, believes strongly suggests Kiwi was the Seer. However, this doesn't clear Apple for me. Mango, Pear, Plum, Avocado, and I all agreed that Apple's previous 'confirmation' of Kiwi's read was incredibly suspicious and still lacks a convincing explanation. Apple's argument that Werewolves don't kill their own doesn't fully convince me, as Mango proposed that Kiwi's removal could be a 'cleanup' operation by the Werewolves to protect Apple. Apple's defensive and aggressive tone when challenged by Mango and me, and later by Pear, Plum, and Avocado, only deepens my suspicion. It feels like the village has a solid lead on Apple, and I believe we should seriously consider voting on them.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Losing Lemon so early is a tough start for our village. Kiwi claimed that Apple is a Villager, but didn't reveal how they knew this. My biggest concern, and one shared by Pear, Plum, and Avocado, is Apple's 'confirmation' of Kiwi's information. Apple can only know their own role, not the source or accuracy of Kiwi's 'vision,' which makes their exchange look highly coordinated and suspicious. Pear, Plum, and Avocado all highlighted this exact point, which made me feel their logic aligns with mine. Mango also asked Kiwi for their source of information. Based on this debate, I am highly suspicious of both Kiwi and Apple.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: Kiwi was eliminated by the Werewolves last night, which everyone, including me, believes strongly suggests Kiwi was the Seer. However, this doesn't clear Apple for me. Mango, Pear, Plum, Avocado, and I all agreed that Apple's previous 'confirmation' of Kiwi's read was incredibly suspicious and still lacks a convincing explanation. Apple's argument that Werewolves don't kill their own doesn't fully convince me, as Mango proposed that Kiwi's removal could be a 'cleanup' operation by the Werewolves to protect Apple. Apple's defensive and aggressive tone when challenged by Mango and me, and later by Pear, Plum, and Avocado, only deepens my suspicion. It feels like the village has a solid lead on Apple, and I believe we should seriously consider voting on them.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_6": {
+            "name": "player_6",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Lemon was tragically removed by the Werewolves during the night, setting a somber tone. Kiwi then stated that I am a Villager, which I know is true, leading me to believe Kiwi is likely the Seer. I attempted to confirm this information, hoping to validate Kiwi and encourage a Seer reveal. However, Pear, Plum, and Avocado immediately saw my 'confirmation' as highly suspicious and coordinated, implying I was in league with Kiwi to deceive the village. Mango and Peach, while also questioning Kiwi's source, focused more on encouraging a role reveal rather than directly accusing me. My attempt to help has unfortunately made both me and potentially the Seer look suspicious to a large portion of the village.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Lemon was tragically removed by the Werewolves during the night, setting a somber tone. Kiwi then stated that I am a Villager, which I know is true, leading me to believe Kiwi is likely the Seer. I attempted to confirm this information, hoping to validate Kiwi and encourage a Seer reveal. However, Pear, Plum, and Avocado immediately saw my 'confirmation' as highly suspicious and coordinated, implying I was in league with Kiwi to deceive the village. Mango and Peach, while also questioning Kiwi's source, focused more on encouraging a role reveal rather than directly accusing me. My attempt to help has unfortunately made both me and potentially the Seer look suspicious to a large portion of the village.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [
+                    [
+                        "player_1",
+                        "Alright everyone, Kiwi being removed by the Werewolves last night is a critical piece of information, but I don't think it clears Apple. Remember yesterday, Kiwi claimed Apple was a Villager, and Apple 'confirmed' it? That immediate 'confirmation' was highly suspicious to many of us \u2013 including Peach, Plum, Pear, Avocado, and myself \u2013 suggesting a coordinated effort. Now that Kiwi is gone, it makes me wonder if the Werewolves removed Kiwi specifically to try and make Apple look less suspicious, removing their 'accomplice' from the debate. Apple, you need to explain how you could possibly 'confirm' Kiwi's vision. To me, that still points to you being a Werewolf, potentially working with Kiwi. I think we need to keep our focus on Apple today."
+                    ],
+                    [
+                        "player_0",
+                        "Mango, I completely agree with your assessment. When Kiwi claimed Apple was a Villager, and Apple immediately 'confirmed' it, that felt incredibly suspicious to me, and as you rightly pointed out, to Pear, Plum, and Avocado as well. Kiwi's removal last night absolutely does not clear Apple; in fact, it makes me even more suspicious. It looks too much like the Werewolves cleaned up an accomplice to make the remaining Werewolf look innocent. Apple, you need to explain, clearly and convincingly, how you could possibly 'confirm' Kiwi's vision. Without a solid explanation, I think the village has a very strong lead here, and we need to consider voting on you today."
+                    ],
+                    [
+                        "player_6",
+                        "Mango and Peach, your interpretation is completely backwards and frankly, suspicious. Kiwi stating I was a Villager, which I *am*, was my attempt to validate their vision and encourage a Seer reveal. The Werewolves killing Kiwi last night *confirms* Kiwi was the Seer, not my accomplice. Werewolves don't eliminate their own; they eliminate roles like the Seer who can expose them. Your persistent focus on me, actively ignoring this crucial evidence and trying to lynch someone the Seer vouched for, looks like a direct attempt to misdirect the village and get an innocent player removed. We should be looking at who is trying to remove a Villager, not who was confirmed by the Seer."
+                    ],
+                    [
+                        "player_3",
+                        "Apple, your point about the Werewolves targeting the Seer is indeed compelling. Kiwi's elimination last night does strongly suggest they were a powerful role, likely the Seer, which is a significant blow to the village. However, that doesn't completely resolve the earlier concerns. Your 'confirmation' of Kiwi's vision was still incredibly unusual for a Villager, even if your intention was to 'validate' them or encourage a reveal. It sounded like you had information you shouldn't have. And now, your immediate and strong accusation against Mango and Peach for 'misdirection' feels overly defensive, especially if you were truly just a Villager making a clumsy mistake. If Kiwi was the Seer and identified you as a Villager, why are you so quick to attack fellow Villagers instead of clearly explaining your initial odd behavior? We need complete transparency and a more satisfactory explanation from you, Apple."
+                    ],
+                    [
+                        "player_5",
+                        "Apple, while I agree that Kiwi's elimination strongly suggests they were indeed the Seer, that doesn't magically clear your earlier actions. Your immediate 'confirmation' of Kiwi's read was profoundly strange for a Villager, regardless of whether Kiwi was right. It sounded like you had meta-knowledge. And now, your swift and aggressive attack on Mango and Peach for simply asking for an explanation strikes me as overly defensive. If you're a genuine Villager, Apple, why are you so quick to turn on fellow Villagers who are merely trying to understand your highly unusual behavior?"
+                    ],
+                    [
+                        "player_7",
+                        "I agree with Plum and Pear that Kiwi's elimination strongly suggests they were the Seer, and that's a tough loss for us. But Apple, your 'explanation' for 'confirming' Kiwi's vision still feels incredibly odd. If Kiwi truly was the Seer and you're a Villager, why such a strange, almost knowing response? A Villager usually wouldn't 'confirm' a Seer's read; they'd just accept it. Your quick counter-accusation against Mango and Peach for asking valid questions about your unusual behavior also makes me pause. We need a clear, genuine explanation for that initial moment, not just a defensive dismissal of those trying to understand it."
+                    ]
+                ],
+                "other_wolf": null
+            }
+        },
+        "player_3": {
+            "name": "player_3",
+            "role": "Villager",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Lemon was removed by the Werewolves during the night, a tough start for the village. Kiwi claimed that Apple is a Villager, but what immediately caught my attention was Apple's 'confirmation' of Kiwi's statement. I found this interaction highly suspicious and potentially coordinated, as Apple shouldn't be able to confirm Kiwi's 'vision'. Both Plum and Avocado strongly agreed with my suspicion, pointing out that Apple's confirmation makes the exchange look staged, suggesting coordination between Kiwi and Apple. Mango and Peach also questioned Kiwi's source but did not explicitly highlight the suspicious nature of Apple's confirmation. The village is demanding Kiwi reveal how they know Apple's role, particularly if they are the Seer.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: This round's debate was intense, primarily focused on Apple and the deceased Kiwi. Most of us, including myself, Plum, Avocado, Mango, and Peach, agree that Kiwi's elimination by the Werewolves makes it highly probable they were the Seer, which is a significant loss. However, this doesn't fully clear Apple for me. Apple's earlier \"confirmation\" of Kiwi's vision, claiming Apple was a Villager, still feels incredibly unnatural and suspicious to me, Plum, and Avocado, even with Apple's explanation of trying to \"validate\" the Seer. Mango and Peach pushed this point hard, even suggesting Kiwi's removal could be the Werewolves cleaning up an accomplice. Apple vehemently denied this, accusing Mango and Peach of misdirection and being Werewolves for targeting someone a Seer vouched for. I found Apple's immediate and aggressive counter-accusations overly defensive, and Plum and Avocado shared this concern, wondering why Apple was so quick to attack fellow Villagers simply asking for clarification. It feels like we're caught between the logic of a Seer's confirmation and Apple's continuously suspicious behavior.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Lemon was removed by the Werewolves during the night, a tough start for the village. Kiwi claimed that Apple is a Villager, but what immediately caught my attention was Apple's 'confirmation' of Kiwi's statement. I found this interaction highly suspicious and potentially coordinated, as Apple shouldn't be able to confirm Kiwi's 'vision'. Both Plum and Avocado strongly agreed with my suspicion, pointing out that Apple's confirmation makes the exchange look staged, suggesting coordination between Kiwi and Apple. Mango and Peach also questioned Kiwi's source but did not explicitly highlight the suspicious nature of Apple's confirmation. The village is demanding Kiwi reveal how they know Apple's role, particularly if they are the Seer.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round's debate was intense, primarily focused on Apple and the deceased Kiwi. Most of us, including myself, Plum, Avocado, Mango, and Peach, agree that Kiwi's elimination by the Werewolves makes it highly probable they were the Seer, which is a significant loss. However, this doesn't fully clear Apple for me. Apple's earlier \"confirmation\" of Kiwi's vision, claiming Apple was a Villager, still feels incredibly unnatural and suspicious to me, Plum, and Avocado, even with Apple's explanation of trying to \"validate\" the Seer. Mango and Peach pushed this point hard, even suggesting Kiwi's removal could be the Werewolves cleaning up an accomplice. Apple vehemently denied this, accusing Mango and Peach of misdirection and being Werewolves for targeting someone a Seer vouched for. I found Apple's immediate and aggressive counter-accusations overly defensive, and Plum and Avocado shared this concern, wondering why Apple was so quick to attack fellow Villagers simply asking for clarification. It feels like we're caught between the logic of a Seer's confirmation and Apple's continuously suspicious behavior.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            }
+        },
+        "player_5": {
+            "name": "player_5",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Lemon.",
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Round 0 started with Lemon's removal by the Werewolves. Kiwi immediately claimed Apple is a Villager, implying they are the Seer. Apple 'confirmed' Kiwi's information about me, which I, along with Pear and Avocado, found highly suspicious, suggesting a coordinated effort to mislead the village. Mango and Peach also questioned Kiwi's source of information, but weren't as aggressive in their accusations of coordination. Currently, there's significant suspicion on both Kiwi and Apple, and I am aligned with Pear and Avocado in pushing this narrative.",
+                "Round 1: During the night, we decided to eliminate Kiwi.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: This round was excellent for us. We successfully killed Kiwi, who Apple's defense strongly suggested was the Seer. During the day, Mango and Peach were very vocal in their suspicion of Apple's previous 'confirmation' of Kiwi's read, despite Apple's claims that Kiwi was the Seer and that they were a Villager. Pear, Avocado, and I all maintained that Apple's initial behavior and their subsequent defensiveness were suspicious. Ultimately, the village voted to remove Apple, a likely Villager. This means we've eliminated both the Seer and another Villager in one round, leaving only Peach, Mango, and Pear as potential Villagers, one of whom must be the Doctor. We are now very close to winning.",
+                "Round 2: During the night, we decided to eliminate Mango.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Lemon.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with Lemon's removal by the Werewolves. Kiwi immediately claimed Apple is a Villager, implying they are the Seer. Apple 'confirmed' Kiwi's information about me, which I, along with Pear and Avocado, found highly suspicious, suggesting a coordinated effort to mislead the village. Mango and Peach also questioned Kiwi's source of information, but weren't as aggressive in their accusations of coordination. Currently, there's significant suspicion on both Kiwi and Apple, and I am aligned with Pear and Avocado in pushing this narrative.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: This round was excellent for us. We successfully killed Kiwi, who Apple's defense strongly suggested was the Seer. During the day, Mango and Peach were very vocal in their suspicion of Apple's previous 'confirmation' of Kiwi's read, despite Apple's claims that Kiwi was the Seer and that they were a Villager. Pear, Avocado, and I all maintained that Apple's initial behavior and their subsequent defensiveness were suspicious. Ultimately, the village voted to remove Apple, a likely Villager. This means we've eliminated both the Seer and another Villager in one round, leaving only Peach, Mango, and Pear as potential Villagers, one of whom must be the Doctor. We are now very close to winning.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_7"
+            }
+        },
+        "player_7": {
+            "name": "player_7",
+            "role": "Werewolf",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: During the night, we decided to eliminate Lemon.",
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: The debate in Round 0 revolved around Kiwi's claim that Apple is a Villager, following Lemon's removal during the night. Mango and Peach questioned how Kiwi knew this, prompting a potential Seer reveal. However, Apple's quick 'confirmation' of Kiwi's statement struck Pear, Plum, and me as highly suspicious, suggesting coordination. My ally Plum and I amplified Pear's concerns, effectively casting doubt on both Kiwi and Apple and linking them as potentially deceptive. This creates strong suspicion on Kiwi, who could be the Seer, and Apple as an accomplice, which is a good outcome for us.",
+                "Round 1: During the night, we decided to eliminate Kiwi.",
+                "Round 1: Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                "Round 1: Moderator Announcement: The majority voted to remove Apple from the game.",
+                "Round 1: Summary: The debate confirmed that Kiwi was likely the Seer, which means our night kill was a huge success. I, along with Plum, Mango, Peach, and Pear, effectively maintained suspicion on Apple regarding their 'confirmation' of Kiwi's vision from Round 0. Even though Apple tried to argue that Kiwi's death proved he was a Seer, I continued to question Apple's unusual explanation and defensive attitude. Plum did an excellent job reinforcing my points. Mango and Peach were very vocal in their suspicion of Apple, and Pear, while acknowledging Kiwi as a Seer, still found Apple's behavior odd. Ultimately, Apple was removed by vote, which is an excellent outcome for me and Plum; we removed the Seer at night and got the village to lynch one of their own during the day.",
+                "Round 2: During the night, we decided to eliminate Mango.",
+                "Round 2: Moderator Announcement: The Werewolves removed Mango from the game during the night."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, we decided to eliminate Lemon.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: The debate in Round 0 revolved around Kiwi's claim that Apple is a Villager, following Lemon's removal during the night. Mango and Peach questioned how Kiwi knew this, prompting a potential Seer reveal. However, Apple's quick 'confirmation' of Kiwi's statement struck Pear, Plum, and me as highly suspicious, suggesting coordination. My ally Plum and I amplified Pear's concerns, effectively casting doubt on both Kiwi and Apple and linking them as potentially deceptive. This creates strong suspicion on Kiwi, who could be the Seer, and Apple as an accomplice, which is a good outcome for us.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, we decided to eliminate Kiwi.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The Werewolves removed Kiwi from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Moderator Announcement: The majority voted to remove Apple from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 1,
+                    "content": "Summary: The debate confirmed that Kiwi was likely the Seer, which means our night kill was a huge success. I, along with Plum, Mango, Peach, and Pear, effectively maintained suspicion on Apple regarding their 'confirmation' of Kiwi's vision from Round 0. Even though Apple tried to argue that Kiwi's death proved he was a Seer, I continued to question Apple's unusual explanation and defensive attitude. Plum did an excellent job reinforcing my points. Mango and Peach were very vocal in their suspicion of Apple, and Pear, while acknowledging Kiwi as a Seer, still found Apple's behavior odd. Ultimately, Apple was removed by vote, which is an excellent outcome for me and Plum; we removed the Seer at night and got the village to lynch one of their own during the day.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 2,
+                    "content": "During the night, we decided to eliminate Mango.",
+                    "source": "inference",
+                    "confidence": 0.5
+                },
+                {
+                    "round": 2,
+                    "content": "Moderator Announcement: The Werewolves removed Mango from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                }
+            ],
+            "gamestate": {
+                "round_number": 3,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": "player_5"
+            }
+        },
+        "player_4": {
+            "name": "player_4",
+            "role": "Doctor",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: During the night, I chose to protect Plum"
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I chose to protect Plum",
+                    "source": "role_action",
+                    "confidence": 0.85
+                }
+            ],
+            "gamestate": {
+                "round_number": 0,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "last_protected": "player_5"
+        },
+        "player_2": {
+            "name": "player_2",
+            "role": "Seer",
+            "personality": null,
+            "model": "gemini-2.5-flash",
+            "demographics": {},
+            "name_to_display": {
+                "player_0": "Peach",
+                "player_1": "Mango",
+                "player_2": "Kiwi",
+                "player_3": "Pear",
+                "player_4": "Lemon",
+                "player_5": "Plum",
+                "player_6": "Apple",
+                "player_7": "Avocado"
+            },
+            "observations": [
+                "Round 0: During the night, I decided to investigate Apple and learned they are a Villager.",
+                "Round 0: Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                "Round 0: Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                "Round 0: Summary: Round 0 started with the Werewolves removing Lemon. I revealed that I had investigated Apple and learned they are a Villager. Mango and Peach immediately questioned how I knew this, asking me to clarify if I was the Seer. Apple confirmed my information, stating they are indeed a Villager, and also urged me to reveal my role. However, Pear, Plum, and Avocado became highly suspicious of both Apple and me, suggesting our interaction was coordinated or staged due to Apple's 'confirmation' of my information. They all strongly pushed for me to reveal my role as Seer, ending the debate with significant distrust directed at me and Apple.",
+                "Round 1: During the night, I decided to investigate Plum and learned they are a Werewolf."
+            ],
+            "observation_entries": [
+                {
+                    "round": 0,
+                    "content": "During the night, I decided to investigate Apple and learned they are a Villager.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: The Werewolves removed Lemon from the game during the night.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Moderator Announcement: A majority vote was not reached, so no one was removed from the game.",
+                    "source": "moderator",
+                    "confidence": 0.95
+                },
+                {
+                    "round": 0,
+                    "content": "Summary: Round 0 started with the Werewolves removing Lemon. I revealed that I had investigated Apple and learned they are a Villager. Mango and Peach immediately questioned how I knew this, asking me to clarify if I was the Seer. Apple confirmed my information, stating they are indeed a Villager, and also urged me to reveal my role. However, Pear, Plum, and Avocado became highly suspicious of both Apple and me, suggesting our interaction was coordinated or staged due to Apple's 'confirmation' of my information. They all strongly pushed for me to reveal my role as Seer, ending the debate with significant distrust directed at me and Apple.",
+                    "source": "self_summary",
+                    "confidence": 0.55
+                },
+                {
+                    "round": 1,
+                    "content": "During the night, I decided to investigate Plum and learned they are a Werewolf.",
+                    "source": "role_action_verified",
+                    "confidence": 1.0
+                }
+            ],
+            "gamestate": {
+                "round_number": 1,
+                "current_players": [
+                    "player_0",
+                    "player_3",
+                    "player_5",
+                    "player_7"
+                ],
+                "debate": [],
+                "other_wolf": null
+            },
+            "previously_unmasked": {
+                "player_6": "Villager",
+                "player_5": "Werewolf"
+            }
+        }
+    },
+    "rounds": [
+        {
+            "players": [
+                "player_1",
+                "player_0",
+                "player_6",
+                "player_3",
+                "player_5",
+                "player_7",
+                "player_2"
+            ],
+            "eliminated": "player_4",
+            "unmasked": "player_6",
+            "protected": "player_5",
+            "exiled": null,
+            "debate": [
+                [
+                    "player_2",
+                    "Alright team, a tough start with Lemon being taken out. To help us right away, I can tell you that Apple is a Villager. Let's use that to narrow our focus. What are everyone's initial thoughts or suspicions?"
+                ],
+                [
+                    "player_1",
+                    "It's truly a tough start, losing Lemon right away. Kiwi, your statement about Apple being a Villager is a huge piece of information, but it also prompts a vital question: How do you know that? Your role, if you're the Seer, would be incredibly valuable to us. Clarifying that now could shape our entire strategy. What are everyone else's initial thoughts on this, or on Lemon's removal? We need everyone's input."
+                ],
+                [
+                    "player_0",
+                    "Losing Lemon so early is definitely a blow to the village. Kiwi, your information about Apple being a Villager is huge, and Mango's question is exactly what we need to address. How do you know that, Kiwi? A Seer reveal would be incredibly helpful, but it's vital we understand the source of this information immediately so we can properly leverage it or scrutinize it. We need everyone's input on this claim before we can decide on a vote."
+                ],
+                [
+                    "player_6",
+                    "It's truly a somber start to lose Lemon so quickly. Kiwi, your information about me being a Villager is correct, and I can confirm that. This makes Mango and Peach's questions incredibly important: how do you know this, Kiwi? If you're the Seer, please reveal yourself now. This information is vital for the village, and we need to understand the source to use it effectively and swiftly."
+                ],
+                [
+                    "player_3",
+                    "Kiwi, like everyone else, I need you to state how you know Apple is a Villager. If you're the Seer, reveal yourself immediately, as that information is critical. But Apple, your 'confirmation' of Kiwi's statement truly makes me pause. You know your own role, yes, but how can you confirm Kiwi's *information* and its accuracy, unless you're trying to validate their claim? This interaction looks highly coordinated and suspicious. I'm very wary of both Kiwi and Apple right now."
+                ],
+                [
+                    "player_5",
+                    "Pear makes a crucial observation. Apple, your 'confirmation' of Kiwi's information is what's truly concerning. You know your own role, but how can you verify the *accuracy* of Kiwi's *vision* unless there's some prior knowledge or coordination? Kiwi, if you are the Seer, the village needs you to state it clearly now, otherwise, this entire exchange between you and Apple looks incredibly suspicious and could be a coordinated attempt to mislead us."
+                ],
+                [
+                    "player_7",
+                    "Losing Lemon so early is indeed a tough blow. Kiwi, your statement about Apple is significant, but I have to agree with Pear and Plum's concerns. Apple, your 'confirmation' of Kiwi's information makes this whole exchange look incredibly staged. How can you verify Kiwi's vision unless you're coordinating? Kiwi, if you are the Seer, the village needs you to reveal your role immediately. Otherwise, this looks like a calculated attempt to mislead us, and both of you are appearing very suspicious right now."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_6",
+                    "player_0": "player_2",
+                    "player_6": "player_3",
+                    "player_3": "player_6",
+                    "player_5": "player_2",
+                    "player_7": "player_2",
+                    "player_2": "player_3"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_1",
+                "player_0",
+                "player_3",
+                "player_5",
+                "player_7"
+            ],
+            "eliminated": "player_2",
+            "unmasked": "player_5",
+            "protected": null,
+            "exiled": "player_6",
+            "debate": [
+                [
+                    "player_1",
+                    "Alright everyone, Kiwi being removed by the Werewolves last night is a critical piece of information, but I don't think it clears Apple. Remember yesterday, Kiwi claimed Apple was a Villager, and Apple 'confirmed' it? That immediate 'confirmation' was highly suspicious to many of us \u2013 including Peach, Plum, Pear, Avocado, and myself \u2013 suggesting a coordinated effort. Now that Kiwi is gone, it makes me wonder if the Werewolves removed Kiwi specifically to try and make Apple look less suspicious, removing their 'accomplice' from the debate. Apple, you need to explain how you could possibly 'confirm' Kiwi's vision. To me, that still points to you being a Werewolf, potentially working with Kiwi. I think we need to keep our focus on Apple today."
+                ],
+                [
+                    "player_0",
+                    "Mango, I completely agree with your assessment. When Kiwi claimed Apple was a Villager, and Apple immediately 'confirmed' it, that felt incredibly suspicious to me, and as you rightly pointed out, to Pear, Plum, and Avocado as well. Kiwi's removal last night absolutely does not clear Apple; in fact, it makes me even more suspicious. It looks too much like the Werewolves cleaned up an accomplice to make the remaining Werewolf look innocent. Apple, you need to explain, clearly and convincingly, how you could possibly 'confirm' Kiwi's vision. Without a solid explanation, I think the village has a very strong lead here, and we need to consider voting on you today."
+                ],
+                [
+                    "player_6",
+                    "Mango and Peach, your interpretation is completely backwards and frankly, suspicious. Kiwi stating I was a Villager, which I *am*, was my attempt to validate their vision and encourage a Seer reveal. The Werewolves killing Kiwi last night *confirms* Kiwi was the Seer, not my accomplice. Werewolves don't eliminate their own; they eliminate roles like the Seer who can expose them. Your persistent focus on me, actively ignoring this crucial evidence and trying to lynch someone the Seer vouched for, looks like a direct attempt to misdirect the village and get an innocent player removed. We should be looking at who is trying to remove a Villager, not who was confirmed by the Seer."
+                ],
+                [
+                    "player_3",
+                    "Apple, your point about the Werewolves targeting the Seer is indeed compelling. Kiwi's elimination last night does strongly suggest they were a powerful role, likely the Seer, which is a significant blow to the village. However, that doesn't completely resolve the earlier concerns. Your 'confirmation' of Kiwi's vision was still incredibly unusual for a Villager, even if your intention was to 'validate' them or encourage a reveal. It sounded like you had information you shouldn't have. And now, your immediate and strong accusation against Mango and Peach for 'misdirection' feels overly defensive, especially if you were truly just a Villager making a clumsy mistake. If Kiwi was the Seer and identified you as a Villager, why are you so quick to attack fellow Villagers instead of clearly explaining your initial odd behavior? We need complete transparency and a more satisfactory explanation from you, Apple."
+                ],
+                [
+                    "player_5",
+                    "Apple, while I agree that Kiwi's elimination strongly suggests they were indeed the Seer, that doesn't magically clear your earlier actions. Your immediate 'confirmation' of Kiwi's read was profoundly strange for a Villager, regardless of whether Kiwi was right. It sounded like you had meta-knowledge. And now, your swift and aggressive attack on Mango and Peach for simply asking for an explanation strikes me as overly defensive. If you're a genuine Villager, Apple, why are you so quick to turn on fellow Villagers who are merely trying to understand your highly unusual behavior?"
+                ],
+                [
+                    "player_7",
+                    "I agree with Plum and Pear that Kiwi's elimination strongly suggests they were the Seer, and that's a tough loss for us. But Apple, your 'explanation' for 'confirming' Kiwi's vision still feels incredibly odd. If Kiwi truly was the Seer and you're a Villager, why such a strange, almost knowing response? A Villager usually wouldn't 'confirm' a Seer's read; they'd just accept it. Your quick counter-accusation against Mango and Peach for asking valid questions about your unusual behavior also makes me pause. We need a clear, genuine explanation for that initial moment, not just a defensive dismissal of those trying to understand it."
+                ]
+            ],
+            "votes": [
+                {
+                    "player_1": "player_6",
+                    "player_0": "player_1",
+                    "player_6": "player_1",
+                    "player_3": "player_0",
+                    "player_5": "player_6",
+                    "player_7": "player_6"
+                }
+            ],
+            "success": true
+        },
+        {
+            "players": [
+                "player_0",
+                "player_3",
+                "player_5",
+                "player_7"
+            ],
+            "eliminated": "player_1",
+            "unmasked": null,
+            "protected": null,
+            "exiled": null,
+            "debate": [],
+            "votes": [],
+            "success": true
+        }
+    ],
+    "error_message": "",
+    "winner": "Werewolves"
+}

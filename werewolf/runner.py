@@ -63,7 +63,7 @@ RESUME_DIRECTORIES = []
 
 model_to_id = {
     "pro1.5": "gemini-1.5-pro-preview-0514",
-    "flash": "gemini-2.5-flash",
+    "flash": "gemini-2.5-flash-lite",
     "pro1": "gemini-pro",
     "gpt4": "gpt-4-turbo-2024-04-09",
     "gpt4o": "gpt-4o-2024-05-13",

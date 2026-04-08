@@ -761,6 +761,7 @@ class RoundLog(Deserializable):
 
   def __init__(self):
     self.eliminate: LmLog | None = None
+    self.wolf_eliminate_votes = {}
     self.investigate: LmLog | None = None
     self.protect: LmLog | None = None
     self.debate: List[Tuple[str, LmLog]] = []
@@ -780,6 +781,7 @@ class RoundLog(Deserializable):
 
     if eliminate:
       o.eliminate = LmLog.from_json(eliminate)
+    o.wolf_eliminate_votes = data.get("wolf_eliminate_votes", {})
     if investigate:
       o.investigate = LmLog.from_json(investigate)
     if protect:
